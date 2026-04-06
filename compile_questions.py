@@ -11,7 +11,10 @@ def compile_questions():
     all_questions = []
     seen_hashes = set()
     
-    files = [f'{i}.json' for i in range(1, 7)]
+    # Automatically find all JSON files that are numbered (e.g., 1.json, 2.json, etc.)
+    files = [f for f in os.listdir('.') if f.endswith('.json') and f[:-5].isdigit()]
+    # Sort files numerically to keep order consistent
+    files.sort(key=lambda x: int(x[:-5]))
     
     for filename in files:
         if not os.path.exists(filename):
