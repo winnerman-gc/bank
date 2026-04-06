@@ -1,0 +1,776 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "In the Information Assurance Period, what distinguishes the security system aspect from previous periods?",
+    "options": [
+      "It focuses only on confidentiality.",
+      "It eliminates the need for management.",
+      "More technical means were used to associate security management with technical protection to enable proactive defense rather than passive protection."
+    ],
+    "correct_answer": "More technical means were used to associate security management with technical protection to enable proactive defense rather than passive protection."
+  },
+  {
+    "question_number": 2,
+    "question_text": "What is Level 4 protection also known as?",
+    "options": ["Guided protection", "Supervised protection", "Forced protection", "Self-protection"],
+    "correct_answer": "Forced protection"
+  },
+  {
+    "question_number": 3,
+    "question_text": "According to Cybersecurity Law of China Article 31, what does the State implement for critical information infrastructure?",
+    "options": [
+      "Only multi-level protection system",
+      "Only general protection",
+      "Only basic protection",
+      "Key protection on the basis of the cybersecurity multi-level protection system for critical information infrastructure"
+    ],
+    "correct_answer": "Key protection on the basis of the cybersecurity multi-level protection system for critical information infrastructure"
+  },
+  {
+    "question_number": 4,
+    "question_text": "Post Office Protocol allows an email client to download an email from an email server.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 5,
+    "question_text": "What is traffic padding?",
+    "options": [
+      "Deleting traffic data",
+      "Inserting bits into gaps to frustrate traffic analysis",
+      "Removing bits from a stream",
+      "Encrypting all traffic"
+    ],
+    "correct_answer": "Inserting bits into gaps to frustrate traffic analysis"
+  },
+  {
+    "question_number": 6,
+    "question_text": "A is a cryptographic algorithm that uses two related keys, a public key and a private key. The two keys have the property that deriving the private key from the public key is computationally infeasible.",
+    "options": [
+      "Private Key (Symmetric) Cryptographic Algorithm",
+      "Public Key (Asymmetric) Cryptographic Algorithm",
+      "RSA Digital Cryptographic Algorithm",
+      "Key Exchange Cryptographic Algorithm"
+    ],
+    "correct_answer": "Public Key (Asymmetric) Cryptographic Algorithm"
+  },
+  {
+    "question_number": 7,
+    "question_text": "Two integers a and b are said to be congruent modulo n, if (a mod n) = (b mod n).",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 8,
+    "question_text": "If the authenticator is encrypted with the sender's private key, it serves as a signature that verifies origin, content, and sequencing.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 9,
+    "question_text": "What technical means are mentioned for cybersecurity protection?",
+    "options": [
+      "Encryption and secure communications protocols",
+      "Only encryption",
+      "Only protocols",
+      "Only authentication"
+    ],
+    "correct_answer": "Encryption and secure communications protocols"
+  },
+  {
+    "question_number": 10,
+    "question_text": "What aspect of confidentiality involves protecting traffic flow from analysis?",
+    "options": [
+      "Encryption protection",
+      "Authentication protection",
+      "Protection of source, destination, frequency, length, or other characteristics of traffic",
+      "Content protection"
+    ],
+    "correct_answer": "Protection of source, destination, frequency, length, or other characteristics of traffic"
+  },
+  {
+    "question_number": 11,
+    "question_text": "What has enabled hackers to quickly launch large-scale DDoS attacks?",
+    "options": [
+      "Only mobile devices",
+      "Only cloud computing",
+      "Only botnets",
+      "The emergence of the Internet of Things (IoT) and exploitation of device hardware or management vulnerabilities"
+    ],
+    "correct_answer": "The emergence of the Internet of Things (IoT) and exploitation of device hardware or management vulnerabilities"
+  },
+  {
+    "question_number": 12,
+    "question_text": "are often used to limit the time in which a key exchange can take place and/or the lifetime of an exchanged key.",
+    "options": ["Timestamps", "Session breaks", "Keynotes", "Relay messages"],
+    "correct_answer": "Timestamps"
+  },
+  {
+    "question_number": 13,
+    "question_text": "A key objective for Offset Codebook Mode is",
+    "options": ["adaptability", "security", "compatibility", "efficiency"],
+    "correct_answer": "efficiency"
+  },
+  {
+    "question_number": 14,
+    "question_text": "is an extension of identity management to multiple security domains such as autonomous internal business units, external business partners and other third party applications and services with the goal of sharing digital identities so that a user can be authenticated a single time and then access applications and resources across multiple domains.",
+    "options": ["Data security management", "Kerberos", "Attribute service", "Identity federation"],
+    "correct_answer": "Identity federation"
+  },
+  {
+    "question_number": 15,
+    "question_text": "With the use of symmetric encryption, the principal security problem is maintaining the secrecy of the key.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 16,
+    "question_text": "What does zero trust architecture specifically aim to prevent and restrict?",
+    "options": [
+      "Only internal attacks",
+      "Data disclosure and restrict the lateral movement of attacks on a network",
+      "Only external attacks",
+      "Only network access"
+    ],
+    "correct_answer": "Data disclosure and restrict the lateral movement of attacks on a network"
+  },
+  {
+    "question_number": 17,
+    "question_text": "Another important mode, XTS-AES, has been standardized by the Security in Storage Working Group.",
+    "options": ["ISO", "ITIL", "IEEE", "NIST"],
+    "correct_answer": "IEEE"
+  },
+  {
+    "question_number": 18,
+    "question_text": "Two integers are if their only common positive integer factor is 1.",
+    "options": ["residual", "polynomials", "relatively prime", "congruent modulo"],
+    "correct_answer": "relatively prime"
+  },
+  {
+    "question_number": 19,
+    "question_text": "A firewall may filter traffic on the basis of IP address, protocol, or port number.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 20,
+    "question_text": "is designed for small embedded systems with tight requirements on memory, processing time, real-time response, and power consumption.",
+    "options": ["ECB", "RBAC", "MiniSec", "TinyOs"],
+    "correct_answer": "TinyOs"
+  },
+  {
+    "question_number": 21,
+    "question_text": "There are four general means, or authentication factors, of authenticating a user's identity, which can be used alone or in combination.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 22,
+    "question_text": "is where the attacker forges a signature for a particular message chosen by the attacker.",
+    "options": ["Total break", "Selective forgery", "Universal forgery", "Existential forgery"],
+    "correct_answer": "Selective forgery"
+  },
+  {
+    "question_number": 23,
+    "question_text": "The first part of the Schnorr digital signature scheme is the generation of a private/public key pair.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 24,
+    "question_text": "What does routing control enable?",
+    "options": [
+      "Encrypting routing tables",
+      "Preventing all routing",
+      "Selection of secure routes and routing changes when breaches are suspected",
+      "Deleting routing information"
+    ],
+    "correct_answer": "Selection of secure routes and routing changes when breaches are suspected"
+  },
+  {
+    "question_number": 25,
+    "question_text": "The simplest replay attack is one in which the opponent simply copies a message and replays it later.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 26,
+    "question_text": "The ______ is when a small change in plaintext or key produces a large change in the ciphertext.",
+    "options": ["avalanche effect", "key expansion", "Rcon", "auxiliary exchange"],
+    "correct_answer": "avalanche effect"
+  },
+  {
+    "question_number": 27,
+    "question_text": "A ______ uses a microcontroller, is not programmable once the program logic for the device has been burned into ROM, and has no interaction with a user.",
+    "options": ["deeply embedded system", "constrained device", "embedded system", "lattice device"],
+    "correct_answer": "deeply embedded system"
+  },
+  {
+    "question_number": 28,
+    "question_text": "What is an example of the broadest confidentiality service?",
+    "options": [
+      "A single email message",
+      "A single packet",
+      "A single field in a message",
+      "A TCP connection between two systems"
+    ],
+    "correct_answer": "A TCP connection between two systems"
+  },
+  {
+    "question_number": 29,
+    "question_text": "What does the availability service depend on?",
+    "options": [
+      "Only logging",
+      "Only encryption",
+      "Proper management and control of system resources",
+      "Only authentication"
+    ],
+    "correct_answer": "Proper management and control of system resources"
+  },
+  {
+    "question_number": 30,
+    "question_text": "What does a connection-oriented integrity service address?",
+    "options": [
+      "Only passive attacks",
+      "Message stream modification and denial of service",
+      "Only message modification",
+      "Only denial of service"
+    ],
+    "correct_answer": "Message stream modification and denial of service"
+  },
+  {
+    "question_number": 31,
+    "question_text": "Security policies for mobile devices should assume that any mobile device will not be stolen or accessed by a malicious party.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 32,
+    "question_text": "Restoring the plaintext from the ciphertext is",
+    "options": ["deciphering", "encryption", "transposition", "steganography"],
+    "correct_answer": "deciphering"
+  },
+  {
+    "question_number": 33,
+    "question_text": "System vulnerabilities can be exploited by hackers and malicious software across a shared cloud environment.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 34,
+    "question_text": "SMTP can transmit executable files and other binary objects.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 35,
+    "question_text": "What are the security requirements mentioned?",
+    "options": [
+      "Only integrity",
+      "Confidentiality, integrity, availability, authenticity, and accountability",
+      "Only availability",
+      "Only confidentiality"
+    ],
+    "correct_answer": "Confidentiality, integrity, availability, authenticity, and accountability"
+  },
+  {
+    "question_number": 36,
+    "question_text": "What is the specific function of the software that was attacked in the supply chain case study?",
+    "options": [
+      "File storage",
+      "Database management",
+      "Real-time monitoring and analysis for network devices",
+      "Email management"
+    ],
+    "correct_answer": "Real-time monitoring and analysis for network devices"
+  },
+  {
+    "question_number": 37,
+    "question_text": "controls how particular services are used.",
+    "options": ["Direction control", "Behavior control", "Service control", "User control"],
+    "correct_answer": "Behavior control"
+  },
+  {
+    "question_number": 38,
+    "question_text": "The Change Cipher Spec Protocol is one of the four TLS-specific protocols that use the SSL Record Protocol.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 39,
+    "question_text": "What is the penalty for network operators who do not perform cybersecurity protection duties according to Cybersecurity Law Article 59?",
+    "options": [
+      "Only fines",
+      "Order corrections and give warnings; where corrections are refused or it leads to harm, fines of RMB 10,000 to 100,000 for the organization and RMB 5,000 to 50,000 for responsible personnel",
+      "Only criminal penalties",
+      "Only warnings"
+    ],
+    "correct_answer": "Order corrections and give warnings; where corrections are refused or it leads to harm, fines of RMB 10,000 to 100,000 for the organization and RMB 5,000 to 50,000 for responsible personnel"
+  },
+  {
+    "question_number": 40,
+    "question_text": "What does a connectionless integrity service generally provide?",
+    "options": [
+      "Protection against all attacks",
+      "Protection against only passive attacks",
+      "Protection against message modification only",
+      "Protection against message modification, duplication, and replay"
+    ],
+    "correct_answer": "Protection against message modification only"
+  },
+  {
+    "question_number": 41,
+    "question_text": "What does Level 3 protection apply to?",
+    "options": [
+      "Common information systems",
+      "Important information systems of state organs, enterprises, and public institutions at the city level or above",
+      "Extremely important systems",
+      "Small-sized private enterprises"
+    ],
+    "correct_answer": "Important information systems of state organs, enterprises, and public institutions at the city level or above"
+  },
+  {
+    "question_number": 42,
+    "question_text": "What does network security primarily protect?",
+    "options": [
+      "Only user passwords",
+      "Networks and their services from unauthorized modification, destruction, or disclosure",
+      "Only encryption keys",
+      "Only physical documents"
+    ],
+    "correct_answer": "Networks and their services from unauthorized modification, destruction, or disclosure"
+  },
+  {
+    "question_number": 43,
+    "question_text": "What does communications security protect?",
+    "options": [
+      "Only devices",
+      "Data during transmission",
+      "Only users",
+      "Only stored data"
+    ],
+    "correct_answer": "Data during transmission"
+  },
+  {
+    "question_number": 44,
+    "question_text": "The components of DSA are the same as in the Schnorr signature scheme.",
+    "options": ["private key", "global public key", "EDS", "message digest"],
+    "correct_answer": "global public key"
+  },
+  {
+    "question_number": 45,
+    "question_text": "Handheld PDAs pose a security risk in terms of both eavesdropping and spoofing.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 46,
+    "question_text": "The use of encryption and authentication protocols is the standard method of countering attempts to alter or insert transmissions.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 47,
+    "question_text": "A recipient in possession of the secret key cannot generate an authentication code to verify the integrity of the message.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 48,
+    "question_text": "A ring is said to be if it satisfies the condition ab = ba for all a, b in R.",
+    "options": ["infinite", "commutative", "cyclic", "abelian"],
+    "correct_answer": "commutative"
+  },
+  {
+    "question_number": 49,
+    "question_text": "What is ISMS?",
+    "options": [
+      "Information Security Management Software",
+      "Information Security Management System, a system in which an organization establishes information security policies and objectives and uses methods to achieve these objectives",
+      "Information Security Management Standard",
+      "Information Security Management Service"
+    ],
+    "correct_answer": "Information Security Management System, a system in which an organization establishes information security policies and objectives and uses methods to achieve these objectives"
+  },
+  {
+    "question_number": 50,
+    "question_text": "An end user whose system is equipped with IP security protocols can make a local call to an ISP and gain secure access to a company network.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 51,
+    "question_text": "is an open source project for creating truly random numbers using inexpensive cameras, open source code, and inexpensive hardware.",
+    "options": ["Entropy", "LavaRnd", "Maurer's statistics", "Blum, Blum, Shub"],
+    "correct_answer": "Entropy"
+  },
+  {
+    "question_number": 52,
+    "question_text": "Asymmetric encryption utilizes only a public key for encryption and decryption.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 53,
+    "question_text": "There are no practical cryptanalytic attacks on 3DES.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 54,
+    "question_text": "Plaintext is recovered from the ciphertext using the paired key and",
+    "options": ["a digital signature", "a recovery encryption", "an encryption algorithm", "a decryption algorithm"],
+    "correct_answer": "a decryption algorithm"
+  },
+  {
+    "question_number": 55,
+    "question_text": "A typical application of Output Feedback mode is stream oriented transmission over noisy channel, such as satellite communication.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 56,
+    "question_text": "What is the key difference between the Communication Security Period and the Information Security Period in terms of data storage?",
+    "options": [
+      "Information Security Period had data stored in different locations",
+      "Both periods had data stored in centralized locations",
+      "Both periods had data stored in different locations",
+      "Communication Security Period had data stored in different locations, while Information Security Period enabled data transmission through computer networks"
+    ],
+    "correct_answer": "Communication Security Period had data stored in different locations, while Information Security Period enabled data transmission through computer networks"
+  },
+  {
+    "question_number": 57,
+    "question_text": "What does a digital signature protect against?",
+    "options": ["Only modification", "Only replay", "Only deletion", "Forgery"],
+    "correct_answer": "Forgery"
+  },
+  {
+    "question_number": 58,
+    "question_text": "Random numbers play an important role in the use of encryption for various network security applications.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 59,
+    "question_text": "In a supply chain attack, what is typically implanted in the official installation package?",
+    "options": ["Only malware", "Only spyware", "A backdoor component", "Only adware"],
+    "correct_answer": "A backdoor component"
+  },
+  {
+    "question_number": 60,
+    "question_text": "One of the basic techniques of number theory is the algorithm which is a simple procedure for determining the greatest common divisor of two positive integers.",
+    "options": ["modular", "division", "Euclidean", "Brady"],
+    "correct_answer": "Euclidean"
+  },
+  {
+    "question_number": 61,
+    "question_text": "What does a connection-oriented integrity service assure?",
+    "options": [
+      "Only protection against deletion",
+      "Only protection against encryption",
+      "That messages are received as sent with no duplication, insertion, modification, reordering, or replays",
+      "Only protection against message modification"
+    ],
+    "correct_answer": "That messages are received as sent with no duplication, insertion, modification, reordering, or replays"
+  },
+  {
+    "question_number": 62,
+    "question_text": "A group is said to be if it satisfies the condition a * b = b * a for all a, b in G.",
+    "options": ["commutative", "infinite", "abelian", "cyclic"],
+    "correct_answer": "abelian"
+  },
+  {
+    "question_number": 63,
+    "question_text": "attacks include impersonating another user, altering messages in transit between client and server and altering information on a Web site.",
+    "options": ["Psuedo", "Passive", "Shell", "Active"],
+    "correct_answer": "Active"
+  },
+  {
+    "question_number": 64,
+    "question_text": "Asymmetric encryption can be used for",
+    "options": ["confidentiality", "authentication", "neither confidentiality nor authentication", "both confidentiality and authentication"],
+    "correct_answer": "both confidentiality and authentication"
+  },
+  {
+    "question_number": 65,
+    "question_text": "The ______ payload allows IKE SAs to be authenticated using EAP.",
+    "options": ["Traffic Selector", "Extensible Authentication Protocol", "Configuration", "Vendor ID"],
+    "correct_answer": "Extensible Authentication Protocol"
+  },
+  {
+    "question_number": 66,
+    "question_text": "What is the goal for dealing with active attacks?",
+    "options": [
+      "Detection and recovery from any disruption or delays",
+      "Ignoring them",
+      "Absolute prevention",
+      "Only logging them"
+    ],
+    "correct_answer": "Detection and recovery from any disruption or delays"
+  },
+  {
+    "question_number": 67,
+    "question_text": "What are the security requirements for Cybersecurity Classified Protection 2.0 classified into?",
+    "options": [
+      "General security requirements and extended security requirements",
+      "Only physical requirements",
+      "Only management requirements",
+      "Only technical requirements"
+    ],
+    "correct_answer": "General security requirements and extended security requirements"
+  },
+  {
+    "question_number": 68,
+    "question_text": "The default automated key management protocol for IPsec is referred to as ISAKMP/Oakley.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 69,
+    "question_text": "The term refers to the characteristic that a cryptographic algorithm makes minimal resource demands on the host system.",
+    "options": ["superposition", "lightweight", "entanglement", "qubit"],
+    "correct_answer": "lightweight"
+  },
+  {
+    "question_number": 70,
+    "question_text": "What does APT stand for?",
+    "options": ["Advanced Protection Technology", "Advanced Persistent Technology", "Advanced Persistent Threat", "Advanced Prevention Technique"],
+    "correct_answer": "Advanced Persistent Threat"
+  },
+  {
+    "question_number": 71,
+    "question_text": "A number of Internet based applications have adopted two-key 3DES, including PGP and S/MIME.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 72,
+    "question_text": "A key translation center generates and distributes session keys.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 73,
+    "question_text": "What does the \"Do\" phase of PDCA in ISMS involve?",
+    "options": [
+      "Establishing the ISMS",
+      "Implementing and operating the ISMS",
+      "Maintaining and improving the ISMS",
+      "Monitoring and reviewing the ISMS"
+    ],
+    "correct_answer": "Implementing and operating the ISMS"
+  },
+  {
+    "question_number": 74,
+    "question_text": "What must one consider when developing security mechanisms?",
+    "options": [
+      "Only the cost",
+      "Potential attacks designed by looking at problems differently",
+      "Only the requirements",
+      "Only the implementation"
+    ],
+    "correct_answer": "Potential attacks designed by looking at problems differently"
+  },
+  {
+    "question_number": 75,
+    "question_text": "What does ISMS construction comply with?",
+    "options": [
+      "The SDLC process",
+      "The Agile process",
+      "The PDCA process (Plan, Do, Check, Act)",
+      "The Waterfall process"
+    ],
+    "correct_answer": "The PDCA process (Plan, Do, Check, Act)"
+  },
+  {
+    "question_number": 76,
+    "question_text": "A hybrid cloud infrastructure offers tighter controls over the geographic location of data storage and other aspects of security.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 77,
+    "question_text": "What does device security involve?",
+    "options": [
+      "Protection of network devices themselves",
+      "Only authentication",
+      "Only communications security",
+      "Only encryption"
+    ],
+    "correct_answer": "Protection of network devices themselves"
+  },
+  {
+    "question_number": 78,
+    "question_text": "What is the purpose of extended security requirements compared to general security requirements?",
+    "options": [
+      "They are only for Level 1 systems",
+      "They implement personalized protection for protected objects at different levels and in different forms, in addition to the common protection provided by general requirements",
+      "They are optional",
+      "They replace general requirements"
+    ],
+    "correct_answer": "They implement personalized protection for protected objects at different levels and in different forms, in addition to the common protection provided by general requirements"
+  },
+  {
+    "question_number": 79,
+    "question_text": "What is the relationship between technical requirements and management requirements in Cybersecurity Classified Protection 2.0?",
+    "options": [
+      "Technical requirements replace management requirements",
+      "Management requirements are only for Level 1",
+      "Both general and extended security requirements are classified into technical requirements and management requirements",
+      "Technical requirements are only for Level 5"
+    ],
+    "correct_answer": "Both general and extended security requirements are classified into technical requirements and management requirements"
+  },
+  {
+    "question_number": 80,
+    "question_text": "A is an entity that manages the use, performance, and delivery of cloud services, and negotiates relationships between CPs and cloud consumers.",
+    "options": ["cloud broker", "cloud auditor", "cloud carrier", "cloud provider"],
+    "correct_answer": "cloud broker"
+  },
+  {
+    "question_number": 81,
+    "question_text": "A typical use of is a situation in which the system administrator trusts the internal users.",
+    "options": ["circuit-level gateways", "IDSs", "DMZ networks", "firewalls"],
+    "correct_answer": "circuit-level gateways"
+  },
+  {
+    "question_number": 82,
+    "question_text": "If an attack causes especially grave harm to the legitimate rights and interests of citizens, what protection level is required?",
+    "options": ["Level 1", "Level 2", "Level 4", "Level 3"],
+    "correct_answer": "Level 3"
+  },
+  {
+    "question_number": 83,
+    "question_text": "establishes that a subject is who they claim to be to a stated level of certitude.",
+    "options": ["Identity proofing", "Digital identity", "Credential authentication", "Digital authentication"],
+    "correct_answer": "Identity proofing"
+  },
+  {
+    "question_number": 84,
+    "question_text": "Post-quantum cryptography is concerned with the security of asymmetric cryptographic algorithms.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 85,
+    "question_text": "The ElGamal signature scheme involves the use of the public key for encryption and the private key for decryption.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 86,
+    "question_text": "is a security enhancement to the MIME Internet email format standard based on technology from RSA Data Security.",
+    "options": ["SPF", "S/MIME", "HTTPS", "DKIM"],
+    "correct_answer": "S/MIME"
+  },
+  {
+    "question_number": 87,
+    "question_text": "Non-repudiation threats are associated with users who deny performing an action without other parties having any way to prove otherwise.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 88,
+    "question_text": "The order of a finite field must be of the form pn where p is a prime and n is a __.",
+    "options": ["commutative ring", "positive integer", "associative", "identity element"],
+    "correct_answer": "positive integer"
+  },
+  {
+    "question_number": 89,
+    "question_text": "Authentication applied to all of the packet except for the IP header is",
+    "options": ["tunnel mode", "association mode", "security mode", "transport mode"],
+    "correct_answer": "tunnel mode"
+  },
+  {
+    "question_number": 90,
+    "question_text": "Secure, trusted, and privacy-protected ______ capability is required so that unauthorized access of the content of data can be prohibited, integrity of data can be guaranteed, and privacy-related content of data can be protected when storing or processing data in IoT.",
+    "options": ["data management", "communication", "security audit", "mutual authentication and authorization"],
+    "correct_answer": "data management"
+  },
+  {
+    "question_number": 91,
+    "question_text": "What is the relationship between the three aspects of the Information Assurance Period's enterprise information assurance system: services, security system, and management?",
+    "options": [
+      "They replace each other",
+      "They work together: services have different risks and defense modes, security system uses technical means for proactive defense, and management fosters personnel and establishes management systems",
+      "They are independent and unrelated",
+      "Only one aspect is important"
+    ],
+    "correct_answer": "They work together: services have different risks and defense modes, security system uses technical means for proactive defense, and management fosters personnel and establishes management systems"
+  },
+  {
+    "question_number": 92,
+    "question_text": "What does data origin authentication NOT provide protection against?",
+    "options": [
+      "Source verification",
+      "Verification",
+      "Authentication",
+      "Duplication or modification of data units"
+    ],
+    "correct_answer": "Duplication or modification of data units"
+  },
+  {
+    "question_number": 93,
+    "question_text": "A Kerberos is a set of managed nodes that share the same Kerberos database.",
+    "options": ["realm", "network", "principal", "TGS"],
+    "correct_answer": "realm"
+  },
+  {
+    "question_number": 94,
+    "question_text": "The final message in phase 2, and one that is always required, is the message, which is sent by the server to indicate the end of the server hello and associated messages.",
+    "options": ["server_done", "finished", "goodbye", "no_certificate"],
+    "correct_answer": "server_done"
+  },
+  {
+    "question_number": 95,
+    "question_text": "What does notarization use to assure properties of a data exchange?",
+    "options": ["Encryption", "Authentication", "Logging", "A trusted third party"],
+    "correct_answer": "A trusted third party"
+  },
+  {
+    "question_number": 96,
+    "question_text": "What makes security mechanisms elaborate?",
+    "options": [
+      "Simple requirements",
+      "Consideration of various aspects of the threat",
+      "Simple threats",
+      "Lack of threats"
+    ],
+    "correct_answer": "Consideration of various aspects of the threat"
+  },
+  {
+    "question_number": 97,
+    "question_text": "What is the significance of the fact that vulnerability discovery penetrates from the application layer to bottom-layer components and even to the architecture layer?",
+    "options": [
+      "Vulnerabilities only affect applications",
+      "Vulnerabilities are less dangerous",
+      "It expands the impact of vulnerabilities, making them more difficult to address and potentially affecting fundamental system architecture",
+      "Vulnerabilities are easier to fix"
+    ],
+    "correct_answer": "It expands the impact of vulnerabilities, making them more difficult to address and potentially affecting fundamental system architecture"
+  },
+  {
+    "question_number": 98,
+    "question_text": "The sender is the only one who needs to know an initialization vector.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 99,
+    "question_text": "IPsec is executed on a packet-by-packet basis.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 100,
+    "question_text": "During which period were communication technologies underdeveloped and data was scattered?",
+    "options": [
+      "Information Security Period (1970s-1980s)",
+      "Cyberspace Security Period (Today)",
+      "Communication Security Period (1940s)",
+      "Information Assurance Period (1990s)"
+    ],
+    "correct_answer": "Communication Security Period (1940s)"
+  }
+]

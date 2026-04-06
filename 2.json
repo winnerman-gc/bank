@@ -1,0 +1,842 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "Why are standards important?",
+    "options": [
+      "They only apply to network protocols",
+      "They ensure interoperability and provide common frameworks",
+      "They are not important",
+      "They only apply to encryption"
+    ],
+    "correct_answer": "They ensure interoperability and provide common frameworks"
+  },
+  {
+    "question_number": 2,
+    "question_text": "What is authenticity?",
+    "options": [
+      "The prevention of data access",
+      "The property of being genuine and being able to be verified and trusted",
+      "The ability to encrypt data",
+      "The logging of all system activities"
+    ],
+    "correct_answer": "The property of being genuine and being able to be verified and trusted"
+  },
+  {
+    "question_number": 3,
+    "question_text": "Public-key encryption is more secure from cryptanalysis than symmetric encryption.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 4,
+    "question_text": "What is the relationship between the 14 control domains and the control objectives/measures in ISO 27002?",
+    "options": [
+      "Each domain has one objective and one measure",
+      "The 14 domains contain 35 control objectives and 113 control measures in total",
+      "The domains are independent of objectives and measures",
+      "There are 14 objectives and 14 measures"
+    ],
+    "correct_answer": "The 14 domains contain 35 control objectives and 113 control measures in total"
+  },
+  {
+    "question_number": 5,
+    "question_text": "The encryption of the compressed message plus the MAC must increase the content length by more than 1024 bytes.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 6,
+    "question_text": "In the case of a single message, what does the authentication service assure?",
+    "options": [
+      "That the message is encrypted",
+      "That the message is from the source that it claims to be from",
+      "That the message is available",
+      "That the message is not modified"
+    ],
+    "correct_answer": "That the message is from the source that it claims to be from"
+  },
+  {
+    "question_number": 7,
+    "question_text": "Base64 transfer encoding is also known as radix-64.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 8,
+    "question_text": "What is the relationship between the harmed object and the security protection level in Cybersecurity Classified Protection?",
+    "options": [
+      "The protection level is determined by the harmed object and the degree of harm on that object.",
+      "Only the degree of harm matters, not the harmed object.",
+      "The harmed object has no relationship to the protection level.",
+      "The protection level is fixed regardless of the harmed object."
+    ],
+    "correct_answer": "The protection level is determined by the harmed object and the degree of harm on that object."
+  },
+  {
+    "question_number": 9,
+    "question_text": "The heart of a Feistel block cipher is the function F, which relies on the use of S-boxes.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 10,
+    "question_text": "What are the objects under cybersecurity classified protection?",
+    "options": [
+      "Only basic information networks",
+      "Systems consisting of computers or other information terminals and related devices, including basic information networks, cloud computing platforms/systems, big data applications/platforms/resources, IoT, industrial control systems, and systems using mobile Internet technologies",
+      "Only cloud computing platforms",
+      "Only IoT systems"
+    ],
+    "correct_answer": "Systems consisting of computers or other information terminals and related devices, including basic information networks, cloud computing platforms/systems, big data applications/platforms/resources, IoT, industrial control systems, and systems using mobile Internet technologies"
+  },
+  {
+    "question_number": 11,
+    "question_text": "Format-preserving encryption refers to any encryption technique that takes a plaintext in a given format and produces a ciphertext in the same format.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 12,
+    "question_text": "Video content will be identified as format.",
+    "options": ["GIF", "MPEG", "BMP", "JPEG"],
+    "correct_answer": "MPEG"
+  },
+  {
+    "question_number": 13,
+    "question_text": "What is the primary purpose of ISO/IEC 27008?",
+    "options": [
+      "Best practice rules",
+      "Certification procedures",
+      "Requirements and standards for ISMS",
+      "Audit guideline"
+    ],
+    "correct_answer": "Audit guideline"
+  },
+  {
+    "question_number": 14,
+    "question_text": "Both tunnel and transport modes can be accommodated by the encapsulating security payload encryption format.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 15,
+    "question_text": "The global public key components of DSA are the same as for the Schnorr signature scheme.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 16,
+    "question_text": "What does peer entity authentication attempt to provide confidence against?",
+    "options": [
+      "Only passive attacks",
+      "Only data modification",
+      "Either a masquerade or an unauthorized replay of a previous connection",
+      "Only denial of service"
+    ],
+    "correct_answer": "Either a masquerade or an unauthorized replay of a previous connection"
+  },
+  {
+    "question_number": 17,
+    "question_text": "It can be shown that some form of birthday attack will succeed against any hash scheme involving the use of cipher block chaining without a secret key, provided that either the resulting hash code is small enough or that a larger hash code can be decomposed into independent subcodes.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 18,
+    "question_text": "Phase of the Handshake Protocol establishes security capabilities.",
+    "options": ["1", "3", "2", "4"],
+    "correct_answer": "1"
+  },
+  {
+    "question_number": 19,
+    "question_text": "What does availability assure?",
+    "options": [
+      "That all users are authenticated",
+      "That data is always encrypted",
+      "That systems work promptly and service is not denied to authorized users",
+      "That data is never modified"
+    ],
+    "correct_answer": "That systems work promptly and service is not denied to authorized users"
+  },
+  {
+    "question_number": 20,
+    "question_text": "The user control feature is typically applied to users outside the firewall perimeter.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 21,
+    "question_text": "What does CCSA stand for?",
+    "options": [
+      "China Communication Security Authority",
+      "China Communications Standards Association",
+      "China Computer Security Association",
+      "China Cybersecurity Standards Association"
+    ],
+    "correct_answer": "China Communications Standards Association"
+  },
+  {
+    "question_number": 22,
+    "question_text": "What is the broadest form of data confidentiality service?",
+    "options": [
+      "Protection of only encrypted data",
+      "Protection of specific fields within a message",
+      "Protection of a single message",
+      "Protection of all user data transmitted between two users over a period of time"
+    ],
+    "correct_answer": "Protection of all user data transmitted between two users over a period of time"
+  },
+  {
+    "question_number": 23,
+    "question_text": "What is the specific purpose of ISO/IEC 27005?",
+    "options": [
+      "Implementation guidelines",
+      "Certification guidelines",
+      "Information security risk management guidelines",
+      "Audit procedures"
+    ],
+    "correct_answer": "Information security risk management guidelines"
+  },
+  {
+    "question_number": 24,
+    "question_text": "What does ISO/IEC 27001 establish?",
+    "options": [
+      "Best practice rules",
+      "Industry-specific requirements",
+      "Requirements and standards for implementing and establishing the ISMS",
+      "Detailed operations of information security management"
+    ],
+    "correct_answer": "Requirements and standards for implementing and establishing the ISMS"
+  },
+  {
+    "question_number": 25,
+    "question_text": "What does establishing trust relationships involve?",
+    "options": [
+      "Understanding how trust is created and maintained",
+      "Only logging",
+      "Only authentication",
+      "Only encryption"
+    ],
+    "correct_answer": "Understanding how trust is created and maintained"
+  },
+  {
+    "question_number": 26,
+    "question_text": "In the Cybersecurity Classified Protection grading process, who reviews the preliminary grading result?",
+    "options": [
+      "Information security experts and business experts organized by the operation and use unit",
+      "Only the public security organ",
+      "Only the operation and use unit",
+      "Only the competent department"
+    ],
+    "correct_answer": "Information security experts and business experts organized by the operation and use unit"
+  },
+  {
+    "question_number": 27,
+    "question_text": "What are the three categories in the OSI Security Architecture?",
+    "options": [
+      "Authentication, Authorization, Accounting",
+      "Confidentiality, Integrity, Availability",
+      "Security attacks, Security services, Security mechanisms",
+      "Encryption, Hashing, Signing"
+    ],
+    "correct_answer": "Security attacks, Security services, Security mechanisms"
+  },
+  {
+    "question_number": 28,
+    "question_text": "The mechanism assures that a received packet was in fact transmitted by the party identified as the source in the packet header and assures that the packet has not been altered in transit.",
+    "options": ["key management", "security", "authentication", "confidentiality"],
+    "correct_answer": "key management"
+  },
+  {
+    "question_number": 29,
+    "question_text": "What is TC260?",
+    "options": [
+      "An international standards organization",
+      "A type of security standard",
+      "A security protocol",
+      "National Information Security Standardization Technical Committee in China"
+    ],
+    "correct_answer": "National Information Security Standardization Technical Committee in China"
+  },
+  {
+    "question_number": 30,
+    "question_text": "A cyclic group is always commutative and may be finite or infinite.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 31,
+    "question_text": "Two integers are relatively if and only if their only common positive integer factor is 1.",
+    "options": ["residual", "prime", "congruent", "composite"],
+    "correct_answer": "prime"
+  },
+  {
+    "question_number": 32,
+    "question_text": "What does the availability service depend on?",
+    "options": [
+      "Proper management and control of system resources",
+      "Only encryption",
+      "Only authentication",
+      "Only logging"
+    ],
+    "correct_answer": "Proper management and control of system resources"
+  },
+  {
+    "question_number": 33,
+    "question_text": "In the information breach case study, approximately how many pieces of data were collected in the unprotected database?",
+    "options": ["10 billion pieces", "1 billion pieces", "500 million pieces", "5 billion pieces"],
+    "correct_answer": "5 billion pieces"
+  },
+  {
+    "question_number": 34,
+    "question_text": "What does a passive attack do?",
+    "options": [
+      "Observes the information flow between client and server without disturbing it",
+      "Modifies data",
+      "Encrypts data",
+      "Deletes data"
+    ],
+    "correct_answer": "Observes the information flow between client and server without disturbing it"
+  },
+  {
+    "question_number": 35,
+    "question_text": "What do narrower forms of confidentiality service protect?",
+    "options": [
+      "Only footers",
+      "Only headers",
+      "All data over time",
+      "A single message or specific fields within a message"
+    ],
+    "correct_answer": "A single message or specific fields within a message"
+  },
+  {
+    "question_number": 36,
+    "question_text": "The function F provides the element of in a Feistel cipher.",
+    "options": ["clarification", "alignment", "stability", "confusion"],
+    "correct_answer": "confusion"
+  },
+  {
+    "question_number": 37,
+    "question_text": "In key distribution and reciprocal authentication schemes two communicating parties cooperate by exchanging messages to distribute keys and/or authenticate each other. In many cases are used for handshaking to prevent replay attacks.",
+    "options": ["session keys", "nonces", "entropies", "RC4s"],
+    "correct_answer": "nonces"
+  },
+  {
+    "question_number": 38,
+    "question_text": "In the ISO 27001 project implementation methodology, what specific activities occur during certification and continuous improvement?",
+    "options": [
+      "Only risk assessment",
+      "Only implementation",
+      "Only planning",
+      "ISMS internal audit, ISMS external audit, ISMS management review, propose corrective and preventive measures, hold project summary meeting"
+    ],
+    "correct_answer": "ISMS internal audit, ISMS external audit, ISMS management review, propose corrective and preventive measures, hold project summary meeting"
+  },
+  {
+    "question_number": 39,
+    "question_text": "A takes as input a source that is effectively random.",
+    "options": ["BBS", "TRNG", "PRNG", "PRF"],
+    "correct_answer": "TRNG"
+  },
+  {
+    "question_number": 40,
+    "question_text": "The ordering of bytes within a matrix is by column.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 41,
+    "question_text": "The AES decryption algorithm is not identical to the encryption algorithm but uses the same round keys.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 42,
+    "question_text": "is an example of a newly designed MAC.",
+    "options": ["HMAC", "Lattice", "Merkle root", "SipHash"],
+    "correct_answer": "SipHash"
+  },
+  {
+    "question_number": 43,
+    "question_text": "What can access rights be tailored to?",
+    "options": [
+      "All users equally",
+      "The individual entity",
+      "Only systems",
+      "Only administrators"
+    ],
+    "correct_answer": "The individual entity"
+  },
+  {
+    "question_number": 44,
+    "question_text": "What does the authentication service provide for a single message?",
+    "options": [
+      "Encryption of the message",
+      "Availability of the message",
+      "Integrity of the message",
+      "Assurance that the message is from the claimed source"
+    ],
+    "correct_answer": "Assurance that the message is from the claimed source"
+  },
+  {
+    "question_number": 45,
+    "question_text": "The algorithm will work against any block encryption cipher and does not depend on any particular property of DES.",
+    "options": ["counter mode attack", "meet-in-the-middle attack", "ciphertext stealing", "cipher block chaining"],
+    "correct_answer": "meet-in-the-middle attack"
+  },
+  {
+    "question_number": 46,
+    "question_text": "can occur when a company's wireless LAN or wireless access points to wired LANs in close proximity and may create overlapping transmission ranges. A user intending to connect to one LAN may unintentionally lock on to a wireless access point from a neighboring network.",
+    "options": [
+      "Denial of service attacks",
+      "Network injection",
+      "Man-in-the-middle attacks",
+      "Accidental association"
+    ],
+    "correct_answer": "Accidental association"
+  },
+  {
+    "question_number": 47,
+    "question_text": "Two theorems that play important roles in public-key cryptography are Fermat's theorem and Euler's theorem.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 48,
+    "question_text": "A major characteristic of a good security program is how quickly the IoT system can be recovered after an incident has occurred.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 49,
+    "question_text": "Joseph Mauborgne proposed an improvement to the Vernam cipher that uses a random key that is as long as the message so that the key does not need to be repeated. The key is used to encrypt and decrypt a single message and then is discarded. Each new message requires a new key of the same length as the new message. This scheme is known as a",
+    "options": ["polyipher", "enigma", "pascaline", "one-time pad"],
+    "correct_answer": "one-time pad"
+  },
+  {
+    "question_number": 50,
+    "question_text": "What does IoT stand for?",
+    "options": ["Internet of Things", "Internet of Technology", "Internet of Trust", "Internet of Transactions"],
+    "correct_answer": "Internet of Things"
+  },
+  {
+    "question_number": 51,
+    "question_text": "What must systems keep to permit forensic analysis?",
+    "options": [
+      "Only network logs",
+      "Records of their activities",
+      "Only user passwords",
+      "Only encryption keys"
+    ],
+    "correct_answer": "Records of their activities"
+  },
+  {
+    "question_number": 52,
+    "question_text": "The encryption structure for OCB is similar to that of ECB.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 53,
+    "question_text": "Authentication applied to the entire original IP packet is",
+    "options": ["cipher mode", "transport mode", "security mode", "tunnel mode"],
+    "correct_answer": "cipher mode"
+  },
+  {
+    "question_number": 54,
+    "question_text": "What is a reversible cryptographic mechanism?",
+    "options": [
+      "A digital signature",
+      "A hash algorithm",
+      "An encryption algorithm that allows encryption and decryption",
+      "A message authentication code"
+    ],
+    "correct_answer": "An encryption algorithm that allows encryption and decryption"
+  },
+  {
+    "question_number": 55,
+    "question_text": "The XTS-AES mode is based on the concept of a tweakable block cipher.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 56,
+    "question_text": "is techniques to ensure that the overall system is made aware of unwanted physical access.",
+    "options": ["Tamper detection", "Tamper integration", "Tamper resistant", "Tampering"],
+    "correct_answer": "Tamper detection"
+  },
+  {
+    "question_number": 57,
+    "question_text": "The principal feature of IPsec is that it can encrypt and/or authenticate all traffic at the IP level.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 58,
+    "question_text": "The algorithm credited to Euclid for easily finding the greatest common divisor of two integers has broad significance in cryptography.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 59,
+    "question_text": "What is Cybersecurity Classified Protection?",
+    "options": [
+      "A network protocol",
+      "A security standard from ISO",
+      "A system that protects information and information carriers according to their importance levels",
+      "A type of encryption"
+    ],
+    "correct_answer": "A system that protects information and information carriers according to their importance levels"
+  },
+  {
+    "question_number": 60,
+    "question_text": "What does the destruction of data fall under?",
+    "options": [
+      "Availability service",
+      "Authentication service",
+      "Connection-oriented integrity service",
+      "Confidentiality service"
+    ],
+    "correct_answer": "Connection-oriented integrity service"
+  },
+  {
+    "question_number": 61,
+    "question_text": "What is the role of the consulting organization in the Cybersecurity Classified Protection working process?",
+    "options": [
+      "They assist the operation unit in various steps including preparing grading reports, archiving materials, building security technology systems, and participating in assessments",
+      "They perform the level assessment",
+      "They only perform inspections",
+      "They only provide security products"
+    ],
+    "correct_answer": "They assist the operation unit in various steps including preparing grading reports, archiving materials, building security technology systems, and participating in assessments"
+  },
+  {
+    "question_number": 62,
+    "question_text": "What does data integrity assure?",
+    "options": [
+      "That data and programs are changed only in a specified and authorized manner",
+      "That data is always available",
+      "That data is never encrypted",
+      "That data access is always logged"
+    ],
+    "correct_answer": "That data and programs are changed only in a specified and authorized manner"
+  },
+  {
+    "question_number": 63,
+    "question_text": "What is Breach and Attack Simulation (BAS)?",
+    "options": [
+      "A security protocol",
+      "A type of attack",
+      "A type of firewall",
+      "A new market emerging to help enterprises validate their security situation and improve their security protection capabilities"
+    ],
+    "correct_answer": "A new market emerging to help enterprises validate their security situation and improve their security protection capabilities"
+  },
+  {
+    "question_number": 64,
+    "question_text": "In the AH format, which field is used for replay protection?",
+    "options": ["Sequence Header", "Next Header", "Payload Data", "Security Parameters Index"],
+    "correct_answer": "Sequence Header"
+  },
+  {
+    "question_number": 65,
+    "question_text": "What is the relationship between technical requirements and management requirements in Cybersecurity Classified Protection 2.0?",
+    "options": [
+      "Both general and extended security requirements are classified into technical requirements and management requirements",
+      "Technical requirements are only for Level 5",
+      "Management requirements are only for Level 1",
+      "Technical requirements replace management requirements"
+    ],
+    "correct_answer": "Both general and extended security requirements are classified into technical requirements and management requirements"
+  },
+  {
+    "question_number": 66,
+    "question_text": "Each user must share a unique key with the key distribution center for purposes of key distribution.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 67,
+    "question_text": "What does the \"Do\" phase of PDCA in ISMS involve?",
+    "options": [
+      "Establishing the ISMS",
+      "Implementing and operating the ISMS",
+      "Maintaining and improving the ISMS",
+      "Monitoring and reviewing the ISMS"
+    ],
+    "correct_answer": "Implementing and operating the ISMS"
+  },
+  {
+    "question_number": 68,
+    "question_text": "What is accountability?",
+    "options": [
+      "The security goal that generates the requirement for actions of an entity to be traced uniquely to that entity",
+      "The authentication of all users",
+      "The ability to encrypt communications",
+      "The prevention of unauthorized access"
+    ],
+    "correct_answer": "The security goal that generates the requirement for actions of an entity to be traced uniquely to that entity"
+  },
+  {
+    "question_number": 69,
+    "question_text": "What does communications security protect?",
+    "options": [
+      "Only stored data",
+      "Only devices",
+      "Only users",
+      "Data during transmission"
+    ],
+    "correct_answer": "Data during transmission"
+  },
+  {
+    "question_number": 70,
+    "question_text": "MAC spoofing occurs when an attacker is able to eavesdrop on network traffic and identify the MAC address of a computer with network privileges.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 71,
+    "question_text": "The security of Blum, Blum, Shub is based on the difficulty of factoring n.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 72,
+    "question_text": "What are the two aspects of authentication in an ongoing interaction?",
+    "options": [
+      "Connection initiation authentication and connection interference prevention",
+      "Availability and integrity",
+      "Encryption and decryption",
+      "Confidentiality and privacy"
+    ],
+    "correct_answer": "Connection initiation authentication and connection interference prevention"
+  },
+  {
+    "question_number": 73,
+    "question_text": "What is the specific purpose of ISO/IEC 27006?",
+    "options": [
+      "Implementation guidelines",
+      "Risk management guidelines",
+      "Requirements for bodies providing audit and certification of information security management systems",
+      "Best practices"
+    ],
+    "correct_answer": "Requirements for bodies providing audit and certification of information security management systems"
+  },
+  {
+    "question_number": 74,
+    "question_text": "If an information system attack causes grave harm to social order, what is the minimum protection level required?",
+    "options": ["Level 3", "Level 2", "Level 4", "Level 1"],
+    "correct_answer": "Level 3"
+  },
+  {
+    "question_number": 75,
+    "question_text": "What is the role of the operation unit in the Cybersecurity Classified Protection working process?",
+    "options": [
+      "They only provide security products",
+      "They only perform assessments",
+      "They only provide consulting services",
+      "They determine the level and prepare the report, prepare materials for archiving, build technology and management systems, accept assessment, and accept regular inspection"
+    ],
+    "correct_answer": "They determine the level and prepare the report, prepare materials for archiving, build technology and management systems, accept assessment, and accept regular inspection"
+  },
+  {
+    "question_number": 76,
+    "question_text": "The means by which IP traffic is related to specific SAs is the",
+    "options": ["SAD", "SPD", "TRS", "SPI"],
+    "correct_answer": "SPD"
+  },
+  {
+    "question_number": 77,
+    "question_text": "Much of the theory of public-key cryptosystems is based on number theory.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 78,
+    "question_text": "To achieve access control, what must happen first?",
+    "options": [
+      "Data must be logged",
+      "Each entity trying to gain access must first be identified, or authenticated",
+      "Data must be encrypted",
+      "Data must be available"
+    ],
+    "correct_answer": "Each entity trying to gain access must first be identified, or authenticated"
+  },
+  {
+    "question_number": 79,
+    "question_text": "What does information security also concern itself with?",
+    "options": [
+      "Only electronic information",
+      "Physical information such as paper-based information",
+      "Only digital information",
+      "Only network information"
+    ],
+    "correct_answer": "Physical information such as paper-based information"
+  },
+  {
+    "question_number": 80,
+    "question_text": "A stateful packet inspection firewall reviews the same packet information as a packet filtering firewall, but also records information about TCP connections.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 81,
+    "question_text": "The one-time pad has unlimited utility and is useful primarily for high-bandwidth channels requiring low security.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 82,
+    "question_text": "What does the \"Check\" phase of PDCA in ISMS involve?",
+    "options": [
+      "Maintaining and improving the ISMS",
+      "Establishing the ISMS",
+      "Implementing and operating the ISMS",
+      "Monitoring and reviewing the ISMS"
+    ],
+    "correct_answer": "Monitoring and reviewing the ISMS"
+  },
+  {
+    "question_number": 83,
+    "question_text": "Microcontrollers are heavily utilized in automation processes.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 84,
+    "question_text": "What is vulnerability scanning used for?",
+    "options": [
+      "Only for encryption",
+      "Attack simulation and security audit",
+      "Only for attacking systems",
+      "Only for backup"
+    ],
+    "correct_answer": "Attack simulation and security audit"
+  },
+  {
+    "question_number": 85,
+    "question_text": "The more random the timing of the observation, the more difficult the identification of the precise relationship between power consumption and data.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 86,
+    "question_text": "What is an example of the broadest confidentiality service?",
+    "options": [
+      "A TCP connection between two systems",
+      "A single field in a message",
+      "A single packet",
+      "A single email message"
+    ],
+    "correct_answer": "A TCP connection between two systems"
+  },
+  {
+    "question_number": 87,
+    "question_text": "The pairwise master key is derived from the group key.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 88,
+    "question_text": "In virtually all distributed environments, electronic mail is the most heavily used network-based application.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 89,
+    "question_text": "AES uses a Feistel structure.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 90,
+    "question_text": "The longer the keyword the more difficult the cryptanalysis.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 91,
+    "question_text": "RFID devices require cryptographic algorithms that use a large amount of logic and memory.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 92,
+    "question_text": "What was BS 7799-1 when it was first released in 1995?",
+    "options": [
+      "Regulations on Information Security Management Practices",
+      "Implementation Guidelines for Information Security Management Systems",
+      "Code of Practice for Information Security Management",
+      "Information Security Management System Specifications"
+    ],
+    "correct_answer": "Implementation Guidelines for Information Security Management Systems"
+  },
+  {
+    "question_number": 93,
+    "question_text": "In the approach only the sender knows the private key so only the sender could have produced a valid signature.",
+    "options": ["DSS", "RSA", "DSA", "EDS"],
+    "correct_answer": "RSA"
+  },
+  {
+    "question_number": 94,
+    "question_text": "You should allow only specific computers to access your wireless network.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 95,
+    "question_text": "What is the narrowest form of data confidentiality service?",
+    "options": [
+      "Protection of a single message",
+      "Protection of all messages",
+      "Protection of all user data over time",
+      "Protection of specific fields within a message"
+    ],
+    "correct_answer": "Protection of specific fields within a message"
+  },
+  {
+    "question_number": 96,
+    "question_text": "A number of public-key ciphers are based on the use of an abelian group.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 97,
+    "question_text": "The is the information that is delivered as a unit between MAC users.",
+    "options": ["MSDU", "MPDU", "DS", "BSS"],
+    "correct_answer": "MSDU"
+  },
+  {
+    "question_number": 98,
+    "question_text": "What is an example of peer entities?",
+    "options": [
+      "A user and a system",
+      "Two TCP modules in two communicating systems",
+      "A sender and a receiver",
+      "A client and a server"
+    ],
+    "correct_answer": "Two TCP modules in two communicating systems"
+  },
+  {
+    "question_number": 99,
+    "question_text": "What is a key consideration when placing security mechanisms?",
+    "options": [
+      "No placement considerations",
+      "Both physical placement and logical placement in architecture layers",
+      "Only logical placement",
+      "Only physical placement"
+    ],
+    "correct_answer": "Both physical placement and logical placement in architecture layers"
+  },
+  {
+    "question_number": 100,
+    "question_text": "According to FIPS 199, what is a loss of integrity?",
+    "options": [
+      "The unauthorized disclosure of information",
+      "The unauthorized modification or destruction of information",
+      "The failure to authenticate users",
+      "The disruption of access to information"
+    ],
+    "correct_answer": "The unauthorized modification or destruction of information"
+  }
+]

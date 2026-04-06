@@ -1,0 +1,1052 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "What is the relationship between integrity and authenticity?",
+    "options": [
+      "They are unrelated",
+      "Data integrity encompasses data authenticity",
+      "Authenticity encompasses integrity",
+      "They are identical"
+    ],
+    "correct_answer": "Data integrity encompasses data authenticity"
+  },
+  {
+    "question_number": 2,
+    "question_text": "Where is HiSec Insight typically deployed in an enterprise network according to the slides?",
+    "options": [
+      "Only at network boundaries",
+      "Only in the office network",
+      "Only in the server area",
+      "In both office network and server area, with flow probes collecting data and collectors analyzing it"
+    ],
+    "correct_answer": "In both office network and server area, with flow probes collecting data and collectors analyzing it"
+  },
+  {
+    "question_number": 3,
+    "question_text": "Triple DES makes use of ______ stages of the DES algorithm, using a total of two or three distinct keys.",
+    "options": [
+      "six",
+      "three",
+      "twelve",
+      "nine"
+    ],
+    "correct_answer": "three"
+  },
+  {
+    "question_number": 4,
+    "question_text": "The master session key is also known as the ______ key.",
+    "options": [
+      "GTK",
+      "AAAK",
+      "MIC",
+      "STA"
+    ],
+    "correct_answer": "AAAK"
+  },
+  {
+    "question_number": 5,
+    "question_text": "According to FIPS 199, what is a loss of availability?",
+    "options": [
+      "The unauthorized disclosure of information",
+      "The failure to encrypt data",
+      "The disruption of access to or use of information or an information system",
+      "The unauthorized modification of information"
+    ],
+    "correct_answer": "The disruption of access to or use of information or an information system"
+  },
+  {
+    "question_number": 6,
+    "question_text": "In the ISO 27001 project implementation methodology, what specific activities occur during project initiation and gap analysis?",
+    "options": [
+      "Only operating the system",
+      "Only certification",
+      "Hold project kick-off meeting, assess current situation of information security management, design information security policies, train on asset collection and risk assessment methods",
+      "Only auditing"
+    ],
+    "correct_answer": "Hold project kick-off meeting, assess current situation of information security management, design information security policies, train on asset collection and risk assessment methods"
+  },
+  {
+    "question_number": 7,
+    "question_text": "______ and links, such as personal network Bluetooth devices, barcode readers, and handheld PDAs, pose a security risk in terms of both eavesdropping and spoofing.",
+    "options": [
+      "DoS",
+      "Ad hoc networks",
+      "Nontraditional networks",
+      "Accidental association"
+    ],
+    "correct_answer": "Nontraditional networks"
+  },
+  {
+    "question_number": 8,
+    "question_text": "The bulk of the MIME specification is concerned with the definition of a variety of content types.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 9,
+    "question_text": "In the ISO 27001 project implementation methodology, what specific activities occur during system operation and monitoring?",
+    "options": [
+      "Only certification",
+      "Only planning",
+      "Only risk assessment",
+      "Operate and monitor the system, train on business continuity management"
+    ],
+    "correct_answer": "Operate and monitor the system, train on business continuity management"
+  },
+  {
+    "question_number": 10,
+    "question_text": "______ assign attributes to users, such as roles, access permissions, and employee information.",
+    "options": [
+      "Administrators",
+      "Principals",
+      "Identity managers",
+      "Identity providers"
+    ],
+    "correct_answer": "Administrators"
+  },
+  {
+    "question_number": 11,
+    "question_text": "What must be decided about security mechanisms?",
+    "options": [
+      "Both physical placement and logical placement in architecture layers",
+      "That they are not needed",
+      "Only where to use them physically",
+      "Only where to use them logically"
+    ],
+    "correct_answer": "Both physical placement and logical placement in architecture layers"
+  },
+  {
+    "question_number": 12,
+    "question_text": "The authenticator that is used as a possession factor is a",
+    "options": [
+      "token",
+      "PIN",
+      "fingerprint",
+      "secret question answer"
+    ],
+    "correct_answer": "token"
+  },
+  {
+    "question_number": 13,
+    "question_text": "Video content will be identified as ______ format.",
+    "options": [
+      "BMP",
+      "MPEG",
+      "JPEG",
+      "GIF"
+    ],
+    "correct_answer": "MPEG"
+  },
+  {
+    "question_number": 14,
+    "question_text": "Phase 3 completes the setting up of a secure connection of the Handshake Protocol.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 15,
+    "question_text": "What does GB/T 25058-2019 specify?",
+    "options": [
+      "Implementation guideline",
+      "Basic requirements",
+      "Design requirements",
+      "Assessment requirements"
+    ],
+    "correct_answer": "Implementation guideline"
+  },
+  {
+    "question_number": 16,
+    "question_text": "______ indicates a restriction imposed as to the purposes for which, and the policies under which, the certified public key may be used.",
+    "options": [
+      "Authority key identifier",
+      "Certificate policies",
+      "Subject key identifier",
+      "Key usage"
+    ],
+    "correct_answer": "Key usage"
+  },
+  {
+    "question_number": 17,
+    "question_text": "What is vulnerability scanning used for?",
+    "options": [
+      "Only for backup",
+      "Only for encryption",
+      "Only for attacking systems",
+      "Attack simulation and security audit"
+    ],
+    "correct_answer": "Attack simulation and security audit"
+  },
+  {
+    "question_number": 18,
+    "question_text": "A considerably larger key size can be used for ECC compared to RSA.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 19,
+    "question_text": "If an information system attack causes minor harm to national security, what is the minimum protection level required?",
+    "options": [
+      "Level 3",
+      "Level 2",
+      "Level 4",
+      "Level 1"
+    ],
+    "correct_answer": "Level 3"
+  },
+  {
+    "question_number": 20,
+    "question_text": "What does nonrepudiation prevent for the receiver?",
+    "options": [
+      "Receiving the message",
+      "Sending the message",
+      "Modifying the message",
+      "Denying having received the message"
+    ],
+    "correct_answer": "Denying having received the message"
+  },
+  {
+    "question_number": 21,
+    "question_text": "What is an authentication exchange?",
+    "options": [
+      "A type of encryption",
+      "A network protocol",
+      "A mechanism to ensure identity by means of information exchange",
+      "A type of hash function"
+    ],
+    "correct_answer": "A mechanism to ensure identity by means of information exchange"
+  },
+  {
+    "question_number": 22,
+    "question_text": "An ideal hash algorithm will require a cryptanalytic effort ______ the brute-force effort.",
+    "options": [
+      "less than or equal to",
+      "less than",
+      "greater than or equal to",
+      "greater than"
+    ],
+    "correct_answer": "less than"
+  },
+  {
+    "question_number": 23,
+    "question_text": "The X.509 standard is an important standard because the certificate structure and authentication protocols defined in X.509 are used in a variety of contexts.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 24,
+    "question_text": "What are the three categories of cryptographic algorithms mentioned?",
+    "options": [
+      "Fast, slow, medium",
+      "Public, private, shared",
+      "Simple, complex, very complex",
+      "Keyless, single-key, two-key"
+    ],
+    "correct_answer": "Keyless, single-key, two-key"
+  },
+  {
+    "question_number": 25,
+    "question_text": "As with Playfair, the strength of the Hill cipher is that it completely hides single letter frequencies.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 26,
+    "question_text": "A major advance in symmetric cryptography occurred with the development of the rotor encryption/decryption machine.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 27,
+    "question_text": "A ______ is a set of elements in which we can do addition, subtraction, multiplication, and division without leaving the set.",
+    "options": [
+      "ring",
+      "field",
+      "modulus",
+      "group"
+    ],
+    "correct_answer": "field"
+  },
+  {
+    "question_number": 28,
+    "question_text": "What is the typical process of a ransomware attack?",
+    "options": [
+      "Extortion only",
+      "Intrusion only",
+      "Intrusion, diffusion, theft, and extortion",
+      "Theft only"
+    ],
+    "correct_answer": "Intrusion, diffusion, theft, and extortion"
+  },
+  {
+    "question_number": 29,
+    "question_text": "SHA-1 produces a hash value of ______ bits.",
+    "options": [
+      "256",
+      "224",
+      "384",
+      "160"
+    ],
+    "correct_answer": "160"
+  },
+  {
+    "question_number": 30,
+    "question_text": "What do narrower forms of data confidentiality service protect?",
+    "options": [
+      "Only headers",
+      "A single message or specific fields within a message",
+      "Only footers",
+      "All data over time"
+    ],
+    "correct_answer": "A single message or specific fields within a message"
+  },
+  {
+    "question_number": 31,
+    "question_text": "The ______ algorithm will work against any block encryption cipher and does not depend on any particular property of DES.",
+    "options": [
+      "meet-in-the-middle attack",
+      "cipher block chaining",
+      "counter mode attack",
+      "ciphertext stealing"
+    ],
+    "correct_answer": "meet-in-the-middle attack"
+  },
+  {
+    "question_number": 32,
+    "question_text": "In the case of a single message, what does the authentication service assure?",
+    "options": [
+      "That the message is not modified",
+      "That the message is encrypted",
+      "That the message is from the source that it claims to be from",
+      "That the message is available"
+    ],
+    "correct_answer": "That the message is from the source that it claims to be from"
+  },
+  {
+    "question_number": 33,
+    "question_text": "The XTS-AES standard describes a method of decryption for data stored in sector-based devices where the threat model includes possible access to stored data by the adversary.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 34,
+    "question_text": "Message authentication is a mechanism or service used to verify the integrity of a message.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 35,
+    "question_text": "Mister and Adams proposed that all linear combinations of S-box columns should be ______ which are a special class of Boolean functions that are highly nonlinear according to certain mathematical criteria.",
+    "options": [
+      "horizontal functions",
+      "vertical functions",
+      "angular functions",
+      "bent functions"
+    ],
+    "correct_answer": "bent functions"
+  },
+  {
+    "question_number": 36,
+    "question_text": "What does data authenticity mean?",
+    "options": [
+      "That data is always encrypted",
+      "That data is always available",
+      "That data access is logged",
+      "That a digital object is indeed what it claims to be or what it is claimed to be"
+    ],
+    "correct_answer": "That a digital object is indeed what it claims to be or what it is claimed to be"
+  },
+  {
+    "question_number": 37,
+    "question_text": "Three new versions of SHA with hash value lengths of 256, 384, and 512 bits are collectively known as",
+    "options": [
+      "SHA-3",
+      "SHA-2",
+      "SHA-0",
+      "SHA-1"
+    ],
+    "correct_answer": "SHA-2"
+  },
+  {
+    "question_number": 38,
+    "question_text": "In a replay attack, what does the attacker do?",
+    "options": [
+      "Encrypts data",
+      "Does not disturb the information flow but captures messages for later replay",
+      "Deletes data",
+      "Modifies data"
+    ],
+    "correct_answer": "Does not disturb the information flow but captures messages for later replay"
+  },
+  {
+    "question_number": 39,
+    "question_text": "The ______ subtype is used when there are multiple independent body parts that need to be bundled in a particular order.",
+    "options": [
+      "multipart/digest",
+      "multipart/mixed",
+      "multipart/alternative",
+      "multipart/parallel"
+    ],
+    "correct_answer": "multipart/mixed"
+  },
+  {
+    "question_number": 40,
+    "question_text": "A ______ is a person or organization that maintains a business relationship with, and uses service from, cloud providers.",
+    "options": [
+      "CSC",
+      "CSP",
+      "cloud auditor",
+      "cloud broker"
+    ],
+    "correct_answer": "CSC"
+  },
+  {
+    "question_number": 41,
+    "question_text": "What is the relationship between data and information in security literature?",
+    "options": [
+      "They are never related",
+      "Security literature typically does not make much of a distinction",
+      "One always supersedes the other",
+      "They are always distinguished"
+    ],
+    "correct_answer": "Security literature typically does not make much of a distinction"
+  },
+  {
+    "question_number": 42,
+    "question_text": "______ determines the direction in which particular service requests may be initiated and allowed to flow through the firewall.",
+    "options": [
+      "User control",
+      "Direction control",
+      "Behavior control",
+      "Service control"
+    ],
+    "correct_answer": "Direction control"
+  },
+  {
+    "question_number": 43,
+    "question_text": "The MAC function is a ______ function.",
+    "options": [
+      "one-to-two",
+      "many-to-one",
+      "one-to-many",
+      "one-to-one"
+    ],
+    "correct_answer": "many-to-one"
+  },
+  {
+    "question_number": 44,
+    "question_text": "In the information breach case study, how long did it take for the company to protect the database after being informed?",
+    "options": [
+      "One week",
+      "One day",
+      "One month",
+      "Three days"
+    ],
+    "correct_answer": "Three days"
+  },
+  {
+    "question_number": 45,
+    "question_text": "Prime numbers play a ______ role in number theory.",
+    "options": [
+      "minor",
+      "abbreviated",
+      "nonessential",
+      "critical"
+    ],
+    "correct_answer": "critical"
+  },
+  {
+    "question_number": 46,
+    "question_text": "The rules for ordinary arithmetic involving addition, subtraction, and multiplication carry over into modular arithmetic.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 47,
+    "question_text": "What does nonrepudiation prevent for the sender?",
+    "options": [
+      "Sending the message",
+      "Modifying the message",
+      "Receiving the message",
+      "Denying having sent the message"
+    ],
+    "correct_answer": "Denying having sent the message"
+  },
+  {
+    "question_number": 48,
+    "question_text": "The Blum, Blum, Shub generator is referred to as a",
+    "options": [
+      "QRN",
+      "CSPRBG",
+      "TRNG",
+      "OFB PRNG"
+    ],
+    "correct_answer": "CSPRBG"
+  },
+  {
+    "question_number": 49,
+    "question_text": "What does IoT stand for?",
+    "options": [
+      "Internet of Transactions",
+      "Internet of Trust",
+      "Internet of Things",
+      "Internet of Technology"
+    ],
+    "correct_answer": "Internet of Things"
+  },
+  {
+    "question_number": 50,
+    "question_text": "The function of the ______ is to on transmission assemble data into a frame, on reception disassemble frame and perform address recognition and error detection, and govern access to the LAN transmission medium.",
+    "options": [
+      "transmission layer",
+      "logical layer",
+      "physical layer",
+      "media access control layer"
+    ],
+    "correct_answer": "media access control layer"
+  },
+  {
+    "question_number": 51,
+    "question_text": "RFID ______ are small programmable devices used for object, animal, and human tracking.",
+    "options": [
+      "actuators",
+      "tags",
+      "transceivers",
+      "readers"
+    ],
+    "correct_answer": "tags"
+  },
+  {
+    "question_number": 52,
+    "question_text": "You should allow only specific computers to access your wireless network.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 53,
+    "question_text": "______ is a device with limited volatile and nonvolatile memory, limited processing power, and a low data rate transceiver.",
+    "options": [
+      "microprocessor",
+      "class 3 device",
+      "constrained device",
+      "IoT"
+    ],
+    "correct_answer": "constrained device"
+  },
+  {
+    "question_number": 54,
+    "question_text": "What is the primary purpose of ISO/IEC 27007?",
+    "options": [
+      "Audit guideline",
+      "Certification procedures",
+      "Requirements and standards for ISMS",
+      "Best practice rules"
+    ],
+    "correct_answer": "Audit guideline"
+  },
+  {
+    "question_number": 55,
+    "question_text": "What is the specific purpose of ISO/IEC 27008?",
+    "options": [
+      "Guidelines for auditors on information security controls",
+      "Implementation guidelines",
+      "Certification requirements",
+      "Risk management guidelines"
+    ],
+    "correct_answer": "Guidelines for auditors on information security controls"
+  },
+  {
+    "question_number": 56,
+    "question_text": "SSL/TLS attacks can be grouped into four general categories: attacks on the handshake protocol, attacks on the record and application data protocols, attacks on the PKI, and other attacks.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 57,
+    "question_text": "Virtually all cryptographic hash functions involve the iterative use of a compression function.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 58,
+    "question_text": "What does peer entity authentication provide confidence against?",
+    "options": [
+      "Masquerade or unauthorized replay of a previous connection",
+      "Only denial of service",
+      "Only passive attacks",
+      "Only data modification"
+    ],
+    "correct_answer": "Masquerade or unauthorized replay of a previous connection"
+  },
+  {
+    "question_number": 59,
+    "question_text": "The ______ facility enables communicating nodes to encrypt messages to prevent eavesdropping by third parties.",
+    "options": [
+      "security",
+      "key management",
+      "authentication",
+      "confidentiality"
+    ],
+    "correct_answer": "security"
+  },
+  {
+    "question_number": 60,
+    "question_text": "Limited characteristics make it impossible for hash functions to be used to determine whether or not data has changed.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 61,
+    "question_text": "Examples of dynamic biometrics include recognition by fingerprint, retina, and face.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 62,
+    "question_text": "What are information security standards?",
+    "options": [
+      "Only technical specifications",
+      "Normative documents that are formulated based on consensus, approved by recognized authorities, and used throughout the industry to achieve the best security",
+      "Only management guidelines",
+      "Only legal requirements"
+    ],
+    "correct_answer": "Normative documents that are formulated based on consensus, approved by recognized authorities, and used throughout the industry to achieve the best security"
+  },
+  {
+    "question_number": 63,
+    "question_text": "One criterion for an S-box is: 'If two inputs to an S-box differ in exactly one bit, the outputs must also differ in exactly one bit.'",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 64,
+    "question_text": "What type of organization was attacked in the ransomware case study mentioned in the slides?",
+    "options": [
+      "A financial institution",
+      "A refined oil pipeline operator",
+      "A government agency",
+      "An educational institution"
+    ],
+    "correct_answer": "A refined oil pipeline operator"
+  },
+  {
+    "question_number": 65,
+    "question_text": "'Each block of plaintext is XORed with an encrypted counter. The counter is incremented for each subsequent block', is a description of ______ mode.",
+    "options": [
+      "Cipher Block Chaining",
+      "Counter",
+      "Electronic Codebook",
+      "Cipher Feedback"
+    ],
+    "correct_answer": "Counter"
+  },
+  {
+    "question_number": 66,
+    "question_text": "What are irreversible cryptographic mechanisms used in?",
+    "options": [
+      "Digital signature and message authentication applications",
+      "Only key exchange",
+      "Only encryption",
+      "Only decryption"
+    ],
+    "correct_answer": "Digital signature and message authentication applications"
+  },
+  {
+    "question_number": 67,
+    "question_text": "The ______ attack is when the attacker is looking for two messages M and M1 that produce the same hash: H(M) = H(M1)",
+    "options": [
+      "MAC",
+      "birthday",
+      "hash",
+      "chaining"
+    ],
+    "correct_answer": "birthday"
+  },
+  {
+    "question_number": 68,
+    "question_text": "What is the role of ITU, IETF, and NIST in information security standards?",
+    "options": [
+      "They replace ISO and IEC",
+      "They only work with TC260",
+      "They are the only standards organizations",
+      "They are other standards organizations in addition to ISO, IEC, TC260, and CCSA"
+    ],
+    "correct_answer": "They are other standards organizations in addition to ISO, IEC, TC260, and CCSA"
+  },
+  {
+    "question_number": 69,
+    "question_text": "What do privacy-enhancing computation techniques enable?",
+    "options": [
+      "Secure data processing, sharing, cross-border transfers, and analytics, even in untrusted environments",
+      "Only data backup",
+      "Only data encryption",
+      "Only data storage"
+    ],
+    "correct_answer": "Secure data processing, sharing, cross-border transfers, and analytics, even in untrusted environments"
+  },
+  {
+    "question_number": 70,
+    "question_text": "______ are measures of the number of potential collisions for a given hash value.",
+    "options": [
+      "Hash codes",
+      "Preimages",
+      "Primitives",
+      "MACs"
+    ],
+    "correct_answer": "Preimages"
+  },
+  {
+    "question_number": 71,
+    "question_text": "Multiple internal firewalls can be used to protect portions of the internal network from each other.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 72,
+    "question_text": "What has Cybersecurity Classified Protection become in China?",
+    "options": [
+      "Only a recommendation",
+      "An optional guideline",
+      "Only for government agencies",
+      "The basic national policy, basic system, and basic method in the field of network security, and a 'must-pass benchmark' for security construction"
+    ],
+    "correct_answer": "The basic national policy, basic system, and basic method in the field of network security, and a 'must-pass benchmark' for security construction"
+  },
+  {
+    "question_number": 73,
+    "question_text": "Integrity-related email security threats could result in unauthorized disclosure of sensitive information.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 74,
+    "question_text": "______ comprise measures and mechanisms to ensure operational resiliency in the event of any service interruptions.",
+    "options": [
+      "Business continuity and disaster recovery",
+      "Security information and event management",
+      "Intrusion management",
+      "Data loss prevention"
+    ],
+    "correct_answer": "Business continuity and disaster recovery"
+  },
+  {
+    "question_number": 75,
+    "question_text": "ISO 29192 defines a minimum security strength for lightweight cryptography of ______ bits.",
+    "options": [
+      "80",
+      "112",
+      "64",
+      "128"
+    ],
+    "correct_answer": "80"
+  },
+  {
+    "question_number": 76,
+    "question_text": "The IoT is primarily driven by deeply embedded devices.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 77,
+    "question_text": "A public-key encryption scheme has ______ ingredients.",
+    "options": [
+      "six",
+      "eight",
+      "two",
+      "four"
+    ],
+    "correct_answer": "six"
+  },
+  {
+    "question_number": 78,
+    "question_text": "RFC 5322 defines a format for text messages that are sent using electronic mail.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 79,
+    "question_text": "How many levels are objects classified into for cybersecurity protection?",
+    "options": [
+      "Three levels",
+      "Seven levels",
+      "Ten levels",
+      "Five levels"
+    ],
+    "correct_answer": "Five levels"
+  },
+  {
+    "question_number": 80,
+    "question_text": "What is required to prevent or recover from loss of availability of elements of a distributed system?",
+    "options": [
+      "Some sort of physical action may be required",
+      "Only encryption",
+      "Only automated countermeasures",
+      "Only authentication"
+    ],
+    "correct_answer": "Some sort of physical action may be required"
+  },
+  {
+    "question_number": 81,
+    "question_text": "In the ISO 27001 project implementation methodology, what happens during risk assessment?",
+    "options": [
+      "Only determining risk levels",
+      "Only identifying threats",
+      "Only scanning vulnerabilities",
+      "Identifying threats and vulnerabilities, scanning security vulnerabilities, assessing risks, determining risk levels, determining risk tolerance and risk appetite"
+    ],
+    "correct_answer": "Identifying threats and vulnerabilities, scanning security vulnerabilities, assessing risks, determining risk levels, determining risk tolerance and risk appetite"
+  },
+  {
+    "question_number": 82,
+    "question_text": "From which three aspects was the enterprise information assurance system constructed?",
+    "options": [
+      "Confidentiality, integrity, and availability",
+      "Services, security system, and management",
+      "Prevention, detection, and response",
+      "Hardware, software, and protocols"
+    ],
+    "correct_answer": "Services, security system, and management"
+  },
+  {
+    "question_number": 83,
+    "question_text": "What was the impact of the ransomware attack on the refined oil pipeline operator?",
+    "options": [
+      "Only user accounts were compromised",
+      "Computers managing the pipeline were affected, and some fuel supply systems were forced to go offline",
+      "Only data was stolen",
+      "Only network traffic was disrupted"
+    ],
+    "correct_answer": "Computers managing the pipeline were affected, and some fuel supply systems were forced to go offline"
+  },
+  {
+    "question_number": 84,
+    "question_text": "A CTR-based authenticated encryption approach is the most efficient mode of operation for high-speed packet networks.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 85,
+    "question_text": "A ______ is a group that has a finite number of elements.",
+    "options": [
+      "finite order",
+      "finite field",
+      "finite group",
+      "finite ring"
+    ],
+    "correct_answer": "finite group"
+  },
+  {
+    "question_number": 86,
+    "question_text": "What does traffic padding frustrate?",
+    "options": [
+      "Data modification",
+      "Denial of service",
+      "Traffic analysis attempts",
+      "Authentication"
+    ],
+    "correct_answer": "Traffic analysis attempts"
+  },
+  {
+    "question_number": 87,
+    "question_text": "If the PRF does not generate effectively random 128-bit output values it may be possible for an adversary to narrow the possibilities and successfully use a brute force attack.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 88,
+    "question_text": "An encryption/decryption system requires that point Pm be encrypted as a plaintext.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 89,
+    "question_text": "What is system integrity?",
+    "options": [
+      "The prevention of all system access",
+      "The ability to authenticate users",
+      "The ability to encrypt system data",
+      "Assuring that a system performs its intended function in an unimpaired manner"
+    ],
+    "correct_answer": "Assuring that a system performs its intended function in an unimpaired manner"
+  },
+  {
+    "question_number": 90,
+    "question_text": "What is the most common information security incident on networks?",
+    "options": [
+      "Supply chain attacks",
+      "DDoS attacks",
+      "Information breach",
+      "Ransomware attacks"
+    ],
+    "correct_answer": "Information breach"
+  },
+  {
+    "question_number": 91,
+    "question_text": "In the ISO 27001 project implementation methodology, what comes after risk assessment and before system operation?",
+    "options": [
+      "Risk assessment",
+      "Certification and continuous improvement",
+      "Project initiation and gap analysis",
+      "System design and release"
+    ],
+    "correct_answer": "System design and release"
+  },
+  {
+    "question_number": 92,
+    "question_text": "______ consists of an encapsulating header and trailer used to provide encryption or combined encryption/authentication. The current specification is RFC 4303.",
+    "options": [
+      "SPI",
+      "ISA",
+      "IPsec",
+      "ESP"
+    ],
+    "correct_answer": "IPsec"
+  },
+  {
+    "question_number": 93,
+    "question_text": "A problem with the ideal block cipher using a small block size is that it is vulnerable to a statistical analysis of the plaintext.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 94,
+    "question_text": "The seed that serves as input to the PRNG must be secure for cryptographic applications.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 95,
+    "question_text": "The one-time pad has unlimited utility and is useful primarily for high-bandwidth channels requiring low security.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 96,
+    "question_text": "What are single-key algorithms?",
+    "options": [
+      "Algorithms that use only public keys",
+      "Algorithms that use no keys",
+      "Algorithms that use the same key for encryption and decryption",
+      "Algorithms that use different keys for encryption and decryption"
+    ],
+    "correct_answer": "Algorithms that use the same key for encryption and decryption"
+  },
+  {
+    "question_number": 97,
+    "question_text": "Why must we be able to trace security breaches?",
+    "options": [
+      "Because tracing is not important",
+      "Because all systems are secure",
+      "Because breaches never happen",
+      "Because truly secure systems are not yet an achievable goal"
+    ],
+    "correct_answer": "Because truly secure systems are not yet an achievable goal"
+  },
+  {
+    "question_number": 98,
+    "question_text": "The use of ______ avoids the complexity of software installation, maintenance, upgrades, and patches.",
+    "options": [
+      "IaaS",
+      "SaaS",
+      "AaaS",
+      "CaaS"
+    ],
+    "correct_answer": "SaaS"
+  },
+  {
+    "question_number": 99,
+    "question_text": "How many control domains are in ISO 27002?",
+    "options": [
+      "10",
+      "14",
+      "113",
+      "35"
+    ],
+    "correct_answer": "14"
+  },
+  {
+    "question_number": 100,
+    "question_text": "What are the two specific authentication services defined in X.800?",
+    "options": [
+      "Local authentication and remote authentication",
+      "User authentication and system authentication",
+      "Client authentication and server authentication",
+      "Peer entity authentication and data origin authentication"
+    ],
+    "correct_answer": "Peer entity authentication and data origin authentication"
+  }
+]
