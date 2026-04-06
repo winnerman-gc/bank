@@ -265,48 +265,11 @@
             
             const explanation = document.createElement('div');
             explanation.className = 'explanation';
-            explanation.innerHTML = `<strong>Correct Answer:</strong> ${q.correct_answer}<div class="ai-content"></div>`;
+            explanation.innerHTML = `<strong>Correct Answer:</strong> ${q.correct_answer}`;
             
             card.appendChild(optionsContainer);
             card.appendChild(explanation);
             return card;
-        }
-
-        const API_KEY = "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";
-
-        async function getAIExplanation(question, selected, correct, container) {
-            const aiSlot = container.querySelector('.ai-content');
-            aiSlot.innerHTML = `<div class="ai-loading"><i class="fas fa-robot"></i> AI is generating explanation...</div>`;
-            
-            const prompt = `In the context of Cryptography and Network Security, explain why "${selected}" is incorrect and why "${correct}" is the correct answer for the question: "${question}". Keep the explanation brief (2-3 sentences).`;
-
-            try {
-                const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-                    method: 'POST',
-                    headers: { 
-                        'Content-Type': 'application/json',
-                        'Authorization': `Bearer ${API_KEY}`,
-                        'HTTP-Referer': window.location.href,
-                        'X-Title': 'Security Quiz App'
-                    },
-                    body: JSON.stringify({
-                        model: 'google/gemini-flash-1.5-exp',
-                        messages: [{ role: 'user', content: prompt }]
-                    })
-                });
-                
-                if (!response.ok) {
-                    const errorData = await response.json();
-                    throw new Error(errorData.error?.message || 'OpenRouter request failed');
-                }
-
-                const data = await response.json();
-                const text = data.choices[0].message.content;
-                aiSlot.innerHTML = `<p style="margin-top:10px; border-top:1px solid #e2e8f0; padding-top:10px;">${text}</p>`;
-            } catch (err) {
-                console.error('AI Error:', err);
-                aiSlot.innerHTML = `<p style="color:var(--error-color); font-size:0.8rem;">Failed to load AI explanation: ${err.message}</p>`;
-            }
         }
 
         function handleSelect(btn, selected, correct, parent) {
@@ -318,7 +281,6 @@
 
             const isCorrect = selected.trim() === correct.trim();
             const explanation = parent.parentElement.querySelector('.explanation');
-            const questionText = parent.parentElement.querySelector('.question-text').innerText;
             
             if (isCorrect) {
                 correctCount++;
@@ -332,9 +294,6 @@
                 explanation.style.display = 'block';
                 document.getElementById('stat-wrong').innerText = wrongCount;
                 
-                // Fetch AI Explanation
-                getAIExplanation(questionText, selected, correct, explanation);
-
                 // Show where the correct one was
                 Array.from(parent.children).forEach(b => {
                     if (b.innerText.trim() === correct.trim()) {
