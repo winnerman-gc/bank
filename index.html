@@ -282,11 +282,19 @@
                         contents: [{ parts: [{ text: prompt }] }]
                     })
                 });
+                
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    console.error('Gemini API Error:', errorData);
+                    throw new Error(errorData.error?.message || 'API request failed');
+                }
+
                 const data = await response.json();
                 const text = data.candidates[0].content.parts[0].text;
                 aiSlot.innerHTML = `<p style="margin-top:10px; border-top:1px solid #e2e8f0; padding-top:10px;">${text}</p>`;
             } catch (err) {
-                aiSlot.innerHTML = `<p style="color:var(--error-color); font-size:0.8rem;">Failed to load AI explanation.</p>`;
+                console.error('Fetch Error:', err);
+                aiSlot.innerHTML = `<p style="color:var(--error-color); font-size:0.8rem;">Failed to load AI explanation: ${err.message}</p>`;
             }
         }
 
