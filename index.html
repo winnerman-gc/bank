@@ -33,7 +33,7 @@
         .container {
             max-width: 800px;
             width: 95%;
-            margin-top: 100px;
+            margin-top: 110px;
         }
 
         .header {
@@ -41,7 +41,7 @@
             top: 0;
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(8px);
-            padding: 15px 0;
+            padding: 10px 0;
             z-index: 1000;
             width: 100%;
             text-align: center;
@@ -51,35 +51,43 @@
 
         .header h1 {
             margin: 0;
-            font-size: 1.25rem;
+            font-size: 1.1rem;
             color: var(--primary-color);
+            padding: 0 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .stats {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            align-items: center;
+            gap: 8px;
             font-weight: 600;
-            margin-top: 8px;
-            font-size: 0.9rem;
+            margin-top: 5px;
+            font-size: 0.8rem;
+            flex-wrap: wrap;
+            padding: 0 5px;
         }
 
         .stat-item {
             background: #f8fafc;
-            padding: 2px 10px;
+            padding: 2px 8px;
             border-radius: 6px;
             border: 1px solid #e2e8f0;
+            white-space: nowrap;
         }
 
         .reset-btn {
             background: #ef4444;
             color: white;
             border: none;
-            padding: 2px 10px;
+            padding: 2px 8px;
             border-radius: 6px;
             cursor: pointer;
-            font-size: 0.8rem;
-            margin-left: 10px;
+            font-size: 0.75rem;
+            font-weight: bold;
         }
 
         .question-card {
@@ -287,7 +295,6 @@
             card.innerHTML = `
                 <div class="question-meta">
                     <span>Question ${idx + 1}</span>
-                    <span style="opacity:0.4">${q.original_file || ''}</span>
                 </div>
                 <div class="question-text">${q.question_text}</div>
             `;
