@@ -3,9 +3,11 @@ import hashlib
 import os
 
 def get_question_hash(question):
-    # Normalize question text (lowercase, strip whitespace)
-    text = question.get('question_text', '').strip().lower()
-    return hashlib.sha256(text.encode('utf-8')).hexdigest()
+    # Normalize question text (lowercase, strip whitespace, remove grading artifacts)
+    text = question.get('question_text', '').strip()
+    # Remove common grading artifacts
+    text = text.replace('Mark 1.00 out of 1.00', '').strip()
+    return hashlib.sha256(text.lower().encode('utf-8')).hexdigest()
 
 def compile_questions():
     all_questions = []
@@ -25,6 +27,10 @@ def compile_questions():
             try:
                 questions = json.load(f)
                 for q in questions:
+                    # Clean the question text in the actual object
+                    if 'question_text' in q:
+                        q['question_text'] = q['question_text'].replace('Mark 1.00 out of 1.00', '').strip()
+                    
                     q_hash = get_question_hash(q)
                     if q_hash not in seen_hashes:
                         seen_hashes.add(q_hash)
