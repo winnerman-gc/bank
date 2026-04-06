@@ -1,0 +1,776 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "What does IoT stand for?",
+    "options": [
+      "Internet of Transactions",
+      "Internet of Trust",
+      "Internet of Technology",
+      "Internet of Things"
+    ],
+    "correct_answer": "Internet of Things"
+  },
+  {
+    "question_number": 2,
+    "question_text": "To achieve access control, what must happen first?",
+    "options": [
+      "Each entity trying to gain access must first be identified, or authenticated",
+      "Data must be available",
+      "Data must be encrypted",
+      "Data must be logged"
+    ],
+    "correct_answer": "Each entity trying to gain access must first be identified, or authenticated"
+  },
+  {
+    "question_number": 3,
+    "question_text": "The digital signature function does not include the authentication function.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 4,
+    "question_text": "What makes security requirements seem straightforward?",
+    "options": [
+      "Most major requirements can be given self-explanatory, one-word labels",
+      "They are actually simple",
+      "They are always obvious",
+      "They don't need mechanisms"
+    ],
+    "correct_answer": "Most major requirements can be given self-explanatory, one-word labels"
+  },
+  {
+    "question_number": 5,
+    "question_text": "During which period did controllability and non-repudiation become new information security principles?",
+    "options": [
+      "Cyberspace Security Period (Today)",
+      "Information Security Period (1970s-1980s)",
+      "Information Assurance Period (1990s)",
+      "Communication Security Period (1940s)"
+    ],
+    "correct_answer": "Information Assurance Period (1990s)"
+  },
+  {
+    "question_number": 6,
+    "question_text": "The World Wide Web is fundamentally a client/server application running over the Internet and TCP/IP intranets.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 7,
+    "question_text": "The cryptographic hash function is not a versatile cryptographic algorithm.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 8,
+    "question_text": "Plaintext is transformed into ciphertext using two keys and a decryption algorithm.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 9,
+    "question_text": "Another important mode, XTS-AES, has been standardized by the Security in Storage Working Group.",
+    "options": ["ITIL", "ISO", "IEEE", "NIST"],
+    "correct_answer": "IEEE"
+  },
+  {
+    "question_number": 10,
+    "question_text": "InvSubBytes is the inverse of ShiftRows.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 11,
+    "question_text": "Unlike ordinary addition, there is not an additive inverse to each integer in modular arithmetic.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 12,
+    "question_text": "Authentication applied to all of the packet except for the IP header is",
+    "options": ["association mode", "transport mode", "tunnel mode", "security mode"],
+    "correct_answer": "tunnel mode"
+  },
+  {
+    "question_number": 13,
+    "question_text": "The Chinese Remainder Theorem is believed to have been discovered by the Chinese mathematician Agrawal in 100 A.D.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 14,
+    "question_text": "Chip area is of concern when a cryptographic algorithm is implemented in hardware.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 15,
+    "question_text": "The most widely studied is the ______ family of cryptographic algorithms.",
+    "options": ["lattice-based approach", "multivariate polynomial approach", "code-based approach", "hash-based approach"],
+    "correct_answer": "lattice-based approach"
+  },
+  {
+    "question_number": 16,
+    "question_text": "Multiple internal firewalls can be used to protect portions of the internal network from each other.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 17,
+    "question_text": "What does a digital signature protect against?",
+    "options": ["Only modification", "Forgery", "Only replay", "Only deletion"],
+    "correct_answer": "Forgery"
+  },
+  {
+    "question_number": 18,
+    "question_text": "What did ISO/IEC 17799 become when it was released in 2000?",
+    "options": [
+      "Information Technology - Code of Practice for Information Security Management",
+      "Information Security Management System Specifications",
+      "Information Security Management System Requirements",
+      "Implementation Guidelines for Information Security Management Systems"
+    ],
+    "correct_answer": "Information Technology - Code of Practice for Information Security Management"
+  },
+  {
+    "question_number": 19,
+    "question_text": "An Administrative Management Domain is a directory lookup service that provides a mapping between the name of a host on the Internet and its numerical address.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 20,
+    "question_text": "RFID devices require cryptographic algorithms that use a large amount of logic and memory.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 21,
+    "question_text": "Finite fields are a subset of fields, consisting of those fields with a finite number of elements.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 22,
+    "question_text": "What raises questions about secret information?",
+    "options": [
+      "The use of digital signatures",
+      "The requirement that participants be in possession of secret information",
+      "The use of public keys",
+      "The use of hash functions"
+    ],
+    "correct_answer": "The requirement that participants be in possession of secret information"
+  },
+  {
+    "question_number": 23,
+    "question_text": "What is the zero trust principle?",
+    "options": ["Trust by default", "Always trust, never verify", "Verify only external users", "Never trust, always verify"],
+    "correct_answer": "Never trust, always verify"
+  },
+  {
+    "question_number": 24,
+    "question_text": "What are the two aspects of authentication in an ongoing interaction?",
+    "options": [
+      "Availability and integrity",
+      "Encryption and decryption",
+      "Confidentiality and privacy",
+      "Connection initiation authentication and connection interference prevention"
+    ],
+    "correct_answer": "Connection initiation authentication and connection interference prevention"
+  },
+  {
+    "question_number": 25,
+    "question_text": "The cipher consists of N rounds, where the number of rounds depends on the",
+    "options": ["key length", "number of columns", "output matrix", "State"],
+    "correct_answer": "key length"
+  },
+  {
+    "question_number": 26,
+    "question_text": "The ______ test is the most basic test of randomness and must be included in any test suite.",
+    "options": ["runs", "unpredictability", "Maurer", "frequency"],
+    "correct_answer": "frequency"
+  },
+  {
+    "question_number": 27,
+    "question_text": "What is the key difference between ISO/IEC 27001 and ISO/IEC 27002 in terms of their purpose?",
+    "options": [
+      "ISO 27001 establishes requirements and standards for ISMS, while ISO 27002 provides best practice rules and detailed operations",
+      "They serve the same purpose",
+      "ISO 27001 provides best practices while ISO 27002 provides requirements",
+      "ISO 27001 is optional while ISO 27002 is mandatory"
+    ],
+    "correct_answer": "ISO 27001 establishes requirements and standards for ISMS, while ISO 27002 provides best practice rules and detailed operations"
+  },
+  {
+    "question_number": 28,
+    "question_text": "The final message in phase 2, and one that is always required, is the ______ message, which is sent by the server to indicate the end of the server hello and associated messages.",
+    "options": ["server_done", "no_certificate", "goodbye", "finished"],
+    "correct_answer": "server_done"
+  },
+  {
+    "question_number": 29,
+    "question_text": "What is the significance of the fact that Cybersecurity Classified Protection has gone through four phases of development?",
+    "options": [
+      "It shows the system is unstable",
+      "It demonstrates continuous evolution and improvement of the system over more than 20 years, adapting to new technologies and threats",
+      "It indicates the system is outdated",
+      "It shows the system needs to be replaced"
+    ],
+    "correct_answer": "It demonstrates continuous evolution and improvement of the system over more than 20 years, adapting to new technologies and threats"
+  },
+  {
+    "question_number": 30,
+    "question_text": "What does nonrepudiation provide for the sender?",
+    "options": [
+      "Proof that the message was modified",
+      "Proof that the message was available",
+      "Proof that the alleged receiver received the message",
+      "Proof that the message was encrypted"
+    ],
+    "correct_answer": "Proof that the alleged receiver received the message"
+  },
+  {
+    "question_number": 31,
+    "question_text": "The ______ of a number is defined to be the power to which some positive base (except 1) must be raised in order to equal the number.",
+    "options": ["exponent", "order", "logarithm", "index"],
+    "correct_answer": "logarithm"
+  },
+  {
+    "question_number": 32,
+    "question_text": "The components of DSA are the same as in the Schnorr signature scheme.",
+    "options": ["EDS", "global public key", "message digest", "private key"],
+    "correct_answer": "global public key"
+  },
+  {
+    "question_number": 33,
+    "question_text": "What do standards organizations provide?",
+    "options": [
+      "Only encryption algorithms",
+      "Only attack methods",
+      "Only network protocols",
+      "Common frameworks and specifications for security implementations"
+    ],
+    "correct_answer": "Common frameworks and specifications for security implementations"
+  },
+  {
+    "question_number": 34,
+    "question_text": "______ email security threats could prevent end users from being able to send or receive email.",
+    "options": ["Confidentiality-related", "Availability-related", "Authenticity-related", "Integrity-related"],
+    "correct_answer": "Availability-related"
+  },
+  {
+    "question_number": 35,
+    "question_text": "What can access rights be tailored to?",
+    "options": ["Only systems", "The individual entity", "All users equally", "Only administrators"],
+    "correct_answer": "The individual entity"
+  },
+  {
+    "question_number": 36,
+    "question_text": "Typically housed in the user's computer, a ______ is referred to as a client e-mail program or a local network e-mail server.",
+    "options": ["Mail Submission Agent", "Message User Agent", "Message Transfer Agent", "Message Store"],
+    "correct_answer": "Message User Agent"
+  },
+  {
+    "question_number": 37,
+    "question_text": "In the Cybersecurity Classified Protection grading process, who reviews the preliminary grading result?",
+    "options": [
+      "Only the operation and use unit",
+      "Only the competent department",
+      "Only the public security organ",
+      "Information security experts and business experts organized by the operation and use unit"
+    ],
+    "correct_answer": "Information security experts and business experts organized by the operation and use unit"
+  },
+  {
+    "question_number": 38,
+    "question_text": "A ______ is a one way relationship between a sender and a receiver that affords security services to the traffic carried on it.",
+    "options": ["SPD", "SPI", "SAD", "SA"],
+    "correct_answer": "SA"
+  },
+  {
+    "question_number": 39,
+    "question_text": "What is the purpose of data integrity mechanisms?",
+    "options": [
+      "To log activities",
+      "To encrypt data",
+      "To assure the integrity of a data unit or stream of data units",
+      "To authenticate users"
+    ],
+    "correct_answer": "To assure the integrity of a data unit or stream of data units"
+  },
+  {
+    "question_number": 40,
+    "question_text": "What does a digital signature allow?",
+    "options": [
+      "A recipient to prove the source and integrity of a data unit",
+      "Only key exchange",
+      "Only decryption",
+      "Only encryption"
+    ],
+    "correct_answer": "A recipient to prove the source and integrity of a data unit"
+  },
+  {
+    "question_number": 41,
+    "question_text": "What is another name for two-key algorithms?",
+    "options": [
+      "Symmetric-key algorithms",
+      "Asymmetric-key or public-key algorithms",
+      "Hash algorithms",
+      "Keyless algorithms"
+    ],
+    "correct_answer": "Asymmetric-key or public-key algorithms"
+  },
+  {
+    "question_number": 42,
+    "question_text": "What is the relationship between ISO and IEC in information security standardization?",
+    "options": [
+      "IEC replaces ISO",
+      "ISO and IEC have established a joint technical committee to develop international standards in the field of information technology",
+      "They work independently without coordination",
+      "They are competitors"
+    ],
+    "correct_answer": "ISO and IEC have established a joint technical committee to develop international standards in the field of information technology"
+  },
+  {
+    "question_number": 43,
+    "question_text": "The ______ identifies the public key to be used to verify the signature on this certificate or CRL.",
+    "options": ["directory", "policy constraints", "issuer name", "authority key identifier"],
+    "correct_answer": "authority key identifier"
+  },
+  {
+    "question_number": 44,
+    "question_text": "The ______ mode operates on full blocks of plaintext and ciphertext, as opposed to an s-bit subset.",
+    "options": ["CFB", "OFB", "ECB", "CBC"],
+    "correct_answer": "OFB"
+  },
+  {
+    "question_number": 45,
+    "question_text": "What does the authentication service provide for a single message?",
+    "options": [
+      "Assurance that the message is from the source it claims to be from",
+      "Encryption",
+      "Availability",
+      "Integrity"
+    ],
+    "correct_answer": "Assurance that the message is from the source it claims to be from"
+  },
+  {
+    "question_number": 46,
+    "question_text": "What happened during the development phase (2004-2006) of Cybersecurity Classified Protection?",
+    "options": [
+      "A large number of standards and specifications related to classified protection were developed and piloted in some organizations",
+      "Cybersecurity Classified Protection 2.0 was released",
+      "The system was proposed",
+      "The system was replaced"
+    ],
+    "correct_answer": "A large number of standards and specifications related to classified protection were developed and piloted in some organizations"
+  },
+  {
+    "question_number": 47,
+    "question_text": "The key exchange protocol is vulnerable to a ______ attack because it does not authenticate the participants.",
+    "options": ["man-in-the-middle", "time complexity", "one-way function", "chosen ciphertext"],
+    "correct_answer": "man-in-the-middle"
+  },
+  {
+    "question_number": 48,
+    "question_text": "The key algorithmic ingredients of ______ are the AES encryption algorithm, the CTR mode of operation, and the CMAC authentication algorithm.",
+    "options": ["CCM", "DAA", "GCM", "CMA"],
+    "correct_answer": "CCM"
+  },
+  {
+    "question_number": 49,
+    "question_text": "When using symmetric encryption it is very important to keep the algorithm secret.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 50,
+    "question_text": "A more important class of finite fields, for cryptography, comprises those with 2^n elements depicted as fields of the form GF(2^n).",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 51,
+    "question_text": "The first assertion of the CRT, concerning arithmetic operations, follows from the rules for modular arithmetic.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 52,
+    "question_text": "A ______ is a device with limited volatile and nonvolatile memory, limited processing power, and a low data rate transceiver.",
+    "options": ["IoT", "microprocessor", "class 3 device", "constrained device"],
+    "correct_answer": "constrained device"
+  },
+  {
+    "question_number": 53,
+    "question_text": "What is the OSI Security Architecture?",
+    "options": [
+      "A systematic way of defining security requirements and approaches",
+      "A specific security implementation",
+      "A set of algorithms",
+      "A list of attacks"
+    ],
+    "correct_answer": "A systematic way of defining security requirements and approaches"
+  },
+  {
+    "question_number": 54,
+    "question_text": "The first step in a DDoS attack is for the attacker to infect a number of machines with zombie software that will ultimately be used to carry out the attack.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 55,
+    "question_text": "What is the key principle that zero trust enforces for all access attempts?",
+    "options": [
+      "Trust all internal users",
+      "Make decisions based on the access policy, requiring authentication, authorization, and access control for all users regardless of location",
+      "Only verify external users",
+      "Trust based on network location"
+    ],
+    "correct_answer": "Make decisions based on the access policy, requiring authentication, authorization, and access control for all users regardless of location"
+  },
+  {
+    "question_number": 56,
+    "question_text": "A common requirement in a variety of protocols is for the encryption of a symmetric key so that it can be distributed to two parties for future communication.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 57,
+    "question_text": "It is important in a direct digital signature to perform an outer confidentiality function first and then the signature function.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 58,
+    "question_text": "The ______ scheme minimizes the message dependent amount of computation required to generate a signature.",
+    "options": ["ElGamal", "Schnorr", "Rabin", "SHA-1"],
+    "correct_answer": "Schnorr"
+  },
+  {
+    "question_number": 59,
+    "question_text": "What is the first trend in Gartner's Top 8 Security and Risk Trends?",
+    "options": ["Identity-first security", "Zero Trust Security", "Cybersecurity mesh", "Vendor consolidation"],
+    "correct_answer": "Cybersecurity mesh"
+  },
+  {
+    "question_number": 60,
+    "question_text": "In the Information Assurance Period, what distinguishes the security system aspect from previous periods?",
+    "options": [
+      "It eliminates the need for management",
+      "More technical means were used to associate security management with technical protection to enable proactive defense rather than passive protection",
+      "It focuses only on confidentiality",
+      "It uses only physical security"
+    ],
+    "correct_answer": "More technical means were used to associate security management with technical protection to enable proactive defense rather than passive protection"
+  },
+  {
+    "question_number": 61,
+    "question_text": "______ is a mechanism or service used to verify the integrity of a message.",
+    "options": ["Data mapping", "Message digest", "Data compression", "Message authentication"],
+    "correct_answer": "Message authentication"
+  },
+  {
+    "question_number": 62,
+    "question_text": "The ______ is designed to be stored on a RFID tag and it provides a universal identifier for every physical object anywhere in the world.",
+    "options": ["NTU", "NAND", "UPC", "EPC"],
+    "correct_answer": "EPC"
+  },
+  {
+    "question_number": 63,
+    "question_text": "For many cryptographic algorithms, it is necessary to select one or more very large prime numbers.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 64,
+    "question_text": "A centralized, automated approach to provide enterprise-wide access to resources by employees and other authorized individuals with a focus of defining an identity for each user, associating attributes with the identity, and enforcing a means by which a user can verify identity is ______.",
+    "options": ["realm management", "identity management", "federated identity management", "enterprise management"],
+    "correct_answer": "identity management"
+  },
+  {
+    "question_number": 65,
+    "question_text": "The congruence relation is used to define ______.",
+    "options": ["residue classes", "lowest common divisor", "greatest common divisor", "finite groups"],
+    "correct_answer": "residue classes"
+  },
+  {
+    "question_number": 66,
+    "question_text": "What does the availability service address?",
+    "options": [
+      "Only encryption issues",
+      "Security concerns raised by denial-of-service attacks",
+      "Only passive attacks",
+      "Only active attacks"
+    ],
+    "correct_answer": "Security concerns raised by denial-of-service attacks"
+  },
+  {
+    "question_number": 67,
+    "question_text": "What is the broadest service for data confidentiality?",
+    "options": [
+      "Protection of specific fields",
+      "Protection of headers only",
+      "Protection of a single message",
+      "Protection of all user data transmitted between two users over a period of time"
+    ],
+    "correct_answer": "Protection of all user data transmitted between two users over a period of time"
+  },
+  {
+    "question_number": 68,
+    "question_text": "What makes security complex according to the challenges?",
+    "options": [
+      "It is actually simple",
+      "It doesn't require thought",
+      "The requirements seem straightforward but mechanisms are complex",
+      "Attacks are always obvious"
+    ],
+    "correct_answer": "The requirements seem straightforward but mechanisms are complex"
+  },
+  {
+    "question_number": 69,
+    "question_text": "What makes security mechanisms elaborate?",
+    "options": [
+      "Simple requirements",
+      "Consideration of various aspects of threats",
+      "Lack of threats",
+      "Simple threats"
+    ],
+    "correct_answer": "Consideration of various aspects of threats"
+  },
+  {
+    "question_number": 70,
+    "question_text": "What does information security also concern itself with?",
+    "options": [
+      "Only digital information",
+      "Only electronic information",
+      "Physical information such as paper-based information",
+      "Only network information"
+    ],
+    "correct_answer": "Physical information such as paper-based information"
+  },
+  {
+    "question_number": 71,
+    "question_text": "What does the definition of cybersecurity encompass in terms of protection?",
+    "options": [
+      "Only integrity",
+      "Only availability",
+      "Confidentiality, integrity, availability, authenticity, and accountability",
+      "Only confidentiality"
+    ],
+    "correct_answer": "Confidentiality, integrity, availability, authenticity, and accountability"
+  },
+  {
+    "question_number": 72,
+    "question_text": "What does a trust model provide?",
+    "options": [
+      "Encryption keys",
+      "A framework for understanding and establishing trust relationships",
+      "Network protocols",
+      "Attack vectors"
+    ],
+    "correct_answer": "A framework for understanding and establishing trust relationships"
+  },
+  {
+    "question_number": 73,
+    "question_text": "In a man-in-the-middle attack, what does the attacker do to the server?",
+    "options": ["Deletes messages", "Only observes traffic", "Masquerades as the client", "Encrypts messages"],
+    "correct_answer": "Masquerades as the client"
+  },
+  {
+    "question_number": 74,
+    "question_text": "The key schedule algorithm is more popular and has received more attention than S-box design.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 75,
+    "question_text": "What happened during the promotion phase (2007-2016) of Cybersecurity Classified Protection?",
+    "options": [
+      "This was Cybersecurity Classified Protection 1.0, which was promoted and implemented",
+      "The system was eliminated",
+      "The system was first proposed",
+      "Cybersecurity Classified Protection 2.0 was released"
+    ],
+    "correct_answer": "This was Cybersecurity Classified Protection 1.0, which was promoted and implemented"
+  },
+  {
+    "question_number": 76,
+    "question_text": "What does traffic padding frustrate?",
+    "options": ["Traffic analysis attempts", "Authentication", "Data modification", "Denial of service"],
+    "correct_answer": "Traffic analysis attempts"
+  },
+  {
+    "question_number": 77,
+    "question_text": "A greater degree of security can be achieved by maintaining a publicly available dynamic directory of public keys.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 78,
+    "question_text": "______ indicates a restriction imposed as to the purposes for which, and the policies under which, the certified public key may be used.",
+    "options": ["Key usage", "Subject key identifier", "Certificate policies", "Authority key identifier"],
+    "correct_answer": "Key usage"
+  },
+  {
+    "question_number": 79,
+    "question_text": "What makes understanding security mechanisms challenging?",
+    "options": [
+      "Understanding them may involve rather subtle reasoning",
+      "They don't need reasoning",
+      "They are always obvious",
+      "They are always simple"
+    ],
+    "correct_answer": "Understanding them may involve rather subtle reasoning"
+  },
+  {
+    "question_number": 80,
+    "question_text": "The 'smart' in a smart device is provided by a deeply embedded transceiver.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 81,
+    "question_text": "Post Office Protocol allows an email client to download an email from an email server.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 82,
+    "question_text": "Groups, rings, and fields are the fundamental elements of a branch of mathematics known as abstract algebra.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 83,
+    "question_text": "Whirlpool is a popular cryptographic hash function.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 84,
+    "question_text": "What does a trust model provide?",
+    "options": [
+      "Encryption keys",
+      "Attack vectors",
+      "A framework for understanding and establishing trust relationships",
+      "Network protocols"
+    ],
+    "correct_answer": "A framework for understanding and establishing trust relationships"
+  },
+  {
+    "question_number": 85,
+    "question_text": "What does a connection-oriented integrity service address?",
+    "options": [
+      "Both message stream modification and denial of service",
+      "Only denial of service",
+      "Only message modification",
+      "Only passive attacks"
+    ],
+    "correct_answer": "Both message stream modification and denial of service"
+  },
+  {
+    "question_number": 86,
+    "question_text": "The use of encryption and authentication protocols is the standard method of countering attempts to alter or insert transmissions.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 87,
+    "question_text": "The SSL Record Protocol is used before any application data is transmitted.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 88,
+    "question_text": "It is possible to use a hash function but no encryption for message authentication.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 89,
+    "question_text": "If an attack causes especially grave harm to the legitimate rights and interests of citizens, what protection level is required?",
+    "options": ["Level 4", "Level 3", "Level 1", "Level 2"],
+    "correct_answer": "Level 3"
+  },
+  {
+    "question_number": 90,
+    "question_text": "The ______ is a directory lookup service that provides a mapping between the name of a host on the Internet and its numerical address.",
+    "options": ["POP", "DNS", "SMTP", "ADMD"],
+    "correct_answer": "DNS"
+  },
+  {
+    "question_number": 91,
+    "question_text": "DKIM is designed to provide an email authentication technique that is not transparent to the end user.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 92,
+    "question_text": "What makes security mechanisms elaborate?",
+    "options": [
+      "Consideration of various aspects of the threat",
+      "Simple requirements",
+      "Simple threats",
+      "Lack of threats"
+    ],
+    "correct_answer": "Consideration of various aspects of the threat"
+  },
+  {
+    "question_number": 93,
+    "question_text": "What is one form of denial of service attack?",
+    "options": ["Authenticating users", "Encrypting data", "Observing data", "Flooding the server with an overwhelming amount of data"],
+    "correct_answer": "Flooding the server with an overwhelming amount of data"
+  },
+  {
+    "question_number": 94,
+    "question_text": "Constrained devices are not particularly vulnerable to side-channel attacks because they are physically secure.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 95,
+    "question_text": "Two integers are ______ if their only common positive integer factor is 1.",
+    "options": ["congruent modulo", "residual", "polynomials", "relatively prime"],
+    "correct_answer": "relatively prime"
+  },
+  {
+    "question_number": 96,
+    "question_text": "What are the management requirements categories in Cybersecurity Classified Protection 2.0?",
+    "options": [
+      "Only security O&M management",
+      "Only security management system",
+      "Only security management organization",
+      "Security management system, security management organization, security management personnel, security construction management, and security O&M management"
+    ],
+    "correct_answer": "Security management system, security management organization, security management personnel, security construction management, and security O&M management"
+  },
+  {
+    "question_number": 97,
+    "question_text": "What must one consider when developing security mechanisms?",
+    "options": [
+      "Only the cost",
+      "Only the requirements",
+      "Only the implementation",
+      "Potential attacks designed by looking at problems differently"
+    ],
+    "correct_answer": "Potential attacks designed by looking at problems differently"
+  },
+  {
+    "question_number": 98,
+    "question_text": "What is the relationship between cybersecurity and information security in practice?",
+    "options": [
+      "They are often used interchangeably",
+      "One always supersedes the other",
+      "They are completely different",
+      "They are never used together"
+    ],
+    "correct_answer": "They are often used interchangeably"
+  },
+  {
+    "question_number": 99,
+    "question_text": "The MIME-Version field must have the parameter value 1.0 in order for the message to conform to RFCs 2045 and 2046.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  }
+]

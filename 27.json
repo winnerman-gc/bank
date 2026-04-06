@@ -1,0 +1,812 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "What is Zero Trust?",
+    "options": [
+      "A set of evolving network security paradigms that shift network defense from static network boundaries to users, assets, and resources",
+      "A network protocol",
+      "A security standard",
+      "A type of firewall"
+    ],
+    "correct_answer": "A set of evolving network security paradigms that shift network defense from static network boundaries to users, assets, and resources"
+  },
+  {
+    "question_number": 2,
+    "question_text": "What is the relationship between data and information in security literature?",
+    "options": [
+      "Security literature typically does not make much of a distinction",
+      "They are never related",
+      "One always supersedes the other",
+      "They are always distinguished"
+    ],
+    "correct_answer": "Security literature typically does not make much of a distinction"
+  },
+  {
+    "question_number": 3,
+    "question_text": "The distribution of bits in a random number sequence should be ______, therefore the frequency of occurrence of ones and zeros should be approximately equal.",
+    "options": ["uniform", "reversed", "streamed", "independent"],
+    "correct_answer": "uniform"
+  },
+  {
+    "question_number": 4,
+    "question_text": "______ is techniques to ensure that the overall system is made aware of unwanted physical access.",
+    "options": ["Tamper detection", "Tampering", "Tamper integration", "Tamper resistant"],
+    "correct_answer": "Tamper detection"
+  },
+  {
+    "question_number": 5,
+    "question_text": "A certificate consists of a public key, an identifier of the key owner, and the whole block signed by a trusted third party.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 6,
+    "question_text": "What are the extended security requirements designed for in Cybersecurity Classified Protection 2.0?",
+    "options": [
+      "Only basic information networks",
+      "Only government systems",
+      "Only financial systems",
+      "Cloud computing, mobile interconnection, IoT, and industrial control systems"
+    ],
+    "correct_answer": "Cloud computing, mobile interconnection, IoT, and industrial control systems"
+  },
+  {
+    "question_number": 7,
+    "question_text": "What is the relationship between confidentiality and privacy?",
+    "options": [
+      "They are identical",
+      "They are unrelated",
+      "Confidentiality covers data confidentiality and privacy",
+      "Privacy covers confidentiality"
+    ],
+    "correct_answer": "Confidentiality covers data confidentiality and privacy"
+  },
+  {
+    "question_number": 8,
+    "question_text": "Allowing for the maximum number of possible encryption mappings from the plaintext block is referred to by Feistel as the ______.",
+    "options": ["ideal block cipher", "diffusion cipher", "ideal substitution cipher", "round function"],
+    "correct_answer": "ideal block cipher"
+  },
+  {
+    "question_number": 9,
+    "question_text": "The final round of both encryption and decryption of the AES structure consists of ______ stages.",
+    "options": ["two", "three", "four", "one"],
+    "correct_answer": "three"
+  },
+  {
+    "question_number": 10,
+    "question_text": "What does information confidentiality ensure?",
+    "options": [
+      "That information can be obtained and used only by authorized personnel, and attackers cannot read correct information even if they steal data",
+      "That information is backed up regularly",
+      "That information is always available",
+      "That information is not tampered with"
+    ],
+    "correct_answer": "That information can be obtained and used only by authorized personnel, and attackers cannot read correct information even if they steal data"
+  },
+  {
+    "question_number": 11,
+    "question_text": "Cryptographic algorithms do not rely on properties of finite fields.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 12,
+    "question_text": "What is a security service?",
+    "options": [
+      "A vulnerability",
+      "A processing or communication service that enhances the security of data processing systems",
+      "A mechanism",
+      "An attack"
+    ],
+    "correct_answer": "A processing or communication service that enhances the security of data processing systems"
+  },
+  {
+    "question_number": 13,
+    "question_text": "What does a digital signature protect against?",
+    "options": ["Only deletion", "Forgery", "Only replay", "Only modification"],
+    "correct_answer": "Forgery"
+  },
+  {
+    "question_number": 14,
+    "question_text": "There is not a computational advantage to using ECC with a shorter key length than a comparably secure RSA.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 15,
+    "question_text": "According to the grading process of Cybersecurity Classified Protection, what must happen after preliminary confirmation of levels?",
+    "options": ["Review by the competent department", "Expert review", "Determination on objects to be graded", "Public security organ archiving and review"],
+    "correct_answer": "Expert review"
+  },
+  {
+    "question_number": 16,
+    "question_text": "What does Level 2 protection apply to?",
+    "options": [
+      "Important information systems of some county-level organizations and common information systems of state organs, enterprises, and public institutions at the city level or above",
+      "Key systems in important sectors",
+      "Small-sized private enterprises",
+      "Extremely important systems"
+    ],
+    "correct_answer": "Important information systems of some county-level organizations and common information systems of state organs, enterprises, and public institutions at the city level or above"
+  },
+  {
+    "question_number": 17,
+    "question_text": "The IoT depends heavily on deeply embedded systems.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 18,
+    "question_text": "What does 'Remote work is now just work' mean in terms of security requirements?",
+    "options": [
+      "Remote work does not require special security measures",
+      "Remote work security is the same as traditional office security",
+      "Enterprises require a total reboot of security policies and tools to better mitigate security risks for remote office work",
+      "Remote work security is no longer important"
+    ],
+    "correct_answer": "Enterprises require a total reboot of security policies and tools to better mitigate security risks for remote office work"
+  },
+  {
+    "question_number": 19,
+    "question_text": "One limitation of a firewall is that an improperly secured wireless LAN may be accessed from outside the organization.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 20,
+    "question_text": "If the bit-stream generator is a key-controlled algorithm the two users only need to share the generating key and then each can produce the keystream.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 21,
+    "question_text": "During which period were communication technologies underdeveloped and data was scattered?",
+    "options": [
+      "Cyberspace Security Period (Today)",
+      "Communication Security Period (1940s)",
+      "Information Assurance Period (1990s)",
+      "Information Security Period (1970s-1980s)"
+    ],
+    "correct_answer": "Communication Security Period (1940s)"
+  },
+  {
+    "question_number": 22,
+    "question_text": "In Advanced Encryption Standard all operations are performed on ______ bytes.",
+    "options": ["16-bit", "32-bit", "4-bit", "8-bit"],
+    "correct_answer": "8-bit"
+  },
+  {
+    "question_number": 23,
+    "question_text": "If b|a we say that b is a divisor of a.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 24,
+    "question_text": "What is ISMS?",
+    "options": [
+      "Information Security Management Standard",
+      "Information Security Management Service",
+      "Information Security Management Software",
+      "Information Security Management System, a system in which an organization establishes information security policies and objectives and uses methods to achieve these objectives"
+    ],
+    "correct_answer": "Information Security Management System, a system in which an organization establishes information security policies and objectives and uses methods to achieve these objectives"
+  },
+  {
+    "question_number": 25,
+    "question_text": "What do privacy-enhancing computation techniques enable?",
+    "options": [
+      "Only data backup",
+      "Secure data processing, sharing, cross-border transfers, and analytics, even in untrusted environments",
+      "Only data encryption",
+      "Only data storage"
+    ],
+    "correct_answer": "Secure data processing, sharing, cross-border transfers, and analytics, even in untrusted environments"
+  },
+  {
+    "question_number": 26,
+    "question_text": "What raises questions about the creation, distribution, and protection of secret information?",
+    "options": [
+      "The use of public keys",
+      "The requirement that participants be in possession of some secret information",
+      "The use of encryption algorithms",
+      "The use of hash functions"
+    ],
+    "correct_answer": "The requirement that participants be in possession of some secret information"
+  },
+  {
+    "question_number": 27,
+    "question_text": "What is the relationship between ISO/IEC 27003, 27004, and 27005?",
+    "options": [
+      "They are completely independent",
+      "They replace ISO 27001 and 27002",
+      "They are part of Part II (Certification, recognition, and audit guideline) of the ISO 27000 family",
+      "They are part of Part I (Requirements and support guideline) of the ISO 27000 family"
+    ],
+    "correct_answer": "They are part of Part I (Requirements and support guideline) of the ISO 27000 family"
+  },
+  {
+    "question_number": 28,
+    "question_text": "What are the main media of ransomware attacks?",
+    "options": ["Only email attachments", "Phishing and remote desktop protocols", "Only USB drives", "Only network shares"],
+    "correct_answer": "Phishing and remote desktop protocols"
+  },
+  {
+    "question_number": 29,
+    "question_text": "What does the OSI Security Architecture provide?",
+    "options": [
+      "A list of attacks",
+      "A specific implementation of security",
+      "A systematic way of defining requirements for security and characterizing approaches to satisfying those requirements",
+      "A set of encryption algorithms"
+    ],
+    "correct_answer": "A systematic way of defining requirements for security and characterizing approaches to satisfying those requirements"
+  },
+  {
+    "question_number": 30,
+    "question_text": "An integer p > 1 is a ______ number if and only if its only divisors are +1 and +p.",
+    "options": ["composite", "positive", "indexed", "prime"],
+    "correct_answer": "prime"
+  },
+  {
+    "question_number": 31,
+    "question_text": "With a ______ attack the attacker is given access to a set of messages and their signatures.",
+    "options": ["directed chosen message", "key-only", "known message", "generic chosen message"],
+    "correct_answer": "known message"
+  },
+  {
+    "question_number": 32,
+    "question_text": "What is traffic padding?",
+    "options": [
+      "Encrypting all traffic",
+      "Deleting traffic data",
+      "Inserting bits into gaps to frustrate traffic analysis",
+      "Removing bits from a stream"
+    ],
+    "correct_answer": "Inserting bits into gaps to frustrate traffic analysis"
+  },
+  {
+    "question_number": 33,
+    "question_text": "What does a connectionless integrity service generally provide?",
+    "options": [
+      "Protection against all attacks",
+      "Protection against replay",
+      "Protection against denial of service",
+      "Protection against message modification only"
+    ],
+    "correct_answer": "Protection against message modification only"
+  },
+  {
+    "question_number": 34,
+    "question_text": "What is the relationship between the five management requirements categories in Cybersecurity Classified Protection 2.0?",
+    "options": [
+      "Only one category is required",
+      "They replace technical requirements",
+      "They work together to provide comprehensive management security: security management system, security management organization, security management personnel, security construction management, and security O&M management",
+      "They are independent and unrelated"
+    ],
+    "correct_answer": "They work together to provide comprehensive management security: security management system, security management organization, security management personnel, security construction management, and security O&M management"
+  },
+  {
+    "question_number": 35,
+    "question_text": "What are the two categories of cryptographic mechanisms mentioned?",
+    "options": ["Public and private", "Simple and complex", "Reversible and irreversible", "Fast and slow"],
+    "correct_answer": "Reversible and irreversible"
+  },
+  {
+    "question_number": 36,
+    "question_text": "Switches, sensors, and circuitry are mechanisms for tamper detection.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 37,
+    "question_text": "Cipher Feedback (CFB) is used for the secure transmission of single values.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 38,
+    "question_text": "The intention of an advanced persistent threat is to steal data rather than to cause damage to the network or organization.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 39,
+    "question_text": "______ are two related keys, a public key and a private key that are used to perform complementary operations, such as encryption and decryption or signature generation and signature verification.",
+    "options": ["Key exchanges", "Asymmetric keys", "Symmetric keys", "Cipher keys"],
+    "correct_answer": "Asymmetric keys"
+  },
+  {
+    "question_number": 40,
+    "question_text": "The ______ is used to convey TLS-related alerts to the peer entity.",
+    "options": ["Handshake Protocol", "SSL Record Protocol", "Change Cipher Spec Protocol", "Alert Protocol"],
+    "correct_answer": "Alert Protocol"
+  },
+  {
+    "question_number": 41,
+    "question_text": "A good hash function has the property that 'the results of applying the function to a large set of inputs will produce outputs that are evenly distributed and apparently random'.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 42,
+    "question_text": "An integer p > 1 is a ______ number if and only if its only divisors are +1 and +p.",
+    "options": ["composite", "positive", "indexed", "prime"],
+    "correct_answer": "prime"
+  },
+  {
+    "question_number": 43,
+    "question_text": "Core servers also host the applications that interact with and manage the IoT devices and analyze the IoT-generated data.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 44,
+    "question_text": "The ______ attack is the easiest to defend against because the opponent has the least amount of information to work with.",
+    "options": ["chosen ciphertext", "chosen plaintext", "known plaintext", "ciphertext-only"],
+    "correct_answer": "ciphertext-only"
+  },
+  {
+    "question_number": 45,
+    "question_text": "Message authentication may also verify sequencing and timeliness.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 46,
+    "question_text": "The form of cubic equation appropriate for cryptographic applications for elliptic curves is somewhat different for GF(2^m) than for Z_p.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 47,
+    "question_text": "In the digital signature algorithm the user's ______ is represented by x, which is a random or pseudorandom integer with 0 < x < q.",
+    "options": ["per message secret number", "private key", "global key", "public key"],
+    "correct_answer": "public key"
+  },
+  {
+    "question_number": 48,
+    "question_text": "What must be done before access rights can be tailored?",
+    "options": [
+      "Data must be encrypted",
+      "Each entity must be identified or authenticated",
+      "Data must be available",
+      "Data must be logged"
+    ],
+    "correct_answer": "Each entity must be identified or authenticated"
+  },
+  {
+    "question_number": 49,
+    "question_text": "What does traffic flow analysis involve?",
+    "options": [
+      "Observing source, destination, frequency, length, or other characteristics",
+      "Modifying traffic",
+      "Encrypting traffic",
+      "Deleting traffic"
+    ],
+    "correct_answer": "Observing source, destination, frequency, length, or other characteristics"
+  },
+  {
+    "question_number": 50,
+    "question_text": "What happens if time limits are required but delays are unpredictable?",
+    "options": [
+      "The time limits may become meaningless",
+      "The mechanism is faster",
+      "The mechanism is more secure",
+      "The mechanism works better"
+    ],
+    "correct_answer": "The time limits may become meaningless"
+  },
+  {
+    "question_number": 51,
+    "question_text": "What is the correct sequence in the working process of Cybersecurity Classified Protection?",
+    "options": [
+      "Assessment, grading, archiving, construction, inspection",
+      "Archiving, grading, construction, assessment, inspection",
+      "Grading, archiving, construction and rectification, level assessment, supervision and inspection",
+      "Construction, grading, archiving, assessment, inspection"
+    ],
+    "correct_answer": "Grading, archiving, construction and rectification, level assessment, supervision and inspection"
+  },
+  {
+    "question_number": 52,
+    "question_text": "What is the correct answer to the quiz question about ISO 27002 certification in the PDF?",
+    "options": [
+      "True - ISO 27002 can be used to certify an enterprise's information security system",
+      "True - ISO 27002 replaces ISO 27001 for certification",
+      "False - Neither ISO 27001 nor ISO 27002 can be used for certification",
+      "False - ISO 27002 provides best practice rules but ISO 27001 is used for certification"
+    ],
+    "correct_answer": "False - ISO 27002 provides best practice rules but ISO 27001 is used for certification"
+  },
+  {
+    "question_number": 53,
+    "question_text": "Why must we be able to trace security breaches?",
+    "options": [
+      "Because breaches never happen",
+      "Because truly secure systems are not yet an achievable goal",
+      "Because tracing is not important",
+      "Because all systems are secure"
+    ],
+    "correct_answer": "Because truly secure systems are not yet an achievable goal"
+  },
+  {
+    "question_number": 54,
+    "question_text": "Compared to public-key ciphers such as RSA, the structure of AES and most symmetric ciphers is quite complex and cannot be explained as easily as many other cryptographic algorithms.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 55,
+    "question_text": "What advantage does the attacker have over the defender?",
+    "options": [
+      "The attacker has no advantage",
+      "The attacker need only find one weakness, while the defender must close all",
+      "The attacker must defend systems",
+      "The attacker must find all vulnerabilities"
+    ],
+    "correct_answer": "The attacker need only find one weakness, while the defender must close all"
+  },
+  {
+    "question_number": 56,
+    "question_text": "What is the relationship between the number of control objectives and control measures in ISO 27002?",
+    "options": [
+      "There are 113 control objectives and 35 control measures",
+      "There are 35 control objectives and 14 control measures",
+      "There are 35 control objectives and 113 control measures",
+      "There are 14 control objectives and 35 control measures"
+    ],
+    "correct_answer": "There are 35 control objectives and 113 control measures"
+  },
+  {
+    "question_number": 57,
+    "question_text": "What does traffic flow analysis protection prevent?",
+    "options": [
+      "Modification of data",
+      "An attacker from observing source, destination, frequency, length, or other characteristics of traffic",
+      "Active attacks",
+      "Denial of service attacks"
+    ],
+    "correct_answer": "An attacker from observing source, destination, frequency, length, or other characteristics of traffic"
+  },
+  {
+    "question_number": 58,
+    "question_text": "A ______ is an algorithm that requires the use of a secret key.",
+    "options": ["MAC", "GCM", "SHA", "DAA"],
+    "correct_answer": "MAC"
+  },
+  {
+    "question_number": 59,
+    "question_text": "Secure Sockets Layer (SSL) is an Internet standard that evolved from a commercial protocol known as Transport Layer Security (TLS).",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 60,
+    "question_text": "What does GB/T 22240-2020 specify?",
+    "options": ["Assessment requirements", "Basic requirements", "Grading guideline", "Design requirements"],
+    "correct_answer": "Grading guideline"
+  },
+  {
+    "question_number": 61,
+    "question_text": "The authenticator that is used as a possession factor is a",
+    "options": ["secret question answer", "fingerprint", "PIN", "token"],
+    "correct_answer": "token"
+  },
+  {
+    "question_number": 62,
+    "question_text": "What does ISO 27799 specify?",
+    "options": [
+      "Financial information security management",
+      "Healthcare information security management standards",
+      "Telecommunication information security management",
+      "General information security management"
+    ],
+    "correct_answer": "Healthcare information security management standards"
+  },
+  {
+    "question_number": 63,
+    "question_text": "What does data confidentiality protect against?",
+    "options": [
+      "Only denial of service attacks",
+      "Both active and passive attacks",
+      "Active attacks",
+      "Passive attacks"
+    ],
+    "correct_answer": "Passive attacks"
+  },
+  {
+    "question_number": 64,
+    "question_text": "In the information breach case study, how long did it take for the company to protect the database after being informed?",
+    "options": ["One week", "Three days", "One month", "One day"],
+    "correct_answer": "Three days"
+  },
+  {
+    "question_number": 65,
+    "question_text": "What does peer entity authentication provide confidence against?",
+    "options": [
+      "Masquerade or unauthorized replay of a previous connection",
+      "Only passive attacks",
+      "Only denial of service",
+      "Only data modification"
+    ],
+    "correct_answer": "Masquerade or unauthorized replay of a previous connection"
+  },
+  {
+    "question_number": 66,
+    "question_text": "If an attack causes especially grave harm to public interests, what protection level is required?",
+    "options": ["Level 1", "Level 3", "Level 2", "Level 4"],
+    "correct_answer": "Level 4"
+  },
+  {
+    "question_number": 67,
+    "question_text": "What may data modification involve?",
+    "options": [
+      "Only passive attacks",
+      "Only encryption",
+      "A man-in-the-middle attack or modification of data after unauthorized access",
+      "Only active attacks"
+    ],
+    "correct_answer": "A man-in-the-middle attack or modification of data after unauthorized access"
+  },
+  {
+    "question_number": 68,
+    "question_text": "The Secure Hash Algorithm was developed by the",
+    "options": ["IEEE", "NIST", "ISO", "ITIL"],
+    "correct_answer": "NIST"
+  },
+  {
+    "question_number": 69,
+    "question_text": "What does zero trust architecture specifically aim to prevent and restrict?",
+    "options": [
+      "Only external attacks",
+      "Data disclosure and restrict the lateral movement of attacks on a network",
+      "Only network access",
+      "Only internal attacks"
+    ],
+    "correct_answer": "Data disclosure and restrict the lateral movement of attacks on a network"
+  },
+  {
+    "question_number": 70,
+    "question_text": "What are the specific methods hackers use to obtain information for breaches?",
+    "options": [
+      "Only social engineering",
+      "Only physical access",
+      "Implanting Trojan horses, installing eavesdropping devices on user devices, and using other means",
+      "Only network attacks"
+    ],
+    "correct_answer": "Implanting Trojan horses, installing eavesdropping devices on user devices, and using other means"
+  },
+  {
+    "question_number": 71,
+    "question_text": "What is traffic padding?",
+    "options": [
+      "Removing bits from a stream",
+      "Encrypting all traffic",
+      "Inserting bits into gaps to frustrate traffic analysis",
+      "Deleting traffic data"
+    ],
+    "correct_answer": "Inserting bits into gaps to frustrate traffic analysis"
+  },
+  {
+    "question_number": 72,
+    "question_text": "An example of ______ is illegally accessing and then using another user's authentication information, such as username and password.",
+    "options": ["tampering with data", "repudiation", "identity spoofing", "elevation of privilege"],
+    "correct_answer": "identity spoofing"
+  },
+  {
+    "question_number": 73,
+    "question_text": "There are four general means, or authentication factors, of authenticating a user's identity, which can be used alone or in combination.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 74,
+    "question_text": "What does GB/T 28449-2018 specify?",
+    "options": ["Basic requirements", "Design requirements", "Assessment process guideline", "Grading guideline"],
+    "correct_answer": "Assessment process guideline"
+  },
+  {
+    "question_number": 75,
+    "question_text": "______ techniques map plaintext elements (characters, bits) into ciphertext elements.",
+    "options": ["Transposition", "Symmetric", "Substitution", "Traditional"],
+    "correct_answer": "Substitution"
+  },
+  {
+    "question_number": 76,
+    "question_text": "What does peer entity authentication provide confidence about?",
+    "options": [
+      "Only data confidentiality",
+      "Only data availability",
+      "That an entity is not performing masquerade or unauthorized replay",
+      "Only data integrity"
+    ],
+    "correct_answer": "That an entity is not performing masquerade or unauthorized replay"
+  },
+  {
+    "question_number": 77,
+    "question_text": "What are irreversible cryptographic mechanisms used in?",
+    "options": [
+      "Only encryption",
+      "Digital signature and message authentication applications",
+      "Only decryption",
+      "Only key exchange"
+    ],
+    "correct_answer": "Digital signature and message authentication applications"
+  },
+  {
+    "question_number": 78,
+    "question_text": "The key management mechanism that is used to distribute keys is coupled to the authentication and privacy mechanisms only by way of the ______.",
+    "options": ["IAB", "SPD", "ESP", "SPI"],
+    "correct_answer": "SPD"
+  },
+  {
+    "question_number": 79,
+    "question_text": "The ______, which is the latest of the RSA schemes, is the one that RSA Laboratories recommends as the most secure of the RSA schemes.",
+    "options": ["DSA-SDS", "ECDSA", "EDSDS", "RSA-PSS"],
+    "correct_answer": "RSA-PSS"
+  },
+  {
+    "question_number": 80,
+    "question_text": "One of the most important uses of a ______ cryptosystem is to encrypt secret keys for distribution.",
+    "options": ["public key", "master key", "end-to-end", "KDC"],
+    "correct_answer": "public key"
+  },
+  {
+    "question_number": 81,
+    "question_text": "What does a masquerade attack involve?",
+    "options": [
+      "One entity pretending to be a different entity",
+      "Only modifying data",
+      "Only observing data",
+      "Only deleting data"
+    ],
+    "correct_answer": "One entity pretending to be a different entity"
+  },
+  {
+    "question_number": 82,
+    "question_text": "In the Cybersecurity Classified Protection grading process, what is the correct sequence of steps?",
+    "options": [
+      "Review by competent department, expert review, preliminary confirmation, finalized levels",
+      "Expert review, preliminary confirmation, finalized levels, review by competent department, public security organ archiving",
+      "Determination on objects to be graded, preliminary confirmation on levels, expert review, review by competent department, public security organ archiving and review",
+      "Public security organ archiving, expert review, preliminary confirmation, finalized levels"
+    ],
+    "correct_answer": "Determination on objects to be graded, preliminary confirmation on levels, expert review, review by competent department, public security organ archiving and review"
+  },
+  {
+    "question_number": 83,
+    "question_text": "What is notarization?",
+    "options": [
+      "Using authentication",
+      "Using a trusted third party to assure properties of a data exchange",
+      "Using logging",
+      "Using encryption"
+    ],
+    "correct_answer": "Using a trusted third party to assure properties of a data exchange"
+  },
+  {
+    "question_number": 84,
+    "question_text": "A source that is effectively random is referred to as",
+    "options": ["an entropy source", "a seed", "an open source", "a keystream"],
+    "correct_answer": "an entropy source"
+  },
+  {
+    "question_number": 85,
+    "question_text": "To attack MD5, the attacker can choose any set of messages and work on these offline on a dedicated computing facility to find a collision.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 86,
+    "question_text": "What does the authentication service provide for a single message?",
+    "options": [
+      "Integrity of the message",
+      "Availability of the message",
+      "Encryption of the message",
+      "Assurance that the message is from the claimed source"
+    ],
+    "correct_answer": "Assurance that the message is from the claimed source"
+  },
+  {
+    "question_number": 87,
+    "question_text": "The ______ protocol enables two users to establish a secret key using a public-key scheme based on discrete logarithms.",
+    "options": ["Elgamal-Fraiser", "Diffie-Hellman", "Miller-Rabin", "Micali-Schnorr"],
+    "correct_answer": "Diffie-Hellman"
+  },
+  {
+    "question_number": 88,
+    "question_text": "A ______ is an entity that manages the use, performance, and delivery of cloud services, and negotiates relationships between CPs and cloud consumers.",
+    "options": ["cloud auditor", "cloud carrier", "cloud provider", "cloud broker"],
+    "correct_answer": "cloud broker"
+  },
+  {
+    "question_number": 89,
+    "question_text": "What does GB/T 25058-2019 specify?",
+    "options": ["Basic requirements", "Assessment requirements", "Design requirements", "Implementation guideline"],
+    "correct_answer": "Implementation guideline"
+  },
+  {
+    "question_number": 90,
+    "question_text": "What type of applications is data origin authentication designed for?",
+    "options": [
+      "Real-time interactive applications",
+      "Database applications",
+      "Applications with no ongoing interactions, like electronic mail",
+      "File transfer applications"
+    ],
+    "correct_answer": "Applications with no ongoing interactions, like electronic mail"
+  },
+  {
+    "question_number": 91,
+    "question_text": "______ is an open source project for creating truly random numbers using inexpensive cameras, open source code, and inexpensive hardware.",
+    "options": ["Entropy", "Blum, Blum, Shub", "LavaRnd", "Maurer's statistics"],
+    "correct_answer": "Entropy"
+  },
+  {
+    "question_number": 92,
+    "question_text": "Two MACs that are based on the use of a block cipher mode of operation are Data Authentication Algorithm and",
+    "options": ["GMAC", "TMAC", "DMAC", "CMAC"],
+    "correct_answer": "CMAC"
+  },
+  {
+    "question_number": 93,
+    "question_text": "The essential elements of any pseudorandom number generator are a ______ and a deterministic algorithm for generating a stream of pseudorandom bits.",
+    "options": ["seed value", "stream encryption function", "session key", "secret key"],
+    "correct_answer": "seed value"
+  },
+  {
+    "question_number": 94,
+    "question_text": "The longer the keyword the more difficult the cryptanalysis.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 95,
+    "question_text": "Message authentication is a mechanism or service used to verify the integrity of a message.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 96,
+    "question_text": "The primitive roots for the prime number 19 are 2, 3, 10, 13, 14 and 15.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 97,
+    "question_text": "What are the objects under cybersecurity classified protection?",
+    "options": [
+      "Only cloud computing platforms",
+      "Only basic information networks",
+      "Systems consisting of computers or other information terminals and related devices, including basic information networks, cloud computing platforms/systems, big data applications/platforms/resources, IoT, industrial control systems, and systems using mobile Internet technologies",
+      "Only IoT systems"
+    ],
+    "correct_answer": "Systems consisting of computers or other information terminals and related devices, including basic information networks, cloud computing platforms/systems, big data applications/platforms/resources, IoT, industrial control systems, and systems using mobile Internet technologies"
+  },
+  {
+    "question_number": 98,
+    "question_text": "The one-time pad has unlimited utility and is useful primarily for high-bandwidth channels requiring low security.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 99,
+    "question_text": "The strength of any cryptographic system rests with the",
+    "options": ["nonce", "end encryption", "X.509 certificate", "key distribution technique"],
+    "correct_answer": "key distribution technique"
+  },
+  {
+    "question_number": 100,
+    "question_text": "What does authenticity verify?",
+    "options": [
+      "Only that data is modified",
+      "That users are who they say they are and inputs came from trusted sources",
+      "Only that data is encrypted",
+      "Only that data is available"
+    ],
+    "correct_answer": "That users are who they say they are and inputs came from trusted sources"
+  }
+]
