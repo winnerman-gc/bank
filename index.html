@@ -286,15 +286,23 @@
                 });
                 
                 if (!response.ok) {
-                    throw new Error('Worker request failed');
+                    const errorText = await response.text();
+                    console.error('Worker error details:', errorText);
+                    throw new Error(`Worker responded with ${response.status}: ${errorText}`);
                 }
 
                 const data = await response.json();
+                console.log('AI Response data:', data);
+                
+                if (data.error) {
+                    throw new Error(data.error.message || 'AI Provider Error');
+                }
+
                 const text = data.choices[0].message.content;
                 aiSlot.innerHTML = `<p style="margin-top:10px; border-top:1px solid #e2e8f0; padding-top:10px;">${text}</p>`;
             } catch (err) {
                 console.error('AI Error:', err);
-                aiSlot.innerHTML = `<p style="color:var(--error-color); font-size:0.8rem;">Failed to load AI explanation.</p>`;
+                aiSlot.innerHTML = `<p style="color:var(--error-color); font-size:0.8rem;">Failed to load AI explanation: ${err.message}</p>`;
             }
         }
 
