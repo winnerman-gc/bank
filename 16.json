@@ -1,0 +1,797 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "One limitation of a firewall is that an improperly secured wireless LAN may be accessed from outside the organization.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 2,
+    "question_text": "What does ISO/IEC 27001 establish?",
+    "options": [
+      "Detailed operations of information security management",
+      "Requirements and standards for implementing and establishing the ISMS",
+      "Industry-specific requirements",
+      "Best practice rules"
+    ],
+    "correct_answer": "Requirements and standards for implementing and establishing the ISMS"
+  },
+  {
+    "question_number": 3,
+    "question_text": "Whirlpool is a popular cryptographic hash function.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 4,
+    "question_text": "Rings are a subset of a larger class of algebraic structures called fields.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 5,
+    "question_text": "What does accountability support beyond nonrepudiation?",
+    "options": [
+      "Deterrence, fault isolation, intrusion detection and prevention, and after-action recovery",
+      "Only encryption",
+      "Only logging",
+      "Only authentication"
+    ],
+    "correct_answer": "Deterrence, fault isolation, intrusion detection and prevention, and after-action recovery"
+  },
+  {
+    "question_number": 6,
+    "question_text": "What is another form of masquerade attack?",
+    "options": [
+      "Observing data",
+      "Modifying data",
+      "Deleting data",
+      "An attacker accessing server resources by masquerading as an authorized user"
+    ],
+    "correct_answer": "An attacker accessing server resources by masquerading as an authorized user"
+  },
+  {
+    "question_number": 7,
+    "question_text": "What is a DDoS attack?",
+    "options": [
+      "An attack that encrypts data",
+      "An attack that steals data",
+      "An attack initiated to exhaust the network or system resources of the target server, causing services to be temporarily interrupted or stopped",
+      "An attack that modifies data"
+    ],
+    "correct_answer": "An attack initiated to exhaust the network or system resources of the target server, causing services to be temporarily interrupted or stopped"
+  },
+  {
+    "question_number": 8,
+    "question_text": "All integers have primitive roots.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 9,
+    "question_text": "What does a trust model provide?",
+    "options": [
+      "Network protocols",
+      "A framework for understanding and establishing trust relationships",
+      "Attack vectors",
+      "Encryption keys"
+    ],
+    "correct_answer": "A framework for understanding and establishing trust relationships"
+  },
+  {
+    "question_number": 10,
+    "question_text": "RFID devices require cryptographic algorithms that use a large amount of logic and memory.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 11,
+    "question_text": "How can enterprises reduce losses caused by network attacks?",
+    "options": [
+      "By building network security",
+      "By avoiding networks entirely",
+      "By using only physical security measures",
+      "By limiting network access"
+    ],
+    "correct_answer": "By building network security"
+  },
+  {
+    "question_number": 12,
+    "question_text": "The primitive roots for the prime number 19 are 2, 3, 10, 13, 14 and 15.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 13,
+    "question_text": "______ email security threats could prevent end users from being able to send or receive email.",
+    "options": [
+      "Availability-related",
+      "Integrity-related",
+      "Authenticity-related",
+      "Confidentiality-related"
+    ],
+    "correct_answer": "Availability-related"
+  },
+  {
+    "question_number": 14,
+    "question_text": "Between internal and external firewalls are one or more networked devices in a region referred to as a ______ network.",
+    "options": ["demilitarized zone", "safe zone", "war zone", "protected zone"],
+    "correct_answer": "demilitarized zone"
+  },
+  {
+    "question_number": 15,
+    "question_text": "The Feistel cipher structure, based on Shannon's proposal of 1945, dates back over a quarter of a century and is the structure used by many significant symmetric block ciphers currently in use.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 16,
+    "question_text": "The certificate message is required for any agreed on key exchange method except fixed Diffie-Hellman.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 17,
+    "question_text": "The principal object of a hash function is",
+    "options": ["mapping messages", "compression", "collision resistance", "data integrity"],
+    "correct_answer": "data integrity"
+  },
+  {
+    "question_number": 18,
+    "question_text": "The purpose of the discovery phase in the ______ is for a STA and an AP to recognize each other, agree on a set of security capabilities, and establish an association for future communication using those security capabilities.",
+    "options": ["WAE", "TKIP", "WPA", "RSN"],
+    "correct_answer": "RSN"
+  },
+  {
+    "question_number": 19,
+    "question_text": "Unlike RSA, DSS cannot be used for encryption or key exchange.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 20,
+    "question_text": "The Diffie-Hellman algorithm depends on the difficulty of computing discrete logarithms for its effectiveness.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 21,
+    "question_text": "For the text type of body no special software is required to get the full meaning of the text aside from support of the indicated character set.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 22,
+    "question_text": "What was the original standard that ISMS concept originated from?",
+    "options": ["ITSEC", "ISO27001", "BS 7799 standard formulated by the British Standards Institute (BSI)", "TCSEC"],
+    "correct_answer": "BS 7799 standard formulated by the British Standards Institute (BSI)"
+  },
+  {
+    "question_number": 23,
+    "question_text": "The ______ mode of operation is designed to be parallelizable so that it can provide high throughput with low cost and low latency.",
+    "options": ["GCM", "DAA", "CTR", "CCM"],
+    "correct_answer": "GCM"
+  },
+  {
+    "question_number": 24,
+    "question_text": "A finite set of two or more symbols is called a",
+    "options": ["character", "character string", "alphabet", "radix"],
+    "correct_answer": "alphabet"
+  },
+  {
+    "question_number": 25,
+    "question_text": "A ______ is an incident in which sensitive, protected, or confidential information is released, viewed, stolen, or used by an individual who is not authorized to do so.",
+    "options": ["repudiation", "DoS attack", "data breach", "tampering with data"],
+    "correct_answer": "data breach"
+  },
+  {
+    "question_number": 26,
+    "question_text": "______ technology provides access control for systems by checking to see if a user's credentials match the credentials in a database of authorized users or in a data authentication server.",
+    "options": ["Clarification", "Authentication", "Verification", "Identification"],
+    "correct_answer": "Authentication"
+  },
+  {
+    "question_number": 27,
+    "question_text": "Transport adjacency refers to applying more than one security protocol to the same IP packet without invoking tunneling.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 28,
+    "question_text": "What does nonrepudiation provide for the receiver?",
+    "options": [
+      "Proof that the alleged sender sent the message",
+      "Proof that the message was available",
+      "Proof that the message was modified",
+      "Proof that the message was encrypted"
+    ],
+    "correct_answer": "Proof that the alleged sender sent the message"
+  },
+  {
+    "question_number": 29,
+    "question_text": "An integer p > 1 is a ______ number if and only if its only divisors are +1 and +p.",
+    "options": ["positive", "composite", "prime", "indexed"],
+    "correct_answer": "prime"
+  },
+  {
+    "question_number": 30,
+    "question_text": "What does FIPS 199 provide?",
+    "options": [
+      "Attack methods",
+      "Encryption algorithms",
+      "Network protocols",
+      "A useful characterization of security objectives"
+    ],
+    "correct_answer": "A useful characterization of security objectives"
+  },
+  {
+    "question_number": 31,
+    "question_text": "What does Level 5 protection apply to?",
+    "options": [
+      "Small-sized private enterprises",
+      "Township information systems",
+      "Common information systems",
+      "Extremely important systems in important fields and departments of a country"
+    ],
+    "correct_answer": "Extremely important systems in important fields and departments of a country"
+  },
+  {
+    "question_number": 32,
+    "question_text": "During which period did controllability and non-repudiation become new information security principles?",
+    "options": [
+      "Information Assurance Period (1990s)",
+      "Information Security Period (1970s-1980s)",
+      "Cyberspace Security Period (Today)",
+      "Communication Security Period (1940s)"
+    ],
+    "correct_answer": "Information Assurance Period (1990s)"
+  },
+  {
+    "question_number": 33,
+    "question_text": "One way to classify Web security threats is in terms of the location of the threat: Web server, Web browser, and network traffic between browser and server.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 34,
+    "question_text": "The strength of any cryptographic system rests with the",
+    "options": ["nonce", "X.509 certificate", "key distribution technique", "end encryption"],
+    "correct_answer": "key distribution technique"
+  },
+  {
+    "question_number": 35,
+    "question_text": "S-AES is the most widely used multiple encryption scheme.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 36,
+    "question_text": "What is a key consideration when placing security mechanisms?",
+    "options": [
+      "Only logical placement",
+      "Only physical placement",
+      "No placement considerations",
+      "Both physical placement and logical placement in architecture layers"
+    ],
+    "correct_answer": "Both physical placement and logical placement in architecture layers"
+  },
+  {
+    "question_number": 37,
+    "question_text": "IaaS enables customers to combine basic computing services, such as number crunching and data storage, to build highly adaptable computer systems.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 38,
+    "question_text": "What does the 'Check' phase of PDCA in ISMS involve?",
+    "options": [
+      "Monitoring and reviewing the ISMS",
+      "Establishing the ISMS",
+      "Implementing and operating the ISMS",
+      "Maintaining and improving the ISMS"
+    ],
+    "correct_answer": "Monitoring and reviewing the ISMS"
+  },
+  {
+    "question_number": 39,
+    "question_text": "The PMK is used to generate the ______ which consists of three keys to be used for communication between a STA and AP after they have been mutually authenticated.",
+    "options": ["GTK", "AAA Key", "PTK", "PSK"],
+    "correct_answer": "PTK"
+  },
+  {
+    "question_number": 40,
+    "question_text": "What is the primary purpose of ISO/IEC 27008?",
+    "options": [
+      "Requirements and standards for ISMS",
+      "Certification procedures",
+      "Audit guideline",
+      "Best practice rules"
+    ],
+    "correct_answer": "Audit guideline"
+  },
+  {
+    "question_number": 41,
+    "question_text": "What does nonrepudiation provide for the sender?",
+    "options": [
+      "Proof that the message was modified",
+      "Proof that the message was encrypted",
+      "Proof that the message was available",
+      "Proof that the alleged receiver received the message"
+    ],
+    "correct_answer": "Proof that the alleged receiver received the message"
+  },
+  {
+    "question_number": 42,
+    "question_text": "What is the relationship between the initial phase (1994-2003) and the development phase (2004-2006) of Cybersecurity Classified Protection?",
+    "options": [
+      "The initial phase called for classifying information systems into different levels, while the development phase developed standards and specifications and piloted them",
+      "The development phase eliminated the initial phase concepts",
+      "They are unrelated",
+      "They occurred simultaneously"
+    ],
+    "correct_answer": "The initial phase called for classifying information systems into different levels, while the development phase developed standards and specifications and piloted them"
+  },
+  {
+    "question_number": 43,
+    "question_text": "______ can occur when a company's wireless LAN or wireless access points to wired LANs in close proximity and may create overlapping transmission ranges. A user intending to connect to one LAN may unintentionally lock on to a wireless access point from a neighboring network.",
+    "options": [
+      "Denial of service attacks",
+      "Network injection",
+      "Accidental association",
+      "Man-in-the-middle attacks"
+    ],
+    "correct_answer": "Accidental association"
+  },
+  {
+    "question_number": 44,
+    "question_text": "What is the specific purpose of ISO/IEC 27007?",
+    "options": [
+      "Guidelines for information security management systems auditing",
+      "Risk management guidelines",
+      "Certification requirements",
+      "Implementation guidelines"
+    ],
+    "correct_answer": "Guidelines for information security management systems auditing"
+  },
+  {
+    "question_number": 45,
+    "question_text": "If the calculated frame check sequence is equal to the incoming frame check sequence the message is considered authentic.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 46,
+    "question_text": "What are irreversible cryptographic mechanisms?",
+    "options": [
+      "Encryption algorithms",
+      "Decryption algorithms",
+      "Key exchange protocols",
+      "Hash algorithms and message authentication codes"
+    ],
+    "correct_answer": "Hash algorithms and message authentication codes"
+  },
+  {
+    "question_number": 47,
+    "question_text": "MiniSec has two operating modes: unicast (MiniSec-U) and broadcast (MiniSec-B)",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 48,
+    "question_text": "What does a connectionless integrity service generally provide?",
+    "options": [
+      "Protection against denial of service",
+      "Protection against replay",
+      "Protection against all attacks",
+      "Protection against message modification only"
+    ],
+    "correct_answer": "Protection against message modification only"
+  },
+  {
+    "question_number": 49,
+    "question_text": "What does ISO 27799 specify?",
+    "options": [
+      "Telecommunication information security management",
+      "Healthcare information security management standards",
+      "General information security management",
+      "Financial information security management"
+    ],
+    "correct_answer": "Healthcare information security management standards"
+  },
+  {
+    "question_number": 50,
+    "question_text": "The greater the number of rounds, the ______ it is to perform cryptanalysis.",
+    "options": ["harder", "easier", "less difficult", "equally difficult"],
+    "correct_answer": "harder"
+  },
+  {
+    "question_number": 51,
+    "question_text": "______ mode is similar to Cipher Feedback, except that the input to the encryption algorithm is the preceding DES output.",
+    "options": ["Cipher Block Chaining", "Cipher Feedback", "Output Feedback", "Counter"],
+    "correct_answer": "Output Feedback"
+  },
+  {
+    "question_number": 52,
+    "question_text": "What can records of system activities aid in?",
+    "options": [
+      "Only preventing attacks",
+      "Tracing security breaches or aiding in transaction disputes",
+      "Only authenticating users",
+      "Only encrypting data"
+    ],
+    "correct_answer": "Tracing security breaches or aiding in transaction disputes"
+  },
+  {
+    "question_number": 53,
+    "question_text": "______ provides service to customers in the form of software, specifically application software, running on and accessible in the cloud.",
+    "options": ["SaaS", "PaaS", "CaaS", "IaaS"],
+    "correct_answer": "SaaS"
+  },
+  {
+    "question_number": 54,
+    "question_text": "The order in which the frame check sequence and encryption functions are performed is not critical for authentication.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 55,
+    "question_text": "What is privacy in the context of security?",
+    "options": [
+      "The ability to hide data completely",
+      "Assuring that individuals control what information related to them may be collected and stored",
+      "The encryption of all data",
+      "The prevention of all data access"
+    ],
+    "correct_answer": "Assuring that individuals control what information related to them may be collected and stored"
+  },
+  {
+    "question_number": 56,
+    "question_text": "______ refer to common two-letter combinations in the English language.",
+    "options": ["Streamings", "Polyalphabetic ciphers", "Digrams", "Transpositions"],
+    "correct_answer": "Digrams"
+  },
+  {
+    "question_number": 57,
+    "question_text": "What is another name for two-key algorithms?",
+    "options": [
+      "Hash algorithms",
+      "Symmetric-key algorithms",
+      "Asymmetric-key or public-key algorithms",
+      "Keyless algorithms"
+    ],
+    "correct_answer": "Asymmetric-key or public-key algorithms"
+  },
+  {
+    "question_number": 58,
+    "question_text": "Message authentication is achieved using a",
+    "options": ["MAC", "SHA", "DES", "MDF"],
+    "correct_answer": "MAC"
+  },
+  {
+    "question_number": 59,
+    "question_text": "A technique referred to as a ______ is a mapping achieved by performing some sort of permutation on the plaintext letters.",
+    "options": ["transposition cipher", "Caesar cipher", "monoalphabetic cipher", "polyalphabetic cipher"],
+    "correct_answer": "transposition cipher"
+  },
+  {
+    "question_number": 60,
+    "question_text": "The ______ defines the transport protocol.",
+    "options": ["IP protocol field", "interface", "destination IP address", "source IP address"],
+    "correct_answer": "IP protocol field"
+  },
+  {
+    "question_number": 61,
+    "question_text": "What is a digital signature?",
+    "options": [
+      "An encryption key",
+      "A password",
+      "Data appended to or a cryptographic transformation that allows proving source and integrity",
+      "A handwritten signature"
+    ],
+    "correct_answer": "Data appended to or a cryptographic transformation that allows proving source and integrity"
+  },
+  {
+    "question_number": 62,
+    "question_text": "What is the core idea of zero trust?",
+    "options": [
+      "Trust all users inside the network",
+      "Trust based on network location only",
+      "Trust all devices outside the network",
+      "All users, devices, or systems inside and outside the network are not trusted by default, and trust basis needs to be established through authentication, authorization, and access control"
+    ],
+    "correct_answer": "All users, devices, or systems inside and outside the network are not trusted by default, and trust basis needs to be established through authentication, authorization, and access control"
+  },
+  {
+    "question_number": 63,
+    "question_text": "What are hackers in terms of information security?",
+    "options": [
+      "People who only fix security vulnerabilities",
+      "People who only protect systems",
+      "People who study how to intellectually access computer security systems and use public communication networks to log in to others' systems in an unauthorized way",
+      "People who only work for security companies"
+    ],
+    "correct_answer": "People who study how to intellectually access computer security systems and use public communication networks to log in to others' systems in an unauthorized way"
+  },
+  {
+    "question_number": 64,
+    "question_text": "What is another name for single-key algorithms?",
+    "options": [
+      "Symmetric-key algorithms",
+      "Asymmetric-key algorithms",
+      "Hash algorithms",
+      "Public-key algorithms"
+    ],
+    "correct_answer": "Symmetric-key algorithms"
+  },
+  {
+    "question_number": 65,
+    "question_text": "What distinguishes the Information Assurance Period's approach to security management from previous periods?",
+    "options": [
+      "It eliminated technical protection",
+      "It eliminated the need for security management personnel",
+      "It focused only on technical protection without management",
+      "Security management personnel were fostered and the security management system was established, with more technical means used to associate security management with technical protection"
+    ],
+    "correct_answer": "Security management personnel were fostered and the security management system was established, with more technical means used to associate security management with technical protection"
+  },
+  {
+    "question_number": 66,
+    "question_text": "What is the relationship between the flow probe and HiSec Insight collector in the network security situational awareness architecture?",
+    "options": [
+      "They perform independent functions without interaction",
+      "The collector replaces the flow probe",
+      "They are the same component",
+      "The flow probe collects basic network data such as traffic and device logs, which is then sent to the HiSec Insight collector for analysis"
+    ],
+    "correct_answer": "The flow probe collects basic network data such as traffic and device logs, which is then sent to the HiSec Insight collector for analysis"
+  },
+  {
+    "question_number": 67,
+    "question_text": "The clocks among the various participants are not required to be synchronized when using the timestamp approach.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 68,
+    "question_text": "The encryption round has the structure:",
+    "options": [
+      "SubBytes, ShiftRows, MixColumns, AddRoundKey",
+      "MixColumns, ShiftRows, SubBytes, AddRoundKey",
+      "ShiftRows, MixColumns, SubBytes, InvMixColumns",
+      "InvShiftRows, InvSubBytes, AddRoundKey, InvMixColumns"
+    ],
+    "correct_answer": "SubBytes, ShiftRows, MixColumns, AddRoundKey"
+  },
+  {
+    "question_number": 69,
+    "question_text": "What makes security complex according to the challenges?",
+    "options": [
+      "Attacks are always obvious",
+      "It is actually simple",
+      "The requirements seem straightforward but mechanisms are complex",
+      "It doesn't require thought"
+    ],
+    "correct_answer": "The requirements seem straightforward but mechanisms are complex"
+  },
+  {
+    "question_number": 70,
+    "question_text": "What is the specific purpose of ISO/IEC 27005?",
+    "options": [
+      "Implementation guidelines",
+      "Information security risk management guidelines",
+      "Audit procedures",
+      "Certification guidelines"
+    ],
+    "correct_answer": "Information security risk management guidelines"
+  },
+  {
+    "question_number": 71,
+    "question_text": "According to Cybersecurity Law Article 59, what is the fine range for directly responsible management personnel who do not perform cybersecurity protection duties?",
+    "options": ["RMB 1,000 to 5,000", "RMB 5,000 to 50,000", "No fines are specified", "RMB 50,000 to 100,000"],
+    "correct_answer": "RMB 5,000 to 50,000"
+  },
+  {
+    "question_number": 72,
+    "question_text": "A scanning strategy that uses information contained on an infected victim machine to find more hosts to scan is the ______ method.",
+    "options": ["random", "local subnet", "hit list", "topological"],
+    "correct_answer": "topological"
+  },
+  {
+    "question_number": 73,
+    "question_text": "Two issues to consider with the computation required to use RSA are encryption/decryption and",
+    "options": ["trap-door one-way functions", "time complexity", "key generation", "asymmetric encryption padding"],
+    "correct_answer": "key generation"
+  },
+  {
+    "question_number": 74,
+    "question_text": "The encryption of the compressed message plus the MAC must increase the content length by more than 1024 bytes.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 75,
+    "question_text": "What does traffic flow analysis protection prevent?",
+    "options": [
+      "An attacker from observing source, destination, frequency, length, or other characteristics of traffic",
+      "Active attacks",
+      "Denial of service attacks",
+      "Modification of data"
+    ],
+    "correct_answer": "An attacker from observing source, destination, frequency, length, or other characteristics of traffic"
+  },
+  {
+    "question_number": 76,
+    "question_text": "In effect, PaaS is an operating system in the cloud.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 77,
+    "question_text": "A cyclic group is always commutative and may be finite or infinite.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 78,
+    "question_text": "Intrusion detection is the process of collecting information about events occurring in a computer system or network and analyzing them for signs of intrusions.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 79,
+    "question_text": "What is the zero trust principle?",
+    "options": ["Trust by default", "Verify only external users", "Always trust, never verify", "Never trust, always verify"],
+    "correct_answer": "Never trust, always verify"
+  },
+  {
+    "question_number": 80,
+    "question_text": "The key exchange protocol is vulnerable to a ______ attack because it does not authenticate the participants.",
+    "options": ["time complexity", "chosen ciphertext", "one-way function", "man-in-the-middle"],
+    "correct_answer": "man-in-the-middle"
+  },
+  {
+    "question_number": 81,
+    "question_text": "What were the main objectives of information security during the Information Security Period?",
+    "options": [
+      "Controllability and non-repudiation",
+      "Confidentiality only",
+      "Integrity, availability, and confidentiality",
+      "Physical security"
+    ],
+    "correct_answer": "Integrity, availability, and confidentiality"
+  },
+  {
+    "question_number": 82,
+    "question_text": "What type of cipher was mainly used during the Communication Security Period?",
+    "options": ["Hash cipher", "Block cipher", "Stream cipher", "Asymmetric cipher"],
+    "correct_answer": "Stream cipher"
+  },
+  {
+    "question_number": 83,
+    "question_text": "The ______ can be an end user; a device such as a router or server; a process; or any item that can be identified in the subject name of a public key certificate.",
+    "options": ["repository", "certification authority", "end entity", "registration authority"],
+    "correct_answer": "end entity"
+  },
+  {
+    "question_number": 84,
+    "question_text": "A brute-force attack on a MAC is easier than a brute-force attack on a hash function.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 85,
+    "question_text": "Why must security mechanism designers always consider potential attacks?",
+    "options": [
+      "Attacks are always obvious",
+      "Attacks never happen",
+      "Security mechanisms don't need to be secure",
+      "Successful attacks are often designed by looking at the problem in a completely different way"
+    ],
+    "correct_answer": "Successful attacks are often designed by looking at the problem in a completely different way"
+  },
+  {
+    "question_number": 86,
+    "question_text": "An enterprise should have policies for the maximum cryptoperiod of each key type.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 87,
+    "question_text": "A PseudoRandom Function takes as input:",
+    "options": ["all of the above", "a seed value", "a secret value", "an identifying label"],
+    "correct_answer": "all of the above"
+  },
+  {
+    "question_number": 88,
+    "question_text": "What does 'Remote work is now just work' mean in terms of security requirements?",
+    "options": [
+      "Remote work security is the same as traditional office security",
+      "Remote work security is no longer important",
+      "Enterprises require a total reboot of security policies and tools to better mitigate security risks for remote office work",
+      "Remote work does not require special security measures"
+    ],
+    "correct_answer": "Enterprises require a total reboot of security policies and tools to better mitigate security risks for remote office work"
+  },
+  {
+    "question_number": 89,
+    "question_text": "What is the role of the consulting organization in the Cybersecurity Classified Protection working process?",
+    "options": [
+      "They assist the operation unit in various steps including preparing grading reports, archiving materials, building security technology systems, and participating in assessments",
+      "They only provide security products",
+      "They only perform inspections",
+      "They perform the level assessment"
+    ],
+    "correct_answer": "They assist the operation unit in various steps including preparing grading reports, archiving materials, building security technology systems, and participating in assessments"
+  },
+  {
+    "question_number": 90,
+    "question_text": "What does a trust model help establish?",
+    "options": ["Trust relationships", "Attack vectors", "Encryption keys", "Network protocols"],
+    "correct_answer": "Trust relationships"
+  },
+  {
+    "question_number": 91,
+    "question_text": "Information in a quantum computer is represented as",
+    "options": ["qubits", "quinfo", "qucis", "qubytes"],
+    "correct_answer": "qubits"
+  },
+  {
+    "question_number": 92,
+    "question_text": "OFB mode requires an initialization vector that must be unique to each execution of the encryption operation.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 93,
+    "question_text": "There are very few types of devices with embedded systems.",
+    "options": ["False", "True"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 94,
+    "question_text": "The X.509 standard dictates the use of a specific digital signature algorithm and a specific hash function.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 95,
+    "question_text": "The major advantage of the public cloud is",
+    "options": ["cost", "convenience", "security", "availability"],
+    "correct_answer": "cost"
+  },
+  {
+    "question_number": 96,
+    "question_text": "Cipher Feedback (CFB) is used for the secure transmission of single values.",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 97,
+    "question_text": "What is the more attractive alternative for integrity service?",
+    "options": [
+      "Only detection",
+      "Incorporation of automated recovery mechanisms",
+      "No recovery",
+      "Manual recovery"
+    ],
+    "correct_answer": "Incorporation of automated recovery mechanisms"
+  },
+  {
+    "question_number": 98,
+    "question_text": "With true random sequences each number is statistically independent of other numbers in the sequence and therefore unpredictable.",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 99,
+    "question_text": "Rotor machines are sophisticated precomputer hardware devices that use substitution techniques.",
+    "options": ["False", "True"],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 100,
+    "question_text": "What does the availability service protect?",
+    "options": ["A system to ensure its availability", "Only users", "Only networks", "Only data"],
+    "correct_answer": "A system to ensure its availability"
+  }
+]

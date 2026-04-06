@@ -1,0 +1,1038 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "Status Finished Started Saturday, 4 April 2026, 5:22 PM Completed Saturday, 4 April 2026, 6:07 PM Duration 44 mins 49 secs Grade 67.00 out of 100.00 What happened during the promotion phase (2007-2016) of Cybersecurity Classified Protection?",
+    "options": [
+      "a. The system was first proposed",
+      "b. Cybersecurity Classified Protection 2.0 was released",
+      "c. This was Cybersecurity Classified Protection 1.0, which was promoted and implemented",
+      "d. The system was eliminated"
+    ],
+    "correct_answer": "This was Cybersecurity Classified Protection 1.0, which was promoted and implemented 1/51"
+  },
+  {
+    "question_number": 2,
+    "question_text": "A microprocessor is also called a \u201ccomputer on a chip\u201d.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 3,
+    "question_text": "Constrained devices are not particularly vulnerable to side-channel attacks because they are physically secure.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "False 2/51"
+  },
+  {
+    "question_number": 4,
+    "question_text": "What must the defender do that is more difficult?",
+    "options": [
+      "a. Find one weakness",
+      "b. Attack systems",
+      "c. Close all possible holes",
+      "d. Find all weaknesses"
+    ],
+    "correct_answer": "Close all possible holes"
+  },
+  {
+    "question_number": 5,
+    "question_text": "As a _________ relation, mod expresses that two arguments have the same remainder with respect to a given modulus.",
+    "options": [
+      "a. finite",
+      "b. congruence",
+      "c. cyclic",
+      "d. monic"
+    ],
+    "correct_answer": "congruence 3/51"
+  },
+  {
+    "question_number": 6,
+    "question_text": "Hash functions are commonly used to create a one-way password file.",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 7,
+    "question_text": "What is Level 1 protection also known as?",
+    "options": [
+      "a. Guided protection",
+      "b. Forced protection",
+      "c. Supervised protection",
+      "d. Self-protection"
+    ],
+    "correct_answer": "Self-protection 4/51"
+  },
+  {
+    "question_number": 8,
+    "question_text": "An end user whose system is equipped with IP security protocols can make a local call to an ISP and gain secure access to a company network.",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 9,
+    "question_text": "Virtually all cryptographic hash functions involve the iterative use of a compression function.",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "True 5/51"
+  },
+  {
+    "question_number": 10,
+    "question_text": "If both sender and receiver use the same key, the system is referred to as:",
+    "options": [
+      "a. conventional encryption",
+      "b. two-key",
+      "c. public-key encryption",
+      "d. asymmetric"
+    ],
+    "correct_answer": "conventional encryption"
+  },
+  {
+    "question_number": 11,
+    "question_text": "What is the relationship between services and security in the Information Assurance Period's enterprise information assurance system?",
+    "options": [
+      "a. All services have the same security requirements",
+      "b. Services do not require security",
+      "c. Different service traffic has different risks and defense modes",
+      "d. Services and security are independent"
+    ],
+    "correct_answer": "Different service traffic has different risks and defense modes 6/51"
+  },
+  {
+    "question_number": 12,
+    "question_text": "What happens if a violation of integrity is detected without recovery?",
+    "options": [
+      "a. Some other portion of software or human intervention is required",
+      "b. Nothing happens",
+      "c. The system shuts down",
+      "d. Automatic recovery occurs"
+    ],
+    "correct_answer": "Some other portion of software or human intervention is required"
+  },
+  {
+    "question_number": 13,
+    "question_text": "A ___________ allows data that is being read or tansmitted to be checked for errors and, when necessary, corrected.",
+    "options": [
+      "a. superposition",
+      "b. CBC",
+      "c. ECC",
+      "d. lattice code"
+    ],
+    "correct_answer": "ECC 7/51"
+  },
+  {
+    "question_number": 14,
+    "question_text": "In the Cybersecurity Classified Protection working process, what does the operation unit do during the archiving step?",
+    "options": [
+      "a. Only determines the level",
+      "b. Only accepts inspection",
+      "c. Prepares materials and submits them to the local public security organ for archiving",
+      "d. Only builds the system"
+    ],
+    "correct_answer": "Prepares materials and submits them to the local public security organ for archiving"
+  },
+  {
+    "question_number": 15,
+    "question_text": "Two theorems that play important roles in public-key cryptography are Fermat's theorem and __________ theorem.",
+    "options": [
+      "a. Euler's",
+      "b. AKS",
+      "c. Chinese Remainder",
+      "d. Miller-Rabin"
+    ],
+    "correct_answer": "Euler's 8/51"
+  },
+  {
+    "question_number": 16,
+    "question_text": "Why must systems keep records of their activities?",
+    "options": [
+      "a. To prevent all attacks",
+      "b. To permit later forensic analysis to trace security breaches or aid in transaction disputes",
+      "c. To encrypt data",
+      "d. To authenticate users"
+    ],
+    "correct_answer": "To permit later forensic analysis to trace security breaches or aid in transaction disputes"
+  },
+  {
+    "question_number": 17,
+    "question_text": "What does the availability service depend on?",
+    "options": [
+      "a. Only encryption",
+      "b. Only authentication",
+      "c. Only logging",
+      "d. Proper management and control of system resources"
+    ],
+    "correct_answer": "Proper management and control of system resources 9/51"
+  },
+  {
+    "question_number": 18,
+    "question_text": "A certificate consists of a public key, an identifier of the key owner, and the whole block signed by a trusted third party.",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 19,
+    "question_text": "Information in a quantum computer is represented as __________ .",
+    "options": [
+      "a. qucis",
+      "b. qubits",
+      "c. quinfo",
+      "d. qubytes"
+    ],
+    "correct_answer": "qubits 10/51"
+  },
+  {
+    "question_number": 20,
+    "question_text": "What was the impact of the ransomware attack on the refined oil pipeline operator?",
+    "options": [
+      "a. Only data was stolen",
+      "b. Only network traffic was disrupted",
+      "c. Computers managing the pipeline were affected, and some fuel supply systems were forced to go offline",
+      "d. Only user accounts were compromised"
+    ],
+    "correct_answer": "Computers managing the pipeline were affected, and some fuel supply systems were forced to go offline"
+  },
+  {
+    "question_number": 21,
+    "question_text": "The cryptographic hash function is not a versatile cryptographic algorithm.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "False 11/51"
+  },
+  {
+    "question_number": 22,
+    "question_text": "The SSL Record Protocol is used before any application data is transmitted.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 23,
+    "question_text": "Finite fields are a subset of fields, consisting of those fields with a finite number of elements.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "True 12/51"
+  },
+  {
+    "question_number": 24,
+    "question_text": "A _________ is an incident in which sensitive, protected, or confidential information is released, viewed, stolen, or used by an individual who is not authorized to do so.",
+    "options": [
+      "a. repudiation",
+      "b. tampering with data",
+      "c. DoS attack",
+      "d. data breach"
+    ],
+    "correct_answer": "data breach"
+  },
+  {
+    "question_number": 25,
+    "question_text": "Insertion of messages into the network from a fraudulent source is a __________ attack.",
+    "options": [
+      "a. masquerade",
+      "b. sequence modification",
+      "c. source repudiation",
+      "d. content modification"
+    ],
+    "correct_answer": "masquerade 13/51"
+  },
+  {
+    "question_number": 26,
+    "question_text": "Although it does not appear to be as efficient as the Miller-Rabin algorithm, in 2002 a relatively simple deterministic algorithm that efficiently determines whether a given large number is a prime was developed. This algorithm is known as the _________ algorithm.",
+    "options": [
+      "a. Brady",
+      "b. Miller-Rabin",
+      "c. AKS",
+      "d. Euclidean"
+    ],
+    "correct_answer": "AKS"
+  },
+  {
+    "question_number": 27,
+    "question_text": "The X.509 standard dictates the use of a specific digital signature algorithm and a specific hash function.",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "False 14/51"
+  },
+  {
+    "question_number": 28,
+    "question_text": "RFID __________ are small programmable devices used for object, animal, and human tracking.",
+    "options": [
+      "a. transceivers",
+      "b. actuators",
+      "c. readers",
+      "d. tags"
+    ],
+    "correct_answer": "tags"
+  },
+  {
+    "question_number": 29,
+    "question_text": "The Payload Data Field is designed to deter replay attacks.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "False 15/51"
+  },
+  {
+    "question_number": 30,
+    "question_text": "What is the typical process of a ransomware attack?",
+    "options": [
+      "a. Intrusion, diffusion, theft, and extortion",
+      "b. Extortion only",
+      "c. Theft only",
+      "d. Intrusion only"
+    ],
+    "correct_answer": "Intrusion, diffusion, theft, and extortion"
+  },
+  {
+    "question_number": 31,
+    "question_text": "What is the zero trust principle?",
+    "options": [
+      "a. Never trust, always verify",
+      "b. Verify only external users",
+      "c. Trust by default",
+      "d. Always trust, never verify"
+    ],
+    "correct_answer": "Never trust, always verify 16/51"
+  },
+  {
+    "question_number": 32,
+    "question_text": "The IoT is primarily driven by deeply embedded devices.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 33,
+    "question_text": "A stateful packet inspection firewall reviews the same packet information as a packet filtering firewall, but also records information about TCP connections.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "True 17/51"
+  },
+  {
+    "question_number": 34,
+    "question_text": "The vast majority of network-based symmetric cryptographic applications make use of ________ ciphers.",
+    "options": [
+      "a. linear",
+      "b. block",
+      "c. permutation",
+      "d. stream"
+    ],
+    "correct_answer": "block"
+  },
+  {
+    "question_number": 35,
+    "question_text": "A cyclic group is always commutative and may be finite or infinite.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "False 18/51"
+  },
+  {
+    "question_number": 36,
+    "question_text": "What are considered critical information infrastructure according to Cybersecurity Law Article 31?",
+    "options": [
+      "a. Only power systems",
+      "b. Public communication and information services, power, traffic, water resources, finance,  public service, e-government, and other critical information infrastructure",
+      "c. Only financial systems",
+      "d. Only government networks"
+    ],
+    "correct_answer": "Public communication and information services, power, traffic, water resources, finance, public service, e-government, and other critical information infrastructure"
+  },
+  {
+    "question_number": 37,
+    "question_text": "The _________ payload allows IKE SAs to be authenticated using EAP.",
+    "options": [
+      "a. Vendor ID",
+      "b. Extensible Authentication Protocol",
+      "c. Configuration",
+      "d. Traffic Selector"
+    ],
+    "correct_answer": "Extensible Authentication Protocol 19/51"
+  },
+  {
+    "question_number": 38,
+    "question_text": "The clocks among the various participants are not required to be synchronized when using the timestamp approach.",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 39,
+    "question_text": "What is the relationship between Cybersecurity Classified Protection 1.0 and 2.0?",
+    "options": [
+      "a. 1.0 and 2.0 are completely independent",
+      "b. 2.0 only applies to government agencies",
+      "c. 2.0 is based on 1.0 but covers new technologies such as cloud computing, mobile Internet, IoT, and industrial control systems",
+      "d. 2.0 completely replaces 1.0"
+    ],
+    "correct_answer": "2.0 is based on 1.0 but covers new technologies such as cloud computing, mobile Internet, IoT, and industrial control systems 20/51"
+  },
+  {
+    "question_number": 40,
+    "question_text": "The most important development from the work on public-key cryptography is the digital signature.",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 41,
+    "question_text": "An advantage of key-dependent S-boxes is that because they are not fixed, it is impossible to analyze the S-boxes ahead of time to look for weaknesses.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "True 21/51"
+  },
+  {
+    "question_number": 42,
+    "question_text": "A __________ cipher is one in which a block of plaintext is treated as a whole and used to produce a ciphertext block of equal length.",
+    "options": [
+      "a. stream",
+      "b. block",
+      "c. product",
+      "d. bit"
+    ],
+    "correct_answer": "block"
+  },
+  {
+    "question_number": 43,
+    "question_text": "Inherence factor is something the individual is or does.",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "True 22/51"
+  },
+  {
+    "question_number": 44,
+    "question_text": "Key sizes of __________ or less are now considered to be inadequate.",
+    "options": [
+      "a. 128 bits",
+      "b. 32 bits",
+      "c. 16 bits",
+      "d. 64 bits"
+    ],
+    "correct_answer": "64 bits"
+  },
+  {
+    "question_number": 45,
+    "question_text": "Intrusion detection is the process of collecting information about events occurring in a computer system or network and analyzing them for signs of intrusions.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "True 23/51"
+  },
+  {
+    "question_number": 46,
+    "question_text": "Confusion seeks to make the statistical relationship between the plaintext and ciphertext as complex as possible in order to thwart attempts to deduce the key.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 47,
+    "question_text": "__________ is designed for small embedded systems with tight requirements on memory, processing time, real-time response, and power consumption.",
+    "options": [
+      "a. TinyOs",
+      "b. RBAC",
+      "c. ECB",
+      "d. MiniSec"
+    ],
+    "correct_answer": "TinyOs 24/51"
+  },
+  {
+    "question_number": 48,
+    "question_text": "Public-key encryption is more secure from cryptanalysis than symmetric encryption.",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 49,
+    "question_text": "The __________ field is used to identify MIME entities uniquely in multiple contexts.",
+    "options": [
+      "a. Content-Description",
+      "b. Content-Type",
+      "c. Content-ID",
+      "d. Content-Transfer- Encoding"
+    ],
+    "correct_answer": "Content-ID 25/51"
+  },
+  {
+    "question_number": 50,
+    "question_text": "What does ISMS stand for?",
+    "options": [
+      "a. Information Security Management Software",
+      "b. Information Security Management Standard",
+      "c. Information Security Management Service",
+      "d. Information Security Management System"
+    ],
+    "correct_answer": "Information Security Management System"
+  },
+  {
+    "question_number": 51,
+    "question_text": "An Administrative Management Domain is a directory lookup service that provides a mapping between the name of a host on the Internet and its numerical address.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "False 26/51"
+  },
+  {
+    "question_number": 52,
+    "question_text": "Why are standards important in cryptography?",
+    "options": [
+      "a. They only apply to encryption",
+      "b. They only apply to network protocols",
+      "c. They are not important",
+      "d. They ensure interoperability and provide common frameworks"
+    ],
+    "correct_answer": "They ensure interoperability and provide common frameworks"
+  },
+  {
+    "question_number": 53,
+    "question_text": "What other security service does the availability service depend on?",
+    "options": [
+      "a. Only logging",
+      "b. Access control service",
+      "c. Only encryption",
+      "d. Only authentication"
+    ],
+    "correct_answer": "Access control service 27/51"
+  },
+  {
+    "question_number": 54,
+    "question_text": "Timing attacks are ciphertext attacks that are only applicable to RSA.",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 55,
+    "question_text": "The term used for certified 802.11b products is ___________ .",
+    "options": [
+      "a. Wi-Fi",
+      "b. WEP",
+      "c. WPA",
+      "d. WAP"
+    ],
+    "correct_answer": "Wi-Fi 28/51"
+  },
+  {
+    "question_number": 56,
+    "question_text": "What does the authentication service provide for a single message?",
+    "options": [
+      "a. Assurance that the message is from the claimed source",
+      "b. Availability of the message",
+      "c. Integrity of the message",
+      "d. Encryption of the message"
+    ],
+    "correct_answer": "Assurance that the message is from the claimed source"
+  },
+  {
+    "question_number": 57,
+    "question_text": "What does communications security protect?",
+    "options": [
+      "a. Only stored data",
+      "b. Data during transmission",
+      "c. Only devices",
+      "d. Only users"
+    ],
+    "correct_answer": "Data during transmission 29/51"
+  },
+  {
+    "question_number": 58,
+    "question_text": "The key algorithmic ingredients of _________ are the AES encryption algorithm, the CTR mode of operation, and the CMAC authentication algorithm.",
+    "options": [
+      "a. CCM",
+      "b. CMA",
+      "c. GCM",
+      "d. DAA"
+    ],
+    "correct_answer": "CCM"
+  },
+  {
+    "question_number": 59,
+    "question_text": "All other things being equal, smaller block sizes mean greater security.",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "False 30/51"
+  },
+  {
+    "question_number": 60,
+    "question_text": "What does the availability service depend on?",
+    "options": [
+      "a. Only logging",
+      "b. Proper management and control of system resources",
+      "c. Only encryption",
+      "d. Only authentication"
+    ],
+    "correct_answer": "Proper management and control of system resources"
+  },
+  {
+    "question_number": 61,
+    "question_text": "The XTS-AES mode is based on the concept of a tweakable block cipher.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "True 31/51"
+  },
+  {
+    "question_number": 62,
+    "question_text": "In the ISO 27001 project implementation methodology, what specific activities occur during certification and continuous improvement?",
+    "options": [
+      "a. Only implementation",
+      "b. ISMS internal audit, ISMS external audit, ISMS management review, propose corrective and preventive measures, hold project summary meeting",
+      "c. Only risk assessment",
+      "d. Only planning"
+    ],
+    "correct_answer": "ISMS internal audit, ISMS external audit, ISMS management review, propose corrective and preventive measures, hold project summary meeting"
+  },
+  {
+    "question_number": 63,
+    "question_text": "The _________ of a number is defined to be the power to which some positive base (except 1) must be raised in order to equal the number.",
+    "options": [
+      "a. logarithm",
+      "b. index",
+      "c. order",
+      "d. exponent"
+    ],
+    "correct_answer": "logarithm 32/51"
+  },
+  {
+    "question_number": 64,
+    "question_text": "What is the relationship between security services and security mechanisms?",
+    "options": [
+      "a. They are unrelated",
+      "b. They are identical",
+      "c. Security mechanisms implement security services",
+      "d. Security services implement security mechanisms"
+    ],
+    "correct_answer": "Security mechanisms implement security services"
+  },
+  {
+    "question_number": 65,
+    "question_text": "In the general structure of the AES encryption process the input to the encryption and decryption algorithms is a single _________ block.",
+    "options": [
+      "a. 32-bit",
+      "b. 64-bit",
+      "c. 128-bit",
+      "d. 256-bit"
+    ],
+    "correct_answer": "128-bit 33/51"
+  },
+  {
+    "question_number": 66,
+    "question_text": "Secure, trusted, and privacy-protected __________ capability is required so that unauthorized access of the content of data can be prohibited, integrity of data can be guaranteed, and privacy-related content of data can be protected when storing or processing data in IoT.",
+    "options": [
+      "a. communication",
+      "b. security audit",
+      "c. mutual authentication and authorization",
+      "d. data management"
+    ],
+    "correct_answer": "data management"
+  },
+  {
+    "question_number": 67,
+    "question_text": "What must systems keep to permit forensic analysis?",
+    "options": [
+      "a. Only network logs",
+      "b. Records of their activities",
+      "c. Only user passwords",
+      "d. Only encryption keys"
+    ],
+    "correct_answer": "Records of their activities 34/51"
+  },
+  {
+    "question_number": 68,
+    "question_text": "The Advanced Encryption Standard was published by the __________ in 2001.",
+    "options": [
+      "a. ARK",
+      "b. FIPS",
+      "c. NIST",
+      "d. IEEE"
+    ],
+    "correct_answer": "NIST"
+  },
+  {
+    "question_number": 69,
+    "question_text": "In the ISO 27001 project implementation, what activities are part of the \"Do\" phase?",
+    "options": [
+      "a. Only certification",
+      "b. Only planning",
+      "c. Only auditing",
+      "d. Release and train on the ISMS, develop performance monitoring process, try the ISMS,  operate and monitor the system"
+    ],
+    "correct_answer": "Release and train on the ISMS, develop performance monitoring process, try the ISMS, operate and monitor the system 35/51"
+  },
+  {
+    "question_number": 70,
+    "question_text": "SSL/TLS attacks can be grouped into four general categories: attacks on the handshake protocol, attacks on the record and application data protocols, attacks on the PKI, and other attacks.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 71,
+    "question_text": "__________ mode is suitable for parallel operation. Because there is no chaining, multiple blocks can be encrypted or decrypted simultaneously. Unlike CTR mode, this mode includes a nonce as well as a counter.",
+    "options": [
+      "a. S-AES",
+      "b. 3DES",
+      "c. XTS-AES",
+      "d. OFB"
+    ],
+    "correct_answer": "XTS-AES 36/51"
+  },
+  {
+    "question_number": 72,
+    "question_text": "What international organizations are related to information security standardization?",
+    "options": [
+      "a. Only ISO",
+      "b. Only ITU",
+      "c. International Organization for Standardization (ISO) and International Electrotechnical Commission (IEC)",
+      "d. Only IEC"
+    ],
+    "correct_answer": "International Organization for Standardization (ISO) and International Electrotechnical Commission (IEC)"
+  },
+  {
+    "question_number": 73,
+    "question_text": "What does the availability service address?",
+    "options": [
+      "a. Security concerns raised by denial-of-service attacks",
+      "b. Only active attacks",
+      "c. Only passive attacks",
+      "d. Only encryption issues"
+    ],
+    "correct_answer": "Security concerns raised by denial-of-service attacks 37/51"
+  },
+  {
+    "question_number": 74,
+    "question_text": "What does the broadest data confidentiality service protect?",
+    "options": [
+      "a. Specific fields only",
+      "b. All user data transmitted between two users over a period of time",
+      "c. A single message",
+      "d. Only headers"
+    ],
+    "correct_answer": "All user data transmitted between two users over a period of time"
+  },
+  {
+    "question_number": 75,
+    "question_text": "According to Cybersecurity Law of China, what system does the State implement?",
+    "options": [
+      "a. A cybersecurity multi-level protection system (MLPS)",
+      "b. Only ITSEC",
+      "c. Only ISO 27001",
+      "d. Only TCSEC"
+    ],
+    "correct_answer": "A cybersecurity multi-level protection system (MLPS) 38/51"
+  },
+  {
+    "question_number": 76,
+    "question_text": "Two integers are relatively _________ if and only if their only common positive integer factor is 1.",
+    "options": [
+      "a. composite",
+      "b. congruent",
+      "c. residual",
+      "d. prime"
+    ],
+    "correct_answer": "prime"
+  },
+  {
+    "question_number": 77,
+    "question_text": "According to FIPS 199, what is a loss of confidentiality?",
+    "options": [
+      "a. The disruption of access to information",
+      "b. The unauthorized disclosure of information",
+      "c. The deletion of information",
+      "d. The unauthorized modification of information"
+    ],
+    "correct_answer": "The unauthorized disclosure of information 39/51"
+  },
+  {
+    "question_number": 78,
+    "question_text": "What is information about in the context of security?",
+    "options": [
+      "a. Only encrypted data",
+      "b. Only data",
+      "c. Communication or representation of knowledge in any medium or form",
+      "d. Only digital data"
+    ],
+    "correct_answer": "Communication or representation of knowledge in any medium or form"
+  },
+  {
+    "question_number": 79,
+    "question_text": "What do standards organizations provide?",
+    "options": [
+      "a. Only network protocols",
+      "b. Common frameworks and specifications for security implementations",
+      "c. Only encryption algorithms",
+      "d. Only attack methods"
+    ],
+    "correct_answer": "Common frameworks and specifications for security implementations 40/51"
+  },
+  {
+    "question_number": 80,
+    "question_text": "In the context of abstract algebra we are usually not interested in evaluating a polynomial for a particular value of x. To emphasize this point the variable x is sometimes referred to as the __________.",
+    "options": [
+      "a. indeterminate",
+      "b. coefficient",
+      "c. monic",
+      "d. constant"
+    ],
+    "correct_answer": "indeterminate"
+  },
+  {
+    "question_number": 81,
+    "question_text": "According to Cybersecurity Law Article 21, what are network operators required to ensure?",
+    "options": [
+      "a. Only that access is logged",
+      "b. Only that the network is free from interference",
+      "c. Only that data is encrypted",
+      "d. That the network is free from interference, damage or unauthorized access, and prevent network data from being divulged, stolen or falsified"
+    ],
+    "correct_answer": "That the network is free from interference, damage or unauthorized access, and prevent network data from being divulged, stolen or falsified 41/51"
+  },
+  {
+    "question_number": 82,
+    "question_text": "A circuit-level gateway permits an end-to-end TCP connection.",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 83,
+    "question_text": "_________ consists of an encapsulating header and trailer used to provide encryption or combined encryption/authentication. The current specification is RFC 4303.",
+    "options": [
+      "a. ISA",
+      "b. ESP",
+      "c. SPI",
+      "d. IPsec"
+    ],
+    "correct_answer": "IPsec 42/51"
+  },
+  {
+    "question_number": 84,
+    "question_text": "A firewall may not act as a packet filter.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 85,
+    "question_text": "If an information system attack causes minor harm to national security, what is the minimum protection level required?",
+    "options": [
+      "a. Level 1",
+      "b. Level 2",
+      "c. Level 4",
+      "d. Level 3"
+    ],
+    "correct_answer": "Level 3 43/51"
+  },
+  {
+    "question_number": 86,
+    "question_text": "Two approaches that use a block cipher to build a PNRG and have gained widespread acceptance are:",
+    "options": [
+      "a. CTR mode and OFB mode",
+      "b. CTR mode and CFB mode",
+      "c. CBC mode and CFB mode",
+      "d. OFB mode and ECB mode"
+    ],
+    "correct_answer": "CTR mode and OFB mode"
+  },
+  {
+    "question_number": 87,
+    "question_text": "What makes security mechanisms elaborate?",
+    "options": [
+      "a. Simple requirements",
+      "b. Consideration of various aspects of threats",
+      "c. Simple threats",
+      "d. Lack of threats"
+    ],
+    "correct_answer": "Consideration of various aspects of threats 44/51"
+  },
+  {
+    "question_number": 88,
+    "question_text": "The security of Blum, Blum, Shub is based on the difficulty of factoring n.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 89,
+    "question_text": "The Blum, Blum, Shub generator is referred to as a ____________ .",
+    "options": [
+      "a. CSPRBG",
+      "b. QRN",
+      "c. OFB PRNG",
+      "d. TRNG"
+    ],
+    "correct_answer": "CSPRBG 45/51"
+  },
+  {
+    "question_number": 90,
+    "question_text": "The principle requirement of random or pseudorandom number generation is that the generated number stream be unpredictable.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 91,
+    "question_text": "In the case of a single message, what does the authentication service assure?",
+    "options": [
+      "a. That the message is not modified",
+      "b. That the message is encrypted",
+      "c. That the message is from the source that it claims to be from",
+      "d. That the message is available"
+    ],
+    "correct_answer": "That the message is from the source that it claims to be from 46/51"
+  },
+  {
+    "question_number": 92,
+    "question_text": "A ring is said to be _________ if it satisfies the condition ab = ba for all a, b in R.",
+    "options": [
+      "a. abelian",
+      "b. infinite",
+      "c. commutative",
+      "d. cyclic"
+    ],
+    "correct_answer": "commutative"
+  },
+  {
+    "question_number": 93,
+    "question_text": "The objective of MIME Transfer Encodings is to provide reliable delivery across the largest range of environments.",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "True 47/51"
+  },
+  {
+    "question_number": 94,
+    "question_text": "During which period were communication technologies underdeveloped and data was scattered?",
+    "options": [
+      "a. Information Assurance Period (1990s)",
+      "b. Information Security Period (1970s-1980s)",
+      "c. Cyberspace Security Period (Today)",
+      "d. Communication Security Period (1940s)"
+    ],
+    "correct_answer": "Communication Security Period (1940s)"
+  },
+  {
+    "question_number": 95,
+    "question_text": "Video content will be identified as _________ format.",
+    "options": [
+      "a. BMP",
+      "b. GIF",
+      "c. JPEG",
+      "d. MPEG"
+    ],
+    "correct_answer": "MPEG 48/51"
+  },
+  {
+    "question_number": 96,
+    "question_text": "The Diffie-Hellman algorithm depends on the difficulty of computing discrete logarithms for its effectiveness.",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 97,
+    "question_text": "The __________ approach is vulnerable to man-in-the-middle attacks.",
+    "options": [
+      "a. Synchronous Diffie-Hellman",
+      "b. Fixed Diffie-Hellman",
+      "c. Anonymous Diffie-Hellman",
+      "d. Remote Diffie-Hellman"
+    ],
+    "correct_answer": "Anonymous Diffie-Hellman 49/51"
+  },
+  {
+    "question_number": 98,
+    "question_text": "What does FIPS 199 list as security objectives?",
+    "options": [
+      "a. Only integrity",
+      "b. Only availability",
+      "c. Only confidentiality",
+      "d. Confidentiality, integrity, and availability"
+    ],
+    "correct_answer": "Confidentiality, integrity, and availability"
+  },
+  {
+    "question_number": 99,
+    "question_text": "What were the main objectives of information security during the Information Security Period?",
+    "options": [
+      "a. Confidentiality only",
+      "b. Controllability and non-repudiation",
+      "c. Integrity, availability, and confidentiality",
+      "d. Physical security"
+    ],
+    "correct_answer": "Integrity, availability, and confidentiality 50/51"
+  },
+  {
+    "question_number": 100,
+    "question_text": "If an attack causes especially grave harm to public interests, what protection level is required?",
+    "options": [
+      "a. Level 4",
+      "b. Level 3",
+      "c. Level 2",
+      "d. Level 1"
+    ],
+    "correct_answer": "Level 4 51/51"
+  }
+]

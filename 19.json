@@ -1,0 +1,1042 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "What may data modification involve?",
+    "options": [
+      "Only passive attacks",
+      "Only encryption",
+      "A man-in-the-middle attack or modification of data after unauthorized access",
+      "Only active attacks"
+    ],
+    "correct_answer": "A man- in- the- middle attack or modification of data after unauthorized access"
+  },
+  {
+    "question_number": 2,
+    "question_text": "The remainder r in the division algorithm is often referred to as a",
+    "options": [
+      "modulus",
+      "dividend",
+      "residue",
+      "quotient"
+    ],
+    "correct_answer": "residue"
+  },
+  {
+    "question_number": 3,
+    "question_text": "What is the correct answer to the quiz question about ISO 27002 certification in the PDF?",
+    "options": [
+      "True - ISO 27002 replaces ISO 27001 for certification",
+      "False - Neither ISO 27001 nor ISO 27002 can be used for certification",
+      "False - ISO 27002 provides best practice rules but ISO 27001 is used for certification",
+      "True - ISO 27002 can be used to certify an enterprise's information security system"
+    ],
+    "correct_answer": "False - ISO 27002 provides best practice rules but ISO 27001 is used for certification"
+  },
+  {
+    "question_number": 4,
+    "question_text": "What is the relationship between the trust model and information security?",
+    "options": [
+      "They are unrelated",
+      "Information security provides a framework for the trust model",
+      "They are identical",
+      "The trust model provides a framework for information security"
+    ],
+    "correct_answer": "The trust model provides a framework for information security"
+  },
+  {
+    "question_number": 5,
+    "question_text": "What is the great advantage that attackers have over defenders?",
+    "options": [
+      "Attackers must defend all systems",
+      "Attackers have no advantage",
+      "Attackers need only find a single weakness, while defenders must find and eliminate all weaknesses",
+      "Attackers need to find all vulnerabilities"
+    ],
+    "correct_answer": "Attackers need only find a single weakness, while defenders must find and eliminate all weaknesses"
+  },
+  {
+    "question_number": 6,
+    "question_text": "What is authenticity?",
+    "options": [
+      "The property of being genuine and being able to be verified and trusted",
+      "The logging of all system activities",
+      "The prevention of data access",
+      "The ability to encrypt data"
+    ],
+    "correct_answer": "The property of being genuine and being able to be verified and trusted"
+  },
+  {
+    "question_number": 7,
+    "question_text": "What does traffic flow analysis protection prevent?",
+    "options": [
+      "Modification of data",
+      "An attacker from observing source, destination, frequency, length, or other characteristics of traffic",
+      "Denial of service attacks",
+      "Active attacks"
+    ],
+    "correct_answer": "An attacker from observing source, destination, frequency, length, or other characteristics of traffic"
+  },
+  {
+    "question_number": 8,
+    "question_text": "If the bit- stream generator is a key- controlled algorithm the two users only need to share the generating key and then each can produce the keystream.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 9,
+    "question_text": "A group is always abelian and may be finite or infinite.",
+    "options": [
+      "modulus",
+      "residue",
+      "cyclic",
+      "commutative"
+    ],
+    "correct_answer": "cyclic"
+  },
+  {
+    "question_number": 10,
+    "question_text": "A common requirement in a variety of protocols is for the encryption of a symmetric key so that it can be distributed to two parties for future communication.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 11,
+    "question_text": "What example is given of protocol complications?",
+    "options": [
+      "Fast networks",
+      "Encrypted networks",
+      "Protocols that introduce variable, unpredictable delays",
+      "Slow networks"
+    ],
+    "correct_answer": "Protocols that introduce variable, unpredictable delays"
+  },
+  {
+    "question_number": 12,
+    "question_text": "What does data integrity assure?",
+    "options": [
+      "That data is always available",
+      "That data and programs are changed only in a specified and authorized manner",
+      "That data is never encrypted",
+      "That data access is always logged"
+    ],
+    "correct_answer": "That data and programs are changed only in a specified and authorized manner"
+  },
+  {
+    "question_number": 13,
+    "question_text": "The true random number generator may simply involve conversion of an analog source to a binary output.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 14,
+    "question_text": "There are no practical cryptanalytic attacks on 3DES.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 15,
+    "question_text": "The shared master secret is a one- time 48- byte value generated for a session by means of secure key exchange.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 16,
+    "question_text": "What raises questions about secret information?",
+    "options": [
+      "The use of hash functions",
+      "The use of public keys",
+      "The use of digital signatures",
+      "The requirement that participants be in possession of secret information"
+    ],
+    "correct_answer": "The requirement that participants be in possession of secret information"
+  },
+  {
+    "question_number": 17,
+    "question_text": "The block cipher mode of operation chosen for MiniSec is",
+    "options": [
+      "OTC",
+      "OCB",
+      "ECB",
+      "RBAC"
+    ],
+    "correct_answer": "OCB"
+  },
+  {
+    "question_number": 18,
+    "question_text": "ECC is fundamentally easier to explain than either RSA or Diffie- Hellman.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 19,
+    "question_text": "Big- endian format is the most significant byte of a word in the low- address byte position.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 20,
+    "question_text": "refers to schemes such as Diffie- Hellman key exchange.",
+    "options": [
+      "Superposition",
+      "Code-based cryptography",
+      "Key-Establishment Mechanisms",
+      "Cryptosystems"
+    ],
+    "correct_answer": "Key- Establishment Mechanisms"
+  },
+  {
+    "question_number": 21,
+    "question_text": "The , which is the latest of the RSA schemes, is the one that RSA Laboratories recommends as the most secure of the RSA schemes.",
+    "options": [
+      "DSA-SDS",
+      "RSA-PSS",
+      "EDSDS",
+      "ECDSA"
+    ],
+    "correct_answer": "RSA- PSS"
+  },
+  {
+    "question_number": 22,
+    "question_text": "What does communications security protect?",
+    "options": [
+      "Data during transmission",
+      "Only stored data",
+      "Only users",
+      "Only devices"
+    ],
+    "correct_answer": "Data during transmission"
+  },
+  {
+    "question_number": 23,
+    "question_text": "Polynomial arithmetic includes the operations of addition, subtraction and multiplication.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 24,
+    "question_text": "The security of ElGamal is based on the difficulty of computing discrete logarithms.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 25,
+    "question_text": "In the ISO 27001 project implementation methodology, what specific activities occur during certification and continuous improvement?",
+    "options": [
+      "Only risk assessment",
+      "Only planning",
+      "ISMS internal audit, ISMS external audit, ISMS management review, propose corrective and preventive measures, hold project summary meeting",
+      "Only implementation"
+    ],
+    "correct_answer": "ISMS internal audit, ISMS external audit, ISMS management review, propose corrective and preventive measures, hold project summary meeting"
+  },
+  {
+    "question_number": 26,
+    "question_text": "Whirlpool is a popular cryptographic hash function.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 27,
+    "question_text": "The ElGamal signature scheme involves the use of the public key for encryption and the private key for decryption.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 28,
+    "question_text": "What does CCSA stand for?",
+    "options": [
+      "China Communications Standards Association",
+      "China Computer Security Association",
+      "China Cybersecurity Standards Association",
+      "China Communication Security Authority"
+    ],
+    "correct_answer": "China Communications Standards Association"
+  },
+  {
+    "question_number": 29,
+    "question_text": "The symmetric encryption key for data encrypted by the client and decrypted by the server is a",
+    "options": [
+      "server write key",
+      "sequence key",
+      "client write key",
+      "master key"
+    ],
+    "correct_answer": "client write key"
+  },
+  {
+    "question_number": 30,
+    "question_text": "What does ISO 27799 specify?",
+    "options": [
+      "Telecommunication information security management",
+      "General information security management",
+      "Healthcare information security management standards",
+      "Financial information security management"
+    ],
+    "correct_answer": "Healthcare information security management standards"
+  },
+  {
+    "question_number": 31,
+    "question_text": "is an example of a newly designed MAC.",
+    "options": [
+      "SipHash",
+      "HMAC",
+      "Merkle root",
+      "Lattice"
+    ],
+    "correct_answer": "SipHash"
+  },
+  {
+    "question_number": 32,
+    "question_text": "In the ransomware attack extortion phase, what is the typical range of ransom amounts mentioned?",
+    "options": [
+      "Hundreds of thousands to millions of US dollars",
+      "Only hundreds of US dollars",
+      "Thousands of US dollars",
+      "Millions to tens of millions of US dollars"
+    ],
+    "correct_answer": "Hundreds of thousands to millions of US dollars"
+  },
+  {
+    "question_number": 33,
+    "question_text": "In the first instance of multiple encryption plaintext is converted to using the encryption algorithm.",
+    "options": [
+      "Triple DES",
+      "block cipher",
+      "S-AES mode",
+      "ciphertext"
+    ],
+    "correct_answer": "ciphertext"
+  },
+  {
+    "question_number": 34,
+    "question_text": "What does information availability ensure?",
+    "options": [
+      "That authorized personnel can obtain and use related information assets as required",
+      "That information is not tampered with",
+      "That information cannot be read by unauthorized personnel",
+      "That information is encrypted"
+    ],
+    "correct_answer": "That authorized personnel can obtain and use related information assets as required"
+  },
+  {
+    "question_number": 35,
+    "question_text": "What other security service does the availability service depend on?",
+    "options": [
+      "Only logging",
+      "Only authentication",
+      "Only encryption",
+      "Access control service"
+    ],
+    "correct_answer": "Access control service"
+  },
+  {
+    "question_number": 36,
+    "question_text": "The components of DSA are the same as in the Schnorr signature scheme.",
+    "options": [
+      "EDS",
+      "private key",
+      "global public key",
+      "message digest"
+    ],
+    "correct_answer": "global public key"
+  },
+  {
+    "question_number": 37,
+    "question_text": "What is Zero Trust?",
+    "options": [
+      "A type of firewall",
+      "A network protocol",
+      "A security standard",
+      "A set of evolving network security paradigms that shift network defense from static network boundaries to users, assets, and resources"
+    ],
+    "correct_answer": "A set of evolving network security paradigms that shift network defense from static network boundaries to users, assets, and resources"
+  },
+  {
+    "question_number": 38,
+    "question_text": "What does device security involve?",
+    "options": [
+      "Only encryption",
+      "Only communications security",
+      "Protection of network devices themselves",
+      "Only authentication"
+    ],
+    "correct_answer": "Protection of network devices themselves"
+  },
+  {
+    "question_number": 39,
+    "question_text": "What technologies does network security situational awareness use?",
+    "options": [
+      "Only authentication",
+      "Data convergence, data mining, intelligent analysis, and visualization",
+      "Only encryption",
+      "Only firewalls"
+    ],
+    "correct_answer": "Data convergence, data mining, intelligent analysis, and visualization"
+  },
+  {
+    "question_number": 40,
+    "question_text": "What is the most common information security incident on networks?",
+    "options": [
+      "Supply chain attacks",
+      "Information breach",
+      "Ransomware attacks",
+      "DDoS attacks"
+    ],
+    "correct_answer": "Information breach"
+  },
+  {
+    "question_number": 41,
+    "question_text": "To attack MD5, the attacker can choose any set of messages and work on these offline on a dedicated computing facility to find a collision.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 42,
+    "question_text": "Additional padding may be added to provide partial traffic- flow confidentiality by concealing the actual length of the payload.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 43,
+    "question_text": "According to the grading process of Cybersecurity Classified Protection, what must happen after preliminary confirmation of levels?",
+    "options": [
+      "Review by the competent department",
+      "Determination on objects to be graded",
+      "Expert review",
+      "Public security organ archiving and review"
+    ],
+    "correct_answer": "Expert review"
+  },
+  {
+    "question_number": 44,
+    "question_text": "Why are standards important?",
+    "options": [
+      "They only apply to encryption",
+      "They ensure interoperability and provide common frameworks",
+      "They only apply to network protocols",
+      "They are not important"
+    ],
+    "correct_answer": "They ensure interoperability and provide common frameworks"
+  },
+  {
+    "question_number": 45,
+    "question_text": "What does the \"Act\" phase of PDCA in ISMS involve?",
+    "options": [
+      "Monitoring and reviewing the ISMS",
+      "Implementing and operating the ISMS",
+      "Establishing the ISMS",
+      "Maintaining and improving the ISMS"
+    ],
+    "correct_answer": "Maintaining and improving the ISMS"
+  },
+  {
+    "question_number": 46,
+    "question_text": "What does a security service support?",
+    "options": [
+      "Only mechanisms",
+      "Only attacks",
+      "One or more of the security requirements",
+      "Only policies"
+    ],
+    "correct_answer": "One or more of the security requirements"
+  },
+  {
+    "question_number": 47,
+    "question_text": "What does data origin authentication provide?",
+    "options": [
+      "Protection against modification",
+      "Protection against deletion",
+      "Protection against replay",
+      "Corroboration of the source of a data unit"
+    ],
+    "correct_answer": "Corroboration of the source of a data unit"
+  },
+  {
+    "question_number": 48,
+    "question_text": "The Security Parameters Index identifies a security association.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 49,
+    "question_text": "The major advantage of the public cloud is",
+    "options": [
+      "cost",
+      "availability",
+      "convenience",
+      "security"
+    ],
+    "correct_answer": "cost"
+  },
+  {
+    "question_number": 50,
+    "question_text": "A is a set in which you can do addition, subtraction, multiplication and division without leaving the set.",
+    "options": [
+      "block",
+      "standard",
+      "field",
+      "record"
+    ],
+    "correct_answer": "field"
+  },
+  {
+    "question_number": 51,
+    "question_text": "If p is prime and a is a positive integer, then ap = a(mod p) is an alternative form of theorem.",
+    "options": [
+      "Fermat's",
+      "Vignere's",
+      "Euler's",
+      "Rijndael's"
+    ],
+    "correct_answer": "Fermat's"
+  },
+  {
+    "question_number": 52,
+    "question_text": "The of the group is equal to the number of elements in the group.",
+    "options": [
+      "order",
+      "integral divisor",
+      "generator",
+      "modulus"
+    ],
+    "correct_answer": "order"
+  },
+  {
+    "question_number": 53,
+    "question_text": "Limited characteristics make it impossible for hash functions to be used to determine whether or not data has changed.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 54,
+    "question_text": "Two integers are relatively if and only if their only common positive integer factor is 1.",
+    "options": [
+      "congruent",
+      "prime",
+      "composite",
+      "residual"
+    ],
+    "correct_answer": "prime"
+  },
+  {
+    "question_number": 55,
+    "question_text": "Triple DES makes use of stages of the DES algorithm, using a total of two or three distinct keys.",
+    "options": [
+      "three",
+      "nine",
+      "six",
+      "twelve"
+    ],
+    "correct_answer": "three"
+  },
+  {
+    "question_number": 56,
+    "question_text": "In the ISO 27001 project implementation methodology, what specific activities occur during system operation and monitoring?",
+    "options": [
+      "Only planning",
+      "Operate and monitor the system, train on business continuity management",
+      "Only certification",
+      "Only risk assessment"
+    ],
+    "correct_answer": "Operate and monitor the system, train on business continuity management"
+  },
+  {
+    "question_number": 57,
+    "question_text": "What is the broadest service for data confidentiality?",
+    "options": [
+      "Protection of all user data transmitted between two users over a period of time",
+      "Protection of specific fields",
+      "Protection of headers only",
+      "Protection of a single message"
+    ],
+    "correct_answer": "Protection of all user data transmitted between two users over a period of time"
+  },
+  {
+    "question_number": 58,
+    "question_text": "The GCM mode makes use of two functions: ______, which is a keyed hash function, and GCTR.",
+    "options": [
+      "HMAC",
+      "CCM",
+      "GHASH",
+      "CTR"
+    ],
+    "correct_answer": "GHASH"
+  },
+  {
+    "question_number": 59,
+    "question_text": "The notation a|b is commonly used to mean b divides a.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 60,
+    "question_text": "Random numbers play an important role in the use of encryption for various network security applications.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 61,
+    "question_text": "The strength of any cryptographic system rests with the",
+    "options": [
+      "key distribution technique",
+      "X.509 certificate",
+      "end encryption",
+      "nonce"
+    ],
+    "correct_answer": "key distribution technique"
+  },
+  {
+    "question_number": 62,
+    "question_text": "Message authentication protects two parties who exchange messages from any third party, however, it does not protect the two parties against each other.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 63,
+    "question_text": "What can nonrepudiation prove when a message is sent?",
+    "options": [
+      "That the message was encrypted",
+      "That the message was received",
+      "That the message was available",
+      "That the alleged sender in fact sent the message"
+    ],
+    "correct_answer": "That the alleged sender in fact sent the message"
+  },
+  {
+    "question_number": 64,
+    "question_text": "The ______ is formed by taking the hash of the message and encrypting the message with the creator's private key.",
+    "options": [
+      "hash code",
+      "message digest",
+      "timestamp",
+      "digital signature"
+    ],
+    "correct_answer": "digital signature"
+  },
+  {
+    "question_number": 65,
+    "question_text": "The seed that serves as input to the PRNG must be secure for cryptographic applications.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 66,
+    "question_text": "What is Level 3 protection also known as?",
+    "options": [
+      "Forced protection",
+      "Guided protection",
+      "Self- protection",
+      "Supervised protection"
+    ],
+    "correct_answer": "Supervised protection"
+  },
+  {
+    "question_number": 67,
+    "question_text": "The purpose of the Maurer's universal statistical test is to determine whether the number of ones and zeros in a sequence are approximately the same as would be expected for a truly random sequence.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 68,
+    "question_text": "What is Zero Trust Architecture (ZTA)?",
+    "options": [
+      "A network protocol",
+      "A type of encryption",
+      "A physical security architecture",
+      "An enterprise network security strategy based on the zero trust principle that aims to prevent data disclosure and restrict the lateral movement of attacks"
+    ],
+    "correct_answer": "An enterprise network security strategy based on the zero trust principle that aims to prevent data disclosure and restrict the lateral movement of attacks"
+  },
+  {
+    "question_number": 69,
+    "question_text": "What are the extended security requirements designed for in Cybersecurity Classified Protection 2.0?",
+    "options": [
+      "Cloud computing, mobile interconnection, IoT, and industrial control systems",
+      "Only basic information networks",
+      "Only government systems",
+      "Only financial systems"
+    ],
+    "correct_answer": "Cloud computing, mobile interconnection, IoT, and industrial control systems"
+  },
+  {
+    "question_number": 70,
+    "question_text": "Base64 transfer encoding is also known as radix- 64.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 71,
+    "question_text": "IoT devices are typically constrained devices with limited memory, processing power, and power supply.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 72,
+    "question_text": "The ______ mode operates on full blocks of plaintext and ciphertext, as opposed to an s- bit subset.",
+    "options": [
+      "OFB",
+      "CBC",
+      "ECB",
+      "CFB"
+    ],
+    "correct_answer": "OFB"
+  },
+  {
+    "question_number": 73,
+    "question_text": "A CTR- based authenticated encryption approach is the most efficient mode of operation for high- speed packet networks.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 74,
+    "question_text": "The global public key components for DSA are p, q, and h.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 75,
+    "question_text": "What does a connectionless integrity service generally provide?",
+    "options": [
+      "Protection against denial of service",
+      "Protection against all attacks",
+      "Protection against replay",
+      "Protection against message modification only"
+    ],
+    "correct_answer": "Protection against message modification only"
+  },
+  {
+    "question_number": 76,
+    "question_text": "What is the relationship between ISO/IEC 27001 and ISO/IEC 27002?",
+    "options": [
+      "ISO 27001 is for certification only, while ISO 27002 is for implementation only",
+      "ISO 27001 establishes requirements and standards for ISMS, while ISO 27002 provides best practice rules with control objectives and measures",
+      "They are completely independent standards",
+      "ISO 27001 provides best practices, while ISO 27002 provides requirements"
+    ],
+    "correct_answer": "ISO 27001 establishes requirements and standards for ISMS, while ISO 27002 provides best practice rules with control objectives and measures"
+  },
+  {
+    "question_number": 77,
+    "question_text": "\"Release of message contents to any person or process not possessing the appropriate cryptographic key\" is a attack.",
+    "options": [
+      "content modification",
+      "disclosure",
+      "source repudiation",
+      "sequence modification"
+    ],
+    "correct_answer": "disclosure"
+  },
+  {
+    "question_number": 78,
+    "question_text": "Insertion of messages into the network from a fraudulent source is a ______ attack.",
+    "options": [
+      "sequence modification",
+      "source repudiation",
+      "masquerade",
+      "content modification"
+    ],
+    "correct_answer": "masquerade"
+  },
+  {
+    "question_number": 79,
+    "question_text": "Why are standards important in cryptography and security?",
+    "options": [
+      "They only apply to encryption",
+      "They ensure interoperability and provide common frameworks for security implementations",
+      "They are not important",
+      "They only apply to network protocols"
+    ],
+    "correct_answer": "They ensure interoperability and provide common frameworks for security implementations"
+  },
+  {
+    "question_number": 80,
+    "question_text": "What is the relationship between the flow probe and HiSec Insight collector in network security situational awareness?",
+    "options": [
+      "They are independent systems",
+      "The flow probe collects basic network data such as traffic and device logs, which is then analyzed by HiSec Insight",
+      "They perform the same function",
+      "The collector replaces the flow probe"
+    ],
+    "correct_answer": "The flow probe collects basic network data such as traffic and device logs, which is then analyzed by HiSec Insight"
+  },
+  {
+    "question_number": 81,
+    "question_text": "If both sender and receiver use the same key, the system is referred to as:",
+    "options": [
+      "two-key",
+      "asymmetric",
+      "public-key encryption",
+      "conventional encryption"
+    ],
+    "correct_answer": "conventional encryption"
+  },
+  {
+    "question_number": 82,
+    "question_text": "refer to common two- letter combinations in the English language.",
+    "options": [
+      "Transpositions",
+      "Streamings",
+      "Digrams",
+      "Polyalphabetic ciphers"
+    ],
+    "correct_answer": "Digrams"
+  },
+  {
+    "question_number": 83,
+    "question_text": "The first part of the Schnorr digital signature scheme is the generation of a private/public key pair.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 84,
+    "question_text": "The effort required for a collision resistant attack is explained by a mathematical result referred to as the",
+    "options": [
+      "message authentication code",
+      "birthday paradox",
+      "Whirlpool",
+      "hash value"
+    ],
+    "correct_answer": "birthday paradox"
+  },
+  {
+    "question_number": 85,
+    "question_text": "What is the relationship between the number of control objectives and control measures in ISO 27002?",
+    "options": [
+      "There are 35 control objectives and 14 control measures",
+      "There are 14 control objectives and 35 control measures",
+      "There are 35 control objectives and 113 control measures",
+      "There are 113 control objectives and 35 control measures"
+    ],
+    "correct_answer": "There are 35 control objectives and 113 control measures"
+  },
+  {
+    "question_number": 86,
+    "question_text": "A stateful packet inspection firewall reviews the same packet information as a packet filtering firewall, but also records information about TCP connections.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 87,
+    "question_text": "What does data origin authentication NOT provide protection against?",
+    "options": [
+      "Verification",
+      "Source verification",
+      "Authentication",
+      "The duplication or modification of data units"
+    ],
+    "correct_answer": "The duplication or modification of data units"
+  },
+  {
+    "question_number": 88,
+    "question_text": "Each user must share a unique key with the key distribution center for purposes of key distribution.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 89,
+    "question_text": "The principal objective for developing a is to enable secure, convenient and efficient acquisition of public keys.",
+    "options": [
+      "KDC",
+      "CRL",
+      "PKI",
+      "IETF"
+    ],
+    "correct_answer": "PKI"
+  },
+  {
+    "question_number": 90,
+    "question_text": "With the scheme, if an adversary succeeds in obtaining or computing the private key of the directory authority, the adversary could authoritatively pass out counterfeit public keys and subsequently impersonate any participant and eavesdrop on messages sent to any participant.",
+    "options": [
+      "public announcement",
+      "publicly available directory",
+      "public key authority",
+      "public key certificates"
+    ],
+    "correct_answer": "publicly available directory"
+  },
+  {
+    "question_number": 91,
+    "question_text": "laaS enables customers to combine basic computing services, such as number crunching and data storage, to build highly adaptable computer systems.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 92,
+    "question_text": "Feistel proposed that we can approximate the ideal block cipher by utilizing the concept of a cipher, which is the execution of two or more simple ciphers in sequence in such a way that the final result or product is cryptographically stronger than any of the component ciphers.",
+    "options": [
+      "product",
+      "differential",
+      "linear",
+      "permutation"
+    ],
+    "correct_answer": "product"
+  },
+  {
+    "question_number": 93,
+    "question_text": "What is the specific purpose of ISO/IEC 27007?",
+    "options": [
+      "Guidelines for information security management systems auditing",
+      "Certification requirements",
+      "Implementation guidelines",
+      "Risk management guidelines"
+    ],
+    "correct_answer": "Guidelines for information security management systems auditing"
+  },
+  {
+    "question_number": 94,
+    "question_text": "What is the key difference between Cybersecurity Classified Protection 1.0 and 2.0?",
+    "options": [
+      "2.0 is based on 1.0 but covers new technologies such as cloud computing, mobile Internet, IoT, and industrial control systems",
+      "2.0 only applies to government agencies",
+      "2.0 reduces the number of protection levels",
+      "2.0 eliminates all 1.0 requirements"
+    ],
+    "correct_answer": "2.0 is based on 1.0 but covers new technologies such as cloud computing, mobile Internet, IoT, and industrial control systems"
+  },
+  {
+    "question_number": 95,
+    "question_text": "The can be an end user; a device such as a router or server; a process; or any item that can be identified in the subject name of a public key certificate.",
+    "options": [
+      "end entity",
+      "registration authority",
+      "repository",
+      "certification authority"
+    ],
+    "correct_answer": "end entity"
+  },
+  {
+    "question_number": 96,
+    "question_text": "The method is ideal for a short amount of data and is the appropriate mode to use if you want to transmit a DES or AES key securely.",
+    "options": [
+      "counter mode",
+      "electronic codebook mode",
+      "cipher feedback mode",
+      "output feedback mode"
+    ],
+    "correct_answer": "electronic codebook mode"
+  },
+  {
+    "question_number": 97,
+    "question_text": "The cryptographic hash function is not a versatile cryptographic algorithm.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 98,
+    "question_text": "The Diffie- Hellman algorithm depends on the difficulty of computing discrete logarithms for its effectiveness.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 99,
+    "question_text": "The ______ cryptosystem is used in some form in a number of standards including DSS and S/MIME.",
+    "options": [
+      "ElGamal",
+      "Rabin",
+      "Rijndel",
+      "Hillman"
+    ],
+    "correct_answer": "ElGamal"
+  },
+  {
+    "question_number": 100,
+    "question_text": "What is the relationship between security services and security mechanisms?",
+    "options": [
+      "Security mechanisms implement security services",
+      "They are unrelated",
+      "Security services implement security mechanisms",
+      "They are identical"
+    ],
+    "correct_answer": "Security mechanisms implement security services"
+  }
+]

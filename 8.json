@@ -1,0 +1,1048 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "Status Finished Started Monday, 6 April 2026, 9:23 AM Completed Monday, 6 April 2026, 10:26 AM Duration 1 hour 2 mins Grade 92.00 out of 100.00 A problem with the ideal block cipher using a small block size is that it is vulnerable to a statistical analysis of the plaintext. Mark 1.00 out of 1.00",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "True 1/51"
+  },
+  {
+    "question_number": 2,
+    "question_text": "In the Cybersecurity Classified Protection grading process, what is the correct sequence of steps? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Determination on objects to be graded, preliminary confirmation on levels, expert review, review by  competent department, public security organ archiving and review",
+      "b. Public security organ archiving, expert review, preliminary confirmation, finalized levels",
+      "c. Expert review, preliminary confirmation, finalized levels, review by competent department, public security organ archiving",
+      "d. Review by competent department, expert review, preliminary confirmation, finalized levels"
+    ],
+    "correct_answer": "Determination on objects to be graded, preliminary confirmation on levels, expert review, review by competent department, public security organ archiving and review"
+  },
+  {
+    "question_number": 3,
+    "question_text": "What are the five main steps in the working process of Cybersecurity Classified Protection? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Grading, archiving, construction and rectification, level assessment, supervision and inspection",
+      "b. Assess, plan, implement, verify, certify",
+      "c. Planning, implementation, monitoring, review, improvement",
+      "d. Design, build, test, deploy, maintain"
+    ],
+    "correct_answer": "Grading, archiving, construction and rectification, level assessment, supervision and inspection 2/51"
+  },
+  {
+    "question_number": 4,
+    "question_text": "What is the primary reason that isolated security protection systems can hardly address new network threats represented by APTs? Mark 1.00 out of 1.00",
+    "options": [
+      "a. APTs are prevented by basic firewalls",
+      "b. APTs are coordinated, multi-stage attacks that require comprehensive visibility across the network, which  single-point detection cannot provide",
+      "c. APTs use only known attack vectors",
+      "d. APTs only target physical infrastructure"
+    ],
+    "correct_answer": "APTs are coordinated, multi-stage attacks that require comprehensive visibility across the network, which single-point detection cannot provide"
+  },
+  {
+    "question_number": 5,
+    "question_text": "What does information confidentiality ensure? Mark 1.00 out of 1.00",
+    "options": [
+      "a. That information is not tampered with",
+      "b. That information can be obtained and used only by authorized personnel, and attackers cannot read correct information even if they steal data",
+      "c. That information is always available",
+      "d. That information is backed up regularly"
+    ],
+    "correct_answer": "That information can be obtained and used only by authorized personnel, and attackers cannot read correct information even if they steal data 3/51"
+  },
+  {
+    "question_number": 6,
+    "question_text": "What does data origin authentication NOT provide protection against? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Duplication or modification of data units",
+      "b. Verification",
+      "c. Source verification",
+      "d. Authentication"
+    ],
+    "correct_answer": "Duplication or modification of data units"
+  },
+  {
+    "question_number": 7,
+    "question_text": "A sequence of plaintext elements is replaced by a __________ of that sequence which means that no elements are added, deleted or replaced in the sequence, but rather the order in which the elements appear in the sequence is changed. Mark 1.00 out of 1.00",
+    "options": [
+      "a. substitution",
+      "b. stream",
+      "c. permutation",
+      "d. diffusion"
+    ],
+    "correct_answer": "permutation 4/51"
+  },
+  {
+    "question_number": 8,
+    "question_text": "What can nonrepudiation prove when a message is sent? Mark 1.00 out of 1.00",
+    "options": [
+      "a. That the alleged sender in fact sent the message",
+      "b. That the message was available",
+      "c. That the message was encrypted",
+      "d. That the message was received"
+    ],
+    "correct_answer": "That the alleged sender in fact sent the message"
+  },
+  {
+    "question_number": 9,
+    "question_text": "RFC 5322 defines a format for text messages that are sent using electronic mail. Mark 1.00 out of 1.00",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "True 5/51"
+  },
+  {
+    "question_number": 10,
+    "question_text": "The appeal of __________ is that its designers have been able to prove an exact relationship between the strength of the embedded hash function and the strength of this form of authentication. Mark 1.00 out of 1.00",
+    "options": [
+      "a. GMAC",
+      "b. CMAC",
+      "c. HMAC",
+      "d. MAC"
+    ],
+    "correct_answer": "HMAC"
+  },
+  {
+    "question_number": 11,
+    "question_text": "The final message in phase 2, and one that is always required, is the ___________ message, which is sent by the server to indicate the end of the server hello and associated messages. Mark 1.00 out of 1.00",
+    "options": [
+      "a. no_certificate",
+      "b. server_done",
+      "c. goodbye",
+      "d. finished"
+    ],
+    "correct_answer": "server_done 6/51"
+  },
+  {
+    "question_number": 12,
+    "question_text": "Monoalphabetic ciphers are easy to break because they reflect the frequency data of the original alphabet. Mark 1.00 out of 1.00",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 13,
+    "question_text": "A finite set of two or more symbols is called a ___________ . Mark 1.00 out of 1.00",
+    "options": [
+      "a. character string",
+      "b. character",
+      "c. alphabet",
+      "d. radix"
+    ],
+    "correct_answer": "alphabet 7/51"
+  },
+  {
+    "question_number": 14,
+    "question_text": "Integrity-related email security threats could result in unauthorized disclosure of sensitive information. Mark 1.00 out of 1.00",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 15,
+    "question_text": "What does a connection-oriented integrity service assure? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Only protection against deletion",
+      "b. Only protection against message modification",
+      "c. That messages are received as sent with no duplication, insertion, modification, reordering, or replays",
+      "d. Only protection against encryption"
+    ],
+    "correct_answer": "That messages are received as sent with no duplication, insertion, modification, reordering, or replays 8/51"
+  },
+  {
+    "question_number": 16,
+    "question_text": "We can adapt the __________ algorithm to compute the greatest common divisor of two polynomials. Mark 1.00 out of 1.00",
+    "options": [
+      "a. associative",
+      "b. Euclidean",
+      "c. cyclic",
+      "d. abelian"
+    ],
+    "correct_answer": "Euclidean"
+  },
+  {
+    "question_number": 17,
+    "question_text": "InvSubBytes is the inverse of ShiftRows. Mark 1.00 out of 1.00",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "False 9/51"
+  },
+  {
+    "question_number": 18,
+    "question_text": "What are the currently used ISO/IEC standards for information security management? Mark 1.00 out of 1.00",
+    "options": [
+      "a. BS 7799 only",
+      "b. TCSEC only",
+      "c. ISO/IEC 27001 and ISO/IEC 27002, released in 2013",
+      "d. ISO/IEC 17799 only"
+    ],
+    "correct_answer": "ISO/IEC 27001 and ISO/IEC 27002, released in 2013"
+  },
+  {
+    "question_number": 19,
+    "question_text": "According to Cybersecurity Law Article 31, what determines if infrastructure is considered critical information infrastructure? Mark 1.00 out of 1.00",
+    "options": [
+      "a. If destroyed, suffering a loss of function, or experiencing disclosure of data, it might seriously endanger  national security, national welfare, the people's livelihood, or the public interest",
+      "b. Only the type of data stored",
+      "c. Only the number of users",
+      "d. Only the size of the organization"
+    ],
+    "correct_answer": "If destroyed, suffering a loss of function, or experiencing disclosure of data, it might seriously endanger national security, national welfare, the people's livelihood, or the public interest 10/51"
+  },
+  {
+    "question_number": 20,
+    "question_text": "What is the specific purpose of ISO/IEC 27003? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Certification guidelines",
+      "b. Implementation guidelines for ISMS",
+      "c. Best practices",
+      "d. Audit procedures"
+    ],
+    "correct_answer": "Implementation guidelines for ISMS"
+  },
+  {
+    "question_number": 21,
+    "question_text": "Packet filter gateways tend to be more secure than application- level gateways. Mark 1.00 out of 1.00",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "False 11/51"
+  },
+  {
+    "question_number": 22,
+    "question_text": "The use of encryption and authentication protocols is the standard method of countering attempts to alter or insert transmissions. Mark 1.00 out of 1.00",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 23,
+    "question_text": "In a narrow sense, what does network security refer to? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Only ensuring data encryption",
+      "b. Only protecting physical infrastructure",
+      "c. Only preventing unauthorized access",
+      "d. Taking necessary measures to prevent attacks, intrusions, interference, damage, and unauthorized use of networks and information transmitted over networks, as well as unexpected accidents"
+    ],
+    "correct_answer": "Taking necessary measures to prevent attacks, intrusions, interference, damage, and unauthorized use of networks and information transmitted over networks, as well as unexpected accidents 12/51"
+  },
+  {
+    "question_number": 24,
+    "question_text": "What does GB/T 28449-2018 specify? Mark 0.00 out of 1.00",
+    "options": [
+      "a. Grading guideline",
+      "b. Basic requirements",
+      "c. Assessment process guideline",
+      "d. Design requirements"
+    ],
+    "correct_answer": "Assessment process guideline"
+  },
+  {
+    "question_number": 25,
+    "question_text": "For given integers a and b, the extended __________ algorithm not only calculates the greatest common divisor d but also two additional integers x and y. Mark 1.00 out of 1.00",
+    "options": [
+      "a. modular",
+      "b. associative",
+      "c. cyclic",
+      "d. Euclidean"
+    ],
+    "correct_answer": "Euclidean 13/51"
+  },
+  {
+    "question_number": 26,
+    "question_text": "Encryption hardware is optimized toward smaller data sizes. Mark 1.00 out of 1.00",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 27,
+    "question_text": "The way to measure the resistance of a hash algorithm to cryptanalysis is to compare its strength to the effort required for a brute-force attack. Mark 1.00 out of 1.00",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "True 14/51"
+  },
+  {
+    "question_number": 28,
+    "question_text": "A __________ is a device with limited volatile and nonvolatile memory, limited processing power, and a low data rate transceiver. Mark 1.00 out of 1.00",
+    "options": [
+      "a. constrained device",
+      "b. microprocessor",
+      "c. class 3 device",
+      "d. IoT"
+    ],
+    "correct_answer": "constrained device"
+  },
+  {
+    "question_number": 29,
+    "question_text": "What does nonrepudiation prevent for the sender? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Denying having sent the message",
+      "b. Modifying the message",
+      "c. Sending the message",
+      "d. Receiving the message"
+    ],
+    "correct_answer": "Denying having sent the message 15/51"
+  },
+  {
+    "question_number": 30,
+    "question_text": "Authentication applied to the entire original IP packet is _________ . Mark 0.00 out of 1.00",
+    "options": [
+      "a. tunnel mode",
+      "b. cipher mode",
+      "c. transport mode",
+      "d. security mode"
+    ],
+    "correct_answer": "cipher mode"
+  },
+  {
+    "question_number": 31,
+    "question_text": "In key distribution and reciprocal authentication schemes two communicating parties cooperate by exchanging messages to distribute keys and/or authenticate each other. In many cases ___________ are used for handshaking to prevent replay Mark 1.00 out of 1.00 attacks.",
+    "options": [
+      "a. session keys",
+      "b. entropies",
+      "c. nonces",
+      "d. RC4s"
+    ],
+    "correct_answer": "nonces 16/51"
+  },
+  {
+    "question_number": 32,
+    "question_text": "What does a connection-oriented integrity service address? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Both message stream modification and denial of service",
+      "b. Only denial of service",
+      "c. Only message modification",
+      "d. Only passive attacks"
+    ],
+    "correct_answer": "Both message stream modification and denial of service"
+  },
+  {
+    "question_number": 33,
+    "question_text": "What is the key difference between the Information Security Period and the Information Assurance Period? Mark 1.00 out of 1.00",
+    "options": [
+      "a. There is no significant difference between these periods",
+      "b. Information Security Period focused on confidentiality only, while Information Assurance Period added integrity and availability",
+      "c. Information Security Period used physical security, while Information Assurance Period used digital security",
+      "d. Information Security Period focused on confidentiality, integrity, and availability, while Information  Assurance Period added controllability and non-repudiation"
+    ],
+    "correct_answer": "Information Security Period focused on confidentiality, integrity, and availability, while Information Assurance Period added controllability and non-repudiation 17/51"
+  },
+  {
+    "question_number": 34,
+    "question_text": "The __________ approach is unsuitable for a connectionless type of application because it requires the overhead of a handshake before any connectionless transmission, effectively negating the chief characteristic of a connectionless transaction. Mark 1.00 out of 1.00",
+    "options": [
+      "a. backward reply",
+      "b. challenge-response",
+      "c. replay",
+      "d. timestamp"
+    ],
+    "correct_answer": "challenge-response"
+  },
+  {
+    "question_number": 35,
+    "question_text": "The strength of any cryptographic system rests with the ___________ . Mark 1.00 out of 1.00",
+    "options": [
+      "a. nonce",
+      "b. key distribution technique",
+      "c. end encryption",
+      "d. X.509 certificate"
+    ],
+    "correct_answer": "key distribution technique 18/51"
+  },
+  {
+    "question_number": 36,
+    "question_text": "In ________ algebra we are not limited to ordinary arithmetical operations. Mark 1.00 out of 1.00",
+    "options": [
+      "a. finite",
+      "b. modulus",
+      "c. commutative",
+      "d. abstract"
+    ],
+    "correct_answer": "abstract"
+  },
+  {
+    "question_number": 37,
+    "question_text": "The __________ test is the most basic test of randomness and must be included in any test suite. Mark 0.00 out of 1.00",
+    "options": [
+      "a. unpredictability",
+      "b. Maurer",
+      "c. runs",
+      "d. frequency"
+    ],
+    "correct_answer": "frequency 19/51"
+  },
+  {
+    "question_number": 38,
+    "question_text": "What is the significance of national standards and regulations in the Cyberspace Security Period? Mark 1.00 out of 1.00",
+    "options": [
+      "a. They only apply to government agencies",
+      "b. They are optional guidelines",
+      "c. They are not related to enterprise security",
+      "d. They are issued to guide enterprises to establish an information security management system"
+    ],
+    "correct_answer": "They are issued to guide enterprises to establish an information security management system"
+  },
+  {
+    "question_number": 39,
+    "question_text": "What is the focus of integrity service regarding attacks? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Passive attacks",
+      "b. Active attacks",
+      "c. Neither",
+      "d. Both equally"
+    ],
+    "correct_answer": "Active attacks 20/51"
+  },
+  {
+    "question_number": 40,
+    "question_text": "What is the relationship between ISO and IEC in information security standardization? Mark 1.00 out of 1.00",
+    "options": [
+      "a. They work independently without coordination",
+      "b. ISO and IEC have established a joint technical committee to develop international standards in the field of information technology",
+      "c. They are competitors",
+      "d. IEC replaces ISO"
+    ],
+    "correct_answer": "ISO and IEC have established a joint technical committee to develop international standards in the field of information technology"
+  },
+  {
+    "question_number": 41,
+    "question_text": "Both __________ produce output that is independent of both the plaintext and the ciphertext. This makes them natural candidates for stream ciphers that encrypt plaintext by XOR one full block at a time. Mark 1.00 out of 1.00",
+    "options": [
+      "a. ECB and OFB",
+      "b. CTR and CBC",
+      "c. CBC and ECB",
+      "d. OFB and CTR"
+    ],
+    "correct_answer": "OFB and CTR 21/51"
+  },
+  {
+    "question_number": 42,
+    "question_text": "The procedure TEST takes a candidate integer n as input and returns the result __________ if n is definitely not a prime. Mark 0.00 out of 1.00",
+    "options": [
+      "a. discrete",
+      "b. inconclusive",
+      "c. composite",
+      "d. primitive"
+    ],
+    "correct_answer": "inconclusive"
+  },
+  {
+    "question_number": 43,
+    "question_text": "What does data authenticity mean? Mark 1.00 out of 1.00",
+    "options": [
+      "a. That data access is logged",
+      "b. That a digital object is indeed what it claims to be or what it is claimed to be",
+      "c. That data is always available",
+      "d. That data is always encrypted"
+    ],
+    "correct_answer": "That a digital object is indeed what it claims to be or what it is claimed to be 22/51"
+  },
+  {
+    "question_number": 44,
+    "question_text": "Greater complexity in the subkey generation algorithm should lead to greater difficulty of cryptanalysis. Mark 1.00 out of 1.00",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 45,
+    "question_text": "__________ is a characteristic of a system component that provides passive protection against an attack. Mark 1.00 out of 1.00",
+    "options": [
+      "a. Tamper resistant",
+      "b. Tamper detection",
+      "c. Tamper integration",
+      "d. Tampering"
+    ],
+    "correct_answer": "Tamper resistant 23/51"
+  },
+  {
+    "question_number": 46,
+    "question_text": "Steganography renders the message unintelligible to outsiders by various transformations of the text. Mark 0.00 out of 1.00",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 47,
+    "question_text": "What is the key difference between proactive defense and passive protection in the Information Assurance Period? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Proactive defense eliminates the need for security measures",
+      "b. Proactive defense only uses management, passive protection only uses technology",
+      "c. More technical means were used to associate security management with technical protection to enable proactive defense rather than passive protection",
+      "d. Passive protection is more effective"
+    ],
+    "correct_answer": "More technical means were used to associate security management with technical protection to enable proactive defense rather than passive protection 24/51"
+  },
+  {
+    "question_number": 48,
+    "question_text": "What does a replay attack involve? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Capturing and subsequently replaying messages",
+      "b. Deleting system files",
+      "c. Encrypting data",
+      "d. Modifying data in transit"
+    ],
+    "correct_answer": "Capturing and subsequently replaying messages"
+  },
+  {
+    "question_number": 49,
+    "question_text": "What is the specific purpose of ISO/IEC 27005? Mark 0.00 out of 1.00",
+    "options": [
+      "a. Audit procedures",
+      "b. Information security risk management guidelines",
+      "c. Implementation guidelines",
+      "d. Certification guidelines"
+    ],
+    "correct_answer": "Information security risk management guidelines 25/51"
+  },
+  {
+    "question_number": 50,
+    "question_text": "Fog computing and fog services are expected to be a distinguishing characteristic of the IoT. Mark 1.00 out of 1.00",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 51,
+    "question_text": "An example of a lightweight cryptographic hash function is __________ . Mark 1.00 out of 1.00",
+    "options": [
+      "a. CRYP17",
+      "b. SEA",
+      "c. Grain-128",
+      "d. PHOTON"
+    ],
+    "correct_answer": "PHOTON 26/51"
+  },
+  {
+    "question_number": 52,
+    "question_text": "What is cybersecurity mesh? Mark 1.00 out of 1.00",
+    "options": [
+      "a. A network protocol",
+      "b. A type of firewall",
+      "c. A physical security device",
+      "d. A modern conceptual approach to security architecture that enables the distributed enterprise to deploy and extend security where it is most needed"
+    ],
+    "correct_answer": "A modern conceptual approach to security architecture that enables the distributed enterprise to deploy and extend security where it is most needed"
+  },
+  {
+    "question_number": 53,
+    "question_text": "A __________ is an algorithm that requires the use of a secret key. Mark 1.00 out of 1.00",
+    "options": [
+      "a. DAA",
+      "b. MAC",
+      "c. SHA",
+      "d. GCM"
+    ],
+    "correct_answer": "MAC 27/51"
+  },
+  {
+    "question_number": 54,
+    "question_text": "One limitation of a firewall is that an improperly secured wireless LAN may be accessed from outside the organization. Mark 1.00 out of 1.00",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 55,
+    "question_text": "The GCM mode makes use of two functions: __________, which is a keyed hash function, and GCTR. Mark 1.00 out of 1.00",
+    "options": [
+      "a. GHASH",
+      "b. HMAC",
+      "c. CCM",
+      "d. CTR"
+    ],
+    "correct_answer": "GHASH 28/51"
+  },
+  {
+    "question_number": 56,
+    "question_text": "What does FIPS 199 list as security objectives? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Only integrity",
+      "b. Only availability",
+      "c. Confidentiality, integrity, and availability",
+      "d. Only confidentiality"
+    ],
+    "correct_answer": "Confidentiality, integrity, and availability"
+  },
+  {
+    "question_number": 57,
+    "question_text": "A firewall may filter traffic on the basis of IP address, protocol, or port number. Mark 1.00 out of 1.00",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "True 29/51"
+  },
+  {
+    "question_number": 58,
+    "question_text": "Multifactor authentication is generally no more secure than single factor authentication. Mark 1.00 out of 1.00",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 59,
+    "question_text": "The Feistel cipher structure, based on Shannon's proposal of 1945, dates back over a quarter of a century and is the structure used by many significant symmetric block ciphers currently in use. Mark 1.00 out of 1.00",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "True 30/51"
+  },
+  {
+    "question_number": 60,
+    "question_text": "The process of converting from plaintext to ciphertext is known as deciphering or decryption. Mark 1.00 out of 1.00",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 61,
+    "question_text": "What does the availability service protect? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Only data",
+      "b. Only users",
+      "c. A system to ensure its availability",
+      "d. Only networks"
+    ],
+    "correct_answer": "A system to ensure its availability 31/51"
+  },
+  {
+    "question_number": 62,
+    "question_text": "What does network security refer to in a broad sense? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Protection of individual computers only",
+      "b. Cybersecurity, which is cyberspace security at a national level",
+      "c. Encryption of data transmission",
+      "d. Physical security of information systems"
+    ],
+    "correct_answer": "Cybersecurity, which is cyberspace security at a national level"
+  },
+  {
+    "question_number": 63,
+    "question_text": "The Euclidean algorithm cannot be adapted to find the multiplicative inverse of a polynomial. Mark 1.00 out of 1.00",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "False 32/51"
+  },
+  {
+    "question_number": 64,
+    "question_text": "The key used in symmetric encryption is referred to as a __________ key. Mark 1.00 out of 1.00",
+    "options": [
+      "a. private",
+      "b. public",
+      "c. decryption",
+      "d. secret"
+    ],
+    "correct_answer": "secret"
+  },
+  {
+    "question_number": 65,
+    "question_text": "What does ISO 27001 certification require an organization to achieve? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Dynamic, systematic, all-staff-involved, institutionalized, and prevention-led information security management",
+      "b. Only management security measures",
+      "c. Static information security management",
+      "d. Only technical security measures"
+    ],
+    "correct_answer": "Dynamic, systematic, all-staff-involved, institutionalized, and prevention-led information security management 33/51"
+  },
+  {
+    "question_number": 66,
+    "question_text": "What are the two aspects of authentication in an ongoing interaction? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Encryption and decryption",
+      "b. Availability and integrity",
+      "c. Connection initiation authentication and connection interference prevention",
+      "d. Confidentiality and privacy"
+    ],
+    "correct_answer": "Connection initiation authentication and connection interference prevention"
+  },
+  {
+    "question_number": 67,
+    "question_text": "What is the relationship between the five technical requirements categories in Cybersecurity Classified Protection 2.0? Mark 1.00 out of 1.00",
+    "options": [
+      "a. They work together to provide comprehensive technical security: secure physical environment, secure communication network, secure computing environment, security zone border, and security management  center",
+      "b. They are independent and unrelated",
+      "c. Only one category is required",
+      "d. They replace management requirements"
+    ],
+    "correct_answer": "They work together to provide comprehensive technical security: secure physical environment, secure communication network, secure computing environment, security zone border, and security management center 34/51"
+  },
+  {
+    "question_number": 68,
+    "question_text": "The main elements of a RFID system are tags and readers. Mark 1.00 out of 1.00",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "True"
+  },
+  {
+    "question_number": 69,
+    "question_text": "What is the relationship between information security and cyberspace security? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Cyberspace security is a subset of information security",
+      "b. The connotation and denotation of information security are expanding and upgraded to cyberspace  security",
+      "c. They are completely different concepts",
+      "d. Information security replaces cyberspace security"
+    ],
+    "correct_answer": "The connotation and denotation of information security are expanding and upgraded to cyberspace security 35/51"
+  },
+  {
+    "question_number": 70,
+    "question_text": "The first row of State is not altered; for the second row a 1-byte circular left shift is performed; for the third row a 2-byte circular left shift is performed; and for the fourth row a 3-byte circular left shift is performed. This transformation is called __________. Mark 1.00 out of 1.00",
+    "options": [
+      "a. AddRoundKey",
+      "b. Substitute bytes",
+      "c. ShiftRows",
+      "d. MixColumns"
+    ],
+    "correct_answer": "ShiftRows"
+  },
+  {
+    "question_number": 71,
+    "question_text": "Secure Sockets Layer (SSL) is an Internet standard that evolved from a commercial protocol known as Transport Layer Security (TLS). Mark 1.00 out of 1.00",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "False 36/51"
+  },
+  {
+    "question_number": 72,
+    "question_text": "An example of __________ is illegally accessing and then using another user\u2019s authentication information, such as username and password. Mark 1.00 out of 1.00",
+    "options": [
+      "a. repudiation",
+      "b. tampering with data",
+      "c. elevation of privilege",
+      "d. identity spoofing"
+    ],
+    "correct_answer": "identity spoofing"
+  },
+  {
+    "question_number": 73,
+    "question_text": "What does traffic flow analysis involve? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Modifying traffic",
+      "b. Encrypting traffic",
+      "c. Observing source, destination, frequency, length, or other characteristics",
+      "d. Deleting traffic"
+    ],
+    "correct_answer": "Observing source, destination, frequency, length, or other characteristics 37/51"
+  },
+  {
+    "question_number": 74,
+    "question_text": "An individual SA can implement both the AH and the ESP protocol. Mark 1.00 out of 1.00",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 75,
+    "question_text": "Why is network security situational awareness needed? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Because networks are too small",
+      "b. Because there are no security threats",
+      "c. Because security devices are too simple",
+      "d. Because as enterprise network scale grows, security architecture becomes increasingly complex, and  isolated security protection systems can hardly address new network threats represented by APTs"
+    ],
+    "correct_answer": "Because as enterprise network scale grows, security architecture becomes increasingly complex, and isolated security protection systems can hardly address new network threats represented by APTs 38/51"
+  },
+  {
+    "question_number": 76,
+    "question_text": "What technical means are mentioned for cybersecurity protection? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Only authentication",
+      "b. Encryption and secure communications protocols",
+      "c. Only encryption",
+      "d. Only protocols"
+    ],
+    "correct_answer": "Encryption and secure communications protocols"
+  },
+  {
+    "question_number": 77,
+    "question_text": "The credential service provider is a trusted entity that issues or registers subscriber authenticators. Mark 1.00 out of 1.00",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "True 39/51"
+  },
+  {
+    "question_number": 78,
+    "question_text": "What is the relationship between ISO 27799 and other ISO 27000 standards? Mark 1.00 out of 1.00",
+    "options": [
+      "a. It replaces ISO 27001",
+      "b. It is Part IV (Healthcare information security management standards) of the ISO 27000 family",
+      "c. It is a general standard",
+      "d. It is a certification standard"
+    ],
+    "correct_answer": "It is Part IV (Healthcare information security management standards) of the ISO 27000 family"
+  },
+  {
+    "question_number": 79,
+    "question_text": "What does network security primarily protect? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Only user passwords",
+      "b. Only encryption keys",
+      "c. Networks and their services from unauthorized modification, destruction, or disclosure",
+      "d. Only physical documents"
+    ],
+    "correct_answer": "Networks and their services from unauthorized modification, destruction, or disclosure 40/51"
+  },
+  {
+    "question_number": 80,
+    "question_text": "The _________ and _________ block cipher modes of operation are used for authentication. Mark 0.00 out of 1.00",
+    "options": [
+      "a. ECB, CBC",
+      "b. OFB, CTR",
+      "c. CBC, CFB",
+      "d. CFB, OFB"
+    ],
+    "correct_answer": "CBC, CFB"
+  },
+  {
+    "question_number": 81,
+    "question_text": "What does the \"Check\" phase of PDCA in ISMS involve? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Monitoring and reviewing the ISMS",
+      "b. Maintaining and improving the ISMS",
+      "c. Implementing and operating the ISMS",
+      "d. Establishing the ISMS"
+    ],
+    "correct_answer": "Monitoring and reviewing the ISMS 41/51"
+  },
+  {
+    "question_number": 82,
+    "question_text": "There is not a computational advantage to using ECC with a shorter key length than a comparably secure TSA. Mark 1.00 out of 1.00",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 83,
+    "question_text": "The __________ subtype is used when there are multiple independent body parts that need to be bundled in a particular order. Mark 1.00 out of 1.00",
+    "options": [
+      "a. multipart/digest",
+      "b. multipart/mixed",
+      "c. multipart/parallel",
+      "d. multipart/alternative"
+    ],
+    "correct_answer": "multipart/mixed 42/51"
+  },
+  {
+    "question_number": 84,
+    "question_text": "Rings are a subset of a larger class of algebraic structures called fields. Mark 0.00 out of 1.00",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "False"
+  },
+  {
+    "question_number": 85,
+    "question_text": "What is the more attractive alternative for integrity service? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Manual recovery",
+      "b. Incorporation of automated recovery mechanisms",
+      "c. Only detection",
+      "d. No recovery"
+    ],
+    "correct_answer": "Incorporation of automated recovery mechanisms 43/51"
+  },
+  {
+    "question_number": 86,
+    "question_text": "What can complicate security mechanism development? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Static protocols",
+      "b. Lack of protocols",
+      "c. Simple protocols",
+      "d. Reliance on communications protocols with complex behavior"
+    ],
+    "correct_answer": "Reliance on communications protocols with complex behavior"
+  },
+  {
+    "question_number": 87,
+    "question_text": "Mister and Adams proposed that all linear combinations of S-box columns should be _________ which are a special class of Boolean functions that are highly nonlinear according to certain mathematical criteria. Mark 1.00 out of 1.00",
+    "options": [
+      "a. vertical functions",
+      "b. angular functions",
+      "c. bent functions",
+      "d. horizontal functions"
+    ],
+    "correct_answer": "bent functions 44/51"
+  },
+  {
+    "question_number": 88,
+    "question_text": "__________ can more readily see the intended outcome of an attempted attack because they can directly access and monitor the data files and system processes usually targeted by attacks. Mark 1.00 out of 1.00",
+    "options": [
+      "a. User interfaces",
+      "b. External firewalls",
+      "c. Sensors",
+      "d. Host-based IDSs"
+    ],
+    "correct_answer": "Host-based IDSs"
+  },
+  {
+    "question_number": 89,
+    "question_text": "A field is a set in which we can do addition, subtraction, multiplication and division without leaving the set. Mark 1.00 out of 1.00",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "True 45/51"
+  },
+  {
+    "question_number": 90,
+    "question_text": "What is the role of ITU, IETF, and NIST in information security standards? Mark 1.00 out of 1.00",
+    "options": [
+      "a. They only work with TC260",
+      "b. They are other standards organizations in addition to ISO, IEC, TC260, and CCSA",
+      "c. They replace ISO and IEC",
+      "d. They are the only standards organizations"
+    ],
+    "correct_answer": "They are other standards organizations in addition to ISO, IEC, TC260, and CCSA"
+  },
+  {
+    "question_number": 91,
+    "question_text": "The ordering of bytes within a matrix is by column. Mark 1.00 out of 1.00",
+    "options": [
+      "a. False",
+      "b. True"
+    ],
+    "correct_answer": "True 46/51"
+  },
+  {
+    "question_number": 92,
+    "question_text": "What does a trust model help establish? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Network protocols",
+      "b. Attack vectors",
+      "c. Trust relationships",
+      "d. Encryption keys"
+    ],
+    "correct_answer": "Trust relationships"
+  },
+  {
+    "question_number": 93,
+    "question_text": "The intention of an advanced persistent threat is to steal data rather than to cause damage to the network or organization. Mark 1.00 out of 1.00",
+    "options": [
+      "a. True",
+      "b. False"
+    ],
+    "correct_answer": "True 47/51"
+  },
+  {
+    "question_number": 94,
+    "question_text": "The methods of __________ conceal the existence of the message in a graphic image. Mark 1.00 out of 1.00",
+    "options": [
+      "a. cryptology",
+      "b. cryptography",
+      "c. decryptology",
+      "d. steganography"
+    ],
+    "correct_answer": "steganography"
+  },
+  {
+    "question_number": 95,
+    "question_text": "An entity that relies upon the subscriber\u2019s authenticator(s) and credentials or a verifier\u2019s assertion of a claimant\u2019s identity, typically to process a transaction or grant access to information or a system is the __________ . Mark 1.00 out of 1.00",
+    "options": [
+      "a. claimant",
+      "b. relying party",
+      "c. subscriber",
+      "d. applicant"
+    ],
+    "correct_answer": "relying party 48/51"
+  },
+  {
+    "question_number": 96,
+    "question_text": "In the ISO 27001 project implementation methodology, what comes after risk assessment and before system operation? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Risk assessment",
+      "b. Project initiation and gap analysis",
+      "c. System design and release",
+      "d. Certification and continuous improvement"
+    ],
+    "correct_answer": "System design and release"
+  },
+  {
+    "question_number": 97,
+    "question_text": "What is the relationship between IoT devices and DDoS attacks? Mark 1.00 out of 1.00",
+    "options": [
+      "a. With the emergence of IoT, more IoT devices are connected to networks, and hackers can quickly launch large-scale DDoS attacks by exploiting device hardware or management vulnerabilities",
+      "b. IoT devices are not used in DDoS attacks",
+      "c. IoT devices prevent DDoS attacks",
+      "d. IoT devices are immune to DDoS attacks"
+    ],
+    "correct_answer": "With the emergence of IoT, more IoT devices are connected to networks, and hackers can quickly launch large-scale DDoS attacks by exploiting device hardware or management vulnerabilities 49/51"
+  },
+  {
+    "question_number": 98,
+    "question_text": "If an attack causes minor harm to public interests, what protection level is required? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Level 3",
+      "b. Level 4",
+      "c. Level 1",
+      "d. Level 2"
+    ],
+    "correct_answer": "Level 2"
+  },
+  {
+    "question_number": 99,
+    "question_text": "How can enterprises reduce losses caused by network attacks? Mark 1.00 out of 1.00",
+    "options": [
+      "a. By building network security",
+      "b. By limiting network access",
+      "c. By using only physical security measures",
+      "d. By avoiding networks entirely"
+    ],
+    "correct_answer": "By building network security 50/51"
+  },
+  {
+    "question_number": 100,
+    "question_text": "What is ISMS? Mark 1.00 out of 1.00",
+    "options": [
+      "a. Information Security Management Service",
+      "b. Information Security Management System, a system in which an organization establishes information security policies and objectives and uses methods to achieve these objectives",
+      "c. Information Security Management Software",
+      "d. Information Security Management Standard"
+    ],
+    "correct_answer": "Information Security Management System, a system in which an organization establishes information security policies and objectives and uses methods to achieve these objectives 51/51"
+  }
+]
