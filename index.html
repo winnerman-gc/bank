@@ -280,13 +280,16 @@
 
                 document.getElementById('footer').style.display = 'block';
 
-                // Scroll to last answered question...
-                if (totalAnswered > 0) {
+                // Scroll to the question AFTER the last answered one to maintain flow
+                if (totalAnswered > 0 && totalAnswered < questions.length) {
                     setTimeout(() => {
                         const lastAnsweredIdx = Math.max(...Object.keys(userAnswers).map(Number));
-                        const element = document.getElementById(`q-${lastAnsweredIdx}`);
-                        if (element) element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    }, 500);
+                        const nextIdx = lastAnsweredIdx + 1;
+                        const element = document.getElementById(`q-${nextIdx}`) || document.getElementById(`q-${lastAnsweredIdx}`);
+                        if (element) {
+                            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }, 800);
                 }
 
             } catch (err) {
