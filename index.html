@@ -294,7 +294,15 @@
 
             } catch (err) {
                 console.error(err);
-                document.getElementById('loading').innerHTML = '<p style="color:red">Error: Ensure compiled.json exists in this folder.</p>';
+                if (document.getElementById('loading')) {
+                    document.getElementById('loading').innerHTML = `<p style="color:red">Error: ${err.message}</p>`;
+                } else {
+                    const errorDiv = document.createElement('div');
+                    errorDiv.style.color = 'red';
+                    errorDiv.style.padding = '20px';
+                    errorDiv.innerText = `Error loading questions: ${err.message}`;
+                    document.getElementById('feed').appendChild(errorDiv);
+                }
             }
         }
 
