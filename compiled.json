@@ -16196,6 +16196,122 @@
   },
   {
     "question_number": 1410,
+    "question_text": "What does connection- oriented integrity service address?",
+    "options": [
+      "Only passive attacks",
+      "Only message modification",
+      "Only denial of service",
+      "Both message stream modification and denial of service"
+    ],
+    "correct_answer": "Both message stream modification and denial of service",
+    "original_file": "29.json"
+  },
+  {
+    "question_number": 1411,
+    "question_text": "The criteria used in the design of the focused on the design of the S- boxes and on the P function that takes the output of the S- boxes.",
+    "options": [
+      "Avalanche Attack",
+      "Substitution Key",
+      "Product Cipher",
+      "Data Encryption Standard"
+    ],
+    "correct_answer": "Data Encryption Standard",
+    "original_file": "29.json"
+  },
+  {
+    "question_number": 1412,
+    "question_text": "The primary benefit of a host- based IDS is that it can detect both external and internal intrusions.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True",
+    "original_file": "29.json"
+  },
+  {
+    "question_number": 1413,
+    "question_text": "The certificate message is required for any agreed on key exchange method except fixed Diffie- Hellman.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "False",
+    "original_file": "29.json"
+  },
+  {
+    "question_number": 1414,
+    "question_text": "A can be defined as any device that includes a computer chip, but that is not a general- purpose workstation, desktop, or laptop computer.",
+    "options": [
+      "embedded system",
+      "microcontroller",
+      "cryptosystem",
+      "constrained device"
+    ],
+    "correct_answer": "embedded system",
+    "original_file": "29.json"
+  },
+  {
+    "question_number": 1415,
+    "question_text": "is a data collection technology that uses electronic tags attached to items to allow the items to be identified and tracked by a remote system.",
+    "options": [
+      "CRYPTOREC",
+      "EPC",
+      "RFID",
+      "NTRU"
+    ],
+    "correct_answer": "RFID",
+    "original_file": "29.json"
+  },
+  {
+    "question_number": 1416,
+    "question_text": "What is the relationship between ISO/IEC 27003, 27004, and 27005 in the ISO 27000 family?",
+    "options": [
+      "They are part of Part I (Requirements and support guideline) of the ISO 27000 family",
+      "They are industry-specific standards",
+      "They replace ISO 27001",
+      "They are certification standards"
+    ],
+    "correct_answer": "They are part of Part I (Requirements and support guideline) of the ISO 27000 family",
+    "original_file": "29.json"
+  },
+  {
+    "question_number": 1417,
+    "question_text": "What happened during the development phase (2004- 2006) of Cybersecurity Classified Protection?",
+    "options": [
+      "Cybersecurity Classified Protection 2.0 was released",
+      "A large number of standards and specifications related to classified protection were developed and piloted in some organizations",
+      "The system was proposed",
+      "The system was replaced"
+    ],
+    "correct_answer": "A large number of standards and specifications related to classified protection were developed and piloted in some organizations",
+    "original_file": "29.json"
+  },
+  {
+    "question_number": 1418,
+    "question_text": "The approach is unsuitable for a connectionless type of application because it requires the overhead of a handshake before any connectionless transmission, effectively negating the chief characteristic of a connectionless transaction.",
+    "options": [
+      "challenge-response",
+      "timestamp",
+      "replay",
+      "backward reply"
+    ],
+    "correct_answer": "challenge- response",
+    "original_file": "29.json"
+  },
+  {
+    "question_number": 1419,
+    "question_text": "searches an unordered list in O time, while conventional algorithms require O",
+    "options": [
+      "Shor's Factoring Algorithm",
+      "Merkle's Algorithm",
+      "ETSI's Algorithm",
+      "Grover's Algorithm"
+    ],
+    "correct_answer": "Grover's Algorithm",
+    "original_file": "29.json"
+  },
+  {
+    "question_number": 1420,
     "question_text": "Public- key encryption is more secure from cryptanalysis than symmetric encryption.",
     "options": [
       "True",
@@ -16205,7 +16321,7 @@
     "original_file": "30.json"
   },
   {
-    "question_number": 1411,
+    "question_number": 1421,
     "question_text": "Format- preserving encryption refers to any encryption technique that takes a plaintext in a given format and produces a ciphertext in the same format.",
     "options": [
       "False",
@@ -16215,7 +16331,7 @@
     "original_file": "30.json"
   },
   {
-    "question_number": 1412,
+    "question_number": 1422,
     "question_text": "For a prime number p, the set of nonzero integers modulo p is cyclic.",
     "options": [
       "False",
@@ -16225,7 +16341,7 @@
     "original_file": "30.json"
   },
   {
-    "question_number": 1413,
+    "question_number": 1423,
     "question_text": "Two theorems that play important roles in public- key cryptography are Fermat's theorem and Euler's theorem.",
     "options": [
       "False",
@@ -16235,7 +16351,7 @@
     "original_file": "30.json"
   },
   {
-    "question_number": 1414,
+    "question_number": 1424,
     "question_text": "The XTS- AES mode is based on the concept of a tweakable block cipher.",
     "options": [
       "True",
@@ -16245,7 +16361,7 @@
     "original_file": "30.json"
   },
   {
-    "question_number": 1415,
+    "question_number": 1425,
     "question_text": "Which field in the IPsec header is 32 bits and identifies a security association?",
     "options": [
       "Sequence Header",
@@ -16257,7 +16373,7 @@
     "original_file": "30.json"
   },
   {
-    "question_number": 1416,
+    "question_number": 1426,
     "question_text": "Much of the theory of public- key cryptosystems is based on number theory.",
     "options": [
       "True",
@@ -16267,7 +16383,7 @@
     "original_file": "30.json"
   },
   {
-    "question_number": 1417,
+    "question_number": 1427,
     "question_text": "The one- time pad has unlimited utility and is useful primarily for high- bandwidth channels requiring low security.",
     "options": [
       "True",
@@ -16277,7 +16393,7 @@
     "original_file": "30.json"
   },
   {
-    "question_number": 1418,
+    "question_number": 1428,
     "question_text": "In virtually all distributed environments, electronic mail is the most heavily used network- based application.",
     "options": [
       "False",
@@ -16287,7 +16403,7 @@
     "original_file": "30.json"
   },
   {
-    "question_number": 1419,
+    "question_number": 1429,
     "question_text": "What was BS 7799- 1 when it was first released in 1995?",
     "options": [
       "Regulations on Information Security Management Practices",
@@ -16299,7 +16415,7 @@
     "original_file": "30.json"
   },
   {
-    "question_number": 1420,
+    "question_number": 1430,
     "question_text": "The ______ is the information that is delivered as a unit between MAC users.",
     "options": [
       "MSDU",
@@ -16311,7 +16427,7 @@
     "original_file": "30.json"
   },
   {
-    "question_number": 1421,
+    "question_number": 1431,
     "question_text": "What is the difference between keyless and key- based algorithms?",
     "options": [
       "Keyless algorithms don't use keys, while key-based algorithms require keys",
@@ -16323,7 +16439,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1422,
+    "question_number": 1432,
     "question_text": "______ is a security enhancement to the MIME Internet email format standard based on technology from RSA Data Security.",
     "options": [
       "S/MIME",
@@ -16335,7 +16451,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1423,
+    "question_number": 1433,
     "question_text": "The key exchange involves multiplying pairs of nonzero integers modulo a prime number q. Keys are generated by exponentiation over the group with exponentiation defined as repeated multiplication.",
     "options": [
       "ElGamal",
@@ -16347,7 +16463,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1424,
+    "question_number": 1434,
     "question_text": "Although it does not appear to be as efficient as the Miller- Rabin algorithm, in 2002 a relatively simple deterministic algorithm that efficiently determines whether a given large number is a prime was developed. This algorithm is known as the ______ algorithm.",
     "options": [
       "AKS",
@@ -16359,7 +16475,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1425,
+    "question_number": 1435,
     "question_text": "Integrity- related email security threats could result in unauthorized disclosure of sensitive information.",
     "options": [
       "False",
@@ -16369,7 +16485,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1426,
+    "question_number": 1436,
     "question_text": "What does nonreproduction prevent for the sender?",
     "options": [
       "Modifying the message",
@@ -16381,7 +16497,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1427,
+    "question_number": 1437,
     "question_text": "One of the most intense areas of research in the field of symmetric block ciphers is ______ design.",
     "options": [
       "D- box",
@@ -16393,7 +16509,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1428,
+    "question_number": 1438,
     "question_text": "The specification of a protocol along with the chosen key length is known as a",
     "options": [
       "cipher suite",
@@ -16405,7 +16521,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1429,
+    "question_number": 1439,
     "question_text": "What is identity- first security?",
     "options": [
       "A security approach that becomes more urgent as attackers focus on obtaining identity and access management permissions",
@@ -16417,7 +16533,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1430,
+    "question_number": 1440,
     "question_text": "What happens if a security mechanism requires time limits but the network has unpredictable delays?",
     "options": [
       "The mechanism is faster",
@@ -16429,7 +16545,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1431,
+    "question_number": 1441,
     "question_text": "techniques map plaintext elements (characters, bits) into ciphertext elements.",
     "options": [
       "Transposition",
@@ -16441,7 +16557,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1432,
+    "question_number": 1442,
     "question_text": "Authentication enables organizations to keep their networks secure by permitting only authenticated users to access its protected resources.",
     "options": [
       "True",
@@ -16451,7 +16567,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1433,
+    "question_number": 1443,
     "question_text": "A public- key encryption scheme has ingredients.",
     "options": [
       "six",
@@ -16463,7 +16579,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1434,
+    "question_number": 1444,
     "question_text": "The final round of both encryption and decryption of the AES structure consists of stages.",
     "options": [
       "one",
@@ -16475,7 +16591,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1435,
+    "question_number": 1445,
     "question_text": "Because certificates are forgeable they cannot be placed in a directory without the need for the directory to make special efforts to protect them.",
     "options": [
       "False",
@@ -16485,7 +16601,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1436,
+    "question_number": 1446,
     "question_text": "A attack involves trying every possible key until an intelligible translation of the ciphertext is obtained.",
     "options": [
       "brute-force",
@@ -16497,7 +16613,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1437,
+    "question_number": 1447,
     "question_text": "What has enabled hackers to quickly launch large- scale DDoS attacks?",
     "options": [
       "The emergence of the Internet of Things (IoT) and exploitation of device hardware or management vulnerabilities",
@@ -16509,7 +16625,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1438,
+    "question_number": 1448,
     "question_text": "The order of a finite field must be of the form pn where p is a prime and n is a _",
     "options": [
       "identity element",
@@ -16521,7 +16637,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1439,
+    "question_number": 1449,
     "question_text": "Transport mode provides protection to the entire IP packet.",
     "options": [
       "False",
@@ -16531,7 +16647,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1440,
+    "question_number": 1450,
     "question_text": "The digital signature standard is a ______ standard that uses the secure hash algorithm.",
     "options": [
       "NIST",
@@ -16543,7 +16659,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1441,
+    "question_number": 1451,
     "question_text": "What is a man- in- the- middle attack?",
     "options": [
       "An attack that only modifies stored data",
@@ -16555,7 +16671,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1442,
+    "question_number": 1452,
     "question_text": "What protocol is mentioned as an example of architecture layers?",
     "options": [
       "TCP/IP",
@@ -16567,7 +16683,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1443,
+    "question_number": 1453,
     "question_text": "key determination is a refinement of the Diffie- Hellman key exchange algorithm.",
     "options": [
       "KEP",
@@ -16579,7 +16695,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1444,
+    "question_number": 1454,
     "question_text": "An original intelligible message fed into the algorithm as input is known as while the coded message produced as output is called the",
     "options": [
       "plaintext, ciphertext",
@@ -16591,7 +16707,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1445,
+    "question_number": 1455,
     "question_text": "A technique referred to as a is a mapping achieved by performing some sort of permutation on the plaintext letters.",
     "options": [
       "Caesar cipher",
@@ -16603,19 +16719,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1446,
-    "question_text": "What happened during the development phase (2004- 2006) of Cybersecurity Classified Protection?",
-    "options": [
-      "Cybersecurity Classified Protection 2.0 was released",
-      "The system was proposed",
-      "The system was replaced",
-      "A large number of standards and specifications related to classified protection were developed and piloted in some organizations"
-    ],
-    "correct_answer": "A large number of standards and specifications related to classified protection were developed and piloted in some organizations",
-    "original_file": "31.json"
-  },
-  {
-    "question_number": 1447,
+    "question_number": 1456,
     "question_text": "Compared to public- key ciphers such as RSA, the structure of AES and most symmetric ciphers is quite complex and cannot be explained as easily as many other cryptographic algorithms.",
     "options": [
       "True",
@@ -16625,7 +16729,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1448,
+    "question_number": 1457,
     "question_text": "A cloud provides service to customers in the form of a platform on which the customer's applications can run.",
     "options": [
       "CaaS",
@@ -16637,7 +16741,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1449,
+    "question_number": 1458,
     "question_text": "What is a supply chain attack?",
     "options": [
       "An attack on manufacturing systems only",
@@ -16649,7 +16753,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1450,
+    "question_number": 1459,
     "question_text": "A key element in providing security in an IoT deployment is the gateway.",
     "options": [
       "False",
