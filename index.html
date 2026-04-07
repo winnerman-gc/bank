@@ -527,7 +527,7 @@
 
                 const data = await response.json();
                 const text = data.explanation || "No explanation available.";
-                aiSlot.innerHTML = `<div style="margin-top:10px; border-top:1px solid #e2e8f0; padding-top:10px;"><em>AI:</em>${renderAIExplanation(text)}</div>`;
+                aiSlot.innerHTML = `<div style="margin-top:10px; border-top:1px solid #e2e8f0; padding-top:10px;"><em>AI:</em>${renderAIExplanation(text, selected, correct)}</div>`;
             } catch (err) {
                 console.error('AI Error:', err);
                 aiSlot.innerHTML = `<p style="color:var(--error-color); font-size:0.8rem;">Failed to load AI explanation: ${err.message}</p>`;
@@ -543,7 +543,18 @@
                 .replace(/'/g, '&#39;');
         }
 
-        function renderAIExplanation(text) {
+        function escapeRegExp(text) {
+            return String(text || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+
+        function highlightPhrase(text, phrase, className) {
+            const trimmed = String(phrase || '').trim();
+            if (!trimmed) return text;
+            const pattern = new RegExp(escapeRegExp(trimmed), 'gi');
+            return text.replace(pattern, match => `<span class="${className}">${match}</span>`);
+        }
+
+        function renderAIExplanation(text, selected, correct) {
             const safeText = escapeHTML(text).replace(/\r\n/g, '\n');
             return safeText
                 .split(/\n\s*\n+/)
@@ -552,7 +563,12 @@
                         .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
                         .replace(/==(.+?)==/g, '<span class="ai-highlight">$1</span>')
                         .replace(/\n/g, '<br>');
-                    return `<p>${body}</p>`;
+                    const emphasized = highlightPhrase(
+                        highlightPhrase(body, correct, 'ai-highlight'),
+                        selected,
+                        'ai-highlight'
+                    );
+                    return `<p>${emphasized}</p>`;
                 })
                 .join('');
         }
