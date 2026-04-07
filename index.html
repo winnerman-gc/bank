@@ -280,6 +280,7 @@
         let userAnswers = JSON.parse(localStorage.getItem('quiz_answers') || '{}');
         let allQuestionsData = [];
         let isRetakeMode = false;
+        const WORKER_URL = "https://qna.wgchalie.workers.dev";
 
         async function loadFeed() {
             try {
@@ -431,34 +432,21 @@
             aiSlot.innerHTML = `<div class="ai-loading"><i class="fas fa-robot"></i> AI is generating explanation...</div>`;
             
             try {
-                const response = await fetch("https://api.deepseek.com/chat/completions", {
+                const response = await fetch(`${WORKER_URL}/ai-explain`, {
                     method: 'POST',
                     headers: { 
-                        'Content-Type': 'application/json',
-                        'Authorization': 'Bearer sk-7a0947b2120545b3bc8116dfce9f5d65'
+                        'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({
-                        model: "deepseek-chat",
-                        messages: [
-                            {
-                                role: "system", 
-                                content: "You are a Cryptography and Network Security tutor. Base explanations on the principles and terminology of William Stallings, Cryptography and Network Security: Principles and Practice, Eighth Edition. Give precise, technical, study-guide style explanations: define the core concept, state why the correct option is correct, and briefly state why the selected or other options are incorrect. Use plain text only, no markdown, no bullets, no headings, no conversational filler. Keep it concise but exam-focused and accurate."
-                            },
-                            {
-                                role: "user",
-                                content: `Question: ${question}\nSelected Answer: ${selected}\nCorrect Answer: ${correct}`
-                            }
-                        ],
-                        stream: false
-                    })
+                    body: JSON.stringify({ question, selected, correct })
                 });
                 
                 if (!response.ok) {
-                    throw new Error(`DeepSeek API error: ${response.status}`);
+                    const errorText = await response.text();
+                    throw new Error(`AI service error: ${response.status} ${errorText}`);
                 }
 
                 const data = await response.json();
-                const text = data.choices[0].message.content;
+                const text = data.explanation || "No explanation available.";
                 aiSlot.innerHTML = `<p style="margin-top:10px; border-top:1px solid #e2e8f0; padding-top:10px;"><em>AI:</em> ${text}</p>`;
             } catch (err) {
                 console.error('AI Error:', err);
@@ -563,7 +551,7 @@
 
                 // Report the miss using the idx passed to the function
                 if (useAI && reportMiss && idx !== undefined) {
-                    fetch("https://qna.wgchalie.workers.dev/report-miss", {
+                    fetch(`${WORKER_URL}/report-miss`, {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ q_num: idx + 1 }),
