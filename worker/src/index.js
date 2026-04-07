@@ -39,6 +39,10 @@ export default {
       return handleReportMiss(request, env, headers);
     }
 
+    if (pathname === "/migrate-kv-to-upstash") {
+      return handleMigrateKvToUpstash(request, env, headers);
+    }
+
     return json({ error: "Not found" }, 404, headers);
   },
 };
@@ -147,4 +151,110 @@ async function handleReportMiss(request, env, headers) {
   }
 
   return json({ ok: true }, 200, headers);
+}
+
+async function handleMigrateKvToUpstash(request, env, headers) {
+  if (!env.MIGRATION_TOKEN) {
+    return json({ error: "Migration token not configured" }, 500, headers);
+  }
+  if (!env.STATS) {
+    return json({ error: "KV binding STATS is not configured" }, 500, headers);
+  }
+  if (!env.UPSTASH_REDIS_REST_URL || !env.UPSTASH_REDIS_REST_TOKEN) {
+    return json({ error: "Upstash credentials not configured" }, 500, headers);
+  }
+
+  const providedToken = request.headers.get("x-migration-token") || "";
+  if (providedToken !== env.MIGRATION_TOKEN) {
+    return json({ error: "Unauthorized" }, 401, headers);
+  }
+
+  let payload = {};
+  try {
+    payload = await request.json();
+  } catch {
+    payload = {};
+  }
+
+  const cursor = typeof payload.cursor === "string" ? payload.cursor : undefined;
+  const requestedBatch = Number(payload.batchSize);
+  const batchSize =
+    Number.isInteger(requestedBatch) && requestedBatch > 0 && requestedBatch <= 1000
+      ? requestedBatch
+      : 500;
+
+  const base = normalizeBaseUrl(env.UPSTASH_REDIS_REST_URL);
+  const authHeaders = {
+    Authorization: `Bearer ${env.UPSTASH_REDIS_REST_TOKEN}`,
+    "Content-Type": "application/json",
+  };
+
+  const list = await env.STATS.list({ prefix: "", limit: batchSize, cursor });
+
+  let scanned = 0;
+  let migrated = 0;
+  const errors = [];
+
+  for (const keyMeta of list.keys) {
+    scanned++;
+    const key = keyMeta.name;
+    const match = key.match(/^(?:q:|wrong:q:)?(\d+)$/);
+    if (!match) {
+      continue;
+    }
+
+    const qNum = Number(match[1]);
+    if (!Number.isInteger(qNum) || qNum <= 0) {
+      continue;
+    }
+
+    const value = await env.STATS.get(key);
+    const count = Number(value);
+    if (!Number.isFinite(count) || count <= 0) {
+      continue;
+    }
+
+    const scoreKey = `wrong:q:${qNum}`;
+    const leaderboardKey = "wrong:leaderboard";
+
+    const incrResp = await fetch(`${base}/incrby/${encodeURIComponent(scoreKey)}/${Math.trunc(count)}`, {
+      method: "POST",
+      headers: authHeaders,
+    });
+
+    if (!incrResp.ok) {
+      const text = await incrResp.text();
+      errors.push({ key, step: "incrby", error: text });
+      continue;
+    }
+
+    const zResp = await fetch(
+      `${base}/zincrby/${encodeURIComponent(leaderboardKey)}/${Math.trunc(count)}/${qNum}`,
+      {
+        method: "POST",
+        headers: authHeaders,
+      }
+    );
+
+    if (!zResp.ok) {
+      const text = await zResp.text();
+      errors.push({ key, step: "zincrby", error: text });
+      continue;
+    }
+
+    migrated++;
+  }
+
+  return json(
+    {
+      ok: true,
+      scanned,
+      migrated,
+      nextCursor: list.list_complete ? null : list.cursor,
+      listComplete: list.list_complete,
+      errors,
+    },
+    200,
+    headers
+  );
 }
