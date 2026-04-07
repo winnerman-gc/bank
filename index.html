@@ -377,20 +377,6 @@
             }
         }
 
-        function restoreAnswer(card, selected, correct, idx) {
-            const optionsContainer = card.querySelector('.options');
-            const btns = optionsContainer.querySelectorAll('.option-btn');
-            let selectedBtn = null;
-            
-            btns.forEach(btn => {
-                if (btn.innerText.trim() === selected.trim()) selectedBtn = btn;
-            });
-
-            if (selectedBtn) {
-                applySelection(selectedBtn, selected, correct, optionsContainer, false);
-            }
-        }
-
         function handleSelect(btn, selected, correct, parent, idx) {
             if (parent.classList.contains('answered')) return;
             
@@ -398,46 +384,70 @@
             userAnswers[idx] = selected;
             localStorage.setItem('quiz_answers', JSON.stringify(userAnswers));
             
-            applySelection(btn, selected, correct, parent, true);
+            applySelection(btn, selected, correct, parent, true, idx);
         }
 
-        function applySelection(btn, selected, correct, parent, useAI) {
+        function restoreAnswer(card, selected, correct, idx) {
+            const optionsContainer = card.querySelector('.options');
+            const btns = optionsContainer.querySelectorAll('.option-btn');
+            let selectedBtn = null;
+            
+            btns.forEach(btn => {
+                if (btn.innerText.trim() === (selected || '').trim()) selectedBtn = btn;
+            });
+
+            if (selectedBtn) {
+                applySelection(selectedBtn, selected, correct, optionsContainer, false, idx);
+            }
+        }
+
+        function applySelection(btn, selected, correct, parent, useAI, idx) {
             parent.classList.add('answered');
             totalAnswered++;
             updateStats();
 
-            const isCorrect = selected.trim() === correct.trim();
+            const isCorrect = (selected || '').trim() === (correct || '').trim();
             const card = parent.parentElement;
-            const explanation = card.querySelector('.explanation');
-            const questionText = card.querySelector('.question-text').innerText;
+            
+            // Find child elements safely
+            const explanation = card?.querySelector('.explanation');
+            const questionTextEl = card?.querySelector('.question-text');
+            const questionText = questionTextEl ? questionTextEl.innerText : "Unknown Question";
             
             if (isCorrect) {
                 correctCount++;
                 btn.classList.add('correct');
-                btn.querySelector('.icon-placeholder').innerHTML = '<i class="fas fa-check check-icon"></i>';
+                const icon = btn.querySelector('.icon-placeholder');
+                if (icon) icon.innerHTML = '<i class="fas fa-check check-icon"></i>';
             } else {
                 wrongCount++;
                 btn.classList.add('wrong');
-                btn.querySelector('.icon-placeholder').innerHTML = '<i class="fas fa-times cross-icon"></i>';
-                explanation.style.display = 'block';
+                const icon = btn.querySelector('.icon-placeholder');
+                if (icon) icon.innerHTML = '<i class="fas fa-times cross-icon"></i>';
                 
-                if (useAI) {
-                    getAIExplanation(questionText, selected, correct, explanation);
+                if (explanation) {
+                    explanation.style.display = 'block';
+                    if (useAI) {
+                        getAIExplanation(questionText, selected, correct, explanation);
+                    }
                 }
 
-                // NEW: Report the miss to Cloudflare Stats
-                fetch(WORKER_URL + 'report-miss', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ q_num: idx + 1 }),
-                    keepalive: true
-                }).catch(() => {});
+                // Report the miss using the idx passed to the function
+                if (idx !== undefined) {
+                    fetch(WORKER_URL + 'report-miss', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ q_num: idx + 1 }),
+                        keepalive: true
+                    }).catch(err => console.error('KV Report Error:', err));
+                }
                 
                 // Show where the correct one was
                 Array.from(parent.children).forEach(b => {
-                    if (b.innerText.trim() === correct.trim()) {
+                    if (b.innerText.trim() === (correct || '').trim()) {
                         b.classList.add('correct');
-                        b.querySelector('.icon-placeholder').innerHTML = '<i class="fas fa-check check-icon"></i>';
+                        const bIcon = b.querySelector('.icon-placeholder');
+                        if (bIcon) bIcon.innerHTML = '<i class="fas fa-check check-icon"></i>';
                     }
                 });
             }
