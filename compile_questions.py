@@ -3,26 +3,33 @@ import hashlib
 import os
 import re
 
-def clean_text(text):
+def fix_missing_placeholders(text):
     if not text:
-        return ""
-    # Remove common grading artifacts
-    text = text.replace('Mark 1.00 out of 1.00', '').strip()
+        return text
     
-    # Fix fragmented dashes (e.g., "SHA- 2" -> "SHA-2", "connection- oriented" -> "connection-oriented")
-    text = re.sub(r'-\s+', '-', text)
+    # 1. Fix articles followed directly by a verb/adjective (mid-sentence gap)
+    # Example: "design of the focused on" -> "design of the ______ focused on"
+    patterns = [
+        (r'\b(the|is|of|a|an|as)\s+(focused|is|are|was|were|has|provides|referred|known|called|belongs)\b', r'\1 ______ \2'),
+        (r'\b(is)\s+(a|an|the|to)\b', r'\1 ______ \2'),
+    ]
     
-    # Fix missing answer placeholder dashes (e.g. "The ____ is a" where some might have weird spacing or count)
-    # This specifically looks for instances where a word might be missing a dash if that was the user's intent, 
-    # but based on the request "answer placeholder dashes", assuming you want to ensure they exist.
-    # If the JSONs came from a system that stripped them, we can't guess where they were easily 
-    # unless there is a specific pattern like triple spaces or "   ".
+    for pattern, replacement in patterns:
+        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
     
+    # 2. Fix sentences ending with an article or preposition (trailing gap)
+    # Example: "obvious risk is" -> "obvious risk is ______"
+    # Note: excluding already dotted sentences or questions
+    if re.search(r'\b(is|a|an|the|as|by|to|of|at|into|developed|by|known|referred to as)\s*$', text.strip(), re.IGNORECASE):
+        text = text.strip() + " ______"
+        
     return text
 
 def get_question_hash(question):
     # Normalize question text (lowercase, strip whitespace, remove grading artifacts)
-    text = clean_text(question.get('question_text', ''))
+    text = question.get('question_text', '').strip()
+    # Remove common grading artifacts
+    text = text.replace('Mark 1.00 out of 1.00', '').strip()
     return hashlib.sha256(text.lower().encode('utf-8')).hexdigest()
 
 def compile_questions():
@@ -45,13 +52,8 @@ def compile_questions():
                 for q in questions:
                     # Clean the question text in the actual object
                     if 'question_text' in q:
-                        q['question_text'] = clean_text(q['question_text'])
-                    
-                    # Also clean options and correct answer to fix fragmented dashes there
-                    if 'options' in q:
-                        q['options'] = [clean_text(opt) for opt in q['options']]
-                    if 'correct_answer' in q:
-                        q['correct_answer'] = clean_text(q['correct_answer'])
+                        text = q['question_text'].replace('Mark 1.00 out of 1.00', '').strip()
+                        q['question_text'] = fix_missing_placeholders(text)
                     
                     q_hash = get_question_hash(q)
                     if q_hash not in seen_hashes:
