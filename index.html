@@ -113,6 +113,30 @@
             display: none;
         }
 
+        .hot-btn {
+            background: #7c3aed;
+            color: white;
+            border: none;
+            padding: 2px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .mode-banner {
+            margin-top: 112px;
+            width: 95%;
+            max-width: 800px;
+            background: #eef2ff;
+            color: #312e81;
+            border: 1px solid #c7d2fe;
+            border-radius: 10px;
+            padding: 10px 12px;
+            font-size: 0.86rem;
+            display: none;
+        }
+
         .question-card {
             background: var(--card-bg);
             padding: 25px;
@@ -256,10 +280,13 @@
             <div class="stat-item">Score: <span id="stat-score" style="color:var(--primary-color)">0%</span></div>
             <div class="stat-item">Progress: <span id="stat-progress">0</span> / <span id="total-count">0</span></div>
             <button class="retake-btn" id="retake-btn" onclick="retakeWrongQuestions()">Retake Wrong</button>
+            <button class="hot-btn" id="hot-btn" onclick="showHot100Questions()">Hot 100</button>
             <button class="return-btn" id="return-btn" onclick="returnToMainQuestions()">Return to Main</button>
             <button class="reset-btn" onclick="resetProgress()">Reset Progress</button>
         </div>
     </div>
+
+    <div class="mode-banner" id="mode-banner"></div>
 
     <div class="container" id="feed">
         <div id="loading">
@@ -278,8 +305,14 @@
         let wrongCount = 0;
         let totalAnswered = 0;
         let userAnswers = JSON.parse(localStorage.getItem('quiz_answers') || '{}');
+        let hotAnswers = JSON.parse(localStorage.getItem('hot100_answers') || '{}');
         let allQuestionsData = [];
+        let hotEntries = [];
+        let hotCorrectCount = 0;
+        let hotWrongCount = 0;
+        let hotTotalAnswered = 0;
         let isRetakeMode = false;
+        let activeMode = 'main';
         const WORKER_URL = "https://qna.wgchalie.workers.dev";
 
         async function loadFeed() {
@@ -311,7 +344,9 @@
                 shouldRestore = false,
                 shouldAutoscroll = false,
                 updateMainStats = false,
-                isRetakeList = false
+                isRetakeList = false,
+                answerStore = 'main',
+                mode = 'main'
             } = options;
 
             const feed = document.getElementById('feed');
@@ -331,27 +366,33 @@
                 const sourceIdx = Number.isFinite(entry.sourceIdx) ? entry.sourceIdx : localIdx;
 
                 try {
-                    const card = createQuestionCard(q, sourceIdx, !isRetakeList);
+                    const card = createQuestionCard(q, sourceIdx, !isRetakeList, answerStore);
                     feed.appendChild(card);
 
-                    if (shouldRestore && userAnswers[sourceIdx]) {
+                    const answersObj = answerStore === 'hot' ? hotAnswers : userAnswers;
+                    if (shouldRestore && answersObj[sourceIdx]) {
                         restoredAnswered++;
-                        const isCorrect = normalizeAnswerText(userAnswers[sourceIdx]) === normalizeAnswerText(q.correct_answer || "");
+                        const isCorrect = normalizeAnswerText(answersObj[sourceIdx]) === normalizeAnswerText(q.correct_answer || "");
                         if (isCorrect) restoredCorrect++; else restoredWrong++;
-                        restoreAnswer(card, userAnswers[sourceIdx], q.correct_answer || "", sourceIdx);
+                        restoreAnswer(card, answersObj[sourceIdx], q.correct_answer || "", sourceIdx);
                     }
                 } catch (cardErr) {
                     console.error(`Error rendering card ${sourceIdx}:`, cardErr, q);
                 }
             });
 
-            if (updateMainStats) {
+            if (mode === 'main' && updateMainStats) {
                 totalAnswered = restoredAnswered;
                 correctCount = restoredCorrect;
                 wrongCount = restoredWrong;
                 updateStats();
                 document.getElementById('stat-correct').innerText = correctCount;
                 document.getElementById('stat-wrong').innerText = wrongCount;
+            } else if (mode === 'hot') {
+                hotTotalAnswered = restoredAnswered;
+                hotCorrectCount = restoredCorrect;
+                hotWrongCount = restoredWrong;
+                updateHotStats();
             }
 
             document.getElementById('footer').style.display = 'block';
@@ -391,7 +432,7 @@
             setTimeout(checkAndScroll, 500);
         }
 
-        function createQuestionCard(q, idx, persistMainData) {
+        function createQuestionCard(q, idx, persistMainData, answerStore = 'main') {
             const card = document.createElement('div');
             card.className = 'question-card';
             card.id = `q-${idx}`;
@@ -399,6 +440,7 @@
             const optionsContainer = document.createElement('div');
             optionsContainer.className = 'options';
             optionsContainer.dataset.persistMainData = persistMainData ? 'true' : 'false';
+            optionsContainer.dataset.answerStore = answerStore;
 
             q.options.forEach(opt => {
                 const btn = document.createElement('button');
@@ -477,15 +519,19 @@
         function handleSelect(btn, selected, correct, parent, idx) {
             if (parent.classList.contains('answered')) return;
 
-            const persistMainData = parent.dataset.persistMainData === 'true';
-            if (persistMainData) {
+            const answerStore = parent.dataset.answerStore || 'main';
+            if (answerStore === 'main') {
                 userAnswers[idx] = selected;
                 localStorage.setItem('quiz_answers', JSON.stringify(userAnswers));
+            } else if (answerStore === 'hot') {
+                hotAnswers[idx] = selected;
+                localStorage.setItem('hot100_answers', JSON.stringify(hotAnswers));
             }
 
             applySelection(btn, selected, correct, parent, true, idx, {
-                updateMainStats: persistMainData,
-                reportMiss: persistMainData
+                updateMainStats: answerStore === 'main',
+                updateHotStats: answerStore === 'hot',
+                reportMiss: answerStore === 'main'
             });
         }
 
@@ -502,6 +548,7 @@
             if (selectedBtn) {
                 applySelection(selectedBtn, selected, correct, optionsContainer, false, idx, {
                     updateMainStats: false,
+                    updateHotStats: false,
                     reportMiss: false
                 });
             }
@@ -513,11 +560,14 @@
 
             const {
                 updateMainStats = true,
+                updateHotStats = false,
                 reportMiss = true
             } = behavior;
 
             if (useAI && updateMainStats) {
                 totalAnswered++;
+            } else if (useAI && updateHotStats) {
+                hotTotalAnswered++;
             }
 
             const isCorrect = normalizeAnswerText(selected) === normalizeAnswerText(correct);
@@ -531,6 +581,8 @@
             if (isCorrect) {
                 if (useAI && updateMainStats) {
                     correctCount++;
+                } else if (useAI && updateHotStats) {
+                    hotCorrectCount++;
                 }
                 btn.classList.add('correct');
                 const icon = btn.querySelector('.icon-placeholder');
@@ -542,6 +594,8 @@
             } else {
                 if (useAI && updateMainStats) {
                     wrongCount++;
+                } else if (useAI && updateHotStats) {
+                    hotWrongCount++;
                 }
                 btn.classList.add('wrong');
                 const icon = btn.querySelector('.icon-placeholder');
@@ -587,6 +641,10 @@
                 document.getElementById('stat-wrong').innerText = wrongCount;
             }
 
+            if (useAI && updateHotStats) {
+                updateHotStats();
+            }
+
             // After a correct manual answer, move focus to the next visible question card.
             if (useAI && isCorrect && card) {
                 setTimeout(() => {
@@ -617,38 +675,122 @@
             }
 
             isRetakeMode = true;
+            activeMode = 'retake';
             const retakeBtn = document.getElementById('retake-btn');
+            const hotBtn = document.getElementById('hot-btn');
             const returnBtn = document.getElementById('return-btn');
             if (retakeBtn) retakeBtn.style.display = 'none';
+            if (hotBtn) hotBtn.style.display = 'none';
             if (returnBtn) returnBtn.style.display = 'inline-block';
+            setModeBanner('Retake Wrong mode: practice only. Main score and saved answers are unchanged.');
 
             renderQuestions(wrongEntries, {
                 shouldRestore: false,
                 shouldAutoscroll: false,
                 updateMainStats: false,
-                isRetakeList: true
+                isRetakeList: true,
+                answerStore: 'none',
+                mode: 'retake'
             });
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
+        async function showHot100Questions() {
+            try {
+                const response = await fetch(`${WORKER_URL}/hot-100`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({})
+                });
+                if (!response.ok) {
+                    const text = await response.text();
+                    throw new Error(`Failed to load Hot 100: ${response.status} ${text}`);
+                }
+
+                const data = await response.json();
+                const topList = Array.isArray(data.top) ? data.top : [];
+                hotEntries = topList
+                    .map(item => {
+                        const qNum = Number(item.q_num);
+                        const idx = qNum - 1;
+                        if (!Number.isInteger(idx) || idx < 0 || idx >= allQuestionsData.length) return null;
+                        return { question: allQuestionsData[idx], sourceIdx: idx };
+                    })
+                    .filter(Boolean)
+                    .slice(0, 100);
+
+                if (hotEntries.length === 0) {
+                    alert('No Hot 100 data available yet.');
+                    return;
+                }
+
+                activeMode = 'hot';
+                const retakeBtn = document.getElementById('retake-btn');
+                const hotBtn = document.getElementById('hot-btn');
+                const returnBtn = document.getElementById('return-btn');
+                if (retakeBtn) retakeBtn.style.display = 'none';
+                if (hotBtn) hotBtn.style.display = 'none';
+                if (returnBtn) returnBtn.style.display = 'inline-block';
+
+                setModeBanner('Hot 100 mode: top globally missed questions from collected data. Score is separate and saved under hot100_answers.');
+
+                renderQuestions(hotEntries, {
+                    shouldRestore: true,
+                    shouldAutoscroll: false,
+                    updateMainStats: false,
+                    isRetakeList: false,
+                    answerStore: 'hot',
+                    mode: 'hot'
+                });
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } catch (err) {
+                console.error(err);
+                alert(`Could not load Hot 100: ${err.message}`);
+            }
+        }
+
         function returnToMainQuestions() {
             isRetakeMode = false;
+            activeMode = 'main';
             const retakeBtn = document.getElementById('retake-btn');
+            const hotBtn = document.getElementById('hot-btn');
             const returnBtn = document.getElementById('return-btn');
             if (retakeBtn) retakeBtn.style.display = 'inline-block';
+            if (hotBtn) hotBtn.style.display = 'inline-block';
             if (returnBtn) returnBtn.style.display = 'none';
+            setModeBanner('');
 
             renderQuestions(allQuestionsData, {
                 shouldRestore: true,
                 shouldAutoscroll: true,
                 updateMainStats: true,
-                isRetakeList: false
+                isRetakeList: false,
+                answerStore: 'main',
+                mode: 'main'
             });
+        }
+
+        function setModeBanner(text) {
+            const banner = document.getElementById('mode-banner');
+            if (!banner) return;
+            const hasText = !!(text && text.trim());
+            banner.style.display = hasText ? 'block' : 'none';
+            banner.innerText = hasText ? text : '';
         }
 
         function updateStats() {
             document.getElementById('stat-progress').innerText = totalAnswered;
             const scorePercent = totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
+            const scoreEl = document.getElementById('stat-score');
+            if (scoreEl) scoreEl.innerText = `${scorePercent}%`;
+        }
+
+        function updateHotStats() {
+            document.getElementById('stat-progress').innerText = hotTotalAnswered;
+            document.getElementById('total-count').innerText = hotEntries.length;
+            document.getElementById('stat-correct').innerText = hotCorrectCount;
+            document.getElementById('stat-wrong').innerText = hotWrongCount;
+            const scorePercent = hotTotalAnswered > 0 ? Math.round((hotCorrectCount / hotTotalAnswered) * 100) : 0;
             const scoreEl = document.getElementById('stat-score');
             if (scoreEl) scoreEl.innerText = `${scorePercent}%`;
         }

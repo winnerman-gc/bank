@@ -39,6 +39,10 @@ export default {
       return handleReportMiss(request, env, headers);
     }
 
+    if (pathname === "/hot-100") {
+      return handleHot100(env, headers);
+    }
+
     if (pathname === "/migrate-kv-to-upstash") {
       return handleMigrateKvToUpstash(request, env, headers);
     }
@@ -151,6 +155,44 @@ async function handleReportMiss(request, env, headers) {
   }
 
   return json({ ok: true }, 200, headers);
+}
+
+async function handleHot100(env, headers) {
+  if (!env.UPSTASH_REDIS_REST_URL || !env.UPSTASH_REDIS_REST_TOKEN) {
+    return json({ error: "Upstash credentials not configured" }, 500, headers);
+  }
+
+  const base = normalizeBaseUrl(env.UPSTASH_REDIS_REST_URL);
+  const authHeaders = {
+    Authorization: `Bearer ${env.UPSTASH_REDIS_REST_TOKEN}`,
+    "Content-Type": "application/json",
+  };
+
+  const resp = await fetch(
+    `${base}/zrevrange/${encodeURIComponent("wrong:leaderboard")}/0/99/withscores`,
+    {
+      method: "POST",
+      headers: authHeaders,
+    }
+  );
+
+  if (!resp.ok) {
+    const text = await resp.text();
+    return json({ error: `Upstash hot list failed: ${text}` }, 502, headers);
+  }
+
+  const data = await resp.json();
+  const raw = Array.isArray(data?.result) ? data.result : [];
+  const top = [];
+  for (let i = 0; i < raw.length; i += 2) {
+    const qNum = Number(raw[i]);
+    const misses = Number(raw[i + 1]);
+    if (Number.isInteger(qNum) && qNum > 0 && Number.isFinite(misses)) {
+      top.push({ q_num: qNum, misses });
+    }
+  }
+
+  return json({ top }, 200, headers);
 }
 
 async function handleMigrateKvToUpstash(request, env, headers) {
