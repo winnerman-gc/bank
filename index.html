@@ -364,34 +364,39 @@
             return card;
         }
 
-        const WORKER_URL = "https://qna.wgchalie.workers.dev/";
-
         async function getAIExplanation(question, selected, correct, container) {
             const aiSlot = container.querySelector('.ai-content');
             aiSlot.innerHTML = `<div class="ai-loading"><i class="fas fa-robot"></i> AI is generating explanation...</div>`;
             
             try {
-                const response = await fetch(WORKER_URL, {
+                const response = await fetch("https://api.deepseek.com/chat/completions", {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ question, selected, correct })
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer sk-7a0947b2120545b3bc8116dfce9f5d65'
+                    },
+                    body: JSON.stringify({
+                        model: "deepseek-chat",
+                        messages: [
+                            {
+                                role: "system", 
+                                content: "You are a technical tutor. Explain why the correct answer is right and why the selected answer might be wrong. Be direct, technical, and concise."
+                            },
+                            {
+                                role: "user",
+                                content: `Question: ${question}\nSelected Answer: ${selected}\nCorrect Answer: ${correct}`
+                            }
+                        ],
+                        stream: false
+                    })
                 });
                 
                 if (!response.ok) {
-                    const errorText = await response.text();
-                    console.error('Worker error details:', errorText);
-                    throw new Error(`Worker responded with ${response.status}: ${errorText}`);
+                    throw new Error(`DeepSeek API error: ${response.status}`);
                 }
 
                 const data = await response.json();
-                console.log('AI Response data:', data);
-                
-                if (data.error) {
-                    throw new Error(data.error);
-                }
-
-                // Since the Worker now extracts the content and returns { explanation: "..." }
-                const text = data.explanation || "No explanation returned.";
+                const text = data.choices[0].message.content;
                 aiSlot.innerHTML = `<p style="margin-top:10px; border-top:1px solid #e2e8f0; padding-top:10px;"><em>AI:</em> ${text}</p>`;
             } catch (err) {
                 console.error('AI Error:', err);
