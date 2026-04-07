@@ -16377,5 +16377,237 @@
     ],
     "correct_answer": "True",
     "original_file": "31.json"
+  },
+  {
+    "question_number": 1428,
+    "question_text": "What does GB/T 28448- 2019 specify?",
+    "options": [
+      "Basic requirements",
+      "Assessment requirements",
+      "Design requirements",
+      "Grading guideline"
+    ],
+    "correct_answer": "Assessment requirements",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1429,
+    "question_text": "The and block cipher modes of operation are used for authentication.",
+    "options": [
+      "CBC, CFB",
+      "ECB, CBC",
+      "CFB, OFB",
+      "OFB, CTR"
+    ],
+    "correct_answer": "CBC, CFB",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1430,
+    "question_text": "______ theorem states the following: If p is prime and a ______ is a positive integer not divisible by p, then ap- 1 = 1(mod p).",
+    "options": [
+      "Miller-Rabin",
+      "Chinese Remainder",
+      "Euler's",
+      "Fermat's"
+    ],
+    "correct_answer": "Fermat's",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1431,
+    "question_text": "In the first instance of multiple encryption plaintext we converted to using the encryption algorithm.",
+    "options": [
+      "S-AES mode",
+      "block cipher",
+      "ciphertext",
+      "Triple DES"
+    ],
+    "correct_answer": "ciphertext",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1432,
+    "question_text": "What does the authentication service assure?",
+    "options": [
+      "That data is encrypted",
+      "That data is never modified",
+      "That systems are always available",
+      "That a communication is authentic"
+    ],
+    "correct_answer": "That a communication is authentic",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1433,
+    "question_text": "Although it does not appear to be as efficient as the Miller- Rabin algorithm, in 2002 a relatively simple deterministic algorithm that efficiently determines whether a given large number is a prime was developed. This algorithm is ______ known as the algorithm.",
+    "options": [
+      "AKS",
+      "Miller- Rabin",
+      "Euclidean",
+      "Brady"
+    ],
+    "correct_answer": "AKS",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1434,
+    "question_text": "Two MACs that are based on the use of a block cipher mode of operation are Data Authentication Algorithm and ______.",
+    "options": [
+      "GMAC",
+      "DMAC",
+      "TMAC",
+      "CMAC"
+    ],
+    "correct_answer": "CMAC",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1435,
+    "question_text": "The key exchange protocol is vulnerable to a attack because it does not authenticate the participants.",
+    "options": [
+      "chosen ciphertext",
+      "man-in-the-middle",
+      "time complexity",
+      "one-way function"
+    ],
+    "correct_answer": "man- in- the- middle",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1436,
+    "question_text": "The ______ is used to convey TLS- related alerts to the peer entity.",
+    "options": [
+      "Alert Protocol",
+      "SSL Record Protocol",
+      "Change Cipher Spec Protocol",
+      "Handshake Protocol"
+    ],
+    "correct_answer": "Alert Protocol",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1437,
+    "question_text": "The term used for certified 802.11b products is ______",
+    "options": [
+      "WPA",
+      "WAP",
+      "Wi-Fi",
+      "WEP"
+    ],
+    "correct_answer": "Wi- Fi",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1438,
+    "question_text": "The stream cipher is similar to the one- time pad with a difference being that a one- time pad uses a pseudorandom number stream and a stream cipher uses a genuine random number stream.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "False",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1439,
+    "question_text": "Core servers also host the applications that interact with and manage the IoT devices and analyze the IoT- generated data.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "False",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1440,
+    "question_text": "The protocol enables two users to establish a secret key using a public- key scheme based on discrete logarithms.",
+    "options": [
+      "Diffie-Hellman",
+      "Elgamal-Fraiser",
+      "Micali-Schnorr",
+      "Miller-Rabin"
+    ],
+    "correct_answer": "Diffie- Hellman",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1441,
+    "question_text": "If a ______ is an integer and n is a positive integer, we define a mod n to be the remainder when a ______ is divided by n. The integer n is ______ called the ______.",
+    "options": [
+      "divisor",
+      "residue",
+      "modulus",
+      "quotient"
+    ],
+    "correct_answer": "modulus",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1442,
+    "question_text": "The approach is vulnerable to man- in- the- middle attacks.",
+    "options": [
+      "Synchronous Diffie-Hellman",
+      "Fixed Diffie-Hellman",
+      "Remote Diffie-Hellman",
+      "Anonymous Diffie-Hellman"
+    ],
+    "correct_answer": "Anonymous Diffie- Hellman",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1443,
+    "question_text": "A hash function that satisfies the properties of variable input size, fixed output size, efficiency, preimage resistant and second preimage resistant is ______ referred to as a ______",
+    "options": [
+      "strong hash function",
+      "weak hash function",
+      "collision resistant function",
+      "preimage resistant function"
+    ],
+    "correct_answer": "weak hash function",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1444,
+    "question_text": "What can a man- in- the- middle attack be used for more generally?",
+    "options": [
+      "Only observing traffic",
+      "Only modifying data",
+      "Impersonating the two ends of a legitimate communication",
+      "Only deleting data"
+    ],
+    "correct_answer": "Impersonating the two ends of a legitimate communication",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1445,
+    "question_text": "A public- key encryption scheme is not vulnerable to a brute- force attack.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "False",
+    "original_file": "deepseek_json_20260407_0fb21e.json"
+  },
+  {
+    "question_number": 1446,
+    "question_text": "Question text missing in provided content",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "False",
+    "original_file": "deepseek_json_20260407_630a33.json"
+  },
+  {
+    "question_number": 1447,
+    "question_text": "Which field is missing from the AH format?",
+    "options": [
+      "Sequence Header",
+      "Next Header",
+      "Payload Data",
+      "Security Parameters Index"
+    ],
+    "correct_answer": "Sequence Header",
+    "original_file": "deepseek_json_20260407_630a33.json"
   }
 ]

@@ -43,10 +43,14 @@ def compile_questions():
     all_questions = []
     seen_hashes = set()
     
-    # Automatically find all JSON files that are numbered (e.g., 1.json, 2.json, etc.)
-    files = [f for f in os.listdir('.') if f.endswith('.json') and f[:-5].isdigit()]
-    # Sort files numerically to keep order consistent
-    files.sort(key=lambda x: int(x[:-5]))
+    # Include numbered JSON files and deepseek_json_*.json files.
+    numbered_files = [f for f in os.listdir('.') if f.endswith('.json') and f[:-5].isdigit()]
+    deepseek_files = [f for f in os.listdir('.') if re.match(r'^deepseek_json_.*\.json$', f)]
+
+    # Sort numbered files numerically and deepseek files lexicographically.
+    numbered_files.sort(key=lambda x: int(x[:-5]))
+    deepseek_files.sort()
+    files = numbered_files + deepseek_files
     
     for filename in files:
         if not os.path.exists(filename):
