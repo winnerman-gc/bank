@@ -305,6 +305,7 @@
 
                 // Scroll to the question AFTER the last answered one to maintain flow
                 if (totalAnswered > 0 && totalAnswered < questions.length) {
+                    console.log("Attempting to scroll to next question...");
                     setTimeout(() => {
                         const answeredKeys = Object.keys(userAnswers).map(Number).sort((a, b) => a - b);
                         if (answeredKeys.length === 0) return;
@@ -314,7 +315,8 @@
                         
                         const element = document.getElementById(`q-${nextIdx}`) || document.getElementById(`q-${lastAnsweredIdx}`);
                         if (element) {
-                            const headerOffset = 120;
+                            console.log(`Scrolling to element q-${nextIdx}`);
+                            const headerOffset = 130;
                             const elementPosition = element.getBoundingClientRect().top;
                             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -322,8 +324,10 @@
                                 top: offsetPosition,
                                 behavior: 'smooth'
                             });
+                        } else {
+                            console.warn("Target element for scroll not found.");
                         }
-                    }, 1000);
+                    }, 1500); // Increased delay for heavy item rendering
                 }
 
             } catch (err) {
