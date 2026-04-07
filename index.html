@@ -105,6 +105,24 @@
             margin-bottom: 10px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+        }
+
+        .hint-btn {
+            background: none;
+            border: none;
+            color: #fbbf24;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 5px;
+            border-radius: 50%;
+            transition: all 0.2s;
+            display: none; /* Hidden by default, shown for correct answers */
+        }
+
+        .hint-btn:hover {
+            background: #fef3c7;
+            transform: scale(1.1);
         }
 
         .question-text {
@@ -329,6 +347,9 @@
             card.innerHTML = `
                 <div class="question-meta">
                     <span>Question ${idx + 1}</span>
+                    <button class="hint-btn" title="Explain concept" onclick="handleHint('${idx}')">
+                        <i class="far fa-lightbulb"></i>
+                    </button>
                 </div>
                 <div class="question-text">${q.question_text}</div>
             `;
@@ -377,6 +398,18 @@
             }
         }
 
+        async function handleHint(idx) {
+            const card = document.getElementById(`q-${idx}`);
+            const explanation = card.querySelector('.explanation');
+            const questionText = card.querySelector('.question-text').innerText;
+            const correctBtn = Array.from(card.querySelectorAll('.option-btn')).find(b => b.classList.contains('correct'));
+            const correctAnswer = correctBtn ? correctBtn.innerText.trim() : "";
+
+            explanation.style.display = 'block';
+            // Use same correct answer for both to signal a "Confirming" explanation
+            getAIExplanation(questionText, correctAnswer, correctAnswer, explanation);
+        }
+
         function handleSelect(btn, selected, correct, parent, idx) {
             if (parent.classList.contains('answered')) return;
             
@@ -419,6 +452,10 @@
                 btn.classList.add('correct');
                 const icon = btn.querySelector('.icon-placeholder');
                 if (icon) icon.innerHTML = '<i class="fas fa-check check-icon"></i>';
+                
+                // Show hint bulb for correct answer
+                const hintBtn = card.querySelector('.hint-btn');
+                if (hintBtn) hintBtn.style.display = 'block';
             } else {
                 wrongCount++;
                 btn.classList.add('wrong');
