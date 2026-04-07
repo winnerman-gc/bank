@@ -15,7 +15,7 @@
             --error-color: #ef4444;
             --bg-color: #f1f5f9;
             --card-bg: #ffffff;
-            --text-main: #1e293b;
+            --text-main: #0f172a;
             --text-muted: #64748b;
         }
 
@@ -122,6 +122,28 @@
             cursor: pointer;
             font-size: 0.75rem;
             font-weight: bold;
+        }
+
+        .desc-btn {
+            background: #0f766e;
+            color: white;
+            border: none;
+            padding: 2px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .miss-badge {
+            background: #ede9fe;
+            color: #6d28d9;
+            border: 1px solid #ddd6fe;
+            padding: 2px 8px;
+            border-radius: 999px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            white-space: nowrap;
         }
 
         .mode-banner {
@@ -281,6 +303,7 @@
             <div class="stat-item">Progress: <span id="stat-progress">0</span> / <span id="total-count">0</span></div>
             <button class="retake-btn" id="retake-btn" onclick="retakeWrongQuestions()">Retake Wrong</button>
             <button class="hot-btn" id="hot-btn" onclick="showHot100Questions()">Hot 100</button>
+            <button class="desc-btn" id="desc-btn" onclick="toggleModeDescription()">Description</button>
             <button class="return-btn" id="return-btn" onclick="returnToMainQuestions()">Return to Main</button>
             <button class="reset-btn" onclick="resetProgress()">Reset Progress</button>
         </div>
@@ -305,12 +328,16 @@
         let wrongCount = 0;
         let totalAnswered = 0;
         let userAnswers = JSON.parse(localStorage.getItem('quiz_answers') || '{}');
+        let retakeAnswers = JSON.parse(localStorage.getItem('retake_answers') || '{}');
         let hotAnswers = JSON.parse(localStorage.getItem('hot100_answers') || '{}');
         let allQuestionsData = [];
         let hotEntries = [];
         let hotCorrectCount = 0;
         let hotWrongCount = 0;
         let hotTotalAnswered = 0;
+        let retakeCorrectCount = 0;
+        let retakeWrongCount = 0;
+        let retakeTotalAnswered = 0;
         let isRetakeMode = false;
         let activeMode = 'main';
         const WORKER_URL = "https://qna.wgchalie.workers.dev";
@@ -366,10 +393,10 @@
                 const sourceIdx = Number.isFinite(entry.sourceIdx) ? entry.sourceIdx : localIdx;
 
                 try {
-                    const card = createQuestionCard(q, sourceIdx, !isRetakeList, answerStore);
+                    const card = createQuestionCard(q, sourceIdx, !isRetakeList, answerStore, entry.misses);
                     feed.appendChild(card);
 
-                    const answersObj = answerStore === 'hot' ? hotAnswers : userAnswers;
+                    const answersObj = answerStore === 'hot' ? hotAnswers : answerStore === 'retake' ? retakeAnswers : userAnswers;
                     if (shouldRestore && answersObj[sourceIdx]) {
                         restoredAnswered++;
                         const isCorrect = normalizeAnswerText(answersObj[sourceIdx]) === normalizeAnswerText(q.correct_answer || "");
@@ -392,7 +419,12 @@
                 hotTotalAnswered = restoredAnswered;
                 hotCorrectCount = restoredCorrect;
                 hotWrongCount = restoredWrong;
-                updateHotStats();
+                refreshModeStats('hot');
+            } else if (mode === 'retake') {
+                retakeTotalAnswered = restoredAnswered;
+                retakeCorrectCount = restoredCorrect;
+                retakeWrongCount = restoredWrong;
+                refreshModeStats('retake');
             }
 
             document.getElementById('footer').style.display = 'block';
@@ -432,7 +464,7 @@
             setTimeout(checkAndScroll, 500);
         }
 
-        function createQuestionCard(q, idx, persistMainData, answerStore = 'main') {
+        function createQuestionCard(q, idx, persistMainData, answerStore = 'main', misses) {
             const card = document.createElement('div');
             card.className = 'question-card';
             card.id = `q-${idx}`;
@@ -453,6 +485,7 @@
             card.innerHTML = `
                 <div class="question-meta">
                     <span>Question ${idx + 1}</span>
+                    ${Number.isFinite(misses) ? `<span class="miss-badge">Misses: ${misses}</span>` : ''}
                     <button class="hint-btn" title="Explain concept" onclick="handleHint('${idx}')">
                         <i class="far fa-lightbulb"></i>
                     </button>
@@ -526,11 +559,15 @@
             } else if (answerStore === 'hot') {
                 hotAnswers[idx] = selected;
                 localStorage.setItem('hot100_answers', JSON.stringify(hotAnswers));
+            } else if (answerStore === 'retake') {
+                retakeAnswers[idx] = selected;
+                localStorage.setItem('retake_answers', JSON.stringify(retakeAnswers));
             }
 
             applySelection(btn, selected, correct, parent, true, idx, {
                 updateMainStats: answerStore === 'main',
                 updateHotStats: answerStore === 'hot',
+                updateRetakeStats: answerStore === 'retake',
                 reportMiss: answerStore === 'main'
             });
         }
@@ -549,6 +586,7 @@
                 applySelection(selectedBtn, selected, correct, optionsContainer, false, idx, {
                     updateMainStats: false,
                     updateHotStats: false,
+                    updateRetakeStats: false,
                     reportMiss: false
                 });
             }
@@ -560,14 +598,17 @@
 
             const {
                 updateMainStats = true,
-                updateHotStats = false,
+                updateHotStats: shouldUpdateHotStats = false,
+                updateRetakeStats: shouldUpdateRetakeStats = false,
                 reportMiss = true
             } = behavior;
 
             if (useAI && updateMainStats) {
                 totalAnswered++;
-            } else if (useAI && updateHotStats) {
+            } else if (useAI && shouldUpdateHotStats) {
                 hotTotalAnswered++;
+            } else if (useAI && shouldUpdateRetakeStats) {
+                retakeTotalAnswered++;
             }
 
             const isCorrect = normalizeAnswerText(selected) === normalizeAnswerText(correct);
@@ -581,8 +622,10 @@
             if (isCorrect) {
                 if (useAI && updateMainStats) {
                     correctCount++;
-                } else if (useAI && updateHotStats) {
+                } else if (useAI && shouldUpdateHotStats) {
                     hotCorrectCount++;
+                } else if (useAI && shouldUpdateRetakeStats) {
+                    retakeCorrectCount++;
                 }
                 btn.classList.add('correct');
                 const icon = btn.querySelector('.icon-placeholder');
@@ -594,8 +637,10 @@
             } else {
                 if (useAI && updateMainStats) {
                     wrongCount++;
-                } else if (useAI && updateHotStats) {
+                } else if (useAI && shouldUpdateHotStats) {
                     hotWrongCount++;
+                } else if (useAI && shouldUpdateRetakeStats) {
+                    retakeWrongCount++;
                 }
                 btn.classList.add('wrong');
                 const icon = btn.querySelector('.icon-placeholder');
@@ -641,8 +686,24 @@
                 document.getElementById('stat-wrong').innerText = wrongCount;
             }
 
-            if (useAI && updateHotStats) {
-                updateHotStats();
+            if (useAI && shouldUpdateHotStats) {
+                document.getElementById('stat-progress').innerText = hotTotalAnswered;
+                document.getElementById('total-count').innerText = hotEntries.length;
+                document.getElementById('stat-correct').innerText = hotCorrectCount;
+                document.getElementById('stat-wrong').innerText = hotWrongCount;
+                const scorePercent = hotTotalAnswered > 0 ? Math.round((hotCorrectCount / hotTotalAnswered) * 100) : 0;
+                const scoreEl = document.getElementById('stat-score');
+                if (scoreEl) scoreEl.innerText = `${scorePercent}%`;
+            }
+
+            if (useAI && shouldUpdateRetakeStats) {
+                document.getElementById('stat-progress').innerText = retakeTotalAnswered;
+                document.getElementById('total-count').innerText = Object.keys(retakeAnswers).length || 0;
+                document.getElementById('stat-correct').innerText = retakeCorrectCount;
+                document.getElementById('stat-wrong').innerText = retakeWrongCount;
+                const scorePercent = retakeTotalAnswered > 0 ? Math.round((retakeCorrectCount / retakeTotalAnswered) * 100) : 0;
+                const scoreEl = document.getElementById('stat-score');
+                if (scoreEl) scoreEl.innerText = `${scorePercent}%`;
             }
 
             // After a correct manual answer, move focus to the next visible question card.
@@ -682,14 +743,14 @@
             if (retakeBtn) retakeBtn.style.display = 'none';
             if (hotBtn) hotBtn.style.display = 'none';
             if (returnBtn) returnBtn.style.display = 'inline-block';
-            setModeBanner('Retake Wrong mode: practice only. Main score and saved answers are unchanged.');
+            setModeBanner('Retake Wrong mode: practice only. This tab has its own persistent answers and score, separate from Main.');
 
             renderQuestions(wrongEntries, {
-                shouldRestore: false,
+                shouldRestore: true,
                 shouldAutoscroll: false,
                 updateMainStats: false,
                 isRetakeList: true,
-                answerStore: 'none',
+                answerStore: 'retake',
                 mode: 'retake'
             });
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -714,7 +775,7 @@
                         const qNum = Number(item.q_num);
                         const idx = qNum - 1;
                         if (!Number.isInteger(idx) || idx < 0 || idx >= allQuestionsData.length) return null;
-                        return { question: allQuestionsData[idx], sourceIdx: idx };
+                        return { question: allQuestionsData[idx], sourceIdx: idx, misses: Number(item.misses) || 0 };
                     })
                     .filter(Boolean)
                     .slice(0, 100);
@@ -727,12 +788,14 @@
                 activeMode = 'hot';
                 const retakeBtn = document.getElementById('retake-btn');
                 const hotBtn = document.getElementById('hot-btn');
+                const descBtn = document.getElementById('desc-btn');
                 const returnBtn = document.getElementById('return-btn');
                 if (retakeBtn) retakeBtn.style.display = 'none';
                 if (hotBtn) hotBtn.style.display = 'none';
+                if (descBtn) descBtn.style.display = 'inline-block';
                 if (returnBtn) returnBtn.style.display = 'inline-block';
 
-                setModeBanner('Hot 100 mode: top globally missed questions from collected data. Score is separate and saved under hot100_answers.');
+                setModeBanner('Hot 100 mode: top globally missed questions from collected data. Miss counts come from the shared Upstash leaderboard. Score is separate and saved under hot100_answers.');
 
                 renderQuestions(hotEntries, {
                     shouldRestore: true,
@@ -754,11 +817,13 @@
             activeMode = 'main';
             const retakeBtn = document.getElementById('retake-btn');
             const hotBtn = document.getElementById('hot-btn');
+            const descBtn = document.getElementById('desc-btn');
             const returnBtn = document.getElementById('return-btn');
             if (retakeBtn) retakeBtn.style.display = 'inline-block';
             if (hotBtn) hotBtn.style.display = 'inline-block';
+            if (descBtn) descBtn.style.display = 'inline-block';
             if (returnBtn) returnBtn.style.display = 'none';
-            setModeBanner('');
+            setModeBanner('Main mode: your permanent score and answers are saved in quiz_answers. Retake and Hot 100 use separate storage.');
 
             renderQuestions(allQuestionsData, {
                 shouldRestore: true,
@@ -768,6 +833,12 @@
                 answerStore: 'main',
                 mode: 'main'
             });
+        }
+
+        function toggleModeDescription() {
+            const banner = document.getElementById('mode-banner');
+            if (!banner || !banner.innerText.trim()) return;
+            banner.style.display = banner.style.display === 'none' ? 'block' : 'none';
         }
 
         function setModeBanner(text) {
@@ -785,19 +856,41 @@
             if (scoreEl) scoreEl.innerText = `${scorePercent}%`;
         }
 
+        function refreshModeStats(mode) {
+            if (mode === 'hot') {
+                document.getElementById('stat-progress').innerText = hotTotalAnswered;
+                document.getElementById('total-count').innerText = hotEntries.length;
+                document.getElementById('stat-correct').innerText = hotCorrectCount;
+                document.getElementById('stat-wrong').innerText = hotWrongCount;
+                const scorePercent = hotTotalAnswered > 0 ? Math.round((hotCorrectCount / hotTotalAnswered) * 100) : 0;
+                const scoreEl = document.getElementById('stat-score');
+                if (scoreEl) scoreEl.innerText = `${scorePercent}%`;
+                return;
+            }
+
+            if (mode === 'retake') {
+                document.getElementById('stat-progress').innerText = retakeTotalAnswered;
+                document.getElementById('total-count').innerText = Object.keys(retakeAnswers).length || 0;
+                document.getElementById('stat-correct').innerText = retakeCorrectCount;
+                document.getElementById('stat-wrong').innerText = retakeWrongCount;
+                const scorePercent = retakeTotalAnswered > 0 ? Math.round((retakeCorrectCount / retakeTotalAnswered) * 100) : 0;
+                const scoreEl = document.getElementById('stat-score');
+                if (scoreEl) scoreEl.innerText = `${scorePercent}%`;
+            }
+        }
+
         function updateHotStats() {
-            document.getElementById('stat-progress').innerText = hotTotalAnswered;
-            document.getElementById('total-count').innerText = hotEntries.length;
-            document.getElementById('stat-correct').innerText = hotCorrectCount;
-            document.getElementById('stat-wrong').innerText = hotWrongCount;
-            const scorePercent = hotTotalAnswered > 0 ? Math.round((hotCorrectCount / hotTotalAnswered) * 100) : 0;
-            const scoreEl = document.getElementById('stat-score');
-            if (scoreEl) scoreEl.innerText = `${scorePercent}%`;
+            refreshModeStats('hot');
+        }
+
+        function updateRetakeStats() {
+            refreshModeStats('retake');
         }
 
         function resetProgress() {
             if (confirm('Are you sure you want to clear all progress?')) {
                 localStorage.removeItem('quiz_answers');
+                localStorage.removeItem('retake_answers');
                 location.reload();
             }
         }
