@@ -11,7 +11,6 @@ def fix_missing_placeholders(text):
     # Example: "design of the focused on" -> "design of the ______ focused on"
     patterns = [
         (r'\b(the|is|of|a|an|as)\s+(focused|is|are|was|were|has|provides|referred|known|called|belongs)\b', r'\1 ______ \2'),
-        (r'\b(is)\s+(a|an|the|to)\b', r'\1 ______ \2'),
     ]
     
     for pattern, replacement in patterns:

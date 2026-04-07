@@ -129,7 +129,7 @@
   },
   {
     "question_number": 12,
-    "question_text": "Why is ______ the broadest approach to confidentiality preferred?",
+    "question_text": "Why is the broadest approach to confidentiality preferred?",
     "options": [
       "It is more complex",
       "It is harder to implement",
@@ -251,7 +251,7 @@
   },
   {
     "question_number": 23,
-    "question_text": "IEEE 802.11i is ______ the standard for wireless LAN security.",
+    "question_text": "IEEE 802.11i is the standard for wireless LAN security.",
     "options": [
       "True",
       "False"
@@ -285,7 +285,7 @@
   },
   {
     "question_number": 26,
-    "question_text": "We define the of an algorithm to be if, for all n and all inputs of length n the execution of the algorithm takes at most steps. This is ______ a common measure of the efficiency of an algorithm.",
+    "question_text": "We define the of an algorithm to be if, for all n and all inputs of length n the execution of the algorithm takes at most steps. This is a common measure of the efficiency of an algorithm.",
     "options": [
       "timing attack",
       "one-way function",
@@ -341,7 +341,7 @@
   },
   {
     "question_number": 31,
-    "question_text": "What is ______ the focus of integrity service?",
+    "question_text": "What is the focus of integrity service?",
     "options": [
       "Detection rather than prevention",
       "Prevention",
@@ -365,7 +365,7 @@
   },
   {
     "question_number": 33,
-    "question_text": "What is ______ the relationship between the trust model and information security?",
+    "question_text": "What is the relationship between the trust model and information security?",
     "options": [
       "Information security provides a framework for the trust model",
       "They are unrelated",
@@ -435,7 +435,7 @@
   },
   {
     "question_number": 39,
-    "question_text": "What is ______ the relationship between information security and cyberspace security?",
+    "question_text": "What is the relationship between information security and cyberspace security?",
     "options": [
       "They are completely different concepts",
       "Cyberspace security is a subset of information security",
@@ -447,7 +447,7 @@
   },
   {
     "question_number": 40,
-    "question_text": "What is ______ the purpose of extended security requirements compared to general security requirements?",
+    "question_text": "What is the purpose of extended security requirements compared to general security requirements?",
     "options": [
       "They are optional",
       "They replace general requirements",
@@ -519,7 +519,7 @@
   },
   {
     "question_number": 46,
-    "question_text": "mode is similar to Cipher Feedback, except that the input to the encryption algorithm is ______ the preceding DES output.",
+    "question_text": "mode is similar to Cipher Feedback, except that the input to the encryption algorithm is the preceding DES output.",
     "options": [
       "Cipher Block Chaining",
       "Output Feedback",
@@ -531,7 +531,7 @@
   },
   {
     "question_number": 47,
-    "question_text": "The SHA-512 algorithm has the property that every bit of the hash code is ______ a function of every bit of the input.",
+    "question_text": "The SHA-512 algorithm has the property that every bit of the hash code is a function of every bit of the input.",
     "options": [
       "True",
       "False"
@@ -575,7 +575,7 @@
   },
   {
     "question_number": 51,
-    "question_text": "During vulnerability scanning, what is ______ the correct sequence of steps?",
+    "question_text": "During vulnerability scanning, what is the correct sequence of steps?",
     "options": [
       "Vulnerability scanning, operating system detection, ping sweep",
       "Ping sweep, operating system detection and port scanning, vulnerability scanning",
@@ -669,7 +669,7 @@
   },
   {
     "question_number": 59,
-    "question_text": "What is ______ the relationship between the five technical requirements categories in Cybersecurity Classified Protection 2.0?",
+    "question_text": "What is the relationship between the five technical requirements categories in Cybersecurity Classified Protection 2.0?",
     "options": [
       "They replace management requirements",
       "They work together to provide comprehensive technical security: secure physical environment, secure communication network, secure computing environment, security zone border, and security management center",
@@ -715,7 +715,7 @@
   },
   {
     "question_number": 63,
-    "question_text": "The objective of MIME Transfer Encodings is ______ to provide reliable delivery across the largest range of environments.",
+    "question_text": "The objective of MIME Transfer Encodings is to provide reliable delivery across the largest range of environments.",
     "options": [
       "False",
       "True"
@@ -725,7 +725,7 @@
   },
   {
     "question_number": 64,
-    "question_text": "What is ______ the primary characteristic of an active attack?",
+    "question_text": "What is the primary characteristic of an active attack?",
     "options": [
       "It only reads data",
       "It attempts to alter system resources or affect their operation",
@@ -737,7 +737,7 @@
   },
   {
     "question_number": 65,
-    "question_text": "What is ______ the relationship between data and information in security literature?",
+    "question_text": "What is the relationship between data and information in security literature?",
     "options": [
       "They are always distinguished",
       "They are never related",
@@ -749,7 +749,7 @@
   },
   {
     "question_number": 66,
-    "question_text": "What is ______ a security attack?",
+    "question_text": "What is a security attack?",
     "options": [
       "A service",
       "Any action that compromises the security of information owned by an organization",
@@ -805,7 +805,7 @@
   },
   {
     "question_number": 71,
-    "question_text": "A value chosen by the responder to identify a unique IKE SA is ______ a ______",
+    "question_text": "A value chosen by the responder to identify a unique IKE SA is a ______",
     "options": [
       "Message identifier",
       "Responder SPI",
@@ -817,7 +817,7 @@
   },
   {
     "question_number": 72,
-    "question_text": "is ______ an integer value unique within the issuing CA that is unambiguously associated with this certificate.",
+    "question_text": "is an integer value unique within the issuing CA that is unambiguously associated with this certificate.",
     "options": [
       "Issuer unique identifier",
       "Serial number",
@@ -887,7 +887,7 @@
   },
   {
     "question_number": 78,
-    "question_text": "What is ______ the primary focus of cybersecurity?",
+    "question_text": "What is the primary focus of cybersecurity?",
     "options": [
       "Only securing network devices",
       "Protection of information stored, transmitted, and processed in networked systems",
@@ -899,7 +899,7 @@
   },
   {
     "question_number": 79,
-    "question_text": "A ______ is ______ a server or distributed set of servers that maintains a database of information about users.",
+    "question_text": "A ______ is a server or distributed set of servers that maintains a database of information about users.",
     "options": [
       "crypt",
       "directory",
@@ -983,7 +983,7 @@
   },
   {
     "question_number": 86,
-    "question_text": "What is ______ the relationship between cybersecurity and information security in practice?",
+    "question_text": "What is the relationship between cybersecurity and information security in practice?",
     "options": [
       "They are never used together",
       "One always supersedes the other",
@@ -995,7 +995,7 @@
   },
   {
     "question_number": 87,
-    "question_text": "What is ______ the key difference between proactive defense and passive protection in the Information Assurance Period?",
+    "question_text": "What is the key difference between proactive defense and passive protection in the Information Assurance Period?",
     "options": [
       "Proactive defense eliminates the need for security measures",
       "More technical means were used to associate security management with technical protection to enable proactive defense rather than passive protection",
@@ -1007,7 +1007,7 @@
   },
   {
     "question_number": 88,
-    "question_text": "In the ransomware attack extortion phase, what is ______ the typical range of ransom amounts mentioned?",
+    "question_text": "In the ransomware attack extortion phase, what is the typical range of ransom amounts mentioned?",
     "options": [
       "Millions to tens of millions of US dollars",
       "Only hundreds of US dollars",
@@ -1019,7 +1019,7 @@
   },
   {
     "question_number": 89,
-    "question_text": "In the Cybersecurity Classified Protection grading process, what is ______ the correct sequence of steps?",
+    "question_text": "In the Cybersecurity Classified Protection grading process, what is the correct sequence of steps?",
     "options": [
       "Review by competent department, expert review, preliminary confirmation, finalized levels",
       "Determination on objects to be graded, preliminary confirmation on levels, expert review, review by competent department, public security organ archiving and review",
@@ -1143,7 +1143,7 @@
   },
   {
     "question_number": 100,
-    "question_text": "What is ______ the relationship between the 14 control domains and the control objectives/measures in ISO 27002?",
+    "question_text": "What is the relationship between the 14 control domains and the control objectives/measures in ISO 27002?",
     "options": [
       "Each domain has one objective and one measure",
       "The 14 domains contain 35 control objectives and 113 control measures in total",
@@ -1187,7 +1187,7 @@
   },
   {
     "question_number": 104,
-    "question_text": "What is ______ the relationship between the harmed object and the security protection level in Cybersecurity Classified Protection?",
+    "question_text": "What is the relationship between the harmed object and the security protection level in Cybersecurity Classified Protection?",
     "options": [
       "The protection level is determined by the harmed object and the degree of harm on that object.",
       "Only the degree of harm matters, not the harmed object.",
@@ -1199,7 +1199,7 @@
   },
   {
     "question_number": 105,
-    "question_text": "The heart of a Feistel block cipher is ______ the function F, which relies on the use of S-boxes.",
+    "question_text": "The heart of a Feistel block cipher is the function F, which relies on the use of S-boxes.",
     "options": [
       "True",
       "False"
@@ -1243,7 +1243,7 @@
   },
   {
     "question_number": 109,
-    "question_text": "What is ______ the primary purpose of ISO/IEC 27008?",
+    "question_text": "What is the primary purpose of ISO/IEC 27008?",
     "options": [
       "Best practice rules",
       "Certification procedures",
@@ -1343,7 +1343,7 @@
   },
   {
     "question_number": 118,
-    "question_text": "What is ______ the broadest form of data confidentiality service?",
+    "question_text": "What is the broadest form of data confidentiality service?",
     "options": [
       "Protection of only encrypted data",
       "Protection of specific fields within a message",
@@ -1355,7 +1355,7 @@
   },
   {
     "question_number": 119,
-    "question_text": "What is ______ the specific purpose of ISO/IEC 27005?",
+    "question_text": "What is the specific purpose of ISO/IEC 27005?",
     "options": [
       "Implementation guidelines",
       "Certification guidelines",
@@ -1577,7 +1577,7 @@
   },
   {
     "question_number": 138,
-    "question_text": "is ______ an example of a newly designed MAC.",
+    "question_text": "is an example of a newly designed MAC.",
     "options": [
       "HMAC",
       "Lattice",
@@ -1715,7 +1715,7 @@
   },
   {
     "question_number": 150,
-    "question_text": "What is ______ a reversible cryptographic mechanism?",
+    "question_text": "What is a reversible cryptographic mechanism?",
     "options": [
       "A digital signature",
       "A hash algorithm",
@@ -1793,7 +1793,7 @@
   },
   {
     "question_number": 157,
-    "question_text": "What is ______ the role of the consulting organization in the Cybersecurity Classified Protection working process?",
+    "question_text": "What is the role of the consulting organization in the Cybersecurity Classified Protection working process?",
     "options": [
       "They assist the operation unit in various steps including preparing grading reports, archiving materials, building security technology systems, and participating in assessments",
       "They perform the level assessment",
@@ -1841,7 +1841,7 @@
   },
   {
     "question_number": 161,
-    "question_text": "What is ______ the relationship between technical requirements and management requirements in Cybersecurity Classified Protection 2.0?",
+    "question_text": "What is the relationship between technical requirements and management requirements in Cybersecurity Classified Protection 2.0?",
     "options": [
       "Both general and extended security requirements are classified into technical requirements and management requirements",
       "Technical requirements are only for Level 5",
@@ -1931,7 +1931,7 @@
   },
   {
     "question_number": 169,
-    "question_text": "What is ______ the specific purpose of ISO/IEC 27006?",
+    "question_text": "What is the specific purpose of ISO/IEC 27006?",
     "options": [
       "Implementation guidelines",
       "Risk management guidelines",
@@ -1943,7 +1943,7 @@
   },
   {
     "question_number": 170,
-    "question_text": "If an information system attack causes grave harm to social order, what is ______ the minimum protection level required?",
+    "question_text": "If an information system attack causes grave harm to social order, what is the minimum protection level required?",
     "options": [
       "Level 3",
       "Level 2",
@@ -1955,7 +1955,7 @@
   },
   {
     "question_number": 171,
-    "question_text": "What is ______ the role of the operation unit in the Cybersecurity Classified Protection working process?",
+    "question_text": "What is the role of the operation unit in the Cybersecurity Classified Protection working process?",
     "options": [
       "They only provide security products",
       "They only perform assessments",
@@ -1967,7 +1967,7 @@
   },
   {
     "question_number": 172,
-    "question_text": "The means by which IP traffic is related to specific SAs is ______ the ______",
+    "question_text": "The means by which IP traffic is related to specific SAs is the ______",
     "options": [
       "SAD",
       "SPD",
@@ -2077,7 +2077,7 @@
   },
   {
     "question_number": 182,
-    "question_text": "What is ______ an example of the broadest confidentiality service?",
+    "question_text": "What is an example of the broadest confidentiality service?",
     "options": [
       "A TCP connection between two systems",
       "A single field in a message",
@@ -2099,7 +2099,7 @@
   },
   {
     "question_number": 184,
-    "question_text": "In virtually all distributed environments, electronic mail is ______ the most heavily used network-based application.",
+    "question_text": "In virtually all distributed environments, electronic mail is the most heavily used network-based application.",
     "options": [
       "False",
       "True"
@@ -2173,7 +2173,7 @@
   },
   {
     "question_number": 191,
-    "question_text": "What is ______ the narrowest form of data confidentiality service?",
+    "question_text": "What is the narrowest form of data confidentiality service?",
     "options": [
       "Protection of a single message",
       "Protection of all messages",
@@ -2195,7 +2195,7 @@
   },
   {
     "question_number": 193,
-    "question_text": "The ______ is ______ the information that is delivered as a unit between MAC users.",
+    "question_text": "The ______ is the information that is delivered as a unit between MAC users.",
     "options": [
       "MSDU",
       "MPDU",
@@ -2207,7 +2207,7 @@
   },
   {
     "question_number": 194,
-    "question_text": "What is ______ an example of peer entities?",
+    "question_text": "What is an example of peer entities?",
     "options": [
       "A user and a system",
       "Two TCP modules in two communicating systems",
@@ -2219,7 +2219,7 @@
   },
   {
     "question_number": 195,
-    "question_text": "What is ______ a key consideration when placing security mechanisms?",
+    "question_text": "What is a key consideration when placing security mechanisms?",
     "options": [
       "No placement considerations",
       "Both physical placement and logical placement in architecture layers",
@@ -2231,7 +2231,7 @@
   },
   {
     "question_number": 196,
-    "question_text": "According to FIPS 199, what is ______ a loss of integrity?",
+    "question_text": "According to FIPS 199, what is a loss of integrity?",
     "options": [
       "The unauthorized disclosure of information",
       "The unauthorized modification or destruction of information",
@@ -2300,7 +2300,7 @@
   },
   {
     "question_number": 202,
-    "question_text": "A ______ is ______ a cryptographic algorithm that uses two related keys, a public key and a private key. The two keys have the property that deriving the private key from the public key is computationally infeasible.",
+    "question_text": "A ______ is a cryptographic algorithm that uses two related keys, a public key and a private key. The two keys have the property that deriving the private key from the public key is computationally infeasible.",
     "options": [
       "Private Key (Symmetric) Cryptographic Algorithm",
       "Public Key (Asymmetric) Cryptographic Algorithm",
@@ -2380,7 +2380,7 @@
   },
   {
     "question_number": 209,
-    "question_text": "is ______ an extension of identity management to multiple security domains such as autonomous internal business units, external business partners and other third party applications and services with the goal of sharing digital identities so that a user can be authenticated a single time and then access applications and resources across multiple domains.",
+    "question_text": "is an extension of identity management to multiple security domains such as autonomous internal business units, external business partners and other third party applications and services with the goal of sharing digital identities so that a user can be authenticated a single time and then access applications and resources across multiple domains.",
     "options": [
       "Data security management",
       "Kerberos",
@@ -2470,7 +2470,7 @@
   },
   {
     "question_number": 217,
-    "question_text": "The first part of the Schnorr digital signature scheme is ______ the generation of a private/public key pair.",
+    "question_text": "The first part of the Schnorr digital signature scheme is the generation of a private/public key pair.",
     "options": [
       "True",
       "False"
@@ -2592,7 +2592,7 @@
   },
   {
     "question_number": 228,
-    "question_text": "What is ______ the specific function of the software that was attacked in the supply chain case study?",
+    "question_text": "What is the specific function of the software that was attacked in the supply chain case study?",
     "options": [
       "File storage",
       "Database management",
@@ -2626,7 +2626,7 @@
   },
   {
     "question_number": 231,
-    "question_text": "What is ______ the penalty for network operators who do not perform cybersecurity protection duties according to Cybersecurity Law Article 59?",
+    "question_text": "What is the penalty for network operators who do not perform cybersecurity protection duties according to Cybersecurity Law Article 59?",
     "options": [
       "Only fines",
       "Order corrections and give warnings; where corrections are refused or it leads to harm, fines of RMB 10,000 to 100,000 for the organization and RMB 5,000 to 50,000 for responsible personnel",
@@ -2672,7 +2672,7 @@
   },
   {
     "question_number": 235,
-    "question_text": "The use of encryption and authentication protocols is ______ the standard method of countering attempts to alter or insert transmissions.",
+    "question_text": "The use of encryption and authentication protocols is the standard method of countering attempts to alter or insert transmissions.",
     "options": [
       "False",
       "True"
@@ -2714,7 +2714,7 @@
   },
   {
     "question_number": 239,
-    "question_text": "is ______ an open source project for creating truly random numbers using inexpensive cameras, open source code, and inexpensive hardware.",
+    "question_text": "is an open source project for creating truly random numbers using inexpensive cameras, open source code, and inexpensive hardware.",
     "options": [
       "Entropy",
       "LavaRnd",
@@ -2768,7 +2768,7 @@
   },
   {
     "question_number": 244,
-    "question_text": "What is ______ the key difference between the Communication Security Period and the Information Security Period in terms of data storage?",
+    "question_text": "What is the key difference between the Communication Security Period and the Information Security Period in terms of data storage?",
     "options": [
       "Information Security Period had data stored in different locations",
       "Both periods had data stored in centralized locations",
@@ -2814,7 +2814,7 @@
   },
   {
     "question_number": 248,
-    "question_text": "One of the basic techniques of number theory is ______ the algorithm which is ______ a simple procedure for determining the greatest common divisor of two positive integers.",
+    "question_text": "One of the basic techniques of number theory is the algorithm which is a simple procedure for determining the greatest common divisor of two positive integers.",
     "options": [
       "modular",
       "division",
@@ -2886,7 +2886,7 @@
   },
   {
     "question_number": 254,
-    "question_text": "What is ______ the goal for dealing with active attacks?",
+    "question_text": "What is the goal for dealing with active attacks?",
     "options": [
       "Detection and recovery from any disruption or delays",
       "Ignoring them",
@@ -2988,7 +2988,7 @@
   },
   {
     "question_number": 263,
-    "question_text": "A ______ is ______ an entity that manages the use, performance, and delivery of cloud services, and negotiates relationships between CPs and cloud consumers.",
+    "question_text": "A ______ is an entity that manages the use, performance, and delivery of cloud services, and negotiates relationships between CPs and cloud consumers.",
     "options": [
       "cloud broker",
       "cloud auditor",
@@ -3000,7 +3000,7 @@
   },
   {
     "question_number": 264,
-    "question_text": "A typical use of ______ is ______ a situation in which the system administrator trusts the internal users.",
+    "question_text": "A typical use of ______ is a situation in which the system administrator trusts the internal users.",
     "options": [
       "circuit-level gateways",
       "IDSs",
@@ -3056,7 +3056,7 @@
   },
   {
     "question_number": 269,
-    "question_text": "is ______ a security enhancement to the MIME Internet email format standard based on technology from RSA Data Security.",
+    "question_text": "is a security enhancement to the MIME Internet email format standard based on technology from RSA Data Security.",
     "options": [
       "SPF",
       "S/MIME",
@@ -3078,7 +3078,7 @@
   },
   {
     "question_number": 271,
-    "question_text": "The order of a finite field must be of the form pn where p is ______ a prime and n is ______ a __.",
+    "question_text": "The order of a finite field must be of the form pn where p is a prime and n is a __.",
     "options": [
       "commutative ring",
       "positive integer",
@@ -3114,7 +3114,7 @@
   },
   {
     "question_number": 274,
-    "question_text": "What is ______ the relationship between the three aspects of the Information Assurance Period's enterprise information assurance system: services, security system, and management?",
+    "question_text": "What is the relationship between the three aspects of the Information Assurance Period's enterprise information assurance system: services, security system, and management?",
     "options": [
       "They replace each other",
       "They work together: services have different risks and defense modes, security system uses technical means for proactive defense, and management fosters personnel and establishes management systems",
@@ -3138,7 +3138,7 @@
   },
   {
     "question_number": 276,
-    "question_text": "A Kerberos is ______ a set of managed nodes that share the same Kerberos database.",
+    "question_text": "A Kerberos is a set of managed nodes that share the same Kerberos database.",
     "options": [
       "realm",
       "network",
@@ -3150,7 +3150,7 @@
   },
   {
     "question_number": 277,
-    "question_text": "The final message in phase 2, and one that is always required, is ______ the message, which is sent by the server to indicate the end of the server hello and associated messages.",
+    "question_text": "The final message in phase 2, and one that is always required, is the message, which is sent by the server to indicate the end of the server hello and associated messages.",
     "options": [
       "server_done",
       "finished",
@@ -3186,7 +3186,7 @@
   },
   {
     "question_number": 280,
-    "question_text": "What is ______ the significance of the fact that vulnerability discovery penetrates from the application layer to bottom-layer components and even to the architecture layer?",
+    "question_text": "What is the significance of the fact that vulnerability discovery penetrates from the application layer to bottom-layer components and even to the architecture layer?",
     "options": [
       "Vulnerabilities only affect applications",
       "Vulnerabilities are less dangerous",
@@ -3198,7 +3198,7 @@
   },
   {
     "question_number": 281,
-    "question_text": "The sender is ______ the only one who needs to know an initialization vector.",
+    "question_text": "The sender is the only one who needs to know an initialization vector.",
     "options": [
       "True",
       "False"
@@ -3230,7 +3230,7 @@
   },
   {
     "question_number": 284,
-    "question_text": "What is ______ the purpose of data integrity mechanisms?",
+    "question_text": "What is the purpose of data integrity mechanisms?",
     "options": [
       "To log activities",
       "To encrypt data",
@@ -3276,7 +3276,7 @@
   },
   {
     "question_number": 288,
-    "question_text": "What is ______ the relationship between services and security in the Information Assurance Period's enterprise information assurance system?",
+    "question_text": "What is the relationship between services and security in the Information Assurance Period's enterprise information assurance system?",
     "options": [
       "Services do not require security",
       "Different service traffic has different risks and defense modes",
@@ -3482,7 +3482,7 @@
   },
   {
     "question_number": 306,
-    "question_text": "What is ______ the specific purpose of ISO/IEC 27003?",
+    "question_text": "What is the specific purpose of ISO/IEC 27003?",
     "options": [
       "Best practices",
       "Implementation guidelines for ISMS",
@@ -3530,7 +3530,7 @@
   },
   {
     "question_number": 310,
-    "question_text": "What is ______ the significance of the fact that vulnerability discovery penetrates from application layer to architecture layer?",
+    "question_text": "What is the significance of the fact that vulnerability discovery penetrates from application layer to architecture layer?",
     "options": [
       "Vulnerabilities only affect the application layer",
       "Architecture-layer vulnerabilities are less dangerous",
@@ -3584,7 +3584,7 @@
   },
   {
     "question_number": 315,
-    "question_text": "An arbitrary byte sequence chosen by the server to identify an active or resumable session state is ______ a ______",
+    "question_text": "An arbitrary byte sequence chosen by the server to identify an active or resumable session state is a ______",
     "options": [
       "session identifier",
       "peer certificate",
@@ -3596,7 +3596,7 @@
   },
   {
     "question_number": 316,
-    "question_text": "What is ______ the significance of national standards and regulations in the Cyberspace Security Period?",
+    "question_text": "What is the significance of national standards and regulations in the Cyberspace Security Period?",
     "options": [
       "They are not related to enterprise security",
       "They only apply to government agencies",
@@ -3672,7 +3672,7 @@
   },
   {
     "question_number": 323,
-    "question_text": "The final message in phase 2, and one that is always required, is ______ the ______ message, which is sent by the server to indicate the end of the server hello and associated messages.",
+    "question_text": "The final message in phase 2, and one that is always required, is the ______ message, which is sent by the server to indicate the end of the server hello and associated messages.",
     "options": [
       "goodbye",
       "finished",
@@ -3684,7 +3684,7 @@
   },
   {
     "question_number": 324,
-    "question_text": "What is ______ the relationship between ISO 27799 and other ISO 27000 standards?",
+    "question_text": "What is the relationship between ISO 27799 and other ISO 27000 standards?",
     "options": [
       "It is a certification standard",
       "It replaces ISO 27001",
@@ -3780,7 +3780,7 @@
   },
   {
     "question_number": 332,
-    "question_text": "What is ______ the relationship between the number of control objectives and control measures in ISO 27002?",
+    "question_text": "What is the relationship between the number of control objectives and control measures in ISO 27002?",
     "options": [
       "There are 35 control objectives and 14 control measures",
       "There are 113 control objectives and 35 control measures",
@@ -3836,7 +3836,7 @@
   },
   {
     "question_number": 337,
-    "question_text": "What is ______ the more attractive alternative for integrity service?",
+    "question_text": "What is the more attractive alternative for integrity service?",
     "options": [
       "No recovery",
       "Manual recovery",
@@ -3894,7 +3894,7 @@
   },
   {
     "question_number": 342,
-    "question_text": "\"Each block of plaintext is XORed with an encrypted counter. The counter is incremented for each subsequent block\", is ______ a description of mode.",
+    "question_text": "\"Each block of plaintext is XORed with an encrypted counter. The counter is incremented for each subsequent block\", is a description of mode.",
     "options": [
       "Cipher Feedback",
       "Counter",
@@ -3906,7 +3906,7 @@
   },
   {
     "question_number": 343,
-    "question_text": "What is ______ the role of the security construction unit in the Cybersecurity Classified Protection working process?",
+    "question_text": "What is the role of the security construction unit in the Cybersecurity Classified Protection working process?",
     "options": [
       "They perform assessments",
       "They only review grading reports",
@@ -3976,7 +3976,7 @@
   },
   {
     "question_number": 349,
-    "question_text": "What is ______ the relationship between IoT devices and DDoS attacks?",
+    "question_text": "What is the relationship between IoT devices and DDoS attacks?",
     "options": [
       "IoT devices are not used in DDoS attacks",
       "IoT devices prevent DDoS attacks",
@@ -4024,7 +4024,7 @@
   },
   {
     "question_number": 353,
-    "question_text": "What is ______ the key difference between the Information Security Period and the Information Assurance Period?",
+    "question_text": "What is the key difference between the Information Security Period and the Information Assurance Period?",
     "options": [
       "Information Security Period focused on confidentiality only, while Information Assurance Period added integrity and availability",
       "Information Security Period focused on confidentiality, integrity, and availability, while Information Assurance Period added controllability and non-repudiation",
@@ -4130,7 +4130,7 @@
   },
   {
     "question_number": 362,
-    "question_text": "A ______ is ______ a one way relationship between a sender and a receiver that affords security services to the traffic carried on it.",
+    "question_text": "A ______ is a one way relationship between a sender and a receiver that affords security services to the traffic carried on it.",
     "options": [
       "SPD",
       "SPI",
@@ -4154,7 +4154,7 @@
   },
   {
     "question_number": 364,
-    "question_text": "What is ______ the great advantage that attackers have over defenders?",
+    "question_text": "What is the great advantage that attackers have over defenders?",
     "options": [
       "Attackers need to find all vulnerabilities",
       "Attackers have no advantage",
@@ -4222,7 +4222,7 @@
   },
   {
     "question_number": 370,
-    "question_text": "What is ______ the other aspect of confidentiality besides content protection?",
+    "question_text": "What is the other aspect of confidentiality besides content protection?",
     "options": [
       "Protocol protection",
       "Header protection",
@@ -4234,7 +4234,7 @@
   },
   {
     "question_number": 371,
-    "question_text": "The digital signature standard is ______ a standard that uses the secure hash algorithm.",
+    "question_text": "The digital signature standard is a standard that uses the secure hash algorithm.",
     "options": [
       "ITIL",
       "IEEE",
@@ -4396,7 +4396,7 @@
   },
   {
     "question_number": 386,
-    "question_text": "What is ______ the primary characteristic of a passive attack?",
+    "question_text": "What is the primary characteristic of a passive attack?",
     "options": [
       "It does not affect system resources",
       "It deletes data",
@@ -4466,7 +4466,7 @@
   },
   {
     "question_number": 392,
-    "question_text": "What is ______ the goal for preventing passive attacks?",
+    "question_text": "What is the goal for preventing passive attacks?",
     "options": [
       "Absolute prevention",
       "Logging",
@@ -4574,7 +4574,7 @@
   },
   {
     "question_number": 402,
-    "question_text": "If the bit-stream generator is ______ a key-controlled algorithm the two users only need to share the generating key and then each can produce the keystream.",
+    "question_text": "If the bit-stream generator is a key-controlled algorithm the two users only need to share the generating key and then each can produce the keystream.",
     "options": [
       "True",
       "False"
@@ -4664,7 +4664,7 @@
   },
   {
     "question_number": 410,
-    "question_text": "What is ______ the purpose of HiSec Insight in network security situational awareness?",
+    "question_text": "What is the purpose of HiSec Insight in network security situational awareness?",
     "options": [
       "To provide only authentication services.",
       "To provide only encryption services.",
@@ -4676,7 +4676,7 @@
   },
   {
     "question_number": 411,
-    "question_text": "What is ______ the relationship between security services and security policies?",
+    "question_text": "What is the relationship between security services and security policies?",
     "options": [
       "They are unrelated.",
       "Security policies implement security services.",
@@ -4724,7 +4724,7 @@
   },
   {
     "question_number": 415,
-    "question_text": "A ______ is ______ an incident in which sensitive, protected, or confidential information is released, viewed, stolen, or used by an individual who is not authorized to do so.",
+    "question_text": "A ______ is an incident in which sensitive, protected, or confidential information is released, viewed, stolen, or used by an individual who is not authorized to do so.",
     "options": [
       "tampering with data",
       "data breach",
@@ -4772,7 +4772,7 @@
   },
   {
     "question_number": 419,
-    "question_text": "One means of forming a MAC is ______ to combine a cryptographic hash function in some fashion with a secret key.",
+    "question_text": "One means of forming a MAC is to combine a cryptographic hash function in some fashion with a secret key.",
     "options": [
       "True",
       "False"
@@ -4830,7 +4830,7 @@
   },
   {
     "question_number": 424,
-    "question_text": "What is ______ the relationship between ISO/IEC 27001 and ISO/IEC 27002 in terms of ISMS implementation?",
+    "question_text": "What is the relationship between ISO/IEC 27001 and ISO/IEC 27002 in terms of ISMS implementation?",
     "options": [
       "ISO 27002 replaces ISO 27001",
       "ISO 27001 provides detailed operations while ISO 27002 provides requirements",
@@ -4866,7 +4866,7 @@
   },
   {
     "question_number": 427,
-    "question_text": "What is ______ a vulnerability?",
+    "question_text": "What is a vulnerability?",
     "options": [
       "A security policy",
       "A security feature",
@@ -4920,7 +4920,7 @@
   },
   {
     "question_number": 432,
-    "question_text": "What is ______ the goal for active attacks?",
+    "question_text": "What is the goal for active attacks?",
     "options": [
       "Ignoring them",
       "Absolute prevention",
@@ -4976,7 +4976,7 @@
   },
   {
     "question_number": 437,
-    "question_text": "What is ______ the relationship between integrity and authenticity?",
+    "question_text": "What is the relationship between integrity and authenticity?",
     "options": [
       "They are unrelated",
       "Data integrity encompasses data authenticity",
@@ -5024,7 +5024,7 @@
   },
   {
     "question_number": 441,
-    "question_text": "According to FIPS 199, what is ______ a loss of availability?",
+    "question_text": "According to FIPS 199, what is a loss of availability?",
     "options": [
       "The unauthorized disclosure of information",
       "The failure to encrypt data",
@@ -5106,7 +5106,7 @@
   },
   {
     "question_number": 448,
-    "question_text": "The authenticator that is used as a possession factor is ______ a ______",
+    "question_text": "The authenticator that is used as a possession factor is a ______",
     "options": [
       "token",
       "PIN",
@@ -5164,7 +5164,7 @@
   },
   {
     "question_number": 453,
-    "question_text": "If an information system attack causes minor harm to national security, what is ______ the minimum protection level required?",
+    "question_text": "If an information system attack causes minor harm to national security, what is the minimum protection level required?",
     "options": [
       "Level 3",
       "Level 2",
@@ -5188,7 +5188,7 @@
   },
   {
     "question_number": 455,
-    "question_text": "What is ______ an authentication exchange?",
+    "question_text": "What is an authentication exchange?",
     "options": [
       "A type of encryption",
       "A network protocol",
@@ -5212,7 +5212,7 @@
   },
   {
     "question_number": 457,
-    "question_text": "The X.509 standard is ______ an important standard because the certificate structure and authentication protocols defined in X.509 are used in a variety of contexts.",
+    "question_text": "The X.509 standard is an important standard because the certificate structure and authentication protocols defined in X.509 are used in a variety of contexts.",
     "options": [
       "True",
       "False"
@@ -5244,7 +5244,7 @@
   },
   {
     "question_number": 460,
-    "question_text": "A ______ is ______ a set of elements in which we can do addition, subtraction, multiplication, and division without leaving the set.",
+    "question_text": "A ______ is a set of elements in which we can do addition, subtraction, multiplication, and division without leaving the set.",
     "options": [
       "ring",
       "field",
@@ -5256,7 +5256,7 @@
   },
   {
     "question_number": 461,
-    "question_text": "What is ______ the typical process of a ransomware attack?",
+    "question_text": "What is the typical process of a ransomware attack?",
     "options": [
       "Extortion only",
       "Intrusion only",
@@ -5314,7 +5314,7 @@
   },
   {
     "question_number": 466,
-    "question_text": "Message authentication is ______ a mechanism or service used to verify the integrity of a message.",
+    "question_text": "Message authentication is a mechanism or service used to verify the integrity of a message.",
     "options": [
       "True",
       "False"
@@ -5360,7 +5360,7 @@
   },
   {
     "question_number": 470,
-    "question_text": "A ______ is ______ a person or organization that maintains a business relationship with, and uses service from, cloud providers.",
+    "question_text": "A ______ is a person or organization that maintains a business relationship with, and uses service from, cloud providers.",
     "options": [
       "CSC",
       "CSP",
@@ -5384,7 +5384,7 @@
   },
   {
     "question_number": 472,
-    "question_text": "The MAC function is ______ a ______ function.",
+    "question_text": "The MAC function is a ______ function.",
     "options": [
       "one-to-two",
       "many-to-one",
@@ -5442,7 +5442,7 @@
   },
   {
     "question_number": 477,
-    "question_text": "The function of the ______ is ______ to on transmission assemble data into a frame, on reception disassemble frame and perform address recognition and error detection, and govern access to the LAN transmission medium.",
+    "question_text": "The function of the ______ is to on transmission assemble data into a frame, on reception disassemble frame and perform address recognition and error detection, and govern access to the LAN transmission medium.",
     "options": [
       "transmission layer",
       "logical layer",
@@ -5466,7 +5466,7 @@
   },
   {
     "question_number": 479,
-    "question_text": "______ is ______ a device with limited volatile and nonvolatile memory, limited processing power, and a low data rate transceiver.",
+    "question_text": "______ is a device with limited volatile and nonvolatile memory, limited processing power, and a low data rate transceiver.",
     "options": [
       "microprocessor",
       "class 3 device",
@@ -5478,7 +5478,7 @@
   },
   {
     "question_number": 480,
-    "question_text": "What is ______ the primary purpose of ISO/IEC 27007?",
+    "question_text": "What is the primary purpose of ISO/IEC 27007?",
     "options": [
       "Audit guideline",
       "Certification procedures",
@@ -5490,7 +5490,7 @@
   },
   {
     "question_number": 481,
-    "question_text": "What is ______ the specific purpose of ISO/IEC 27008?",
+    "question_text": "What is the specific purpose of ISO/IEC 27008?",
     "options": [
       "Guidelines for auditors on information security controls",
       "Implementation guidelines",
@@ -5566,7 +5566,7 @@
   },
   {
     "question_number": 488,
-    "question_text": "'Each block of plaintext is XORed with an encrypted counter. The counter is incremented for each subsequent block', is ______ a description of ______ mode.",
+    "question_text": "'Each block of plaintext is XORed with an encrypted counter. The counter is incremented for each subsequent block', is a description of ______ mode.",
     "options": [
       "Cipher Block Chaining",
       "Counter",
@@ -5578,7 +5578,7 @@
   },
   {
     "question_number": 489,
-    "question_text": "What is ______ the role of ITU, IETF, and NIST in information security standards?",
+    "question_text": "What is the role of ITU, IETF, and NIST in information security standards?",
     "options": [
       "They replace ISO and IEC",
       "They only work with TC260",
@@ -5694,7 +5694,7 @@
   },
   {
     "question_number": 499,
-    "question_text": "A CTR-based authenticated encryption approach is ______ the most efficient mode of operation for high-speed packet networks.",
+    "question_text": "A CTR-based authenticated encryption approach is the most efficient mode of operation for high-speed packet networks.",
     "options": [
       "True",
       "False"
@@ -5704,7 +5704,7 @@
   },
   {
     "question_number": 500,
-    "question_text": "A ______ is ______ a group that has a finite number of elements.",
+    "question_text": "A ______ is a group that has a finite number of elements.",
     "options": [
       "finite order",
       "finite field",
@@ -5738,7 +5738,7 @@
   },
   {
     "question_number": 503,
-    "question_text": "What is ______ the most common information security incident on networks?",
+    "question_text": "What is the most common information security incident on networks?",
     "options": [
       "Supply chain attacks",
       "DDoS attacks",
@@ -5976,7 +5976,7 @@
   },
   {
     "question_number": 524,
-    "question_text": "A _________ is ______ an incident in which sensitive, protected, or confidential information is released, viewed, stolen, or used by an individual who is not authorized to do so.",
+    "question_text": "A _________ is an incident in which sensitive, protected, or confidential information is released, viewed, stolen, or used by an individual who is not authorized to do so.",
     "options": [
       "a. repudiation",
       "b. tampering with data",
@@ -5988,7 +5988,7 @@
   },
   {
     "question_number": 525,
-    "question_text": "Insertion of messages into the network from a fraudulent source is ______ a __________ attack.",
+    "question_text": "Insertion of messages into the network from a fraudulent source is a __________ attack.",
     "options": [
       "a. masquerade",
       "b. sequence modification",
@@ -6000,7 +6000,7 @@
   },
   {
     "question_number": 526,
-    "question_text": "Although it does not appear to be as efficient as the Miller-Rabin algorithm, in 2002 a relatively simple deterministic algorithm that efficiently determines whether a given large number is ______ a prime was developed. This algorithm is ______ known as the _________ algorithm.",
+    "question_text": "Although it does not appear to be as efficient as the Miller-Rabin algorithm, in 2002 a relatively simple deterministic algorithm that efficiently determines whether a given large number is a prime was developed. This algorithm is ______ known as the _________ algorithm.",
     "options": [
       "a. Brady",
       "b. Miller-Rabin",
@@ -6044,7 +6044,7 @@
   },
   {
     "question_number": 530,
-    "question_text": "What is ______ the zero trust principle?",
+    "question_text": "What is the zero trust principle?",
     "options": [
       "a. Never trust, always verify",
       "b. Verify only external users",
@@ -6092,7 +6092,7 @@
   },
   {
     "question_number": 534,
-    "question_text": "What is ______ the relationship between Cybersecurity Classified Protection 1.0 and 2.0?",
+    "question_text": "What is the relationship between Cybersecurity Classified Protection 1.0 and 2.0?",
     "options": [
       "a. 1.0 and 2.0 are completely independent",
       "b. 2.0 only applies to government agencies",
@@ -6104,7 +6104,7 @@
   },
   {
     "question_number": 535,
-    "question_text": "The most important development from the work on public-key cryptography is ______ the digital signature.",
+    "question_text": "The most important development from the work on public-key cryptography is the digital signature.",
     "options": [
       "a. False",
       "b. True"
@@ -6148,7 +6148,7 @@
   },
   {
     "question_number": 539,
-    "question_text": "Intrusion detection is ______ the process of collecting information about events occurring in a computer system or network and analyzing them for signs of intrusions.",
+    "question_text": "Intrusion detection is the process of collecting information about events occurring in a computer system or network and analyzing them for signs of intrusions.",
     "options": [
       "a. True",
       "b. False"
@@ -6192,7 +6192,7 @@
   },
   {
     "question_number": 543,
-    "question_text": "An Administrative Management Domain is ______ a directory lookup service that provides a mapping between the name of a host on the Internet and its numerical address.",
+    "question_text": "An Administrative Management Domain is a directory lookup service that provides a mapping between the name of a host on the Internet and its numerical address.",
     "options": [
       "a. True",
       "b. False"
@@ -6270,7 +6270,7 @@
   },
   {
     "question_number": 550,
-    "question_text": "What is ______ the relationship between security services and security mechanisms?",
+    "question_text": "What is the relationship between security services and security mechanisms?",
     "options": [
       "a. They are unrelated",
       "b. They are identical",
@@ -6282,7 +6282,7 @@
   },
   {
     "question_number": 551,
-    "question_text": "In the general structure of the AES encryption process the input to the encryption and decryption algorithms is ______ a single _________ block.",
+    "question_text": "In the general structure of the AES encryption process the input to the encryption and decryption algorithms is a single _________ block.",
     "options": [
       "a. 32-bit",
       "b. 64-bit",
@@ -6378,7 +6378,7 @@
   },
   {
     "question_number": 559,
-    "question_text": "According to FIPS 199, what is ______ a loss of confidentiality?",
+    "question_text": "According to FIPS 199, what is a loss of confidentiality?",
     "options": [
       "a. The disruption of access to information",
       "b. The unauthorized disclosure of information",
@@ -6572,7 +6572,7 @@
   },
   {
     "question_number": 576,
-    "question_text": "What is ______ the primary reason that isolated security protection systems can hardly address new network threats represented by APTs?",
+    "question_text": "What is the primary reason that isolated security protection systems can hardly address new network threats represented by APTs?",
     "options": [
       "a. APTs are prevented by basic firewalls",
       "b. APTs are coordinated, multi-stage attacks that require comprehensive visibility across the network, which  single-point detection cannot provide",
@@ -6632,7 +6632,7 @@
   },
   {
     "question_number": 581,
-    "question_text": "The final message in phase 2, and one that is always required, is ______ the ___________ message, which is sent by the server to indicate the end of the server hello and associated messages.",
+    "question_text": "The final message in phase 2, and one that is always required, is the ___________ message, which is sent by the server to indicate the end of the server hello and associated messages.",
     "options": [
       "a. no_certificate",
       "b. server_done",
@@ -6678,7 +6678,7 @@
   },
   {
     "question_number": 585,
-    "question_text": "InvSubBytes is ______ the inverse of ShiftRows.",
+    "question_text": "InvSubBytes is the inverse of ShiftRows.",
     "options": [
       "a. False",
       "b. True"
@@ -6756,7 +6756,7 @@
   },
   {
     "question_number": 592,
-    "question_text": "The way to measure the resistance of a hash algorithm to cryptanalysis is ______ to compare its strength to the effort required for a brute-force attack.",
+    "question_text": "The way to measure the resistance of a hash algorithm to cryptanalysis is to compare its strength to the effort required for a brute-force attack.",
     "options": [
       "a. True",
       "b. False"
@@ -6766,7 +6766,7 @@
   },
   {
     "question_number": 593,
-    "question_text": "A __________ is ______ a device with limited volatile and nonvolatile memory, limited processing power, and a low data rate transceiver.",
+    "question_text": "A __________ is a device with limited volatile and nonvolatile memory, limited processing power, and a low data rate transceiver.",
     "options": [
       "a. constrained device",
       "b. microprocessor",
@@ -6838,7 +6838,7 @@
   },
   {
     "question_number": 599,
-    "question_text": "The __________ test is ______ the most basic test of randomness and must be included in any test suite. Mark 0.00 out of 1.00",
+    "question_text": "The __________ test is the most basic test of randomness and must be included in any test suite. Mark 0.00 out of 1.00",
     "options": [
       "a. unpredictability",
       "b. Maurer",
@@ -6850,7 +6850,7 @@
   },
   {
     "question_number": 600,
-    "question_text": "What is ______ the focus of integrity service regarding attacks?",
+    "question_text": "What is the focus of integrity service regarding attacks?",
     "options": [
       "a. Passive attacks",
       "b. Active attacks",
@@ -6862,7 +6862,7 @@
   },
   {
     "question_number": 601,
-    "question_text": "What is ______ the relationship between ISO and IEC in information security standardization?",
+    "question_text": "What is the relationship between ISO and IEC in information security standardization?",
     "options": [
       "a. They work independently without coordination",
       "b. ISO and IEC have established a joint technical committee to develop international standards in the field of information technology",
@@ -6908,7 +6908,7 @@
   },
   {
     "question_number": 605,
-    "question_text": "__________ is ______ a characteristic of a system component that provides passive protection against an attack.",
+    "question_text": "__________ is a characteristic of a system component that provides passive protection against an attack.",
     "options": [
       "a. Tamper resistant",
       "b. Tamper detection",
@@ -6942,7 +6942,7 @@
   },
   {
     "question_number": 608,
-    "question_text": "What is ______ the specific purpose of ISO/IEC 27005? Mark 0.00 out of 1.00",
+    "question_text": "What is the specific purpose of ISO/IEC 27005? Mark 0.00 out of 1.00",
     "options": [
       "a. Audit procedures",
       "b. Information security risk management guidelines",
@@ -6988,7 +6988,7 @@
   },
   {
     "question_number": 612,
-    "question_text": "A __________ is ______ an algorithm that requires the use of a secret key.",
+    "question_text": "A __________ is an algorithm that requires the use of a secret key.",
     "options": [
       "a. DAA",
       "b. MAC",
@@ -7010,7 +7010,7 @@
   },
   {
     "question_number": 614,
-    "question_text": "The GCM mode makes use of two functions: __________, which is ______ a keyed hash function, and GCTR.",
+    "question_text": "The GCM mode makes use of two functions: __________, which is a keyed hash function, and GCTR.",
     "options": [
       "a. GHASH",
       "b. HMAC",
@@ -7032,7 +7032,7 @@
   },
   {
     "question_number": 616,
-    "question_text": "The Feistel cipher structure, based on Shannon's proposal of 1945, dates back over a quarter of a century and is ______ the structure used by many significant symmetric block ciphers currently in use.",
+    "question_text": "The Feistel cipher structure, based on Shannon's proposal of 1945, dates back over a quarter of a century and is the structure used by many significant symmetric block ciphers currently in use.",
     "options": [
       "a. False",
       "b. True"
@@ -7098,7 +7098,7 @@
   },
   {
     "question_number": 622,
-    "question_text": "Secure Sockets Layer (SSL) is ______ an Internet standard that evolved from a commercial protocol known as Transport Layer Security (TLS).",
+    "question_text": "Secure Sockets Layer (SSL) is an Internet standard that evolved from a commercial protocol known as Transport Layer Security (TLS).",
     "options": [
       "a. True",
       "b. False"
@@ -7154,7 +7154,7 @@
   },
   {
     "question_number": 627,
-    "question_text": "The credential service provider is ______ a trusted entity that issues or registers subscriber authenticators.",
+    "question_text": "The credential service provider is a trusted entity that issues or registers subscriber authenticators.",
     "options": [
       "a. True",
       "b. False"
@@ -7232,7 +7232,7 @@
   },
   {
     "question_number": 634,
-    "question_text": "A field is ______ a set in which we can do addition, subtraction, multiplication and division without leaving the set.",
+    "question_text": "A field is a set in which we can do addition, subtraction, multiplication and division without leaving the set.",
     "options": [
       "a. False",
       "b. True"
@@ -7254,7 +7254,7 @@
   },
   {
     "question_number": 636,
-    "question_text": "The intention of an advanced persistent threat is ______ to steal data rather than to cause damage to the network or organization.",
+    "question_text": "The intention of an advanced persistent threat is to steal data rather than to cause damage to the network or organization.",
     "options": [
       "a. True",
       "b. False"
@@ -7276,7 +7276,7 @@
   },
   {
     "question_number": 638,
-    "question_text": "An entity that relies upon the subscriber’s authenticator(s) and credentials or a verifier’s assertion of a claimant’s identity, typically to process a transaction or grant access to information or a system is ______ the __________ .",
+    "question_text": "An entity that relies upon the subscriber’s authenticator(s) and credentials or a verifier’s assertion of a claimant’s identity, typically to process a transaction or grant access to information or a system is the __________ .",
     "options": [
       "a. claimant",
       "b. relying party",
@@ -7300,7 +7300,7 @@
   },
   {
     "question_number": 640,
-    "question_text": "Status Finished Started Monday, 6 April 2026, 3:22 PM Completed Monday, 6 April 2026, 3:54 PM Duration 31 mins 56 secs Grade 75.00 out of 100.00 What is ______ the relationship between the number of control objectives and control measures in ISO 27002?",
+    "question_text": "Status Finished Started Monday, 6 April 2026, 3:22 PM Completed Monday, 6 April 2026, 3:54 PM Duration 31 mins 56 secs Grade 75.00 out of 100.00 What is the relationship between the number of control objectives and control measures in ISO 27002?",
     "options": [
       "a. There are 14 control objectives and 35 control measures",
       "b. There are 35 control objectives and 113 control measures",
@@ -7324,7 +7324,7 @@
   },
   {
     "question_number": 642,
-    "question_text": "The readable message or data that is fed into the algorithm as input is ______ the ____________ .",
+    "question_text": "The readable message or data that is fed into the algorithm as input is the ____________ .",
     "options": [
       "a. ciphertext",
       "b. exchange",
@@ -7406,7 +7406,7 @@
   },
   {
     "question_number": 649,
-    "question_text": "A __________ is ______ a cryptographic algorithm that uses two related keys, a public key and a private key. The two keys have the property that deriving the private key from the public key is computationally infeasible.",
+    "question_text": "A __________ is a cryptographic algorithm that uses two related keys, a public key and a private key. The two keys have the property that deriving the private key from the public key is computationally infeasible.",
     "options": [
       "a. RSA Digital Cryptographic Algorithm",
       "b. Private Key (Symmetric) Cryptographic Algorithm",
@@ -7440,7 +7440,7 @@
   },
   {
     "question_number": 652,
-    "question_text": "According to Cybersecurity Law Article 59, what is ______ the fine range for network operators who do not perform cybersecurity protection duties and refuse corrections?",
+    "question_text": "According to Cybersecurity Law Article 59, what is the fine range for network operators who do not perform cybersecurity protection duties and refuse corrections?",
     "options": [
       "a. RMB 100,000 to 1,000,000",
       "b. RMB 10,000 to 100,000 for the organization",
@@ -7462,7 +7462,7 @@
   },
   {
     "question_number": 654,
-    "question_text": "A _________ is ______ a one way relationship between a sender and a receiver that affords security services to the traffic carried on it.",
+    "question_text": "A _________ is a one way relationship between a sender and a receiver that affords security services to the traffic carried on it.",
     "options": [
       "a. SPI",
       "b. SAD",
@@ -7474,7 +7474,7 @@
   },
   {
     "question_number": 655,
-    "question_text": "The defense against the brute-force approach for RSA is ______ to use a large key space.",
+    "question_text": "The defense against the brute-force approach for RSA is to use a large key space.",
     "options": [
       "a. True",
       "b. False"
@@ -7624,7 +7624,7 @@
   },
   {
     "question_number": 668,
-    "question_text": "What is ______ the relationship between ISO/IEC 27003, 27004, and 27005?",
+    "question_text": "What is the relationship between ISO/IEC 27003, 27004, and 27005?",
     "options": [
       "a. They are completely independent",
       "b. They replace ISO 27001 and 27002",
@@ -7636,7 +7636,7 @@
   },
   {
     "question_number": 669,
-    "question_text": "The Handshake Protocol is ______ the simplest of the four TLS-specific protocols that use the TLS Record Protocol. Mark 0.00 out of 1.00",
+    "question_text": "The Handshake Protocol is the simplest of the four TLS-specific protocols that use the TLS Record Protocol. Mark 0.00 out of 1.00",
     "options": [
       "a. True",
       "b. False"
@@ -7658,7 +7658,7 @@
   },
   {
     "question_number": 671,
-    "question_text": "\"Release of message contents to any person or process not possessing the appropriate cryptographic key\" is ______ a __________ attack.",
+    "question_text": "\"Release of message contents to any person or process not possessing the appropriate cryptographic key\" is a __________ attack.",
     "options": [
       "a. source repudiation",
       "b. disclosure",
@@ -7762,7 +7762,7 @@
   },
   {
     "question_number": 680,
-    "question_text": "A __________ is ______ an entity that manages the use, performance, and delivery of cloud services, and negotiates relationships between CPs and cloud consumers. Mark 0.00 out of 1.00",
+    "question_text": "A __________ is an entity that manages the use, performance, and delivery of cloud services, and negotiates relationships between CPs and cloud consumers. Mark 0.00 out of 1.00",
     "options": [
       "a. cloud carrier",
       "b. cloud provider",
@@ -7934,7 +7934,7 @@
   },
   {
     "question_number": 695,
-    "question_text": "What is ______ the correct sequence in the working process of Cybersecurity Classified Protection?",
+    "question_text": "What is the correct sequence in the working process of Cybersecurity Classified Protection?",
     "options": [
       "a. Assessment, grading, archiving, construction, inspection",
       "b. Archiving, grading, construction, assessment, inspection",
@@ -8034,7 +8034,7 @@
   },
   {
     "question_number": 704,
-    "question_text": "The Diffie-Hellman key exchange is ______ a simple public-key algorithm.",
+    "question_text": "The Diffie-Hellman key exchange is a simple public-key algorithm.",
     "options": [
       "a. False",
       "b. True"
@@ -8086,7 +8086,7 @@
   },
   {
     "question_number": 709,
-    "question_text": "Status Finished Started Monday, 6 April 2026, 3:59 PM Completed Monday, 6 April 2026, 4:40 PM Duration 40 mins 57 secs Grade 78.00 out of 100.00 If the bit-stream generator is ______ a key-controlled algorithm the two users only need to share the generating key and then each can produce the keystream.",
+    "question_text": "Status Finished Started Monday, 6 April 2026, 3:59 PM Completed Monday, 6 April 2026, 4:40 PM Duration 40 mins 57 secs Grade 78.00 out of 100.00 If the bit-stream generator is a key-controlled algorithm the two users only need to share the generating key and then each can produce the keystream.",
     "options": [
       "a. False",
       "b. True"
@@ -8096,7 +8096,7 @@
   },
   {
     "question_number": 710,
-    "question_text": "What is ______ the scope of cybersecurity?",
+    "question_text": "What is the scope of cybersecurity?",
     "options": [
       "a. Only physical documents",
       "b. Only local systems",
@@ -8144,7 +8144,7 @@
   },
   {
     "question_number": 714,
-    "question_text": "__________ is ______ an unauthorized modification that alters the intended functioning of a system or device in a way that degrades the security it provides.",
+    "question_text": "__________ is an unauthorized modification that alters the intended functioning of a system or device in a way that degrades the security it provides.",
     "options": [
       "a. Tampering",
       "b. Tamper integration",
@@ -8180,7 +8180,7 @@
   },
   {
     "question_number": 717,
-    "question_text": "Big-endian format is ______ the most significant byte of a word in the low-address byte position.",
+    "question_text": "Big-endian format is the most significant byte of a word in the low-address byte position.",
     "options": [
       "a. False",
       "b. True"
@@ -8190,7 +8190,7 @@
   },
   {
     "question_number": 718,
-    "question_text": "MIME is ______ an extension to the ________ framework that is intended to address some of the problems and limitations of the use of SMTP. Mark 0.00 out of 1.00",
+    "question_text": "MIME is an extension to the ________ framework that is intended to address some of the problems and limitations of the use of SMTP. Mark 0.00 out of 1.00",
     "options": [
       "a. RFC 821",
       "b. RFC 3852",
@@ -8296,7 +8296,7 @@
   },
   {
     "question_number": 727,
-    "question_text": "What is ______ the core idea of zero trust?",
+    "question_text": "What is the core idea of zero trust?",
     "options": [
       "a. Trust all users inside the network",
       "b. Trust based on network location only",
@@ -8330,7 +8330,7 @@
   },
   {
     "question_number": 730,
-    "question_text": "What is ______ the relationship between the quiz question in the PDF about protection levels and the actual grading process?",
+    "question_text": "What is the relationship between the quiz question in the PDF about protection levels and the actual grading process?",
     "options": [
       "a. The quiz question tests understanding that network operators can determine final level on their own when preliminarily determined to be Level 1, reflecting the self-protection nature of Level 1",
       "b. The quiz question is about certification only",
@@ -8478,7 +8478,7 @@
   },
   {
     "question_number": 743,
-    "question_text": "What is ______ the broadest service for data confidentiality?",
+    "question_text": "What is the broadest service for data confidentiality?",
     "options": [
       "a. Protection of headers only",
       "b. Protection of all user data transmitted between two users over a period of time",
@@ -8512,7 +8512,7 @@
   },
   {
     "question_number": 746,
-    "question_text": "If a ______ is ______ an integer and n is ______ a positive integer, we define a mod n to be the remainder when a ______ is divided by n. The integer n is ______ called the __________.",
+    "question_text": "If a ______ is an integer and n is a positive integer, we define a mod n to be the remainder when a ______ is divided by n. The integer n is ______ called the __________.",
     "options": [
       "a. residue",
       "b. divisor",
@@ -8582,7 +8582,7 @@
   },
   {
     "question_number": 752,
-    "question_text": "What is ______ the difference between integrity services?",
+    "question_text": "What is the difference between integrity services?",
     "options": [
       "a. Connection-oriented addresses stream modification and denial of service, connectionless addresses  modification only",
       "b. There is no difference",
@@ -8636,7 +8636,7 @@
   },
   {
     "question_number": 757,
-    "question_text": "What is ______ the significance of the fact that Cybersecurity Classified Protection has gone through four phases of development?",
+    "question_text": "What is the significance of the fact that Cybersecurity Classified Protection has gone through four phases of development?",
     "options": [
       "a. It indicates the system is outdated",
       "b. It shows the system needs to be replaced",
@@ -8696,7 +8696,7 @@
   },
   {
     "question_number": 762,
-    "question_text": "A typical use of __________ is ______ a situation in which the system administrator trusts the internal users. Mark 0.00 out of 1.00",
+    "question_text": "A typical use of __________ is a situation in which the system administrator trusts the internal users. Mark 0.00 out of 1.00",
     "options": [
       "a. DMZ networks",
       "b. IDSs",
@@ -8708,7 +8708,7 @@
   },
   {
     "question_number": 763,
-    "question_text": "At each horizontal point, State is ______ the same for both encryption and decryption.",
+    "question_text": "At each horizontal point, State is the same for both encryption and decryption.",
     "options": [
       "a. True",
       "b. False"
@@ -8740,7 +8740,7 @@
   },
   {
     "question_number": 766,
-    "question_text": "DES is ______ a block cipher intended to replace AES for commercial applications. Mark 0.00 out of 1.00",
+    "question_text": "DES is a block cipher intended to replace AES for commercial applications. Mark 0.00 out of 1.00",
     "options": [
       "a. True",
       "b. False"
@@ -8784,7 +8784,7 @@
   },
   {
     "question_number": 770,
-    "question_text": "A TLS session is ______ an association between a client and a server.",
+    "question_text": "A TLS session is an association between a client and a server.",
     "options": [
       "a. True",
       "b. False"
@@ -8896,7 +8896,7 @@
   },
   {
     "question_number": 780,
-    "question_text": "MIME is ______ an extension to the _______ framework that is intended to address some of the problems and limitations of the use of SMTP.",
+    "question_text": "MIME is an extension to the _______ framework that is intended to address some of the problems and limitations of the use of SMTP.",
     "options": [
       "a. RFC 821",
       "b. RFC 5322",
@@ -8908,7 +8908,7 @@
   },
   {
     "question_number": 781,
-    "question_text": "One of the basic techniques of number theory is ______ the _______ algorithm which is ______ a simple procedure for determining the greatest common divisor of two positive integers.",
+    "question_text": "One of the basic techniques of number theory is the _______ algorithm which is a simple procedure for determining the greatest common divisor of two positive integers.",
     "options": [
       "a. Euclidean",
       "b. Brady",
@@ -9010,7 +9010,7 @@
   },
   {
     "question_number": 790,
-    "question_text": "What is ______ the relationship between information security and cybersecurity?",
+    "question_text": "What is the relationship between information security and cybersecurity?",
     "options": [
       "a. They are identical concepts",
       "b. Cybersecurity encompasses information security with respect to electronic information",
@@ -9034,7 +9034,7 @@
   },
   {
     "question_number": 792,
-    "question_text": "What is ______ the relationship between the initial phase (1994-2003) and the development phase (2004-2006) of Cybersecurity Classified Protection?",
+    "question_text": "What is the relationship between the initial phase (1994-2003) and the development phase (2004-2006) of Cybersecurity Classified Protection?",
     "options": [
       "a. They occurred simultaneously",
       "b. The initial phase called for classifying information systems into different levels, while the development phase developed standards and specifications and piloted them",
@@ -9118,7 +9118,7 @@
   },
   {
     "question_number": 799,
-    "question_text": "What is ______ a replay attack?",
+    "question_text": "What is a replay attack?",
     "options": [
       "a. An attack that modifies data in transit",
       "b. An attack where previously captured data is retransmitted to produce an unauthorized effect",
@@ -9130,7 +9130,7 @@
   },
   {
     "question_number": 800,
-    "question_text": "A _______ is ______ an intermediary that provides connectivity and transport of cloud services from CPs to cloud consumers.",
+    "question_text": "A _______ is an intermediary that provides connectivity and transport of cloud services from CPs to cloud consumers.",
     "options": [
       "a. cloud broker",
       "b. CSP",
@@ -9154,7 +9154,7 @@
   },
   {
     "question_number": 802,
-    "question_text": "_______ theorem states the following: If p is prime and a ______ is ______ a positive integer not divisible by p, then ap-1 = 1(mod p).",
+    "question_text": "_______ theorem states the following: If p is prime and a ______ is a positive integer not divisible by p, then ap-1 = 1(mod p).",
     "options": [
       "a. Miller-Rabin",
       "b. Euler's",
@@ -9226,7 +9226,7 @@
   },
   {
     "question_number": 808,
-    "question_text": "An entity that relies upon the subscriber's authenticator(s) and credentials or a verifier's assertion of a claimant's identity, typically to process a transaction or grant access to information or a system is ______ the _______.",
+    "question_text": "An entity that relies upon the subscriber's authenticator(s) and credentials or a verifier's assertion of a claimant's identity, typically to process a transaction or grant access to information or a system is the _______.",
     "options": [
       "a. subscriber",
       "b. claimant",
@@ -9274,7 +9274,7 @@
   },
   {
     "question_number": 812,
-    "question_text": "The Handshake Protocol is ______ the simplest of the four TLS-specific protocols that use the TLS Record Protocol.",
+    "question_text": "The Handshake Protocol is the simplest of the four TLS-specific protocols that use the TLS Record Protocol.",
     "options": [
       "a. True",
       "b. False"
@@ -9354,7 +9354,7 @@
   },
   {
     "question_number": 819,
-    "question_text": "A technique referred to as a _______ is ______ a mapping achieved by performing some sort of permutation on the plaintext letters.",
+    "question_text": "A technique referred to as a _______ is a mapping achieved by performing some sort of permutation on the plaintext letters.",
     "options": [
       "a. Caesar cipher",
       "b. polyalphabetic cipher",
@@ -9402,7 +9402,7 @@
   },
   {
     "question_number": 823,
-    "question_text": "The principal objective for developing a _______ is ______ to enable secure, convenient and efficient acquisition of public keys.",
+    "question_text": "The principal objective for developing a _______ is to enable secure, convenient and efficient acquisition of public keys.",
     "options": [
       "a. CRL",
       "b. IETF",
@@ -9414,7 +9414,7 @@
   },
   {
     "question_number": 824,
-    "question_text": "What is ______ the relationship between the five management requirements categories in Cybersecurity Classified Protection 2.0?",
+    "question_text": "What is the relationship between the five management requirements categories in Cybersecurity Classified Protection 2.0?",
     "options": [
       "a. Only one category is required",
       "b. They replace technical requirements",
@@ -9532,7 +9532,7 @@
   },
   {
     "question_number": 834,
-    "question_text": "There is ______ an increasingly prominent trend in many organizations to move a substantial portion or even all IT operations to an Internet-connected infrastructure known as an enterprise community cloud. .",
+    "question_text": "There is an increasingly prominent trend in many organizations to move a substantial portion or even all IT operations to an Internet-connected infrastructure known as an enterprise community cloud. .",
     "options": [
       "a. False",
       "b. True"
@@ -9542,7 +9542,7 @@
   },
   {
     "question_number": 835,
-    "question_text": "What is ______ the OSI Security Architecture?",
+    "question_text": "What is the OSI Security Architecture?",
     "options": [
       "a. A specific security implementation",
       "b. A list of attacks",
@@ -9566,7 +9566,7 @@
   },
   {
     "question_number": 837,
-    "question_text": "A certification authority is ______ an authority trusted by one or more users to create and assign public key certificates.",
+    "question_text": "A certification authority is an authority trusted by one or more users to create and assign public key certificates.",
     "options": [
       "a. True",
       "b. False"
@@ -9576,7 +9576,7 @@
   },
   {
     "question_number": 838,
-    "question_text": "The authenticator that is used as a possession factor is ______ a _______.",
+    "question_text": "The authenticator that is used as a possession factor is a _______.",
     "options": [
       "a. fingerprint",
       "b. PIN",
@@ -9696,7 +9696,7 @@
   },
   {
     "question_number": 848,
-    "question_text": "What is ______ a key challenge in deciding where to use security mechanisms?",
+    "question_text": "What is a key challenge in deciding where to use security mechanisms?",
     "options": [
       "a. They can only be used in one place",
       "b. They are always placed at the same location",
@@ -9720,7 +9720,7 @@
   },
   {
     "question_number": 850,
-    "question_text": "_______ is ______ an extension of identity management to multiple security domains such as autonomous internal business units, external business partners and other third party applications and services with the goal of sharing digital identities so that a user can be authenticated a single time and then access applications and resources across multiple domains.",
+    "question_text": "_______ is an extension of identity management to multiple security domains such as autonomous internal business units, external business partners and other third party applications and services with the goal of sharing digital identities so that a user can be authenticated a single time and then access applications and resources across multiple domains.",
     "options": [
       "a. Attribute service",
       "b. Data security management",
@@ -9732,7 +9732,7 @@
   },
   {
     "question_number": 851,
-    "question_text": "A scanning strategy that uses information contained on an infected victim machine to find more hosts to scan is ______ the _______ method.",
+    "question_text": "A scanning strategy that uses information contained on an infected victim machine to find more hosts to scan is the _______ method.",
     "options": [
       "a. topological",
       "b. hit list",
@@ -9756,7 +9756,7 @@
   },
   {
     "question_number": 853,
-    "question_text": "The function of the _______ is ______ to on transmission assemble data into a frame, on reception disassemble frame and perform address recognition and error detection, and govern access to the LAN transmission medium.",
+    "question_text": "The function of the _______ is to on transmission assemble data into a frame, on reception disassemble frame and perform address recognition and error detection, and govern access to the LAN transmission medium.",
     "options": [
       "a. media access control layer",
       "b. physical layer",
@@ -9804,7 +9804,7 @@
   },
   {
     "question_number": 857,
-    "question_text": "A _______ is ______ a device with limited volatile and nonvolatile memory, limited processing power, and a low data rate transceiver.",
+    "question_text": "A _______ is a device with limited volatile and nonvolatile memory, limited processing power, and a low data rate transceiver.",
     "options": [
       "a. class 3 device",
       "b. constrained device",
@@ -9838,7 +9838,7 @@
   },
   {
     "question_number": 860,
-    "question_text": "What is ______ the primary challenge mentioned about security requirements?",
+    "question_text": "What is the primary challenge mentioned about security requirements?",
     "options": [
       "a. They don't need mechanisms",
       "b. The mechanisms used to meet requirements can be quite complex",
@@ -9940,7 +9940,7 @@
   },
   {
     "question_number": 869,
-    "question_text": "The _______ cloud infrastructure is ______ a composition of two or more clouds that remain unique entities but are bound together by standardized or proprietary technology that enables data and application portability.",
+    "question_text": "The _______ cloud infrastructure is a composition of two or more clouds that remain unique entities but are bound together by standardized or proprietary technology that enables data and application portability.",
     "options": [
       "a. public",
       "b. hybrid",
@@ -9952,7 +9952,7 @@
   },
   {
     "question_number": 870,
-    "question_text": "Feistel proposed that we can approximate the ideal block cipher by utilizing the concept of a _______ cipher, which is ______ the execution of two or more simple ciphers in sequence in such a way that the final result or product is cryptographically stronger than any of the component ciphers.",
+    "question_text": "Feistel proposed that we can approximate the ideal block cipher by utilizing the concept of a _______ cipher, which is the execution of two or more simple ciphers in sequence in such a way that the final result or product is cryptographically stronger than any of the component ciphers.",
     "options": [
       "a. product",
       "b. differential",
@@ -10078,7 +10078,7 @@
   },
   {
     "question_number": 881,
-    "question_text": "If a secret key is ______ to be used as a _______ for conventional encryption a single number must be generated.",
+    "question_text": "If a secret key is to be used as a _______ for conventional encryption a single number must be generated.",
     "options": [
       "a. prime curve",
       "b. session key",
@@ -10100,7 +10100,7 @@
   },
   {
     "question_number": 883,
-    "question_text": "Subscriber is ______ a subject whose identity is ______ to be verified using one or more authentication protocols.",
+    "question_text": "Subscriber is a subject whose identity is to be verified using one or more authentication protocols.",
     "options": [
       "a. True",
       "b. False"
@@ -10110,7 +10110,7 @@
   },
   {
     "question_number": 884,
-    "question_text": "A _________ is ______ a group that has a finite number of elements.",
+    "question_text": "A _________ is a group that has a finite number of elements.",
     "options": [
       "a. finite order",
       "b. finite field",
@@ -10122,7 +10122,7 @@
   },
   {
     "question_number": 885,
-    "question_text": "The security of ECC depends on how difficult it is ______ to determine k given kP and P.",
+    "question_text": "The security of ECC depends on how difficult it is to determine k given kP and P.",
     "options": [
       "a. True",
       "b. False"
@@ -10144,7 +10144,7 @@
   },
   {
     "question_number": 887,
-    "question_text": "The ________ MIME field is ______ a text description of the object with the body; this is useful when the object is not readable (e.g. audio data).",
+    "question_text": "The ________ MIME field is a text description of the object with the body; this is useful when the object is not readable (e.g. audio data).",
     "options": [
       "a. Content-Type",
       "b. Content-Description",
@@ -10156,7 +10156,7 @@
   },
   {
     "question_number": 888,
-    "question_text": "What is ______ a security service?",
+    "question_text": "What is a security service?",
     "options": [
       "a. An attack",
       "b. A vulnerability",
@@ -10168,7 +10168,7 @@
   },
   {
     "question_number": 889,
-    "question_text": "What is ______ the relationship between the number of control domains (14), control objectives (35), and control measures (113) in ISO 27002?",
+    "question_text": "What is the relationship between the number of control domains (14), control objectives (35), and control measures (113) in ISO 27002?",
     "options": [
       "a. The 14 domains contain 35 control objectives and 113 control measures distributed across them",
       "b. There are 14 objectives and 14 measures",
@@ -10202,7 +10202,7 @@
   },
   {
     "question_number": 892,
-    "question_text": "__________ is ______ an integer value unique within the issuing CA that is unambiguously associated with this certificate.",
+    "question_text": "__________ is an integer value unique within the issuing CA that is unambiguously associated with this certificate.",
     "options": [
       "a. Serial number",
       "b. Signature identifier",
@@ -10214,7 +10214,7 @@
   },
   {
     "question_number": 893,
-    "question_text": "DES is ______ a block cipher intended to replace AES for commercial applications.",
+    "question_text": "DES is a block cipher intended to replace AES for commercial applications.",
     "options": [
       "a. False",
       "b. True"
@@ -10246,7 +10246,7 @@
   },
   {
     "question_number": 896,
-    "question_text": "What is ______ an active attack?",
+    "question_text": "What is an active attack?",
     "options": [
       "a. An attack that attempts to alter system resources or affect their operation",
       "b. An attack that only observes data",
@@ -10278,7 +10278,7 @@
   },
   {
     "question_number": 899,
-    "question_text": "The __________ test is ______ the most basic test of randomness and must be included in any test suite.",
+    "question_text": "The __________ test is the most basic test of randomness and must be included in any test suite.",
     "options": [
       "a. runs",
       "b. unpredictability",
@@ -10290,7 +10290,7 @@
   },
   {
     "question_number": 900,
-    "question_text": "A widely used technique for pseudorandom number generation is ______ an algorithm known as the linear congruential method.",
+    "question_text": "A widely used technique for pseudorandom number generation is an algorithm known as the linear congruential method.",
     "options": [
       "a. True",
       "b. False"
@@ -10320,7 +10320,7 @@
   },
   {
     "question_number": 903,
-    "question_text": "The __________ cloud infrastructure is ______ a composition of two or more clouds that remain unique entities but are bound together by standardized or proprietary technology that enables data and application portability.",
+    "question_text": "The __________ cloud infrastructure is a composition of two or more clouds that remain unique entities but are bound together by standardized or proprietary technology that enables data and application portability.",
     "options": [
       "a. community",
       "b. hybrid",
@@ -10378,7 +10378,7 @@
   },
   {
     "question_number": 908,
-    "question_text": "What is ______ a security mechanism?",
+    "question_text": "What is a security mechanism?",
     "options": [
       "a. A policy",
       "b. A service",
@@ -10402,7 +10402,7 @@
   },
   {
     "question_number": 910,
-    "question_text": "A __________ is ______ an undocumented way of gaining access to a computer system.",
+    "question_text": "A __________ is an undocumented way of gaining access to a computer system.",
     "options": [
       "a. bot",
       "b. virus",
@@ -10458,7 +10458,7 @@
   },
   {
     "question_number": 915,
-    "question_text": "__________ is ______ an extension of identity management to multiple security domains such as autonomous internal business units, external business partners and other third party applications and services with the goal of sharing digital identities so that a user can be authenticated a single time and then access applications and resources across multiple domains.",
+    "question_text": "__________ is an extension of identity management to multiple security domains such as autonomous internal business units, external business partners and other third party applications and services with the goal of sharing digital identities so that a user can be authenticated a single time and then access applications and resources across multiple domains.",
     "options": [
       "a. Kerberos",
       "b. Data security management",
@@ -10482,7 +10482,7 @@
   },
   {
     "question_number": 917,
-    "question_text": "A ______ is ______ an identifier of a user of TCP.",
+    "question_text": "A ______ is an identifier of a user of TCP.",
     "options": [
       "a. port",
       "b. protocol",
@@ -10552,7 +10552,7 @@
   },
   {
     "question_number": 923,
-    "question_text": "The __________ of two numbers is ______ the largest integer that divides both numbers.",
+    "question_text": "The __________ of two numbers is the largest integer that divides both numbers.",
     "options": [
       "a. lowest common divisor",
       "b. integral divisor",
@@ -10576,7 +10576,7 @@
   },
   {
     "question_number": 925,
-    "question_text": "A __________ is ______ a computer program that can copy itself and infect a computer without permission or knowledge of the user.",
+    "question_text": "A __________ is a computer program that can copy itself and infect a computer without permission or knowledge of the user.",
     "options": [
       "a. worm",
       "b. virus",
@@ -10610,7 +10610,7 @@
   },
   {
     "question_number": 928,
-    "question_text": "Native form is ______ a format, appropriate to the content type, that is standardized for use between systems.",
+    "question_text": "Native form is a format, appropriate to the content type, that is standardized for use between systems.",
     "options": [
       "a. False",
       "b. True"
@@ -10656,7 +10656,7 @@
   },
   {
     "question_number": 932,
-    "question_text": "A __________ is ______ a server or distributed set of servers that maintains a database of information about users.",
+    "question_text": "A __________ is a server or distributed set of servers that maintains a database of information about users.",
     "options": [
       "a. KTC",
       "b. directory",
@@ -10704,7 +10704,7 @@
   },
   {
     "question_number": 936,
-    "question_text": "What is ______ the relationship between BS 7799 and ISO/IEC 27001?",
+    "question_text": "What is the relationship between BS 7799 and ISO/IEC 27001?",
     "options": [
       "a. BS 7799 was later adopted by ISO and became ISO/IEC 27001",
       "b. They are the same standard with different names",
@@ -10736,7 +10736,7 @@
   },
   {
     "question_number": 939,
-    "question_text": "The most widely used cipher is ______ the Data Encryption Standard.",
+    "question_text": "The most widely used cipher is the Data Encryption Standard.",
     "options": [
       "a. True",
       "b. False"
@@ -10780,7 +10780,7 @@
   },
   {
     "question_number": 943,
-    "question_text": "The principal objective for developing a __________ is ______ to enable secure, convenient, and efficient acquisition of public keys.",
+    "question_text": "The principal objective for developing a __________ is to enable secure, convenient, and efficient acquisition of public keys.",
     "options": [
       "a. KTC",
       "b. PKI",
@@ -10792,7 +10792,7 @@
   },
   {
     "question_number": 944,
-    "question_text": "If p is prime and a ______ is ______ a positive integer, then ap = a(mod p) is ______ an alternative form of _________ theorem.",
+    "question_text": "If p is prime and a ______ is a positive integer, then ap = a(mod p) is an alternative form of _________ theorem.",
     "options": [
       "a. Vignere's",
       "b. Fermat's",
@@ -10804,7 +10804,7 @@
   },
   {
     "question_number": 945,
-    "question_text": "One way to counter suppress-replay attacks is ______ to enforce the requirement that parties regularly check their clocks against the KDC’s clock.",
+    "question_text": "One way to counter suppress-replay attacks is to enforce the requirement that parties regularly check their clocks against the KDC’s clock.",
     "options": [
       "a. True",
       "b. False"
@@ -10814,7 +10814,7 @@
   },
   {
     "question_number": 946,
-    "question_text": "A subject undergoing the processes of enrollment and identity proofing is ______ the __________ .",
+    "question_text": "A subject undergoing the processes of enrollment and identity proofing is the __________ .",
     "options": [
       "a. claimant",
       "b. relying party",
@@ -10826,7 +10826,7 @@
   },
   {
     "question_number": 947,
-    "question_text": "The greater the number of rounds, the __________ it is ______ to perform cryptanalysis.",
+    "question_text": "The greater the number of rounds, the __________ it is to perform cryptanalysis.",
     "options": [
       "a. easier",
       "b. less difficult",
@@ -10850,7 +10850,7 @@
   },
   {
     "question_number": 949,
-    "question_text": "With the understanding that remainders are allowed, we can say that polynomial division is possible if the coefficient set is ______ a __________.",
+    "question_text": "With the understanding that remainders are allowed, we can say that polynomial division is possible if the coefficient set is a __________.",
     "options": [
       "a. ring",
       "b. factor",
@@ -10874,7 +10874,7 @@
   },
   {
     "question_number": 951,
-    "question_text": "What is ______ the specific purpose of ISO/IEC 27004?",
+    "question_text": "What is the specific purpose of ISO/IEC 27004?",
     "options": [
       "a. Certification guidelines",
       "b. Information security management measurement guidelines",
@@ -10910,7 +10910,7 @@
   },
   {
     "question_number": 954,
-    "question_text": "A CTR-based authenticated encryption approach is ______ the most efficient mode of operation for high- speed packet networks.",
+    "question_text": "A CTR-based authenticated encryption approach is the most efficient mode of operation for high- speed packet networks.",
     "options": [
       "a. True",
       "b. False"
@@ -10944,7 +10944,7 @@
   },
   {
     "question_number": 957,
-    "question_text": "What is ______ the availability service?",
+    "question_text": "What is the availability service?",
     "options": [
       "a. A service that only authenticates users",
       "b. A service that only logs activities",
@@ -10980,7 +10980,7 @@
   },
   {
     "question_number": 960,
-    "question_text": "__________ theorem states the following: If p is prime and a ______ is ______ a positive integer not divisible by p, then ap-1 = 1(mod p).",
+    "question_text": "__________ theorem states the following: If p is prime and a ______ is a positive integer not divisible by p, then ap-1 = 1(mod p).",
     "options": [
       "a. Chinese Remainder",
       "b. Euler's",
@@ -11074,7 +11074,7 @@
   },
   {
     "question_number": 968,
-    "question_text": "Similar to the generic attack, except that the list of messages to be signed is chosen after the attacker knows the user's public key but before any signatures are seen, is ______ the __________ attack.",
+    "question_text": "Similar to the generic attack, except that the list of messages to be signed is chosen after the attacker knows the user's public key but before any signatures are seen, is the __________ attack.",
     "options": [
       "a. key-only",
       "b. adaptive chosen",
@@ -11158,7 +11158,7 @@
   },
   {
     "question_number": 975,
-    "question_text": "The most complex part of TLS is ______ the ________.",
+    "question_text": "The most complex part of TLS is the ________.",
     "options": [
       "a. SSL Record Protocol",
       "b. Alert Protocol",
@@ -11182,7 +11182,7 @@
   },
   {
     "question_number": 977,
-    "question_text": "Although it does not appear to be as efficient as the Miller-Rabin algorithm, in 2002 a relatively simple deterministic algorithm that efficiently determines whether a given large number is ______ a prime was developed. This algorithm is ______ known as the ________ algorithm.",
+    "question_text": "Although it does not appear to be as efficient as the Miller-Rabin algorithm, in 2002 a relatively simple deterministic algorithm that efficiently determines whether a given large number is a prime was developed. This algorithm is ______ known as the ________ algorithm.",
     "options": [
       "a. Miller-Rabin",
       "b. AKS",
@@ -11218,7 +11218,7 @@
   },
   {
     "question_number": 980,
-    "question_text": "What is ______ the relationship between general security requirements and extended security requirements in Cybersecurity Classified Protection 2.0?",
+    "question_text": "What is the relationship between general security requirements and extended security requirements in Cybersecurity Classified Protection 2.0?",
     "options": [
       "a. General requirements implement common protection, while extended requirements implement personalized protection for protected objects at different levels and in different forms",
       "b. They are completely independent",
@@ -11278,7 +11278,7 @@
   },
   {
     "question_number": 985,
-    "question_text": "The ________ attack is ______ the easiest to defend against because the opponent has the least amount of information to work with.",
+    "question_text": "The ________ attack is the easiest to defend against because the opponent has the least amount of information to work with.",
     "options": [
       "a. ciphertext-only",
       "b. chosen plaintext",
@@ -11302,7 +11302,7 @@
   },
   {
     "question_number": 987,
-    "question_text": "With each element of the list defining both a key exchange algorithm and a CipherSpec, the list that contains the combination of cryptographic algorithms supported by the client in decreasing order of preference is ______ the ________.",
+    "question_text": "With each element of the list defining both a key exchange algorithm and a CipherSpec, the list that contains the combination of cryptographic algorithms supported by the client in decreasing order of preference is the ________.",
     "options": [
       "a. Random",
       "b. Version",
@@ -11314,7 +11314,7 @@
   },
   {
     "question_number": 988,
-    "question_text": "What is ______ the maximum number of control measures in a single control domain in ISO 27002?",
+    "question_text": "What is the maximum number of control measures in a single control domain in ISO 27002?",
     "options": [
       "a. Each domain has exactly 1 control measure",
       "b. Each domain has exactly 8 control measures",
@@ -11370,7 +11370,7 @@
   },
   {
     "question_number": 993,
-    "question_text": "________ is ______ an example of a newly designed MAC.",
+    "question_text": "________ is an example of a newly designed MAC.",
     "options": [
       "a. Merkle root",
       "b. SipHash",
@@ -11382,7 +11382,7 @@
   },
   {
     "question_number": 994,
-    "question_text": "________ mode is similar to Cipher Feedback, except that the input to the encryption algorithm is ______ the preceding DES output.",
+    "question_text": "________ mode is similar to Cipher Feedback, except that the input to the encryption algorithm is the preceding DES output.",
     "options": [
       "a. Cipher Block Chaining",
       "b. Cipher Feedback",
@@ -11418,7 +11418,7 @@
   },
   {
     "question_number": 997,
-    "question_text": "\"Each block of plaintext is XORed with an encrypted counter. The counter is incremented for each subsequent block\", is ______ a description of ________ mode.",
+    "question_text": "\"Each block of plaintext is XORed with an encrypted counter. The counter is incremented for each subsequent block\", is a description of ________ mode.",
     "options": [
       "a. Counter",
       "b. Electronic Codebook",
@@ -11430,7 +11430,7 @@
   },
   {
     "question_number": 998,
-    "question_text": "The means by which IP traffic is related to specific SAs is ______ the ________.",
+    "question_text": "The means by which IP traffic is related to specific SAs is the ________.",
     "options": [
       "a. SAD",
       "b. TRS",
@@ -11530,7 +11530,7 @@
   },
   {
     "question_number": 1007,
-    "question_text": "What is ______ the main advantage of vendor consolidation in security according to Gartner's trends?",
+    "question_text": "What is the main advantage of vendor consolidation in security according to Gartner's trends?",
     "options": [
       "a. It simplifies security architecture completely",
       "b. It can improve O&M efficiency and reduce enterprise costs",
@@ -11608,7 +11608,7 @@
   },
   {
     "question_number": 1014,
-    "question_text": "Whirlpool is ______ a popular cryptographic hash function.",
+    "question_text": "Whirlpool is a popular cryptographic hash function.",
     "options": [
       "True",
       "False"
@@ -11642,7 +11642,7 @@
   },
   {
     "question_number": 1017,
-    "question_text": "What is ______ a DDoS attack?",
+    "question_text": "What is a DDoS attack?",
     "options": [
       "An attack that encrypts data",
       "An attack that steals data",
@@ -11736,7 +11736,7 @@
   },
   {
     "question_number": 1025,
-    "question_text": "An integer p > 1 is ______ a ______ number if and only if its only divisors are +1 and +p.",
+    "question_text": "An integer p > 1 is a ______ number if and only if its only divisors are +1 and +p.",
     "options": [
       "positive",
       "composite",
@@ -11772,7 +11772,7 @@
   },
   {
     "question_number": 1028,
-    "question_text": "S-AES is ______ the most widely used multiple encryption scheme.",
+    "question_text": "S-AES is the most widely used multiple encryption scheme.",
     "options": [
       "False",
       "True"
@@ -11830,7 +11830,7 @@
   },
   {
     "question_number": 1033,
-    "question_text": "What is ______ the specific purpose of ISO/IEC 27007?",
+    "question_text": "What is the specific purpose of ISO/IEC 27007?",
     "options": [
       "Guidelines for information security management systems auditing",
       "Risk management guidelines",
@@ -11852,7 +11852,7 @@
   },
   {
     "question_number": 1035,
-    "question_text": "The greater the number of rounds, the ______ it is ______ to perform cryptanalysis.",
+    "question_text": "The greater the number of rounds, the ______ it is to perform cryptanalysis.",
     "options": [
       "harder",
       "easier",
@@ -11864,7 +11864,7 @@
   },
   {
     "question_number": 1036,
-    "question_text": "______ mode is similar to Cipher Feedback, except that the input to the encryption algorithm is ______ the preceding DES output.",
+    "question_text": "______ mode is similar to Cipher Feedback, except that the input to the encryption algorithm is the preceding DES output.",
     "options": [
       "Cipher Block Chaining",
       "Cipher Feedback",
@@ -11924,7 +11924,7 @@
   },
   {
     "question_number": 1041,
-    "question_text": "A technique referred to as a ______ is ______ a mapping achieved by performing some sort of permutation on the plaintext letters.",
+    "question_text": "A technique referred to as a ______ is a mapping achieved by performing some sort of permutation on the plaintext letters.",
     "options": [
       "transposition cipher",
       "Caesar cipher",
@@ -11948,7 +11948,7 @@
   },
   {
     "question_number": 1043,
-    "question_text": "What is ______ a digital signature?",
+    "question_text": "What is a digital signature?",
     "options": [
       "An encryption key",
       "A password",
@@ -11972,7 +11972,7 @@
   },
   {
     "question_number": 1045,
-    "question_text": "What is ______ the relationship between the flow probe and HiSec Insight collector in the network security situational awareness architecture?",
+    "question_text": "What is the relationship between the flow probe and HiSec Insight collector in the network security situational awareness architecture?",
     "options": [
       "They perform independent functions without interaction",
       "The collector replaces the flow probe",
@@ -11984,7 +11984,7 @@
   },
   {
     "question_number": 1046,
-    "question_text": "According to Cybersecurity Law Article 59, what is ______ the fine range for directly responsible management personnel who do not perform cybersecurity protection duties?",
+    "question_text": "According to Cybersecurity Law Article 59, what is the fine range for directly responsible management personnel who do not perform cybersecurity protection duties?",
     "options": [
       "RMB 1,000 to 5,000",
       "RMB 5,000 to 50,000",
@@ -11996,7 +11996,7 @@
   },
   {
     "question_number": 1047,
-    "question_text": "A scanning strategy that uses information contained on an infected victim machine to find more hosts to scan is ______ the ______ method.",
+    "question_text": "A scanning strategy that uses information contained on an infected victim machine to find more hosts to scan is the ______ method.",
     "options": [
       "random",
       "local subnet",
@@ -12020,7 +12020,7 @@
   },
   {
     "question_number": 1049,
-    "question_text": "In effect, PaaS is ______ an operating system in the cloud.",
+    "question_text": "In effect, PaaS is an operating system in the cloud.",
     "options": [
       "False",
       "True"
@@ -12152,7 +12152,7 @@
   },
   {
     "question_number": 1061,
-    "question_text": "On-demand self-service is ______ an essential characteristic of cloud computing.",
+    "question_text": "On-demand self-service is an essential characteristic of cloud computing.",
     "options": [
       "False",
       "True"
@@ -12186,7 +12186,7 @@
   },
   {
     "question_number": 1064,
-    "question_text": "We define the of an algorithm to be if, for all n and all inputs of length n the execution of the algorithm takes at most f steps. This is ______ a common measure of the efficiency of an algorithm.",
+    "question_text": "We define the of an algorithm to be if, for all n and all inputs of length n the execution of the algorithm takes at most f steps. This is a common measure of the efficiency of an algorithm.",
     "options": [
       "one-way function",
       "timing attack",
@@ -12256,7 +12256,7 @@
   },
   {
     "question_number": 1070,
-    "question_text": "The first element of the CipherSuite parameter is ______ the key exchange method.",
+    "question_text": "The first element of the CipherSuite parameter is the key exchange method.",
     "options": [
       "True",
       "False"
@@ -12276,7 +12276,7 @@
   },
   {
     "question_number": 1072,
-    "question_text": "What is ______ the relationship between the harmed object (citizens' rights, social order, public interests, national security) and the protection level?",
+    "question_text": "What is the relationship between the harmed object (citizens' rights, social order, public interests, national security) and the protection level?",
     "options": [
       "The harmed object has no relationship to protection level",
       "The protection level is the same for all harmed objects",
@@ -12288,7 +12288,7 @@
   },
   {
     "question_number": 1073,
-    "question_text": "A scanning strategy that uses information contained on an infected victim machine to find more hosts to scan is ______ the method.",
+    "question_text": "A scanning strategy that uses information contained on an infected victim machine to find more hosts to scan is the method.",
     "options": [
       "topological",
       "random",
@@ -12300,7 +12300,7 @@
   },
   {
     "question_number": 1074,
-    "question_text": "A way to improve on the simple monoalphabetic technique is ______ to use different monoalphabetic substitutions as one proceeds through the plaintext message. The general name for this approach is ______",
+    "question_text": "A way to improve on the simple monoalphabetic technique is to use different monoalphabetic substitutions as one proceeds through the plaintext message. The general name for this approach is ______",
     "options": [
       "polyalphabetic substitution cipher",
       "cryptanalysis",
@@ -12348,7 +12348,7 @@
   },
   {
     "question_number": 1078,
-    "question_text": "What is ______ the key characteristic that makes supply chain attacks particularly dangerous?",
+    "question_text": "What is the key characteristic that makes supply chain attacks particularly dangerous?",
     "options": [
       "They only affect a single organization",
       "They only affect software vendors",
@@ -12382,7 +12382,7 @@
   },
   {
     "question_number": 1081,
-    "question_text": "key determination is ______ a refinement of the Diffie-Hellman key exchange algorithm.",
+    "question_text": "key determination is a refinement of the Diffie-Hellman key exchange algorithm.",
     "options": [
       "SKE",
       "IKE",
@@ -12418,7 +12418,7 @@
   },
   {
     "question_number": 1084,
-    "question_text": "There is ______ an increasingly prominent trend in many organizations to move a substantial portion or even all IT operations to an Internet-connected infrastructure known as an enterprise community cloud.",
+    "question_text": "There is an increasingly prominent trend in many organizations to move a substantial portion or even all IT operations to an Internet-connected infrastructure known as an enterprise community cloud.",
     "options": [
       "False",
       "True"
@@ -12440,7 +12440,7 @@
   },
   {
     "question_number": 1086,
-    "question_text": "What is ______ a man-in-the-middle attack?",
+    "question_text": "What is a man-in-the-middle attack?",
     "options": [
       "An attack that only modifies stored data",
       "An attack that only deletes files",
@@ -12542,7 +12542,7 @@
   },
   {
     "question_number": 1095,
-    "question_text": "The of two numbers is ______ the largest integer that divides both numbers.",
+    "question_text": "The of two numbers is the largest integer that divides both numbers.",
     "options": [
       "integral divisor",
       "prime polynomial",
@@ -12624,7 +12624,7 @@
   },
   {
     "question_number": 1102,
-    "question_text": "MIME is ______ an extension to the framework that is intended to address some of the problems and limitations of the use of SMTP.",
+    "question_text": "MIME is an extension to the framework that is intended to address some of the problems and limitations of the use of SMTP.",
     "options": [
       "RFC 3852",
       "RFC 821",
@@ -12684,7 +12684,7 @@
   },
   {
     "question_number": 1107,
-    "question_text": "______ theorem states the following: If p is prime and a ______ is ______ a positive integer not divisible by p, then a^(p-1) ≡ 1 (mod p).",
+    "question_text": "______ theorem states the following: If p is prime and a ______ is a positive integer not divisible by p, then a^(p-1) ≡ 1 (mod p).",
     "options": [
       "Euler's",
       "Miller-Rabin",
@@ -12798,7 +12798,7 @@
   },
   {
     "question_number": 1117,
-    "question_text": "If a secret key is ______ to be used as a ______ for conventional encryption a single number must be generated.",
+    "question_text": "If a secret key is to be used as a ______ for conventional encryption a single number must be generated.",
     "options": [
       "prime curve",
       "session key",
@@ -12822,7 +12822,7 @@
   },
   {
     "question_number": 1119,
-    "question_text": "______ is ______ a procedure that allows communicating parties to verify that the contents of a received message have not been altered and that the source is authentic.",
+    "question_text": "______ is a procedure that allows communicating parties to verify that the contents of a received message have not been altered and that the source is authentic.",
     "options": [
       "Verification",
       "Message authentication",
@@ -12870,7 +12870,7 @@
   },
   {
     "question_number": 1123,
-    "question_text": "What is ______ the relationship between trust models and information security?",
+    "question_text": "What is the relationship between trust models and information security?",
     "options": [
       "The trust model provides a framework for information security",
       "They are unrelated",
@@ -12882,7 +12882,7 @@
   },
   {
     "question_number": 1124,
-    "question_text": "What is ______ the relationship between ISO/IEC 27006, 27007, and 27008?",
+    "question_text": "What is the relationship between ISO/IEC 27006, 27007, and 27008?",
     "options": [
       "They replace ISO 27002",
       "They are industry-specific standards",
@@ -12894,7 +12894,7 @@
   },
   {
     "question_number": 1125,
-    "question_text": "What is ______ the relationship between information breach and other attack methods?",
+    "question_text": "What is the relationship between information breach and other attack methods?",
     "options": [
       "After hackers obtain breached data, they may use it to crack user accounts or initiate attacks through phishing emails",
       "Information breach only affects the breached organization",
@@ -12950,7 +12950,7 @@
   },
   {
     "question_number": 1130,
-    "question_text": "The purpose of the Maurer's universal statistical test is ______ to determine whether the number of ones and zeros in a sequence are approximately the same as would be expected for a truly random sequence.",
+    "question_text": "The purpose of the Maurer's universal statistical test is to determine whether the number of ones and zeros in a sequence are approximately the same as would be expected for a truly random sequence.",
     "options": [
       "False",
       "True"
@@ -13028,7 +13028,7 @@
   },
   {
     "question_number": 1137,
-    "question_text": "What is ______ the correct answer to the quiz question about ISO 27002 certification in the PDF?",
+    "question_text": "What is the correct answer to the quiz question about ISO 27002 certification in the PDF?",
     "options": [
       "True - ISO 27002 replaces ISO 27001 for certification",
       "False - Neither ISO 27001 nor ISO 27002 can be used for certification",
@@ -13040,7 +13040,7 @@
   },
   {
     "question_number": 1138,
-    "question_text": "If the bit- stream generator is ______ a key- controlled algorithm the two users only need to share the generating key and then each can produce the keystream.",
+    "question_text": "If the bit- stream generator is a key- controlled algorithm the two users only need to share the generating key and then each can produce the keystream.",
     "options": [
       "False",
       "True"
@@ -13062,7 +13062,7 @@
   },
   {
     "question_number": 1140,
-    "question_text": "The shared master secret is ______ a one- time 48- byte value generated for a session by means of secure key exchange.",
+    "question_text": "The shared master secret is a one- time 48- byte value generated for a session by means of secure key exchange.",
     "options": [
       "True",
       "False"
@@ -13082,7 +13082,7 @@
   },
   {
     "question_number": 1142,
-    "question_text": "Big- endian format is ______ the most significant byte of a word in the low- address byte position.",
+    "question_text": "Big- endian format is the most significant byte of a word in the low- address byte position.",
     "options": [
       "False",
       "True"
@@ -13104,7 +13104,7 @@
   },
   {
     "question_number": 1144,
-    "question_text": "The , which is ______ the latest of the RSA schemes, is ______ the one that RSA Laboratories recommends as the most secure of the RSA schemes.",
+    "question_text": "The , which is the latest of the RSA schemes, is the one that RSA Laboratories recommends as the most secure of the RSA schemes.",
     "options": [
       "DSA-SDS",
       "RSA-PSS",
@@ -13126,7 +13126,7 @@
   },
   {
     "question_number": 1146,
-    "question_text": "The symmetric encryption key for data encrypted by the client and decrypted by the server is ______ a ______",
+    "question_text": "The symmetric encryption key for data encrypted by the client and decrypted by the server is a ______",
     "options": [
       "server write key",
       "sequence key",
@@ -13184,7 +13184,7 @@
   },
   {
     "question_number": 1151,
-    "question_text": "A ______ is ______ a set in which you can do addition, subtraction, multiplication and division without leaving the set.",
+    "question_text": "A ______ is a set in which you can do addition, subtraction, multiplication and division without leaving the set.",
     "options": [
       "block",
       "standard",
@@ -13196,7 +13196,7 @@
   },
   {
     "question_number": 1152,
-    "question_text": "If p is prime and a ______ is ______ a positive integer, then ap = a(mod p) is ______ an alternative form of theorem.",
+    "question_text": "If p is prime and a ______ is a positive integer, then ap = a(mod p) is an alternative form of theorem.",
     "options": [
       "Fermat's",
       "Vignere's",
@@ -13232,7 +13232,7 @@
   },
   {
     "question_number": 1155,
-    "question_text": "The GCM mode makes use of two functions: ______, which is ______ a keyed hash function, and GCTR.",
+    "question_text": "The GCM mode makes use of two functions: ______, which is a keyed hash function, and GCTR.",
     "options": [
       "HMAC",
       "CCM",
@@ -13300,7 +13300,7 @@
   },
   {
     "question_number": 1161,
-    "question_text": "A CTR- based authenticated encryption approach is ______ the most efficient mode of operation for high- speed packet networks.",
+    "question_text": "A CTR- based authenticated encryption approach is the most efficient mode of operation for high- speed packet networks.",
     "options": [
       "False",
       "True"
@@ -13310,7 +13310,7 @@
   },
   {
     "question_number": 1162,
-    "question_text": "What is ______ the relationship between ISO/IEC 27001 and ISO/IEC 27002?",
+    "question_text": "What is the relationship between ISO/IEC 27001 and ISO/IEC 27002?",
     "options": [
       "ISO 27001 is for certification only, while ISO 27002 is for implementation only",
       "ISO 27001 establishes requirements and standards for ISMS, while ISO 27002 provides best practice rules with control objectives and measures",
@@ -13322,7 +13322,7 @@
   },
   {
     "question_number": 1163,
-    "question_text": "\"Release of message contents to any person or process not possessing the appropriate cryptographic key\" is ______ a attack.",
+    "question_text": "\"Release of message contents to any person or process not possessing the appropriate cryptographic key\" is a attack.",
     "options": [
       "content modification",
       "disclosure",
@@ -13334,7 +13334,7 @@
   },
   {
     "question_number": 1164,
-    "question_text": "Insertion of messages into the network from a fraudulent source is ______ a ______ attack.",
+    "question_text": "Insertion of messages into the network from a fraudulent source is a ______ attack.",
     "options": [
       "sequence modification",
       "source repudiation",
@@ -13358,7 +13358,7 @@
   },
   {
     "question_number": 1166,
-    "question_text": "What is ______ the relationship between the flow probe and HiSec Insight collector in network security situational awareness?",
+    "question_text": "What is the relationship between the flow probe and HiSec Insight collector in network security situational awareness?",
     "options": [
       "They are independent systems",
       "The flow probe collects basic network data such as traffic and device logs, which is then analyzed by HiSec Insight",
@@ -13382,7 +13382,7 @@
   },
   {
     "question_number": 1168,
-    "question_text": "The principal objective for developing a ______ is ______ to enable secure, convenient and efficient acquisition of public keys.",
+    "question_text": "The principal objective for developing a ______ is to enable secure, convenient and efficient acquisition of public keys.",
     "options": [
       "KDC",
       "CRL",
@@ -13416,7 +13416,7 @@
   },
   {
     "question_number": 1171,
-    "question_text": "Feistel proposed that we can approximate the ideal block cipher by utilizing the concept of a cipher, which is ______ the execution of two or more simple ciphers in sequence in such a way that the final result or product is cryptographically stronger than any of the component ciphers.",
+    "question_text": "Feistel proposed that we can approximate the ideal block cipher by utilizing the concept of a cipher, which is the execution of two or more simple ciphers in sequence in such a way that the final result or product is cryptographically stronger than any of the component ciphers.",
     "options": [
       "product",
       "differential",
@@ -13428,7 +13428,7 @@
   },
   {
     "question_number": 1172,
-    "question_text": "What is ______ the key difference between Cybersecurity Classified Protection 1.0 and 2.0?",
+    "question_text": "What is the key difference between Cybersecurity Classified Protection 1.0 and 2.0?",
     "options": [
       "2.0 is based on 1.0 but covers new technologies such as cloud computing, mobile Internet, IoT, and industrial control systems",
       "2.0 only applies to government agencies",
@@ -13452,7 +13452,7 @@
   },
   {
     "question_number": 1174,
-    "question_text": "The method is ideal for a short amount of data and is ______ the appropriate mode to use if you want to transmit a DES or AES key securely.",
+    "question_text": "The method is ideal for a short amount of data and is the appropriate mode to use if you want to transmit a DES or AES key securely.",
     "options": [
       "counter mode",
       "electronic codebook mode",
@@ -13558,7 +13558,7 @@
   },
   {
     "question_number": 1183,
-    "question_text": "What is ______ the relationship between the ISO 27000 family parts and their purposes?",
+    "question_text": "What is the relationship between the ISO 27000 family parts and their purposes?",
     "options": [
       "Only Part I is important",
       "Parts I and II are identical",
@@ -13640,7 +13640,7 @@
   },
   {
     "question_number": 1190,
-    "question_text": "What is ______ the significance of cyber- savvy boards according to Gartner?",
+    "question_text": "What is the significance of cyber- savvy boards according to Gartner?",
     "options": [
       "Boards should only focus on financial matters",
       "Cybersecurity is not a board-level concern",
@@ -13662,7 +13662,7 @@
   },
   {
     "question_number": 1192,
-    "question_text": "What is ______ a trust model?",
+    "question_text": "What is a trust model?",
     "options": [
       "A type of encryption algorithm",
       "A type of attack",
@@ -13674,7 +13674,7 @@
   },
   {
     "question_number": 1193,
-    "question_text": "The ______ is ______ a directory lookup service that provides a mapping between the name of a host on the Internet and its numerical address.",
+    "question_text": "The ______ is a directory lookup service that provides a mapping between the name of a host on the Internet and its numerical address.",
     "options": [
       "DNS",
       "POP",
@@ -13720,7 +13720,7 @@
   },
   {
     "question_number": 1197,
-    "question_text": "With the understanding that remainders are allowed, we can say that polynomial division is possible if the coefficient set is ______ a ______",
+    "question_text": "With the understanding that remainders are allowed, we can say that polynomial division is possible if the coefficient set is a ______",
     "options": [
       "divisor",
       "factor",
@@ -13798,7 +13798,7 @@
   },
   {
     "question_number": 1204,
-    "question_text": "The SHA- 512 algorithm has the property that every bit of the hash code is ______ a function of every bit of the input.",
+    "question_text": "The SHA- 512 algorithm has the property that every bit of the hash code is a function of every bit of the input.",
     "options": [
       "True",
       "False"
@@ -13950,7 +13950,7 @@
   },
   {
     "question_number": 1217,
-    "question_text": "One of the most important uses of a ______ cryptosystem is ______ to encrypt secret keys for distribution.",
+    "question_text": "One of the most important uses of a ______ cryptosystem is to encrypt secret keys for distribution.",
     "options": [
       "end-to-end",
       "master key",
@@ -13972,7 +13972,7 @@
   },
   {
     "question_number": 1219,
-    "question_text": "The layer of the IEEE 802 reference model that includes such functions as encoding/decoding of signals and bit transmission/reception is ______ the ______",
+    "question_text": "The layer of the IEEE 802 reference model that includes such functions as encoding/decoding of signals and bit transmission/reception is the ______",
     "options": [
       "control layer",
       "physical layer",
@@ -13984,7 +13984,7 @@
   },
   {
     "question_number": 1220,
-    "question_text": "A ______ is ______ an intermediary that provides connectivity and transport of cloud services from CPs to cloud consumers.",
+    "question_text": "A ______ is an intermediary that provides connectivity and transport of cloud services from CPs to cloud consumers.",
     "options": [
       "cloud provider",
       "cloud carrier",
@@ -14018,7 +14018,7 @@
   },
   {
     "question_number": 1223,
-    "question_text": "A ______ is ______ an algorithm that requires the use of a secret key.",
+    "question_text": "A ______ is an algorithm that requires the use of a secret key.",
     "options": [
       "SHA",
       "DAA",
@@ -14030,7 +14030,7 @@
   },
   {
     "question_number": 1224,
-    "question_text": "What is ______ the relationship between the four phases of a ransomware attack: intrusion, diffusion, theft, and extortion?",
+    "question_text": "What is the relationship between the four phases of a ransomware attack: intrusion, diffusion, theft, and extortion?",
     "options": [
       "They typically occur sequentially: intrusion leads to diffusion, which enables theft, which precedes extortion",
       "Only intrusion and extortion are necessary",
@@ -14114,7 +14114,7 @@
   },
   {
     "question_number": 1231,
-    "question_text": "In the digital signature algorithm the user's is represented by x, which is ______ a random or pseudorandom integer with 0 < x < q.",
+    "question_text": "In the digital signature algorithm the user's is represented by x, which is a random or pseudorandom integer with 0 < x < q.",
     "options": [
       "per message secret number",
       "public key",
@@ -14172,7 +14172,7 @@
   },
   {
     "question_number": 1236,
-    "question_text": "The most widely studied is ______ the NTRU family of cryptographic algorithms.",
+    "question_text": "The most widely studied is the NTRU family of cryptographic algorithms.",
     "options": [
       "hash-based approach",
       "code-based approach",
@@ -14218,7 +14218,7 @@
   },
   {
     "question_number": 1240,
-    "question_text": "What is ______ the relationship between the five information security principles: confidentiality, integrity, availability, controllability, and non-repudiation?",
+    "question_text": "What is the relationship between the five information security principles: confidentiality, integrity, availability, controllability, and non-repudiation?",
     "options": [
       "Only confidentiality is important",
       "Confidentiality, integrity, and availability were established in the Information Security Period, while controllability and non-repudiation were added in the Information Assurance Period, showing the evolution of security principles",
@@ -14254,7 +14254,7 @@
   },
   {
     "question_number": 1243,
-    "question_text": "A ______ is ______ a computer program that can copy itself and infect a computer without permission or knowledge of the user.",
+    "question_text": "A ______ is a computer program that can copy itself and infect a computer without permission or knowledge of the user.",
     "options": [
       "Trojan horse",
       "worm",
@@ -14290,7 +14290,7 @@
   },
   {
     "question_number": 1246,
-    "question_text": "With each element of the list defining both a key exchange algorithm and a CipherSpec, the list that contains the combination of cryptographic algorithms supported by the client in decreasing order of preference is ______ the ______.",
+    "question_text": "With each element of the list defining both a key exchange algorithm and a CipherSpec, the list that contains the combination of cryptographic algorithms supported by the client in decreasing order of preference is the ______.",
     "options": [
       "Random",
       "Version",
@@ -14302,7 +14302,7 @@
   },
   {
     "question_number": 1247,
-    "question_text": "is ______ the monitoring, protecting, and verifying the security of data at rest, in motion, and in use.",
+    "question_text": "is the monitoring, protecting, and verifying the security of data at rest, in motion, and in use.",
     "options": [
       "Web security",
       "Data loss prevention",
@@ -14350,7 +14350,7 @@
   },
   {
     "question_number": 1251,
-    "question_text": "What is ______ the objective of cyberspace security?",
+    "question_text": "What is the objective of cyberspace security?",
     "options": [
       "To ensure only network security",
       "To ensure only physical security",
@@ -14372,7 +14372,7 @@
   },
   {
     "question_number": 1253,
-    "question_text": "The layer of the IEEE 802 reference model that includes such functions as encoding/decoding of signals and bit transmission/reception is ______ the ______.",
+    "question_text": "The layer of the IEEE 802 reference model that includes such functions as encoding/decoding of signals and bit transmission/reception is the ______.",
     "options": [
       "control layer",
       "logical link layer",
@@ -14476,7 +14476,7 @@
   },
   {
     "question_number": 1262,
-    "question_text": "The heart of a Feistel block cipher is ______ the function F, which relies on the use of S- boxes.",
+    "question_text": "The heart of a Feistel block cipher is the function F, which relies on the use of S- boxes.",
     "options": [
       "False",
       "True"
@@ -14508,7 +14508,7 @@
   },
   {
     "question_number": 1265,
-    "question_text": "An entity that relies upon the subscriber's authenticator(s) and credentials or a verifier's assertion of a claimant's identity, typically to process a transaction or grant access to information or a system is ______ the ______",
+    "question_text": "An entity that relies upon the subscriber's authenticator(s) and credentials or a verifier's assertion of a claimant's identity, typically to process a transaction or grant access to information or a system is the ______",
     "options": [
       "applicant",
       "subscriber",
@@ -14520,7 +14520,7 @@
   },
   {
     "question_number": 1266,
-    "question_text": "What is ______ the key difference between ISO/IEC 27001 and ISO/IEC 27002 in terms of their purpose?",
+    "question_text": "What is the key difference between ISO/IEC 27001 and ISO/IEC 27002 in terms of their purpose?",
     "options": [
       "ISO 27001 is optional while ISO 27002 is mandatory",
       "ISO 27001 establishes requirements and standards for ISMS, while ISO 27002 provides best practice rules and detailed operations",
@@ -14588,7 +14588,7 @@
   },
   {
     "question_number": 1272,
-    "question_text": "is ______ a procedure that allows communicating parties to verify that the contents of a received message have not been altered and that the source is authentic.",
+    "question_text": "is a procedure that allows communicating parties to verify that the contents of a received message have not been altered and that the source is authentic.",
     "options": [
       "Message authentication",
       "User authentication",
@@ -14676,7 +14676,7 @@
   },
   {
     "question_number": 1280,
-    "question_text": "A ______ is ______ an undocumented way of gaining access to a computer system.",
+    "question_text": "A ______ is an undocumented way of gaining access to a computer system.",
     "options": [
       "bot",
       "rootkit",
@@ -14736,7 +14736,7 @@
   },
   {
     "question_number": 1285,
-    "question_text": "What is ______ the main reason security mechanisms are often counterintuitive?",
+    "question_text": "What is the main reason security mechanisms are often counterintuitive?",
     "options": [
       "They are always simple",
       "They don't need to consider threats",
@@ -14748,7 +14748,7 @@
   },
   {
     "question_number": 1286,
-    "question_text": "In the general structure of the AES encryption process the input to the encryption and decryption algorithms is ______ a single block.",
+    "question_text": "In the general structure of the AES encryption process the input to the encryption and decryption algorithms is a single block.",
     "options": [
       "64-bit",
       "128-bit",
@@ -14760,7 +14760,7 @@
   },
   {
     "question_number": 1287,
-    "question_text": "The Handshake Protocol is ______ the simplest of the four TLS- specific protocols that use the TLS Record Protocol.",
+    "question_text": "The Handshake Protocol is the simplest of the four TLS- specific protocols that use the TLS Record Protocol.",
     "options": [
       "False",
       "True"
@@ -14770,7 +14770,7 @@
   },
   {
     "question_number": 1288,
-    "question_text": "What is ______ the role of the assessment organization in Cybersecurity Classified Protection?",
+    "question_text": "What is the role of the assessment organization in Cybersecurity Classified Protection?",
     "options": [
       "They assist in building the system",
       "They only provide consulting services",
@@ -14782,7 +14782,7 @@
   },
   {
     "question_number": 1289,
-    "question_text": "is ______ a characteristic of a system component that provides passive protection against an attack.",
+    "question_text": "is a characteristic of a system component that provides passive protection against an attack.",
     "options": [
       "Tamper integration",
       "Tamper detection",
@@ -14794,7 +14794,7 @@
   },
   {
     "question_number": 1290,
-    "question_text": "What is ______ the significance of the fact that vulnerability discovery penetrates from the application layer to bottom- layer components and even to the architecture layer?",
+    "question_text": "What is the significance of the fact that vulnerability discovery penetrates from the application layer to bottom- layer components and even to the architecture layer?",
     "options": [
       "Vulnerabilities are less dangerous",
       "Vulnerabilities are easier to fix",
@@ -14830,7 +14830,7 @@
   },
   {
     "question_number": 1293,
-    "question_text": "A ______ is ______ an algorithm for which it is computationally infeasible to find either (a) a data object that maps to a pre- specified hash result or (b) two data objects that map to the same hash result.",
+    "question_text": "A ______ is an algorithm for which it is computationally infeasible to find either (a) a data object that maps to a pre- specified hash result or (b) two data objects that map to the same hash result.",
     "options": [
       "cryptographic hash function",
       "one-way hash function",
@@ -14842,7 +14842,7 @@
   },
   {
     "question_number": 1294,
-    "question_text": "If a number is ______ the highest possible exponent to which a number can belong, it is ______ referred to as a of n.",
+    "question_text": "If a number is the highest possible exponent to which a number can belong, it is ______ referred to as a of n.",
     "options": [
       "primitive root",
       "bijection",
@@ -14854,7 +14854,7 @@
   },
   {
     "question_number": 1295,
-    "question_text": "The way to measure the resistance of a hash algorithm to cryptanalysis is ______ to compare its strength to the effort required for a brute- force attack.",
+    "question_text": "The way to measure the resistance of a hash algorithm to cryptanalysis is to compare its strength to the effort required for a brute- force attack.",
     "options": [
       "True",
       "False"
@@ -14876,7 +14876,7 @@
   },
   {
     "question_number": 1297,
-    "question_text": "The cryptographic hash function requirement that guarantees that it is impossible to find an alternative message with the same hash value as a given message and prevents forgery when an encrypted hash code is used is ______ the ______",
+    "question_text": "The cryptographic hash function requirement that guarantees that it is impossible to find an alternative message with the same hash value as a given message and prevents forgery when an encrypted hash code is used is the ______",
     "options": [
       "collision resistant",
       "preimage resistant",
@@ -14888,7 +14888,7 @@
   },
   {
     "question_number": 1298,
-    "question_text": "What is ______ a masquerade attack?",
+    "question_text": "What is a masquerade attack?",
     "options": [
       "An attack that only modifies data",
       "An attack that only observes data",
@@ -14912,7 +14912,7 @@
   },
   {
     "question_number": 1300,
-    "question_text": "We define the ______ of an algorithm to be if, for all n and all inputs of length n the execution of the algorithm takes at most f steps. This is ______ a common measure of the efficiency of an algorithm.",
+    "question_text": "We define the ______ of an algorithm to be if, for all n and all inputs of length n the execution of the algorithm takes at most f steps. This is a common measure of the efficiency of an algorithm.",
     "options": [
       "one-way function",
       "timing attack",
@@ -14982,7 +14982,7 @@
   },
   {
     "question_number": 1306,
-    "question_text": "______ is ______ an extension of identity management to multiple security domains such as autonomous internal business units, external business partners and other third party applications and services with the goal of sharing digital identities so that a user can be authenticated a single time and then access applications and resources across multiple domains.",
+    "question_text": "______ is an extension of identity management to multiple security domains such as autonomous internal business units, external business partners and other third party applications and services with the goal of sharing digital identities so that a user can be authenticated a single time and then access applications and resources across multiple domains.",
     "options": [
       "Data security management",
       "Attribute service",
@@ -14994,7 +14994,7 @@
   },
   {
     "question_number": 1307,
-    "question_text": "______ key determination is ______ a refinement of the Diffie-Hellman key exchange algorithm.",
+    "question_text": "______ key determination is a refinement of the Diffie-Hellman key exchange algorithm.",
     "options": [
       "SKE",
       "IKE",
@@ -15006,7 +15006,7 @@
   },
   {
     "question_number": 1308,
-    "question_text": "A Kerberos ______ is ______ a set of managed nodes that share the same Kerberos database.",
+    "question_text": "A Kerberos ______ is a set of managed nodes that share the same Kerberos database.",
     "options": [
       "network",
       "principal",
@@ -15042,7 +15042,7 @@
   },
   {
     "question_number": 1311,
-    "question_text": "The ______ of two numbers is ______ the largest integer that divides both numbers.",
+    "question_text": "The ______ of two numbers is the largest integer that divides both numbers.",
     "options": [
       "integral divisor",
       "prime polynomial",
@@ -15066,7 +15066,7 @@
   },
   {
     "question_number": 1313,
-    "question_text": "The most complex part of TLS is ______ the ______",
+    "question_text": "The most complex part of TLS is the ______",
     "options": [
       "Alert Protocol",
       "Handshake Protocol",
@@ -15078,7 +15078,7 @@
   },
   {
     "question_number": 1314,
-    "question_text": "The cloud infrastructure is ______ a composition of two or more clouds that remain unique entities but are bound together by standardized or proprietary technology that enables data and application portability.",
+    "question_text": "The cloud infrastructure is a composition of two or more clouds that remain unique entities but are bound together by standardized or proprietary technology that enables data and application portability.",
     "options": [
       "private",
       "community",
@@ -15150,7 +15150,7 @@
   },
   {
     "question_number": 1320,
-    "question_text": "The MIME field is ______ a text description of the object with the body; this is useful when the object is not readable (e.g. audio data).",
+    "question_text": "The MIME field is a text description of the object with the body; this is useful when the object is not readable (e.g. audio data).",
     "options": [
       "Content-Description",
       "Content-ID",
@@ -15162,7 +15162,7 @@
   },
   {
     "question_number": 1321,
-    "question_text": "What is ______ a passive attack?",
+    "question_text": "What is a passive attack?",
     "options": [
       "An attack that attempts to learn or make use of information from the system but does not affect system resources",
       "An attack that deletes system files",
@@ -15174,7 +15174,7 @@
   },
   {
     "question_number": 1322,
-    "question_text": "A mode of operation is ______ a technique for enhancing the effect of a cryptographic algorithm or adapting the algorithm for an application.",
+    "question_text": "A mode of operation is a technique for enhancing the effect of a cryptographic algorithm or adapting the algorithm for an application.",
     "options": [
       "True",
       "False"
@@ -15206,7 +15206,7 @@
   },
   {
     "question_number": 1325,
-    "question_text": "What is ______ the relationship between integrity and nonrepudiation?",
+    "question_text": "What is the relationship between integrity and nonrepudiation?",
     "options": [
       "They are unrelated",
       "Data integrity encompasses nonrepudiation",
@@ -15218,7 +15218,7 @@
   },
   {
     "question_number": 1326,
-    "question_text": "An example of a lightweight cryptographic block cipher is ______ the Scalable Encryption Algorithm.",
+    "question_text": "An example of a lightweight cryptographic block cipher is the Scalable Encryption Algorithm.",
     "options": [
       "False",
       "True"
@@ -15240,7 +15240,7 @@
   },
   {
     "question_number": 1328,
-    "question_text": "What is ______ the primary purpose of ISO/IEC 27006?",
+    "question_text": "What is the primary purpose of ISO/IEC 27006?",
     "options": [
       "Certification and recognition guidelines",
       "Best practice rules",
@@ -15272,7 +15272,7 @@
   },
   {
     "question_number": 1331,
-    "question_text": "The most widely studied is ______ the ______ family of cryptographic algorithms.",
+    "question_text": "The most widely studied is the ______ family of cryptographic algorithms.",
     "options": [
       "lattice-based approach",
       "multivariate polynomial approach",
@@ -15284,7 +15284,7 @@
   },
   {
     "question_number": 1332,
-    "question_text": "The ______ test is ______ the most basic test of randomness and must be included in any test suite.",
+    "question_text": "The ______ test is the most basic test of randomness and must be included in any test suite.",
     "options": [
       "runs",
       "unpredictability",
@@ -15342,7 +15342,7 @@
   },
   {
     "question_number": 1337,
-    "question_text": "A ______ is ______ a device with limited volatile and nonvolatile memory, limited processing power, and a low data rate transceiver.",
+    "question_text": "A ______ is a device with limited volatile and nonvolatile memory, limited processing power, and a low data rate transceiver.",
     "options": [
       "IoT",
       "microprocessor",
@@ -15354,7 +15354,7 @@
   },
   {
     "question_number": 1338,
-    "question_text": "What is ______ the key principle that zero trust enforces for all access attempts?",
+    "question_text": "What is the key principle that zero trust enforces for all access attempts?",
     "options": [
       "Trust all internal users",
       "Make decisions based on the access policy, requiring authentication, authorization, and access control for all users regardless of location",
@@ -15378,7 +15378,7 @@
   },
   {
     "question_number": 1340,
-    "question_text": "What is ______ the first trend in Gartner's Top 8 Security and Risk Trends?",
+    "question_text": "What is the first trend in Gartner's Top 8 Security and Risk Trends?",
     "options": [
       "Identity-first security",
       "Zero Trust Security",
@@ -15390,7 +15390,7 @@
   },
   {
     "question_number": 1341,
-    "question_text": "______ is ______ a mechanism or service used to verify the integrity of a message.",
+    "question_text": "______ is a mechanism or service used to verify the integrity of a message.",
     "options": [
       "Data mapping",
       "Message digest",
@@ -15528,7 +15528,7 @@
   },
   {
     "question_number": 1353,
-    "question_text": "What is ______ the relationship between confidentiality and privacy?",
+    "question_text": "What is the relationship between confidentiality and privacy?",
     "options": [
       "They are identical",
       "They are unrelated",
@@ -15596,7 +15596,7 @@
   },
   {
     "question_number": 1359,
-    "question_text": "If b|a we say that b is ______ a divisor of a.",
+    "question_text": "If b|a we say that b is a divisor of a.",
     "options": [
       "True",
       "False"
@@ -15684,7 +15684,7 @@
   },
   {
     "question_number": 1367,
-    "question_text": "The ______ attack is ______ the easiest to defend against because the opponent has the least amount of information to work with.",
+    "question_text": "The ______ attack is the easiest to defend against because the opponent has the least amount of information to work with.",
     "options": [
       "chosen ciphertext",
       "chosen plaintext",
@@ -15716,7 +15716,7 @@
   },
   {
     "question_number": 1370,
-    "question_text": "In the digital signature algorithm the user's ______ is represented by x, which is ______ a random or pseudorandom integer with 0 < x < q.",
+    "question_text": "In the digital signature algorithm the user's ______ is represented by x, which is a random or pseudorandom integer with 0 < x < q.",
     "options": [
       "per message secret number",
       "private key",
@@ -15752,7 +15752,7 @@
   },
   {
     "question_number": 1373,
-    "question_text": "The ______, which is ______ the latest of the RSA schemes, is ______ the one that RSA Laboratories recommends as the most secure of the RSA schemes.",
+    "question_text": "The ______, which is the latest of the RSA schemes, is the one that RSA Laboratories recommends as the most secure of the RSA schemes.",
     "options": [
       "DSA-SDS",
       "ECDSA",
@@ -15788,7 +15788,7 @@
   },
   {
     "question_number": 1376,
-    "question_text": "______ is ______ an open source project for creating truly random numbers using inexpensive cameras, open source code, and inexpensive hardware.",
+    "question_text": "______ is an open source project for creating truly random numbers using inexpensive cameras, open source code, and inexpensive hardware.",
     "options": [
       "Entropy",
       "Blum, Blum, Shub",
@@ -15812,7 +15812,7 @@
   },
   {
     "question_number": 1378,
-    "question_text": "What is ______ the relationship between the security protection level and the strictness of requirements?",
+    "question_text": "What is the relationship between the security protection level and the strictness of requirements?",
     "options": [
       "Lower levels have stricter requirements",
       "All levels have the same requirements",
@@ -15884,7 +15884,7 @@
   },
   {
     "question_number": 1384,
-    "question_text": "The cryptographic hash function requirement that guarantees that it is impossible to find an alternative message with the same hash value as a given message and prevents forgery when an encrypted hash code is used is ______ the ______.",
+    "question_text": "The cryptographic hash function requirement that guarantees that it is impossible to find an alternative message with the same hash value as a given message and prevents forgery when an encrypted hash code is used is the ______.",
     "options": [
       "pseudorandomness",
       "collision resistant",
@@ -15896,7 +15896,7 @@
   },
   {
     "question_number": 1385,
-    "question_text": "The order of a finite field must be of the form pn where p is ______ a prime and n is ______ a ______",
+    "question_text": "The order of a finite field must be of the form pn where p is a prime and n is a ______",
     "options": [
       "commutative ring",
       "associative",
@@ -15932,7 +15932,7 @@
   },
   {
     "question_number": 1388,
-    "question_text": "The principal objective for developing a ______ is ______ to enable secure, convenient, and efficient acquisition of public keys.",
+    "question_text": "The principal objective for developing a ______ is to enable secure, convenient, and efficient acquisition of public keys.",
     "options": [
       "CRL",
       "KTC",
@@ -15968,7 +15968,7 @@
   },
   {
     "question_number": 1391,
-    "question_text": "What is ______ the evolution path from BS 7799 to current ISO/IEC standards?",
+    "question_text": "What is the evolution path from BS 7799 to current ISO/IEC standards?",
     "options": [
       "BS 7799-1 (1995) → BS 7799-2 (1998) → ISO/IEC 17799 (2000) → ISO/IEC 27001 (2005) → ISO/IEC 27002 (2007)",
       "BS 7799 → ISO 27002 → ISO 27001",
@@ -15980,7 +15980,7 @@
   },
   {
     "question_number": 1392,
-    "question_text": "\"Release of message contents to any person or process not possessing the appropriate cryptographic key\" is ______ a ______ attack.",
+    "question_text": "\"Release of message contents to any person or process not possessing the appropriate cryptographic key\" is a ______ attack.",
     "options": [
       "content modification",
       "disclosure",
@@ -16016,7 +16016,7 @@
   },
   {
     "question_number": 1395,
-    "question_text": "What is ______ the significance of the fact that new vulnerabilities increase rapidly while vulnerability discovery penetrates from application layer to architecture layer?",
+    "question_text": "What is the significance of the fact that new vulnerabilities increase rapidly while vulnerability discovery penetrates from application layer to architecture layer?",
     "options": [
       "Vulnerabilities only affect applications",
       "It expands the impact of vulnerabilities and makes them more difficult to address, as they affect fundamental system design",
@@ -16084,7 +16084,7 @@
   },
   {
     "question_number": 1401,
-    "question_text": "is ______ a data collection technology that uses electronic tags attached to items to allow the items to be identified and tracked by a remote system.",
+    "question_text": "is a data collection technology that uses electronic tags attached to items to allow the items to be identified and tracked by a remote system.",
     "options": [
       "CRYPTOREC",
       "EPC",
@@ -16096,7 +16096,7 @@
   },
   {
     "question_number": 1402,
-    "question_text": "What is ______ the relationship between ISO/IEC 27003, 27004, and 27005 in the ISO 27000 family?",
+    "question_text": "What is the relationship between ISO/IEC 27003, 27004, and 27005 in the ISO 27000 family?",
     "options": [
       "They are part of Part I (Requirements and support guideline) of the ISO 27000 family",
       "They are industry-specific standards",
@@ -16226,7 +16226,7 @@
   },
   {
     "question_number": 1414,
-    "question_text": "In virtually all distributed environments, electronic mail is ______ the most heavily used network- based application.",
+    "question_text": "In virtually all distributed environments, electronic mail is the most heavily used network- based application.",
     "options": [
       "False",
       "True"
@@ -16248,7 +16248,7 @@
   },
   {
     "question_number": 1416,
-    "question_text": "What is ______ the difference between keyless and key- based algorithms?",
+    "question_text": "What is the difference between keyless and key- based algorithms?",
     "options": [
       "Keyless algorithms don't use keys, while key-based algorithms require keys",
       "Keyless algorithms use keys differently",
@@ -16260,7 +16260,7 @@
   },
   {
     "question_number": 1417,
-    "question_text": "______ is ______ a security enhancement to the MIME Internet email format standard based on technology from RSA Data Security.",
+    "question_text": "______ is a security enhancement to the MIME Internet email format standard based on technology from RSA Data Security.",
     "options": [
       "S/MIME",
       "HTTPS",
@@ -16284,7 +16284,7 @@
   },
   {
     "question_number": 1419,
-    "question_text": "Although it does not appear to be as efficient as the Miller- Rabin algorithm, in 2002 a relatively simple deterministic algorithm that efficiently determines whether a given large number is ______ a prime was developed. This algorithm is ______ known as the ______ algorithm.",
+    "question_text": "Although it does not appear to be as efficient as the Miller- Rabin algorithm, in 2002 a relatively simple deterministic algorithm that efficiently determines whether a given large number is a prime was developed. This algorithm is ______ known as the ______ algorithm.",
     "options": [
       "AKS",
       "Brady",
@@ -16446,7 +16446,7 @@
   },
   {
     "question_number": 1433,
-    "question_text": "The order of a finite field must be of the form pn where p is ______ a prime and n is ______ a _",
+    "question_text": "The order of a finite field must be of the form pn where p is a prime and n is a _",
     "options": [
       "identity element",
       "associative",
@@ -16468,7 +16468,7 @@
   },
   {
     "question_number": 1435,
-    "question_text": "The digital signature standard is ______ a ______ standard that uses the secure hash algorithm.",
+    "question_text": "The digital signature standard is a ______ standard that uses the secure hash algorithm.",
     "options": [
       "NIST",
       "ISO",
@@ -16480,7 +16480,7 @@
   },
   {
     "question_number": 1436,
-    "question_text": "What is ______ a man- in- the- middle attack?",
+    "question_text": "What is a man- in- the- middle attack?",
     "options": [
       "An attack that only modifies stored data",
       "An attack where the attacker intercepts and masquerades as both client and server",
@@ -16504,7 +16504,7 @@
   },
   {
     "question_number": 1438,
-    "question_text": "key determination is ______ a refinement of the Diffie- Hellman key exchange algorithm.",
+    "question_text": "key determination is a refinement of the Diffie- Hellman key exchange algorithm.",
     "options": [
       "KEP",
       "KMP",
@@ -16550,7 +16550,7 @@
   },
   {
     "question_number": 1442,
-    "question_text": "What is ______ a supply chain attack?",
+    "question_text": "What is a supply chain attack?",
     "options": [
       "An attack on manufacturing systems only",
       "A network attack launched against supply chains, with attack impact extended to relevant partners and enterprise customers through supply chains",
@@ -16562,7 +16562,7 @@
   },
   {
     "question_number": 1443,
-    "question_text": "A key element in providing security in an IoT deployment is ______ the gateway.",
+    "question_text": "A key element in providing security in an IoT deployment is the gateway.",
     "options": [
       "False",
       "True"
