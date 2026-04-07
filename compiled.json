@@ -16380,6 +16380,236 @@
   },
   {
     "question_number": 1428,
+    "question_text": "Allows data that is being read or transmitted to be checked for errors and, when necessary, corrected.",
+    "options": [
+      "ECC",
+      "superposition",
+      "lattice code",
+      "CBC"
+    ],
+    "correct_answer": "ECC",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1429,
+    "question_text": "Division requires that each nonzero element have a → inverse.",
+    "options": [
+      "addition",
+      "divisional",
+      "subtraction",
+      "multiplicative"
+    ],
+    "correct_answer": "multiplicative",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1430,
+    "question_text": "What does GB/T 22239- 2019 specify?",
+    "options": [
+      "Grading guideline",
+      "Basic requirements of cybersecurity classified protection",
+      "Design requirements",
+      "Assessment requirements"
+    ],
+    "correct_answer": "Basic requirements of cybersecurity classified protection",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1431,
+    "question_text": "Symmetric encryption is a form of cryptosystem in which encryption and decryption are performed using different keys. It is also known as non- conventional encryption.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "False",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1432,
+    "question_text": "The Change Cipher Spec Protocol is one of the four TLS- specific protocols that use the SSL Record Protocol.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1433,
+    "question_text": "Between internal and external firewalls are one or more networked devices in a region referred to as a network.",
+    "options": [
+      "war zone",
+      "safe zone",
+      "protected zone",
+      "demilitarized zone"
+    ],
+    "correct_answer": "demilitarized zone",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1434,
+    "question_text": "What does GB/T 28449- 2018 specify?",
+    "options": [
+      "Basic requirements",
+      "Design requirements",
+      "Assessment process guideline",
+      "Grading guideline"
+    ],
+    "correct_answer": "Assessment process guideline",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1435,
+    "question_text": "______ provides secure, remote logon and other secure client/server facilities.",
+    "options": [
+      "SSH",
+      "TLS",
+      "SLP",
+      "HTTPS"
+    ],
+    "correct_answer": "SSH",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1436,
+    "question_text": "With a attack the attacker is allowed to use the user as an \"oracle\". This means that the user may request signatures of messages that depend on previously obtained message- signature pairs.",
+    "options": [
+      "directed chosen message",
+      "generic chosen",
+      "known message",
+      "adaptive chosen message"
+    ],
+    "correct_answer": "adaptive chosen message",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1437,
+    "question_text": "On- demand self- service is an essential characteristic of cloud computing.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1438,
+    "question_text": "How did the SolarWinds attack intrude into networks?",
+    "options": [
+      "Through email attachments only",
+      "Through physical access only",
+      "Through the official installation package that customers download or update, which contains the backdoor component",
+      "Through direct network attacks"
+    ],
+    "correct_answer": "Through the official installation package that customers download or update, which contains the backdoor component",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1439,
+    "question_text": "How did Cybersecurity Classified Protection 2.0 differ from version 1.0?",
+    "options": [
+      "It focuses only on confidentiality",
+      "More technical means were used to associate security management with technical protection to enable proactive defense rather than passive protection",
+      "It eliminates the need for management",
+      "It uses only physical security"
+    ],
+    "correct_answer": "More technical means were used to associate security management with technical protection to enable proactive defense rather than passive protection",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1440,
+    "question_text": "What is another term for single- key algorithms?",
+    "options": [
+      "Symmetric- key algorithms",
+      "Asymmetric- key algorithms",
+      "Hash algorithms",
+      "Public- key algorithms"
+    ],
+    "correct_answer": "Symmetric- key algorithms",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1441,
+    "question_text": "One of the most important uses of a cryptosystem is to encrypt secret keys for distribution.",
+    "options": [
+      "KDC",
+      "public key",
+      "master key",
+      "end- to- end"
+    ],
+    "correct_answer": "public key",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1442,
+    "question_text": "The strict avalanche criterion and the bit independence criterion appear to weaken the effectiveness of the confusion function.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "False",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1443,
+    "question_text": "Two theorems that play important roles in public- key cryptography are Fermat's theorem and theorem.",
+    "options": [
+      "AKS",
+      "Euler's",
+      "Miller- Rabin",
+      "Chinese Remainder"
+    ],
+    "correct_answer": "Euler's",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1444,
+    "question_text": "What is another name for single- key algorithms?",
+    "options": [
+      "Public- key algorithms",
+      "Asymmetric- key algorithms",
+      "Symmetric- key algorithms",
+      "Hash algorithms"
+    ],
+    "correct_answer": "Symmetric- key algorithms",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1445,
+    "question_text": "Planetext is recovered from the ciphertext using the paired key and",
+    "options": [
+      "a digital signature",
+      "a decryption algorithm",
+      "an encryption algorithm",
+      "a recovery encryption"
+    ],
+    "correct_answer": "a decryption algorithm",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1446,
+    "question_text": "When a user submits a request for a certificate to a certification authority, the user can be identified by means of a , which is an optional feature that may be used in a public key certificate.",
+    "options": [
+      "KTC",
+      "directory",
+      "crypt",
+      "KDC"
+    ],
+    "correct_answer": "directory",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1447,
+    "question_text": "The principal threats to wireless transmission are eavesdropping, altering or inserting messages, and disruption.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True",
+    "original_file": "deepseek_json_20260407_02a53f.json"
+  },
+  {
+    "question_number": 1448,
     "question_text": "What does GB/T 28448- 2019 specify?",
     "options": [
       "Basic requirements",
@@ -16391,7 +16621,7 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1429,
+    "question_number": 1449,
     "question_text": "The and block cipher modes of operation are used for authentication.",
     "options": [
       "CBC, CFB",
@@ -16403,7 +16633,7 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1430,
+    "question_number": 1450,
     "question_text": "______ theorem states the following: If p is prime and a ______ is a positive integer not divisible by p, then ap- 1 = 1(mod p).",
     "options": [
       "Miller-Rabin",
@@ -16415,7 +16645,7 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1431,
+    "question_number": 1451,
     "question_text": "In the first instance of multiple encryption plaintext we converted to using the encryption algorithm.",
     "options": [
       "S-AES mode",
@@ -16427,7 +16657,7 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1432,
+    "question_number": 1452,
     "question_text": "What does the authentication service assure?",
     "options": [
       "That data is encrypted",
@@ -16439,7 +16669,7 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1433,
+    "question_number": 1453,
     "question_text": "Although it does not appear to be as efficient as the Miller- Rabin algorithm, in 2002 a relatively simple deterministic algorithm that efficiently determines whether a given large number is a prime was developed. This algorithm is ______ known as the algorithm.",
     "options": [
       "AKS",
@@ -16451,7 +16681,7 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1434,
+    "question_number": 1454,
     "question_text": "Two MACs that are based on the use of a block cipher mode of operation are Data Authentication Algorithm and ______.",
     "options": [
       "GMAC",
@@ -16463,7 +16693,7 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1435,
+    "question_number": 1455,
     "question_text": "The key exchange protocol is vulnerable to a attack because it does not authenticate the participants.",
     "options": [
       "chosen ciphertext",
@@ -16475,7 +16705,7 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1436,
+    "question_number": 1456,
     "question_text": "The ______ is used to convey TLS- related alerts to the peer entity.",
     "options": [
       "Alert Protocol",
@@ -16487,7 +16717,7 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1437,
+    "question_number": 1457,
     "question_text": "The term used for certified 802.11b products is ______",
     "options": [
       "WPA",
@@ -16499,7 +16729,7 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1438,
+    "question_number": 1458,
     "question_text": "The stream cipher is similar to the one- time pad with a difference being that a one- time pad uses a pseudorandom number stream and a stream cipher uses a genuine random number stream.",
     "options": [
       "True",
@@ -16509,7 +16739,7 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1439,
+    "question_number": 1459,
     "question_text": "Core servers also host the applications that interact with and manage the IoT devices and analyze the IoT- generated data.",
     "options": [
       "True",
@@ -16519,7 +16749,7 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1440,
+    "question_number": 1460,
     "question_text": "The protocol enables two users to establish a secret key using a public- key scheme based on discrete logarithms.",
     "options": [
       "Diffie-Hellman",
@@ -16531,7 +16761,7 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1441,
+    "question_number": 1461,
     "question_text": "If a ______ is an integer and n is a positive integer, we define a mod n to be the remainder when a ______ is divided by n. The integer n is ______ called the ______.",
     "options": [
       "divisor",
@@ -16543,7 +16773,7 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1442,
+    "question_number": 1462,
     "question_text": "The approach is vulnerable to man- in- the- middle attacks.",
     "options": [
       "Synchronous Diffie-Hellman",
@@ -16555,7 +16785,7 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1443,
+    "question_number": 1463,
     "question_text": "A hash function that satisfies the properties of variable input size, fixed output size, efficiency, preimage resistant and second preimage resistant is ______ referred to as a ______",
     "options": [
       "strong hash function",
@@ -16567,7 +16797,7 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1444,
+    "question_number": 1464,
     "question_text": "What can a man- in- the- middle attack be used for more generally?",
     "options": [
       "Only observing traffic",
@@ -16579,7 +16809,7 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1445,
+    "question_number": 1465,
     "question_text": "A public- key encryption scheme is not vulnerable to a brute- force attack.",
     "options": [
       "False",
@@ -16589,7 +16819,449 @@
     "original_file": "deepseek_json_20260407_0fb21e.json"
   },
   {
-    "question_number": 1446,
+    "question_number": 1466,
+    "question_text": "A sequence of plaintext elements is replaced by a ______ of that sequence which means that no elements are added, deleted or replaced in the sequence, but rather the order in which the elements appear in the sequence is changed.",
+    "options": [
+      "substitution",
+      "stream",
+      "diffusion",
+      "permutation"
+    ],
+    "correct_answer": "permutation",
+    "original_file": "deepseek_json_20260407_151871.json"
+  },
+  {
+    "question_number": 1467,
+    "question_text": "What does GB/T 25070-2019 specify?",
+    "options": [
+      "Grading guideline",
+      "Design requirements",
+      "Assessment requirements",
+      "Basic requirements"
+    ],
+    "correct_answer": "Design requirements",
+    "original_file": "deepseek_json_20260407_151871.json"
+  },
+  {
+    "question_number": 1468,
+    "question_text": "Similar to the generic attack, except that the list of messages to be signed is chosen after the attacker knows the user's public key but before any signatures are seen, is the ______ attack.",
+    "options": [
+      "known message",
+      "adaptive chosen",
+      "directed chosen",
+      "key-only"
+    ],
+    "correct_answer": "directed chosen",
+    "original_file": "deepseek_json_20260407_151871.json"
+  },
+  {
+    "question_number": 1469,
+    "question_text": "Included in the definition of an elliptic curve is a single element denoted O and called the point at infinity or the ______.",
+    "options": [
+      "abelian point",
+      "zero point",
+      "prime point",
+      "elliptic point"
+    ],
+    "correct_answer": "zero point",
+    "original_file": "deepseek_json_20260407_151871.json"
+  },
+  {
+    "question_number": 1470,
+    "question_text": "A Message Transfer Agent is like a packet switch or IP router in that its job is to make routing assessments and to move the message closer to recipients.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True",
+    "original_file": "deepseek_json_20260407_151871.json"
+  },
+  {
+    "question_number": 1471,
+    "question_text": "The output of the encryption function is fed back to the shift register in Output Feedback mode, whereas in ______ the ciphertext unit is fed back to the shift register.",
+    "options": [
+      "Cipher Feedback mode",
+      "Cipher Block Chaining mode",
+      "Electronic Codebook mode",
+      "Counter mode"
+    ],
+    "correct_answer": "Cipher Feedback mode",
+    "original_file": "deepseek_json_20260407_151871.json"
+  },
+  {
+    "question_number": 1472,
+    "question_text": "Wireless networks, and the wireless devices that use them, introduce a host of security problems over and above those found in wired networks.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True",
+    "original_file": "deepseek_json_20260407_151871.json"
+  },
+  {
+    "question_number": 1473,
+    "question_text": "What is another term for two-key algorithms?",
+    "options": [
+      "Symmetric-key algorithms",
+      "Asymmetric-key or public-key algorithms",
+      "Hash algorithms",
+      "Keyless algorithms"
+    ],
+    "correct_answer": "Asymmetric-key or public-key algorithms",
+    "original_file": "deepseek_json_20260407_151871.json"
+  },
+  {
+    "question_number": 1474,
+    "question_text": "Confidentiality can be provided by performing message encryption ______ the MAC algorithm.",
+    "options": [
+      "before",
+      "before or after",
+      "after",
+      "during"
+    ],
+    "correct_answer": "before or after",
+    "original_file": "deepseek_json_20260407_151871.json"
+  },
+  {
+    "question_number": 1475,
+    "question_text": "Why is the broadest approach to data confidentiality more useful?",
+    "options": [
+      "It is easier to implement",
+      "It is less secure",
+      "Narrower forms are less useful and may be more complex and expensive to implement",
+      "It is more complex"
+    ],
+    "correct_answer": "Narrower forms are less useful and may be more complex and expensive to implement",
+    "original_file": "deepseek_json_20260407_151871.json"
+  },
+  {
+    "question_number": 1476,
+    "question_text": "Two numbers are relatively prime if they have ______ prime factors in common.",
+    "options": [
+      "multiple",
+      "some",
+      "no",
+      "all"
+    ],
+    "correct_answer": "no",
+    "original_file": "deepseek_json_20260407_151871.json"
+  },
+  {
+    "question_number": 1477,
+    "question_text": "A ______ accepts a variable length block of data as input and produces a fixed size hash value h = H(M).",
+    "options": [
+      "hash resistance",
+      "hash code",
+      "hash value",
+      "hash function"
+    ],
+    "correct_answer": "hash function",
+    "original_file": "deepseek_json_20260407_151871.json"
+  },
+  {
+    "question_number": 1478,
+    "question_text": "The key used in symmetric encryption is ______ referred to as a ______ key.",
+    "options": [
+      "decryption",
+      "public",
+      "private",
+      "secret"
+    ],
+    "correct_answer": "secret",
+    "original_file": "deepseek_json_20260407_151871.json"
+  },
+  {
+    "question_number": 1479,
+    "question_text": "A ______ is any device that contains an IEEE 802.11 conformant MAC and physical layer.",
+    "options": [
+      "station",
+      "MPU",
+      "service data unit",
+      "MSDU"
+    ],
+    "correct_answer": "station",
+    "original_file": "deepseek_json_20260407_151871.json"
+  },
+  {
+    "question_number": 1480,
+    "question_text": "How are the analysis results from HiSec Insight displayed?",
+    "options": [
+      "Only in log files",
+      "Only in printed reports",
+      "Centrally displayed on the GUI",
+      "Only via email alerts"
+    ],
+    "correct_answer": "Centrally displayed on the GUI",
+    "original_file": "deepseek_json_20260407_151871.json"
+  },
+  {
+    "question_number": 1481,
+    "question_text": "An ideal hash algorithm will require a cryptanalytic effort the brute- force effort.",
+    "options": [
+      "greater than or equal to",
+      "less than",
+      "greater than",
+      "less than or equal to"
+    ],
+    "correct_answer": "less than",
+    "original_file": "deepseek_json_20260407_205109.json"
+  },
+  {
+    "question_number": 1482,
+    "question_text": "A brute- force attack on a MAC is easier than a brute- force attack on a hash function.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "False",
+    "original_file": "deepseek_json_20260407_205109.json"
+  },
+  {
+    "question_number": 1483,
+    "question_text": "______ is PCs, servers, routers, and firewalls bought as IT devices by enterprise IT people, primarily using wired connectivity.",
+    "options": [
+      "Operational technology",
+      "Information technology",
+      "Sensor/actuator technology",
+      "Personal technology"
+    ],
+    "correct_answer": "Information technology",
+    "original_file": "deepseek_json_20260407_205109.json"
+  },
+  {
+    "question_number": 1484,
+    "question_text": "______ proposed a technique that builds on the Lamport scheme, using the concept of a hash tree.",
+    "options": [
+      "Merkel",
+      "Grover",
+      "Shor",
+      "McEliece"
+    ],
+    "correct_answer": "Merkel",
+    "original_file": "deepseek_json_20260407_205109.json"
+  },
+  {
+    "question_number": 1485,
+    "question_text": "Insertion of messages into the network from a fraudulent source is a attack.",
+    "options": [
+      "masquerade",
+      "content modification",
+      "sequence modification",
+      "source repudiation"
+    ],
+    "correct_answer": "masquerade",
+    "original_file": "deepseek_json_20260407_205109.json"
+  },
+  {
+    "question_number": 1486,
+    "question_text": "Secure, trusted, and privacy- protected capability is required so that unauthorized access of the content of data can be prohibited, integrity of data can be guaranteed, and privacy- related content of data can be protected when storing or processing data in IoT.",
+    "options": [
+      "mutual authentication and authorization",
+      "data management",
+      "communication",
+      "security audit"
+    ],
+    "correct_answer": "data management",
+    "original_file": "deepseek_json_20260407_205109.json"
+  },
+  {
+    "question_number": 1487,
+    "question_text": "The overall scheme of Kerberos is that of a trusted third party authentication service that uses a protocol based on a proposal by ______.",
+    "options": [
+      "Kehn",
+      "Denning",
+      "Needham and Schroeder",
+      "Gong"
+    ],
+    "correct_answer": "Needham and Schroeder",
+    "original_file": "deepseek_json_20260407_205109.json"
+  },
+  {
+    "question_number": 1488,
+    "question_text": "______ is an unauthorized modification that alters the intended functioning of a system or device in a way that degrades the security it provides.",
+    "options": [
+      "Tamper detection",
+      "Tampering",
+      "Tamper integration",
+      "Tamper resistant"
+    ],
+    "correct_answer": "Tampering",
+    "original_file": "deepseek_json_20260407_205109.json"
+  },
+  {
+    "question_number": 1489,
+    "question_text": "Any traffic from the local host to a remote host for purposes of an IKE exchange bypasses the IPsec processing.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True",
+    "original_file": "deepseek_json_20260407_205109.json"
+  },
+  {
+    "question_number": 1490,
+    "question_text": "What is the key difference between network- centered and identity- centered security approaches in zero trust?",
+    "options": [
+      "Network-centered is more secure",
+      "Identity-centered eliminates the need for authentication",
+      "Network-centered makes decisions based on network location, while identity-centered makes decisions based on access policy regardless of location",
+      "Network-centered trusts all users, identity-centered trusts no one"
+    ],
+    "correct_answer": "Network-centered makes decisions based on network location, while identity-centered makes decisions based on access policy regardless of location",
+    "original_file": "deepseek_json_20260407_5946d3.json"
+  },
+  {
+    "question_number": 1491,
+    "question_text": "The challenge- response approach is unsuitable for a connectionless type of application beause it requires the overhead of a handshake before any connectionless transmission.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True",
+    "original_file": "deepseek_json_20260407_5946d3.json"
+  },
+  {
+    "question_number": 1492,
+    "question_text": "What is Level 5 protection also known as?",
+    "options": [
+      "Dedicated protection",
+      "Self-protection",
+      "Guided protection",
+      "Supervised protection"
+    ],
+    "correct_answer": "Dedicated protection",
+    "original_file": "deepseek_json_20260407_5946d3.json"
+  },
+  {
+    "question_number": 1493,
+    "question_text": "Asymmetric encryption is also known as ______",
+    "options": [
+      "digital-key encryption",
+      "private-key encryption",
+      "optimal-key encryption",
+      "public-key encryption"
+    ],
+    "correct_answer": "public-key encryption",
+    "original_file": "deepseek_json_20260407_5946d3.json"
+  },
+  {
+    "question_number": 1494,
+    "question_text": "______ is single- purpose devices bought by consumers, IT, and OT people exclusively using wireless connectivity, generally of a single forms.",
+    "options": [
+      "Information technology",
+      "Operational technology",
+      "Sensor/actuator technology",
+      "Personal technology"
+    ],
+    "correct_answer": "Operational technology",
+    "original_file": "deepseek_json_20260407_5946d3.json"
+  },
+  {
+    "question_number": 1495,
+    "question_text": "NIST defines SecaaS as the provision of security applications and services via the cloud either to cloud- based infrastructure and software or from the cloud to the customers' on- premise systems.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "False",
+    "original_file": "deepseek_json_20260407_5946d3.json"
+  },
+  {
+    "question_number": 1496,
+    "question_text": "Data collection, correlation, alerting, and reporting/compliance are all key elements of ______",
+    "options": [
+      "direct DDoS",
+      "incident management",
+      "reflector DDoS",
+      "malware"
+    ],
+    "correct_answer": "incident management",
+    "original_file": "deepseek_json_20260407_5946d3.json"
+  },
+  {
+    "question_number": 1497,
+    "question_text": "What does GB/T 22240- 2020 specify?",
+    "options": [
+      "Grading guideline",
+      "Design requirements",
+      "Assessment requirements",
+      "Basic requirements"
+    ],
+    "correct_answer": "Grading guideline",
+    "original_file": "deepseek_json_20260407_5946d3.json"
+  },
+  {
+    "question_number": 1498,
+    "question_text": "A interconnecteds the IoT- enabled devices with the higher- level communication networks.",
+    "options": [
+      "sensor",
+      "reader",
+      "gateway",
+      "microcontroller"
+    ],
+    "correct_answer": "gateway",
+    "original_file": "deepseek_json_20260407_5946d3.json"
+  },
+  {
+    "question_number": 1499,
+    "question_text": "An application- level gateway, also called a , acts as a relay of application- level traffic.",
+    "options": [
+      "application proxy",
+      "source proxy",
+      "relay proxy",
+      "program proxy"
+    ],
+    "correct_answer": "application proxy",
+    "original_file": "deepseek_json_20260407_5946d3.json"
+  },
+  {
+    "question_number": 1500,
+    "question_text": "In the ISO 27000 ISMS family, what does Part II represent?",
+    "options": [
+      "Healthcare information security management standards",
+      "Certification, recognition, and audit guideline",
+      "Requirements and support guideline",
+      "Industry information security management requirements"
+    ],
+    "correct_answer": "Certification, recognition, and audit guideline",
+    "original_file": "deepseek_json_20260407_5946d3.json"
+  },
+  {
+    "question_number": 1501,
+    "question_text": "Two numbers are if their greatest common divisor is 1.",
+    "options": [
+      "composite",
+      "residual",
+      "congruent modulo",
+      "relatively prime"
+    ],
+    "correct_answer": "relatively prime",
+    "original_file": "deepseek_json_20260407_5946d3.json"
+  },
+  {
+    "question_number": 1502,
+    "question_text": "The actual method of key generation depends on the details of the authentication protocol used.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True",
+    "original_file": "deepseek_json_20260407_5946d3.json"
+  },
+  {
+    "question_number": 1503,
+    "question_text": "The field is used to identify MIME entities uniquely in multiple contexts.",
+    "options": [
+      "Content-ID",
+      "Content-Description",
+      "Content-Type",
+      "Content-Transfer-Encoding"
+    ],
+    "correct_answer": "Content-ID",
+    "original_file": "deepseek_json_20260407_5946d3.json"
+  },
+  {
+    "question_number": 1504,
     "question_text": "Question text missing in provided content",
     "options": [
       "False",
@@ -16599,7 +17271,7 @@
     "original_file": "deepseek_json_20260407_630a33.json"
   },
   {
-    "question_number": 1447,
+    "question_number": 1505,
     "question_text": "Which field is missing from the AH format?",
     "options": [
       "Sequence Header",
@@ -16609,5 +17281,169 @@
     ],
     "correct_answer": "Sequence Header",
     "original_file": "deepseek_json_20260407_630a33.json"
+  },
+  {
+    "question_number": 1506,
+    "question_text": "In the AES structure both encryption and decryption ciphers begin with a stage, followed by nine rounds that each include all four stages, followed by a tenth round of three stages.",
+    "options": [
+      "AddRoundKey",
+      "Substitute bytes",
+      "ShiftRows",
+      "MixColumns"
+    ],
+    "correct_answer": "AddRoundKey",
+    "original_file": "deepseek_json_20260407_e6b47c.json"
+  },
+  {
+    "question_number": 1507,
+    "question_text": "With authentication an opponent would have difficulty generating ciphertext that when decrypted would have valid error control bits.",
+    "options": [
+      "checksum",
+      "internal error control",
+      "cipher block chaining",
+      "CMAC"
+    ],
+    "correct_answer": "internal error control",
+    "original_file": "deepseek_json_20260407_e6b47c.json"
+  },
+  {
+    "question_number": 1508,
+    "question_text": "Systems that are externally accessible but need some protections are usually located on networks.",
+    "options": [
+      "IDS",
+      "DMZ",
+      "ISP",
+      "DMARC"
+    ],
+    "correct_answer": "DMZ",
+    "original_file": "deepseek_json_20260407_e6b47c.json"
+  },
+  {
+    "question_number": 1509,
+    "question_text": "What is the significance of cyber-savvy boards according to Gartner?",
+    "options": [
+      "Enterprises are paying more attention to cybersecurity, and dedicated committees focusing on cybersecurity matters are formed, often led by a board member with security experience.",
+      "Cybersecurity is not a board-level concern",
+      "Boards should only focus on financial matters",
+      "Boards should avoid cybersecurity matters"
+    ],
+    "correct_answer": "Enterprises are paying more attention to cybersecurity, and dedicated committees focusing on cybersecurity matters are formed, often led by a board member with security experience",
+    "original_file": "deepseek_json_20260407_e6b47c.json"
+  },
+  {
+    "question_number": 1510,
+    "question_text": "Similar to the generic attack, except that the list of messages to be signed is chosen after the attacker knows the user's public key but before any signatures are seen, is the attack.",
+    "options": [
+      "directed chosen",
+      "adaptive chosen",
+      "key-only",
+      "known message"
+    ],
+    "correct_answer": "directed chosen",
+    "original_file": "deepseek_json_20260407_e6b47c.json"
+  },
+  {
+    "question_number": 1511,
+    "question_text": "______ can more readily see the intended outcome of an attempted attack because they can directly access and monitor the data files and system processes usually targeted by attacks.",
+    "options": [
+      "Host-based IDSs",
+      "User interfaces",
+      "Sensors",
+      "External firewalls"
+    ],
+    "correct_answer": "Host-based IDSs",
+    "original_file": "deepseek_json_20260407_e6b47c.json"
+  },
+  {
+    "question_number": 1512,
+    "question_text": "What does nonreproduction provide for the sender?",
+    "options": [
+      "Proof that the alleged receiver received the message",
+      "Proof that the message was available",
+      "Proof that the message was modified",
+      "Proof that the message was encrypted"
+    ],
+    "correct_answer": "Proof that the alleged receiver received the message",
+    "original_file": "deepseek_json_20260407_e6b47c.json"
+  },
+  {
+    "question_number": 1513,
+    "question_text": "What are the three key objectives that form the CIA triad?",
+    "options": [
+      "Confidentiality, Authentication, Authorization",
+      "Confidentiality, Availability, Accountability",
+      "Confidentiality, Integrity, Availability",
+      "Confidentiality, Integrity, Authentication"
+    ],
+    "correct_answer": "Confidentiality, Integrity, Availability",
+    "original_file": "deepseek_json_20260407_e6b47c.json"
+  },
+  {
+    "question_number": 1514,
+    "question_text": "Additional padding may be added to provide partial traffic-flow confidentiality by concealing the actual length of the payload.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correct_answer": "True",
+    "original_file": "deepseek_json_20260407_e6b47c.json"
+  },
+  {
+    "question_number": 1515,
+    "question_text": "What can complicate security mechanisms that require time limits?",
+    "options": [
+      "Protocols or networks that introduce variable, unpredictable delays",
+      "Fast networks",
+      "Encrypted networks",
+      "Slow networks"
+    ],
+    "correct_answer": "Protocols or networks that introduce variable, unpredictable delays",
+    "original_file": "deepseek_json_20260407_e6b47c.json"
+  },
+  {
+    "question_number": 1516,
+    "question_text": "Sessions are used to avoid the expensive negotiation of new security parameters for each connection that shares security parameters.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": "True",
+    "original_file": "deepseek_json_20260407_e6b47c.json"
+  },
+  {
+    "question_number": 1517,
+    "question_text": "The of a number is defined to be the power to which some positive base (except 1) must be raised in order to equal the number.",
+    "options": [
+      "logarithm",
+      "exponent",
+      "index",
+      "order"
+    ],
+    "correct_answer": "logarithm",
+    "original_file": "deepseek_json_20260407_e6b47c.json"
+  },
+  {
+    "question_number": 1518,
+    "question_text": "Public-key algorithms are based on",
+    "options": [
+      "mathematical functions",
+      "permutation",
+      "symmetry",
+      "substitution"
+    ],
+    "correct_answer": "mathematical functions",
+    "original_file": "deepseek_json_20260407_e6b47c.json"
+  },
+  {
+    "question_number": 1519,
+    "question_text": "What are the three main objectives of network security in the narrow sense?",
+    "options": [
+      "Authentication, authorization, and accounting",
+      "Prevention, detection, and response",
+      "Speed, reliability, and cost-effectiveness",
+      "Integrity, confidentiality, and availability of network information and data"
+    ],
+    "correct_answer": "Integrity, confidentiality, and availability of network information and data",
+    "original_file": "deepseek_json_20260407_e6b47c.json"
   }
 ]
