@@ -4922,7 +4922,7 @@
   },
   {
     "question_number": 432,
-    "question_text": "The elements of GF(2n) can be defined as the set of all polynomials of degree n - 1 or less with binary coefficients.",
+    "question_text": "The elements of GF(2n) can be defined as the set of all polynomials of degree n -1 or less with binary coefficients.",
     "options": [
       "True",
       "False"
@@ -12534,7 +12534,7 @@
   },
   {
     "question_number": 1094,
-    "question_text": "have the following properties: 1. a = b (mod n) if n|(a - b) 2. a = b (mod n) implies b = a (mod n) 3. a = b (mod n) and b = c (mod n) imply a = c (mod n).",
+    "question_text": "have the following properties: 1. a = b (mod n) if n|(a -b) 2. a = b (mod n) implies b = a (mod n) 3. a = b (mod n) and b = c (mod n) imply a = c (mod n).",
     "options": [
       "Bijections",
       "Congruences",
@@ -12702,10 +12702,10 @@
     "options": [
       "Information Security Management System Requirements",
       "Implementation Guidelines for Information Security Management Systems",
-      "Information Technology - Code of Practice for Information Security Management",
+      "Information Technology -Code of Practice for Information Security Management",
       "Information Security Management System Specifications"
     ],
-    "correct_answer": "Information Technology - Code of Practice for Information Security Management",
+    "correct_answer": "Information Technology -Code of Practice for Information Security Management",
     "original_file": "18.json"
   },
   {
@@ -13073,19 +13073,19 @@
       "A man-in-the-middle attack or modification of data after unauthorized access",
       "Only active attacks"
     ],
-    "correct_answer": "A man-in- the-middle attack or modification of data after unauthorized access",
+    "correct_answer": "A man-in-the-middle attack or modification of data after unauthorized access",
     "original_file": "19.json"
   },
   {
     "question_number": 1141,
     "question_text": "What is the correct answer to the quiz question about ISO 27002 certification in the PDF?",
     "options": [
-      "True - ISO 27002 replaces ISO 27001 for certification",
-      "False - Neither ISO 27001 nor ISO 27002 can be used for certification",
-      "False - ISO 27002 provides best practice rules but ISO 27001 is used for certification",
-      "True - ISO 27002 can be used to certify an enterprise's information security system"
+      "True -ISO 27002 replaces ISO 27001 for certification",
+      "False -Neither ISO 27001 nor ISO 27002 can be used for certification",
+      "False -ISO 27002 provides best practice rules but ISO 27001 is used for certification",
+      "True -ISO 27002 can be used to certify an enterprise's information security system"
     ],
-    "correct_answer": "False - ISO 27002 provides best practice rules but ISO 27001 is used for certification",
+    "correct_answer": "False -ISO 27002 provides best practice rules but ISO 27001 is used for certification",
     "original_file": "19.json"
   },
   {
@@ -14143,7 +14143,7 @@
     "question_text": "In AES, the arithmetic operations of addition, multiplication and division are performed over the finite field",
     "options": [
       "GF(2n-1)",
-      "a / b = a(b - 1)",
+      "a / b = a(b -1)",
       "GF(28)",
       "Zp"
     ],
@@ -14848,7 +14848,7 @@
   },
   {
     "question_number": 1292,
-    "question_text": "______ have the following properties: 1. a ≡ b (mod n) if n|(a - b) 2. a ≡ b (mod n) implies b ≡ a (mod n) 3. a ≡ b (mod n) and b ≡ c (mod n) imply a ≡ c (mod n).",
+    "question_text": "______ have the following properties: 1. a ≡ b (mod n) if n|(a -b) 2. a ≡ b (mod n) implies b ≡ a (mod n) 3. a ≡ b (mod n) and b ≡ c (mod n) imply a ≡ c (mod n).",
     "options": [
       "Bijections",
       "Congruences",

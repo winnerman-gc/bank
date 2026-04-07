@@ -6,12 +6,18 @@ import re
 def clean_text(text):
     if not text:
         return ""
-    # Remove grading artifacts
+    # Remove common grading artifacts
     text = text.replace('Mark 1.00 out of 1.00', '').strip()
-    # Fix broken terms like "SHA- 2" or "AES- 128" by removing the space after the dash
-    text = re.sub(r'(SHA|AES|DES|RSA|HMAC|curve|connection|oriented)- +(\d+)', r'\1-\2', text, flags=re.IGNORECASE)
-    # General cleanup for any word ending in a dash followed by a space and another word
-    text = re.sub(r'(\w+)- +(\w+)', r'\1-\2', text)
+    
+    # Fix fragmented dashes (e.g., "SHA- 2" -> "SHA-2", "connection- oriented" -> "connection-oriented")
+    text = re.sub(r'-\s+', '-', text)
+    
+    # Fix missing answer placeholder dashes (e.g. "The ____ is a" where some might have weird spacing or count)
+    # This specifically looks for instances where a word might be missing a dash if that was the user's intent, 
+    # but based on the request "answer placeholder dashes", assuming you want to ensure they exist.
+    # If the JSONs came from a system that stripped them, we can't guess where they were easily 
+    # unless there is a specific pattern like triple spaces or "   ".
+    
     return text
 
 def get_question_hash(question):
@@ -37,11 +43,11 @@ def compile_questions():
             try:
                 questions = json.load(f)
                 for q in questions:
-                    # Clean the question text
+                    # Clean the question text in the actual object
                     if 'question_text' in q:
                         q['question_text'] = clean_text(q['question_text'])
                     
-                    # Clean the options and correct answer as well to fix dashes there
+                    # Also clean options and correct answer to fix fragmented dashes there
                     if 'options' in q:
                         q['options'] = [clean_text(opt) for opt in q['options']]
                     if 'correct_answer' in q:
