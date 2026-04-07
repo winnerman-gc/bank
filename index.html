@@ -577,6 +577,19 @@
                 document.getElementById('stat-correct').innerText = correctCount;
                 document.getElementById('stat-wrong').innerText = wrongCount;
             }
+
+            // After a correct manual answer, move focus to the next visible question card.
+            if (useAI && isCorrect && card) {
+                setTimeout(() => {
+                    const nextCard = card.nextElementSibling;
+                    if (nextCard && nextCard.classList.contains('question-card')) {
+                        const headerOffset = 130;
+                        const elementPosition = nextCard.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                    }
+                }, 220);
+            }
         }
 
         function retakeWrongQuestions() {
