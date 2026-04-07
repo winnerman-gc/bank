@@ -1,12 +1,22 @@
 import json
 import hashlib
 import os
+import re
+
+def clean_text(text):
+    if not text:
+        return ""
+    # Remove grading artifacts
+    text = text.replace('Mark 1.00 out of 1.00', '').strip()
+    # Fix broken terms like "SHA- 2" or "AES- 128" by removing the space after the dash
+    text = re.sub(r'(SHA|AES|DES|RSA|HMAC|curve|connection|oriented)- +(\d+)', r'\1-\2', text, flags=re.IGNORECASE)
+    # General cleanup for any word ending in a dash followed by a space and another word
+    text = re.sub(r'(\w+)- +(\w+)', r'\1-\2', text)
+    return text
 
 def get_question_hash(question):
     # Normalize question text (lowercase, strip whitespace, remove grading artifacts)
-    text = question.get('question_text', '').strip()
-    # Remove common grading artifacts
-    text = text.replace('Mark 1.00 out of 1.00', '').strip()
+    text = clean_text(question.get('question_text', ''))
     return hashlib.sha256(text.lower().encode('utf-8')).hexdigest()
 
 def compile_questions():
@@ -27,9 +37,15 @@ def compile_questions():
             try:
                 questions = json.load(f)
                 for q in questions:
-                    # Clean the question text in the actual object
+                    # Clean the question text
                     if 'question_text' in q:
-                        q['question_text'] = q['question_text'].replace('Mark 1.00 out of 1.00', '').strip()
+                        q['question_text'] = clean_text(q['question_text'])
+                    
+                    # Clean the options and correct answer as well to fix dashes there
+                    if 'options' in q:
+                        q['options'] = [clean_text(opt) for opt in q['options']]
+                    if 'correct_answer' in q:
+                        q['correct_answer'] = clean_text(q['correct_answer'])
                     
                     q_hash = get_question_hash(q)
                     if q_hash not in seen_hashes:

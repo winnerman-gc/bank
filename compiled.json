@@ -6197,7 +6197,7 @@
       "a. Content-Description",
       "b. Content-Type",
       "c. Content-ID",
-      "d. Content-Transfer- Encoding"
+      "d. Content-Transfer-Encoding"
     ],
     "correct_answer": "Content-ID 25/51",
     "original_file": "7.json"
@@ -6712,7 +6712,7 @@
   },
   {
     "question_number": 588,
-    "question_text": "Packet filter gateways tend to be more secure than application- level gateways.",
+    "question_text": "Packet filter gateways tend to be more secure than application-level gateways.",
     "options": [
       "a. False",
       "b. True"
@@ -10922,16 +10922,6 @@
   },
   {
     "question_number": 955,
-    "question_text": "A CTR-based authenticated encryption approach is the most efficient mode of operation for high- speed packet networks.",
-    "options": [
-      "a. True",
-      "b. False"
-    ],
-    "correct_answer": "True 31/51",
-    "original_file": "14.json"
-  },
-  {
-    "question_number": 956,
     "question_text": "The overall scheme of Kerberos is that of a trusted third party authentication service that uses a protocol based on a proposal by __________ .",
     "options": [
       "a. Kehn",
@@ -10943,7 +10933,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 957,
+    "question_number": 956,
     "question_text": "According to Cybersecurity Law of China Article 21, what must network operators fulfill?",
     "options": [
       "a. Only physical security measures",
@@ -10955,7 +10945,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 958,
+    "question_number": 957,
     "question_text": "What is the availability service?",
     "options": [
       "a. A service that only authenticates users",
@@ -10967,7 +10957,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 959,
+    "question_number": 958,
     "question_text": "What does ISO 27799 specify?",
     "options": [
       "a. General information security management",
@@ -10979,7 +10969,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 960,
+    "question_number": 959,
     "question_text": "What are the three aspects of security according to the OSI Security Architecture?",
     "options": [
       "a. Security attacks, Security services, Security mechanisms",
@@ -10991,7 +10981,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 961,
+    "question_number": 960,
     "question_text": "__________ theorem states the following: If p is prime and a is a positive integer not divisible by p, then ap-1 = 1(mod p).",
     "options": [
       "a. Chinese Remainder",
@@ -11003,7 +10993,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 962,
+    "question_number": 961,
     "question_text": "For the __________ subtype the order of the parts is not significant.",
     "options": [
       "a. multipart/mixed",
@@ -11015,7 +11005,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 963,
+    "question_number": 962,
     "question_text": "___________ and links, such as personal network Bluetooth devices, barcode readers, and handheld PDAs, pose a security risk in terms of both eavesdropping and spoofing.",
     "options": [
       "a. Nontraditional networks",
@@ -11027,7 +11017,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 964,
+    "question_number": 963,
     "question_text": "The major advantage of the public cloud is __________ .",
     "options": [
       "a. availability",
@@ -11039,7 +11029,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 965,
+    "question_number": 964,
     "question_text": "What makes security complex according to the challenges?",
     "options": [
       "a. The requirements seem straightforward but mechanisms are complex",
@@ -11051,7 +11041,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 966,
+    "question_number": 965,
     "question_text": "One criterion for an S-box is: \"If two inputs to an S-box differ in exactly one bit, the outputs must also differ in exactly one bit.\"",
     "options": [
       "a. False",
@@ -11061,7 +11051,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 967,
+    "question_number": 966,
     "question_text": "__________ attacks exploit the characteristics of the algorithm to attempt to deduce a specific plaintext or to deduce the key being used.",
     "options": [
       "a. Cryptanalytic",
@@ -11073,7 +11063,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 968,
+    "question_number": 967,
     "question_text": "__________ comprise measures and mechanisms to ensure operational resiliency in the event of any service interruptions.",
     "options": [
       "a. Data loss prevention",
@@ -11085,7 +11075,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 969,
+    "question_number": 968,
     "question_text": "Similar to the generic attack, except that the list of messages to be signed is chosen after the attacker knows the user's public key but before any signatures are seen, is the __________ attack.",
     "options": [
       "a. key-only",
@@ -11097,7 +11087,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 970,
+    "question_number": 969,
     "question_text": "According to the CNCERT report, which province had the highest percentage of IP addresses of servers that underwent website attacks in China?",
     "options": [
       "a. Beijing at 18.54%",
@@ -11109,7 +11099,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 971,
+    "question_number": 970,
     "question_text": "Confidentiality can be provided by performing message encryption __________ the MAC algorithm.",
     "options": [
       "a. before",
@@ -11121,7 +11111,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 972,
+    "question_number": 971,
     "question_text": "A __________ is defined by an equation in two variables with coefficients.",
     "options": [
       "a. elliptic curve",
@@ -11133,7 +11123,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 973,
+    "question_number": 972,
     "question_text": "The final round of both encryption and decryption of the AES structure consists of __________ stages.",
     "options": [
       "a. three",
@@ -11145,7 +11135,7 @@
     "original_file": "14.json"
   },
   {
-    "question_number": 974,
+    "question_number": 973,
     "question_text": "Examples of ________ are the rational numbers, the real numbers, and the complex numbers.",
     "options": [
       "a. groups",
@@ -11157,7 +11147,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 975,
+    "question_number": 974,
     "question_text": "________ are best for software applications.",
     "options": [
       "a. Abelian groups",
@@ -11169,7 +11159,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 976,
+    "question_number": 975,
     "question_text": "The most complex part of TLS is the ________.",
     "options": [
       "a. SSL Record Protocol",
@@ -11181,7 +11171,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 977,
+    "question_number": 976,
     "question_text": "The remainder r in the division algorithm is often referred to as a ________.",
     "options": [
       "a. residue",
@@ -11193,7 +11183,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 978,
+    "question_number": 977,
     "question_text": "Although it does not appear to be as efficient as the Miller-Rabin algorithm, in 2002 a relatively simple deterministic algorithm that efficiently determines whether a given large number is a prime was developed. This algorithm is known as the ________ algorithm.",
     "options": [
       "a. Miller-Rabin",
@@ -11205,7 +11195,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 979,
+    "question_number": 978,
     "question_text": "The Nyberg approach that is more or less a manual approach with only simple mathematics to support it is ________.",
     "options": [
       "a. math-made",
@@ -11217,7 +11207,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 980,
+    "question_number": 979,
     "question_text": "Information in a quantum computer is represented as ________.",
     "options": [
       "a. quinfo",
@@ -11229,7 +11219,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 981,
+    "question_number": 980,
     "question_text": "What is the relationship between general security requirements and extended security requirements in Cybersecurity Classified Protection 2.0?",
     "options": [
       "a. General requirements implement common protection, while extended requirements implement personalized protection for protected objects at different levels and in different forms",
@@ -11241,7 +11231,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 982,
+    "question_number": 981,
     "question_text": "There are ________ types of protocols used for transferring email.",
     "options": [
       "a. six",
@@ -11253,7 +11243,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 983,
+    "question_number": 982,
     "question_text": "What do security services implement?",
     "options": [
       "a. Attacks",
@@ -11265,7 +11255,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 984,
+    "question_number": 983,
     "question_text": "The ________ components of DSA are the same as in the Schnorr signature scheme.",
     "options": [
       "a. EDS",
@@ -11277,7 +11267,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 985,
+    "question_number": 984,
     "question_text": "What does GB/T 28449-2018 specify?",
     "options": [
       "a. Basic requirements",
@@ -11289,7 +11279,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 986,
+    "question_number": 985,
     "question_text": "The ________ attack is the easiest to defend against because the opponent has the least amount of information to work with.",
     "options": [
       "a. ciphertext-only",
@@ -11301,7 +11291,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 987,
+    "question_number": 986,
     "question_text": "Confidentiality can be provided by performing message encryption ________ the MAC algorithm.",
     "options": [
       "a. before",
@@ -11313,7 +11303,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 988,
+    "question_number": 987,
     "question_text": "With each element of the list defining both a key exchange algorithm and a CipherSpec, the list that contains the combination of cryptographic algorithms supported by the client in decreasing order of preference is the ________.",
     "options": [
       "a. Random",
@@ -11325,7 +11315,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 989,
+    "question_number": 988,
     "question_text": "What is the maximum number of control measures in a single control domain in ISO 27002?",
     "options": [
       "a. Each domain has exactly 1 control measure",
@@ -11337,7 +11327,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 990,
+    "question_number": 989,
     "question_text": "What type of applications is data origin authentication designed for?",
     "options": [
       "a. Database applications",
@@ -11349,7 +11339,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 991,
+    "question_number": 990,
     "question_text": "The notation a|b is commonly used to mean b divides a.",
     "options": [
       "a. True",
@@ -11359,7 +11349,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 992,
+    "question_number": 991,
     "question_text": "It is easy to find the multiplicative inverse of an element in g(p) for large values of p by constructing a multiplication table, however for small values of p this approach is not practical.",
     "options": [
       "a. True",
@@ -11369,7 +11359,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 993,
+    "question_number": 992,
     "question_text": "What does a masquerade attack involve?",
     "options": [
       "a. Only observing data",
@@ -11381,7 +11371,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 994,
+    "question_number": 993,
     "question_text": "________ is an example of a newly designed MAC.",
     "options": [
       "a. Merkle root",
@@ -11393,7 +11383,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 995,
+    "question_number": 994,
     "question_text": "________ mode is similar to Cipher Feedback, except that the input to the encryption algorithm is the preceding DES output.",
     "options": [
       "a. Cipher Block Chaining",
@@ -11405,7 +11395,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 996,
+    "question_number": 995,
     "question_text": "The key used in symmetric encryption is referred to as a ________ key.",
     "options": [
       "a. public",
@@ -11417,7 +11407,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 997,
+    "question_number": 996,
     "question_text": "The ________ is unsuitable for a connectionless type of application because it requires the overhead of a handshake before any connectionless transmission, effectively negating the chief characteristic of a connectionless transaction.",
     "options": [
       "a. simple replay approach",
@@ -11429,7 +11419,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 998,
+    "question_number": 997,
     "question_text": "\"Each block of plaintext is XORed with an encrypted counter. The counter is incremented for each subsequent block\", is a description of ________ mode.",
     "options": [
       "a. Counter",
@@ -11441,7 +11431,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 999,
+    "question_number": 998,
     "question_text": "The means by which IP traffic is related to specific SAs is the ________.",
     "options": [
       "a. SAD",
@@ -11453,7 +11443,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 1000,
+    "question_number": 999,
     "question_text": "Transport adjacency refers to applying more than one security protocol to the same IP packet without invoking tunneling.",
     "options": [
       "a. True",
@@ -11463,7 +11453,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 1001,
+    "question_number": 1000,
     "question_text": "________ are two related keys, a public key and a private key that are used to perform complementary operations, such as encryption and decryption or signature generation and signature verification.",
     "options": [
       "a. Asymmetric keys",
@@ -11475,7 +11465,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 1002,
+    "question_number": 1001,
     "question_text": "If an attack causes grave harm to public interests, what protection level is required?",
     "options": [
       "a. Level 2",
@@ -11487,7 +11477,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 1003,
+    "question_number": 1002,
     "question_text": "What does nonrepudiation prevent?",
     "options": [
       "a. Either sender or receiver from denying a transmitted message",
@@ -11499,7 +11489,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 1004,
+    "question_number": 1003,
     "question_text": "The Security Parameters Index identifies a security association.",
     "options": [
       "a. True",
@@ -11509,7 +11499,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 1005,
+    "question_number": 1004,
     "question_text": "DKIM is designed to provide an email authentication technique that is not transparent to the end user.",
     "options": [
       "a. False",
@@ -11519,7 +11509,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 1006,
+    "question_number": 1005,
     "question_text": "The S-box is designed to be resistant to known cryptanalytic attacks.",
     "options": [
       "a. False",
@@ -11529,7 +11519,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 1007,
+    "question_number": 1006,
     "question_text": "What happens if time limits are required but delays are unpredictable?",
     "options": [
       "a. The time limits may become meaningless",
@@ -11541,7 +11531,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 1008,
+    "question_number": 1007,
     "question_text": "What is the main advantage of vendor consolidation in security according to Gartner's trends?",
     "options": [
       "a. It simplifies security architecture completely",
@@ -11553,7 +11543,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 1009,
+    "question_number": 1008,
     "question_text": "What does authenticity mean?",
     "options": [
       "a. Only availability",
@@ -11565,7 +11555,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 1010,
+    "question_number": 1009,
     "question_text": "What is Zero Trust?",
     "options": [
       "a. A type of firewall",
@@ -11577,7 +11567,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 1011,
+    "question_number": 1010,
     "question_text": "The ________ takes the ciphertext and the secret key and produces the original plaintext. It is essentially the encryption algorithm run in reverse.",
     "options": [
       "a. decryption algorithm",
@@ -11589,7 +11579,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 1012,
+    "question_number": 1011,
     "question_text": "The stream cipher is similar to the one-time pad with a difference being that a one-time pad uses a pseudorandom number stream and a stream cipher uses a genuine random number stream.",
     "options": [
       "a. False",
@@ -11599,7 +11589,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 1013,
+    "question_number": 1012,
     "question_text": "For the text type of body no special software is required to get the full meaning of the text aside from support of the indicated character set.",
     "options": [
       "a. True",
@@ -11609,7 +11599,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 1014,
+    "question_number": 1013,
     "question_text": "A microprocessor is also called a \"computer on a chip\".",
     "options": [
       "a. True",
@@ -11619,7 +11609,7 @@
     "original_file": "15.json"
   },
   {
-    "question_number": 1015,
+    "question_number": 1014,
     "question_text": "Whirlpool is a popular cryptographic hash function.",
     "options": [
       "True",
@@ -11629,7 +11619,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1016,
+    "question_number": 1015,
     "question_text": "What does accountability support beyond nonrepudiation?",
     "options": [
       "Deterrence, fault isolation, intrusion detection and prevention, and after-action recovery",
@@ -11641,7 +11631,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1017,
+    "question_number": 1016,
     "question_text": "What is another form of masquerade attack?",
     "options": [
       "Observing data",
@@ -11653,7 +11643,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1018,
+    "question_number": 1017,
     "question_text": "What is a DDoS attack?",
     "options": [
       "An attack that encrypts data",
@@ -11665,7 +11655,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1019,
+    "question_number": 1018,
     "question_text": "______ email security threats could prevent end users from being able to send or receive email.",
     "options": [
       "Availability-related",
@@ -11677,7 +11667,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1020,
+    "question_number": 1019,
     "question_text": "Between internal and external firewalls are one or more networked devices in a region referred to as a ______ network.",
     "options": [
       "demilitarized zone",
@@ -11689,7 +11679,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1021,
+    "question_number": 1020,
     "question_text": "The principal object of a hash function is",
     "options": [
       "mapping messages",
@@ -11701,7 +11691,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1022,
+    "question_number": 1021,
     "question_text": "The purpose of the discovery phase in the ______ is for a STA and an AP to recognize each other, agree on a set of security capabilities, and establish an association for future communication using those security capabilities.",
     "options": [
       "WAE",
@@ -11713,7 +11703,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1023,
+    "question_number": 1022,
     "question_text": "Unlike RSA, DSS cannot be used for encryption or key exchange.",
     "options": [
       "True",
@@ -11723,7 +11713,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1024,
+    "question_number": 1023,
     "question_text": "The ______ mode of operation is designed to be parallelizable so that it can provide high throughput with low cost and low latency.",
     "options": [
       "GCM",
@@ -11735,7 +11725,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1025,
+    "question_number": 1024,
     "question_text": "A ______ is an incident in which sensitive, protected, or confidential information is released, viewed, stolen, or used by an individual who is not authorized to do so.",
     "options": [
       "repudiation",
@@ -11747,7 +11737,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1026,
+    "question_number": 1025,
     "question_text": "______ technology provides access control for systems by checking to see if a user's credentials match the credentials in a database of authorized users or in a data authentication server.",
     "options": [
       "Clarification",
@@ -11759,7 +11749,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1027,
+    "question_number": 1026,
     "question_text": "An integer p > 1 is a ______ number if and only if its only divisors are +1 and +p.",
     "options": [
       "positive",
@@ -11771,7 +11761,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1028,
+    "question_number": 1027,
     "question_text": "What does FIPS 199 provide?",
     "options": [
       "Attack methods",
@@ -11783,7 +11773,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1029,
+    "question_number": 1028,
     "question_text": "The strength of any cryptographic system rests with the",
     "options": [
       "nonce",
@@ -11795,7 +11785,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1030,
+    "question_number": 1029,
     "question_text": "S-AES is the most widely used multiple encryption scheme.",
     "options": [
       "False",
@@ -11805,7 +11795,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1031,
+    "question_number": 1030,
     "question_text": "What does the 'Check' phase of PDCA in ISMS involve?",
     "options": [
       "Monitoring and reviewing the ISMS",
@@ -11817,7 +11807,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1032,
+    "question_number": 1031,
     "question_text": "The PMK is used to generate the ______ which consists of three keys to be used for communication between a STA and AP after they have been mutually authenticated.",
     "options": [
       "GTK",
@@ -11829,7 +11819,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1033,
+    "question_number": 1032,
     "question_text": "What does nonrepudiation provide for the sender?",
     "options": [
       "Proof that the message was modified",
@@ -11841,7 +11831,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1034,
+    "question_number": 1033,
     "question_text": "______ can occur when a company's wireless LAN or wireless access points to wired LANs in close proximity and may create overlapping transmission ranges. A user intending to connect to one LAN may unintentionally lock on to a wireless access point from a neighboring network.",
     "options": [
       "Denial of service attacks",
@@ -11853,7 +11843,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1035,
+    "question_number": 1034,
     "question_text": "What is the specific purpose of ISO/IEC 27007?",
     "options": [
       "Guidelines for information security management systems auditing",
@@ -11865,7 +11855,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1036,
+    "question_number": 1035,
     "question_text": "MiniSec has two operating modes: unicast (MiniSec-U) and broadcast (MiniSec-B)",
     "options": [
       "False",
@@ -11875,7 +11865,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1037,
+    "question_number": 1036,
     "question_text": "The greater the number of rounds, the ______ it is to perform cryptanalysis.",
     "options": [
       "harder",
@@ -11887,7 +11877,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1038,
+    "question_number": 1037,
     "question_text": "______ mode is similar to Cipher Feedback, except that the input to the encryption algorithm is the preceding DES output.",
     "options": [
       "Cipher Block Chaining",
@@ -11899,7 +11889,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1039,
+    "question_number": 1038,
     "question_text": "______ provides service to customers in the form of software, specifically application software, running on and accessible in the cloud.",
     "options": [
       "SaaS",
@@ -11911,7 +11901,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1040,
+    "question_number": 1039,
     "question_text": "What is privacy in the context of security?",
     "options": [
       "The ability to hide data completely",
@@ -11923,7 +11913,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1041,
+    "question_number": 1040,
     "question_text": "______ refer to common two-letter combinations in the English language.",
     "options": [
       "Streamings",
@@ -11935,7 +11925,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1042,
+    "question_number": 1041,
     "question_text": "Message authentication is achieved using a",
     "options": [
       "MAC",
@@ -11947,7 +11937,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1043,
+    "question_number": 1042,
     "question_text": "A technique referred to as a ______ is a mapping achieved by performing some sort of permutation on the plaintext letters.",
     "options": [
       "transposition cipher",
@@ -11959,7 +11949,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1044,
+    "question_number": 1043,
     "question_text": "The ______ defines the transport protocol.",
     "options": [
       "IP protocol field",
@@ -11971,7 +11961,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1045,
+    "question_number": 1044,
     "question_text": "What is a digital signature?",
     "options": [
       "An encryption key",
@@ -11983,7 +11973,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1046,
+    "question_number": 1045,
     "question_text": "What distinguishes the Information Assurance Period's approach to security management from previous periods?",
     "options": [
       "It eliminated technical protection",
@@ -11995,7 +11985,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1047,
+    "question_number": 1046,
     "question_text": "What is the relationship between the flow probe and HiSec Insight collector in the network security situational awareness architecture?",
     "options": [
       "They perform independent functions without interaction",
@@ -12007,7 +11997,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1048,
+    "question_number": 1047,
     "question_text": "According to Cybersecurity Law Article 59, what is the fine range for directly responsible management personnel who do not perform cybersecurity protection duties?",
     "options": [
       "RMB 1,000 to 5,000",
@@ -12019,7 +12009,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1049,
+    "question_number": 1048,
     "question_text": "A scanning strategy that uses information contained on an infected victim machine to find more hosts to scan is the ______ method.",
     "options": [
       "random",
@@ -12031,7 +12021,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1050,
+    "question_number": 1049,
     "question_text": "Two issues to consider with the computation required to use RSA are encryption/decryption and",
     "options": [
       "trap-door one-way functions",
@@ -12043,7 +12033,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1051,
+    "question_number": 1050,
     "question_text": "In effect, PaaS is an operating system in the cloud.",
     "options": [
       "False",
@@ -12053,7 +12043,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1052,
+    "question_number": 1051,
     "question_text": "The key exchange protocol is vulnerable to a ______ attack because it does not authenticate the participants.",
     "options": [
       "time complexity",
@@ -12065,7 +12055,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1053,
+    "question_number": 1052,
     "question_text": "What type of cipher was mainly used during the Communication Security Period?",
     "options": [
       "Hash cipher",
@@ -12077,7 +12067,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1054,
+    "question_number": 1053,
     "question_text": "The ______ can be an end user; a device such as a router or server; a process; or any item that can be identified in the subject name of a public key certificate.",
     "options": [
       "repository",
@@ -12089,7 +12079,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1055,
+    "question_number": 1054,
     "question_text": "A brute-force attack on a MAC is easier than a brute-force attack on a hash function.",
     "options": [
       "False",
@@ -12099,7 +12089,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1056,
+    "question_number": 1055,
     "question_text": "An enterprise should have policies for the maximum cryptoperiod of each key type.",
     "options": [
       "False",
@@ -12109,7 +12099,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1057,
+    "question_number": 1056,
     "question_text": "What does 'Remote work is now just work' mean in terms of security requirements?",
     "options": [
       "Remote work security is the same as traditional office security",
@@ -12121,7 +12111,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1058,
+    "question_number": 1057,
     "question_text": "Information in a quantum computer is represented as",
     "options": [
       "qubits",
@@ -12133,7 +12123,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1059,
+    "question_number": 1058,
     "question_text": "There are very few types of devices with embedded systems.",
     "options": [
       "False",
@@ -12143,7 +12133,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1060,
+    "question_number": 1059,
     "question_text": "Cipher Feedback (CFB) is used for the secure transmission of single values.",
     "options": [
       "True",
@@ -12153,7 +12143,7 @@
     "original_file": "16.json"
   },
   {
-    "question_number": 1061,
+    "question_number": 1060,
     "question_text": "Finite fields play a crucial role in many cryptographic algorithms.",
     "options": [
       "False",
@@ -12163,7 +12153,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1062,
+    "question_number": 1061,
     "question_text": "What does GB/T 22240-2020 specify?",
     "options": [
       "Basic requirements",
@@ -12175,7 +12165,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1063,
+    "question_number": 1062,
     "question_text": "On-demand self-service is an essential characteristic of cloud computing.",
     "options": [
       "False",
@@ -12185,7 +12175,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1064,
+    "question_number": 1063,
     "question_text": "The PMK is used to generate the which consists of three keys to be used for communication between a STA and AP after they have been mutually authenticated.",
     "options": [
       "AAA Key",
@@ -12197,7 +12187,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1065,
+    "question_number": 1064,
     "question_text": "The ______ mode operates on full blocks of plaintext and ciphertext, as opposed to an s-bit subset.",
     "options": [
       "OFB",
@@ -12209,7 +12199,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1066,
+    "question_number": 1065,
     "question_text": "We define the of an algorithm to be if, for all n and all inputs of length n the execution of the algorithm takes at most f steps. This is a common measure of the efficiency of an algorithm.",
     "options": [
       "one-way function",
@@ -12221,7 +12211,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1067,
+    "question_number": 1066,
     "question_text": "What example is given of protocol complications?",
     "options": [
       "Fast networks",
@@ -12233,7 +12223,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1068,
+    "question_number": 1067,
     "question_text": "In a situation, a wireless device is configured to appear to be a legitimate access point, enabling the operator to steal passwords from legitimate users and then penetrate a wired network through a legitimate wireless access point.",
     "options": [
       "ad hoc network",
@@ -12245,7 +12235,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1069,
+    "question_number": 1068,
     "question_text": "The purpose of the discovery phase in the is for a STA and an AP to recognize each other, agree on a set of security capabilities, and establish an association for future communication using those security capabilities.",
     "options": [
       "WAE",
@@ -12257,7 +12247,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1070,
+    "question_number": 1069,
     "question_text": "assign attributes to users, such as roles, access permissions, and employee information.",
     "options": [
       "Identity managers",
@@ -12269,7 +12259,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1071,
+    "question_number": 1070,
     "question_text": "Personal technology is single-purpose devices bought by consumers, IT, and OT people exclusively using wireless connectivity, generally of a single form, as part of larger systems.",
     "options": [
       "True",
@@ -12279,7 +12269,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1072,
+    "question_number": 1071,
     "question_text": "Both produce output that is independent of both the plaintext and the ciphertext. This makes them natural candidates for stream ciphers that encrypt plaintext by XOR one full block at a time.",
     "options": [
       "CBC and ECB",
@@ -12291,7 +12281,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1073,
+    "question_number": 1072,
     "question_text": "The first element of the CipherSuite parameter is the key exchange method.",
     "options": [
       "True",
@@ -12301,7 +12291,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1074,
+    "question_number": 1073,
     "question_text": "The key schedule algorithm is more popular and has received more attention than S-box design.",
     "options": [
       "False",
@@ -12311,7 +12301,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1075,
+    "question_number": 1074,
     "question_text": "What is the relationship between the harmed object (citizens' rights, social order, public interests, national security) and the protection level?",
     "options": [
       "The harmed object has no relationship to protection level",
@@ -12323,7 +12313,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1076,
+    "question_number": 1075,
     "question_text": "A scanning strategy that uses information contained on an infected victim machine to find more hosts to scan is the method.",
     "options": [
       "topological",
@@ -12335,7 +12325,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1077,
+    "question_number": 1076,
     "question_text": "A way to improve on the simple monoalphabetic technique is to use different monoalphabetic substitutions as one proceeds through the plaintext message. The general name for this approach is",
     "options": [
       "polyalphabetic substitution cipher",
@@ -12347,7 +12337,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1078,
+    "question_number": 1077,
     "question_text": "are measures of the number of potential collisions for a given hash value.",
     "options": [
       "Preimages",
@@ -12359,7 +12349,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1079,
+    "question_number": 1078,
     "question_text": "The point of public-key encryption is that the public key is",
     "options": [
       "private",
@@ -12371,7 +12361,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1080,
+    "question_number": 1079,
     "question_text": "The first row of State is not altered; for the second row a 1-byte circular left shift is performed; for the third row a 2-byte circular left shift is performed; and for the fourth row a 3-byte circular left shift is performed. This transformation is called",
     "options": [
       "MixColumns",
@@ -12383,7 +12373,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1081,
+    "question_number": 1080,
     "question_text": "What is the key characteristic that makes supply chain attacks particularly dangerous?",
     "options": [
       "They only affect a single organization",
@@ -12395,7 +12385,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1082,
+    "question_number": 1081,
     "question_text": "It is important in a direct digital signature to perform an outer confidentiality function first and then the signature function.",
     "options": [
       "True",
@@ -12405,7 +12395,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1083,
+    "question_number": 1082,
     "question_text": "What effect does detection of active attacks have?",
     "options": [
       "A deterrent effect",
@@ -12417,7 +12407,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1084,
+    "question_number": 1083,
     "question_text": "key determination is a refinement of the Diffie-Hellman key exchange algorithm.",
     "options": [
       "SKE",
@@ -12429,7 +12419,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1085,
+    "question_number": 1084,
     "question_text": "The key algorithmic ingredients of are the AES encryption algorithm, the CTR mode of operation, and the CMAC authentication algorithm.",
     "options": [
       "CCM",
@@ -12441,7 +12431,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1086,
+    "question_number": 1085,
     "question_text": "The ______ is used to ensure the confidentiality of the GTK and other key material in the 4-Way Handshake.",
     "options": [
       "TK",
@@ -12453,7 +12443,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1087,
+    "question_number": 1086,
     "question_text": "There is an increasingly prominent trend in many organizations to move a substantial portion or even all IT operations to an Internet-connected infrastructure known as an enterprise community cloud.",
     "options": [
       "False",
@@ -12463,7 +12453,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1088,
+    "question_number": 1087,
     "question_text": "What are the extended security requirements in Cybersecurity Classified Protection 2.0 designed for?",
     "options": [
       "Only cloud computing platforms",
@@ -12475,7 +12465,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1089,
+    "question_number": 1088,
     "question_text": "What is a man-in-the-middle attack?",
     "options": [
       "An attack that only modifies stored data",
@@ -12487,7 +12477,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1090,
+    "question_number": 1089,
     "question_text": "Prime numbers play a role in number theory.",
     "options": [
       "abbreviated",
@@ -12499,7 +12489,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1091,
+    "question_number": 1090,
     "question_text": "Traditional hash functions may not meet the requirements for implementation on constrained devices.",
     "options": [
       "False",
@@ -12509,7 +12499,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1092,
+    "question_number": 1091,
     "question_text": "The congruence relation is used to define",
     "options": [
       "lowest common divisor",
@@ -12521,7 +12511,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1093,
+    "question_number": 1092,
     "question_text": "A is a set of elements in which we can do addition, subtraction, multiplication, and division without leaving the set.",
     "options": [
       "modulus",
@@ -12533,7 +12523,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1094,
+    "question_number": 1093,
     "question_text": "The true random number generator may simply involve conversion of an analog source to a binary output.",
     "options": [
       "False",
@@ -12543,7 +12533,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1095,
+    "question_number": 1094,
     "question_text": "have the following properties: 1. a = b (mod n) if n|(a - b) 2. a = b (mod n) implies b = a (mod n) 3. a = b (mod n) and b = c (mod n) imply a = c (mod n).",
     "options": [
       "Bijections",
@@ -12555,7 +12545,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1096,
+    "question_number": 1095,
     "question_text": "When using symmetric encryption it is very important to keep the algorithm secret.",
     "options": [
       "False",
@@ -12565,7 +12555,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1097,
+    "question_number": 1096,
     "question_text": "The Secure Hash Algorithm design closely models, and is based on, the hash function",
     "options": [
       "MD4",
@@ -12577,7 +12567,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1098,
+    "question_number": 1097,
     "question_text": "is organized as three protocols that typically run on top of TCP for secure network communications and are designed to be relatively simple and inexpensive to implement.",
     "options": [
       "SSH",
@@ -12589,7 +12579,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1099,
+    "question_number": 1098,
     "question_text": "The of two numbers is the largest integer that divides both numbers.",
     "options": [
       "integral divisor",
@@ -12601,7 +12591,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1100,
+    "question_number": 1099,
     "question_text": "IEEE 802.11 defines seven services that need to be provided by the wireless LAN to achieve functionality equivalent to that which is inherent to wired LANs.",
     "options": [
       "False",
@@ -12611,7 +12601,7 @@
     "original_file": "17.json"
   },
   {
-    "question_number": 1101,
+    "question_number": 1100,
     "question_text": "What do standards organizations provide in cryptography?",
     "options": [
       "Common frameworks and specifications for security implementations",
@@ -12623,7 +12613,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1102,
+    "question_number": 1101,
     "question_text": "An ______ is violations of security policy, usually characterized as attempts to affect the confidentiality, integrity, or availability of a computer or network.",
     "options": [
       "IDS",
@@ -12635,7 +12625,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1103,
+    "question_number": 1102,
     "question_text": "Two numbers are ______ if their greatest common divisor is 1.",
     "options": [
       "relatively prime",
@@ -12647,7 +12637,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1104,
+    "question_number": 1103,
     "question_text": "What makes sense to call out specifically?",
     "options": [
       "Only authentication service",
@@ -12659,7 +12649,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1105,
+    "question_number": 1104,
     "question_text": "The best that can be done to determine if a PRNG generates numbers that have the characteristic of randomness is on the basis of multiple tests. These tests should seek to establish uniformity, scalability, and",
     "options": [
       "sequencing",
@@ -12671,7 +12661,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1106,
+    "question_number": 1105,
     "question_text": "MIME is an extension to the framework that is intended to address some of the problems and limitations of the use of SMTP.",
     "options": [
       "RFC 3852",
@@ -12683,7 +12673,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1107,
+    "question_number": 1106,
     "question_text": "______ identifies the type of data contained in the payload data field by identifying the first header in that payload.",
     "options": [
       "Sequence Header",
@@ -12695,7 +12685,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1108,
+    "question_number": 1107,
     "question_text": "Why is detection of active attacks important beyond just recovery?",
     "options": [
       "It has a deterrent effect",
@@ -12707,7 +12697,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1109,
+    "question_number": 1108,
     "question_text": "What did ISO/IEC 17799 become when it was released in 2000?",
     "options": [
       "Information Security Management System Requirements",
@@ -12719,7 +12709,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1110,
+    "question_number": 1109,
     "question_text": "A typical use of ______ is a situation in which the system administrator trusts the internal users.",
     "options": [
       "firewalls",
@@ -12731,7 +12721,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1111,
+    "question_number": 1110,
     "question_text": "The vast majority of network-based symmetric cryptographic applications make use of ______ ciphers.",
     "options": [
       "linear",
@@ -12743,7 +12733,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1112,
+    "question_number": 1111,
     "question_text": "______ theorem states the following: If p is prime and a is a positive integer not divisible by p, then a^(p-1) ≡ 1 (mod p).",
     "options": [
       "Euler's",
@@ -12755,7 +12745,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1113,
+    "question_number": 1112,
     "question_text": "A ring is said to be ______ if it satisfies the condition ab = ba for all a, b in R.",
     "options": [
       "infinite",
@@ -12767,7 +12757,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1114,
+    "question_number": 1113,
     "question_text": "Allowing for the maximum number of possible encryption mappings from the plaintext block is referred to by Feistel as the",
     "options": [
       "ideal substitution cipher",
@@ -12779,7 +12769,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1115,
+    "question_number": 1114,
     "question_text": "AES can be implemented very efficiently on an 8-bit processor.",
     "options": [
       "True",
@@ -12789,7 +12779,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1116,
+    "question_number": 1115,
     "question_text": "A ______ is used to produce a pseudorandom string of bits of some fixed length.",
     "options": [
       "PRF",
@@ -12801,7 +12791,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1117,
+    "question_number": 1116,
     "question_text": "What was the main focus of security during the Communication Security Period?",
     "options": [
       "System security of entire cyberspace",
@@ -12813,7 +12803,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1118,
+    "question_number": 1117,
     "question_text": "What is information and network security essentially?",
     "options": [
       "A simple process",
@@ -12825,7 +12815,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1119,
+    "question_number": 1118,
     "question_text": "The integration service enables transfer of data between a station on an IEEE 802.11 LAN and a station on an integrated IEEE 802.x LAN.",
     "options": [
       "False",
@@ -12835,7 +12825,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1120,
+    "question_number": 1119,
     "question_text": "Most of the products and standards that use public-key cryptography for encryption and digital signatures use RSA.",
     "options": [
       "False",
@@ -12845,7 +12835,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1121,
+    "question_number": 1120,
     "question_text": "______ can be used to develop a variety of elliptic curve cryptography schemes.",
     "options": [
       "Binary curve",
@@ -12857,7 +12847,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1122,
+    "question_number": 1121,
     "question_text": "If a secret key is to be used as a ______ for conventional encryption a single number must be generated.",
     "options": [
       "prime curve",
@@ -12869,7 +12859,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1123,
+    "question_number": 1122,
     "question_text": "If ______ is done at a network or IP level a key is needed for each pair of hosts on the network that wish to communicate.",
     "options": [
       "end-to-end encryption",
@@ -12881,7 +12871,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1124,
+    "question_number": 1123,
     "question_text": "______ is a procedure that allows communicating parties to verify that the contents of a received message have not been altered and that the source is authentic.",
     "options": [
       "Verification",
@@ -12893,7 +12883,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1125,
+    "question_number": 1124,
     "question_text": "The distribution of bits in a random number sequence should be ______, therefore the frequency of occurrence of ones and zeros should be approximately equal.",
     "options": [
       "uniform",
@@ -12905,7 +12895,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1126,
+    "question_number": 1125,
     "question_text": "The ______ was used as the standard field system by the British Army in World War I and was used by the U.S. Army and other Allied forces during World War II.",
     "options": [
       "Rail Fence cipher",
@@ -12917,7 +12907,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1127,
+    "question_number": 1126,
     "question_text": "The term ______ refers to the characteristic that a cryptographic algorithm makes minimal resource demands on the host system.",
     "options": [
       "superposition",
@@ -12929,7 +12919,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1128,
+    "question_number": 1127,
     "question_text": "What is the relationship between trust models and information security?",
     "options": [
       "The trust model provides a framework for information security",
@@ -12941,7 +12931,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1129,
+    "question_number": 1128,
     "question_text": "What is the relationship between ISO/IEC 27006, 27007, and 27008?",
     "options": [
       "They replace ISO 27002",
@@ -12953,7 +12943,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1130,
+    "question_number": 1129,
     "question_text": "What is the relationship between information breach and other attack methods?",
     "options": [
       "After hackers obtain breached data, they may use it to crack user accounts or initiate attacks through phishing emails",
@@ -12965,7 +12955,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1131,
+    "question_number": 1130,
     "question_text": "IoT devices are typically constrained devices with limited memory, processing power, and power supply.",
     "options": [
       "True",
@@ -12975,7 +12965,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1132,
+    "question_number": 1131,
     "question_text": "A common requirement in a variety of protocols is for the encryption of a symmetric key so that it can be distributed to two parties for future communication.",
     "options": [
       "False",
@@ -12985,7 +12975,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1133,
+    "question_number": 1132,
     "question_text": "Two approaches that use a block cipher to build a PRNG and have gained widespread acceptance are:",
     "options": [
       "CBC mode and CFB mode",
@@ -12997,7 +12987,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1134,
+    "question_number": 1133,
     "question_text": "Phase ______ of the Handshake Protocol establishes security capabilities.",
     "options": [
       "2",
@@ -13009,7 +12999,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1135,
+    "question_number": 1134,
     "question_text": "The purpose of the Maurer's universal statistical test is to determine whether the number of ones and zeros in a sequence are approximately the same as would be expected for a truly random sequence.",
     "options": [
       "False",
@@ -13019,7 +13009,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1136,
+    "question_number": 1135,
     "question_text": "To attack MD5, the attacker can choose any set of messages and work on these offline on a dedicated computing facility to find a collision.",
     "options": [
       "False",
@@ -13029,7 +13019,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1137,
+    "question_number": 1136,
     "question_text": "Authentication must be applied to the entire original IP packet.",
     "options": [
       "False",
@@ -13039,7 +13029,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1138,
+    "question_number": 1137,
     "question_text": "In an ongoing interaction, what must the authentication service assure at connection initiation?",
     "options": [
       "That data is not modified",
@@ -13051,7 +13041,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1139,
+    "question_number": 1138,
     "question_text": "Two theorems that play important roles in public-key cryptography are Fermat's theorem and ______ theorem.",
     "options": [
       "Chinese Remainder",
@@ -13063,7 +13053,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1140,
+    "question_number": 1139,
     "question_text": "A ______ takes as input a source that is effectively random.",
     "options": [
       "BBS",
@@ -13075,7 +13065,7 @@
     "original_file": "18.json"
   },
   {
-    "question_number": 1141,
+    "question_number": 1140,
     "question_text": "What may data modification involve?",
     "options": [
       "Only passive attacks",
@@ -13083,11 +13073,11 @@
       "A man-in-the-middle attack or modification of data after unauthorized access",
       "Only active attacks"
     ],
-    "correct_answer": "A man- in- the- middle attack or modification of data after unauthorized access",
+    "correct_answer": "A man-in- the-middle attack or modification of data after unauthorized access",
     "original_file": "19.json"
   },
   {
-    "question_number": 1142,
+    "question_number": 1141,
     "question_text": "What is the correct answer to the quiz question about ISO 27002 certification in the PDF?",
     "options": [
       "True - ISO 27002 replaces ISO 27001 for certification",
@@ -13099,17 +13089,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1143,
-    "question_text": "If the bit- stream generator is a key- controlled algorithm the two users only need to share the generating key and then each can produce the keystream.",
-    "options": [
-      "False",
-      "True"
-    ],
-    "correct_answer": "True",
-    "original_file": "19.json"
-  },
-  {
-    "question_number": 1144,
+    "question_number": 1142,
     "question_text": "A group is always abelian and may be finite or infinite.",
     "options": [
       "modulus",
@@ -13121,8 +13101,8 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1145,
-    "question_text": "The shared master secret is a one- time 48- byte value generated for a session by means of secure key exchange.",
+    "question_number": 1143,
+    "question_text": "The shared master secret is a one-time 48-byte value generated for a session by means of secure key exchange.",
     "options": [
       "True",
       "False"
@@ -13131,39 +13111,19 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1146,
-    "question_text": "ECC is fundamentally easier to explain than either RSA or Diffie- Hellman.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "False",
-    "original_file": "19.json"
-  },
-  {
-    "question_number": 1147,
-    "question_text": "Big- endian format is the most significant byte of a word in the low- address byte position.",
-    "options": [
-      "False",
-      "True"
-    ],
-    "correct_answer": "True",
-    "original_file": "19.json"
-  },
-  {
-    "question_number": 1148,
-    "question_text": "refers to schemes such as Diffie- Hellman key exchange.",
+    "question_number": 1144,
+    "question_text": "refers to schemes such as Diffie-Hellman key exchange.",
     "options": [
       "Superposition",
       "Code-based cryptography",
       "Key-Establishment Mechanisms",
       "Cryptosystems"
     ],
-    "correct_answer": "Key- Establishment Mechanisms",
+    "correct_answer": "Key-Establishment Mechanisms",
     "original_file": "19.json"
   },
   {
-    "question_number": 1149,
+    "question_number": 1145,
     "question_text": "The , which is the latest of the RSA schemes, is the one that RSA Laboratories recommends as the most secure of the RSA schemes.",
     "options": [
       "DSA-SDS",
@@ -13171,11 +13131,11 @@
       "EDSDS",
       "ECDSA"
     ],
-    "correct_answer": "RSA- PSS",
+    "correct_answer": "RSA-PSS",
     "original_file": "19.json"
   },
   {
-    "question_number": 1150,
+    "question_number": 1146,
     "question_text": "The security of ElGamal is based on the difficulty of computing discrete logarithms.",
     "options": [
       "False",
@@ -13185,7 +13145,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1151,
+    "question_number": 1147,
     "question_text": "The symmetric encryption key for data encrypted by the client and decrypted by the server is a",
     "options": [
       "server write key",
@@ -13197,7 +13157,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1152,
+    "question_number": 1148,
     "question_text": "In the first instance of multiple encryption plaintext is converted to using the encryption algorithm.",
     "options": [
       "Triple DES",
@@ -13209,7 +13169,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1153,
+    "question_number": 1149,
     "question_text": "What technologies does network security situational awareness use?",
     "options": [
       "Only authentication",
@@ -13221,8 +13181,8 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1154,
-    "question_text": "Additional padding may be added to provide partial traffic- flow confidentiality by concealing the actual length of the payload.",
+    "question_number": 1150,
+    "question_text": "Additional padding may be added to provide partial traffic-flow confidentiality by concealing the actual length of the payload.",
     "options": [
       "True",
       "False"
@@ -13231,7 +13191,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1155,
+    "question_number": 1151,
     "question_text": "What does a security service support?",
     "options": [
       "Only mechanisms",
@@ -13243,7 +13203,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1156,
+    "question_number": 1152,
     "question_text": "A is a set in which you can do addition, subtraction, multiplication and division without leaving the set.",
     "options": [
       "block",
@@ -13255,7 +13215,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1157,
+    "question_number": 1153,
     "question_text": "If p is prime and a is a positive integer, then ap = a(mod p) is an alternative form of theorem.",
     "options": [
       "Fermat's",
@@ -13267,7 +13227,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1158,
+    "question_number": 1154,
     "question_text": "The of the group is equal to the number of elements in the group.",
     "options": [
       "order",
@@ -13279,7 +13239,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1159,
+    "question_number": 1155,
     "question_text": "Triple DES makes use of stages of the DES algorithm, using a total of two or three distinct keys.",
     "options": [
       "three",
@@ -13291,7 +13251,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1160,
+    "question_number": 1156,
     "question_text": "The GCM mode makes use of two functions: ______, which is a keyed hash function, and GCTR.",
     "options": [
       "HMAC",
@@ -13303,7 +13263,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1161,
+    "question_number": 1157,
     "question_text": "Message authentication protects two parties who exchange messages from any third party, however, it does not protect the two parties against each other.",
     "options": [
       "False",
@@ -13313,7 +13273,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1162,
+    "question_number": 1158,
     "question_text": "The ______ is formed by taking the hash of the message and encrypting the message with the creator's private key.",
     "options": [
       "hash code",
@@ -13325,51 +13285,19 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1163,
+    "question_number": 1159,
     "question_text": "What is Level 3 protection also known as?",
     "options": [
       "Forced protection",
       "Guided protection",
-      "Self- protection",
+      "Self-protection",
       "Supervised protection"
     ],
     "correct_answer": "Supervised protection",
     "original_file": "19.json"
   },
   {
-    "question_number": 1164,
-    "question_text": "Base64 transfer encoding is also known as radix- 64.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "True",
-    "original_file": "19.json"
-  },
-  {
-    "question_number": 1165,
-    "question_text": "The ______ mode operates on full blocks of plaintext and ciphertext, as opposed to an s- bit subset.",
-    "options": [
-      "OFB",
-      "CBC",
-      "ECB",
-      "CFB"
-    ],
-    "correct_answer": "OFB",
-    "original_file": "19.json"
-  },
-  {
-    "question_number": 1166,
-    "question_text": "A CTR- based authenticated encryption approach is the most efficient mode of operation for high- speed packet networks.",
-    "options": [
-      "False",
-      "True"
-    ],
-    "correct_answer": "True",
-    "original_file": "19.json"
-  },
-  {
-    "question_number": 1167,
+    "question_number": 1160,
     "question_text": "What is the relationship between ISO/IEC 27001 and ISO/IEC 27002?",
     "options": [
       "ISO 27001 is for certification only, while ISO 27002 is for implementation only",
@@ -13381,7 +13309,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1168,
+    "question_number": 1161,
     "question_text": "\"Release of message contents to any person or process not possessing the appropriate cryptographic key\" is a attack.",
     "options": [
       "content modification",
@@ -13393,7 +13321,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1169,
+    "question_number": 1162,
     "question_text": "Insertion of messages into the network from a fraudulent source is a ______ attack.",
     "options": [
       "sequence modification",
@@ -13405,7 +13333,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1170,
+    "question_number": 1163,
     "question_text": "Why are standards important in cryptography and security?",
     "options": [
       "They only apply to encryption",
@@ -13417,7 +13345,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1171,
+    "question_number": 1164,
     "question_text": "What is the relationship between the flow probe and HiSec Insight collector in network security situational awareness?",
     "options": [
       "They are independent systems",
@@ -13429,8 +13357,8 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1172,
-    "question_text": "refer to common two- letter combinations in the English language.",
+    "question_number": 1165,
+    "question_text": "refer to common two-letter combinations in the English language.",
     "options": [
       "Transpositions",
       "Streamings",
@@ -13441,7 +13369,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1173,
+    "question_number": 1166,
     "question_text": "The principal objective for developing a is to enable secure, convenient and efficient acquisition of public keys.",
     "options": [
       "KDC",
@@ -13453,7 +13381,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1174,
+    "question_number": 1167,
     "question_text": "With the scheme, if an adversary succeeds in obtaining or computing the private key of the directory authority, the adversary could authoritatively pass out counterfeit public keys and subsequently impersonate any participant and eavesdrop on messages sent to any participant.",
     "options": [
       "public announcement",
@@ -13465,7 +13393,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1175,
+    "question_number": 1168,
     "question_text": "laaS enables customers to combine basic computing services, such as number crunching and data storage, to build highly adaptable computer systems.",
     "options": [
       "False",
@@ -13475,7 +13403,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1176,
+    "question_number": 1169,
     "question_text": "Feistel proposed that we can approximate the ideal block cipher by utilizing the concept of a cipher, which is the execution of two or more simple ciphers in sequence in such a way that the final result or product is cryptographically stronger than any of the component ciphers.",
     "options": [
       "product",
@@ -13487,7 +13415,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1177,
+    "question_number": 1170,
     "question_text": "What is the key difference between Cybersecurity Classified Protection 1.0 and 2.0?",
     "options": [
       "2.0 is based on 1.0 but covers new technologies such as cloud computing, mobile Internet, IoT, and industrial control systems",
@@ -13499,7 +13427,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1178,
+    "question_number": 1171,
     "question_text": "The can be an end user; a device such as a router or server; a process; or any item that can be identified in the subject name of a public key certificate.",
     "options": [
       "end entity",
@@ -13511,7 +13439,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1179,
+    "question_number": 1172,
     "question_text": "The method is ideal for a short amount of data and is the appropriate mode to use if you want to transmit a DES or AES key securely.",
     "options": [
       "counter mode",
@@ -13523,17 +13451,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1180,
-    "question_text": "The Diffie- Hellman algorithm depends on the difficulty of computing discrete logarithms for its effectiveness.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "True",
-    "original_file": "19.json"
-  },
-  {
-    "question_number": 1181,
+    "question_number": 1173,
     "question_text": "The ______ cryptosystem is used in some form in a number of standards including DSS and S/MIME.",
     "options": [
       "ElGamal",
@@ -13545,7 +13463,7 @@
     "original_file": "19.json"
   },
   {
-    "question_number": 1182,
+    "question_number": 1174,
     "question_text": "Two MACs that are based on the use of a block cipher mode of operation are Data Authentication Algorithm and",
     "options": [
       "CMAC",
@@ -13557,19 +13475,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1183,
-    "question_text": "What happened during the promotion phase (2007- 2016) of Cybersecurity Classified Protection?",
-    "options": [
-      "The system was eliminated",
-      "Cybersecurity Classified Protection 2.0 was released",
-      "This was Cybersecurity Classified Protection 1.0, which was promoted and implemented",
-      "The system was first proposed"
-    ],
-    "correct_answer": "This was Cybersecurity Classified Protection 1.0, which was promoted and implemented",
-    "original_file": "20.json"
-  },
-  {
-    "question_number": 1184,
+    "question_number": 1175,
     "question_text": "What type of application is electronic mail in the context of authentication?",
     "options": [
       "An application with no ongoing interactions",
@@ -13581,7 +13487,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1185,
+    "question_number": 1176,
     "question_text": "Discrete logarithms are fundamental to the digital signature algorithm (DSA) and the algorithm.",
     "options": [
       "Rijndael-Fadiman",
@@ -13589,23 +13495,11 @@
       "Miller-Rabin",
       "Diffie-Hellman key exchange"
     ],
-    "correct_answer": "Diffie- Hellman key exchange",
+    "correct_answer": "Diffie-Hellman key exchange",
     "original_file": "20.json"
   },
   {
-    "question_number": 1186,
-    "question_text": "The Diffie- Hellman key exchange formula for calculation of a secret key by User A is:",
-    "options": [
-      "K = nA × PA",
-      "K = nB × PA",
-      "K = nP × BA",
-      "K = nA × PB"
-    ],
-    "correct_answer": "K = nA × PB",
-    "original_file": "20.json"
-  },
-  {
-    "question_number": 1187,
+    "question_number": 1177,
     "question_text": "The Advanced Encryption Standard and elliptic curve cryptography rely heavily on properties of",
     "options": [
       "order",
@@ -13617,7 +13511,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1188,
+    "question_number": 1178,
     "question_text": "What is the relationship between the ISO 27000 family parts and their purposes?",
     "options": [
       "Only Part I is important",
@@ -13629,19 +13523,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1189,
-    "question_text": "Mister and Adams proposed that all linear combinations of S- box columns should be ______ which are a special class of Boolean functions that are highly nonlinear according to certain mathematical criteria.",
-    "options": [
-      "angular functions",
-      "bent functions",
-      "horizontal functions",
-      "vertical functions"
-    ],
-    "correct_answer": "bent functions",
-    "original_file": "20.json"
-  },
-  {
-    "question_number": 1190,
+    "question_number": 1179,
     "question_text": "modes of operation have been standardized by NIST for use with symmetric block ciphers such as DES and AES.",
     "options": [
       "Five",
@@ -13653,7 +13535,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1191,
+    "question_number": 1180,
     "question_text": "The ______ identifies the public key to be used to verify the signature on this certificate or CRL.",
     "options": [
       "directory",
@@ -13665,8 +13547,8 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1192,
-    "question_text": "The most widely used public- key cryptosystem is ______.",
+    "question_number": 1181,
+    "question_text": "The most widely used public-key cryptosystem is ______.",
     "options": [
       "RSA",
       "asymmetric encryption",
@@ -13677,17 +13559,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1193,
-    "question_text": "A number of public- key ciphers are based on the use of an abelian group.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "True",
-    "original_file": "20.json"
-  },
-  {
-    "question_number": 1194,
+    "question_number": 1182,
     "question_text": "determines the direction in which particular service requests may be initiated and allowed to flow through the firewall.",
     "options": [
       "Service control",
@@ -13699,8 +13571,8 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1195,
-    "question_text": "What is the significance of cyber- savvy boards according to Gartner?",
+    "question_number": 1183,
+    "question_text": "What is the significance of cyber-savvy boards according to Gartner?",
     "options": [
       "Boards should only focus on financial matters",
       "Cybersecurity is not a board-level concern",
@@ -13711,7 +13583,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1196,
+    "question_number": 1184,
     "question_text": "Asymmetric algorithms rely on one key for encryption and a different but related key for decryption.",
     "options": [
       "True",
@@ -13721,7 +13593,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1197,
+    "question_number": 1185,
     "question_text": "What is a trust model?",
     "options": [
       "A type of encryption algorithm",
@@ -13733,7 +13605,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1198,
+    "question_number": 1186,
     "question_text": "The is a directory lookup service that provides a mapping between the name of a host on the Internet and its numerical address.",
     "options": [
       "DNS",
@@ -13745,7 +13617,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1199,
+    "question_number": 1187,
     "question_text": "A cryptographically secure pseudorandom bit generator is defined as one that passes the least significant bit test.",
     "options": [
       "True",
@@ -13755,7 +13627,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1200,
+    "question_number": 1188,
     "question_text": "What are the two main areas of network security?",
     "options": [
       "Encryption and authentication",
@@ -13767,8 +13639,8 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1201,
-    "question_text": "The first row of State is not altered; for the second row a 1- byte circular left shift is performed; for the third row a 2- byte circular left shift is performed; and for the fourth row a 3- byte circular left shift is performed. This transformation is called ______.",
+    "question_number": 1189,
+    "question_text": "The first row of State is not altered; for the second row a 1-byte circular left shift is performed; for the third row a 2-byte circular left shift is performed; and for the fourth row a 3-byte circular left shift is performed. This transformation is called ______.",
     "options": [
       "MixColumns",
       "ShiftRows",
@@ -13779,7 +13651,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1202,
+    "question_number": 1190,
     "question_text": "With the understanding that remainders are allowed, we can say that polynomial division is possible if the coefficient set is a",
     "options": [
       "divisor",
@@ -13791,7 +13663,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1203,
+    "question_number": 1191,
     "question_text": "The cipher consists of N rounds, where the number of rounds depends on the",
     "options": [
       "output matrix",
@@ -13803,7 +13675,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1204,
+    "question_number": 1192,
     "question_text": "What are the management requirements categories in Cybersecurity Classified Protection 2.0?",
     "options": [
       "Only security O&M management",
@@ -13815,8 +13687,8 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1205,
-    "question_text": "Typically housed in the user's computer, a is referred to as a client e- mail program or a local network e- mail server.",
+    "question_number": 1193,
+    "question_text": "Typically housed in the user's computer, a is referred to as a client e-mail program or a local network e-mail server.",
     "options": [
       "Message Transfer Agent",
       "Message Store",
@@ -13827,7 +13699,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1206,
+    "question_number": 1194,
     "question_text": "Identity federation is in essence an extension of identity management to multiple security domains.",
     "options": [
       "False",
@@ -13837,7 +13709,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1207,
+    "question_number": 1195,
     "question_text": "Cipher Feedback Mode conforms to the typical construction of a stream cipher.",
     "options": [
       "False",
@@ -13847,7 +13719,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1208,
+    "question_number": 1196,
     "question_text": "The encryption algorithm performs various transformation on the ciphertext.",
     "options": [
       "True",
@@ -13857,17 +13729,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1209,
-    "question_text": "The SHA- 512 algorithm has the property that every bit of the hash code is a function of every bit of the input.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "True",
-    "original_file": "20.json"
-  },
-  {
-    "question_number": 1210,
+    "question_number": 1197,
     "question_text": "An example of is illegally accessing and then using another user's authentication information, such as username and password.",
     "options": [
       "elevation of privilege",
@@ -13879,7 +13741,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1211,
+    "question_number": 1198,
     "question_text": "are two related keys, a public key and a private key that are used to perform complementary operations, such as encryption and decryption or signature generation and signature verification.",
     "options": [
       "Asymmetric keys",
@@ -13891,8 +13753,8 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1212,
-    "question_text": "SHA- 1 produces a hash value of bits.",
+    "question_number": 1199,
+    "question_text": "SHA-1 produces a hash value of bits.",
     "options": [
       "256",
       "160",
@@ -13903,19 +13765,7 @@
     "original_file": "20.json"
   },
   {
-    "question_number": 1213,
-    "question_text": "Public- key encryption is also known as",
-    "options": [
-      "digital-key encryption",
-      "optimal-key encryption",
-      "asymmetric encryption",
-      "one-way time-exchange encryption"
-    ],
-    "correct_answer": "asymmetric encryption",
-    "original_file": "20.json"
-  },
-  {
-    "question_number": 1214,
+    "question_number": 1200,
     "question_text": "The ______ layer keeps track of which frames have been successfully received and retransmits unsuccessful frames.",
     "options": [
       "logical link control",
@@ -13927,7 +13777,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1215,
+    "question_number": 1201,
     "question_text": "Why is information security complex?",
     "options": [
       "Because it only involves simple encryption",
@@ -13939,7 +13789,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1216,
+    "question_number": 1202,
     "question_text": "For the ______ subtype the order of the parts is not significant.",
     "options": [
       "multipart/digest",
@@ -13951,7 +13801,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1217,
+    "question_number": 1203,
     "question_text": "Analyzers are responsible for collecting data.",
     "options": [
       "False",
@@ -13961,7 +13811,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1218,
+    "question_number": 1204,
     "question_text": "The attack is when the attacker is looking for two messages M and M1 that produce the same hash: H(M) = H(M1)",
     "options": [
       "hash",
@@ -13973,7 +13823,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1219,
+    "question_number": 1205,
     "question_text": "refers to the means of delivering a key to two parties who wish to exchange data, without allowing others to see the key.",
     "options": [
       "Session key delivery",
@@ -13985,7 +13835,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1220,
+    "question_number": 1206,
     "question_text": "For given integers a and b, the extended algorithm not only calculates the greatest common divisor d but also two additional integers x and y.",
     "options": [
       "cyclic",
@@ -13997,7 +13847,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1221,
+    "question_number": 1207,
     "question_text": "A is where the attacker determines the user's private key.",
     "options": [
       "existential forgery",
@@ -14009,7 +13859,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1222,
+    "question_number": 1208,
     "question_text": "One of the most important uses of a ______ cryptosystem is to encrypt secret keys for distribution.",
     "options": [
       "end-to-end",
@@ -14021,7 +13871,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1223,
+    "question_number": 1209,
     "question_text": "The straightforward use of public-key encryption provides confidentiality and authentication.",
     "options": [
       "False",
@@ -14031,7 +13881,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1224,
+    "question_number": 1210,
     "question_text": "The layer of the IEEE 802 reference model that includes such functions as encoding/decoding of signals and bit transmission/reception is the",
     "options": [
       "control layer",
@@ -14043,7 +13893,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1225,
+    "question_number": 1211,
     "question_text": "A is an intermediary that provides connectivity and transport of cloud services from CPs to cloud consumers.",
     "options": [
       "cloud provider",
@@ -14055,7 +13905,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1226,
+    "question_number": 1212,
     "question_text": "A public cloud infrastructure is made available to the general public or a large industry group and is owned by an organization selling cloud services.",
     "options": [
       "True",
@@ -14065,7 +13915,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1227,
+    "question_number": 1213,
     "question_text": "During which period did network technologies enter the practical stage?",
     "options": [
       "Communication Security Period (1940s)",
@@ -14077,7 +13927,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1228,
+    "question_number": 1214,
     "question_text": "A is an algorithm that requires the use of a secret key.",
     "options": [
       "SHA",
@@ -14089,7 +13939,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1229,
+    "question_number": 1215,
     "question_text": "What is the relationship between the four phases of a ransomware attack: intrusion, diffusion, theft, and extortion?",
     "options": [
       "They typically occur sequentially: intrusion leads to diffusion, which enables theft, which precedes extortion",
@@ -14101,7 +13951,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1230,
+    "question_number": 1216,
     "question_text": "What must be considered when developing security mechanisms?",
     "options": [
       "Only the implementation",
@@ -14113,7 +13963,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1231,
+    "question_number": 1217,
     "question_text": "The Linux operating system uses ______ entropy sources for generating random numbers.",
     "options": [
       "four",
@@ -14125,7 +13975,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1232,
+    "question_number": 1218,
     "question_text": "For cryptography the variables and coefficients are restricted to elements in a field.",
     "options": [
       "public",
@@ -14137,7 +13987,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1233,
+    "question_number": 1219,
     "question_text": "In a supply chain attack scenario, how does the backdoor typically get distributed?",
     "options": [
       "Through physical access only",
@@ -14149,7 +13999,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1234,
+    "question_number": 1220,
     "question_text": "affects the contents of bytes in State but does not alter byte sequence and does not depend on byte sequence to perform its transformation.",
     "options": [
       "ShiftRows",
@@ -14161,7 +14011,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1235,
+    "question_number": 1221,
     "question_text": "A sequence of plaintext elements is replaced by a of that sequence which means that no elements are added, deleted or replaced in the sequence, but rather the order in which the elements appear in the sequence is changed.",
     "options": [
       "diffusion",
@@ -14173,7 +14023,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1236,
+    "question_number": 1222,
     "question_text": "In the digital signature algorithm the user's is represented by x, which is a random or pseudorandom integer with 0 < x < q.",
     "options": [
       "per message secret number",
@@ -14185,7 +14035,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1237,
+    "question_number": 1223,
     "question_text": "In what context can a masquerade take the form of a man-in-the-middle attack?",
     "options": [
       "Only in encryption",
@@ -14197,7 +14047,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1238,
+    "question_number": 1224,
     "question_text": "A contains the electronics needed to transmit and receive data.",
     "options": [
       "sensor",
@@ -14209,7 +14059,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1239,
+    "question_number": 1225,
     "question_text": "A prime concern with DES has been its vulnerability to brute-force attack because of its relatively short key length.",
     "options": [
       "False",
@@ -14219,7 +14069,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1240,
+    "question_number": 1226,
     "question_text": "What determines the cybersecurity protection level?",
     "options": [
       "Only the number of users",
@@ -14231,7 +14081,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1241,
+    "question_number": 1227,
     "question_text": "The most widely studied is the NTRU family of cryptographic algorithms.",
     "options": [
       "hash-based approach",
@@ -14243,7 +14093,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1242,
+    "question_number": 1228,
     "question_text": "What makes security requirements seem straightforward?",
     "options": [
       "They are always obvious",
@@ -14255,7 +14105,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1243,
+    "question_number": 1229,
     "question_text": "Data collection, correlation, alerting, and reporting/compliance are all key elements of ______.",
     "options": [
       "malware",
@@ -14267,7 +14117,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1244,
+    "question_number": 1230,
     "question_text": "The form of cubic equation appropriate for cryptographic applications for elliptic curves is somewhat different for GF(2m) than for Zp.",
     "options": [
       "True",
@@ -14277,7 +14127,7 @@
     "original_file": "21.json"
   },
   {
-    "question_number": 1245,
+    "question_number": 1231,
     "question_text": "What is the relationship between the five information security principles: confidentiality, integrity, availability, controllability, and non-repudiation?",
     "options": [
       "Only confidentiality is important",
@@ -14289,10 +14139,10 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1246,
+    "question_number": 1232,
     "question_text": "In AES, the arithmetic operations of addition, multiplication and division are performed over the finite field",
     "options": [
-      "GF(2n- 1)",
+      "GF(2n-1)",
       "a / b = a(b - 1)",
       "GF(28)",
       "Zp"
@@ -14301,7 +14151,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1247,
+    "question_number": 1233,
     "question_text": "The approach is vulnerable to man-in-the-middle attacks.",
     "options": [
       "Anonymous Diffie-Hellman",
@@ -14313,7 +14163,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1248,
+    "question_number": 1234,
     "question_text": "A is a computer program that can copy itself and infect a computer without permission or knowledge of the user.",
     "options": [
       "Trojan horse",
@@ -14325,7 +14175,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1249,
+    "question_number": 1235,
     "question_text": "mode is suitable for parallel operation. Because there is no chaining, multiple blocks can be encrypted or decrypted simultaneously. Unlike CTR mode, this mode includes a nonce as well as a counter.",
     "options": [
       "S-AES",
@@ -14337,7 +14187,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1250,
+    "question_number": 1236,
     "question_text": "A provides a location for monitoring security-related events.",
     "options": [
       "LAN",
@@ -14349,7 +14199,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1251,
+    "question_number": 1237,
     "question_text": "With each element of the list defining both a key exchange algorithm and a CipherSpec, the list that contains the combination of cryptographic algorithms supported by the client in decreasing order of preference is the ______.",
     "options": [
       "Random",
@@ -14361,7 +14211,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1252,
+    "question_number": 1238,
     "question_text": "is the monitoring, protecting, and verifying the security of data at rest, in motion, and in use.",
     "options": [
       "Web security",
@@ -14373,7 +14223,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1253,
+    "question_number": 1239,
     "question_text": "Two numbers are relatively prime if their greatest common divisor is",
     "options": [
       "zero",
@@ -14385,7 +14235,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1254,
+    "question_number": 1240,
     "question_text": "What does PDCA stand for?",
     "options": [
       "Plan, Do, Check, Act",
@@ -14397,7 +14247,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1255,
+    "question_number": 1241,
     "question_text": "What security concerns does the availability service address?",
     "options": [
       "Only encryption issues",
@@ -14409,7 +14259,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1256,
+    "question_number": 1242,
     "question_text": "What is the objective of cyberspace security?",
     "options": [
       "To ensure only network security",
@@ -14421,7 +14271,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1257,
+    "question_number": 1243,
     "question_text": "A is an identifier of a user of TCP.",
     "options": [
       "shell",
@@ -14433,7 +14283,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1258,
+    "question_number": 1244,
     "question_text": "A is a person or organization that maintains a business relationship with, and uses service from, cloud providers.",
     "options": [
       "cloud auditor",
@@ -14445,7 +14295,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1259,
+    "question_number": 1245,
     "question_text": "Message encryption by itself cannot provide a measure of authentication.",
     "options": [
       "True",
@@ -14455,7 +14305,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1260,
+    "question_number": 1246,
     "question_text": "The layer of the IEEE 802 reference model that includes such functions as encoding/decoding of signals and bit transmission/reception is the ______.",
     "options": [
       "control layer",
@@ -14467,7 +14317,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1261,
+    "question_number": 1247,
     "question_text": "allows email senders to specify policy on how their mail should be handled, the types of reports that receivers can send back, and the frequency those reports should be sent.",
     "options": [
       "DMARC",
@@ -14479,7 +14329,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1262,
+    "question_number": 1248,
     "question_text": "For purposes of ECC, elliptic curve arithmetic involves the use of an elliptic curve equation defined over an infinite field.",
     "options": [
       "True",
@@ -14489,7 +14339,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1263,
+    "question_number": 1249,
     "question_text": "In an unprotected network environment any client can apply to any server for service. The obvious security risk of this is ______.",
     "options": [
       "authorization",
@@ -14501,7 +14351,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1264,
+    "question_number": 1250,
     "question_text": "The digital signature approach uses an algorithm that is designed to provide only the function.",
     "options": [
       "digital signature",
@@ -14513,7 +14363,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1265,
+    "question_number": 1251,
     "question_text": "The Nyberg approach that is more or less a manual approach with only simple mathematics to support it is",
     "options": [
       "random",
@@ -14525,7 +14375,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1266,
+    "question_number": 1252,
     "question_text": "The cloud computing model promotes availability and is composed of three essential characteristics, four service models, and three deployment models.",
     "options": [
       "True",
@@ -14535,7 +14385,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1267,
+    "question_number": 1253,
     "question_text": "Examples of are the rational numbers, the real numbers, and the complex numbers.",
     "options": [
       "groups",
@@ -14547,7 +14397,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1268,
+    "question_number": 1254,
     "question_text": "What does Level 2 protection apply to?",
     "options": [
       "Extremely important systems",
@@ -14559,39 +14409,7 @@
     "original_file": "22.json"
   },
   {
-    "question_number": 1269,
-    "question_text": "The heart of a Feistel block cipher is the function F, which relies on the use of S- boxes.",
-    "options": [
-      "False",
-      "True"
-    ],
-    "correct_answer": "True",
-    "original_file": "23.json"
-  },
-  {
-    "question_number": 1270,
-    "question_text": "In what context can a masquerade take the form of a man- in- the- middle attack?",
-    "options": [
-      "Only in encryption",
-      "Only in message authentication",
-      "In defeating key exchange, distribution protocols, and message authentication protocols",
-      "Only in key exchange"
-    ],
-    "correct_answer": "In defeating key exchange, distribution protocols, and message authentication protocols",
-    "original_file": "23.json"
-  },
-  {
-    "question_number": 1271,
-    "question_text": "A circuit- level gateway permits an end- to- end TCP connection.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "False",
-    "original_file": "23.json"
-  },
-  {
-    "question_number": 1272,
+    "question_number": 1255,
     "question_text": "An entity that relies upon the subscriber's authenticator(s) and credentials or a verifier's assertion of a claimant's identity, typically to process a transaction or grant access to information or a system is the",
     "options": [
       "applicant",
@@ -14603,7 +14421,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1273,
+    "question_number": 1256,
     "question_text": "What is the key difference between ISO/IEC 27001 and ISO/IEC 27002 in terms of their purpose?",
     "options": [
       "ISO 27001 is optional while ISO 27002 is mandatory",
@@ -14615,7 +14433,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1274,
+    "question_number": 1257,
     "question_text": "A uses a nondeterministic source to produce randomness.",
     "options": [
       "CSPRBG",
@@ -14627,27 +14445,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1275,
-    "question_text": "The straightforward use of public- key encryption provides confidentiality and authentication.",
-    "options": [
-      "False",
-      "True"
-    ],
-    "correct_answer": "False",
-    "original_file": "23.json"
-  },
-  {
-    "question_number": 1276,
-    "question_text": "A number of Internet based applications have adopted two- key 3DES, including PGP and S/MIME.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "False",
-    "original_file": "23.json"
-  },
-  {
-    "question_number": 1277,
+    "question_number": 1258,
     "question_text": "As a ______ relation, mod expresses that two arguments have the same remainder with respect to a given modulus.",
     "options": [
       "cyclic",
@@ -14659,7 +14457,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1278,
+    "question_number": 1259,
     "question_text": "The methods of _____ conceal the existence of the message in a graphic image.",
     "options": [
       "cryptography",
@@ -14671,7 +14469,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1279,
+    "question_number": 1260,
     "question_text": "is a procedure that allows communicating parties to verify that the contents of a received message have not been altered and that the source is authentic.",
     "options": [
       "Message authentication",
@@ -14683,17 +14481,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1280,
-    "question_text": "There are well- defined tests for determining uniform distribution and independence to validate that a sequence of numbers is random.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "False",
-    "original_file": "23.json"
-  },
-  {
-    "question_number": 1281,
+    "question_number": 1261,
     "question_text": "Symmetric encryption remains by far the most widely used of the two types of encryption.",
     "options": [
       "False",
@@ -14703,7 +14491,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1282,
+    "question_number": 1262,
     "question_text": "What does traffic flow analysis protection prevent an attacker from observing?",
     "options": [
       "Only the source",
@@ -14715,17 +14503,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1283,
-    "question_text": "Non- repudiation threats are associated with users who deny performing an action without other parties having any way to prove otherwise.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "False",
-    "original_file": "23.json"
-  },
-  {
-    "question_number": 1284,
+    "question_number": 1263,
     "question_text": "Kerberos relies exclusively on",
     "options": [
       "symmetric encryption",
@@ -14737,7 +14515,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1285,
+    "question_number": 1264,
     "question_text": "What is data in the context of security?",
     "options": [
       "Any information",
@@ -14749,7 +14527,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1286,
+    "question_number": 1265,
     "question_text": "The integration service enables transfer of data between a station on an IEEE 802.11 LAN and a station on an integrated IEEE 802. x LAN.",
     "options": [
       "False",
@@ -14759,7 +14537,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1287,
+    "question_number": 1266,
     "question_text": "A is an undocumented way of gaining access to a computer system.",
     "options": [
       "bot",
@@ -14771,7 +14549,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1288,
+    "question_number": 1267,
     "question_text": "What does BAS stand for?",
     "options": [
       "Breach and Attack Service",
@@ -14783,7 +14561,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1289,
+    "question_number": 1268,
     "question_text": "The theorem states that it is possible to reconstruct integers in a certain range from their residues modulo a set of pairwise relatively prime moduli.",
     "options": [
       "Fermat's",
@@ -14795,7 +14573,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1290,
+    "question_number": 1269,
     "question_text": "Division requires that each nonzero element have a ♣ inverse.",
     "options": [
       "divisional",
@@ -14807,7 +14585,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1291,
+    "question_number": 1270,
     "question_text": "An original intelligible message fed into the algorithm as input is known as , while the coded message produced as output is called the",
     "options": [
       "encryption, decryption",
@@ -14819,7 +14597,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1292,
+    "question_number": 1271,
     "question_text": "What is the main reason security mechanisms are often counterintuitive?",
     "options": [
       "They are always simple",
@@ -14831,7 +14609,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1293,
+    "question_number": 1272,
     "question_text": "In the general structure of the AES encryption process the input to the encryption and decryption algorithms is a single block.",
     "options": [
       "64-bit",
@@ -14839,21 +14617,11 @@
       "256-bit",
       "32-bit"
     ],
-    "correct_answer": "128- bit",
+    "correct_answer": "128-bit",
     "original_file": "23.json"
   },
   {
-    "question_number": 1294,
-    "question_text": "The Handshake Protocol is the simplest of the four TLS- specific protocols that use the TLS Record Protocol.",
-    "options": [
-      "False",
-      "True"
-    ],
-    "correct_answer": "False",
-    "original_file": "23.json"
-  },
-  {
-    "question_number": 1295,
+    "question_number": 1273,
     "question_text": "What is the role of the assessment organization in Cybersecurity Classified Protection?",
     "options": [
       "They assist in building the system",
@@ -14865,7 +14633,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1296,
+    "question_number": 1274,
     "question_text": "is a characteristic of a system component that provides passive protection against an attack.",
     "options": [
       "Tamper integration",
@@ -14877,19 +14645,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1297,
-    "question_text": "What is the significance of the fact that vulnerability discovery penetrates from the application layer to bottom- layer components and even to the architecture layer?",
-    "options": [
-      "Vulnerabilities are less dangerous",
-      "Vulnerabilities are easier to fix",
-      "It expands the impact of vulnerabilities, making them more difficult to address and potentially affecting fundamental system architecture",
-      "Vulnerabilities only affect applications"
-    ],
-    "correct_answer": "It expands the impact of vulnerabilities, making them more difficult to address and potentially affecting fundamental system architecture",
-    "original_file": "23.json"
-  },
-  {
-    "question_number": 1298,
+    "question_number": 1275,
     "question_text": "The accepts the message submitted by a Message User Agent and enforces the policies of the hosting domain and the requirements of Internet standards.",
     "options": [
       "Mail Delivery Agent",
@@ -14901,20 +14657,8 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1299,
-    "question_text": "What does GB/T 25058- 2019 specify?",
-    "options": [
-      "Design requirements",
-      "Basic requirements",
-      "Implementation guideline",
-      "Assessment requirements"
-    ],
-    "correct_answer": "Implementation guideline",
-    "original_file": "23.json"
-  },
-  {
-    "question_number": 1300,
-    "question_text": "A is an algorithm for which it is computationally infeasible to find either (a) a data object that maps to a pre- specified hash result or (b) two data objects that map to the same hash result.",
+    "question_number": 1276,
+    "question_text": "A is an algorithm for which it is computationally infeasible to find either (a) a data object that maps to a pre-specified hash result or (b) two data objects that map to the same hash result.",
     "options": [
       "cryptographic hash function",
       "one-way hash function",
@@ -14925,7 +14669,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1301,
+    "question_number": 1277,
     "question_text": "If a number is the highest possible exponent to which a number can belong, it is referred to as a of n.",
     "options": [
       "primitive root",
@@ -14937,18 +14681,8 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1302,
-    "question_text": "The way to measure the resistance of a hash algorithm to cryptanalysis is to compare its strength to the effort required for a brute- force attack.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "True",
-    "original_file": "23.json"
-  },
-  {
-    "question_number": 1303,
-    "question_text": "Another important mode, XTS- AES, has been standardized by the ______ Security in Storage Working Group.",
+    "question_number": 1278,
+    "question_text": "Another important mode, XTS-AES, has been standardized by the ______ Security in Storage Working Group.",
     "options": [
       "ITIL",
       "ISO",
@@ -14959,7 +14693,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1304,
+    "question_number": 1279,
     "question_text": "The cryptographic hash function requirement that guarantees that it is impossible to find an alternative message with the same hash value as a given message and prevents forgery when an encrypted hash code is used is the",
     "options": [
       "collision resistant",
@@ -14971,7 +14705,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1305,
+    "question_number": 1280,
     "question_text": "What is a masquerade attack?",
     "options": [
       "An attack that only modifies data",
@@ -14983,7 +14717,7 @@
     "original_file": "23.json"
   },
   {
-    "question_number": 1306,
+    "question_number": 1281,
     "question_text": "______ establishes that a subject is who they claim to be to a stated level of certitude.",
     "options": [
       "Identity proofing",
@@ -14995,7 +14729,7 @@
     "original_file": "24.json"
   },
   {
-    "question_number": 1307,
+    "question_number": 1282,
     "question_text": "We define the ______ of an algorithm to be if, for all n and all inputs of length n the execution of the algorithm takes at most f steps. This is a common measure of the efficiency of an algorithm.",
     "options": [
       "one-way function",
@@ -15007,7 +14741,7 @@
     "original_file": "24.json"
   },
   {
-    "question_number": 1308,
+    "question_number": 1283,
     "question_text": "In a ______ situation, a wireless device is configured to appear to be a legitimate access point, enabling the operator to steal passwords from legitimate users and then penetrate a wired network through a legitimate wireless access point.",
     "options": [
       "ad hoc network",
@@ -15019,7 +14753,7 @@
     "original_file": "24.json"
   },
   {
-    "question_number": 1309,
+    "question_number": 1284,
     "question_text": "Both ______ produce output that is independent of both the plaintext and the ciphertext. This makes them natural candidates for stream ciphers that encrypt plaintext by XOR one full block at a time.",
     "options": [
       "CBC and ECB",
@@ -15031,7 +14765,7 @@
     "original_file": "24.json"
   },
   {
-    "question_number": 1310,
+    "question_number": 1285,
     "question_text": "The 'smart' in a smart device is provided by a deeply embedded transceiver.",
     "options": [
       "True",
@@ -15041,7 +14775,7 @@
     "original_file": "24.json"
   },
   {
-    "question_number": 1311,
+    "question_number": 1286,
     "question_text": "In the ISO 27001 project implementation, what activities are part of the 'Do' phase?",
     "options": [
       "Only auditing",
@@ -15053,7 +14787,7 @@
     "original_file": "24.json"
   },
   {
-    "question_number": 1312,
+    "question_number": 1287,
     "question_text": "______ is designed for small embedded systems with tight requirements on memory, processing time, real-time response, and power consumption.",
     "options": [
       "RBAC",
@@ -15065,7 +14799,7 @@
     "original_file": "24.json"
   },
   {
-    "question_number": 1313,
+    "question_number": 1288,
     "question_text": "______ is an extension of identity management to multiple security domains such as autonomous internal business units, external business partners and other third party applications and services with the goal of sharing digital identities so that a user can be authenticated a single time and then access applications and resources across multiple domains.",
     "options": [
       "Data security management",
@@ -15077,7 +14811,7 @@
     "original_file": "24.json"
   },
   {
-    "question_number": 1314,
+    "question_number": 1289,
     "question_text": "______ key determination is a refinement of the Diffie-Hellman key exchange algorithm.",
     "options": [
       "SKE",
@@ -15089,7 +14823,7 @@
     "original_file": "24.json"
   },
   {
-    "question_number": 1315,
+    "question_number": 1290,
     "question_text": "The key algorithmic ingredients of ______ are the AES encryption algorithm, the CTR mode of operation, and the CMAC authentication algorithm.",
     "options": [
       "CCM",
@@ -15101,7 +14835,7 @@
     "original_file": "24.json"
   },
   {
-    "question_number": 1316,
+    "question_number": 1291,
     "question_text": "A Kerberos ______ is a set of managed nodes that share the same Kerberos database.",
     "options": [
       "network",
@@ -15113,7 +14847,7 @@
     "original_file": "24.json"
   },
   {
-    "question_number": 1317,
+    "question_number": 1292,
     "question_text": "______ have the following properties: 1. a ≡ b (mod n) if n|(a - b) 2. a ≡ b (mod n) implies b ≡ a (mod n) 3. a ≡ b (mod n) and b ≡ c (mod n) imply a ≡ c (mod n).",
     "options": [
       "Bijections",
@@ -15125,7 +14859,7 @@
     "original_file": "24.json"
   },
   {
-    "question_number": 1318,
+    "question_number": 1293,
     "question_text": "______ is organized as three protocols that typically run on top of TCP for secure network communications and are designed to be relatively simple and inexpensive to implement.",
     "options": [
       "SSH",
@@ -15137,7 +14871,7 @@
     "original_file": "24.json"
   },
   {
-    "question_number": 1319,
+    "question_number": 1294,
     "question_text": "The ______ of two numbers is the largest integer that divides both numbers.",
     "options": [
       "integral divisor",
@@ -15149,7 +14883,7 @@
     "original_file": "24.json"
   },
   {
-    "question_number": 1320,
+    "question_number": 1295,
     "question_text": "The function F provides the element of ______ in a Feistel cipher.",
     "options": [
       "stability",
@@ -15161,7 +14895,7 @@
     "original_file": "24.json"
   },
   {
-    "question_number": 1321,
+    "question_number": 1296,
     "question_text": "The most complex part of TLS is the",
     "options": [
       "Alert Protocol",
@@ -15173,7 +14907,7 @@
     "original_file": "25.json"
   },
   {
-    "question_number": 1322,
+    "question_number": 1297,
     "question_text": "The cloud infrastructure is a composition of two or more clouds that remain unique entities but are bound together by standardized or proprietary technology that enables data and application portability.",
     "options": [
       "private",
@@ -15185,7 +14919,7 @@
     "original_file": "25.json"
   },
   {
-    "question_number": 1323,
+    "question_number": 1298,
     "question_text": "An important quantity in number theory referred to as is defined as the number of positive integers less than n and relatively prime to n.",
     "options": [
       "CRT",
@@ -15197,7 +14931,7 @@
     "original_file": "25.json"
   },
   {
-    "question_number": 1324,
+    "question_number": 1299,
     "question_text": "The AES cipher begins and ends with a stage because any other stage, applied at the beginning or end, is reversible without knowledge of the key and would add no security.",
     "options": [
       "Substitute bytes",
@@ -15209,7 +14943,7 @@
     "original_file": "25.json"
   },
   {
-    "question_number": 1325,
+    "question_number": 1300,
     "question_text": "Two numbers are relatively prime if they have prime factors in common.",
     "options": [
       "all",
@@ -15221,7 +14955,7 @@
     "original_file": "25.json"
   },
   {
-    "question_number": 1326,
+    "question_number": 1301,
     "question_text": "What questions are raised about secret information?",
     "options": [
       "Creation, distribution, and protection of that secret information",
@@ -15233,7 +14967,7 @@
     "original_file": "25.json"
   },
   {
-    "question_number": 1327,
+    "question_number": 1302,
     "question_text": "An encryption/decryption system requires a point G and an elliptic group as parameters.",
     "options": [
       "Ea(q,b)",
@@ -15245,7 +14979,7 @@
     "original_file": "25.json"
   },
   {
-    "question_number": 1328,
+    "question_number": 1303,
     "question_text": "The MIME field is a text description of the object with the body; this is useful when the object is not readable (e.g. audio data).",
     "options": [
       "Content-Description",
@@ -15257,7 +14991,7 @@
     "original_file": "25.json"
   },
   {
-    "question_number": 1329,
+    "question_number": 1304,
     "question_text": "What is a passive attack?",
     "options": [
       "An attack that attempts to learn or make use of information from the system but does not affect system resources",
@@ -15269,7 +15003,7 @@
     "original_file": "25.json"
   },
   {
-    "question_number": 1330,
+    "question_number": 1305,
     "question_text": "A mode of operation is a technique for enhancing the effect of a cryptographic algorithm or adapting the algorithm for an application.",
     "options": [
       "True",
@@ -15279,7 +15013,7 @@
     "original_file": "25.json"
   },
   {
-    "question_number": 1331,
+    "question_number": 1306,
     "question_text": "Manual delivery of a key is not reasonable for link encryption.",
     "options": [
       "True",
@@ -15289,7 +15023,7 @@
     "original_file": "25.json"
   },
   {
-    "question_number": 1332,
+    "question_number": 1307,
     "question_text": "For a defined over GF(2m), the variables and coefficients all take on values in GF(2m) and in calculations are performed over GF(2m).",
     "options": [
       "binary curve",
@@ -15301,7 +15035,7 @@
     "original_file": "25.json"
   },
   {
-    "question_number": 1333,
+    "question_number": 1308,
     "question_text": "What is the relationship between integrity and nonrepudiation?",
     "options": [
       "They are unrelated",
@@ -15313,7 +15047,7 @@
     "original_file": "25.json"
   },
   {
-    "question_number": 1334,
+    "question_number": 1309,
     "question_text": "An example of a lightweight cryptographic block cipher is the Scalable Encryption Algorithm.",
     "options": [
       "False",
@@ -15323,19 +15057,7 @@
     "original_file": "25.json"
   },
   {
-    "question_number": 1335,
-    "question_text": "SHA-1 produces a hash value of bits.",
-    "options": [
-      "256",
-      "160",
-      "384",
-      "224"
-    ],
-    "correct_answer": "160",
-    "original_file": "25.json"
-  },
-  {
-    "question_number": 1336,
+    "question_number": 1310,
     "question_text": "What is the primary purpose of ISO/IEC 27006?",
     "options": [
       "Certification and recognition guidelines",
@@ -15347,7 +15069,7 @@
     "original_file": "25.json"
   },
   {
-    "question_number": 1337,
+    "question_number": 1311,
     "question_text": "Once the plaintext is converted to ciphertext using the encryption algorithm the plaintext is then used as input and the algorithm is applied again.",
     "options": [
       "True",
@@ -15357,7 +15079,7 @@
     "original_file": "25.json"
   },
   {
-    "question_number": 1338,
+    "question_number": 1312,
     "question_text": "The Chinese Remainder Theorem is believed to have been discovered by the Chinese mathematician Agrawal in 100 A.D.",
     "options": [
       "False",
@@ -15367,7 +15089,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1339,
+    "question_number": 1313,
     "question_text": "The most widely studied is the ______ family of cryptographic algorithms.",
     "options": [
       "lattice-based approach",
@@ -15379,7 +15101,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1340,
+    "question_number": 1314,
     "question_text": "The ______ test is the most basic test of randomness and must be included in any test suite.",
     "options": [
       "runs",
@@ -15391,7 +15113,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1341,
+    "question_number": 1315,
     "question_text": "The ______ of a number is defined to be the power to which some positive base (except 1) must be raised in order to equal the number.",
     "options": [
       "exponent",
@@ -15403,7 +15125,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1342,
+    "question_number": 1316,
     "question_text": "Typically housed in the user's computer, a ______ is referred to as a client e-mail program or a local network e-mail server.",
     "options": [
       "Mail Submission Agent",
@@ -15415,7 +15137,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1343,
+    "question_number": 1317,
     "question_text": "A ______ is a one way relationship between a sender and a receiver that affords security services to the traffic carried on it.",
     "options": [
       "SPD",
@@ -15427,7 +15149,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1344,
+    "question_number": 1318,
     "question_text": "What does a digital signature allow?",
     "options": [
       "A recipient to prove the source and integrity of a data unit",
@@ -15439,7 +15161,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1345,
+    "question_number": 1319,
     "question_text": "A more important class of finite fields, for cryptography, comprises those with 2^n elements depicted as fields of the form GF(2^n).",
     "options": [
       "False",
@@ -15449,7 +15171,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1346,
+    "question_number": 1320,
     "question_text": "A ______ is a device with limited volatile and nonvolatile memory, limited processing power, and a low data rate transceiver.",
     "options": [
       "IoT",
@@ -15461,7 +15183,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1347,
+    "question_number": 1321,
     "question_text": "What is the key principle that zero trust enforces for all access attempts?",
     "options": [
       "Trust all internal users",
@@ -15473,7 +15195,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1348,
+    "question_number": 1322,
     "question_text": "The ______ scheme minimizes the message dependent amount of computation required to generate a signature.",
     "options": [
       "ElGamal",
@@ -15485,7 +15207,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1349,
+    "question_number": 1323,
     "question_text": "What is the first trend in Gartner's Top 8 Security and Risk Trends?",
     "options": [
       "Identity-first security",
@@ -15497,7 +15219,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1350,
+    "question_number": 1324,
     "question_text": "______ is a mechanism or service used to verify the integrity of a message.",
     "options": [
       "Data mapping",
@@ -15509,7 +15231,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1351,
+    "question_number": 1325,
     "question_text": "The ______ is designed to be stored on a RFID tag and it provides a universal identifier for every physical object anywhere in the world.",
     "options": [
       "NTU",
@@ -15521,7 +15243,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1352,
+    "question_number": 1326,
     "question_text": "For many cryptographic algorithms, it is necessary to select one or more very large prime numbers.",
     "options": [
       "False",
@@ -15531,7 +15253,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1353,
+    "question_number": 1327,
     "question_text": "A centralized, automated approach to provide enterprise-wide access to resources by employees and other authorized individuals with a focus of defining an identity for each user, associating attributes with the identity, and enforcing a means by which a user can verify identity is ______.",
     "options": [
       "realm management",
@@ -15543,7 +15265,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1354,
+    "question_number": 1328,
     "question_text": "The congruence relation is used to define ______.",
     "options": [
       "residue classes",
@@ -15555,7 +15277,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1355,
+    "question_number": 1329,
     "question_text": "In a man-in-the-middle attack, what does the attacker do to the server?",
     "options": [
       "Deletes messages",
@@ -15567,7 +15289,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1356,
+    "question_number": 1330,
     "question_text": "What makes understanding security mechanisms challenging?",
     "options": [
       "Understanding them may involve rather subtle reasoning",
@@ -15579,7 +15301,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1357,
+    "question_number": 1331,
     "question_text": "Groups, rings, and fields are the fundamental elements of a branch of mathematics known as abstract algebra.",
     "options": [
       "True",
@@ -15589,7 +15311,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1358,
+    "question_number": 1332,
     "question_text": "The ______ is a directory lookup service that provides a mapping between the name of a host on the Internet and its numerical address.",
     "options": [
       "POP",
@@ -15601,7 +15323,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1359,
+    "question_number": 1333,
     "question_text": "What is one form of denial of service attack?",
     "options": [
       "Authenticating users",
@@ -15613,7 +15335,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1360,
+    "question_number": 1334,
     "question_text": "Two integers are ______ if their only common positive integer factor is 1.",
     "options": [
       "congruent modulo",
@@ -15625,7 +15347,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1361,
+    "question_number": 1335,
     "question_text": "The MIME-Version field must have the parameter value 1.0 in order for the message to conform to RFCs 2045 and 2046.",
     "options": [
       "True",
@@ -15635,7 +15357,7 @@
     "original_file": "26.json"
   },
   {
-    "question_number": 1362,
+    "question_number": 1336,
     "question_text": "______ is techniques to ensure that the overall system is made aware of unwanted physical access.",
     "options": [
       "Tamper detection",
@@ -15647,7 +15369,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1363,
+    "question_number": 1337,
     "question_text": "What is the relationship between confidentiality and privacy?",
     "options": [
       "They are identical",
@@ -15659,7 +15381,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1364,
+    "question_number": 1338,
     "question_text": "Allowing for the maximum number of possible encryption mappings from the plaintext block is referred to by Feistel as the ______.",
     "options": [
       "ideal block cipher",
@@ -15671,7 +15393,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1365,
+    "question_number": 1339,
     "question_text": "The final round of both encryption and decryption of the AES structure consists of ______ stages.",
     "options": [
       "two",
@@ -15683,7 +15405,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1366,
+    "question_number": 1340,
     "question_text": "There is not a computational advantage to using ECC with a shorter key length than a comparably secure RSA.",
     "options": [
       "False",
@@ -15693,7 +15415,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1367,
+    "question_number": 1341,
     "question_text": "The IoT depends heavily on deeply embedded systems.",
     "options": [
       "False",
@@ -15703,7 +15425,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1368,
+    "question_number": 1342,
     "question_text": "In Advanced Encryption Standard all operations are performed on ______ bytes.",
     "options": [
       "16-bit",
@@ -15715,7 +15437,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1369,
+    "question_number": 1343,
     "question_text": "If b|a we say that b is a divisor of a.",
     "options": [
       "True",
@@ -15725,7 +15447,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1370,
+    "question_number": 1344,
     "question_text": "With a ______ attack the attacker is given access to a set of messages and their signatures.",
     "options": [
       "directed chosen message",
@@ -15737,7 +15459,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1371,
+    "question_number": 1345,
     "question_text": "What are the two categories of cryptographic mechanisms mentioned?",
     "options": [
       "Public and private",
@@ -15749,7 +15471,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1372,
+    "question_number": 1346,
     "question_text": "Switches, sensors, and circuitry are mechanisms for tamper detection.",
     "options": [
       "False",
@@ -15759,7 +15481,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1373,
+    "question_number": 1347,
     "question_text": "______ are two related keys, a public key and a private key that are used to perform complementary operations, such as encryption and decryption or signature generation and signature verification.",
     "options": [
       "Key exchanges",
@@ -15771,7 +15493,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1374,
+    "question_number": 1348,
     "question_text": "The ______ is used to convey TLS-related alerts to the peer entity.",
     "options": [
       "Handshake Protocol",
@@ -15783,7 +15505,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1375,
+    "question_number": 1349,
     "question_text": "A good hash function has the property that 'the results of applying the function to a large set of inputs will produce outputs that are evenly distributed and apparently random'.",
     "options": [
       "False",
@@ -15793,7 +15515,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1376,
+    "question_number": 1350,
     "question_text": "Core servers also host the applications that interact with and manage the IoT devices and analyze the IoT-generated data.",
     "options": [
       "False",
@@ -15803,7 +15525,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1377,
+    "question_number": 1351,
     "question_text": "The ______ attack is the easiest to defend against because the opponent has the least amount of information to work with.",
     "options": [
       "chosen ciphertext",
@@ -15815,7 +15537,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1378,
+    "question_number": 1352,
     "question_text": "Message authentication may also verify sequencing and timeliness.",
     "options": [
       "True",
@@ -15825,7 +15547,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1379,
+    "question_number": 1353,
     "question_text": "The form of cubic equation appropriate for cryptographic applications for elliptic curves is somewhat different for GF(2^m) than for Z_p.",
     "options": [
       "False",
@@ -15835,7 +15557,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1380,
+    "question_number": 1354,
     "question_text": "In the digital signature algorithm the user's ______ is represented by x, which is a random or pseudorandom integer with 0 < x < q.",
     "options": [
       "per message secret number",
@@ -15847,7 +15569,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1381,
+    "question_number": 1355,
     "question_text": "A ______ is an algorithm that requires the use of a secret key.",
     "options": [
       "MAC",
@@ -15859,7 +15581,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1382,
+    "question_number": 1356,
     "question_text": "An example of ______ is illegally accessing and then using another user's authentication information, such as username and password.",
     "options": [
       "tampering with data",
@@ -15871,7 +15593,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1383,
+    "question_number": 1357,
     "question_text": "______ techniques map plaintext elements (characters, bits) into ciphertext elements.",
     "options": [
       "Transposition",
@@ -15883,7 +15605,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1384,
+    "question_number": 1358,
     "question_text": "The key management mechanism that is used to distribute keys is coupled to the authentication and privacy mechanisms only by way of the ______.",
     "options": [
       "IAB",
@@ -15895,7 +15617,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1385,
+    "question_number": 1359,
     "question_text": "The ______, which is the latest of the RSA schemes, is the one that RSA Laboratories recommends as the most secure of the RSA schemes.",
     "options": [
       "DSA-SDS",
@@ -15907,7 +15629,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1386,
+    "question_number": 1360,
     "question_text": "A source that is effectively random is referred to as",
     "options": [
       "an entropy source",
@@ -15919,7 +15641,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1387,
+    "question_number": 1361,
     "question_text": "The ______ protocol enables two users to establish a secret key using a public-key scheme based on discrete logarithms.",
     "options": [
       "Elgamal-Fraiser",
@@ -15931,7 +15653,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1388,
+    "question_number": 1362,
     "question_text": "A ______ is an entity that manages the use, performance, and delivery of cloud services, and negotiates relationships between CPs and cloud consumers.",
     "options": [
       "cloud auditor",
@@ -15943,7 +15665,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1389,
+    "question_number": 1363,
     "question_text": "______ is an open source project for creating truly random numbers using inexpensive cameras, open source code, and inexpensive hardware.",
     "options": [
       "Entropy",
@@ -15955,7 +15677,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1390,
+    "question_number": 1364,
     "question_text": "The essential elements of any pseudorandom number generator are a ______ and a deterministic algorithm for generating a stream of pseudorandom bits.",
     "options": [
       "seed value",
@@ -15967,7 +15689,7 @@
     "original_file": "27.json"
   },
   {
-    "question_number": 1391,
+    "question_number": 1365,
     "question_text": "What is the relationship between the security protection level and the strictness of requirements?",
     "options": [
       "Lower levels have stricter requirements",
@@ -15979,19 +15701,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1392,
-    "question_text": "The first row of State is not altered; for the second row a 1-byte circular left shift is performed; for the third row a 2-byte circular left shift is performed; and for the fourth row a 3-byte circular left shift is performed. This transformation is called ______.",
-    "options": [
-      "ShiftRows",
-      "MixColumns",
-      "Substitute bytes",
-      "AddRoundKey"
-    ],
-    "correct_answer": "ShiftRows",
-    "original_file": "28.json"
-  },
-  {
-    "question_number": 1393,
+    "question_number": 1366,
     "question_text": "A public-key encryption scheme has ingredients.",
     "options": [
       "eight",
@@ -16003,7 +15713,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1394,
+    "question_number": 1367,
     "question_text": "A is a group that has a finite number of elements.",
     "options": [
       "finite field",
@@ -16015,7 +15725,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1395,
+    "question_number": 1368,
     "question_text": "What does GB/T 28448-2019 specify?",
     "options": [
       "Design requirements",
@@ -16027,7 +15737,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1396,
+    "question_number": 1369,
     "question_text": "A secret key for symmetric encryption that is generated for use for a short period of time is called a",
     "options": [
       "strategic key",
@@ -16039,7 +15749,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1397,
+    "question_number": 1370,
     "question_text": "We can adapt the algorithm to compute the greatest common divisor of two polynomials.",
     "options": [
       "abelian",
@@ -16051,7 +15761,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1398,
+    "question_number": 1371,
     "question_text": "The cryptographic hash function requirement that guarantees that it is impossible to find an alternative message with the same hash value as a given message and prevents forgery when an encrypted hash code is used is the ______.",
     "options": [
       "pseudorandomness",
@@ -16063,7 +15773,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1399,
+    "question_number": 1372,
     "question_text": "The order of a finite field must be of the form pn where p is a prime and n is a",
     "options": [
       "commutative ring",
@@ -16075,7 +15785,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1400,
+    "question_number": 1373,
     "question_text": "attacks exploit the characteristics of the algorithm to attempt to deduce a specific plaintext or to deduce the key being used.",
     "options": [
       "Cryptanalytic",
@@ -16087,7 +15797,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1401,
+    "question_number": 1374,
     "question_text": "What are the four specific technologies mentioned that HiSec Insight uses for threat detection?",
     "options": [
       "Only big data analysis",
@@ -16099,7 +15809,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1402,
+    "question_number": 1375,
     "question_text": "The principal objective for developing a ______ is to enable secure, convenient, and efficient acquisition of public keys.",
     "options": [
       "CRL",
@@ -16111,7 +15821,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1403,
+    "question_number": 1376,
     "question_text": "What is another form of denial of service attack?",
     "options": [
       "Encrypting data",
@@ -16123,7 +15833,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1404,
+    "question_number": 1377,
     "question_text": "A allows data that is being read or transmitted to be checked for errors and, when necessary, corrected.",
     "options": [
       "CBC",
@@ -16135,7 +15845,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1405,
+    "question_number": 1378,
     "question_text": "What is the evolution path from BS 7799 to current ISO/IEC standards?",
     "options": [
       "BS 7799-1 (1995) → BS 7799-2 (1998) → ISO/IEC 17799 (2000) → ISO/IEC 27001 (2005) → ISO/IEC 27002 (2007)",
@@ -16147,7 +15857,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1406,
+    "question_number": 1379,
     "question_text": "\"Release of message contents to any person or process not possessing the appropriate cryptographic key\" is a ______ attack.",
     "options": [
       "content modification",
@@ -16159,7 +15869,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1407,
+    "question_number": 1380,
     "question_text": "A ______ cipher is one in which a block of plaintext is treated as a whole and used to produce a ciphertext block of equal length.",
     "options": [
       "stream",
@@ -16171,7 +15881,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1408,
+    "question_number": 1381,
     "question_text": "A receives an electronic signal from a controller and responds by interacting with its environment to produce an effect on some parameter of a physical, chemical, or biological entity.",
     "options": [
       "actuator",
@@ -16183,7 +15893,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1409,
+    "question_number": 1382,
     "question_text": "What is the significance of the fact that new vulnerabilities increase rapidly while vulnerability discovery penetrates from application layer to architecture layer?",
     "options": [
       "Vulnerabilities only affect applications",
@@ -16195,63 +15905,7 @@
     "original_file": "28.json"
   },
   {
-    "question_number": 1410,
-    "question_text": "What does connection- oriented integrity service address?",
-    "options": [
-      "Only passive attacks",
-      "Only message modification",
-      "Only denial of service",
-      "Both message stream modification and denial of service"
-    ],
-    "correct_answer": "Both message stream modification and denial of service",
-    "original_file": "29.json"
-  },
-  {
-    "question_number": 1411,
-    "question_text": "The criteria used in the design of the focused on the design of the S- boxes and on the P function that takes the output of the S- boxes.",
-    "options": [
-      "Avalanche Attack",
-      "Substitution Key",
-      "Product Cipher",
-      "Data Encryption Standard"
-    ],
-    "correct_answer": "Data Encryption Standard",
-    "original_file": "29.json"
-  },
-  {
-    "question_number": 1412,
-    "question_text": "The primary benefit of a host- based IDS is that it can detect both external and internal intrusions.",
-    "options": [
-      "False",
-      "True"
-    ],
-    "correct_answer": "True",
-    "original_file": "29.json"
-  },
-  {
-    "question_number": 1413,
-    "question_text": "The certificate message is required for any agreed on key exchange method except fixed Diffie- Hellman.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "False",
-    "original_file": "29.json"
-  },
-  {
-    "question_number": 1414,
-    "question_text": "A can be defined as any device that includes a computer chip, but that is not a general- purpose workstation, desktop, or laptop computer.",
-    "options": [
-      "embedded system",
-      "microcontroller",
-      "cryptosystem",
-      "constrained device"
-    ],
-    "correct_answer": "embedded system",
-    "original_file": "29.json"
-  },
-  {
-    "question_number": 1415,
+    "question_number": 1383,
     "question_text": "is a data collection technology that uses electronic tags attached to items to allow the items to be identified and tracked by a remote system.",
     "options": [
       "CRYPTOREC",
@@ -16263,7 +15917,7 @@
     "original_file": "29.json"
   },
   {
-    "question_number": 1416,
+    "question_number": 1384,
     "question_text": "What is the relationship between ISO/IEC 27003, 27004, and 27005 in the ISO 27000 family?",
     "options": [
       "They are part of Part I (Requirements and support guideline) of the ISO 27000 family",
@@ -16275,19 +15929,7 @@
     "original_file": "29.json"
   },
   {
-    "question_number": 1417,
-    "question_text": "What happened during the development phase (2004- 2006) of Cybersecurity Classified Protection?",
-    "options": [
-      "Cybersecurity Classified Protection 2.0 was released",
-      "A large number of standards and specifications related to classified protection were developed and piloted in some organizations",
-      "The system was proposed",
-      "The system was replaced"
-    ],
-    "correct_answer": "A large number of standards and specifications related to classified protection were developed and piloted in some organizations",
-    "original_file": "29.json"
-  },
-  {
-    "question_number": 1418,
+    "question_number": 1385,
     "question_text": "The approach is unsuitable for a connectionless type of application because it requires the overhead of a handshake before any connectionless transmission, effectively negating the chief characteristic of a connectionless transaction.",
     "options": [
       "challenge-response",
@@ -16295,11 +15937,11 @@
       "replay",
       "backward reply"
     ],
-    "correct_answer": "challenge- response",
+    "correct_answer": "challenge-response",
     "original_file": "29.json"
   },
   {
-    "question_number": 1419,
+    "question_number": 1386,
     "question_text": "searches an unordered list in O time, while conventional algorithms require O",
     "options": [
       "Shor's Factoring Algorithm",
@@ -16311,27 +15953,7 @@
     "original_file": "29.json"
   },
   {
-    "question_number": 1420,
-    "question_text": "Public- key encryption is more secure from cryptanalysis than symmetric encryption.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "False",
-    "original_file": "30.json"
-  },
-  {
-    "question_number": 1421,
-    "question_text": "Format- preserving encryption refers to any encryption technique that takes a plaintext in a given format and produces a ciphertext in the same format.",
-    "options": [
-      "False",
-      "True"
-    ],
-    "correct_answer": "True",
-    "original_file": "30.json"
-  },
-  {
-    "question_number": 1422,
+    "question_number": 1387,
     "question_text": "For a prime number p, the set of nonzero integers modulo p is cyclic.",
     "options": [
       "False",
@@ -16341,27 +15963,7 @@
     "original_file": "30.json"
   },
   {
-    "question_number": 1423,
-    "question_text": "Two theorems that play important roles in public- key cryptography are Fermat's theorem and Euler's theorem.",
-    "options": [
-      "False",
-      "True"
-    ],
-    "correct_answer": "True",
-    "original_file": "30.json"
-  },
-  {
-    "question_number": 1424,
-    "question_text": "The XTS- AES mode is based on the concept of a tweakable block cipher.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "True",
-    "original_file": "30.json"
-  },
-  {
-    "question_number": 1425,
+    "question_number": 1388,
     "question_text": "Which field in the IPsec header is 32 bits and identifies a security association?",
     "options": [
       "Sequence Header",
@@ -16373,49 +15975,7 @@
     "original_file": "30.json"
   },
   {
-    "question_number": 1426,
-    "question_text": "Much of the theory of public- key cryptosystems is based on number theory.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "True",
-    "original_file": "30.json"
-  },
-  {
-    "question_number": 1427,
-    "question_text": "The one- time pad has unlimited utility and is useful primarily for high- bandwidth channels requiring low security.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "False",
-    "original_file": "30.json"
-  },
-  {
-    "question_number": 1428,
-    "question_text": "In virtually all distributed environments, electronic mail is the most heavily used network- based application.",
-    "options": [
-      "False",
-      "True"
-    ],
-    "correct_answer": "True",
-    "original_file": "30.json"
-  },
-  {
-    "question_number": 1429,
-    "question_text": "What was BS 7799- 1 when it was first released in 1995?",
-    "options": [
-      "Regulations on Information Security Management Practices",
-      "Implementation Guidelines for Information Security Management Systems",
-      "Code of Practice for Information Security Management",
-      "Information Security Management System Specifications"
-    ],
-    "correct_answer": "Implementation Guidelines for Information Security Management Systems",
-    "original_file": "30.json"
-  },
-  {
-    "question_number": 1430,
+    "question_number": 1389,
     "question_text": "The ______ is the information that is delivered as a unit between MAC users.",
     "options": [
       "MSDU",
@@ -16427,19 +15987,19 @@
     "original_file": "30.json"
   },
   {
-    "question_number": 1431,
-    "question_text": "What is the difference between keyless and key- based algorithms?",
+    "question_number": 1390,
+    "question_text": "What is the difference between keyless and key-based algorithms?",
     "options": [
       "Keyless algorithms don't use keys, while key-based algorithms require keys",
       "Keyless algorithms use keys differently",
       "There is no difference",
       "Keyless algorithms are always more secure"
     ],
-    "correct_answer": "Keyless algorithms don't use keys, while key- based algorithms require keys",
+    "correct_answer": "Keyless algorithms don't use keys, while key-based algorithms require keys",
     "original_file": "31.json"
   },
   {
-    "question_number": 1432,
+    "question_number": 1391,
     "question_text": "______ is a security enhancement to the MIME Internet email format standard based on technology from RSA Data Security.",
     "options": [
       "S/MIME",
@@ -16451,7 +16011,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1433,
+    "question_number": 1392,
     "question_text": "The key exchange involves multiplying pairs of nonzero integers modulo a prime number q. Keys are generated by exponentiation over the group with exponentiation defined as repeated multiplication.",
     "options": [
       "ElGamal",
@@ -16459,33 +16019,23 @@
       "Diffie-Hellman",
       "Rabin-Miller"
     ],
-    "correct_answer": "Diffie- Hellman",
+    "correct_answer": "Diffie-Hellman",
     "original_file": "31.json"
   },
   {
-    "question_number": 1434,
-    "question_text": "Although it does not appear to be as efficient as the Miller- Rabin algorithm, in 2002 a relatively simple deterministic algorithm that efficiently determines whether a given large number is a prime was developed. This algorithm is known as the ______ algorithm.",
+    "question_number": 1393,
+    "question_text": "Although it does not appear to be as efficient as the Miller-Rabin algorithm, in 2002 a relatively simple deterministic algorithm that efficiently determines whether a given large number is a prime was developed. This algorithm is known as the ______ algorithm.",
     "options": [
       "AKS",
       "Brady",
-      "Miller- Rabin",
+      "Miller-Rabin",
       "Euclidean"
     ],
     "correct_answer": "AKS",
     "original_file": "31.json"
   },
   {
-    "question_number": 1435,
-    "question_text": "Integrity- related email security threats could result in unauthorized disclosure of sensitive information.",
-    "options": [
-      "False",
-      "True"
-    ],
-    "correct_answer": "False",
-    "original_file": "31.json"
-  },
-  {
-    "question_number": 1436,
+    "question_number": 1394,
     "question_text": "What does nonreproduction prevent for the sender?",
     "options": [
       "Modifying the message",
@@ -16497,19 +16047,19 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1437,
+    "question_number": 1395,
     "question_text": "One of the most intense areas of research in the field of symmetric block ciphers is ______ design.",
     "options": [
-      "D- box",
-      "E- box",
-      "S- box",
-      "F- box"
+      "D-box",
+      "E-box",
+      "S-box",
+      "F-box"
     ],
-    "correct_answer": "S- box",
+    "correct_answer": "S-box",
     "original_file": "31.json"
   },
   {
-    "question_number": 1438,
+    "question_number": 1396,
     "question_text": "The specification of a protocol along with the chosen key length is known as a",
     "options": [
       "cipher suite",
@@ -16521,19 +16071,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1439,
-    "question_text": "What is identity- first security?",
-    "options": [
-      "A security approach that becomes more urgent as attackers focus on obtaining identity and access management permissions",
-      "A security approach that focuses only on encryption",
-      "A security approach that focuses on network boundaries",
-      "A security approach that focuses only on passwords"
-    ],
-    "correct_answer": "A security approach that becomes more urgent as attackers focus on obtaining identity and access management permissions",
-    "original_file": "31.json"
-  },
-  {
-    "question_number": 1440,
+    "question_number": 1397,
     "question_text": "What happens if a security mechanism requires time limits but the network has unpredictable delays?",
     "options": [
       "The mechanism is faster",
@@ -16545,7 +16083,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1441,
+    "question_number": 1398,
     "question_text": "techniques map plaintext elements (characters, bits) into ciphertext elements.",
     "options": [
       "Transposition",
@@ -16557,7 +16095,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1442,
+    "question_number": 1399,
     "question_text": "Authentication enables organizations to keep their networks secure by permitting only authenticated users to access its protected resources.",
     "options": [
       "True",
@@ -16567,19 +16105,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1443,
-    "question_text": "A public- key encryption scheme has ingredients.",
-    "options": [
-      "six",
-      "eight",
-      "two",
-      "four"
-    ],
-    "correct_answer": "six",
-    "original_file": "31.json"
-  },
-  {
-    "question_number": 1444,
+    "question_number": 1400,
     "question_text": "The final round of both encryption and decryption of the AES structure consists of stages.",
     "options": [
       "one",
@@ -16591,7 +16117,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1445,
+    "question_number": 1401,
     "question_text": "Because certificates are forgeable they cannot be placed in a directory without the need for the directory to make special efforts to protect them.",
     "options": [
       "False",
@@ -16601,7 +16127,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1446,
+    "question_number": 1402,
     "question_text": "A attack involves trying every possible key until an intelligible translation of the ciphertext is obtained.",
     "options": [
       "brute-force",
@@ -16609,23 +16135,11 @@
       "Caesar attack",
       "ciphertext only"
     ],
-    "correct_answer": "brute- force",
+    "correct_answer": "brute-force",
     "original_file": "31.json"
   },
   {
-    "question_number": 1447,
-    "question_text": "What has enabled hackers to quickly launch large- scale DDoS attacks?",
-    "options": [
-      "The emergence of the Internet of Things (IoT) and exploitation of device hardware or management vulnerabilities",
-      "Only mobile devices",
-      "Only cloud computing",
-      "Only botnets"
-    ],
-    "correct_answer": "The emergence of the Internet of Things (IoT) and exploitation of device hardware or management vulnerabilities",
-    "original_file": "31.json"
-  },
-  {
-    "question_number": 1448,
+    "question_number": 1403,
     "question_text": "The order of a finite field must be of the form pn where p is a prime and n is a _",
     "options": [
       "identity element",
@@ -16637,7 +16151,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1449,
+    "question_number": 1404,
     "question_text": "Transport mode provides protection to the entire IP packet.",
     "options": [
       "False",
@@ -16647,7 +16161,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1450,
+    "question_number": 1405,
     "question_text": "The digital signature standard is a ______ standard that uses the secure hash algorithm.",
     "options": [
       "NIST",
@@ -16659,19 +16173,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1451,
-    "question_text": "What is a man- in- the- middle attack?",
-    "options": [
-      "An attack that only modifies stored data",
-      "An attack where the attacker intercepts and masquerades as both client and server",
-      "An attack that only deletes files",
-      "An attack where the attacker only observes traffic"
-    ],
-    "correct_answer": "An attack where the attacker intercepts and masquerades as both client and server",
-    "original_file": "31.json"
-  },
-  {
-    "question_number": 1452,
+    "question_number": 1406,
     "question_text": "What protocol is mentioned as an example of architecture layers?",
     "options": [
       "TCP/IP",
@@ -16683,19 +16185,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1453,
-    "question_text": "key determination is a refinement of the Diffie- Hellman key exchange algorithm.",
-    "options": [
-      "KEP",
-      "KMP",
-      "SKE",
-      "IKE"
-    ],
-    "correct_answer": "IKE",
-    "original_file": "31.json"
-  },
-  {
-    "question_number": 1454,
+    "question_number": 1407,
     "question_text": "An original intelligible message fed into the algorithm as input is known as while the coded message produced as output is called the",
     "options": [
       "plaintext, ciphertext",
@@ -16707,7 +16197,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1455,
+    "question_number": 1408,
     "question_text": "A technique referred to as a is a mapping achieved by performing some sort of permutation on the plaintext letters.",
     "options": [
       "Caesar cipher",
@@ -16719,17 +16209,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1456,
-    "question_text": "Compared to public- key ciphers such as RSA, the structure of AES and most symmetric ciphers is quite complex and cannot be explained as easily as many other cryptographic algorithms.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correct_answer": "True",
-    "original_file": "31.json"
-  },
-  {
-    "question_number": 1457,
+    "question_number": 1409,
     "question_text": "A cloud provides service to customers in the form of a platform on which the customer's applications can run.",
     "options": [
       "CaaS",
@@ -16741,7 +16221,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1458,
+    "question_number": 1410,
     "question_text": "What is a supply chain attack?",
     "options": [
       "An attack on manufacturing systems only",
@@ -16753,7 +16233,7 @@
     "original_file": "31.json"
   },
   {
-    "question_number": 1459,
+    "question_number": 1411,
     "question_text": "A key element in providing security in an IoT deployment is the gateway.",
     "options": [
       "False",
