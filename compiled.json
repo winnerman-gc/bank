@@ -587,7 +587,7 @@
   },
   {
     "question_number": 52,
-    "question_text": "A can be defined as any device that includes a computer chip, but that is not a general-purpose workstation, desktop, or laptop computer.",
+    "question_text": "A ______ can be defined as any device that includes a computer chip, but that is not a general-purpose workstation, desktop, or laptop computer.",
     "options": [
       "embedded system",
       "microcontroller",
@@ -16072,7 +16072,7 @@
   },
   {
     "question_number": 1400,
-    "question_text": "A can be defined as any device that includes a computer chip, but that is not a general- purpose workstation, desktop, or laptop computer.",
+    "question_text": "A ______ can be defined as any device that includes a computer chip, but that is not a general- purpose workstation, desktop, or laptop computer.",
     "options": [
       "embedded system",
       "microcontroller",
