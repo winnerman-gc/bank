@@ -496,7 +496,7 @@
 
                 // Report the miss using the idx passed to the function
                 if (idx !== undefined) {
-                    fetch(WORKER_URL + 'report-miss', {
+                    fetch("https://qna.wgchalie.workers.dev/report-miss", {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ q_num: idx + 1 }),
