@@ -230,6 +230,7 @@
         <div class="stats">
             <div class="stat-item">Correct: <span id="stat-correct" style="color:var(--success-color)">0</span></div>
             <div class="stat-item">Wrong: <span id="stat-wrong" style="color:var(--error-color)">0</span></div>
+            <div class="stat-item">Score: <span id="stat-score" style="color:var(--primary-color)">0%</span></div>
             <div class="stat-item">Progress: <span id="stat-progress">0</span> / <span id="total-count">0</span></div>
             <button class="reset-btn" onclick="resetProgress()">Reset Progress</button>
         </div>
@@ -502,6 +503,9 @@
 
         function updateStats() {
             document.getElementById('stat-progress').innerText = totalAnswered;
+            const scorePercent = totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
+            const scoreEl = document.getElementById('stat-score');
+            if (scoreEl) scoreEl.innerText = `${scorePercent}%`;
         }
 
         function resetProgress() {
