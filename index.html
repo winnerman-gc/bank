@@ -248,8 +248,14 @@
                 const totalDisplay = document.getElementById('total-count');
                 
                 totalDisplay.innerText = questions.length;
-                loading.style.display = 'none';
-                document.getElementById('footer').style.display = 'block';
+                
+                // Clear the loading indicator but keep the container
+                if (loading) loading.remove();
+                
+                // Track total stats from restored answers
+                let restoredAnswered = 0;
+                let restoredCorrect = 0;
+                let restoredWrong = 0;
 
                 questions.forEach((q, idx) => {
                     const card = createQuestionCard(q, idx);
@@ -257,11 +263,24 @@
                     
                     // Restore previous answer if exists
                     if (userAnswers[idx]) {
+                        restoredAnswered++;
+                        const isCorrect = userAnswers[idx].trim() === q.correct_answer.trim();
+                        if (isCorrect) restoredCorrect++; else restoredWrong++;
                         restoreAnswer(card, userAnswers[idx], q.correct_answer, idx);
                     }
                 });
 
-                // Scroll to last answered question after a short delay to ensure rendering
+                // Update global counters
+                totalAnswered = restoredAnswered;
+                correctCount = restoredCorrect;
+                wrongCount = restoredWrong;
+                updateStats();
+                document.getElementById('stat-correct').innerText = correctCount;
+                document.getElementById('stat-wrong').innerText = wrongCount;
+
+                document.getElementById('footer').style.display = 'block';
+
+                // Scroll to last answered question...
                 if (totalAnswered > 0) {
                     setTimeout(() => {
                         const lastAnsweredIdx = Math.max(...Object.keys(userAnswers).map(Number));
