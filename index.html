@@ -306,7 +306,10 @@
                 // Scroll to the question AFTER the last answered one to maintain flow
                 if (totalAnswered > 0 && totalAnswered < questions.length) {
                     console.log("Attempting to scroll to next question...");
-                    setTimeout(() => {
+                    
+                    // Recursive check to ensure elements exist before scrolling
+                    let attempts = 0;
+                    const checkAndScroll = () => {
                         const answeredKeys = Object.keys(userAnswers).map(Number).sort((a, b) => a - b);
                         if (answeredKeys.length === 0) return;
                         
@@ -314,8 +317,9 @@
                         const nextIdx = lastAnsweredIdx + 1;
                         
                         const element = document.getElementById(`q-${nextIdx}`) || document.getElementById(`q-${lastAnsweredIdx}`);
+                        
                         if (element) {
-                            console.log(`Scrolling to element q-${nextIdx}`);
+                            console.log(`Scrolling to element q-${nextIdx || lastAnsweredIdx}`);
                             const headerOffset = 130;
                             const elementPosition = element.getBoundingClientRect().top;
                             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
@@ -324,10 +328,16 @@
                                 top: offsetPosition,
                                 behavior: 'smooth'
                             });
+                        } else if (attempts < 10) {
+                            attempts++;
+                            console.log(`Target element not found. Attempt ${attempts}/10...`);
+                            setTimeout(checkAndScroll, 500);
                         } else {
-                            console.warn("Target element for scroll not found.");
+                            console.warn("Target element for scroll not found after 10 attempts.");
                         }
-                    }, 1500); // Increased delay for heavy item rendering
+                    };
+
+                    setTimeout(checkAndScroll, 1000);
                 }
 
             } catch (err) {
