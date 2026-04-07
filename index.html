@@ -331,11 +331,12 @@
                 console.log('AI Response data:', data);
                 
                 if (data.error) {
-                    throw new Error(data.error.message || 'AI Provider Error');
+                    throw new Error(data.error);
                 }
 
-                const text = data.choices[0].message.content;
-                aiSlot.innerHTML = `<p style="margin-top:10px; border-top:1px solid #e2e8f0; padding-top:10px;">${text}</p>`;
+                // Since the Worker now extracts the content and returns { explanation: "..." }
+                const text = data.explanation || "No explanation returned.";
+                aiSlot.innerHTML = `<p style="margin-top:10px; border-top:1px solid #e2e8f0; padding-top:10px;"><em>AI:</em> ${text}</p>`;
             } catch (err) {
                 console.error('AI Error:', err);
                 aiSlot.innerHTML = `<p style="color:var(--error-color); font-size:0.8rem;">Failed to load AI explanation: ${err.message}</p>`;
@@ -389,6 +390,14 @@
                 if (useAI) {
                     getAIExplanation(questionText, selected, correct, explanation);
                 }
+
+                // NEW: Report the miss to Cloudflare Stats
+                fetch(WORKER_URL + 'report-miss', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ q_num: idx + 1 }),
+                    keepalive: true
+                }).catch(() => {});
                 
                 // Show where the correct one was
                 Array.from(parent.children).forEach(b => {
