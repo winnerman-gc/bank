@@ -385,6 +385,17 @@
                 btn.classList.add('wrong');
                 btn.querySelector('.icon-placeholder').innerHTML = '<i class="fas fa-times cross-icon"></i>';
                 explanation.style.display = 'block';
+
+                // Report wrong answer to Global KV tracking (Binding name: QUESTION_STATS)
+                fetch(WORKER_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        type: 'report_wrong',
+                        questionId: idx,
+                        questionText: questionText 
+                    })
+                }).catch(err => console.error('Reporting error:', err));
                 
                 if (useAI) {
                     getAIExplanation(questionText, selected, correct, explanation);
