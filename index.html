@@ -124,17 +124,6 @@
             font-weight: bold;
         }
 
-        .desc-btn {
-            background: #0f766e;
-            color: white;
-            border: none;
-            padding: 2px 8px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 0.75rem;
-            font-weight: bold;
-        }
-
         .miss-badge {
             background: #ede9fe;
             color: #6d28d9;
@@ -303,7 +292,6 @@
             <div class="stat-item">Progress: <span id="stat-progress">0</span> / <span id="total-count">0</span></div>
             <button class="retake-btn" id="retake-btn" onclick="retakeWrongQuestions()">Retake Wrong</button>
             <button class="hot-btn" id="hot-btn" onclick="showHot100Questions()">Hot 100</button>
-            <button class="desc-btn" id="desc-btn" onclick="toggleModeDescription()">Description</button>
             <button class="return-btn" id="return-btn" onclick="returnToMainQuestions()">Return to Main</button>
             <button class="reset-btn" onclick="resetProgress()">Reset Progress</button>
         </div>
@@ -788,11 +776,9 @@
                 activeMode = 'hot';
                 const retakeBtn = document.getElementById('retake-btn');
                 const hotBtn = document.getElementById('hot-btn');
-                const descBtn = document.getElementById('desc-btn');
                 const returnBtn = document.getElementById('return-btn');
                 if (retakeBtn) retakeBtn.style.display = 'none';
                 if (hotBtn) hotBtn.style.display = 'none';
-                if (descBtn) descBtn.style.display = 'inline-block';
                 if (returnBtn) returnBtn.style.display = 'inline-block';
 
                 setModeBanner('Hot 100 mode: top globally missed questions from collected data. Miss counts come from the shared Upstash leaderboard. Score is separate and saved under hot100_answers.');
@@ -817,11 +803,9 @@
             activeMode = 'main';
             const retakeBtn = document.getElementById('retake-btn');
             const hotBtn = document.getElementById('hot-btn');
-            const descBtn = document.getElementById('desc-btn');
             const returnBtn = document.getElementById('return-btn');
             if (retakeBtn) retakeBtn.style.display = 'inline-block';
             if (hotBtn) hotBtn.style.display = 'inline-block';
-            if (descBtn) descBtn.style.display = 'inline-block';
             if (returnBtn) returnBtn.style.display = 'none';
             setModeBanner('Main mode: your permanent score and answers are saved in quiz_answers. Retake and Hot 100 use separate storage.');
 
@@ -833,12 +817,6 @@
                 answerStore: 'main',
                 mode: 'main'
             });
-        }
-
-        function toggleModeDescription() {
-            const banner = document.getElementById('mode-banner');
-            if (!banner || !banner.innerText.trim()) return;
-            banner.style.display = banner.style.display === 'none' ? 'block' : 'none';
         }
 
         function setModeBanner(text) {
