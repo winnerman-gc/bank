@@ -305,22 +305,27 @@
                 document.getElementById('footer').style.display = 'block';
 
                 // Scroll to the question AFTER the last answered one to maintain flow
-                if (totalAnswered > 0 && totalAnswered < questions.length) {
-                    console.log("Attempting to scroll to next question...");
+                if (totalAnswered > 0 && totalAnswered < allQuestionsData.length) {
+                    console.log(`Scroll info: totalAnswered=${totalAnswered}, total questions=${allQuestionsData.length}`);
                     
                     // Recursive check to ensure elements exist before scrolling
                     let attempts = 0;
                     const checkAndScroll = () => {
                         const answeredKeys = Object.keys(userAnswers).map(Number).sort((a, b) => a - b);
-                        if (answeredKeys.length === 0) return;
+                        if (answeredKeys.length === 0) {
+                            console.warn("No answered keys found");
+                            return;
+                        }
                         
                         const lastAnsweredIdx = answeredKeys[answeredKeys.length - 1];
                         const nextIdx = lastAnsweredIdx + 1;
                         
+                        console.log(`Try ${attempts + 1}: Looking for q-${nextIdx} or q-${lastAnsweredIdx}. Total elements in DOM: ${feed.children.length}`);
+                        
                         const element = document.getElementById(`q-${nextIdx}`) || document.getElementById(`q-${lastAnsweredIdx}`);
                         
                         if (element) {
-                            console.log(`Scrolling to element q-${nextIdx || lastAnsweredIdx}`);
+                            console.log(`✓ Found element, scrolling to q-${element.id}`);
                             const headerOffset = 130;
                             const elementPosition = element.getBoundingClientRect().top;
                             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
@@ -329,16 +334,22 @@
                                 top: offsetPosition,
                                 behavior: 'smooth'
                             });
-                        } else if (attempts < 10) {
+                        } else if (attempts < 20) {
                             attempts++;
-                            console.log(`Target element not found. Attempt ${attempts}/10...`);
-                            setTimeout(checkAndScroll, 500);
+                            setTimeout(checkAndScroll, 300);
                         } else {
-                            console.warn("Target element for scroll not found after 10 attempts.");
+                            // Fallback: just scroll to approximate position based on calculated height
+                            console.warn("Could not find target element, using fallback scroll");
+                            const avgCardHeight = 400;
+                            const estimatedPosition = nextIdx * avgCardHeight - 130;
+                            window.scrollTo({
+                                top: Math.max(0, estimatedPosition),
+                                behavior: 'smooth'
+                            });
                         }
                     };
 
-                    setTimeout(checkAndScroll, 1000);
+                    setTimeout(checkAndScroll, 500);
                 }
 
             } catch (err) {
