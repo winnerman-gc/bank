@@ -336,7 +336,7 @@
 
                     if (shouldRestore && userAnswers[sourceIdx]) {
                         restoredAnswered++;
-                        const isCorrect = userAnswers[sourceIdx].trim() === (q.correct_answer ? q.correct_answer.trim() : "");
+                        const isCorrect = normalizeAnswerText(userAnswers[sourceIdx]) === normalizeAnswerText(q.correct_answer || "");
                         if (isCorrect) restoredCorrect++; else restoredWrong++;
                         restoreAnswer(card, userAnswers[sourceIdx], q.correct_answer || "", sourceIdx);
                     }
@@ -607,7 +607,7 @@
                 .filter(i => Number.isFinite(i) && i >= 0 && i < allQuestionsData.length)
                 .filter(i => {
                     const q = allQuestionsData[i];
-                    return q && (userAnswers[i] || '').trim() !== (q.correct_answer || '').trim();
+                    return q && normalizeAnswerText(userAnswers[i] || '') !== normalizeAnswerText(q.correct_answer || '');
                 })
                 .map(i => ({ question: allQuestionsData[i], sourceIdx: i }));
 
