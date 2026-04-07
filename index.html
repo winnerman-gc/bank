@@ -315,14 +315,17 @@
                     // Recursive check to ensure elements exist before scrolling
                     let attempts = 0;
                     const checkAndScroll = () => {
-                        const answeredKeys = Object.keys(userAnswers).map(Number).sort((a, b) => a - b);
+                        const answeredKeys = Object.keys(userAnswers)
+                            .map(k => Number(k))
+                            .filter(n => Number.isFinite(n) && n >= 0 && n < allQuestionsData.length)
+                            .sort((a, b) => a - b);
                         if (answeredKeys.length === 0) {
                             console.warn("No answered keys found");
                             return;
                         }
                         
                         const lastAnsweredIdx = answeredKeys[answeredKeys.length - 1];
-                        const nextIdx = lastAnsweredIdx + 1;
+                        const nextIdx = Math.min(lastAnsweredIdx + 1, allQuestionsData.length - 1);
                         
                         console.log(`Try ${attempts + 1}: Looking for q-${nextIdx} or q-${lastAnsweredIdx}. Total elements in DOM: ${feed.children.length}`);
                         
