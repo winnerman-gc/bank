@@ -262,6 +262,10 @@
             line-height: 1.55;
         }
 
+        .ai-content p {
+            margin: 0 0 10px 0;
+        }
+
         .ai-highlight {
             color: #7c2d12;
             background: #fef3c7;
@@ -523,7 +527,7 @@
 
                 const data = await response.json();
                 const text = data.explanation || "No explanation available.";
-                aiSlot.innerHTML = `<p style="margin-top:10px; border-top:1px solid #e2e8f0; padding-top:10px; white-space:pre-wrap;"><em>AI:</em> ${renderAIExplanation(text)}</p>`;
+                aiSlot.innerHTML = `<div style="margin-top:10px; border-top:1px solid #e2e8f0; padding-top:10px;"><em>AI:</em>${renderAIExplanation(text)}</div>`;
             } catch (err) {
                 console.error('AI Error:', err);
                 aiSlot.innerHTML = `<p style="color:var(--error-color); font-size:0.8rem;">Failed to load AI explanation: ${err.message}</p>`;
@@ -540,11 +544,17 @@
         }
 
         function renderAIExplanation(text) {
-            const safeText = escapeHTML(text);
+            const safeText = escapeHTML(text).replace(/\r\n/g, '\n');
             return safeText
-                .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-                .replace(/==(.+?)==/g, '<span class="ai-highlight">$1</span>')
-                .replace(/\n/g, '<br>');
+                .split(/\n\s*\n+/)
+                .map(paragraph => {
+                    const body = paragraph.trim()
+                        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                        .replace(/==(.+?)==/g, '<span class="ai-highlight">$1</span>')
+                        .replace(/\n/g, '<br>');
+                    return `<p>${body}</p>`;
+                })
+                .join('');
         }
 
         async function handleHint(idx) {
