@@ -285,8 +285,9 @@
                         if (userAnswers[idx]) {
                             restoredAnswered++;
                             const isCorrect = userAnswers[idx].trim() === (q.correct_answer ? q.correct_answer.trim() : "");
-                            if (isCorrect) restoredCorrect++; else restoredWrong++;
-                            restoreAnswer(card, userAnswers[idx], q.correct_answer || "", idx);
+                            if (isCorrect) restoredCorrect++; else restoredWrong++;                            // Add marking for restored state
+                            const optionsContainer = card.querySelector('.options');
+                            if (optionsContainer) optionsContainer.dataset.restored = "true";                            restoreAnswer(card, userAnswers[idx], q.correct_answer || "", idx);
                         }
                     } catch (cardErr) {
                         console.error(`Error rendering card ${idx}:`, cardErr, q);
@@ -466,9 +467,17 @@
         }
 
         function applySelection(btn, selected, correct, parent, useAI, idx) {
+            // Check if this was a manual click (not a restoration load)
+            const isManualAction = useAI && !parent.hasAttribute('data-initial-applied');
+            
+            if (parent.classList.contains('answered') && !isManualAction) return;
             parent.classList.add('answered');
-            totalAnswered++;
-            updateStats();
+            parent.setAttribute('data-initial-applied', 'true');
+            
+            // Only increment counters for items that aren't being "restored" from cache
+            if (!parent.dataset.restored || isManualAction) {
+                 totalAnswered++;
+            }
 
             const isCorrect = (selected || '').trim() === (correct || '').trim();
             const card = parent.parentElement;
