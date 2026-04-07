@@ -466,6 +466,14 @@
             getAIExplanation(questionText, correctAnswer, correctAnswer, explanation);
         }
 
+        function normalizeAnswerText(text) {
+            let t = (text || '').toString().trim().toLowerCase();
+            t = t.replace(/^\s*\(?[a-z0-9]+\)?[\.:\-]\s+/, '');
+            t = t.replace(/\s+\d+\s*\/\s*\d+\s*$/, '');
+            t = t.replace(/\s+/g, ' ').trim();
+            return t;
+        }
+
         function handleSelect(btn, selected, correct, parent, idx) {
             if (parent.classList.contains('answered')) return;
 
@@ -485,9 +493,10 @@
             const optionsContainer = card.querySelector('.options');
             const btns = optionsContainer.querySelectorAll('.option-btn');
             let selectedBtn = null;
+            const normalizedSelected = normalizeAnswerText(selected);
             
             btns.forEach(btn => {
-                if (btn.innerText.trim() === (selected || '').trim()) selectedBtn = btn;
+                if (normalizeAnswerText(btn.innerText) === normalizedSelected) selectedBtn = btn;
             });
 
             if (selectedBtn) {
@@ -511,7 +520,7 @@
                 totalAnswered++;
             }
 
-            const isCorrect = (selected || '').trim() === (correct || '').trim();
+            const isCorrect = normalizeAnswerText(selected) === normalizeAnswerText(correct);
             const card = parent.parentElement;
             
             // Find child elements safely
@@ -561,7 +570,7 @@
                 
                 // Show where the correct one was
                 Array.from(parent.children).forEach(b => {
-                    if (b.innerText.trim() === (correct || '').trim()) {
+                    if (normalizeAnswerText(b.innerText) === normalizeAnswerText(correct)) {
                         b.classList.add('correct');
                         const bIcon = b.querySelector('.icon-placeholder');
                         if (bIcon) bIcon.innerHTML = '<i class="fas fa-check check-icon"></i>';
