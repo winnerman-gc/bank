@@ -6,6 +6,8 @@ import re
 def fix_missing_placeholders(text):
     if not text:
         return text
+
+    text = text.strip()
     
     # 1. Fix articles followed directly by a verb/adjective (mid-sentence gap)
     # Example: "design of the focused on" -> "design of the ______ focused on"
@@ -20,8 +22,13 @@ def fix_missing_placeholders(text):
     # 2. Fix sentences ending with an article or preposition (trailing gap)
     # Example: "obvious risk is" -> "obvious risk is ______"
     # Note: excluding already dotted sentences or questions
-    if re.search(r'\b(is|a|an|the|as|by|to|of|at|into|developed|by|known|referred to as)\s*$', text.strip(), re.IGNORECASE):
-        text = text.strip() + " ______"
+    if re.search(r'\b(is|a|an|the|as|by|to|of|at|into|developed|by|known|referred to as)\s*$', text, re.IGNORECASE):
+        text = text + " ______"
+
+    # 3. If the first alphabetic character is lowercase, assume missing leading blank.
+    first_alpha = re.search(r'[A-Za-z]', text)
+    if first_alpha and text[first_alpha.start()].islower() and not text.startswith("______"):
+        text = "______ " + text
         
     return text
 
