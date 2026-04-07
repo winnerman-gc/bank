@@ -469,6 +469,10 @@
                     }
                 }
 
+                // Show hint bulb for wrong answer to re-explain later
+                const hintBtn = card?.querySelector('.hint-btn');
+                if (hintBtn) hintBtn.style.display = 'block';
+
                 // Report the miss using the idx passed to the function
                 if (idx !== undefined) {
                     fetch(WORKER_URL + 'report-miss', {
