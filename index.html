@@ -306,13 +306,24 @@
                 // Scroll to the question AFTER the last answered one to maintain flow
                 if (totalAnswered > 0 && totalAnswered < questions.length) {
                     setTimeout(() => {
-                        const lastAnsweredIdx = Math.max(...Object.keys(userAnswers).map(Number));
+                        const answeredKeys = Object.keys(userAnswers).map(Number).sort((a, b) => a - b);
+                        if (answeredKeys.length === 0) return;
+                        
+                        const lastAnsweredIdx = answeredKeys[answeredKeys.length - 1];
                         const nextIdx = lastAnsweredIdx + 1;
+                        
                         const element = document.getElementById(`q-${nextIdx}`) || document.getElementById(`q-${lastAnsweredIdx}`);
                         if (element) {
-                            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            const headerOffset = 120;
+                            const elementPosition = element.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: 'smooth'
+                            });
                         }
-                    }, 800);
+                    }, 1000);
                 }
 
             } catch (err) {
@@ -380,7 +391,7 @@
                         messages: [
                             {
                                 role: "system", 
-                                content: "You are a highly technical and direct Cryptography & Network Security AI. Your task is to provide concise, technical explanations for exam questions. Do not use conversational filler (e.g., 'Sure!', 'Let me explain'). Focus on technical definitions and the specific logic that makes the correct answer the industry standard and why the other options are technically flawed. Keep responses as short as possible while being comprehensive."
+                                content: "You are a technical Cryptography & Network Security expert. Provide a direct, compact, and highly technical explanation. DO NOT use bold text (**), DO NOT use lists or bullet points (- or *), and DO NOT include headers like 'Why others are wrong:'. Write in plain, dense technical sentences. No conversational filler. Example: 'The correct answer is right because... while the other options fail because...'"
                             },
                             {
                                 role: "user",
