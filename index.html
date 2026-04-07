@@ -253,6 +253,7 @@
         let wrongCount = 0;
         let totalAnswered = 0;
         let userAnswers = JSON.parse(localStorage.getItem('quiz_answers') || '{}');
+        let allQuestionsData = [];
 
         async function loadFeed() {
             try {
@@ -261,6 +262,7 @@
                     cache: 'no-store'
                 });
                 const questions = await response.json();
+                allQuestionsData = questions;
                 
                 const feed = document.getElementById('feed');
                 const loading = document.getElementById('loading');
