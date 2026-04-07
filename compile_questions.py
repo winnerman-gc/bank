@@ -3,6 +3,16 @@ import hashlib
 import os
 import re
 
+
+def strip_grading_artifacts(text):
+    if not text:
+        return text
+    cleaned = text.strip()
+    # Remove quiz grading fragments like "Mark 0.00 out of 1.00" wherever they appear.
+    cleaned = re.sub(r'\s*Mark\s+\d+(?:\.\d+)?\s+out\s+of\s+\d+(?:\.\d+)?\s*', ' ', cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r'\s{2,}', ' ', cleaned).strip()
+    return cleaned
+
 def fix_missing_placeholders(text):
     if not text:
         return text
@@ -34,9 +44,7 @@ def fix_missing_placeholders(text):
 
 def get_question_hash(question):
     # Normalize question text (lowercase, strip whitespace, remove grading artifacts)
-    text = question.get('question_text', '').strip()
-    # Remove common grading artifacts
-    text = text.replace('Mark 1.00 out of 1.00', '').strip()
+    text = strip_grading_artifacts(question.get('question_text', ''))
     return hashlib.sha256(text.lower().encode('utf-8')).hexdigest()
 
 def compile_questions():
@@ -63,7 +71,7 @@ def compile_questions():
                 for q in questions:
                     # Clean the question text in the actual object
                     if 'question_text' in q:
-                        text = q['question_text'].replace('Mark 1.00 out of 1.00', '').strip()
+                        text = strip_grading_artifacts(q['question_text'])
                         q['question_text'] = fix_missing_placeholders(text)
                     
                     q_hash = get_question_hash(q)
