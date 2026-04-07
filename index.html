@@ -258,15 +258,19 @@
                 let restoredWrong = 0;
 
                 questions.forEach((q, idx) => {
-                    const card = createQuestionCard(q, idx);
-                    feed.appendChild(card);
-                    
-                    // Restore previous answer if exists
-                    if (userAnswers[idx]) {
-                        restoredAnswered++;
-                        const isCorrect = userAnswers[idx].trim() === q.correct_answer.trim();
-                        if (isCorrect) restoredCorrect++; else restoredWrong++;
-                        restoreAnswer(card, userAnswers[idx], q.correct_answer, idx);
+                    try {
+                        const card = createQuestionCard(q, idx);
+                        feed.appendChild(card);
+                        
+                        // Restore previous answer if exists
+                        if (userAnswers[idx]) {
+                            restoredAnswered++;
+                            const isCorrect = userAnswers[idx].trim() === (q.correct_answer ? q.correct_answer.trim() : "");
+                            if (isCorrect) restoredCorrect++; else restoredWrong++;
+                            restoreAnswer(card, userAnswers[idx], q.correct_answer || "", idx);
+                        }
+                    } catch (cardErr) {
+                        console.error(`Error rendering card ${idx}:`, cardErr, q);
                     }
                 });
 
