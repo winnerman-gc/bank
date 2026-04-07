@@ -547,26 +547,62 @@
             return String(text || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         }
 
-        function highlightPhrase(text, phrase, className) {
+        function highlightPhrase(text, phrase, className, maxMatches = 1) {
             const trimmed = String(phrase || '').trim();
-            if (!trimmed) return text;
-            const pattern = new RegExp(escapeRegExp(trimmed), 'gi');
-            return text.replace(pattern, match => `<span class="${className}">${match}</span>`);
+            if (!trimmed || maxMatches <= 0) return text;
+
+            const words = trimmed.split(/\s+/).filter(Boolean);
+            // Skip very short one-word phrases to avoid noisy highlighting.
+            if (words.length === 1 && words[0].length < 4) return text;
+
+            const pattern = words.length === 1
+                ? new RegExp(`\\b${escapeRegExp(words[0])}\\b`, 'gi')
+                : new RegExp(escapeRegExp(trimmed), 'gi');
+
+            let count = 0;
+            return text.replace(pattern, match => {
+                if (count >= maxMatches) return match;
+                count++;
+                return `<span class="${className}">${match}</span>`;
+            });
+        }
+
+        function splitIntoReadableParagraphs(safeText) {
+            const blocks = safeText
+                .split(/\n\s*\n+/)
+                .map(p => p.trim())
+                .filter(Boolean);
+
+            if (blocks.length > 1) return blocks;
+
+            const sentenceParts = (blocks[0] || '')
+                .split(/(?<=[.!?])\s+(?=[A-Z(])/)
+                .map(s => s.trim())
+                .filter(Boolean);
+
+            if (sentenceParts.length <= 2) return blocks;
+
+            const grouped = [];
+            for (let i = 0; i < sentenceParts.length; i += 2) {
+                grouped.push(sentenceParts.slice(i, i + 2).join(' '));
+            }
+            return grouped;
         }
 
         function renderAIExplanation(text, selected, correct) {
             const safeText = escapeHTML(text).replace(/\r\n/g, '\n');
-            return safeText
-                .split(/\n\s*\n+/)
+            const paragraphs = splitIntoReadableParagraphs(safeText);
+            return paragraphs
                 .map(paragraph => {
                     const body = paragraph.trim()
                         .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
                         .replace(/==(.+?)==/g, '<span class="ai-highlight">$1</span>')
                         .replace(/\n/g, '<br>');
                     const emphasized = highlightPhrase(
-                        highlightPhrase(body, correct, 'ai-highlight'),
+                        highlightPhrase(body, correct, 'ai-highlight', 2),
                         selected,
-                        'ai-highlight'
+                        'ai-highlight',
+                        1
                     );
                     return `<p>${emphasized}</p>`;
                 })
