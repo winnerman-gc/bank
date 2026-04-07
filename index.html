@@ -90,6 +90,29 @@
             font-weight: bold;
         }
 
+        .retake-btn {
+            background: #f59e0b;
+            color: white;
+            border: none;
+            padding: 2px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .return-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 2px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: bold;
+            display: none;
+        }
+
         .question-card {
             background: var(--card-bg);
             padding: 25px;
@@ -232,6 +255,8 @@
             <div class="stat-item">Wrong: <span id="stat-wrong" style="color:var(--error-color)">0</span></div>
             <div class="stat-item">Score: <span id="stat-score" style="color:var(--primary-color)">0%</span></div>
             <div class="stat-item">Progress: <span id="stat-progress">0</span> / <span id="total-count">0</span></div>
+            <button class="retake-btn" id="retake-btn" onclick="retakeWrongQuestions()">Retake Wrong</button>
+            <button class="return-btn" id="return-btn" onclick="returnToMainQuestions()">Return to Main</button>
             <button class="reset-btn" onclick="resetProgress()">Reset Progress</button>
         </div>
     </div>
@@ -254,6 +279,7 @@
         let totalAnswered = 0;
         let userAnswers = JSON.parse(localStorage.getItem('quiz_answers') || '{}');
         let allQuestionsData = [];
+        let isRetakeMode = false;
 
         async function loadFeed() {
             try {
@@ -263,101 +289,7 @@
                 });
                 const questions = await response.json();
                 allQuestionsData = questions;
-                
-                const feed = document.getElementById('feed');
-                const loading = document.getElementById('loading');
-                const totalDisplay = document.getElementById('total-count');
-                
-                totalDisplay.innerText = questions.length;
-                
-                // Clear the loading indicator but keep the container
-                if (loading) loading.remove();
-                
-                // Track total stats from restored answers
-                let restoredAnswered = 0;
-                let restoredCorrect = 0;
-                let restoredWrong = 0;
-
-                allQuestionsData.forEach((q, idx) => {
-                    try {
-                        const card = createQuestionCard(q, idx);
-                        feed.appendChild(card);
-                        
-                        // Restore previous answer if exists
-                        if (userAnswers[idx]) {
-                            restoredAnswered++;
-                            const isCorrect = userAnswers[idx].trim() === (q.correct_answer ? q.correct_answer.trim() : "");
-                            if (isCorrect) restoredCorrect++; else restoredWrong++;
-                            // Add marking for restored state
-                            const optionsContainer = card.querySelector('.options');
-                            if (optionsContainer) optionsContainer.dataset.restored = "true";
-                            restoreAnswer(card, userAnswers[idx], q.correct_answer || "", idx);
-                        }
-                    } catch (cardErr) {
-                        console.error(`Error rendering card ${idx}:`, cardErr, q);
-                    }
-                });
-
-                // Update global counters
-                totalAnswered = restoredAnswered;
-                correctCount = restoredCorrect;
-                wrongCount = restoredWrong;
-                updateStats();
-                document.getElementById('stat-correct').innerText = correctCount;
-                document.getElementById('stat-wrong').innerText = wrongCount;
-
-                document.getElementById('footer').style.display = 'block';
-
-                // Scroll to the question AFTER the last answered one to maintain flow
-                if (totalAnswered > 0 && totalAnswered < allQuestionsData.length) {
-                    console.log(`Scroll info: totalAnswered=${totalAnswered}, total questions=${allQuestionsData.length}`);
-                    
-                    // Recursive check to ensure elements exist before scrolling
-                    let attempts = 0;
-                    const checkAndScroll = () => {
-                        const answeredKeys = Object.keys(userAnswers)
-                            .map(k => Number(k))
-                            .filter(n => Number.isFinite(n) && n >= 0 && n < allQuestionsData.length)
-                            .sort((a, b) => a - b);
-                        if (answeredKeys.length === 0) {
-                            console.warn("No answered keys found");
-                            return;
-                        }
-                        
-                        const lastAnsweredIdx = answeredKeys[answeredKeys.length - 1];
-                        const nextIdx = Math.min(lastAnsweredIdx + 1, allQuestionsData.length - 1);
-                        
-                        console.log(`Try ${attempts + 1}: Looking for q-${nextIdx} or q-${lastAnsweredIdx}. Total elements in DOM: ${feed.children.length}`);
-                        
-                        const element = document.getElementById(`q-${nextIdx}`) || document.getElementById(`q-${lastAnsweredIdx}`);
-                        
-                        if (element) {
-                            console.log(`✓ Found element, scrolling to q-${element.id}`);
-                            const headerOffset = 130;
-                            const elementPosition = element.getBoundingClientRect().top;
-                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                            window.scrollTo({
-                                top: offsetPosition,
-                                behavior: 'smooth'
-                            });
-                        } else if (attempts < 20) {
-                            attempts++;
-                            setTimeout(checkAndScroll, 300);
-                        } else {
-                            // Fallback: just scroll to approximate position based on calculated height
-                            console.warn("Could not find target element, using fallback scroll");
-                            const avgCardHeight = 400;
-                            const estimatedPosition = nextIdx * avgCardHeight - 130;
-                            window.scrollTo({
-                                top: Math.max(0, estimatedPosition),
-                                behavior: 'smooth'
-                            });
-                        }
-                    };
-
-                    setTimeout(checkAndScroll, 500);
-                }
+                renderQuestions(allQuestionsData, { shouldRestore: true, shouldAutoscroll: true, updateMainStats: true });
 
             } catch (err) {
                 console.error(err);
@@ -373,13 +305,99 @@
             }
         }
 
-        function createQuestionCard(q, idx) {
+        function renderQuestions(questionEntries, options = {}) {
+            const {
+                shouldRestore = false,
+                shouldAutoscroll = false,
+                updateMainStats = false,
+                isRetakeList = false
+            } = options;
+
+            const feed = document.getElementById('feed');
+            const totalDisplay = document.getElementById('total-count');
+            const loading = document.getElementById('loading');
+            if (loading) loading.remove();
+
+            feed.innerHTML = '';
+            totalDisplay.innerText = questionEntries.length;
+
+            let restoredAnswered = 0;
+            let restoredCorrect = 0;
+            let restoredWrong = 0;
+
+            questionEntries.forEach((entry, localIdx) => {
+                const q = entry.question || entry;
+                const sourceIdx = Number.isFinite(entry.sourceIdx) ? entry.sourceIdx : localIdx;
+
+                try {
+                    const card = createQuestionCard(q, sourceIdx, !isRetakeList);
+                    feed.appendChild(card);
+
+                    if (shouldRestore && userAnswers[sourceIdx]) {
+                        restoredAnswered++;
+                        const isCorrect = userAnswers[sourceIdx].trim() === (q.correct_answer ? q.correct_answer.trim() : "");
+                        if (isCorrect) restoredCorrect++; else restoredWrong++;
+                        restoreAnswer(card, userAnswers[sourceIdx], q.correct_answer || "", sourceIdx);
+                    }
+                } catch (cardErr) {
+                    console.error(`Error rendering card ${sourceIdx}:`, cardErr, q);
+                }
+            });
+
+            if (updateMainStats) {
+                totalAnswered = restoredAnswered;
+                correctCount = restoredCorrect;
+                wrongCount = restoredWrong;
+                updateStats();
+                document.getElementById('stat-correct').innerText = correctCount;
+                document.getElementById('stat-wrong').innerText = wrongCount;
+            }
+
+            document.getElementById('footer').style.display = 'block';
+
+            if (shouldAutoscroll) {
+                autoScrollToNextUnanswered(feed);
+            }
+        }
+
+        function autoScrollToNextUnanswered(feed) {
+            if (totalAnswered <= 0 || totalAnswered >= allQuestionsData.length) return;
+
+            let attempts = 0;
+            const checkAndScroll = () => {
+                const answeredKeys = Object.keys(userAnswers)
+                    .map(k => Number(k))
+                    .filter(n => Number.isFinite(n) && n >= 0 && n < allQuestionsData.length)
+                    .sort((a, b) => a - b);
+
+                if (answeredKeys.length === 0) return;
+
+                const lastAnsweredIdx = answeredKeys[answeredKeys.length - 1];
+                const nextIdx = Math.min(lastAnsweredIdx + 1, allQuestionsData.length - 1);
+                const element = document.getElementById(`q-${nextIdx}`) || document.getElementById(`q-${lastAnsweredIdx}`);
+
+                if (element) {
+                    const headerOffset = 130;
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                } else if (attempts < 20) {
+                    attempts++;
+                    setTimeout(checkAndScroll, 300);
+                }
+            };
+
+            setTimeout(checkAndScroll, 500);
+        }
+
+        function createQuestionCard(q, idx, persistMainData) {
             const card = document.createElement('div');
             card.className = 'question-card';
             card.id = `q-${idx}`;
             
             const optionsContainer = document.createElement('div');
             optionsContainer.className = 'options';
+            optionsContainer.dataset.persistMainData = persistMainData ? 'true' : 'false';
 
             q.options.forEach(opt => {
                 const btn = document.createElement('button');
@@ -462,12 +480,17 @@
 
         function handleSelect(btn, selected, correct, parent, idx) {
             if (parent.classList.contains('answered')) return;
-            
-            // Save to localStorage
-            userAnswers[idx] = selected;
-            localStorage.setItem('quiz_answers', JSON.stringify(userAnswers));
-            
-            applySelection(btn, selected, correct, parent, true, idx);
+
+            const persistMainData = parent.dataset.persistMainData === 'true';
+            if (persistMainData) {
+                userAnswers[idx] = selected;
+                localStorage.setItem('quiz_answers', JSON.stringify(userAnswers));
+            }
+
+            applySelection(btn, selected, correct, parent, true, idx, {
+                updateMainStats: persistMainData,
+                reportMiss: persistMainData
+            });
         }
 
         function restoreAnswer(card, selected, correct, idx) {
@@ -480,21 +503,24 @@
             });
 
             if (selectedBtn) {
-                applySelection(selectedBtn, selected, correct, optionsContainer, false, idx);
+                applySelection(selectedBtn, selected, correct, optionsContainer, false, idx, {
+                    updateMainStats: false,
+                    reportMiss: false
+                });
             }
         }
 
-        function applySelection(btn, selected, correct, parent, useAI, idx) {
-            // Check if this was a manual click (not a restoration load)
-            const isManualAction = useAI && !parent.hasAttribute('data-initial-applied');
-            
-            if (parent.classList.contains('answered') && !isManualAction) return;
+        function applySelection(btn, selected, correct, parent, useAI, idx, behavior = {}) {
+            if (parent.classList.contains('answered') && !useAI) return;
             parent.classList.add('answered');
-            parent.setAttribute('data-initial-applied', 'true');
-            
-            // Only increment counters for items that aren't being "restored" from cache
-            if (!parent.dataset.restored || isManualAction) {
-                 totalAnswered++;
+
+            const {
+                updateMainStats = true,
+                reportMiss = true
+            } = behavior;
+
+            if (useAI && updateMainStats) {
+                totalAnswered++;
             }
 
             const isCorrect = (selected || '').trim() === (correct || '').trim();
@@ -506,7 +532,9 @@
             const questionText = questionTextEl ? questionTextEl.innerText : "Unknown Question";
             
             if (isCorrect) {
-                correctCount++;
+                if (useAI && updateMainStats) {
+                    correctCount++;
+                }
                 btn.classList.add('correct');
                 const icon = btn.querySelector('.icon-placeholder');
                 if (icon) icon.innerHTML = '<i class="fas fa-check check-icon"></i>';
@@ -515,7 +543,9 @@
                 const hintBtn = card.querySelector('.hint-btn');
                 if (hintBtn) hintBtn.style.display = 'block';
             } else {
-                wrongCount++;
+                if (useAI && updateMainStats) {
+                    wrongCount++;
+                }
                 btn.classList.add('wrong');
                 const icon = btn.querySelector('.icon-placeholder');
                 if (icon) icon.innerHTML = '<i class="fas fa-times cross-icon"></i>';
@@ -532,7 +562,7 @@
                 if (hintBtn) hintBtn.style.display = 'block';
 
                 // Report the miss using the idx passed to the function
-                if (idx !== undefined) {
+                if (useAI && reportMiss && idx !== undefined) {
                     fetch("https://qna.wgchalie.workers.dev/report-miss", {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
@@ -553,9 +583,57 @@
 
             // Lock all buttons in this card
             Array.from(parent.children).forEach(b => b.classList.add('locked'));
-            
-            document.getElementById('stat-correct').innerText = correctCount;
-            document.getElementById('stat-wrong').innerText = wrongCount;
+
+            if (useAI && updateMainStats) {
+                updateStats();
+                document.getElementById('stat-correct').innerText = correctCount;
+                document.getElementById('stat-wrong').innerText = wrongCount;
+            }
+        }
+
+        function retakeWrongQuestions() {
+            const wrongEntries = Object.keys(userAnswers)
+                .map(k => Number(k))
+                .filter(i => Number.isFinite(i) && i >= 0 && i < allQuestionsData.length)
+                .filter(i => {
+                    const q = allQuestionsData[i];
+                    return q && (userAnswers[i] || '').trim() !== (q.correct_answer || '').trim();
+                })
+                .map(i => ({ question: allQuestionsData[i], sourceIdx: i }));
+
+            if (wrongEntries.length === 0) {
+                alert('No wrong questions to retake yet.');
+                return;
+            }
+
+            isRetakeMode = true;
+            const retakeBtn = document.getElementById('retake-btn');
+            const returnBtn = document.getElementById('return-btn');
+            if (retakeBtn) retakeBtn.style.display = 'none';
+            if (returnBtn) returnBtn.style.display = 'inline-block';
+
+            renderQuestions(wrongEntries, {
+                shouldRestore: false,
+                shouldAutoscroll: false,
+                updateMainStats: false,
+                isRetakeList: true
+            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function returnToMainQuestions() {
+            isRetakeMode = false;
+            const retakeBtn = document.getElementById('retake-btn');
+            const returnBtn = document.getElementById('return-btn');
+            if (retakeBtn) retakeBtn.style.display = 'inline-block';
+            if (returnBtn) returnBtn.style.display = 'none';
+
+            renderQuestions(allQuestionsData, {
+                shouldRestore: true,
+                shouldAutoscroll: true,
+                updateMainStats: true,
+                isRetakeList: false
+            });
         }
 
         function updateStats() {
