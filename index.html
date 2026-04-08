@@ -499,6 +499,15 @@
             window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
         }
 
+        function centerRandomCard(behavior = 'smooth') {
+            if (activeMode !== 'random') return;
+            const card = document.querySelector('#feed .question-card');
+            if (!card) return;
+            const rect = card.getBoundingClientRect();
+            const targetY = rect.top + window.pageYOffset - ((window.innerHeight - rect.height) / 2);
+            window.scrollTo({ top: Math.max(0, targetY), behavior });
+        }
+
         function clearInteractionState() {
             const activeEl = document.activeElement;
             if (activeEl && typeof activeEl.blur === 'function') {
@@ -899,6 +908,7 @@
                     setTimeout(() => showNextRandomQuestion(true), RANDOM_NEXT_DELAY_MS);
                 } else if (card) {
                     appendRandomNextButton(card);
+                    setTimeout(() => centerRandomCard('smooth'), 120);
                 }
             }
 
@@ -1097,6 +1107,8 @@
                 shuffleOptions: true
             });
             requestAnimationFrame(clearInteractionState);
+            requestAnimationFrame(() => centerRandomCard('auto'));
+            setTimeout(() => centerRandomCard('smooth'), 120);
             refreshModeStats('random');
         }
 
@@ -1121,6 +1133,12 @@
             banner.style.display = hasText ? 'block' : 'none';
             banner.innerText = hasText ? text : '';
         }
+
+        window.addEventListener('resize', () => {
+            if (activeMode === 'random') {
+                setTimeout(() => centerRandomCard('auto'), 50);
+            }
+        });
 
         function updateStats() {
             document.getElementById('stat-progress').innerText = totalAnswered;
