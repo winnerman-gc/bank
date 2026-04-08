@@ -135,6 +135,17 @@
             font-weight: bold;
         }
 
+        .passive-btn {
+            background: #475569;
+            color: white;
+            border: none;
+            padding: 2px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
         .miss-badge {
             background: #ede9fe;
             color: #6d28d9;
@@ -351,6 +362,7 @@
             <button class="retake-btn" id="retake-btn" onclick="retakeWrongQuestions()">Retake Wrong</button>
             <button class="hot-btn" id="hot-btn" onclick="showHot100Questions()">Hot 100</button>
             <button class="random-btn" id="random-btn" onclick="showRandomMode()">Random</button>
+            <button class="passive-btn" id="passive-btn" onclick="showPassiveMode()">Passive</button>
             <button class="return-btn" id="return-btn" onclick="returnToMainQuestions()">Return to Main</button>
             <button class="reset-btn" onclick="resetProgress()">Reset Progress</button>
         </div>
@@ -583,7 +595,11 @@
                 const btn = document.createElement('button');
                 btn.className = 'option-btn';
                 btn.innerHTML = `${opt}<span class="icon-placeholder"></span>`;
-                btn.onclick = () => handleSelect(btn, opt, q.correct_answer, optionsContainer, idx);
+                if (answerStore !== 'passive') {
+                    btn.onclick = () => handleSelect(btn, opt, q.correct_answer, optionsContainer, idx);
+                } else {
+                    btn.classList.add('locked');
+                }
                 optionsContainer.appendChild(btn);
             });
 
@@ -601,6 +617,17 @@
             const explanation = document.createElement('div');
             explanation.className = 'explanation';
             explanation.innerHTML = `<strong>Correct Answer:</strong> ${q.correct_answer}<div class="ai-content"></div>`;
+
+            if (answerStore === 'passive') {
+                explanation.style.display = 'block';
+                Array.from(optionsContainer.children).forEach(b => {
+                    if (normalizeAnswerText(b.innerText) === normalizeAnswerText(q.correct_answer || '')) {
+                        b.classList.add('correct');
+                        const bIcon = b.querySelector('.icon-placeholder');
+                        if (bIcon) bIcon.innerHTML = '<i class="fas fa-check check-icon"></i>';
+                    }
+                });
+            }
             
             card.appendChild(optionsContainer);
             card.appendChild(explanation);
@@ -945,10 +972,12 @@
             const retakeBtn = document.getElementById('retake-btn');
             const hotBtn = document.getElementById('hot-btn');
             const randomBtn = document.getElementById('random-btn');
+            const passiveBtn = document.getElementById('passive-btn');
             const returnBtn = document.getElementById('return-btn');
             if (retakeBtn) retakeBtn.style.display = 'none';
             if (hotBtn) hotBtn.style.display = 'none';
             if (randomBtn) randomBtn.style.display = 'none';
+            if (passiveBtn) passiveBtn.style.display = 'none';
             if (returnBtn) returnBtn.style.display = 'inline-block';
             setModeBanner('Retake Wrong mode: practice only. This tab has its own persistent answers and score, separate from Main.');
 
@@ -996,10 +1025,12 @@
                 const retakeBtn = document.getElementById('retake-btn');
                 const hotBtn = document.getElementById('hot-btn');
                 const randomBtn = document.getElementById('random-btn');
+                const passiveBtn = document.getElementById('passive-btn');
                 const returnBtn = document.getElementById('return-btn');
                 if (retakeBtn) retakeBtn.style.display = 'none';
                 if (hotBtn) hotBtn.style.display = 'none';
                 if (randomBtn) randomBtn.style.display = 'none';
+                if (passiveBtn) passiveBtn.style.display = 'none';
                 if (returnBtn) returnBtn.style.display = 'inline-block';
 
                 setModeBanner('Hot 100 mode: top globally missed questions from collected data. Miss counts come from the shared Upstash leaderboard. Score is separate and saved under hot100_answers.');
@@ -1030,10 +1061,12 @@
             const retakeBtn = document.getElementById('retake-btn');
             const hotBtn = document.getElementById('hot-btn');
             const randomBtn = document.getElementById('random-btn');
+            const passiveBtn = document.getElementById('passive-btn');
             const returnBtn = document.getElementById('return-btn');
             if (retakeBtn) retakeBtn.style.display = 'inline-block';
             if (hotBtn) hotBtn.style.display = 'inline-block';
             if (randomBtn) randomBtn.style.display = 'inline-block';
+            if (passiveBtn) passiveBtn.style.display = 'inline-block';
             if (returnBtn) returnBtn.style.display = 'none';
             setModeBanner('Main mode: your permanent score and answers are saved in quiz_answers. Retake and Hot 100 use separate storage.');
 
@@ -1064,10 +1097,12 @@
             const retakeBtn = document.getElementById('retake-btn');
             const hotBtn = document.getElementById('hot-btn');
             const randomBtn = document.getElementById('random-btn');
+            const passiveBtn = document.getElementById('passive-btn');
             const returnBtn = document.getElementById('return-btn');
             if (retakeBtn) retakeBtn.style.display = 'none';
             if (hotBtn) hotBtn.style.display = 'none';
             if (randomBtn) randomBtn.style.display = 'none';
+            if (passiveBtn) passiveBtn.style.display = 'none';
             if (returnBtn) returnBtn.style.display = 'inline-block';
 
             setModeBanner('Random mode: one random question at a time. Correct answers are removed. Wrong answers show AI insight and a Next Question button.');
@@ -1126,6 +1161,37 @@
             explanation.appendChild(btn);
         }
 
+        function showPassiveMode() {
+            if (!allQuestionsData.length) {
+                alert('Question bank is still loading.');
+                return;
+            }
+
+            activeMode = 'passive';
+            const retakeBtn = document.getElementById('retake-btn');
+            const hotBtn = document.getElementById('hot-btn');
+            const randomBtn = document.getElementById('random-btn');
+            const passiveBtn = document.getElementById('passive-btn');
+            const returnBtn = document.getElementById('return-btn');
+            if (retakeBtn) retakeBtn.style.display = 'none';
+            if (hotBtn) hotBtn.style.display = 'none';
+            if (randomBtn) randomBtn.style.display = 'none';
+            if (passiveBtn) passiveBtn.style.display = 'none';
+            if (returnBtn) returnBtn.style.display = 'inline-block';
+
+            setModeBanner('Passive mode: browse questions and answers only. No answers are saved and your scores do not change.');
+            renderQuestions(allQuestionsData, {
+                shouldRestore: false,
+                shouldAutoscroll: false,
+                updateMainStats: false,
+                isRetakeList: false,
+                answerStore: 'passive',
+                mode: 'passive'
+            });
+            refreshModeStats('passive');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
         function setModeBanner(text) {
             const banner = document.getElementById('mode-banner');
             if (!banner) return;
@@ -1178,6 +1244,16 @@
                 const scorePercent = randomTotalAnswered > 0 ? Math.round((randomCorrectCount / randomTotalAnswered) * 100) : 0;
                 const scoreEl = document.getElementById('stat-score');
                 if (scoreEl) scoreEl.innerText = `${scorePercent}%`;
+                return;
+            }
+
+            if (mode === 'passive') {
+                document.getElementById('stat-progress').innerText = 0;
+                document.getElementById('total-count').innerText = allQuestionsData.length;
+                document.getElementById('stat-correct').innerText = 0;
+                document.getElementById('stat-wrong').innerText = 0;
+                const scoreEl = document.getElementById('stat-score');
+                if (scoreEl) scoreEl.innerText = '0%';
             }
         }
 
@@ -1190,6 +1266,11 @@
         }
 
         function resetProgress() {
+            if (activeMode === 'passive') {
+                alert('Passive mode is read-only and has no progress to reset.');
+                return;
+            }
+
             if (activeMode === 'hot') {
                 if (!confirm('Reset Hot 100 progress only?')) return;
                 localStorage.removeItem('hot100_answers');
