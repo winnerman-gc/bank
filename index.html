@@ -374,6 +374,7 @@
         let hotAnswers = JSON.parse(localStorage.getItem('hot100_answers') || '{}');
         let allQuestionsData = [];
         let hotEntries = [];
+        let retakeEntries = [];
         let hotCorrectCount = 0;
         let hotWrongCount = 0;
         let hotTotalAnswered = 0;
@@ -472,6 +473,7 @@
                 hotWrongCount = restoredWrong;
                 refreshModeStats('hot');
             } else if (mode === 'retake') {
+                retakeEntries = questionEntries;
                 retakeTotalAnswered = restoredAnswered;
                 retakeCorrectCount = restoredCorrect;
                 retakeWrongCount = restoredWrong;
@@ -864,7 +866,7 @@
 
             if (useAI && shouldUpdateRetakeStats) {
                 document.getElementById('stat-progress').innerText = retakeTotalAnswered;
-                document.getElementById('total-count').innerText = Object.keys(retakeAnswers).length || 0;
+                document.getElementById('total-count').innerText = retakeEntries.length;
                 document.getElementById('stat-correct').innerText = retakeCorrectCount;
                 document.getElementById('stat-wrong').innerText = retakeWrongCount;
                 const scorePercent = retakeTotalAnswered > 0 ? Math.round((retakeCorrectCount / retakeTotalAnswered) * 100) : 0;
@@ -910,6 +912,8 @@
                 alert('No wrong questions to retake yet.');
                 return;
             }
+
+            retakeEntries = wrongEntries;
 
             isRetakeMode = true;
             activeMode = 'retake';
@@ -1121,7 +1125,7 @@
 
             if (mode === 'retake') {
                 document.getElementById('stat-progress').innerText = retakeTotalAnswered;
-                document.getElementById('total-count').innerText = Object.keys(retakeAnswers).length || 0;
+                document.getElementById('total-count').innerText = retakeEntries.length;
                 document.getElementById('stat-correct').innerText = retakeCorrectCount;
                 document.getElementById('stat-wrong').innerText = retakeWrongCount;
                 const scorePercent = retakeTotalAnswered > 0 ? Math.round((retakeCorrectCount / retakeTotalAnswered) * 100) : 0;
@@ -1150,48 +1154,72 @@
         }
 
         function resetProgress() {
-            if (confirm('Are you sure you want to clear all progress?')) {
-                if (activeMode === 'hot') {
-                    localStorage.removeItem('hot100_answers');
-                    hotAnswers = {};
-                    hotCorrectCount = 0;
-                    hotWrongCount = 0;
-                    hotTotalAnswered = 0;
-                    renderQuestions(hotEntries, {
-                        shouldRestore: true,
-                        shouldAutoscroll: false,
-                        updateMainStats: false,
-                        isRetakeList: false,
-                        answerStore: 'hot',
-                        mode: 'hot'
-                    });
-                    return;
-                }
-
-                if (activeMode === 'retake') {
-                    localStorage.removeItem('retake_answers');
-                    retakeAnswers = {};
-                    retakeCorrectCount = 0;
-                    retakeWrongCount = 0;
-                    retakeTotalAnswered = 0;
-                    retakeWrongQuestions();
-                    return;
-                }
-
-                localStorage.removeItem('quiz_answers');
-                userAnswers = {};
-                totalAnswered = 0;
-                correctCount = 0;
-                wrongCount = 0;
-                renderQuestions(allQuestionsData, {
+            if (activeMode === 'hot') {
+                if (!confirm('Reset Hot 100 progress only?')) return;
+                localStorage.removeItem('hot100_answers');
+                hotAnswers = {};
+                hotCorrectCount = 0;
+                hotWrongCount = 0;
+                hotTotalAnswered = 0;
+                renderQuestions(hotEntries, {
                     shouldRestore: true,
-                    shouldAutoscroll: true,
-                    updateMainStats: true,
+                    shouldAutoscroll: false,
+                    updateMainStats: false,
                     isRetakeList: false,
-                    answerStore: 'main',
-                    mode: 'main'
+                    answerStore: 'hot',
+                    mode: 'hot'
                 });
+                return;
             }
+
+            if (activeMode === 'retake') {
+                if (!confirm('Reset Retake progress only? This will clear saved retake answers but keep your Main progress.')) return;
+                localStorage.removeItem('retake_answers');
+                retakeAnswers = {};
+                retakeCorrectCount = 0;
+                retakeWrongCount = 0;
+                retakeTotalAnswered = 0;
+                const entries = retakeEntries.length ? retakeEntries : Object.keys(userAnswers)
+                    .map(k => Number(k))
+                    .filter(i => Number.isFinite(i) && i >= 0 && i < allQuestionsData.length)
+                    .filter(i => {
+                        const q = allQuestionsData[i];
+                        return q && normalizeAnswerText(userAnswers[i] || '') !== normalizeAnswerText(q.correct_answer || '');
+                    })
+                    .map(i => ({ question: allQuestionsData[i], sourceIdx: i }));
+
+                if (!entries.length) {
+                    alert('Retake reset complete. No wrong questions are currently available in Main.');
+                    returnToMainQuestions();
+                    return;
+                }
+
+                retakeEntries = entries;
+                renderQuestions(retakeEntries, {
+                    shouldRestore: true,
+                    shouldAutoscroll: false,
+                    updateMainStats: false,
+                    isRetakeList: true,
+                    answerStore: 'retake',
+                    mode: 'retake'
+                });
+                return;
+            }
+
+            if (!confirm('Reset Main progress? This clears your saved answers in Main mode only.')) return;
+            localStorage.removeItem('quiz_answers');
+            userAnswers = {};
+            totalAnswered = 0;
+            correctCount = 0;
+            wrongCount = 0;
+            renderQuestions(allQuestionsData, {
+                shouldRestore: true,
+                shouldAutoscroll: true,
+                updateMainStats: true,
+                isRetakeList: false,
+                answerStore: 'main',
+                mode: 'main'
+            });
         }
 
         loadFeed();
