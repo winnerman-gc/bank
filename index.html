@@ -319,6 +319,19 @@
             font-weight: 600;
             cursor: pointer;
         }
+
+        .random-centered {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 210px);
+        }
+
+        .random-centered .question-card {
+            width: 100%;
+            max-width: 760px;
+            margin-bottom: 0;
+        }
     </style>
 </head>
 <body>
@@ -372,8 +385,10 @@
         let randomTotalAnswered = 0;
         let randomRemaining = [];
         let randomCurrentIdx = null;
+        let randomBannerDismissed = false;
         let isRetakeMode = false;
         let activeMode = 'main';
+        const RANDOM_NEXT_DELAY_MS = 650;
         const WORKER_URL = "https://qna.wgchalie.workers.dev";
 
         async function loadFeed() {
@@ -416,6 +431,7 @@
             if (loading) loading.remove();
 
             feed.innerHTML = '';
+            feed.classList.toggle('random-centered', mode === 'random');
             totalDisplay.innerText = questionEntries.length;
 
             let restoredAnswered = 0;
@@ -468,6 +484,13 @@
             }
         }
 
+        function scrollElementToCenter(element) {
+            if (!element) return;
+            const rect = element.getBoundingClientRect();
+            const targetY = rect.top + window.pageYOffset - ((window.innerHeight - rect.height) / 2);
+            window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
+        }
+
         function autoScrollToNextUnanswered(feed) {
             if (totalAnswered <= 0 || totalAnswered >= allQuestionsData.length) return;
 
@@ -485,10 +508,7 @@
                 const element = document.getElementById(`q-${nextIdx}`) || document.getElementById(`q-${lastAnsweredIdx}`);
 
                 if (element) {
-                    const headerOffset = 130;
-                    const elementPosition = element.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                    scrollElementToCenter(element);
                 } else if (attempts < 20) {
                     attempts++;
                     setTimeout(checkAndScroll, 300);
@@ -496,6 +516,22 @@
             };
 
             setTimeout(checkAndScroll, 500);
+        }
+
+        function autoScrollToLastAnswered(answerObj, validIndices = null) {
+            const keys = Object.keys(answerObj || {})
+                .map(k => Number(k))
+                .filter(n => Number.isFinite(n));
+
+            const filtered = Array.isArray(validIndices)
+                ? keys.filter(k => validIndices.includes(k))
+                : keys;
+
+            if (!filtered.length) return;
+            filtered.sort((a, b) => a - b);
+            const last = filtered[filtered.length - 1];
+            const element = document.getElementById(`q-${last}`);
+            if (element) scrollElementToCenter(element);
         }
 
         function createQuestionCard(q, idx, persistMainData, answerStore = 'main', misses) {
@@ -825,9 +861,13 @@
             }
 
             if (useAI && shouldUpdateRandomStats) {
+                if (!randomBannerDismissed) {
+                    setModeBanner('');
+                    randomBannerDismissed = true;
+                }
                 refreshModeStats('random');
                 if (isCorrect) {
-                    setTimeout(() => showNextRandomQuestion(true), 250);
+                    setTimeout(() => showNextRandomQuestion(true), RANDOM_NEXT_DELAY_MS);
                 } else if (card) {
                     appendRandomNextButton(card);
                 }
@@ -838,10 +878,7 @@
                 setTimeout(() => {
                     const nextCard = card.nextElementSibling;
                     if (nextCard && nextCard.classList.contains('question-card')) {
-                        const headerOffset = 130;
-                        const elementPosition = nextCard.getBoundingClientRect().top;
-                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                        scrollElementToCenter(nextCard);
                     }
                 }, 220);
             }
@@ -934,7 +971,12 @@
                     answerStore: 'hot',
                     mode: 'hot'
                 });
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                const hotAnsweredKeys = Object.keys(hotAnswers || {});
+                if (hotAnsweredKeys.length > 0) {
+                    autoScrollToLastAnswered(hotAnswers, hotEntries.map(e => e.sourceIdx));
+                } else {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
             } catch (err) {
                 console.error(err);
                 alert(`Could not load Hot 100: ${err.message}`);
@@ -976,6 +1018,7 @@
             randomTotalAnswered = 0;
             randomRemaining = allQuestionsData.map((_, idx) => idx);
             randomCurrentIdx = null;
+            randomBannerDismissed = false;
 
             const retakeBtn = document.getElementById('retake-btn');
             const hotBtn = document.getElementById('hot-btn');
@@ -1032,7 +1075,7 @@
             const btn = document.createElement('button');
             btn.className = 'next-random-btn';
             btn.innerText = 'Next Question';
-            btn.onclick = () => showNextRandomQuestion(false);
+            btn.onclick = () => setTimeout(() => showNextRandomQuestion(false), RANDOM_NEXT_DELAY_MS / 2);
             explanation.appendChild(btn);
         }
 
@@ -1095,9 +1138,46 @@
 
         function resetProgress() {
             if (confirm('Are you sure you want to clear all progress?')) {
+                if (activeMode === 'hot') {
+                    localStorage.removeItem('hot100_answers');
+                    hotAnswers = {};
+                    hotCorrectCount = 0;
+                    hotWrongCount = 0;
+                    hotTotalAnswered = 0;
+                    renderQuestions(hotEntries, {
+                        shouldRestore: true,
+                        shouldAutoscroll: false,
+                        updateMainStats: false,
+                        isRetakeList: false,
+                        answerStore: 'hot',
+                        mode: 'hot'
+                    });
+                    return;
+                }
+
+                if (activeMode === 'retake') {
+                    localStorage.removeItem('retake_answers');
+                    retakeAnswers = {};
+                    retakeCorrectCount = 0;
+                    retakeWrongCount = 0;
+                    retakeTotalAnswered = 0;
+                    retakeWrongQuestions();
+                    return;
+                }
+
                 localStorage.removeItem('quiz_answers');
-                localStorage.removeItem('retake_answers');
-                location.reload();
+                userAnswers = {};
+                totalAnswered = 0;
+                correctCount = 0;
+                wrongCount = 0;
+                renderQuestions(allQuestionsData, {
+                    shouldRestore: true,
+                    shouldAutoscroll: true,
+                    updateMainStats: true,
+                    isRetakeList: false,
+                    answerStore: 'main',
+                    mode: 'main'
+                });
             }
         }
 
