@@ -364,32 +364,74 @@
         .overlay-card {
             max-width: 560px;
             width: 100%;
-            padding: 28px 30px;
+            padding: 30px 32px 26px;
             border-radius: 20px;
             background: linear-gradient(135deg, rgba(255, 250, 240, 0.98), rgba(245, 232, 198, 0.96));
             border: 1px solid rgba(120, 92, 40, 0.38);
             box-shadow: 0 24px 60px rgba(63, 47, 22, 0.28), inset 0 0 0 1px rgba(255, 255, 255, 0.35);
-            text-align: center;
+            text-align: left;
             transform: rotate(-0.5deg);
+            position: relative;
+            overflow: hidden;
         }
 
-        .overlay-card p {
-            margin: 0;
-            font-size: clamp(1.25rem, 3vw, 2rem);
-            line-height: 1.45;
-            font-weight: 600;
+        .overlay-card::before {
+            content: '';
+            position: absolute;
+            inset: 14px;
+            border-radius: 16px;
+            border: 1px solid rgba(120, 92, 40, 0.12);
+            pointer-events: none;
+        }
+
+        .overlay-letter {
+            position: relative;
+            z-index: 1;
+            font-family: "Segoe Script", "Brush Script MT", "Snell Roundhand", "Apple Chancery", "Lucida Handwriting", cursive;
             color: #4a3214;
-            letter-spacing: 0.03em;
-            font-family: "Brush Script MT", "Snell Roundhand", "Apple Chancery", "Lucida Handwriting", cursive;
+        }
+
+        .overlay-kicker {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.22em;
+            opacity: 0.7;
+            margin-bottom: 18px;
+        }
+
+        .overlay-message {
+            margin: 0;
+            font-size: clamp(1.4rem, 3vw, 2.2rem);
+            line-height: 1.35;
+            font-weight: 500;
             text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+        }
+
+        .overlay-divider {
+            width: 92px;
+            height: 1px;
+            margin: 22px 0 18px;
+            background: linear-gradient(90deg, transparent, rgba(120, 92, 40, 0.65), transparent);
+        }
+
+        .overlay-signoff {
+            margin: 0;
+            font-size: clamp(1.15rem, 2.4vw, 1.7rem);
+            line-height: 1.25;
+            text-align: right;
+            font-weight: 600;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
 
     <div class="page-overlay" aria-label="Message overlay">
-        <div class="overlay-card">
-            <p>thank you folks, it has been a great pleasure, yours truly, winnerman</p>
+        <div class="overlay-card overlay-letter">
+            <div class="overlay-kicker">A small note</div>
+            <p class="overlay-message">thank you folks, it has been a great pleasure</p>
+            <div class="overlay-divider" aria-hidden="true"></div>
+            <p class="overlay-signoff">yours truly,<br>Winnerman</p>
         </div>
     </div>
 
