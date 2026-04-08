@@ -422,7 +422,8 @@
                 updateMainStats = false,
                 isRetakeList = false,
                 answerStore = 'main',
-                mode = 'main'
+                mode = 'main',
+                shuffleOptions = false
             } = options;
 
             const feed = document.getElementById('feed');
@@ -443,7 +444,7 @@
                 const sourceIdx = Number.isFinite(entry.sourceIdx) ? entry.sourceIdx : localIdx;
 
                 try {
-                    const card = createQuestionCard(q, sourceIdx, !isRetakeList, answerStore, entry.misses);
+                    const card = createQuestionCard(q, sourceIdx, !isRetakeList, answerStore, entry.misses, shuffleOptions);
                     feed.appendChild(card);
 
                     const answersObj = answerStore === 'hot' ? hotAnswers : answerStore === 'retake' ? retakeAnswers : userAnswers;
@@ -534,7 +535,16 @@
             if (element) scrollElementToCenter(element);
         }
 
-        function createQuestionCard(q, idx, persistMainData, answerStore = 'main', misses) {
+        function shuffleArray(arr) {
+            const out = [...arr];
+            for (let i = out.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [out[i], out[j]] = [out[j], out[i]];
+            }
+            return out;
+        }
+
+        function createQuestionCard(q, idx, persistMainData, answerStore = 'main', misses, shuffleOptions = false) {
             const card = document.createElement('div');
             card.className = 'question-card';
             card.id = `q-${idx}`;
@@ -544,7 +554,9 @@
             optionsContainer.dataset.persistMainData = persistMainData ? 'true' : 'false';
             optionsContainer.dataset.answerStore = answerStore;
 
-            q.options.forEach(opt => {
+            const optionList = shuffleOptions ? shuffleArray(q.options || []) : (q.options || []);
+
+            optionList.forEach(opt => {
                 const btn = document.createElement('button');
                 btn.className = 'option-btn';
                 btn.innerHTML = `${opt}<span class="icon-placeholder"></span>`;
@@ -1060,7 +1072,8 @@
                 updateMainStats: false,
                 isRetakeList: false,
                 answerStore: 'random',
-                mode: 'random'
+                mode: 'random',
+                shuffleOptions: true
             });
             refreshModeStats('random');
         }
