@@ -219,6 +219,11 @@
             align-items: center;
             justify-content: space-between;
             width: 100%;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .option-btn:focus {
+            outline: none;
         }
 
         .option-btn:hover:not(.locked) {
@@ -492,6 +497,13 @@
             const rect = element.getBoundingClientRect();
             const targetY = rect.top + window.pageYOffset - ((window.innerHeight - rect.height) / 2);
             window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
+        }
+
+        function clearInteractionState() {
+            const activeEl = document.activeElement;
+            if (activeEl && typeof activeEl.blur === 'function') {
+                activeEl.blur();
+            }
         }
 
         function autoScrollToNextUnanswered(feed) {
@@ -847,6 +859,9 @@
 
             // Lock all buttons in this card
             Array.from(parent.children).forEach(b => b.classList.add('locked'));
+            if (useAI && shouldUpdateRandomStats) {
+                btn.blur();
+            }
 
             if (useAI && updateMainStats) {
                 updateStats();
@@ -1053,6 +1068,8 @@
         function showNextRandomQuestion(removeCurrent) {
             if (activeMode !== 'random') return;
 
+            clearInteractionState();
+
             if (removeCurrent && Number.isInteger(randomCurrentIdx)) {
                 randomRemaining = randomRemaining.filter(idx => idx !== randomCurrentIdx);
             }
@@ -1079,6 +1096,7 @@
                 mode: 'random',
                 shuffleOptions: true
             });
+            requestAnimationFrame(clearInteractionState);
             refreshModeStats('random');
         }
 
