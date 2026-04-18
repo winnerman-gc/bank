@@ -353,6 +353,7 @@
             <button class="random-btn" id="random-btn" onclick="showRandomMode()">Random</button>
             <button class="passive-btn" id="passive-btn" onclick="showPassiveMode()">Passive</button>
             <button class="random-btn" id="shuffle-toggle-btn" onclick="toggleShuffleOptions()">Shuffle: On</button>
+            <button class="random-btn" id="question-shuffle-toggle-btn" onclick="toggleQuestionShuffle()">Questions: Off</button>
             <button class="return-btn" id="return-btn" onclick="returnToMainQuestions()">Return to Main</button>
             <button class="reset-btn" onclick="resetProgress()">Reset Progress</button>
         </div>
@@ -394,6 +395,10 @@
         let isRetakeMode = false;
         let activeMode = 'main';
         let shuffleOptionsEnabled = localStorage.getItem('shuffle_options_enabled') !== 'false';
+        let questionShuffleEnabled = localStorage.getItem('question_shuffle_enabled') === 'true';
+        let questionShuffleOrders = JSON.parse(localStorage.getItem('question_shuffle_orders') || '{}');
+        let currentRenderedQuestionOrder = [];
+        let currentRenderedAnswerStore = 'main';
         const RANDOM_NEXT_DELAY_MS = 650;
 
         async function loadFeed() {
@@ -409,7 +414,9 @@
                     shouldAutoscroll: true,
                     updateMainStats: true,
                     mode: 'main',
-                    shuffleOptions: shuffleOptionsEnabled
+                    shuffleOptions: shuffleOptionsEnabled,
+                    shuffleQuestions: questionShuffleEnabled,
+                    answerStore: 'main'
                 });
 
             } catch (err) {
@@ -434,7 +441,8 @@
                 isRetakeList = false,
                 answerStore = 'main',
                 mode = 'main',
-                shuffleOptions = false
+                shuffleOptions = false,
+                shuffleQuestions = false
             } = options;
 
             const feed = document.getElementById('feed');
@@ -444,13 +452,21 @@
 
             feed.innerHTML = '';
             feed.classList.toggle('random-centered', mode === 'random');
-            totalDisplay.innerText = questionEntries.length;
+            const displayEntries = shuffleQuestions
+                ? getShuffledQuestionEntries(questionEntries, answerStore, mode)
+                : [...questionEntries];
+            currentRenderedQuestionOrder = displayEntries.map((entry, localIdx) => {
+                const sourceIdx = Number.isFinite(entry.sourceIdx) ? entry.sourceIdx : localIdx;
+                return sourceIdx;
+            });
+            currentRenderedAnswerStore = answerStore;
+            totalDisplay.innerText = displayEntries.length;
 
             let restoredAnswered = 0;
             let restoredCorrect = 0;
             let restoredWrong = 0;
 
-            questionEntries.forEach((entry, localIdx) => {
+            displayEntries.forEach((entry, localIdx) => {
                 const q = entry.question || entry;
                 const sourceIdx = Number.isFinite(entry.sourceIdx) ? entry.sourceIdx : localIdx;
 
@@ -523,20 +539,21 @@
         }
 
         function autoScrollToNextUnanswered(feed) {
-            if (totalAnswered <= 0 || totalAnswered >= allQuestionsData.length) return;
+            if (totalAnswered <= 0 || totalAnswered >= currentRenderedQuestionOrder.length) return;
 
             let attempts = 0;
             const checkAndScroll = () => {
-                const answeredKeys = Object.keys(userAnswers)
+                const answersObj = currentRenderedAnswerStore === 'retake' ? retakeAnswers : userAnswers;
+                const answeredKeys = Object.keys(answersObj)
                     .map(k => Number(k))
-                    .filter(n => Number.isFinite(n) && n >= 0 && n < allQuestionsData.length)
+                    .filter(n => Number.isFinite(n) && currentRenderedQuestionOrder.includes(n))
                     .sort((a, b) => a - b);
 
                 if (answeredKeys.length === 0) return;
 
-                const lastAnsweredIdx = answeredKeys[answeredKeys.length - 1];
-                const nextIdx = Math.min(lastAnsweredIdx + 1, allQuestionsData.length - 1);
-                const element = document.getElementById(`q-${nextIdx}`) || document.getElementById(`q-${lastAnsweredIdx}`);
+                const nextIdx = currentRenderedQuestionOrder.find(idx => answersObj[idx] === undefined);
+                if (nextIdx === undefined) return;
+                const element = document.getElementById(`q-${nextIdx}`);
 
                 if (element) {
                     scrollElementToCenter(element);
@@ -589,15 +606,54 @@
             return Number.isFinite(idx) && idx >= 0 ? idx : null;
         }
 
+        function getQuestionShuffleKey(questionEntries, answerStore, mode) {
+            const sourceIds = questionEntries.map((entry, localIdx) => Number.isFinite(entry.sourceIdx) ? entry.sourceIdx : localIdx);
+            return `${mode}:${answerStore}:${sourceIds.join(',')}`;
+        }
+
+        function getShuffledQuestionEntries(questionEntries, answerStore, mode) {
+            if (!questionShuffleEnabled || questionEntries.length < 2) return [...questionEntries];
+
+            const sourceIds = questionEntries.map((entry, localIdx) => Number.isFinite(entry.sourceIdx) ? entry.sourceIdx : localIdx);
+            const shuffleKey = getQuestionShuffleKey(questionEntries, answerStore, mode);
+            const existing = questionShuffleOrders[shuffleKey];
+            const isValidStoredOrder = Array.isArray(existing)
+                && existing.length === sourceIds.length
+                && existing.every(n => sourceIds.includes(n))
+                && (new Set(existing)).size === sourceIds.length;
+
+            const entryById = new Map(questionEntries.map((entry, localIdx) => [Number.isFinite(entry.sourceIdx) ? entry.sourceIdx : localIdx, entry]));
+
+            if (isValidStoredOrder) {
+                return existing.map(id => entryById.get(id)).filter(Boolean);
+            }
+
+            const shuffledIds = shuffleArray(sourceIds);
+            questionShuffleOrders[shuffleKey] = shuffledIds;
+            localStorage.setItem('question_shuffle_orders', JSON.stringify(questionShuffleOrders));
+            return shuffledIds.map(id => entryById.get(id)).filter(Boolean);
+        }
+
         function setShuffleButtonState() {
             const toggleBtn = document.getElementById('shuffle-toggle-btn');
             if (!toggleBtn) return;
             toggleBtn.innerText = `Shuffle: ${shuffleOptionsEnabled ? 'On' : 'Off'}`;
         }
 
+        function setQuestionShuffleButtonState() {
+            const toggleBtn = document.getElementById('question-shuffle-toggle-btn');
+            if (!toggleBtn) return;
+            toggleBtn.innerText = `Questions: ${questionShuffleEnabled ? 'On' : 'Off'}`;
+        }
+
         function resetStoredShuffleOrders() {
             optionShuffleOrders = {};
             localStorage.removeItem('option_shuffle_orders');
+        }
+
+        function resetStoredQuestionShuffleOrders() {
+            questionShuffleOrders = {};
+            localStorage.removeItem('question_shuffle_orders');
         }
 
         function getOptionOrderForQuestion(options, idx, answerStore, shouldShuffle) {
@@ -901,7 +957,8 @@
                 isRetakeList: true,
                 answerStore: 'retake',
                 mode: 'retake',
-                shuffleOptions: shuffleOptionsEnabled
+                shuffleOptions: shuffleOptionsEnabled,
+                shuffleQuestions: questionShuffleEnabled
             });
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
@@ -926,7 +983,8 @@
                 isRetakeList: false,
                 answerStore: 'main',
                 mode: 'main',
-                shuffleOptions: shuffleOptionsEnabled
+                shuffleOptions: shuffleOptionsEnabled,
+                shuffleQuestions: questionShuffleEnabled
             });
         }
 
@@ -987,7 +1045,8 @@
                 isRetakeList: false,
                 answerStore: 'random',
                 mode: 'random',
-                shuffleOptions: shuffleOptionsEnabled
+                shuffleOptions: shuffleOptionsEnabled,
+                shuffleQuestions: false
             });
             requestAnimationFrame(clearInteractionState);
             requestAnimationFrame(() => centerRandomCard('auto'));
@@ -1033,7 +1092,8 @@
                 isRetakeList: false,
                 answerStore: 'passive',
                 mode: 'passive',
-                shuffleOptions: shuffleOptionsEnabled
+                shuffleOptions: shuffleOptionsEnabled,
+                shuffleQuestions: questionShuffleEnabled
             });
             refreshModeStats('passive');
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1048,7 +1108,8 @@
                     isRetakeList: true,
                     answerStore: 'retake',
                     mode: 'retake',
-                    shuffleOptions: shuffleOptionsEnabled
+                    shuffleOptions: shuffleOptionsEnabled,
+                    shuffleQuestions: questionShuffleEnabled
                 });
                 return;
             }
@@ -1063,7 +1124,8 @@
                     isRetakeList: false,
                     answerStore: 'random',
                     mode: 'random',
-                    shuffleOptions: shuffleOptionsEnabled
+                    shuffleOptions: shuffleOptionsEnabled,
+                    shuffleQuestions: false
                 });
                 requestAnimationFrame(clearInteractionState);
                 refreshModeStats('random');
@@ -1078,7 +1140,8 @@
                     isRetakeList: false,
                     answerStore: 'passive',
                     mode: 'passive',
-                    shuffleOptions: shuffleOptionsEnabled
+                    shuffleOptions: shuffleOptionsEnabled,
+                    shuffleQuestions: questionShuffleEnabled
                 });
                 refreshModeStats('passive');
                 return;
@@ -1091,7 +1154,8 @@
                 isRetakeList: false,
                 answerStore: 'main',
                 mode: 'main',
-                shuffleOptions: shuffleOptionsEnabled
+                shuffleOptions: shuffleOptionsEnabled,
+                shuffleQuestions: questionShuffleEnabled
             });
         }
 
@@ -1100,6 +1164,14 @@
             localStorage.setItem('shuffle_options_enabled', shuffleOptionsEnabled ? 'true' : 'false');
             resetStoredShuffleOrders();
             setShuffleButtonState();
+            rerenderActiveModeForShuffleChange();
+        }
+
+        function toggleQuestionShuffle() {
+            questionShuffleEnabled = !questionShuffleEnabled;
+            localStorage.setItem('question_shuffle_enabled', questionShuffleEnabled ? 'true' : 'false');
+            resetStoredQuestionShuffleOrders();
+            setQuestionShuffleButtonState();
             rerenderActiveModeForShuffleChange();
         }
 
@@ -1197,7 +1269,8 @@
                     isRetakeList: true,
                     answerStore: 'retake',
                     mode: 'retake',
-                    shuffleOptions: shuffleOptionsEnabled
+                    shuffleOptions: shuffleOptionsEnabled,
+                    shuffleQuestions: questionShuffleEnabled
                 });
                 return;
             }
@@ -1217,10 +1290,12 @@
                 isRetakeList: false,
                 answerStore: 'main',
                 mode: 'main',
-                shuffleOptions: shuffleOptionsEnabled
+                shuffleOptions: shuffleOptionsEnabled,
+                shuffleQuestions: questionShuffleEnabled
             });
         }
 
+        setQuestionShuffleButtonState();
         setShuffleButtonState();
         loadFeed();
     </script>
