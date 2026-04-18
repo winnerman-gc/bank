@@ -595,6 +595,11 @@
             toggleBtn.innerText = `Shuffle: ${shuffleOptionsEnabled ? 'On' : 'Off'}`;
         }
 
+        function resetStoredShuffleOrders() {
+            optionShuffleOrders = {};
+            localStorage.removeItem('option_shuffle_orders');
+        }
+
         function getOptionOrderForQuestion(options, idx, answerStore, shouldShuffle) {
             const identityOrder = options.map((_, i) => i);
             if (!shouldShuffle || options.length < 2) return identityOrder;
@@ -1093,6 +1098,7 @@
         function toggleShuffleOptions() {
             shuffleOptionsEnabled = !shuffleOptionsEnabled;
             localStorage.setItem('shuffle_options_enabled', shuffleOptionsEnabled ? 'true' : 'false');
+            resetStoredShuffleOrders();
             setShuffleButtonState();
             rerenderActiveModeForShuffleChange();
         }
