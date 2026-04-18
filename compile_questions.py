@@ -1,96 +1,146 @@
 import json
-import hashlib
 import os
 import re
+import zipfile
+import xml.etree.ElementTree as ET
 
 
-def strip_grading_artifacts(text):
-    if not text:
-        return text
-    cleaned = text.strip()
-    # Remove quiz grading fragments like "Mark 0.00 out of 1.00" wherever they appear.
-    cleaned = re.sub(r'\s*Mark\s+\d+(?:\.\d+)?\s+out\s+of\s+\d+(?:\.\d+)?\s*', ' ', cleaned, flags=re.IGNORECASE)
-    cleaned = re.sub(r'\s{2,}', ' ', cleaned).strip()
-    return cleaned
+W_NS = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
 
-def fix_missing_placeholders(text):
-    if not text:
-        return text
 
-    text = text.strip()
-    
-    # 1. Fix articles followed directly by a verb/adjective (mid-sentence gap)
-    # Example: "design of the focused on" -> "design of the ______ focused on"
-    patterns = [
-        (r'\b(the|is|of|a|an|as)\s+(focused|is|are|was|were|has|provides|referred|known|called|belongs)\b', r'\1 ______ \2'),
-        (r'\b(a)\s+(can)\b', r'\1 ______ \2'),
-    ]
-    
-    for pattern, replacement in patterns:
-        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
-    
-    # 2. Fix sentences ending with an article or preposition (trailing gap)
-    # Example: "obvious risk is" -> "obvious risk is ______"
-    # Note: excluding already dotted sentences or questions
-    if re.search(r'\b(is|a|an|the|as|by|to|of|at|into|developed|by|known|referred to as)\s*$', text, re.IGNORECASE):
-        text = text + " ______"
+def normalize_whitespace(text):
+    return re.sub(r"\s+", " ", str(text or "")).strip()
 
-    # 3. If the first alphabetic character is lowercase, assume missing leading blank.
-    first_alpha = re.search(r'[A-Za-z]', text)
-    if first_alpha and text[first_alpha.start()].islower() and not text.startswith("______"):
-        text = "______ " + text
-        
-    return text
 
-def get_question_hash(question):
-    # Normalize question text (lowercase, strip whitespace, remove grading artifacts)
-    text = strip_grading_artifacts(question.get('question_text', ''))
-    return hashlib.sha256(text.lower().encode('utf-8')).hexdigest()
+def extract_docx_paragraphs(docx_path):
+    with zipfile.ZipFile(docx_path, "r") as zf:
+        xml_data = zf.read("word/document.xml")
 
-def compile_questions():
-    all_questions = []
-    seen_hashes = set()
-    
-    # Include numbered JSON files and deepseek_json_*.json files.
-    numbered_files = [f for f in os.listdir('.') if f.endswith('.json') and f[:-5].isdigit()]
-    deepseek_files = [f for f in os.listdir('.') if re.match(r'^deepseek_json_.*\.json$', f)]
+    root = ET.fromstring(xml_data)
+    paragraphs = []
+    for p in root.iter(f"{W_NS}p"):
+        runs = []
+        for t in p.iter(f"{W_NS}t"):
+            runs.append(t.text or "")
+        line = normalize_whitespace("".join(runs))
+        if line:
+            paragraphs.append(line)
+    return paragraphs
 
-    # Sort numbered files numerically and deepseek files lexicographically.
-    numbered_files.sort(key=lambda x: int(x[:-5]))
-    deepseek_files.sort()
-    files = numbered_files + deepseek_files
-    
-    for filename in files:
-        if not os.path.exists(filename):
-            print(f"File {filename} not found, skipping.")
+
+def parse_docx_questions(paragraphs, source_name):
+    question_re = re.compile(r"^(\d+)\.\s+(.+)$")
+    option_re = re.compile(r"^([A-D])[\.)]\s+(.+)$", re.IGNORECASE)
+    answer_re = re.compile(r"^ANSWER\s*:\s*([A-D])\s*$", re.IGNORECASE)
+
+    questions = []
+    current = None
+    current_option_idx = None
+
+    def finalize_current():
+        nonlocal current, current_option_idx
+        if not current:
+            return
+        if len(current["options"]) >= 2 and current.get("correct_answer"):
+            questions.append(current)
+        current = None
+        current_option_idx = None
+
+    for raw in paragraphs:
+        line = normalize_whitespace(raw)
+        if not line:
             continue
-            
-        with open(filename, 'r', encoding='utf-8') as f:
+
+        qm = question_re.match(line)
+        if qm:
+            finalize_current()
+            q_num = int(qm.group(1))
+            q_text = normalize_whitespace(qm.group(2))
+            current = {
+                "question_number": q_num,
+                "question_text": q_text,
+                "options": [],
+                "correct_answer": "",
+                "original_file": source_name,
+            }
+            continue
+
+        if current is None:
+            continue
+
+        om = option_re.match(line)
+        if om:
+            current["options"].append(normalize_whitespace(om.group(2)))
+            current_option_idx = len(current["options"]) - 1
+            continue
+
+        am = answer_re.match(line)
+        if am:
+            answer_letter = am.group(1).upper()
+            idx = ord(answer_letter) - ord("A")
+            if 0 <= idx < len(current["options"]):
+                current["correct_answer"] = current["options"][idx]
+            continue
+
+        # Preserve multiline content when DOCX wraps long question/option text.
+        if current_option_idx is not None and not current.get("correct_answer"):
+            current["options"][current_option_idx] = normalize_whitespace(
+                current["options"][current_option_idx] + " " + line
+            )
+        elif not current.get("correct_answer"):
+            current["question_text"] = normalize_whitespace(current["question_text"] + " " + line)
+
+    finalize_current()
+
+    # Renumber sequentially for frontend stability.
+    for i, q in enumerate(questions, 1):
+        q["question_number"] = i
+
+    return questions
+
+
+def compile_from_docx(docx_path):
+    paragraphs = extract_docx_paragraphs(docx_path)
+    return parse_docx_questions(paragraphs, os.path.basename(docx_path))
+
+
+def compile_from_legacy_json():
+    all_questions = []
+    numbered_files = [f for f in os.listdir(".") if f.endswith(".json") and f[:-5].isdigit()]
+    numbered_files.sort(key=lambda x: int(x[:-5]))
+
+    for filename in numbered_files:
+        with open(filename, "r", encoding="utf-8") as f:
             try:
                 questions = json.load(f)
-                for q in questions:
-                    # Clean the question text in the actual object
-                    if 'question_text' in q:
-                        text = strip_grading_artifacts(q['question_text'])
-                        q['question_text'] = fix_missing_placeholders(text)
-                    
-                    q_hash = get_question_hash(q)
-                    if q_hash not in seen_hashes:
-                        seen_hashes.add(q_hash)
-                        # Re-number questions sequentially in the compiled list
-                        q['original_file'] = filename
-                        all_questions.append(q)
             except json.JSONDecodeError:
-                print(f"Error decoding {filename}")
+                continue
+            for q in questions:
+                q["original_file"] = filename
+                all_questions.append(q)
 
-    # Renumber questions for the final list
     for i, q in enumerate(all_questions, 1):
-        q['question_number'] = i
+        q["question_number"] = i
 
-    with open('compiled.json', 'w', encoding='utf-8') as f:
-        json.dump(all_questions, f, indent=2, ensure_ascii=False)
-    
-    print(f"Compiled {len(all_questions)} unique questions into compiled.json")
+    return all_questions
+
+
+def compile_questions():
+    docx_files = sorted([f for f in os.listdir(".") if f.lower().endswith(".docx")])
+
+    if docx_files:
+        source = docx_files[0]
+        questions = compile_from_docx(source)
+        print(f"Using DOCX source: {source}")
+    else:
+        questions = compile_from_legacy_json()
+        print("No DOCX found, using legacy numbered JSON files")
+
+    with open("compiled.json", "w", encoding="utf-8") as f:
+        json.dump(questions, f, indent=2, ensure_ascii=False)
+
+    print(f"Compiled {len(questions)} questions into compiled.json")
+
 
 if __name__ == "__main__":
     compile_questions()

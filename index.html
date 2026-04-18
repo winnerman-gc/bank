@@ -6,7 +6,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>Cryptography and Network Security Feed</title>
+    <title>Digital Integrated Circuits Question Bank</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
@@ -111,17 +111,6 @@
             font-size: 0.75rem;
             font-weight: bold;
             display: none;
-        }
-
-        .hot-btn {
-            background: #7c3aed;
-            color: white;
-            border: none;
-            padding: 2px 8px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 0.75rem;
-            font-weight: bold;
         }
 
         .random-btn {
@@ -436,14 +425,13 @@
     </div>
 
     <div class="header">
-        <h1>Cryptography and Network Security</h1>
+        <h1>Digital Integrated Circuits</h1>
         <div class="stats">
             <div class="stat-item">Correct: <span id="stat-correct" style="color:var(--success-color)">0</span></div>
             <div class="stat-item">Wrong: <span id="stat-wrong" style="color:var(--error-color)">0</span></div>
             <div class="stat-item">Score: <span id="stat-score" style="color:var(--primary-color)">0%</span></div>
             <div class="stat-item">Progress: <span id="stat-progress">0</span> / <span id="total-count">0</span></div>
             <button class="retake-btn" id="retake-btn" onclick="retakeWrongQuestions()">Retake Wrong</button>
-            <button class="hot-btn" id="hot-btn" onclick="showHot100Questions()">Hot 100</button>
             <button class="random-btn" id="random-btn" onclick="showRandomMode()">Random</button>
             <button class="passive-btn" id="passive-btn" onclick="showPassiveMode()">Passive</button>
             <button class="return-btn" id="return-btn" onclick="returnToMainQuestions()">Return to Main</button>
@@ -471,13 +459,9 @@
         let totalAnswered = 0;
         let userAnswers = JSON.parse(localStorage.getItem('quiz_answers') || '{}');
         let retakeAnswers = JSON.parse(localStorage.getItem('retake_answers') || '{}');
-        let hotAnswers = JSON.parse(localStorage.getItem('hot100_answers') || '{}');
+        let localMisses = JSON.parse(localStorage.getItem('local_miss_counts') || '{}');
         let allQuestionsData = [];
-        let hotEntries = [];
         let retakeEntries = [];
-        let hotCorrectCount = 0;
-        let hotWrongCount = 0;
-        let hotTotalAnswered = 0;
         let retakeCorrectCount = 0;
         let retakeWrongCount = 0;
         let retakeTotalAnswered = 0;
@@ -490,7 +474,6 @@
         let isRetakeMode = false;
         let activeMode = 'main';
         const RANDOM_NEXT_DELAY_MS = 650;
-        const WORKER_URL = "https://qna.wgchalie.workers.dev";
 
         async function loadFeed() {
             try {
@@ -548,7 +531,7 @@
                     const card = createQuestionCard(q, sourceIdx, !isRetakeList, answerStore, entry.misses, shuffleOptions);
                     feed.appendChild(card);
 
-                    const answersObj = answerStore === 'hot' ? hotAnswers : answerStore === 'retake' ? retakeAnswers : userAnswers;
+                    const answersObj = answerStore === 'retake' ? retakeAnswers : userAnswers;
                     if (shouldRestore && answersObj[sourceIdx]) {
                         restoredAnswered++;
                         const isCorrect = normalizeAnswerText(answersObj[sourceIdx]) === normalizeAnswerText(q.correct_answer || "");
@@ -666,6 +649,8 @@
             const card = document.createElement('div');
             card.className = 'question-card';
             card.id = `q-${idx}`;
+            const localMissCount = Number(localMisses[idx] || 0);
+            const effectiveMisses = Number.isFinite(misses) ? misses : localMissCount;
             
             const optionsContainer = document.createElement('div');
             optionsContainer.className = 'options';
@@ -689,8 +674,8 @@
             card.innerHTML = `
                 <div class="question-meta">
                     <span>Question ${idx + 1}</span>
-                    ${Number.isFinite(misses) ? `<span class="miss-badge">Misses: ${misses}</span>` : ''}
-                    <button class="hint-btn" title="Explain concept" onclick="handleHint('${idx}')">
+                    ${effectiveMisses > 0 ? `<span class="miss-badge">Misses: ${effectiveMisses}</span>` : ''}
+                    <button class="hint-btn" title="Show answer" onclick="handleHint('${idx}')">
                         <i class="far fa-lightbulb"></i>
                     </button>
                 </div>
@@ -699,7 +684,7 @@
             
             const explanation = document.createElement('div');
             explanation.className = 'explanation';
-            explanation.innerHTML = `<strong>Correct Answer:</strong> ${q.correct_answer}<div class="ai-content"></div>`;
+            explanation.innerHTML = `<strong>Correct Answer:</strong> ${q.correct_answer}`;
 
             if (answerStore === 'passive') {
                 explanation.style.display = 'block';
@@ -717,118 +702,10 @@
             return card;
         }
 
-        async function getAIExplanation(question, selected, correct, container) {
-            const aiSlot = container.querySelector('.ai-content');
-            aiSlot.innerHTML = `<div class="ai-loading"><i class="fas fa-robot"></i> AI is generating explanation...</div>`;
-            
-            try {
-                const response = await fetch(`${WORKER_URL}/ai-explain`, {
-                    method: 'POST',
-                    headers: { 
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ question, selected, correct })
-                });
-                
-                if (!response.ok) {
-                    const errorText = await response.text();
-                    throw new Error(`AI service error: ${response.status} ${errorText}`);
-                }
-
-                const data = await response.json();
-                const text = data.explanation || "No explanation available.";
-                aiSlot.innerHTML = `<div style="margin-top:10px; border-top:1px solid #e2e8f0; padding-top:10px;"><em>AI:</em>${renderAIExplanation(text, selected, correct)}</div>`;
-            } catch (err) {
-                console.error('AI Error:', err);
-                aiSlot.innerHTML = `<p style="color:var(--error-color); font-size:0.8rem;">Failed to load AI explanation: ${err.message}</p>`;
-            }
-        }
-
-        function escapeHTML(text) {
-            return String(text || '')
-                .replace(/&/g, '&amp;')
-                .replace(/</g, '&lt;')
-                .replace(/>/g, '&gt;')
-                .replace(/"/g, '&quot;')
-                .replace(/'/g, '&#39;');
-        }
-
-        function escapeRegExp(text) {
-            return String(text || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        }
-
-        function highlightPhrase(text, phrase, className, maxMatches = 1) {
-            const trimmed = String(phrase || '').trim();
-            if (!trimmed || maxMatches <= 0) return text;
-
-            const words = trimmed.split(/\s+/).filter(Boolean);
-            // Skip very short one-word phrases to avoid noisy highlighting.
-            if (words.length === 1 && words[0].length < 4) return text;
-
-            const pattern = words.length === 1
-                ? new RegExp(`\\b${escapeRegExp(words[0])}\\b`, 'gi')
-                : new RegExp(escapeRegExp(trimmed), 'gi');
-
-            let count = 0;
-            return text.replace(pattern, match => {
-                if (count >= maxMatches) return match;
-                count++;
-                return `<span class="${className}">${match}</span>`;
-            });
-        }
-
-        function splitIntoReadableParagraphs(safeText) {
-            const blocks = safeText
-                .split(/\n\s*\n+/)
-                .map(p => p.trim())
-                .filter(Boolean);
-
-            if (blocks.length > 1) return blocks;
-
-            const sentenceParts = (blocks[0] || '')
-                .split(/(?<=[.!?])\s+(?=[A-Z(])/)
-                .map(s => s.trim())
-                .filter(Boolean);
-
-            if (sentenceParts.length <= 2) return blocks;
-
-            const grouped = [];
-            for (let i = 0; i < sentenceParts.length; i += 2) {
-                grouped.push(sentenceParts.slice(i, i + 2).join(' '));
-            }
-            return grouped;
-        }
-
-        function renderAIExplanation(text, selected, correct) {
-            const safeText = escapeHTML(text).replace(/\r\n/g, '\n');
-            const paragraphs = splitIntoReadableParagraphs(safeText);
-            return paragraphs
-                .map(paragraph => {
-                    const body = paragraph.trim()
-                        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-                        .replace(/==(.+?)==/g, '<span class="ai-highlight">$1</span>')
-                        .replace(/\n/g, '<br>');
-                    const emphasized = highlightPhrase(
-                        highlightPhrase(body, correct, 'ai-highlight', 2),
-                        selected,
-                        'ai-highlight',
-                        1
-                    );
-                    return `<p>${emphasized}</p>`;
-                })
-                .join('');
-        }
-
-        async function handleHint(idx) {
+        function handleHint(idx) {
             const card = document.getElementById(`q-${idx}`);
             const explanation = card.querySelector('.explanation');
-            const questionText = card.querySelector('.question-text').innerText;
-            const correctBtn = Array.from(card.querySelectorAll('.option-btn')).find(b => b.classList.contains('correct'));
-            const correctAnswer = correctBtn ? correctBtn.innerText.trim() : "";
-
             explanation.style.display = 'block';
-            // Use same correct answer for both to signal a "Confirming" explanation
-            getAIExplanation(questionText, correctAnswer, correctAnswer, explanation);
         }
 
         function normalizeAnswerText(text) {
@@ -846,9 +723,6 @@
             if (answerStore === 'main') {
                 userAnswers[idx] = selected;
                 localStorage.setItem('quiz_answers', JSON.stringify(userAnswers));
-            } else if (answerStore === 'hot') {
-                hotAnswers[idx] = selected;
-                localStorage.setItem('hot100_answers', JSON.stringify(hotAnswers));
             } else if (answerStore === 'retake') {
                 retakeAnswers[idx] = selected;
                 localStorage.setItem('retake_answers', JSON.stringify(retakeAnswers));
@@ -856,10 +730,9 @@
 
             applySelection(btn, selected, correct, parent, true, idx, {
                 updateMainStats: answerStore === 'main',
-                updateHotStats: answerStore === 'hot',
                 updateRetakeStats: answerStore === 'retake',
                 updateRandomStats: answerStore === 'random',
-                reportMiss: answerStore === 'main'
+                trackLocalMiss: answerStore !== 'passive'
             });
         }
 
@@ -876,10 +749,9 @@
             if (selectedBtn) {
                 applySelection(selectedBtn, selected, correct, optionsContainer, false, idx, {
                     updateMainStats: false,
-                    updateHotStats: false,
                     updateRetakeStats: false,
                     updateRandomStats: false,
-                    reportMiss: false
+                    trackLocalMiss: false
                 });
             }
         }
@@ -890,16 +762,13 @@
 
             const {
                 updateMainStats = true,
-                updateHotStats: shouldUpdateHotStats = false,
                 updateRetakeStats: shouldUpdateRetakeStats = false,
                 updateRandomStats: shouldUpdateRandomStats = false,
-                reportMiss = true
+                trackLocalMiss = true
             } = behavior;
 
             if (useAI && updateMainStats) {
                 totalAnswered++;
-            } else if (useAI && shouldUpdateHotStats) {
-                hotTotalAnswered++;
             } else if (useAI && shouldUpdateRetakeStats) {
                 retakeTotalAnswered++;
             } else if (useAI && shouldUpdateRandomStats) {
@@ -911,14 +780,10 @@
             
             // Find child elements safely
             const explanation = card?.querySelector('.explanation');
-            const questionTextEl = card?.querySelector('.question-text');
-            const questionText = questionTextEl ? questionTextEl.innerText : "Unknown Question";
             
             if (isCorrect) {
                 if (useAI && updateMainStats) {
                     correctCount++;
-                } else if (useAI && shouldUpdateHotStats) {
-                    hotCorrectCount++;
                 } else if (useAI && shouldUpdateRetakeStats) {
                     retakeCorrectCount++;
                 } else if (useAI && shouldUpdateRandomStats) {
@@ -934,8 +799,6 @@
             } else {
                 if (useAI && updateMainStats) {
                     wrongCount++;
-                } else if (useAI && shouldUpdateHotStats) {
-                    hotWrongCount++;
                 } else if (useAI && shouldUpdateRetakeStats) {
                     retakeWrongCount++;
                 } else if (useAI && shouldUpdateRandomStats) {
@@ -947,23 +810,16 @@
                 
                 if (explanation) {
                     explanation.style.display = 'block';
-                    if (useAI) {
-                        getAIExplanation(questionText, selected, correct, explanation);
-                    }
                 }
 
                 // Show hint bulb for wrong answer to re-explain later
                 const hintBtn = card?.querySelector('.hint-btn');
                 if (hintBtn) hintBtn.style.display = 'block';
 
-                // Report the miss using the idx passed to the function
-                if (useAI && reportMiss && idx !== undefined) {
-                    fetch(`${WORKER_URL}/report-miss`, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ q_num: idx + 1 }),
-                        keepalive: true
-                    }).catch(err => console.error('KV Report Error:', err));
+                if (useAI && trackLocalMiss && idx !== undefined) {
+                    const prev = Number(localMisses[idx] || 0);
+                    localMisses[idx] = prev + 1;
+                    localStorage.setItem('local_miss_counts', JSON.stringify(localMisses));
                 }
                 
                 // Show where the correct one was
@@ -986,16 +842,6 @@
                 updateStats();
                 document.getElementById('stat-correct').innerText = correctCount;
                 document.getElementById('stat-wrong').innerText = wrongCount;
-            }
-
-            if (useAI && shouldUpdateHotStats) {
-                document.getElementById('stat-progress').innerText = hotTotalAnswered;
-                document.getElementById('total-count').innerText = hotEntries.length;
-                document.getElementById('stat-correct').innerText = hotCorrectCount;
-                document.getElementById('stat-wrong').innerText = hotWrongCount;
-                const scorePercent = hotTotalAnswered > 0 ? Math.round((hotCorrectCount / hotTotalAnswered) * 100) : 0;
-                const scoreEl = document.getElementById('stat-score');
-                if (scoreEl) scoreEl.innerText = `${scorePercent}%`;
             }
 
             if (useAI && shouldUpdateRetakeStats) {
@@ -1053,12 +899,10 @@
             isRetakeMode = true;
             activeMode = 'retake';
             const retakeBtn = document.getElementById('retake-btn');
-            const hotBtn = document.getElementById('hot-btn');
             const randomBtn = document.getElementById('random-btn');
             const passiveBtn = document.getElementById('passive-btn');
             const returnBtn = document.getElementById('return-btn');
             if (retakeBtn) retakeBtn.style.display = 'none';
-            if (hotBtn) hotBtn.style.display = 'none';
             if (randomBtn) randomBtn.style.display = 'none';
             if (passiveBtn) passiveBtn.style.display = 'none';
             if (returnBtn) returnBtn.style.display = 'inline-block';
@@ -1075,83 +919,18 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        async function showHot100Questions() {
-            try {
-                const response = await fetch(`${WORKER_URL}/hot-100`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({})
-                });
-                if (!response.ok) {
-                    const text = await response.text();
-                    throw new Error(`Failed to load Hot 100: ${response.status} ${text}`);
-                }
-
-                const data = await response.json();
-                const topList = Array.isArray(data.top) ? data.top : [];
-                hotEntries = topList
-                    .map(item => {
-                        const qNum = Number(item.q_num);
-                        const idx = qNum - 1;
-                        if (!Number.isInteger(idx) || idx < 0 || idx >= allQuestionsData.length) return null;
-                        return { question: allQuestionsData[idx], sourceIdx: idx, misses: Number(item.misses) || 0 };
-                    })
-                    .filter(Boolean)
-                    .slice(0, 100);
-
-                if (hotEntries.length === 0) {
-                    alert('No Hot 100 data available yet.');
-                    return;
-                }
-
-                activeMode = 'hot';
-                const retakeBtn = document.getElementById('retake-btn');
-                const hotBtn = document.getElementById('hot-btn');
-                const randomBtn = document.getElementById('random-btn');
-                const passiveBtn = document.getElementById('passive-btn');
-                const returnBtn = document.getElementById('return-btn');
-                if (retakeBtn) retakeBtn.style.display = 'none';
-                if (hotBtn) hotBtn.style.display = 'none';
-                if (randomBtn) randomBtn.style.display = 'none';
-                if (passiveBtn) passiveBtn.style.display = 'none';
-                if (returnBtn) returnBtn.style.display = 'inline-block';
-
-                setModeBanner('Hot 100 mode: top globally missed questions from collected data. Miss counts come from the shared Upstash leaderboard. Score is separate and saved under hot100_answers.');
-
-                renderQuestions(hotEntries, {
-                    shouldRestore: true,
-                    shouldAutoscroll: false,
-                    updateMainStats: false,
-                    isRetakeList: false,
-                    answerStore: 'hot',
-                    mode: 'hot'
-                });
-                const hotAnsweredKeys = Object.keys(hotAnswers || {});
-                if (hotAnsweredKeys.length > 0) {
-                    autoScrollToLastAnswered(hotAnswers, hotEntries.map(e => e.sourceIdx));
-                } else {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            } catch (err) {
-                console.error(err);
-                alert(`Could not load Hot 100: ${err.message}`);
-            }
-        }
-
         function returnToMainQuestions() {
             isRetakeMode = false;
             activeMode = 'main';
             const retakeBtn = document.getElementById('retake-btn');
-            const hotBtn = document.getElementById('hot-btn');
             const randomBtn = document.getElementById('random-btn');
             const passiveBtn = document.getElementById('passive-btn');
             const returnBtn = document.getElementById('return-btn');
             if (retakeBtn) retakeBtn.style.display = 'inline-block';
-            if (hotBtn) hotBtn.style.display = 'inline-block';
             if (randomBtn) randomBtn.style.display = 'inline-block';
             if (passiveBtn) passiveBtn.style.display = 'inline-block';
             if (returnBtn) returnBtn.style.display = 'none';
-            setModeBanner('Main mode: your permanent score and answers are saved in quiz_answers. Retake and Hot 100 use separate storage.');
+            setModeBanner('Main mode: your answers and miss counts are stored locally on this browser only.');
 
             renderQuestions(allQuestionsData, {
                 shouldRestore: true,
@@ -1178,17 +957,15 @@
             randomBannerDismissed = false;
 
             const retakeBtn = document.getElementById('retake-btn');
-            const hotBtn = document.getElementById('hot-btn');
             const randomBtn = document.getElementById('random-btn');
             const passiveBtn = document.getElementById('passive-btn');
             const returnBtn = document.getElementById('return-btn');
             if (retakeBtn) retakeBtn.style.display = 'none';
-            if (hotBtn) hotBtn.style.display = 'none';
             if (randomBtn) randomBtn.style.display = 'none';
             if (passiveBtn) passiveBtn.style.display = 'none';
             if (returnBtn) returnBtn.style.display = 'inline-block';
 
-            setModeBanner('Random mode: one random question at a time. Correct answers are removed. Wrong answers show AI insight and a Next Question button.');
+            setModeBanner('Random mode: one random question at a time. Correct answers are removed. Wrong answers show the correct answer and a Next Question button.');
             showNextRandomQuestion(false);
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
@@ -1252,12 +1029,10 @@
 
             activeMode = 'passive';
             const retakeBtn = document.getElementById('retake-btn');
-            const hotBtn = document.getElementById('hot-btn');
             const randomBtn = document.getElementById('random-btn');
             const passiveBtn = document.getElementById('passive-btn');
             const returnBtn = document.getElementById('return-btn');
             if (retakeBtn) retakeBtn.style.display = 'none';
-            if (hotBtn) hotBtn.style.display = 'none';
             if (randomBtn) randomBtn.style.display = 'none';
             if (passiveBtn) passiveBtn.style.display = 'none';
             if (returnBtn) returnBtn.style.display = 'inline-block';
@@ -1297,17 +1072,6 @@
         }
 
         function refreshModeStats(mode) {
-            if (mode === 'hot') {
-                document.getElementById('stat-progress').innerText = hotTotalAnswered;
-                document.getElementById('total-count').innerText = hotEntries.length;
-                document.getElementById('stat-correct').innerText = hotCorrectCount;
-                document.getElementById('stat-wrong').innerText = hotWrongCount;
-                const scorePercent = hotTotalAnswered > 0 ? Math.round((hotCorrectCount / hotTotalAnswered) * 100) : 0;
-                const scoreEl = document.getElementById('stat-score');
-                if (scoreEl) scoreEl.innerText = `${scorePercent}%`;
-                return;
-            }
-
             if (mode === 'retake') {
                 document.getElementById('stat-progress').innerText = retakeTotalAnswered;
                 document.getElementById('total-count').innerText = retakeEntries.length;
@@ -1340,10 +1104,6 @@
             }
         }
 
-        function updateHotStats() {
-            refreshModeStats('hot');
-        }
-
         function updateRetakeStats() {
             refreshModeStats('retake');
         }
@@ -1351,24 +1111,6 @@
         function resetProgress() {
             if (activeMode === 'passive') {
                 alert('Passive mode is read-only and has no progress to reset.');
-                return;
-            }
-
-            if (activeMode === 'hot') {
-                if (!confirm('Reset Hot 100 progress only?')) return;
-                localStorage.removeItem('hot100_answers');
-                hotAnswers = {};
-                hotCorrectCount = 0;
-                hotWrongCount = 0;
-                hotTotalAnswered = 0;
-                renderQuestions(hotEntries, {
-                    shouldRestore: true,
-                    shouldAutoscroll: false,
-                    updateMainStats: false,
-                    isRetakeList: false,
-                    answerStore: 'hot',
-                    mode: 'hot'
-                });
                 return;
             }
 
@@ -1408,7 +1150,9 @@
 
             if (!confirm('Reset Main progress? This clears your saved answers in Main mode only.')) return;
             localStorage.removeItem('quiz_answers');
+            localStorage.removeItem('local_miss_counts');
             userAnswers = {};
+            localMisses = {};
             totalAnswered = 0;
             correctCount = 0;
             wrongCount = 0;
