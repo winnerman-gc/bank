@@ -352,6 +352,7 @@
             <button class="retake-btn" id="retake-btn" onclick="retakeWrongQuestions()">Retake Wrong</button>
             <button class="random-btn" id="random-btn" onclick="showRandomMode()">Random</button>
             <button class="passive-btn" id="passive-btn" onclick="showPassiveMode()">Passive</button>
+            <button class="random-btn" id="shuffle-toggle-btn" onclick="toggleShuffleOptions()">Shuffle: On</button>
             <button class="return-btn" id="return-btn" onclick="returnToMainQuestions()">Return to Main</button>
             <button class="reset-btn" onclick="resetProgress()">Reset Progress</button>
         </div>
@@ -378,6 +379,7 @@
         let userAnswers = JSON.parse(localStorage.getItem('quiz_answers') || '{}');
         let retakeAnswers = JSON.parse(localStorage.getItem('retake_answers') || '{}');
         let localMisses = JSON.parse(localStorage.getItem('local_miss_counts') || '{}');
+        let optionShuffleOrders = JSON.parse(localStorage.getItem('option_shuffle_orders') || '{}');
         let allQuestionsData = [];
         let retakeEntries = [];
         let retakeCorrectCount = 0;
@@ -391,6 +393,7 @@
         let randomBannerDismissed = false;
         let isRetakeMode = false;
         let activeMode = 'main';
+        let shuffleOptionsEnabled = localStorage.getItem('shuffle_options_enabled') !== 'false';
         const RANDOM_NEXT_DELAY_MS = 650;
 
         async function loadFeed() {
@@ -401,7 +404,13 @@
                 });
                 const questions = await response.json();
                 allQuestionsData = questions;
-                renderQuestions(allQuestionsData, { shouldRestore: true, shouldAutoscroll: true, updateMainStats: true });
+                renderQuestions(allQuestionsData, {
+                    shouldRestore: true,
+                    shouldAutoscroll: true,
+                    updateMainStats: true,
+                    mode: 'main',
+                    shuffleOptions: shuffleOptionsEnabled
+                });
 
             } catch (err) {
                 console.error(err);
@@ -450,9 +459,11 @@
                     feed.appendChild(card);
 
                     const answersObj = answerStore === 'retake' ? retakeAnswers : userAnswers;
-                    if (shouldRestore && answersObj[sourceIdx]) {
+                    if (shouldRestore && answersObj[sourceIdx] !== undefined) {
+                        const selectedText = getStoredAnswerText(answersObj[sourceIdx]);
+                        if (!selectedText) return;
                         restoredAnswered++;
-                        const isCorrect = normalizeAnswerText(answersObj[sourceIdx]) === normalizeAnswerText(q.correct_answer || "");
+                        const isCorrect = normalizeAnswerText(selectedText) === normalizeAnswerText(q.correct_answer || "");
                         if (isCorrect) restoredCorrect++; else restoredWrong++;
                         restoreAnswer(card, answersObj[sourceIdx], q.correct_answer || "", sourceIdx);
                     }
@@ -563,6 +574,46 @@
             return out;
         }
 
+        function getStoredAnswerText(answer) {
+            if (typeof answer === 'string') return answer;
+            if (answer && typeof answer === 'object') {
+                if (typeof answer.text === 'string') return answer.text;
+                if (typeof answer.value === 'string') return answer.value;
+            }
+            return '';
+        }
+
+        function getStoredAnswerOptionIndex(answer) {
+            if (!answer || typeof answer !== 'object') return null;
+            const idx = Number(answer.optionIdx);
+            return Number.isFinite(idx) && idx >= 0 ? idx : null;
+        }
+
+        function setShuffleButtonState() {
+            const toggleBtn = document.getElementById('shuffle-toggle-btn');
+            if (!toggleBtn) return;
+            toggleBtn.innerText = `Shuffle: ${shuffleOptionsEnabled ? 'On' : 'Off'}`;
+        }
+
+        function getOptionOrderForQuestion(options, idx, answerStore, shouldShuffle) {
+            const identityOrder = options.map((_, i) => i);
+            if (!shouldShuffle || options.length < 2) return identityOrder;
+
+            const shuffleKey = `${answerStore}:${idx}`;
+            const existing = optionShuffleOrders[shuffleKey];
+            const isValidStoredOrder = Array.isArray(existing)
+                && existing.length === options.length
+                && existing.every(n => Number.isInteger(n) && n >= 0 && n < options.length)
+                && (new Set(existing)).size === options.length;
+
+            if (isValidStoredOrder) return existing;
+
+            const shuffledOrder = shuffleArray(identityOrder);
+            optionShuffleOrders[shuffleKey] = shuffledOrder;
+            localStorage.setItem('option_shuffle_orders', JSON.stringify(optionShuffleOrders));
+            return shuffledOrder;
+        }
+
         function createQuestionCard(q, idx, persistMainData, answerStore = 'main', misses, shuffleOptions = false) {
             const card = document.createElement('div');
             card.className = 'question-card';
@@ -575,14 +626,17 @@
             optionsContainer.dataset.persistMainData = persistMainData ? 'true' : 'false';
             optionsContainer.dataset.answerStore = answerStore;
 
-            const optionList = shuffleOptions ? shuffleArray(q.options || []) : (q.options || []);
+            const options = q.options || [];
+            const optionOrder = getOptionOrderForQuestion(options, idx, answerStore, shuffleOptions);
 
-            optionList.forEach(opt => {
+            optionOrder.forEach(optionIdx => {
+                const opt = options[optionIdx];
                 const btn = document.createElement('button');
                 btn.className = 'option-btn';
                 btn.innerHTML = `${opt}<span class="icon-placeholder"></span>`;
+                btn.dataset.optionIdx = String(optionIdx);
                 if (answerStore !== 'passive') {
-                    btn.onclick = () => handleSelect(btn, opt, q.correct_answer, optionsContainer, idx);
+                    btn.onclick = () => handleSelect(btn, opt, q.correct_answer, optionsContainer, idx, optionIdx);
                 } else {
                     btn.classList.add('locked');
                 }
@@ -634,15 +688,19 @@
             return t;
         }
 
-        function handleSelect(btn, selected, correct, parent, idx) {
+        function handleSelect(btn, selected, correct, parent, idx, selectedOptionIdx) {
             if (parent.classList.contains('answered')) return;
 
             const answerStore = parent.dataset.answerStore || 'main';
+            const storedAnswer = {
+                text: selected,
+                optionIdx: Number.isFinite(selectedOptionIdx) ? selectedOptionIdx : null
+            };
             if (answerStore === 'main') {
-                userAnswers[idx] = selected;
+                userAnswers[idx] = storedAnswer;
                 localStorage.setItem('quiz_answers', JSON.stringify(userAnswers));
             } else if (answerStore === 'retake') {
-                retakeAnswers[idx] = selected;
+                retakeAnswers[idx] = storedAnswer;
                 localStorage.setItem('retake_answers', JSON.stringify(retakeAnswers));
             }
 
@@ -658,14 +716,19 @@
             const optionsContainer = card.querySelector('.options');
             const btns = optionsContainer.querySelectorAll('.option-btn');
             let selectedBtn = null;
-            const normalizedSelected = normalizeAnswerText(selected);
+            const selectedText = getStoredAnswerText(selected);
+            const selectedOptionIdx = getStoredAnswerOptionIndex(selected);
+            const normalizedSelected = normalizeAnswerText(selectedText);
             
             btns.forEach(btn => {
-                if (normalizeAnswerText(btn.innerText) === normalizedSelected) selectedBtn = btn;
+                const buttonOptionIdx = Number(btn.dataset.optionIdx);
+                const byIndex = selectedOptionIdx !== null && buttonOptionIdx === selectedOptionIdx;
+                const byText = normalizeAnswerText(btn.innerText) === normalizedSelected;
+                if (byIndex || (selectedOptionIdx === null && byText)) selectedBtn = btn;
             });
 
             if (selectedBtn) {
-                applySelection(selectedBtn, selected, correct, optionsContainer, false, idx, {
+                applySelection(selectedBtn, selectedText, correct, optionsContainer, false, idx, {
                     updateMainStats: false,
                     updateRetakeStats: false,
                     updateRandomStats: false,
@@ -803,7 +866,7 @@
                 .filter(i => Number.isFinite(i) && i >= 0 && i < allQuestionsData.length)
                 .filter(i => {
                     const q = allQuestionsData[i];
-                    return q && normalizeAnswerText(userAnswers[i] || '') !== normalizeAnswerText(q.correct_answer || '');
+                    return q && normalizeAnswerText(getStoredAnswerText(userAnswers[i])) !== normalizeAnswerText(q.correct_answer || '');
                 })
                 .map(i => ({ question: allQuestionsData[i], sourceIdx: i }));
 
@@ -832,7 +895,8 @@
                 updateMainStats: false,
                 isRetakeList: true,
                 answerStore: 'retake',
-                mode: 'retake'
+                mode: 'retake',
+                shuffleOptions: shuffleOptionsEnabled
             });
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
@@ -856,7 +920,8 @@
                 updateMainStats: true,
                 isRetakeList: false,
                 answerStore: 'main',
-                mode: 'main'
+                mode: 'main',
+                shuffleOptions: shuffleOptionsEnabled
             });
         }
 
@@ -917,7 +982,7 @@
                 isRetakeList: false,
                 answerStore: 'random',
                 mode: 'random',
-                shuffleOptions: true
+                shuffleOptions: shuffleOptionsEnabled
             });
             requestAnimationFrame(clearInteractionState);
             requestAnimationFrame(() => centerRandomCard('auto'));
@@ -962,10 +1027,74 @@
                 updateMainStats: false,
                 isRetakeList: false,
                 answerStore: 'passive',
-                mode: 'passive'
+                mode: 'passive',
+                shuffleOptions: shuffleOptionsEnabled
             });
             refreshModeStats('passive');
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function rerenderActiveModeForShuffleChange() {
+            if (activeMode === 'retake') {
+                renderQuestions(retakeEntries, {
+                    shouldRestore: true,
+                    shouldAutoscroll: false,
+                    updateMainStats: false,
+                    isRetakeList: true,
+                    answerStore: 'retake',
+                    mode: 'retake',
+                    shuffleOptions: shuffleOptionsEnabled
+                });
+                return;
+            }
+
+            if (activeMode === 'random') {
+                if (!Number.isInteger(randomCurrentIdx)) return;
+                const entry = { question: allQuestionsData[randomCurrentIdx], sourceIdx: randomCurrentIdx };
+                renderQuestions([entry], {
+                    shouldRestore: false,
+                    shouldAutoscroll: false,
+                    updateMainStats: false,
+                    isRetakeList: false,
+                    answerStore: 'random',
+                    mode: 'random',
+                    shuffleOptions: shuffleOptionsEnabled
+                });
+                requestAnimationFrame(clearInteractionState);
+                refreshModeStats('random');
+                return;
+            }
+
+            if (activeMode === 'passive') {
+                renderQuestions(allQuestionsData, {
+                    shouldRestore: false,
+                    shouldAutoscroll: false,
+                    updateMainStats: false,
+                    isRetakeList: false,
+                    answerStore: 'passive',
+                    mode: 'passive',
+                    shuffleOptions: shuffleOptionsEnabled
+                });
+                refreshModeStats('passive');
+                return;
+            }
+
+            renderQuestions(allQuestionsData, {
+                shouldRestore: true,
+                shouldAutoscroll: false,
+                updateMainStats: true,
+                isRetakeList: false,
+                answerStore: 'main',
+                mode: 'main',
+                shuffleOptions: shuffleOptionsEnabled
+            });
+        }
+
+        function toggleShuffleOptions() {
+            shuffleOptionsEnabled = !shuffleOptionsEnabled;
+            localStorage.setItem('shuffle_options_enabled', shuffleOptionsEnabled ? 'true' : 'false');
+            setShuffleButtonState();
+            rerenderActiveModeForShuffleChange();
         }
 
         function setModeBanner(text) {
@@ -1044,7 +1173,7 @@
                     .filter(i => Number.isFinite(i) && i >= 0 && i < allQuestionsData.length)
                     .filter(i => {
                         const q = allQuestionsData[i];
-                        return q && normalizeAnswerText(userAnswers[i] || '') !== normalizeAnswerText(q.correct_answer || '');
+                        return q && normalizeAnswerText(getStoredAnswerText(userAnswers[i])) !== normalizeAnswerText(q.correct_answer || '');
                     })
                     .map(i => ({ question: allQuestionsData[i], sourceIdx: i }));
 
@@ -1061,7 +1190,8 @@
                     updateMainStats: false,
                     isRetakeList: true,
                     answerStore: 'retake',
-                    mode: 'retake'
+                    mode: 'retake',
+                    shuffleOptions: shuffleOptionsEnabled
                 });
                 return;
             }
@@ -1080,10 +1210,12 @@
                 updateMainStats: true,
                 isRetakeList: false,
                 answerStore: 'main',
-                mode: 'main'
+                mode: 'main',
+                shuffleOptions: shuffleOptionsEnabled
             });
         }
 
+        setShuffleButtonState();
         loadFeed();
     </script>
 </body>
