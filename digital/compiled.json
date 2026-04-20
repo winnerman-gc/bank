@@ -1,0 +1,432 @@
+[
+  {
+    "question_number": 3,
+    "question_text": "If a transmission line with inductive reactance of 41.97 Ω and capacitive reactance of 1132.5Ω is operated at 1 GHz, then its phase constant is:",
+    "options": [
+      "0.0305",
+      "0.3",
+      "30.5",
+      "0.6"
+    ],
+    "correct_answer": "0.0305 rad/m",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 9,
+    "question_text": "Voltage reflection coefficient can be defined as:",
+    "options": [
+      "Ratio of amplitude of reflected voltage wave to the transmitted voltage wave",
+      "Ratio of amplitude of reflected voltage to the incident voltage wave",
+      "Ratio of load impedance to the characteristic impedance of the transmission line",
+      "None of the mentioned"
+    ],
+    "correct_answer": "Ratio of amplitude of reflected voltage to the incident voltage wave",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 12,
+    "question_text": "Expression for VSWR in terms of reflection co-efficient is:",
+    "options": [
+      "(1/1+|r|)/(1+|r|)",
+      "(1-|r|)/(1+|r|)",
+      "(1/|r|)/(1+|r|)",
+      "(1+|r|)/(1-|r|)"
+    ],
+    "correct_answer": "(1+|r|)/(1-|r|)",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 15,
+    "question_text": "Input impedance of a short circuited transmission line is:",
+    "options": [
+      "jZtanβl",
+      "jZtanβl",
+      "jZcotβl",
+      "-jZcotβl"
+    ],
+    "correct_answer": "jZtanβl",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 18,
+    "question_text": "The key difference between circuit theory and transmission line theory is:",
+    "options": [
+      "Circuit elements",
+      "Voltage",
+      "Current",
+      "Electrical size"
+    ],
+    "correct_answer": "Electrical size",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 19,
+    "question_text": "Expression for input impedance of an Open circuited transmission line is:",
+    "options": [
+      "-jZtanβl",
+      "jZtanβl",
+      "jZcotβl",
+      "-jZcotβl"
+    ],
+    "correct_answer": "-jZcotβl",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 20,
+    "question_text": "For a λ/2 transmission line, if the characteristic impedance of the line is 50 Ω and the line is terminated with a load of 100 Ω, then its input impedance is:",
+    "options": [
+      "100Ω",
+      "50Ω",
+      "88.86Ω",
+      "75Ω"
+    ],
+    "correct_answer": "100Ω",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 22,
+    "question_text": "Expression for a transmission co-efficient of a transmission line is:",
+    "options": [
+      "2ZL / (ZL + Z₀)",
+      "(ZL · Z₀) / (ZL + Z₀)",
+      "2Z₀ / (ZL + Z₀)",
+      "(ZL + Z₀) / (ZL · Z₀)"
+    ],
+    "correct_answer": "2ZL / (ZL + Z₀)",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 26,
+    "question_text": "If a device is passive and contains no anisotropic elements, then the device is _________ network:",
+    "options": [
+      "Reciprocal",
+      "Non reciprocal",
+      "Lossless",
+      "Lossy"
+    ],
+    "correct_answer": "Reciprocal",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 27,
+    "question_text": "Find the reflection coefficient at the load:",
+    "options": [
+      "0.621∠215°",
+      "0.621∠359°",
+      "0.461∠359°",
+      "0.461∠215°"
+    ],
+    "correct_answer": "0.621∠215°",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 28,
+    "question_text": "What is the reflection coefficient at the input to the line:",
+    "options": [
+      "0.621∠215°",
+      "0.621∠359°",
+      "0.461∠359°",
+      "0.461∠215°"
+    ],
+    "correct_answer": "0.621∠215°",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 30,
+    "question_text": "Determine the normalised load admittance:",
+    "options": [
+      "I only",
+      "II only",
+      "III and IV",
+      "None of the above"
+    ],
+    "correct_answer": "I only",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 31,
+    "question_text": "The point on the VSWR circle where the stub can be positioned corresponds to an impedance/admittance of:",
+    "options": [
+      "I only",
+      "II only",
+      "III and IV",
+      "None of the above"
+    ],
+    "correct_answer": "III and IV",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 32,
+    "question_text": "The shortest distance from the load where the stub can be placed is:",
+    "options": [
+      "0.104λ",
+      "0.195λ",
+      "0.036λ",
+      "0.390λ"
+    ],
+    "correct_answer": "0.104λ",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 34,
+    "question_text": "The other distance from the load where the stub can be placed is:",
+    "options": [
+      "0.104λ",
+      "0.195λ",
+      "0.036λ",
+      "0.390λ"
+    ],
+    "correct_answer": "0.195λ",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 35,
+    "question_text": "The length of the stub at this position (reference to Question 31) is:",
+    "options": [
+      "0.104λ",
+      "0.195λ",
+      "0.036λ",
+      "0.390λ"
+    ],
+    "correct_answer": "0.104λ",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 36,
+    "question_text": "For a network to be reciprocal, the S matrix of the network must:",
+    "options": [
+      "Satisfy the unitary condition",
+      "Satisfy conjugacy",
+      "Equal its transpose",
+      "Have all leading diagonal elements to be zero"
+    ],
+    "correct_answer": "Equal its transpose",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 37,
+    "question_text": "For a network matched at all ports, the S matrix of the network must:",
+    "options": [
+      "Satisfy the unitary condition",
+      "Satisfy conjugacy",
+      "Equal its transpose",
+      "Have all leading diagonal elements to be zero"
+    ],
+    "correct_answer": "Have all leading diagonal elements to be zero",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 38,
+    "question_text": "For co-axial lines and waveguides, _________ is more preferred:",
+    "options": [
+      "Open circuited stub",
+      "Short circuited stub",
+      "Slotted section",
+      "Co-axial lines cannot be impedance matched"
+    ],
+    "correct_answer": "Short circuited stub",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 39,
+    "question_text": "For a network to be loss-free, the S-matrix must:",
+    "options": [
+      "Satisfy the unitary condition",
+      "Satisfy conjugacy",
+      "Equal its transpose",
+      "Have all leading diagonal elements to be zero [S] = (1/√2) | 0 S₁₂ S₁₃ | | S₂₁ 0 1 | | S₃₁ 1 0 | Noting: I. Unitary II. Reciprocal III. Lossless IV. Matched at all ports"
+    ],
+    "correct_answer": "Satisfy the unitary condition",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 40,
+    "question_text": "The network is:",
+    "options": [
+      "I and IV only",
+      "I and II only",
+      "III only",
+      "None of the above"
+    ],
+    "correct_answer": "I and IV only",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 41,
+    "question_text": "The network is:",
+    "options": [
+      "Not physically realizable",
+      "A circulator",
+      "A Directional coupler",
+      "None of the above"
+    ],
+    "correct_answer": "Not physically realizable",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 42,
+    "question_text": "Setting S₁₂ = S₂₁ will result in a:",
+    "options": [
+      "A power divider",
+      "A circulator",
+      "A Directional coupler",
+      "None of the above"
+    ],
+    "correct_answer": "A power divider",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 43,
+    "question_text": "In addition to the condition set in Question 38, if S₁₂ = S₂₁ = S₃₁ = 0, then power incident at port 2 will exit at Port:",
+    "options": [
+      "3",
+      "2",
+      "1",
+      "Not enough data to determine"
+    ],
+    "correct_answer": "3",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 44,
+    "question_text": "In addition to the condition set in Question 38, if |S₁₂| = |S₂₁| = |S₃₁| = 1, then power incident at port 2 will exit at Port:",
+    "options": [
+      "3",
+      "2",
+      "1",
+      "4"
+    ],
+    "correct_answer": "3",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 45,
+    "question_text": "The major advantage of single stub tuning over other impedance matching techniques is:",
+    "options": [
+      "Lumped elements are avoided",
+      "It can be fabricated as a part of transmission line media",
+      "It involves two adjustable parameters",
+      "All of the above"
+    ],
+    "correct_answer": "All of the above",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 46,
+    "question_text": "The two adjustable parameters in single stub matching are distance 'd' from the load to the stub position, and:",
+    "options": [
+      "Susceptance provided by the stub",
+      "Distance of the stub from the load",
+      "Distance of the stub from the generator",
+      "Reactance provided by the stub"
+    ],
+    "correct_answer": "Susceptance provided by the stub",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 47,
+    "question_text": "The load admittance in Siemens is:",
+    "options": [
+      "0.4+j0.5",
+      "0.4+j0.2",
+      "0.4+j0.5",
+      "0.4+j0.2"
+    ],
+    "correct_answer": "0.4+j0.2",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 48,
+    "question_text": "Moving clockwise from the load admittance on a constant conductance circle will intersect the rotated 1+jx circle at:",
+    "options": [
+      "0.4+j0.5",
+      "1+j1.2",
+      "0.4+j0.5",
+      "0.4+j0.2"
+    ],
+    "correct_answer": "1+j1.2",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 49,
+    "question_text": "Moving counterclockwise from the load admittance on a constant conductance circle will intersect the rotated 1+jx circle at:",
+    "options": [
+      "0.4+j0.5",
+      "1+j1.2",
+      "0.4+j0.5",
+      "0.4+j0.2"
+    ],
+    "correct_answer": "0.4+j0.5",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 50,
+    "question_text": "What value of susceptance in Siemens in the case of Q48 that is required to reach the rotated 1+jx circle?",
+    "options": [
+      "-0.7",
+      "1.2",
+      "-1.2",
+      "0.3"
+    ],
+    "correct_answer": "-0.7",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 51,
+    "question_text": "What value of susceptance in Siemens in the case of Q49 that is required to reach the rotated 1+jx circle?",
+    "options": [
+      "-0.7",
+      "1.2",
+      "-1.2",
+      "0.3"
+    ],
+    "correct_answer": "0.3",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 52,
+    "question_text": "The respective susceptance and reactance that will match the load to the line are:",
+    "options": [
+      "0.7 and -1.2",
+      "-0.7 and 1.2",
+      "0.3 and 1.2",
+      "-0.3 and -1.2"
+    ],
+    "correct_answer": "-0.7 and 1.2",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 53,
+    "question_text": "The device represents:",
+    "options": [
+      "Wilkinson power divider",
+      "Isolator",
+      "Quadrature hybrid",
+      "Rat-race hybrid"
+    ],
+    "correct_answer": "Quadrature hybrid",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 58,
+    "question_text": "The analysis of Wilkinson coupler is done using:",
+    "options": [
+      "Even-odd mode analysis",
+      "Symmetry",
+      "S matrix approach",
+      "None of the mentioned"
+    ],
+    "correct_answer": "Even-odd mode analysis",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  },
+  {
+    "question_number": 60,
+    "question_text": "In 180° hybrid, different power levels can be received at the two output ports of the hybrid:",
+    "options": [
+      "True",
+      "False Examiner: A.-R. Ahmed"
+    ],
+    "correct_answer": "False Examiner: A.-R. Ahmed",
+    "original_file": "questions.docx + answersplusexplanation.docx"
+  }
+]

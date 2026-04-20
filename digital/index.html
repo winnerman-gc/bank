@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Transmission Lines & Microwave Engineering Question Bank</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --success-color: #22c55e;
+            --error-color: #ef4444;
+            --bg-color: #f1f5f9;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 95%;
+            margin-top: 110px;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            padding: 10px 0;
+            z-index: 1000;
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            padding: 0 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            margin-top: 5px;
+            font-size: 0.8rem;
+            flex-wrap: wrap;
+            padding: 0 5px;
+        }
+
+        .stat-item {
+            background: #f8fafc;
+            padding: 2px 8px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            white-space: nowrap;
+        }
+
+        .reset-btn {
+            background: #ef4444;
+            color: white;
+            border: none;
+            padding: 2px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .retake-btn {
+            background: #f59e0b;
+            color: white;
+            border: none;
+            padding: 2px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .return-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 2px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: bold;
+            display: none;
+        }
+
+        .random-btn {
+            background: #0f766e;
+            color: white;
+            border: none;
+            padding: 2px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .passive-btn {
+            background: #475569;
+            color: white;
+            border: none;
+            padding: 2px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .miss-badge {
+            background: #ede9fe;
+            color: #6d28d9;
+            border: 1px solid #ddd6fe;
+            padding: 2px 8px;
+            border-radius: 999px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .mode-banner {
+            margin-top: 112px;
+            width: 95%;
+            max-width: 800px;
+            background: #eef2ff;
+            color: #312e81;
+            border: 1px solid #c7d2fe;
+            border-radius: 10px;
+            padding: 10px 12px;
+            font-size: 0.86rem;
+            display: none;
+        }
+
+        .question-card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .question-meta {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hint-btn {
+            background: none;
+            border: none;
+            color: #fbbf24;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 5px;
+            border-radius: 50%;
+            transition: all 0.2s;
+            display: none;
+        }
+
+        .hint-btn:hover {
+            background: #fef3c7;
+            transform: scale(1.1);
+        }
+
+        .question-text {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 18px;
+            line-height: 1.4;
+        }
+
+        .options {
+            display: grid;
+            gap: 8px;
+        }
+
+        .option-btn {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 12px 16px;
+            border-radius: 8px;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.1s ease;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .option-btn:focus {
+            outline: none;
+        }
+
+        .option-btn:hover:not(.locked) {
+            border-color: var(--primary-color);
+            background-color: #f8fafc;
+        }
+
+        .option-btn.correct {
+            border-color: var(--success-color);
+            background-color: #f0fdf4;
+            color: #166534;
+            font-weight: 500;
+        }
+
+        .option-btn.wrong {
+            border-color: var(--error-color);
+            background-color: #fef2f2;
+            color: #991b1b;
+        }
+
+        .icon-placeholder {
+            margin-left: 10px;
+            font-size: 1.1rem;
+            min-width: 20px;
+            text-align: center;
+        }
+
+        .ai-loading {
+            margin-top: 10px;
+            font-size: 0.85rem;
+            color: var(--primary-color);
+            font-style: italic;
+        }
+
+        .explanation {
+            margin-top: 15px;
+            padding: 12px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            font-size: 0.9rem;
+            display: none;
+            color: var(--text-main);
+            animation: fadeIn 0.3s ease;
+        }
+
+        #loading {
+            padding: 100px;
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        .footer {
+            padding: 60px;
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        .btn-top {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 500;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .next-random-btn {
+            margin-top: 10px;
+            background: var(--primary-color);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 10px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .random-centered {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 210px);
+        }
+
+        .random-centered .question-card {
+            width: 100%;
+            max-width: 760px;
+            margin-bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Transmission Lines & Microwave Engineering</h1>
+        <div class="stats">
+            <div class="stat-item">Correct: <span id="stat-correct" style="color:var(--success-color)">0</span></div>
+            <div class="stat-item">Wrong: <span id="stat-wrong" style="color:var(--error-color)">0</span></div>
+            <div class="stat-item">Score: <span id="stat-score" style="color:var(--primary-color)">0%</span></div>
+            <div class="stat-item">Progress: <span id="stat-progress">0</span> / <span id="total-count">0</span></div>
+            <button class="retake-btn" id="retake-btn" onclick="retakeWrongQuestions()">Retake Wrong</button>
+            <button class="random-btn" id="random-btn" onclick="showRandomMode()">Random</button>
+            <button class="passive-btn" id="passive-btn" onclick="showPassiveMode()">Passive</button>
+            <button class="random-btn" id="shuffle-toggle-btn" onclick="toggleShuffleOptions()">Shuffle: On</button>
+            <button class="return-btn" id="return-btn" onclick="returnToMainQuestions()">Return to Main</button>
+            <button class="reset-btn" onclick="resetProgress()">Reset Progress</button>
+        </div>
+    </div>
+
+    <div class="mode-banner" id="mode-banner"></div>
+
+    <div class="container" id="feed">
+        <div id="loading">
+            <i class="fas fa-circle-notch fa-spin fa-2x"></i>
+            <p>Loading Question Bank...</p>
+        </div>
+    </div>
+
+    <div class="footer" id="footer" style="display:none">
+        <p>End of study material reached.</p>
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="btn-top">Back to Top</button>
+    </div>
+
+    <script>
+        let correctCount = 0;
+        let wrongCount = 0;
+        let totalAnswered = 0;
+        let userAnswers = JSON.parse(localStorage.getItem('digital_quiz_answers') || '{}');
+        let retakeAnswers = JSON.parse(localStorage.getItem('digital_retake_answers') || '{}');
+        let localMisses = JSON.parse(localStorage.getItem('digital_miss_counts') || '{}');
+        let optionShuffleOrders = JSON.parse(localStorage.getItem('digital_shuffle_orders') || '{}');
+        let allQuestionsData = [];
+        let retakeEntries = [];
+        let retakeCorrectCount = 0;
+        let retakeWrongCount = 0;
+        let retakeTotalAnswered = 0;
+        let randomCorrectCount = 0;
+        let randomWrongCount = 0;
+        let randomTotalAnswered = 0;
+        let randomRemaining = [];
+        let randomCurrentIdx = null;
+        let randomBannerDismissed = false;
+        let isRetakeMode = false;
+        let activeMode = 'main';
+        let shuffleOptionsEnabled = localStorage.getItem('digital_shuffle_enabled') !== 'false';
+        let currentRenderedQuestionOrder = [];
+        let currentRenderedAnswerStore = 'main';
+        const RANDOM_NEXT_DELAY_MS = 650;
+
+        async function loadFeed() {
+            try {
+                const response = await fetch(`compiled.json?t=${new Date().getTime()}`, {
+                    cache: 'no-store'
+                });
+                const questions = await response.json();
+                allQuestionsData = questions;
+                renderQuestions(allQuestionsData, {
+                    shouldRestore: true,
+                    shouldAutoscroll: true,
+                    updateMainStats: true,
+                    mode: 'main',
+                    shuffleOptions: shuffleOptionsEnabled,
+                    answerStore: 'main'
+                });
+
+            } catch (err) {
+                console.error(err);
+                if (document.getElementById('loading')) {
+                    document.getElementById('loading').innerHTML = `<p style="color:red">Error: ${err.message}</p>`;
+                }
+            }
+        }
+
+        function renderQuestions(questionEntries, options = {}) {
+            const {
+                shouldRestore = false,
+                shouldAutoscroll = false,
+                updateMainStats = false,
+                isRetakeList = false,
+                answerStore = 'main',
+                mode = 'main',
+                shuffleOptions = false
+            } = options;
+
+            const feed = document.getElementById('feed');
+            const totalDisplay = document.getElementById('total-count');
+            const loading = document.getElementById('loading');
+            if (loading) loading.remove();
+
+            feed.innerHTML = '';
+            feed.classList.toggle('random-centered', mode === 'random');
+            const displayEntries = [...questionEntries];
+            currentRenderedQuestionOrder = displayEntries.map((entry, localIdx) => {
+                const sourceIdx = Number.isFinite(entry.sourceIdx) ? entry.sourceIdx : localIdx;
+                return sourceIdx;
+            });
+            currentRenderedAnswerStore = answerStore;
+            totalDisplay.innerText = displayEntries.length;
+
+            let restoredAnswered = 0;
+            let restoredCorrect = 0;
+            let restoredWrong = 0;
+
+            displayEntries.forEach((entry, localIdx) => {
+                const q = entry.question || entry;
+                const sourceIdx = Number.isFinite(entry.sourceIdx) ? entry.sourceIdx : localIdx;
+
+                try {
+                    const card = createQuestionCard(q, sourceIdx, !isRetakeList, answerStore, shuffleOptions);
+                    feed.appendChild(card);
+
+                    const answersObj = answerStore === 'retake' ? retakeAnswers : userAnswers;
+                    if (shouldRestore && answersObj[sourceIdx] !== undefined) {
+                        const selectedText = getStoredAnswerText(answersObj[sourceIdx]);
+                        if (!selectedText) return;
+                        restoredAnswered++;
+                        const isCorrect = normalizeAnswerText(selectedText) === normalizeAnswerText(q.correct_answer || "");
+                        if (isCorrect) restoredCorrect++; else restoredWrong++;
+                        restoreAnswer(card, answersObj[sourceIdx], q.correct_answer || "", sourceIdx);
+                    }
+                } catch (cardErr) {
+                    console.error(`Error rendering card ${sourceIdx}:`, cardErr, q);
+                }
+            });
+
+            if (mode === 'main' && updateMainStats) {
+                totalAnswered = restoredAnswered;
+                correctCount = restoredCorrect;
+                wrongCount = restoredWrong;
+                updateStats();
+                document.getElementById('stat-correct').innerText = correctCount;
+                document.getElementById('stat-wrong').innerText = wrongCount;
+            } else if (mode === 'retake') {
+                retakeEntries = questionEntries;
+                retakeTotalAnswered = restoredAnswered;
+                retakeCorrectCount = restoredCorrect;
+                retakeWrongCount = restoredWrong;
+                refreshModeStats('retake');
+            }
+
+            document.getElementById('footer').style.display = 'block';
+
+            if (shouldAutoscroll) {
+                autoScrollToNextUnanswered(feed);
+            }
+        }
+
+        function scrollElementToCenter(element) {
+            if (!element) return;
+            const rect = element.getBoundingClientRect();
+            const targetY = rect.top + window.pageYOffset - ((window.innerHeight - rect.height) / 2);
+            window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
+        }
+
+        function autoScrollToNextUnanswered(feed) {
+            if (totalAnswered <= 0 || totalAnswered >= currentRenderedQuestionOrder.length) return;
+
+            let attempts = 0;
+            const checkAndScroll = () => {
+                const answersObj = currentRenderedAnswerStore === 'retake' ? retakeAnswers : userAnswers;
+                const answeredKeys = Object.keys(answersObj)
+                    .map(k => Number(k))
+                    .filter(n => Number.isFinite(n) && currentRenderedQuestionOrder.includes(n))
+                    .sort((a, b) => a - b);
+
+                if (answeredKeys.length === 0) return;
+
+                const nextIdx = currentRenderedQuestionOrder.find(idx => answersObj[idx] === undefined);
+                if (nextIdx === undefined) return;
+                const element = document.getElementById(`q-${nextIdx}`);
+
+                if (element) {
+                    scrollElementToCenter(element);
+                } else if (attempts < 20) {
+                    attempts++;
+                    setTimeout(checkAndScroll, 300);
+                }
+            };
+
+            setTimeout(checkAndScroll, 500);
+        }
+
+        function shuffleArray(arr) {
+            const out = [...arr];
+            for (let i = out.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [out[i], out[j]] = [out[j], out[i]];
+            }
+            return out;
+        }
+
+        function getStoredAnswerText(answer) {
+            if (typeof answer === 'string') return answer;
+            if (answer && typeof answer === 'object') {
+                if (typeof answer.text === 'string') return answer.text;
+                if (typeof answer.value === 'string') return answer.value;
+            }
+            return '';
+        }
+
+        function getStoredAnswerOptionIndex(answer) {
+            if (!answer || typeof answer !== 'object') return null;
+            const idx = Number(answer.optionIdx);
+            return Number.isFinite(idx) && idx >= 0 ? idx : null;
+        }
+
+        function getOptionOrderForQuestion(options, idx, answerStore, shouldShuffle) {
+            const identityOrder = options.map((_, i) => i);
+            if (!shouldShuffle || options.length < 2) return identityOrder;
+
+            const shuffleKey = `${answerStore}:${idx}`;
+            const existing = optionShuffleOrders[shuffleKey];
+            const isValidStoredOrder = Array.isArray(existing)
+                && existing.length === options.length
+                && existing.every(n => Number.isInteger(n) && n >= 0 && n < options.length)
+                && (new Set(existing)).size === options.length;
+
+            if (isValidStoredOrder) return existing;
+
+            const shuffledOrder = shuffleArray(identityOrder);
+            optionShuffleOrders[shuffleKey] = shuffledOrder;
+            localStorage.setItem('digital_shuffle_orders', JSON.stringify(optionShuffleOrders));
+            return shuffledOrder;
+        }
+
+        function createQuestionCard(q, idx, persistMainData, answerStore = 'main', shuffleOptions = false) {
+            const card = document.createElement('div');
+            card.className = 'question-card';
+            card.id = `q-${idx}`;
+            const localMissCount = Number(localMisses[idx] || 0);
+            
+            const optionsContainer = document.createElement('div');
+            optionsContainer.className = 'options';
+            optionsContainer.dataset.persistMainData = persistMainData ? 'true' : 'false';
+            optionsContainer.dataset.answerStore = answerStore;
+
+            const options = q.options || [];
+            const optionOrder = getOptionOrderForQuestion(options, idx, answerStore, shuffleOptions);
+
+            optionOrder.forEach(optionIdx => {
+                const opt = options[optionIdx];
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.innerHTML = `${opt}<span class="icon-placeholder"></span>`;
+                btn.dataset.optionIdx = String(optionIdx);
+                if (answerStore !== 'passive') {
+                    btn.onclick = () => handleSelect(btn, opt, q.correct_answer, optionsContainer, idx, optionIdx);
+                } else {
+                    btn.classList.add('locked');
+                }
+                optionsContainer.appendChild(btn);
+            });
+
+            card.innerHTML = `
+                <div class="question-meta">
+                    <span>Question ${idx + 1}</span>
+                    ${localMissCount > 0 ? `<span class="miss-badge">Misses: ${localMissCount}</span>` : ''}
+                    <button class="hint-btn" title="Show answer" onclick="handleHint('${idx}')">
+                        <i class="far fa-lightbulb"></i>
+                    </button>
+                </div>
+                <div class="question-text">${q.question_text}</div>
+            `;
+            
+            const explanation = document.createElement('div');
+            explanation.className = 'explanation';
+            explanation.innerHTML = `<strong>Correct Answer:</strong> ${q.correct_answer}`;
+
+            if (answerStore === 'passive') {
+                explanation.style.display = 'block';
+                Array.from(optionsContainer.children).forEach(b => {
+                    if (normalizeAnswerText(b.innerText) === normalizeAnswerText(q.correct_answer || '')) {
+                        b.classList.add('correct');
+                        const bIcon = b.querySelector('.icon-placeholder');
+                        if (bIcon) bIcon.innerHTML = '<i class="fas fa-check check-icon"></i>';
+                    }
+                });
+            }
+            
+            card.appendChild(optionsContainer);
+            card.appendChild(explanation);
+            return card;
+        }
+
+        function handleHint(idx) {
+            const card = document.getElementById(`q-${idx}`);
+            const explanation = card.querySelector('.explanation');
+            explanation.style.display = 'block';
+        }
+
+        function normalizeAnswerText(text) {
+            let t = (text || '').toString().trim().toLowerCase();
+            t = t.replace(/^\s*\(?[a-z0-9]+\)?[\.:\-]\s+/, '');
+            t = t.replace(/\s+\d+\s*\/\s*\d+\s*$/, '');
+            t = t.replace(/\s+/g, ' ').trim();
+            return t;
+        }
+
+        function handleSelect(btn, selected, correct, parent, idx, selectedOptionIdx) {
+            if (parent.classList.contains('answered')) return;
+
+            const answerStore = parent.dataset.answerStore || 'main';
+            const storedAnswer = {
+                text: selected,
+                optionIdx: Number.isFinite(selectedOptionIdx) ? selectedOptionIdx : null
+            };
+            if (answerStore === 'main') {
+                userAnswers[idx] = storedAnswer;
+                localStorage.setItem('digital_quiz_answers', JSON.stringify(userAnswers));
+            } else if (answerStore === 'retake') {
+                retakeAnswers[idx] = storedAnswer;
+                localStorage.setItem('digital_retake_answers', JSON.stringify(retakeAnswers));
+            }
+
+            applySelection(btn, selected, correct, parent, true, idx, {
+                updateMainStats: answerStore === 'main',
+                updateRetakeStats: answerStore === 'retake',
+                trackLocalMiss: answerStore !== 'passive'
+            });
+        }
+
+        function restoreAnswer(card, selected, correct, idx) {
+            const optionsContainer = card.querySelector('.options');
+            const btns = optionsContainer.querySelectorAll('.option-btn');
+            let selectedBtn = null;
+            const selectedText = getStoredAnswerText(selected);
+            const selectedOptionIdx = getStoredAnswerOptionIndex(selected);
+            const normalizedSelected = normalizeAnswerText(selectedText);
+            
+            btns.forEach(btn => {
+                const buttonOptionIdx = Number(btn.dataset.optionIdx);
+                const byIndex = selectedOptionIdx !== null && buttonOptionIdx === selectedOptionIdx;
+                const byText = normalizeAnswerText(btn.innerText) === normalizedSelected;
+                if (byIndex || (selectedOptionIdx === null && byText)) selectedBtn = btn;
+            });
+
+            if (selectedBtn) {
+                applySelection(selectedBtn, selectedText, correct, optionsContainer, false, idx, {
+                    updateMainStats: false,
+                    updateRetakeStats: false,
+                    trackLocalMiss: false
+                });
+            }
+        }
+
+        function applySelection(btn, selected, correct, parent, useAI, idx, behavior = {}) {
+            if (parent.classList.contains('answered') && !useAI) return;
+            parent.classList.add('answered');
+
+            const {
+                updateMainStats = true,
+                updateRetakeStats: shouldUpdateRetakeStats = false,
+                trackLocalMiss = true
+            } = behavior;
+
+            if (useAI && updateMainStats) {
+                totalAnswered++;
+            } else if (useAI && shouldUpdateRetakeStats) {
+                retakeTotalAnswered++;
+            }
+
+            const isCorrect = normalizeAnswerText(selected) === normalizeAnswerText(correct);
+            const card = parent.parentElement;
+            const explanation = card?.querySelector('.explanation');
+            
+            if (isCorrect) {
+                if (useAI && updateMainStats) {
+                    correctCount++;
+                } else if (useAI && shouldUpdateRetakeStats) {
+                    retakeCorrectCount++;
+                }
+                btn.classList.add('correct');
+                const icon = btn.querySelector('.icon-placeholder');
+                if (icon) icon.innerHTML = '<i class="fas fa-check check-icon"></i>';
+                
+                const hintBtn = card.querySelector('.hint-btn');
+                if (hintBtn) hintBtn.style.display = 'block';
+            } else {
+                if (useAI && updateMainStats) {
+                    wrongCount++;
+                } else if (useAI && shouldUpdateRetakeStats) {
+                    retakeWrongCount++;
+                }
+                btn.classList.add('wrong');
+                const icon = btn.querySelector('.icon-placeholder');
+                if (icon) icon.innerHTML = '<i class="fas fa-times cross-icon"></i>';
+                
+                if (explanation) {
+                    explanation.style.display = 'block';
+                }
+
+                const hintBtn = card?.querySelector('.hint-btn');
+                if (hintBtn) hintBtn.style.display = 'block';
+
+                if (useAI && trackLocalMiss && idx !== undefined) {
+                    const prev = Number(localMisses[idx] || 0);
+                    localMisses[idx] = prev + 1;
+                    localStorage.setItem('digital_miss_counts', JSON.stringify(localMisses));
+                }
+                
+                Array.from(parent.children).forEach(b => {
+                    if (normalizeAnswerText(b.innerText) === normalizeAnswerText(correct)) {
+                        b.classList.add('correct');
+                        const bIcon = b.querySelector('.icon-placeholder');
+                        if (bIcon) bIcon.innerHTML = '<i class="fas fa-check check-icon"></i>';
+                    }
+                });
+            }
+
+            Array.from(parent.children).forEach(b => b.classList.add('locked'));
+
+            if (useAI && updateMainStats) {
+                updateStats();
+                document.getElementById('stat-correct').innerText = correctCount;
+                document.getElementById('stat-wrong').innerText = wrongCount;
+            }
+
+            if (useAI && shouldUpdateRetakeStats) {
+                document.getElementById('stat-progress').innerText = retakeTotalAnswered;
+                document.getElementById('total-count').innerText = retakeEntries.length;
+                document.getElementById('stat-correct').innerText = retakeCorrectCount;
+                document.getElementById('stat-wrong').innerText = retakeWrongCount;
+                const scorePercent = retakeTotalAnswered > 0 ? Math.round((retakeCorrectCount / retakeTotalAnswered) * 100) : 0;
+                const scoreEl = document.getElementById('stat-score');
+                if (scoreEl) scoreEl.innerText = `${scorePercent}%`;
+            }
+
+            if (useAI && isCorrect && card) {
+                setTimeout(() => {
+                    const nextCard = card.nextElementSibling;
+                    if (nextCard && nextCard.classList.contains('question-card')) {
+                        scrollElementToCenter(nextCard);
+                    }
+                }, 220);
+            }
+        }
+
+        function retakeWrongQuestions() {
+            const wrongEntries = Object.keys(userAnswers)
+                .map(k => Number(k))
+                .filter(i => Number.isFinite(i) && i >= 0 && i < allQuestionsData.length)
+                .filter(i => {
+                    const q = allQuestionsData[i];
+                    return q && normalizeAnswerText(getStoredAnswerText(userAnswers[i])) !== normalizeAnswerText(q.correct_answer || '');
+                })
+                .map(i => ({ question: allQuestionsData[i], sourceIdx: i }));
+
+            if (wrongEntries.length === 0) {
+                alert('No wrong questions to retake yet.');
+                return;
+            }
+
+            retakeEntries = wrongEntries;
+            isRetakeMode = true;
+            activeMode = 'retake';
+            const retakeBtn = document.getElementById('retake-btn');
+            const randomBtn = document.getElementById('random-btn');
+            const passiveBtn = document.getElementById('passive-btn');
+            const returnBtn = document.getElementById('return-btn');
+            if (retakeBtn) retakeBtn.style.display = 'none';
+            if (randomBtn) randomBtn.style.display = 'none';
+            if (passiveBtn) passiveBtn.style.display = 'none';
+            if (returnBtn) returnBtn.style.display = 'inline-block';
+            setModeBanner('Retake Wrong mode: practice only. This tab has its own persistent answers and score.');
+
+            renderQuestions(wrongEntries, {
+                shouldRestore: true,
+                shouldAutoscroll: false,
+                updateMainStats: false,
+                isRetakeList: true,
+                answerStore: 'retake',
+                mode: 'retake',
+                shuffleOptions: shuffleOptionsEnabled
+            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function returnToMainQuestions() {
+            isRetakeMode = false;
+            activeMode = 'main';
+            const retakeBtn = document.getElementById('retake-btn');
+            const randomBtn = document.getElementById('random-btn');
+            const passiveBtn = document.getElementById('passive-btn');
+            const returnBtn = document.getElementById('return-btn');
+            if (retakeBtn) retakeBtn.style.display = 'inline-block';
+            if (randomBtn) randomBtn.style.display = 'inline-block';
+            if (passiveBtn) passiveBtn.style.display = 'inline-block';
+            if (returnBtn) returnBtn.style.display = 'none';
+            setModeBanner('Main mode: your answers and miss counts are stored locally.');
+
+            renderQuestions(allQuestionsData, {
+                shouldRestore: true,
+                shouldAutoscroll: true,
+                updateMainStats: true,
+                isRetakeList: false,
+                answerStore: 'main',
+                mode: 'main',
+                shuffleOptions: shuffleOptionsEnabled
+            });
+        }
+
+        function showRandomMode() {
+            if (!allQuestionsData.length) {
+                alert('Question bank is still loading.');
+                return;
+            }
+
+            activeMode = 'random';
+            randomCorrectCount = 0;
+            randomWrongCount = 0;
+            randomTotalAnswered = 0;
+            randomRemaining = allQuestionsData.map((_, idx) => idx);
+            randomCurrentIdx = null;
+            randomBannerDismissed = false;
+
+            const retakeBtn = document.getElementById('retake-btn');
+            const randomBtn = document.getElementById('random-btn');
+            const passiveBtn = document.getElementById('passive-btn');
+            const returnBtn = document.getElementById('return-btn');
+            if (retakeBtn) retakeBtn.style.display = 'none';
+            if (randomBtn) randomBtn.style.display = 'none';
+            if (passiveBtn) passiveBtn.style.display = 'none';
+            if (returnBtn) returnBtn.style.display = 'inline-block';
+
+            setModeBanner('Random mode: one question at a time. Correct answers auto-advance.');
+            showNextRandomQuestion(false);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showNextRandomQuestion(removeCurrent) {
+            if (activeMode !== 'random') return;
+
+            if (removeCurrent && Number.isInteger(randomCurrentIdx)) {
+                randomRemaining = randomRemaining.filter(idx => idx !== randomCurrentIdx);
+            }
+
+            if (!randomRemaining.length) {
+                const feed = document.getElementById('feed');
+                feed.innerHTML = '<div class="question-card"><div class="question-text">Random mode complete!</div></div>';
+                randomCurrentIdx = null;
+                refreshModeStats('random');
+                return;
+            }
+
+            const pool = randomRemaining.length > 1 && Number.isInteger(randomCurrentIdx)
+                ? randomRemaining.filter(idx => idx !== randomCurrentIdx)
+                : randomRemaining;
+            randomCurrentIdx = pool[Math.floor(Math.random() * pool.length)];
+            const entry = { question: allQuestionsData[randomCurrentIdx], sourceIdx: randomCurrentIdx };
+            renderQuestions([entry], {
+                shouldRestore: false,
+                shouldAutoscroll: false,
+                updateMainStats: false,
+                isRetakeList: false,
+                answerStore: 'random',
+                mode: 'random',
+                shuffleOptions: shuffleOptionsEnabled
+            });
+            refreshModeStats('random');
+        }
+
+        function appendRandomNextButton(card) {
+            const explanation = card.querySelector('.explanation');
+            if (!explanation) return;
+
+            const existing = explanation.querySelector('.next-random-btn');
+            if (existing) return;
+
+            const btn = document.createElement('button');
+            btn.className = 'next-random-btn';
+            btn.innerText = 'Next Question';
+            btn.onclick = () => setTimeout(() => showNextRandomQuestion(false), RANDOM_NEXT_DELAY_MS / 2);
+            explanation.appendChild(btn);
+        }
+
+        function showPassiveMode() {
+            if (!allQuestionsData.length) {
+                alert('Question bank is still loading.');
+                return;
+            }
+
+            activeMode = 'passive';
+            const retakeBtn = document.getElementById('retake-btn');
+            const randomBtn = document.getElementById('random-btn');
+            const passiveBtn = document.getElementById('passive-btn');
+            const returnBtn = document.getElementById('return-btn');
+            if (retakeBtn) retakeBtn.style.display = 'none';
+            if (randomBtn) randomBtn.style.display = 'none';
+            if (passiveBtn) passiveBtn.style.display = 'none';
+            if (returnBtn) returnBtn.style.display = 'inline-block';
+
+            setModeBanner('Passive mode: browse questions and answers. No answers are saved.');
+            renderQuestions(allQuestionsData, {
+                shouldRestore: false,
+                shouldAutoscroll: false,
+                updateMainStats: false,
+                isRetakeList: false,
+                answerStore: 'passive',
+                mode: 'passive',
+                shuffleOptions: shuffleOptionsEnabled
+            });
+            refreshModeStats('passive');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function toggleShuffleOptions() {
+            shuffleOptionsEnabled = !shuffleOptionsEnabled;
+            localStorage.setItem('digital_shuffle_enabled', shuffleOptionsEnabled ? 'true' : 'false');
+            const btn = document.getElementById('shuffle-toggle-btn');
+            if (btn) btn.innerText = `Shuffle: ${shuffleOptionsEnabled ? 'On' : 'Off'}`;
+            
+            if (activeMode === 'main') {
+                renderQuestions(allQuestionsData, {
+                    shouldRestore: true,
+                    shouldAutoscroll: false,
+                    updateMainStats: true,
+                    answerStore: 'main',
+                    mode: 'main',
+                    shuffleOptions: shuffleOptionsEnabled
+                });
+            } else if (activeMode === 'retake') {
+                renderQuestions(retakeEntries, {
+                    shouldRestore: true,
+                    shouldAutoscroll: false,
+                    updateMainStats: false,
+                    isRetakeList: true,
+                    answerStore: 'retake',
+                    mode: 'retake',
+                    shuffleOptions: shuffleOptionsEnabled
+                });
+            }
+        }
+
+        function setModeBanner(text) {
+            const banner = document.getElementById('mode-banner');
+            if (!banner) return;
+            const hasText = !!(text && text.trim());
+            banner.style.display = hasText ? 'block' : 'none';
+            banner.innerText = hasText ? text : '';
+        }
+
+        function updateStats() {
+            document.getElementById('stat-progress').innerText = totalAnswered;
+            const scorePercent = totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
+            const scoreEl = document.getElementById('stat-score');
+            if (scoreEl) scoreEl.innerText = `${scorePercent}%`;
+        }
+
+        function refreshModeStats(mode) {
+            if (mode === 'retake') {
+                document.getElementById('stat-progress').innerText = retakeTotalAnswered;
+                document.getElementById('total-count').innerText = retakeEntries.length;
+                document.getElementById('stat-correct').innerText = retakeCorrectCount;
+                document.getElementById('stat-wrong').innerText = retakeWrongCount;
+                const scorePercent = retakeTotalAnswered > 0 ? Math.round((retakeCorrectCount / retakeTotalAnswered) * 100) : 0;
+                document.getElementById('stat-score').innerText = `${scorePercent}%`;
+                return;
+            }
+
+            if (mode === 'random') {
+                document.getElementById('stat-progress').innerText = randomTotalAnswered;
+                document.getElementById('total-count').innerText = randomRemaining.length;
+                document.getElementById('stat-correct').innerText = randomCorrectCount;
+                document.getElementById('stat-wrong').innerText = randomWrongCount;
+                const scorePercent = randomTotalAnswered > 0 ? Math.round((randomCorrectCount / randomTotalAnswered) * 100) : 0;
+                document.getElementById('stat-score').innerText = `${scorePercent}%`;
+                return;
+            }
+
+            if (mode === 'passive') {
+                document.getElementById('stat-progress').innerText = 0;
+                document.getElementById('total-count').innerText = allQuestionsData.length;
+                document.getElementById('stat-correct').innerText = 0;
+                document.getElementById('stat-wrong').innerText = 0;
+                document.getElementById('stat-score').innerText = '0%';
+            }
+        }
+
+        function resetProgress() {
+            if (activeMode === 'passive') {
+                alert('Passive mode is read-only.');
+                return;
+            }
+
+            if (activeMode === 'retake') {
+                if (!confirm('Reset Retake progress?')) return;
+                localStorage.removeItem('digital_retake_answers');
+                retakeAnswers = {};
+                retakeCorrectCount = 0;
+                retakeWrongCount = 0;
+                retakeTotalAnswered = 0;
+                
+                if (!retakeEntries.length) {
+                    alert('No retake questions available.');
+                    returnToMainQuestions();
+                    return;
+                }
+
+                renderQuestions(retakeEntries, {
+                    shouldRestore: true,
+                    shouldAutoscroll: false,
+                    updateMainStats: false,
+                    isRetakeList: true,
+                    answerStore: 'retake',
+                    mode: 'retake',
+                    shuffleOptions: shuffleOptionsEnabled
+                });
+                return;
+            }
+
+            if (!confirm('Reset Main progress?')) return;
+            localStorage.removeItem('digital_quiz_answers');
+            localStorage.removeItem('digital_miss_counts');
+            userAnswers = {};
+            localMisses = {};
+            totalAnswered = 0;
+            correctCount = 0;
+            wrongCount = 0;
+            renderQuestions(allQuestionsData, {
+                shouldRestore: true,
+                shouldAutoscroll: true,
+                updateMainStats: true,
+                answerStore: 'main',
+                mode: 'main',
+                shuffleOptions: shuffleOptionsEnabled
+            });
+        }
+
+        setShuffleButtonState();
+        loadFeed();
+
+        function setShuffleButtonState() {
+            const btn = document.getElementById('shuffle-toggle-btn');
+            if (btn) btn.innerText = `Shuffle: ${shuffleOptionsEnabled ? 'On' : 'Off'}`;
+        }
+    </script>
+</body>
+</html>
