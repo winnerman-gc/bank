@@ -270,6 +270,25 @@
             animation: fadeIn 0.3s ease;
         }
 
+        .working-section {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #e2e8f0;
+            line-height: 1.5;
+            white-space: normal;
+        }
+
+        .working-label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .working-text {
+            white-space: pre-wrap;
+        }
+
         #loading {
             padding: 100px;
             text-align: center;
@@ -595,7 +614,7 @@
             
             const explanation = document.createElement('div');
             explanation.className = 'explanation';
-            explanation.innerHTML = `<strong>Correct Answer:</strong> ${q.correct_answer}`;
+            explanation.innerHTML = buildExplanationHTML(q);
 
             if (answerStore === 'passive') {
                 explanation.style.display = 'block';
@@ -625,6 +644,25 @@
             t = t.replace(/\s+\d+\s*\/\s*\d+\s*$/, '');
             t = t.replace(/\s+/g, ' ').trim();
             return t;
+        }
+
+        function escapeHTML(text) {
+            return (text || '')
+                .toString()
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function buildExplanationHTML(q) {
+            const answerHtml = escapeHTML(q.correct_answer || '');
+            const workingText = (q.working || '').trim();
+            const workingHtml = workingText
+                ? `<div class="working-section"><span class="working-label">Working</span><div class="working-text">${escapeHTML(workingText)}</div></div>`
+                : '';
+            return `<strong>Correct Answer:</strong> ${answerHtml}${workingHtml}`;
         }
 
         function handleSelect(btn, selected, correct, parent, idx, selectedOptionIdx) {

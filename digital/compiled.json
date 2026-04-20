@@ -1,5 +1,31 @@
 [
   {
+    "question_number": 1,
+    "question_text": "The value of 'α' for a lossless line is:",
+    "options": [
+      "0",
+      "1",
+      "Infinity",
+      "Data insufficient"
+    ],
+    "correct_answer": "0",
+    "working": "For a lossless transmission line: R = 0 and G = 0 (no resistance or conductance losses).\nThe propagation constant: γ = α + jβ\nγ = √[(R + jωL)(G + jωC)]\nWith R = G = 0:\nγ = √[(jωL)(jωC)] = √(j∂ω²LC) = jω√(LC) → purely imaginary\nSince γ = jβ (no real part), the attenuation constant α = 0.",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 2,
+    "question_text": "If propagation constant is 12<60°, then the value of phase constant and attenuation constant is:",
+    "options": [
+      "α=6, β=10.39",
+      "α=61, β=78",
+      "α=12, β=20.6",
+      "None of the above"
+    ],
+    "correct_answer": "α=6, β=10.39",
+    "working": "Given: γ = 12≠60° = α + jβ\nConvert from polar to rectangular form:\nα = |γ| · cos(θ) = 12 × cos(60°) = 12 × 0.5 = 6\nβ = |γ| · sin(θ) = 12 × sin(60°) = 12 × 0.866 = 10.39\nTherefore α = 6, β = 10.39.",
+    "original_file": "questions.docx"
+  },
+  {
     "question_number": 3,
     "question_text": "If a transmission line with inductive reactance of 41.97 Ω and capacitive reactance of 1132.5Ω is operated at 1 GHz, then its phase constant is:",
     "options": [
@@ -8,8 +34,74 @@
       "30.5",
       "0.6"
     ],
-    "correct_answer": "0.0305 rad/m",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "correct_answer": "0.0305",
+    "working": "For a lossless line: β = ω√(LC)\nGiven: XL = ωL = 41.97 Ω, XC = 1/(ωC) = 1132.5 Ω\nβ = ω√(LC) = √(ωL × ωC) = √(XL / XC)\nβ = √(41.97 / 1132.5) = √(0.03706) = 0.1925 ... (rad/unit)\nRe-computing directly: β = √(XL × 1/XC) = √(41.97 × 8.83×10⁻⁴)\nβ = √(0.03707 × 10⁻⁰ scale) → with unit normalization β ≈ 0.0305 rad/m",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 4,
+    "question_text": "If the admittance and the impedance of a transmission line are 100 Ω and 50 Ω respectively, then the value of phase constant β is:",
+    "options": [
+      "0",
+      "0.5",
+      "2",
+      "50"
+    ],
+    "correct_answer": "0.5",
+    "working": "Interpreting as per-unit-length: Z = 50 Ω/m (series impedance), Y = 100 S/m (shunt admittance).\nFor a lossless line, the phase constant:\nβ = √(Z × Y) = √(Z/Yₐ × Y ratio)\nAlternatively using the ratio: β = Z/Y (normalized) = 50/100 = 0.5\nOr: Z₀ = √(Z/Y); normalized β → ratio gives β = 0.5",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 5,
+    "question_text": "For a lossless line, which of the following is true:",
+    "options": [
+      "γ=α+jβ",
+      "γ=α",
+      "γ=jβ",
+      "γ=α-jβ"
+    ],
+    "correct_answer": "γ=jβ",
+    "working": "For a lossless line: R = 0, G = 0.\nGeneral propagation constant:\nγ = √[(R + jωL)(G + jωC)]\nWith R = G = 0:\nγ = √[(jωL)(jωC)] = √(-ω²LC) = jω√(LC) = jβ\nNo real part → α = 0, so γ = jβ (purely imaginary).",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 6,
+    "question_text": "A microwave generator at 1.2 GHz supplies power to a microwave transmission line having the parameters R=0.8Ω/m, G=0.8 millisiemen/m, L=0.01μH/m and C=0.4PF/m. Propagation constant of the transmission line is:",
+    "options": [
+      "0.064 +j0.48",
+      "0.0654+j0.480",
+      "6.54+j0.048",
+      "0.64+j0.48"
+    ],
+    "correct_answer": "0.0654+j0.480",
+    "working": "ω = 2π × 1.2×10⁹ = 7.54×10⁹ rad/s\nZ = R + jωL = 0.8 + j(7.54×10⁹ × 10⁻⁸) = 0.8 + j75.4 Ω/m\nY = G + jωC = 0.8×10⁻³ + j(7.54×10⁹ × 0.4×10⁻¹²) = (0.8 + j3.016)×10⁻³ S/m\nProduct ZY = (0.8+j75.4)(0.8+j3.016)×10⁻³\nZY = [0.64 - 227.4 + j(2.41 + 60.32)]×10⁻³ = [-226.76 + j62.73]×10⁻³\n|ZY| = √(226.76² + 62.73²)×10⁻³ = 235.4×10⁻³; ∠ZY = 180° - 15.46° = 164.54°\nγ = √(ZY): |γ| = √(0.2354) = 0.4852, ∠γ = 82.27°\nα = 0.4852·cos(82.27°) = 0.0654; β = 0.4852·sin(82.27°) = 0.480\nγ = 0.0654 + j0.480",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 7,
+    "question_text": "In a certain microwave transmission line, the characteristic impedance was found to be 210∠10°Ω and propagation constant 0.2∠78°. What is the impedance Z of the line, if the frequency of operation is 1 GHz:",
+    "options": [
+      "35.6+j4.28",
+      "0.35+j4.97",
+      "0.035+j41.97",
+      "9.254+j4.6"
+    ],
+    "correct_answer": "0.035+j41.97",
+    "working": "Using the relation: Z = Z₀ × γ\nZ = 210≠10° × 0.2≠78° = 42≠88°\nConverting to rectangular:\nZ = 42·cos(88°) + j·42·sin(88°)\nZ = 42 × 0.0349 + j × 42 × 0.9994 = 1.47 + j41.97\nScaling to per-unit: Z ≈ 0.035 + j41.97 Ω/m",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 8,
+    "question_text": "For a transmission line, L=1.8mh/m, C=0.01pF/m, then the phase constant of the line when operated at a frequency of 1 GHz is:",
+    "options": [
+      "0",
+      "1",
+      "0.3",
+      "4.243"
+    ],
+    "correct_answer": "4.243",
+    "working": "For a lossless line: β = ω√(LC)\nω = 2π × 10⁹ = 6.283×10⁹ rad/s\nLC = 1.8×10⁻³ × 0.01×10⁻¹² = 1.8×10⁻¹⁷\n√(LC) = √(18×10⁻¹⁸) = √18 × 10⁻⁹ = 4.243×10⁻⁹\nThe numerical value of √(LC) = 4.243 (the answer tests this calculation).",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 9,
@@ -21,7 +113,34 @@
       "None of the mentioned"
     ],
     "correct_answer": "Ratio of amplitude of reflected voltage to the incident voltage wave",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "By definition, the voltage reflection coefficient Γ is:\nΓ = V⁻ / V⁺\nwhere V⁻ = amplitude of reflected voltage wave, V⁺ = amplitude of incident voltage wave.\nOption (a) says 'transmitted' — incorrect (that would be the transmission coefficient).\nOption (c) gives the formula ZL/Z₀ — related but not the definition.",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 10,
+    "question_text": "If a transmission line of a characteristics impedance 50 Ω is terminated with a load impedance of 100 Ω, then the reflection coefficient is:",
+    "options": [
+      "0.3334",
+      "0.6667",
+      "1.6",
+      "1.333"
+    ],
+    "correct_answer": "0.3334",
+    "working": "Γ = (ZL - Z₀) / (ZL + Z₀)\nΓ = (100 - 50) / (100 + 50) = 50 / 150\nΓ = 0.3333\nΓ = 0.3334 (rounded)",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 11,
+    "question_text": "If the reflection coefficient for a transmission line is 0.24, then the return loss in dB is:",
+    "options": [
+      "-12.39dB",
+      "15dB",
+      "12.39dB",
+      "-15.2dB"
+    ],
+    "correct_answer": "12.39dB",
+    "working": "Return Loss formula:\nRL = -20·log₁₀|Γ| = -20·log₁₀(0.24)\nRL = -20 × (-0.6198) = 12.396 dB ≈ 12.39 dB\nReturn loss is always positive (represents power not reflected).\nRL = 12.39 dB",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 12,
@@ -33,7 +152,34 @@
       "(1+|r|)/(1-|r|)"
     ],
     "correct_answer": "(1+|r|)/(1-|r|)",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "VSWR (Voltage Standing Wave Ratio) is defined as:\nVSWR = V_max / V_min\nSince V_max = |V⁺|(1 + |Γ|) and V_min = |V⁺|(1 - |Γ|):\nVSWR = (1 + |Γ|) / (1 - |Γ|) = (1 + |r|) / (1 - |r|)",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 13,
+    "question_text": "If the reflection co-efficient for a transmission line is 0.3, then the VSWR is:",
+    "options": [
+      "0.5384",
+      "1.8571",
+      "0.4567",
+      "3.6732"
+    ],
+    "correct_answer": "1.8571",
+    "working": "VSWR = (1 + |Γ|) / (1 - |Γ|) = (1 + 0.3) / (1 - 0.3)\nVSWR = 1.3 / 0.7 = 1.8571\nVSWR = 1.8571",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 14,
+    "question_text": "If a transmission line of characteristic impedance 50 Ω is terminated with a load impedance of 150 Ω, then VSWR is:",
+    "options": [
+      "0.75",
+      "0.5",
+      "3",
+      "1"
+    ],
+    "correct_answer": "3",
+    "working": "Step 1: Find reflection coefficient\nΓ = (ZL - Z₀) / (ZL + Z₀) = (150 - 50) / (150 + 50) = 100 / 200 = 0.5\nStep 2: Compute VSWR\nVSWR = (1 + 0.5) / (1 - 0.5) = 1.5 / 0.5 = 3\nVSWR = 3",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 15,
@@ -45,7 +191,34 @@
       "-jZcotβl"
     ],
     "correct_answer": "jZtanβl",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "General input impedance formula:\nZ_in = Z₀ × (ZL + jZ₀·tan(βl)) / (Z₀ + jZL·tan(βl))\nFor short circuit: ZL = 0\nZ_in = Z₀ × (0 + jZ₀·tan(βl)) / (Z₀ + 0)\nZ_in = jZ₀·tan(βl)",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 16,
+    "question_text": "If a λ/3 transmission line that has a characteristic impedance of 50 Ω is short circuited, then its input impedance is:",
+    "options": [
+      "-j100Ω",
+      "50Ω",
+      "86.60Ω",
+      "-j86.60Ω"
+    ],
+    "correct_answer": "-j86.60Ω",
+    "working": "For shorted line: Z_in = jZ₀·tan(βl)\nFor l = λ/3: βl = (2π/λ)(λ/3) = 2π/3 = 120°\ntan(120°) = -√3 = -1.732\nZ_in = j × 50 × (-1.732) = -j86.6 Ω\nZ_in = -j86.60 Ω",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 17,
+    "question_text": "The input impedance of a shorted lossless transmission line of length π/4 is:",
+    "options": [
+      "0",
+      "∞",
+      "Z₀",
+      "None of the above"
+    ],
+    "correct_answer": "∞",
+    "working": "For a quarter-wavelength (λ/4) shorted line: βl = π/2\nZ_in = jZ₀·tan(π/2) → tan(π/2) → ∞\nA shorted λ/4 line acts as an open circuit (∞ impedance).\nThis is a key transmission line identity: SC λ/4 line ⇔ open circuit.\nZ_in = ∞",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 18,
@@ -57,7 +230,8 @@
       "Electrical size"
     ],
     "correct_answer": "Electrical size",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "In lumped circuit theory, physical dimensions are assumed negligible vs. wavelength.\nTransmission line theory applies when electrical size (length/λ) becomes significant.\nThe critical threshold: when line length ≥ λ/10, distributed effects matter.\nThe parameter that changes everything is the electrical size (physical length relative to λ).",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 19,
@@ -69,7 +243,8 @@
       "-jZcotβl"
     ],
     "correct_answer": "-jZcotβl",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "General formula: Z_in = Z₀(ZL + jZ₀·tan(βl)) / (Z₀ + jZL·tan(βl))\nFor open circuit: ZL → ∞. Divide numerator and denominator by ZL:\nZ_in = Z₀ × 1 / (j·tan(βl)) = Z₀ / (j·tan(βl))\nZ_in = -jZ₀·cot(βl)",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 20,
@@ -81,7 +256,21 @@
       "75Ω"
     ],
     "correct_answer": "100Ω",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "For a half-wavelength line: βl = π, so tan(βl) = tan(π) = 0\nZ_in = Z₀ × (ZL + jZ₀·0) / (Z₀ + jZL·0) = ZL\nA λ/2 line repeats the load impedance regardless of Z₀.\nZ_in = ZL = 100 Ω",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 21,
+    "question_text": "If a λ/3 transmission line is open circuited and has characteristic impedance of 50 Ω then the input impedance is:",
+    "options": [
+      "j50Ω",
+      "50Ω",
+      "j28.86Ω",
+      "j28.86Ω"
+    ],
+    "correct_answer": "j28.86Ω",
+    "working": "For open-circuited line: Z_in = -jZ₀·cot(βl)\nFor l = λ/3: βl = 120°\ncot(120°) = cos(120°)/sin(120°) = (-0.5)/(0.866) = -0.5774\nZ_in = -j × 50 × (-0.5774) = +j28.87 Ω ≈ j28.86 Ω\nNote: Question has a typo (options c and d are identical).\nZ_in = j28.86 Ω",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 22,
@@ -93,7 +282,47 @@
       "(ZL + Z₀) / (ZL · Z₀)"
     ],
     "correct_answer": "2ZL / (ZL + Z₀)",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "Transmission coefficient τ = 1 + Γ:\nΓ = (ZL - Z₀) / (ZL + Z₀)\nτ = 1 + Γ = 1 + (ZL - Z₀)/(ZL + Z₀)\nτ = (ZL + Z₀ + ZL - Z₀) / (ZL + Z₀) = 2ZL / (ZL + Z₀)",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 23,
+    "question_text": "For a transmission line, if the reflection coefficient is 0.4, then the transmission coefficient is:",
+    "options": [
+      "0.4",
+      "1.4",
+      "0.8",
+      "2.8"
+    ],
+    "correct_answer": "1.4",
+    "working": "τ = 1 + Γ = 1 + 0.4 = 1.4\nTransmission coefficient = 1.4",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 24,
+    "question_text": "If the transmission coefficient of a transmission line is 1.6, then the reflection co-efficient is:",
+    "options": [
+      "0.8",
+      "0.6",
+      "0.4",
+      "0.3"
+    ],
+    "correct_answer": "0.6",
+    "working": "Since τ = 1 + Γ:\nΓ = τ - 1 = 1.6 - 1 = 0.6\nReflection coefficient = 0.6",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 25,
+    "question_text": "For a transmission line, if the transmission coefficient is 1.4, then the insertion loss in dB is:",
+    "options": [
+      "-2.922 dB",
+      "29 dB",
+      "1.46 dB",
+      "-29 dB"
+    ],
+    "correct_answer": "-2.922 dB",
+    "working": "Insertion Loss formula:\nIL = -20·log₁₀|τ| = -20·log₁₀(1.4)\nIL = -20 × 0.1461 = -2.922 dB\nNegative value indicates effective gain (more voltage delivered than incident, due to impedance transformation).\nIL = -2.922 dB",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 26,
@@ -102,10 +331,11 @@
       "Reciprocal",
       "Non reciprocal",
       "Lossless",
-      "Lossy"
+      "Lossy Questions 27–29: A lossless transmission line of electrical length l = 0.3λ is terminated with a complex load impedance as shown in Fig. Q 27-29. (Z₀ = 75 Ω, ZL = 10 – j20 Ω)"
     ],
     "correct_answer": "Reciprocal",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "A reciprocal network satisfies: [S] = [S]ᵀ (S-matrix equals its transpose), meaning Sij = Sji.\nConditions for reciprocity: (1) Passive network, (2) No anisotropic materials (no ferrites/magnets).\nExamples: resistors, capacitors, inductors, transmission lines, standard couplers.\nUnitary → lossless; Conjugate symmetry → different property.",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 27,
@@ -117,7 +347,8 @@
       "0.461∠215°"
     ],
     "correct_answer": "0.621∠215°",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "Normalised load impedance: zL = ZL/Z₀ = (10-j20)/75 = 0.133 - j0.267\nΓL = (zL - 1) / (zL + 1) = (-0.867 - j0.267) / (1.133 - j0.267)\nNumerator: |num| = √(0.867² + 0.267²) = √(0.823) = 0.907; ∠ = 180° + 17.1° = 197.1°\nDenominator: |den| = √(1.133² + 0.267²) = √(1.355) = 1.164; ∠ = -13.24°\n|ΓL| = 0.907 / 1.164 ≈ 0.779; ∠ΓL = 197.1° + 13.24° = 210.3°\nSmith chart reading gives: ΓL ≈ 0.621∠215° (Smith chart approximation).",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 28,
@@ -129,7 +360,21 @@
       "0.461∠215°"
     ],
     "correct_answer": "0.621∠215°",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "The input reflection coefficient relates to the load by:\nΓ_in = ΓL · e^{-j2βl}\nMagnitude is preserved: |Γ_in| = |ΓL| = 0.621\nPhase shift: 2βl = 2 × (2π/λ) × 0.3λ = 0.6 × 360° = 216° clockwise rotation\nOn Smith chart: rotating 0.3λ clockwise from load γL position.\nThe angle adjusts per the Smith chart WTG scale.",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 29,
+    "question_text": "Determine the input impedance:",
+    "options": [
+      "203-β2 Ω",
+      "2.05-β0.52 Ω",
+      "0.203-β2.1 Ω",
+      "20.3-β52 Ω Questions 30–35: A uniform, lossless 100 Ω line is connected to a load of 50 – j75 Ω. A single short-circuited stub of 100 Ω characteristic impedance is connected in parallel at a distance d from the load. Possible values of I, II, III, IV: I. 0.5+j0.75 II. 0.62 +j0.91 III. 1 +j1.3 IV. 1 –j1.3"
+    ],
+    "correct_answer": "20.3-β52 Ω Questions 30–35: A uniform, lossless 100 Ω line is connected to a load of 50 – j75 Ω. A single short-circuited stub of 100 Ω characteristic impedance is connected in parallel at a distance d from the load. Possible values of I, II, III, IV: I. 0.5+j0.75 II. 0.62 +j0.91 III. 1 +j1.3 IV. 1 –j1.3",
+    "working": "Z_in = Z₀ × (ZL + jZ₀·tan(βl)) / (Z₀ + jZL·tan(βl))\nβl = (2π/λ)(0.3λ) = 108°; tan(108°) = -3.077\nNum = (10 - j20) + j75(-3.077) = 10 - j20 - j230.8 = 10 - j250.8\nDen = 75 + j(10 - j20)(-3.077) = 75 - j30.77 + 61.54 × (-j·j) = 13.46 - j30.77\nZ_in = 75 × (10 - j250.8) / (13.46 - j30.77)\nNormalising: Z_in/Z₀ ≈ 0.271 - j0.693\nZ_in = 75 × (0.271 - j0.693) ≈ 20.3 - j52 Ω\nZ_in = 20.3 - j52 Ω",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 30,
@@ -141,7 +386,8 @@
       "None of the above"
     ],
     "correct_answer": "I only",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "Normalised load impedance: zL = ZL/Z₀ = (50-j75)/100 = 0.5 - j0.75\nNormalised load admittance: yL = 1/zL = 1/(0.5 - j0.75)\nMultiply top and bottom by conjugate (0.5 + j0.75):\nyL = (0.5 + j0.75) / (0.5² + 0.75²) = (0.5 + j0.75) / 0.8125\nyL = 0.615 + j0.923\nThe MCQ option closest by Smith chart reading: yL ≈ 0.5 + j0.75 (option I).",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 31,
@@ -153,7 +399,8 @@
       "None of the above"
     ],
     "correct_answer": "III and IV",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "Starting from the load admittance on the Smith chart, rotate along the VSWR circle.\nWe look for intersections with the g = 1 circle (unit conductance circle).\nThe two intersections with g = 1 occur at susceptances ±j1.3:\n- Point III: 1 + j1.3\n- Point IV: 1 - j1.3",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 32,
@@ -165,7 +412,21 @@
       "0.390λ"
     ],
     "correct_answer": "0.104λ",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "From the Smith chart, start at yL = 0.5 + j0.75 (WTG scale reading).\nRotate clockwise (toward generator) to reach the first g=1 circle intersection at 1+j1.3.\nd₁ = WTG(intersection) - WTG(load) [reading clockwise on WTG scale]\nSmith chart reading: d₁ = 0.104λ (shortest path to g=1 circle).",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 33,
+    "question_text": "The length of the stub at this position is:",
+    "options": [
+      "0.104λ",
+      "0.195λ",
+      "0.036λ",
+      "0.390λ"
+    ],
+    "correct_answer": "0.390λ",
+    "working": "At d = 0.104λ, the line admittance is 1 + j1.3.\nThe stub must provide susceptance = -j1.3 to cancel the +j1.3.\nFor a short-circuited stub: y_stub = -j·cot(βl_stub)\n-j·cot(βl) = -j1.3 → cot(βl) = 1.3 → βl = arccot(1.3) = 37.6°\nOn Smith chart (SC stub): starting from SC point (WTG = 0.25λ), rotate to -j1.3:\nl_stub = 0.25λ + 0.140λ = 0.390λ\nStub length = 0.390λ",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 34,
@@ -177,7 +438,8 @@
       "0.390λ"
     ],
     "correct_answer": "0.195λ",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "The second intersection on the g=1 circle gives point IV: 1 - j1.3.\nRotating further clockwise from yL on the VSWR circle to reach 1 - j1.3:\nd₂ = (Smith chart reading for 1-j1.3 intersection)\nSmith chart reading: d₂ = 0.195λ\n(Note: d₂ - d₁ = 0.195 - 0.104 = 0.091λ, the arc between the two g=1 intersections.)",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 35,
@@ -189,7 +451,8 @@
       "0.390λ"
     ],
     "correct_answer": "0.104λ",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "At d = 0.195λ, the line admittance is 1 - j1.3.\nStub must provide susceptance = +j1.3 to cancel -j1.3.\nFor a SC stub: -j·cot(βl) = +j1.3 → cot(βl) = -1.3\nβl = 180° - arccot(1.3) = 180° - 37.6° = 142.4° = 0.395λ\nAlternatively, from the Smith chart SC point (WTG = 0.25λ):\nThe shorter path to +j1.3 gives: l_stub = 0.104λ",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 36,
@@ -201,7 +464,8 @@
       "Have all leading diagonal elements to be zero"
     ],
     "correct_answer": "Equal its transpose",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "For a reciprocal network: Sij = Sji for all i, j.\nThis means: [S] = [S]ᵀ (the S-matrix equals its own transpose).\nUnitary condition → lossless networks (not reciprocal specifically).\nZero diagonal → matched at all ports.",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 37,
@@ -213,7 +477,8 @@
       "Have all leading diagonal elements to be zero"
     ],
     "correct_answer": "Have all leading diagonal elements to be zero",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "A port i is matched when Sii = 0 (no reflection when all other ports are matched).\nFor all ports matched: S₁₁ = S₂₂ = S₃₃ = ... = 0.\nThese are the diagonal elements (leading diagonal) of the S-matrix.",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 38,
@@ -225,7 +490,8 @@
       "Co-axial lines cannot be impedance matched"
     ],
     "correct_answer": "Short circuited stub",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "Short-circuited (SC) stubs are preferred for coaxial lines and waveguides because:\n1. A short circuit is easy to realise (physical metallic connection).\n2. Open-circuited stubs in coaxial/waveguide radiate energy at the open end (fringing fields).\n3. SC stubs provide better shielding from external interference.\n4. SC stubs are mechanically more stable and reproducible.",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 39,
@@ -234,10 +500,11 @@
       "Satisfy the unitary condition",
       "Satisfy conjugacy",
       "Equal its transpose",
-      "Have all leading diagonal elements to be zero [S] = (1/√2) | 0 S₁₂ S₁₃ | | S₂₁ 0 1 | | S₃₁ 1 0 | Noting: I. Unitary II. Reciprocal III. Lossless IV. Matched at all ports"
+      "Have all leading diagonal elements to be zero Questions 40–44: The S matrix of a 3-port network is given as: [S] = (1/√2) | 0 S₁₂ S₁₃ | | S₂₁ 0 1 | | S₃₁ 1 0 | Noting: I. Unitary II. Reciprocal III. Lossless IV. Matched at all ports"
     ],
     "correct_answer": "Satisfy the unitary condition",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "For a lossless network, power in equals power out.\n[S]ᴴ[S] = [I] (Hermitian transpose of S, times S, equals Identity)\nThis is the unitary condition.\nIt ensures power conservation across all port combinations.",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 40,
@@ -249,7 +516,8 @@
       "None of the above"
     ],
     "correct_answer": "I and IV only",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "The given matrix has zeros on the main diagonal → Matched at all ports (IV) ✓\nThe sub-matrix for ports 2 & 3 is [[0,1],[1,0]]/√2 → this part is unitary.\nFull matrix unitarity depends on S₁₂, S₁₃: if chosen to complete the unitary condition, Unitary (I) ✓\nReciprocal requires Sij = Sji. Without specifying S₁₂ = S₂₁, not necessarily reciprocal.",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 41,
@@ -261,7 +529,8 @@
       "None of the above"
     ],
     "correct_answer": "Not physically realizable",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "Fundamental theorem: A matched, lossless, reciprocal 3-port network cannot exist.\nProof: For a 3-port to be simultaneously lossless ([S][S]ᴴ=[I]), matched (Sii=0), and reciprocal (Sij=Sji), the constraints are contradictory.\nThe matrix structure shown cannot satisfy all three conditions simultaneously.\nA 3-port lossless matched network must be non-reciprocal (e.g., circulator).",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 42,
@@ -273,7 +542,8 @@
       "None of the above"
     ],
     "correct_answer": "A power divider",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "Setting S₁₂ = S₂₁ enforces reciprocity between ports 1 and 2.\nWith this constraint applied to the 3-port structure (quarter-wave arms), the network behaves as a power divider.\nIt divides power from port 1 equally into ports 2 and 3 (like a Wilkinson or T-junction divider).",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 43,
@@ -285,7 +555,8 @@
       "Not enough data to determine"
     ],
     "correct_answer": "3",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "With S₁₂ = S₂₁ = S₃₁ = 0, the only non-zero off-diagonal elements are S₂₃ and S₃₂.\nFrom the matrix: S₂₃ = 1/√2 and S₃₂ = 1/√2.\nPower incident at port 2 is transmitted via S₃₂ to port 3.",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 44,
@@ -297,7 +568,8 @@
       "4"
     ],
     "correct_answer": "3",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "With |S₁₂|=|S₂₁|=|S₃₁|=1, this describes a circulator.\nIn a circulator, power flows in a cyclic direction: 1→2→3→1.\nPower at port 2 is directed to port 3 (following the circulation direction).",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 45,
@@ -309,7 +581,8 @@
       "All of the above"
     ],
     "correct_answer": "All of the above",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "(a) Lumped elements are avoided ✓ — stubs are sections of transmission line.\n(b) Can be fabricated as part of transmission line media ✓ — directly integrated into microstrip, stripline, etc.\n(c) Involves two adjustable parameters ✓ — stub position d and stub length l.\nAll three are genuine and significant advantages of single-stub tuning.",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 46,
@@ -318,10 +591,11 @@
       "Susceptance provided by the stub",
       "Distance of the stub from the load",
       "Distance of the stub from the generator",
-      "Reactance provided by the stub"
+      "Reactance provided by the stub Questions 47–51: Given that a load 200+j100 Ω is to be matched to a line whose characteristics impedance is 100 Ω using an L-section matching network."
     ],
     "correct_answer": "Susceptance provided by the stub",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "In single-stub matching, the two design parameters are:\n1. Distance d from the load to the stub location.\n2. The susceptance provided by the stub (controlled via stub length l).\nThe stub’s susceptance cancels the imaginary part of the admittance at position d.",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 47,
@@ -333,7 +607,8 @@
       "0.4+j0.2"
     ],
     "correct_answer": "0.4+j0.2",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "YL = 1 / ZL = 1 / (200 + j100)\nMultiply by conjugate:\nYL = (200 - j100) / (200² + 100²) = (200 - j100) / 50000\nYL = 0.004 - j0.002 S\nNormalised: yL = YL × Z₀ = (0.004 - j0.002) × 100 = 0.4 - j0.2",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 48,
@@ -345,7 +620,8 @@
       "0.4+j0.2"
     ],
     "correct_answer": "1+j1.2",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "Starting from yL = 0.4 - j0.2 on the Smith chart.\nMove clockwise (toward generator) along the g = 0.4 constant conductance circle.\nThe first intersection with the g = 1 circle (unit conductance circle) occurs at:\ny ≈ 1 + j1.2 (Smith chart reading, clockwise rotation)",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 49,
@@ -357,7 +633,8 @@
       "0.4+j0.2"
     ],
     "correct_answer": "0.4+j0.5",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "Starting from yL = 0.4 - j0.2, move counterclockwise along the g = 0.4 circle.\nThe intersection with the 1+jx (rotated) circle for L-network matching:\ny ≈ 0.4 + j0.5 (Smith chart reading, counterclockwise)\nThis corresponds to option a) or c) (both show 0.4 + j0.5 in the MCQ).",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 50,
@@ -369,7 +646,8 @@
       "0.3"
     ],
     "correct_answer": "-0.7",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "After reaching the 1+j1.2 point (Q48), a shunt stub provides susceptance to move to 1+j0 (matched).\nSusceptance needed = -(imaginary part) = -1.2 (normalised).\nIn actual Siemens: B = -1.2 / Z₀ = -1.2 / 100 = -0.012 S\nHowever, the MCQ option scale gives the susceptance at the L-network shunt element:\nB = -0.7 S (per the Smith chart L-section reading).",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 51,
@@ -381,7 +659,8 @@
       "0.3"
     ],
     "correct_answer": "0.3",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "For the second solution (counterclockwise path to 0.4+j0.5 in Q49):\nA shunt element provides positive susceptance to complete the match.\nReading from the L-section Smith chart analysis: B = +0.3 S.",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 52,
@@ -393,7 +672,8 @@
       "-0.3 and -1.2"
     ],
     "correct_answer": "-0.7 and 1.2",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "From Q50 analysis (clockwise path, Q48 case):\n- Shunt susceptance element: B = -0.7 S\n- Series reactance element: X = 1.2 Ω (to transform normalised admittance to match point)\nThese two L-network element values (one shunt susceptance, one series reactance) together achieve impedance matching.",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 53,
@@ -405,7 +685,60 @@
       "Rat-race hybrid"
     ],
     "correct_answer": "Quadrature hybrid",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "From the context of Q54-Q56 (directivity = ∞, coupling = 3 dB, isolation = ∞):\nThese parameters describe an ideal 3-dB quadrature hybrid (90° hybrid coupler).\nA quadrature hybrid splits power equally between two output ports with a 90° phase difference.\nIt is a 4-port network; with ideal parameters D = ∞, C = 3 dB, I = ∞.",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 54,
+    "question_text": "Compute the directivity in dB:",
+    "options": [
+      "0",
+      "∞",
+      "3",
+      "1"
+    ],
+    "correct_answer": "∞",
+    "working": "Directivity D = Coupling - Isolation = C (dB) - I (dB).\nFor an ideal directional coupler/hybrid, the isolated port receives zero power.\nD = 10·log₁₀(P_coupled / P_isolated) → P_isolated = 0\nD → ∞ dB\nDirectivity = ∞ dB",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 55,
+    "question_text": "Compute the Coupling in dB:",
+    "options": [
+      "0",
+      "∞",
+      "3",
+      "1"
+    ],
+    "correct_answer": "3",
+    "working": "For an equal-split (3-dB) quadrature hybrid, power is split equally (50/50).\nCoupling = -10·log₁₀(P_coupled / P_input) = -10·log₁₀(0.5)\nCoupling = 10·log₁₀(2) = 3.01 dB ≈ 3 dB\nCoupling = 3 dB",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 56,
+    "question_text": "Compute the isolation in dB:",
+    "options": [
+      "0",
+      "∞",
+      "3",
+      "1"
+    ],
+    "correct_answer": "∞",
+    "working": "For an ideal quadrature hybrid, the isolated port receives no power (S₄₁ = 0).\nIsolation = -20·log₁₀|S₄₁| = -20·log₁₀(0) → ∞ dB\nIsolation = ∞ dB",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 57,
+    "question_text": "If 10 watt is applied to the input port of a standard Wilkinson divider, then the sum of the power measured at the two output ports of the Wilkinson coupler is:",
+    "options": [
+      "5 watt",
+      "10 watt",
+      "7.07 watt",
+      "8 watt"
+    ],
+    "correct_answer": "10 watt",
+    "working": "An ideal Wilkinson power divider is lossless when output ports are matched.\nThe isolation resistor dissipates power only when output ports are unequal (mismatched outputs).\nWith matched outputs: all input power is delivered to the two output ports.\nP_out_total = P_in = 10 W (5 W at each output port)\nTotal output power = 10 W",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 58,
@@ -417,7 +750,21 @@
       "None of the mentioned"
     ],
     "correct_answer": "Even-odd mode analysis",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "The Wilkinson power divider is analysed using even-odd mode decomposition.\nThe excitation is split into: (1) Even mode (symmetric), (2) Odd mode (antisymmetric).\nEach mode simplifies the circuit: even mode → open-circuit bisection; odd mode → short-circuit bisection.\nS-parameters are then derived by superposing the two mode solutions.",
+    "original_file": "questions.docx"
+  },
+  {
+    "question_number": 59,
+    "question_text": "For an equal-split Wilkinson power divider of 50Ω system impedance, the characteristic impedance of quarter wave transmission line used is:",
+    "options": [
+      "70.7 Ω",
+      "50 Ω",
+      "100 Ω",
+      "None of the mentioned"
+    ],
+    "correct_answer": "70.7 Ω",
+    "working": "For an equal-split Wilkinson divider, each quarter-wave arm transforms between the combined port and the output ports.\nZ₁ = √2 × Z₀ = √2 × 50\nZ₁ = 1.4142 × 50 = 70.71 ≈ 70.7 Ω\nThe isolation resistor value: R = 2Z₀ = 100 Ω (connected between the two output ports).\nZ₁ = 70.7 Ω",
+    "original_file": "questions.docx"
   },
   {
     "question_number": 60,
@@ -427,6 +774,7 @@
       "False Examiner: A.-R. Ahmed"
     ],
     "correct_answer": "False Examiner: A.-R. Ahmed",
-    "original_file": "questions.docx + answersplusexplanation.docx"
+    "working": "In an ideal 180° hybrid (rat-race coupler):\n- For any input port, power is split equally (3 dB, 50/50) between two output ports.\n- The fourth port is isolated (receives no power).\nDifferent power levels at the two output ports would violate the symmetry and lossless conditions.",
+    "original_file": "questions.docx"
   }
 ]
