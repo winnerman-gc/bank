@@ -1,0 +1,1422 @@
+{
+  "meta": {
+    "course": "TE 463: Aviation Communication",
+    "type": "Fill-in-the-Blank",
+    "total_questions": 200,
+    "lectures_covered": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "blank_token": "__________",
+    "description": "200-item FIB set combining converted MCQ items and lecture-derived technical concepts; each item contains exactly one blank.",
+    "grading_note": "Case-insensitive matching recommended."
+  },
+  "questions": [
+    {
+      "id": 1,
+      "lecture": 1,
+      "topic": "Air Traffic Management",
+      "question": "For the aviation communication assessment prompt \"A regional ATM modernization program merges communication, navigation, and surveillance services onto a shared platform. What is the strongest systems-level reason this convergence is being pursued?\", the correct technical response is __________.",
+      "answer": "It allows a single architecture to reduce duplicated hardware and improve coordinated performance."
+    },
+    {
+      "id": 2,
+      "lecture": 1,
+      "topic": "CNS Framework",
+      "question": "For the aviation communication assessment prompt \"A regulator must justify why aviation CNS convergence is accelerating now. Which pairing best explains the main drivers?\", the correct technical response is __________.",
+      "answer": "Scarce spectrum and maturing dynamic-radio technologies that enable more efficient sharing."
+    },
+    {
+      "id": 3,
+      "lecture": 1,
+      "topic": "CNS Framework",
+      "question": "For the aviation communication assessment prompt \"An airline evaluates a converged CNS platform against separate legacy systems. Which expected outcome is most defensible?\", the correct technical response is __________.",
+      "answer": "Lower lifecycle cost from shared infrastructure, maintenance, and operational support."
+    },
+    {
+      "id": 4,
+      "lecture": 1,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"A design team claims convergence always reduces risk. Which response shows correct technical judgment?\", the correct technical response is __________.",
+      "answer": "Convergence can improve resilience, but shared architectures still require careful interference and redundancy design."
+    },
+    {
+      "id": 5,
+      "lecture": 1,
+      "topic": "VHF Communications",
+      "question": "For the aviation communication assessment prompt \"An operator compares VHF and HF links for a remote oceanic route. Why is HF still retained despite lower reliability?\", the correct technical response is __________.",
+      "answer": "HF provides beyond-line-of-sight reach through ionospheric propagation when VHF coverage is absent."
+    },
+    {
+      "id": 6,
+      "lecture": 1,
+      "topic": "VHF Communications",
+      "question": "For the aviation communication assessment prompt \"Which statement best captures a practical trade-off between VHF and HF for routine ATS communication?\", the correct technical response is __________.",
+      "answer": "VHF gives clearer local voice while HF extends range at the cost of variable propagation quality."
+    },
+    {
+      "id": 7,
+      "lecture": 1,
+      "topic": "L-Band Systems",
+      "question": "For the aviation communication assessment prompt \"A planner must brief students on L-band congestion risk. Which explanation is most accurate?\", the correct technical response is __________.",
+      "answer": "L-band already hosts critical services, so adding new datalinks requires strict compatibility engineering."
+    },
+    {
+      "id": 8,
+      "lecture": 1,
+      "topic": "Satellite Communications",
+      "question": "For the aviation communication assessment prompt \"Why are C, Ku, and Ka satellite bands discussed together in aviation communications planning?\", the correct technical response is __________.",
+      "answer": "They offer different reliability-capacity trade-offs that support diverse mission and service profiles."
+    },
+    {
+      "id": 9,
+      "lecture": 1,
+      "topic": "Air Traffic Management",
+      "question": "For the aviation communication assessment prompt \"In ATM, why is communication often described as the system nervous layer?\", the correct technical response is __________.",
+      "answer": "It carries coordination data across ATC, ATFM, and ASM for strategic and tactical decisions."
+    },
+    {
+      "id": 10,
+      "lecture": 1,
+      "topic": "Air Traffic Management",
+      "question": "For the aviation communication assessment prompt \"A new ATM application is proposed for reduced separation. Which concept determines whether communication quality is sufficient?\", the correct technical response is __________.",
+      "answer": "Required Communication Performance specifications tied to the intended operational use."
+    },
+    {
+      "id": 11,
+      "lecture": 1,
+      "topic": "ICAO Governance",
+      "question": "For the aviation communication assessment prompt \"Which institutional role best matches ICAO in aviation communication governance?\", the correct technical response is __________.",
+      "answer": "Developing consensus-based international standards that underpin interoperability baselines."
+    },
+    {
+      "id": 12,
+      "lecture": 1,
+      "topic": "ICAO Governance",
+      "question": "For the aviation communication assessment prompt \"Which statement best differentiates FAA or EASA from ICAO in practical regulation?\", the correct technical response is __________.",
+      "answer": "National or regional authorities certify and enforce within sovereign domains using ICAO baselines."
+    },
+    {
+      "id": 13,
+      "lecture": 1,
+      "topic": "Standards",
+      "question": "For the aviation communication assessment prompt \"Why do organizations like RTCA and EUROCAE remain central to avionics development?\", the correct technical response is __________.",
+      "answer": "They translate high-level requirements into detailed technical standards and performance specifications."
+    },
+    {
+      "id": 14,
+      "lecture": 1,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"A project team ignores IFATCA and pilot association input during system design. What risk increases most?\", the correct technical response is __________.",
+      "answer": "Operational mismatch due to overlooked human factors, workload, and usability constraints."
+    },
+    {
+      "id": 15,
+      "lecture": 1,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"A course objective asks students to apply systems thinking to aviation communication. Which task best matches that objective?\", the correct technical response is __________.",
+      "answer": "Evaluating how technology, operations, and regulation interact to shape safe implementation choices."
+    },
+    {
+      "id": 16,
+      "lecture": 1,
+      "topic": "Spectrum Management",
+      "question": "For the aviation communication assessment prompt \"Why does spectrum convergence complicate allocation policy even when technology improves?\", the correct technical response is __________.",
+      "answer": "Shared bands increase coordination complexity across services and interference protection rules."
+    },
+    {
+      "id": 17,
+      "lecture": 1,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"A state plans future aviation bands and proposes only one fixed frequency range for all use cases. Which critique is strongest?\", the correct technical response is __________.",
+      "answer": "Different bands provide distinct propagation and capacity behaviors, so mixed allocations remain necessary."
+    },
+    {
+      "id": 18,
+      "lecture": 1,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which modernization benefit most directly supports long-term standards evolution?\", the correct technical response is __________.",
+      "answer": "Future-proofing through upgradable integrated platforms aligned with emerging requirements."
+    },
+    {
+      "id": 19,
+      "lecture": 1,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"A multinational airline seeks seamless operations across regions. Which convergence outcome is most relevant?\", the correct technical response is __________.",
+      "answer": "Improved interoperability through harmonized standards and fewer cross-region compatibility gaps."
+    },
+    {
+      "id": 20,
+      "lecture": 1,
+      "topic": "Air Traffic Management",
+      "question": "For the aviation communication assessment prompt \"A manager asks why ATM modernization cannot focus on communication alone. Which answer is best?\", the correct technical response is __________.",
+      "answer": "Efficiency gains emerge from coordinated communication, navigation, and surveillance performance together."
+    },
+    {
+      "id": 21,
+      "lecture": 1,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which scenario best demonstrates the role of ATFM rather than ATC?\", the correct technical response is __________.",
+      "answer": "Metering departures to balance demand and sector capacity across a region."
+    },
+    {
+      "id": 22,
+      "lecture": 1,
+      "topic": "CNS Framework",
+      "question": "For the aviation communication assessment prompt \"A policy analyst compares standalone CNS systems with converged designs. Which metric most reflects the claimed efficiency benefit?\", the correct technical response is __________.",
+      "answer": "Reduction in duplicated equipment and total power consumption for equivalent service coverage."
+    },
+    {
+      "id": 23,
+      "lecture": 1,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why is economic pressure listed as a convergence driver in aviation communications?\", the correct technical response is __________.",
+      "answer": "Separate infrastructures across CNS functions are expensive to build, operate, and sustain."
+    },
+    {
+      "id": 24,
+      "lecture": 1,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"A student claims capacity pressure alone explains modernization. Which additional factor is essential?\", the correct technical response is __________.",
+      "answer": "Performance requirements for lower latency and higher data rates than legacy systems support."
+    },
+    {
+      "id": 25,
+      "lecture": 1,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which assignment most directly tests analysis rather than recall in Lecture 1 topics?\", the correct technical response is __________.",
+      "answer": "Compare two CNS architectures and justify trade-offs in resilience, cost, and interoperability."
+    },
+    {
+      "id": 26,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"A coverage analyst must convert an en-route distance from nautical miles for RF modeling. Which conversion is correct?\", the correct technical response is __________.",
+      "answer": "One nautical mile equals 1.852 kilometers by international definition."
+    },
+    {
+      "id": 27,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which conversion is most useful when translating flight-level geometry into SI-based equations?\", the correct technical response is __________.",
+      "answer": "One foot equals 0.3048 meters exactly for altitude unit conversion."
+    },
+    {
+      "id": 28,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"An engineer reviews power units and asks for the reference represented by 0 dBW. Which answer is correct?\", the correct technical response is __________.",
+      "answer": "0 dBW corresponds to one watt of absolute transmitted power."
+    },
+    {
+      "id": 29,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which expression is correct when converting power in watts to dBm?\", the correct technical response is __________.",
+      "answer": "Use ten log base ten of watts plus thirty decibels."
+    },
+    {
+      "id": 30,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why is 20 log10 used for voltage or field-strength ratios in decibels?\", the correct technical response is __________.",
+      "answer": "Because power is proportional to amplitude squared, giving a factor of twenty."
+    },
+    {
+      "id": 31,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"What does an isotropic radiator represent in link-budget analysis?\", the correct technical response is __________.",
+      "answer": "An ideal lossless point source radiating equally in all spatial directions."
+    },
+    {
+      "id": 32,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why is the isotropic concept still useful even though it is not physically realizable?\", the correct technical response is __________.",
+      "answer": "It provides a universal reference baseline for comparing antennas and path calculations."
+    },
+    {
+      "id": 33,
+      "lecture": 2,
+      "topic": "Propagation",
+      "question": "For the aviation communication assessment prompt \"Which trend is correct for free-space path loss when distance doubles?\", the correct technical response is __________.",
+      "answer": "Path loss increases by about six decibels for each doubling of range."
+    },
+    {
+      "id": 34,
+      "lecture": 2,
+      "topic": "Propagation",
+      "question": "For the aviation communication assessment prompt \"Which trend is correct for free-space path loss when frequency doubles at fixed range?\", the correct technical response is __________.",
+      "answer": "Path loss increases by about six decibels when carrier frequency doubles."
+    },
+    {
+      "id": 35,
+      "lecture": 2,
+      "topic": "VHF Communications",
+      "question": "For the aviation communication assessment prompt \"Over the same distance, why is VHF often favored over UHF for long ATC links?\", the correct technical response is __________.",
+      "answer": "Lower frequency generally experiences less free-space path loss for equivalent geometry."
+    },
+    {
+      "id": 36,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"A student confuses power flux density with field strength. Which distinction is accurate?\", the correct technical response is __________.",
+      "answer": "PFD describes power per unit area, while field strength describes electric intensity in space."
+    },
+    {
+      "id": 37,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why does field strength fall by about 6 dB when distance doubles?\", the correct technical response is __________.",
+      "answer": "Electric field amplitude scales inversely with distance in spherical propagation."
+    },
+    {
+      "id": 38,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"A planner calculates geometric line of sight between two elevated antennas. Which form is conceptually correct?\", the correct technical response is __________.",
+      "answer": "Total LOS distance approximates the sum of each terminal horizon component."
+    },
+    {
+      "id": 39,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why is Earth radius often adjusted by a k-factor in terrestrial link design?\", the correct technical response is __________.",
+      "answer": "It models atmospheric refraction effects by using an effective Earth curvature."
+    },
+    {
+      "id": 40,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"If k is less than one in an effective-Earth model, what practical implication follows?\", the correct technical response is __________.",
+      "answer": "The apparent curvature increases, reducing effective line-of-sight range."
+    },
+    {
+      "id": 41,
+      "lecture": 2,
+      "topic": "Air Traffic Management",
+      "question": "For the aviation communication assessment prompt \"Why does atmospheric refraction usually extend radio horizon beyond strict geometric horizon?\", the correct technical response is __________.",
+      "answer": "Typical refractive-index gradients bend rays slightly downward toward Earth."
+    },
+    {
+      "id": 42,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which statement best explains great-circle distance relevance in aviation communication planning?\", the correct technical response is __________.",
+      "answer": "It gives the shortest surface path between coordinates for route-scale geometry assessments."
+    },
+    {
+      "id": 43,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why is approximating Earth as a sphere usually acceptable in first-order radio planning?\", the correct technical response is __________.",
+      "answer": "Resulting distance error is small relative to many operational engineering tolerances."
+    },
+    {
+      "id": 44,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"In practical system design, why are both SI and aeronautical units taught together?\", the correct technical response is __________.",
+      "answer": "Calculations use SI formulas while operations and procedures still use aviation conventions."
+    },
+    {
+      "id": 45,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"An aircraft transmitter is specified at 16 W. Which approximate dBW value is correct?\", the correct technical response is __________.",
+      "answer": "About plus twelve decibel-watts after logarithmic power conversion."
+    },
+    {
+      "id": 46,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why does link-budget work remain essential even when receiver sensitivity appears strong?\", the correct technical response is __________.",
+      "answer": "Large propagation losses can still exceed margins without antenna gain and system planning."
+    },
+    {
+      "id": 47,
+      "lecture": 2,
+      "topic": "Propagation",
+      "question": "For the aviation communication assessment prompt \"Which variable set is fundamentally needed to compute baseline free-space path loss?\", the correct technical response is __________.",
+      "answer": "Carrier frequency and path distance, with logarithmic scaling in decibel form."
+    },
+    {
+      "id": 48,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"A student states RF propagation is purely an electrical-vector concept. What correction is right?\", the correct technical response is __________.",
+      "answer": "Electromagnetic waves involve electric, magnetic, and propagation vectors in orthogonal relation."
+    },
+    {
+      "id": 49,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why are polarization conventions operationally important in aviation links?\", the correct technical response is __________.",
+      "answer": "Mismatched polarization can reduce effective received signal and degrade communication reliability."
+    },
+    {
+      "id": 50,
+      "lecture": 2,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which scenario best reflects Analysis-level understanding of Lecture 2 fundamentals?\", the correct technical response is __________.",
+      "answer": "Explaining how unit conversion errors propagate into LOS, FSPL, and margin misjudgments."
+    },
+    {
+      "id": 51,
+      "lecture": 3,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"A terrestrial link below 5 GHz shows deep fading in a rainy environment. Which impairment is often dominant in this range?\", the correct technical response is __________.",
+      "answer": "Multipath-driven flat or selective fading rather than strong gaseous absorption."
+    },
+    {
+      "id": 52,
+      "lecture": 3,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why do higher terrestrial frequencies above about 5 GHz need stronger rain attenuation planning?\", the correct technical response is __________.",
+      "answer": "Water absorption and rain fading become significant contributors to link degradation."
+    },
+    {
+      "id": 53,
+      "lecture": 3,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"A global system must work from temperate to tropical regions. Why are rain-zone models used?\", the correct technical response is __________.",
+      "answer": "Regional rain statistics strongly influence expected attenuation and required fade margins."
+    },
+    {
+      "id": 54,
+      "lecture": 3,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which statement about oxygen absorption in aviation links is most accurate?\", the correct technical response is __________.",
+      "answer": "Oxygen effects peak near specific microwave frequencies and are minor in HF/VHF."
+    },
+    {
+      "id": 55,
+      "lecture": 3,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why is ground-wave propagation generally unsuitable for mainstream aeronautical communication bands?\", the correct technical response is __________.",
+      "answer": "Practical aviation frequencies are too high for efficient ground-wave operational use."
+    },
+    {
+      "id": 56,
+      "lecture": 3,
+      "topic": "HF Communications",
+      "question": "For the aviation communication assessment prompt \"HF reflection is beneficial for long-range communication but risky in low-altitude operations. Why?\", the correct technical response is __________.",
+      "answer": "Reflection can extend range yet also produce multipath attenuation and variable reliability."
+    },
+    {
+      "id": 57,
+      "lecture": 3,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which application leverages reflection behavior by design rather than treating it as a nuisance?\", the correct technical response is __________.",
+      "answer": "Radar systems that exploit reflected energy to detect and locate objects."
+    },
+    {
+      "id": 58,
+      "lecture": 3,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why can skywave propagation in lower bands create long-distance co-channel interference?\", the correct technical response is __________.",
+      "answer": "Refracted paths can carry signals beyond intended horizons into reused-frequency areas."
+    },
+    {
+      "id": 59,
+      "lecture": 3,
+      "topic": "VHF Communications",
+      "question": "For the aviation communication assessment prompt \"At VHF aviation speeds, why can Doppler still matter in some systems?\", the correct technical response is __________.",
+      "answer": "Frequency shift scales with velocity and carrier frequency, affecting demodulation margins."
+    },
+    {
+      "id": 60,
+      "lecture": 3,
+      "topic": "HF Communications",
+      "question": "For the aviation communication assessment prompt \"A UHF carrier at high relative speed shows measurable offset. Which mitigation is standard?\", the correct technical response is __________.",
+      "answer": "Doppler compensation using motion estimates to pre-correct or post-correct frequency offset."
+    },
+    {
+      "id": 61,
+      "lecture": 3,
+      "topic": "Satellite Communications",
+      "question": "For the aviation communication assessment prompt \"Why are Doppler effects often more severe in LEO satellite links than in ground links?\", the correct technical response is __________.",
+      "answer": "Relative velocities are much higher, causing larger absolute frequency shifts."
+    },
+    {
+      "id": 62,
+      "lecture": 3,
+      "topic": "Modulation",
+      "question": "For the aviation communication assessment prompt \"Which statement best defines modulation in communications engineering context?\", the correct technical response is __________.",
+      "answer": "Mapping baseband information onto a carrier suitable for transmission constraints."
+    },
+    {
+      "id": 63,
+      "lecture": 3,
+      "topic": "Modulation",
+      "question": "For the aviation communication assessment prompt \"Why is modulation choice considered a trade-space rather than a single best answer?\", the correct technical response is __________.",
+      "answer": "Range, bandwidth, complexity, throughput, reliability, and regulation must be balanced jointly."
+    },
+    {
+      "id": 64,
+      "lecture": 3,
+      "topic": "HF Communications",
+      "question": "For the aviation communication assessment prompt \"What is the primary advantage of SSB-AM over DSB-AM in long-range HF voice service?\", the correct technical response is __________.",
+      "answer": "Concentrating power in one sideband improves efficiency and reduces required bandwidth."
+    },
+    {
+      "id": 65,
+      "lecture": 3,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why is FM generally not preferred for primary mobile aeronautical voice channels?\", the correct technical response is __________.",
+      "answer": "Better voice quality is offset by Doppler sensitivity and operational practicality concerns."
+    },
+    {
+      "id": 66,
+      "lecture": 3,
+      "topic": "Modulation",
+      "question": "For the aviation communication assessment prompt \"Which digital modulation is explicitly noted as a basis for ACARS-style datalink evolution?\", the correct technical response is __________.",
+      "answer": "Frequency shift keying due to better noise immunity than simple amplitude keying."
+    },
+    {
+      "id": 67,
+      "lecture": 3,
+      "topic": "Digital Modulation",
+      "question": "For the aviation communication assessment prompt \"Why do higher-order PSK or QAM schemes require cleaner channels?\", the correct technical response is __________.",
+      "answer": "Denser constellations need higher SNR to maintain acceptable symbol error performance."
+    },
+    {
+      "id": 68,
+      "lecture": 3,
+      "topic": "Modulation",
+      "question": "For the aviation communication assessment prompt \"What is the main value proposition of trellis-coded modulation in constrained channels?\", the correct technical response is __________.",
+      "answer": "It combines coding and modulation to gain robustness without extra bandwidth."
+    },
+    {
+      "id": 69,
+      "lecture": 3,
+      "topic": "Digital Modulation",
+      "question": "For the aviation communication assessment prompt \"Why is GFSK considered a practical compromise in some aviation surveillance links?\", the correct technical response is __________.",
+      "answer": "It offers constant-envelope behavior with controlled spectral occupancy and robust implementation."
+    },
+    {
+      "id": 70,
+      "lecture": 3,
+      "topic": "Information Theory",
+      "question": "For the aviation communication assessment prompt \"Shannon capacity is best interpreted in system design as what kind of boundary?\", the correct technical response is __________.",
+      "answer": "A theoretical upper limit no practical coding and modulation can surpass."
+    },
+    {
+      "id": 71,
+      "lecture": 3,
+      "topic": "Information Theory",
+      "question": "For the aviation communication assessment prompt \"If bandwidth is fixed, what rough implication follows from Shannon trade-offs for doubling rate?\", the correct technical response is __________.",
+      "answer": "Required SNR rises substantially because capacity grows logarithmically with signal quality."
+    },
+    {
+      "id": 72,
+      "lecture": 3,
+      "topic": "Information Theory",
+      "question": "For the aviation communication assessment prompt \"Why can modern coding schemes approach Shannon limits more closely than legacy designs?\", the correct technical response is __________.",
+      "answer": "Advanced FEC structures reduce required SNR gap through near-optimal decoding performance."
+    },
+    {
+      "id": 73,
+      "lecture": 3,
+      "topic": "QoS",
+      "question": "For the aviation communication assessment prompt \"A safety-critical datalink requires strict delay and reliability. Which QoS framing is correct?\", the correct technical response is __________.",
+      "answer": "Evaluate latency, BER, availability, throughput, and jitter as interdependent performance dimensions."
+    },
+    {
+      "id": 74,
+      "lecture": 3,
+      "topic": "QoS",
+      "question": "For the aviation communication assessment prompt \"Why are Monte Carlo and queuing models mentioned in aviation QoS analysis?\", the correct technical response is __________.",
+      "answer": "They predict behavior under variable loads, interference, and stochastic channel conditions."
+    },
+    {
+      "id": 75,
+      "lecture": 3,
+      "topic": "Traffic Engineering",
+      "question": "For the aviation communication assessment prompt \"In Erlang B modeling, what does blocked-call probability represent?\", the correct technical response is __________.",
+      "answer": "Likelihood that an arriving call finds all resources occupied and is lost."
+    },
+    {
+      "id": 76,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why does trunking efficiency improve as the number of pooled channels increases?\", the correct technical response is __________.",
+      "answer": "Statistical sharing reduces per-channel idle waste for the same blocking target."
+    },
+    {
+      "id": 77,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which statement best distinguishes multiplexing from multiple access?\", the correct technical response is __________.",
+      "answer": "Multiplexing combines streams; multiple access governs how users share common resources."
+    },
+    {
+      "id": 78,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why does OFDM show resilience in multipath environments?\", the correct technical response is __________.",
+      "answer": "Orthogonal subcarriers and multicarrier structure mitigate frequency-selective distortion effects."
+    },
+    {
+      "id": 79,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"What is the defining resource-separation idea in FDMA?\", the correct technical response is __________.",
+      "answer": "Users are separated by assigning different frequency channels over time."
+    },
+    {
+      "id": 80,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"What is the defining resource-separation idea in TDMA?\", the correct technical response is __________.",
+      "answer": "Users share one frequency by transmitting in separate assigned time slots."
+    },
+    {
+      "id": 81,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"What is the defining resource-separation idea in CDMA?\", the correct technical response is __________.",
+      "answer": "Users share time and frequency while separated by unique spreading codes."
+    },
+    {
+      "id": 82,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which mitigation stack best addresses multipath-induced digital degradation?\", the correct technical response is __________.",
+      "answer": "Equalization, interleaving, error correction, and integrity checks used together."
+    },
+    {
+      "id": 83,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why does interleaving help in fast-fading channels?\", the correct technical response is __________.",
+      "answer": "It disperses burst errors so FEC can recover data more effectively."
+    },
+    {
+      "id": 84,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why is CRC still important when FEC is present?\", the correct technical response is __________.",
+      "answer": "CRC provides strong error detection to trigger retransmission when correction fails."
+    },
+    {
+      "id": 85,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"A robust aeronautical design review asks for integration priorities. Which list is most aligned with lecture guidance?\", the correct technical response is __________.",
+      "answer": "Link margin, spectral efficiency, interference control, interoperability, and certification compliance."
+    },
+    {
+      "id": 86,
+      "lecture": 4,
+      "topic": "VHF Communications",
+      "question": "For the aviation communication assessment prompt \"Why was postwar VHF adoption favored over early HF-only voice in civil aviation?\", the correct technical response is __________.",
+      "answer": "Better noise immunity and practical line-of-sight reliability for route communications."
+    },
+    {
+      "id": 87,
+      "lecture": 4,
+      "topic": "VHF Communications",
+      "question": "For the aviation communication assessment prompt \"Which historical event most directly formalized global VHF AM(R)S allocation?\", the correct technical response is __________.",
+      "answer": "World Radio Conference actions around 1947 establishing dedicated aeronautical VHF use."
+    },
+    {
+      "id": 88,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why could channel spacing be reduced over decades from 200 kHz to 25 kHz and beyond?\", the correct technical response is __________.",
+      "answer": "Improved frequency accuracy and voice bandwidth understanding supported tighter channelization."
+    },
+    {
+      "id": 89,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why is voice energy concentration below about 4 kHz central to 8.33 kHz planning?\", the correct technical response is __________.",
+      "answer": "It enables acceptable intelligibility with narrower audio bandwidth limits per channel."
+    },
+    {
+      "id": 90,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"A team proposes splitting below 8.33 kHz for analog DSB-AM voice. Which concern is most valid?\", the correct technical response is __________.",
+      "answer": "Further narrowing risks unacceptable voice quality and practical modulation limitations."
+    },
+    {
+      "id": 91,
+      "lecture": 4,
+      "topic": "VHF Communications",
+      "question": "For the aviation communication assessment prompt \"Why did Europe and North America diverge on late-stage VHF congestion strategy?\", the correct technical response is __________.",
+      "answer": "Europe pushed 8.33 kHz voice splitting while the US backed VDL3 direction."
+    },
+    {
+      "id": 92,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"In a DSB-AM transceiver, why is IF stage design still emphasized?\", the correct technical response is __________.",
+      "answer": "It provides stable selectivity and filtering characteristics across operating channels."
+    },
+    {
+      "id": 93,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"What is the practical filter cutoff implication of channel spacing in DSB-AM systems?\", the correct technical response is __________.",
+      "answer": "Audio band-limiting aligns with about half-channel spacing to control occupied bandwidth."
+    },
+    {
+      "id": 94,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why can an 8.33-capable receiver often handle wider legacy channel transmissions?\", the correct technical response is __________.",
+      "answer": "Backward compatibility arises from overlapping voice-spectrum assumptions and tuning alignment."
+    },
+    {
+      "id": 95,
+      "lecture": 4,
+      "topic": "VHF Communications",
+      "question": "For the aviation communication assessment prompt \"What is the main function of companding in VHF voice transceiver architecture?\", the correct technical response is __________.",
+      "answer": "Compressing and expanding dynamic range to improve effective signal-to-noise performance."
+    },
+    {
+      "id": 96,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why is low-noise amplifier performance critical near receiver front-end?\", the correct technical response is __________.",
+      "answer": "Early-stage noise figure strongly influences total receiver sensitivity threshold."
+    },
+    {
+      "id": 97,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"What operational problem does AGC primarily address in aviation voice receivers?\", the correct technical response is __________.",
+      "answer": "Maintaining intelligible output across wide variations in received signal strength."
+    },
+    {
+      "id": 98,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why is squelch useful for controller workload and fatigue management?\", the correct technical response is __________.",
+      "answer": "It mutes receiver audio when no valid carrier is present."
+    },
+    {
+      "id": 99,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"In the Three Cs framework, which relationship is most realistic for network planning?\", the correct technical response is __________.",
+      "answer": "Coverage, capacity, and quality interact and must be balanced against cost and constraints."
+    },
+    {
+      "id": 100,
+      "lecture": 4,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why are upper-airspace and lower-airspace coverage models treated differently?\", the correct technical response is __________.",
+      "answer": "Upper sectors are largely LOS, while lower sectors require reflection and diffraction modeling."
+    },
+    {
+      "id": 101,
+      "lecture": 5,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"What is the core purpose of voting networks in non-LOS or marginal zones?\", the correct technical response is __________.",
+      "answer": "Select or combine the best received signal among multiple distributed sites."
+    },
+    {
+      "id": 102,
+      "lecture": 5,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"What is the central transmit-side idea of CLIMAX extended coverage?\", the correct technical response is __________.",
+      "answer": "Multiple transmitters send same audio with controlled offsets to improve seamless reception."
+    },
+    {
+      "id": 103,
+      "lecture": 5,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why are tight timing and phase controls required in CLIMAX implementations?\", the correct technical response is __________.",
+      "answer": "Misalignment can create destructive overlap effects and audible communication artifacts."
+    },
+    {
+      "id": 104,
+      "lecture": 5,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why does practical field testing remain mandatory after model-based coverage design?\", the correct technical response is __________.",
+      "answer": "Real environments can deviate from assumptions, especially in marginal or obstructed areas."
+    },
+    {
+      "id": 105,
+      "lecture": 5,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"In channel-capacity planning, what does PIAC represent operationally?\", the correct technical response is __________.",
+      "answer": "Peak instantaneous aircraft count in a service volume during busy periods."
+    },
+    {
+      "id": 106,
+      "lecture": 5,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why is the sector-versus-cell distinction important in aviation communication design?\", the correct technical response is __________.",
+      "answer": "Sector is operational ATC responsibility; cell is radio coverage volume from infrastructure."
+    },
+    {
+      "id": 107,
+      "lecture": 5,
+      "topic": "VHF Communications",
+      "question": "For the aviation communication assessment prompt \"What is meant by self-interference control in dense VHF planning?\", the correct technical response is __________.",
+      "answer": "Minimizing harmful co-channel and adjacent-channel interactions across reused frequencies."
+    },
+    {
+      "id": 108,
+      "lecture": 5,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why are some adjacent channels deliberately protected near critical frequencies?\", the correct technical response is __________.",
+      "answer": "To guard high-priority safety channels from harmful interference spillover."
+    },
+    {
+      "id": 109,
+      "lecture": 5,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"The Three As in regulation refer to which sequence?\", the correct technical response is __________.",
+      "answer": "Allocation, allotment, and assignment in progressively specific spectrum control layers."
+    },
+    {
+      "id": 110,
+      "lecture": 5,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which statement best describes allocation in this context?\", the correct technical response is __________.",
+      "answer": "International legal designation of spectrum bands for defined service categories."
+    },
+    {
+      "id": 111,
+      "lecture": 5,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which statement best describes allotment in this context?\", the correct technical response is __________.",
+      "answer": "Regional or geographic frequency planning to reduce cross-border interference."
+    },
+    {
+      "id": 112,
+      "lecture": 5,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which statement best describes assignment in this context?\", the correct technical response is __________.",
+      "answer": "Licensing specific transmitter use under national authority and applicable rules."
+    },
+    {
+      "id": 113,
+      "lecture": 5,
+      "topic": "Modulation",
+      "question": "For the aviation communication assessment prompt \"Why is intermodulation a major concern at multi-transmitter aviation sites?\", the correct technical response is __________.",
+      "answer": "Nonlinear mixing can generate in-band spurious products that mask legitimate channels."
+    },
+    {
+      "id": 114,
+      "lecture": 5,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which engineering control most directly improves immunity to off-channel overload at receiver input?\", the correct technical response is __________.",
+      "answer": "High-Q cavity preselection before active stages to reject unwanted strong signals."
+    },
+    {
+      "id": 115,
+      "lecture": 5,
+      "topic": "VHF Communications",
+      "question": "For the aviation communication assessment prompt \"Why are low-intermod connectors and proper site grounding emphasized in VHF hardening?\", the correct technical response is __________.",
+      "answer": "Passive nonlinearities and poor grounding can create avoidable intermodulation products."
+    },
+    {
+      "id": 116,
+      "lecture": 5,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"Why did the industry push from ACARS character-oriented messaging toward bit-oriented VDL modes?\", the correct technical response is __________.",
+      "answer": "Higher rates and robustness were needed for modern ATN and CPDLC operations."
+    },
+    {
+      "id": 117,
+      "lecture": 5,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"Which statement best characterizes VDL Mode 2 operational role?\", the correct technical response is __________.",
+      "answer": "Data-only VHF link using D8PSK and CSMA as the practical ATN standard."
+    },
+    {
+      "id": 118,
+      "lecture": 5,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"Why can VDL2 raw throughput exceed effective application throughput significantly?\", the correct technical response is __________.",
+      "answer": "Protocol overhead, control framing, and reliability mechanisms consume channel capacity."
+    },
+    {
+      "id": 119,
+      "lecture": 5,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"What is a key practical criticism of CSMA for safety-relevant VDL2 traffic?\", the correct technical response is __________.",
+      "answer": "Statistical contention can delay high-priority messages in busy conditions."
+    },
+    {
+      "id": 120,
+      "lecture": 5,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"Which feature improves VDL2 quality relative to basic ACARS behavior?\", the correct technical response is __________.",
+      "answer": "Acknowledgment and resend protocols with repeat attempts under degraded conditions."
+    },
+    {
+      "id": 121,
+      "lecture": 5,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"Why are interleaving and scrambling included in VDL2 framing chains?\", the correct technical response is __________.",
+      "answer": "They improve fading tolerance and support stable clock recovery at receiver."
+    },
+    {
+      "id": 122,
+      "lecture": 5,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"VDL3 was designed to solve which principal integration objective?\", the correct technical response is __________.",
+      "answer": "Combining digital voice and data in one TDMA-based VHF channel structure."
+    },
+    {
+      "id": 123,
+      "lecture": 5,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"What deployment reality best describes VDL3 status from the lecture content?\", the correct technical response is __________.",
+      "answer": "Technically capable but lacking broad operational rollout due to policy and cost factors."
+    },
+    {
+      "id": 124,
+      "lecture": 5,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"In VDL3, what is the role of timing advance in uplink operations?\", the correct technical response is __________.",
+      "answer": "Compensating propagation delay so bursts arrive in correct TDMA slot windows."
+    },
+    {
+      "id": 125,
+      "lecture": 5,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"Why is management burst robustness critical in VDL3 frame operation?\", the correct technical response is __________.",
+      "answer": "Link control and synchronization metadata must survive fading for system stability."
+    },
+    {
+      "id": 126,
+      "lecture": 6,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"Which coding approach is associated with VDL3 data burst error protection?\", the correct technical response is __________.",
+      "answer": "Reed-Solomon redundancy enabling correction capability for burst-like impairments."
+    },
+    {
+      "id": 127,
+      "lecture": 6,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why can a three-slot extended-range TDMA pattern increase usable cell radius?\", the correct technical response is __________.",
+      "answer": "Longer guard intervals better absorb propagation delay spread across larger distances."
+    },
+    {
+      "id": 128,
+      "lecture": 6,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"What architectural advantage was highlighted for VDL3 service combinations?\", the correct technical response is __________.",
+      "answer": "Flexible slot allocation can support varying voice and data mixes by demand."
+    },
+    {
+      "id": 129,
+      "lecture": 6,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"VDL4 was initially conceived primarily to support which operational domain?\", the correct technical response is __________.",
+      "answer": "Broadcast-oriented navigation and surveillance messaging with prioritization capability."
+    },
+    {
+      "id": 130,
+      "lecture": 6,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"What distinguishes VDL4 access from centrally coordinated TDMA systems?\", the correct technical response is __________.",
+      "answer": "Self-organizing slot management allows autonomous operation without mandatory ground controller."
+    },
+    {
+      "id": 131,
+      "lecture": 6,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"Why is VDL4 often cited as useful for oceanic or polar operations?\", the correct technical response is __________.",
+      "answer": "Autonomous network behavior enables aircraft-to-aircraft functions where ground infrastructure is sparse."
+    },
+    {
+      "id": 132,
+      "lecture": 6,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"In VDL4 synchronization priority, which source is generally preferred first?\", the correct technical response is __________.",
+      "answer": "Satellite-derived universal time references such as GNSS-based timing sources."
+    },
+    {
+      "id": 133,
+      "lecture": 6,
+      "topic": "Spectrum Management",
+      "question": "For the aviation communication assessment prompt \"What does VDL2 migration planning reveal about practical spectrum pressure?\", the correct technical response is __________.",
+      "answer": "Guard-band protection can enlarge effective footprint beyond nominal 25 kHz slots."
+    },
+    {
+      "id": 134,
+      "lecture": 6,
+      "topic": "Air Traffic Management",
+      "question": "For the aviation communication assessment prompt \"Why is CPDLC a major datalink service in modern ATM?\", the correct technical response is __________.",
+      "answer": "Structured text clearances reduce voice congestion and interpretation ambiguity."
+    },
+    {
+      "id": 135,
+      "lecture": 6,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"How do D-FIS or D-ATIS services improve operational efficiency?\", the correct technical response is __________.",
+      "answer": "Digital information delivery reduces routine voice traffic and cockpit workload."
+    },
+    {
+      "id": 136,
+      "lecture": 6,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which activity best fits AOC rather than ATC in datalink context?\", the correct technical response is __________.",
+      "answer": "Exchanging airline operational data like maintenance, fuel, and logistics information."
+    },
+    {
+      "id": 137,
+      "lecture": 6,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"Why are early ACARS and VDL security models considered vulnerable?\", the correct technical response is __________.",
+      "answer": "Clear-text messaging lacked strong native authentication and confidentiality controls."
+    },
+    {
+      "id": 138,
+      "lecture": 6,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"Why is RF jamming still a practical concern for VDL subnetworks?\", the correct technical response is __________.",
+      "answer": "Shared spectrum links can be disrupted by strong intentional or incidental interference."
+    },
+    {
+      "id": 139,
+      "lecture": 6,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"What is the strategic benefit of transitioning from ATN/OSI to ATN/IPS?\", the correct technical response is __________.",
+      "answer": "It enables use of modern cybersecurity mechanisms and broader IP ecosystem practices."
+    },
+    {
+      "id": 140,
+      "lecture": 6,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"In a mixed fleet migration, why is backward compatibility of VDL2 with ACARS interfaces useful?\", the correct technical response is __________.",
+      "answer": "It reduces transition disruption by preserving existing application interface investments."
+    },
+    {
+      "id": 141,
+      "lecture": 6,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"A systems engineer must choose between VDL2 and VDL3 for time-critical voice. Which reasoning is sound?\", the correct technical response is __________.",
+      "answer": "VDL3 architecture supports real-time voice better than contention-based VDL2 packet access."
+    },
+    {
+      "id": 142,
+      "lecture": 6,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"What risk emerges when non-critical traffic and critical ATC traffic share an uncontrolled random-access medium?\", the correct technical response is __________.",
+      "answer": "Contention can increase delay variance and potentially block urgent communications."
+    },
+    {
+      "id": 143,
+      "lecture": 6,
+      "topic": "VHF Communications",
+      "question": "For the aviation communication assessment prompt \"Why are guard channels around digital VHF datalink deployments operationally significant?\", the correct technical response is __________.",
+      "answer": "They consume extra spectral space, affecting net capacity planning assumptions."
+    },
+    {
+      "id": 144,
+      "lecture": 6,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which datalink architecture is most compatible with autonomous distributed slot reservation logic?\", the correct technical response is __________.",
+      "answer": "VDL4 self-organizing TDMA where mobiles reserve and manage timeslots."
+    },
+    {
+      "id": 145,
+      "lecture": 6,
+      "topic": "VDL Systems",
+      "question": "For the aviation communication assessment prompt \"Which question best tests Analysis-level understanding across VDL modes?\", the correct technical response is __________.",
+      "answer": "Evaluate mode suitability for CPDLC, ADS-B-like broadcast, and mixed voice-data sectors."
+    },
+    {
+      "id": 146,
+      "lecture": 6,
+      "topic": "VHF Communications",
+      "question": "For the aviation communication assessment prompt \"Why is long-range aviation communication not solved by VHF alone?\", the correct technical response is __________.",
+      "answer": "VHF is line-of-sight limited and cannot reliably cover vast oceanic regions."
+    },
+    {
+      "id": 147,
+      "lecture": 6,
+      "topic": "HF Communications",
+      "question": "For the aviation communication assessment prompt \"Why does HF remain operationally relevant in modern long-haul operations?\", the correct technical response is __________.",
+      "answer": "Skywave propagation provides over-the-horizon reach with independent regional channel sets."
+    },
+    {
+      "id": 148,
+      "lecture": 6,
+      "topic": "HF Communications",
+      "question": "For the aviation communication assessment prompt \"What is a key benefit of SSB-AM for HF aeronautical voice compared with conventional AM?\", the correct technical response is __________.",
+      "answer": "Better power and bandwidth efficiency for long-distance communication constraints."
+    },
+    {
+      "id": 149,
+      "lecture": 6,
+      "topic": "HF Communications",
+      "question": "For the aviation communication assessment prompt \"Why are HF channels managed as regional subsets across MWARAs?\", the correct technical response is __________.",
+      "answer": "Diverse propagation conditions require multiple candidate frequencies for reliable availability."
+    },
+    {
+      "id": 150,
+      "lecture": 6,
+      "topic": "HF Communications",
+      "question": "For the aviation communication assessment prompt \"What operational function does SELCAL provide on HF routes?\", the correct technical response is __________.",
+      "answer": "Selective alerting of specific aircraft so crews need not continuously monitor audio."
+    },
+    {
+      "id": 151,
+      "lecture": 7,
+      "topic": "HF Communications",
+      "question": "For the aviation communication assessment prompt \"Why can HF calls drop and require re-establishment during long-distance operations?\", the correct technical response is __________.",
+      "answer": "Propagation conditions evolve with time and path, causing channel usability changes."
+    },
+    {
+      "id": 152,
+      "lecture": 7,
+      "topic": "HF Communications",
+      "question": "For the aviation communication assessment prompt \"What does HF ACARS standardization imply about long-range data needs?\", the correct technical response is __________.",
+      "answer": "Oceanic and remote operations required data messaging beyond VHF coverage limits."
+    },
+    {
+      "id": 153,
+      "lecture": 7,
+      "topic": "Satellite Communications",
+      "question": "For the aviation communication assessment prompt \"Why are geostationary satellites widely used for civil AMS(R)S services?\", the correct technical response is __________.",
+      "answer": "Persistent regional visibility supports broad, stable service footprints and hub architectures."
+    },
+    {
+      "id": 154,
+      "lecture": 7,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Which GEO characteristic most limits extreme polar coverage quality?\", the correct technical response is __________.",
+      "answer": "Low elevation geometry increases path length and degrades link margin near poles."
+    },
+    {
+      "id": 155,
+      "lecture": 7,
+      "topic": "Satellite Communications",
+      "question": "For the aviation communication assessment prompt \"Why is geostationary satellite communication less suitable for takeoff and landing phases?\", the correct technical response is __________.",
+      "answer": "Propagation delay and setup timing are less compatible with highly time-critical operations."
+    },
+    {
+      "id": 156,
+      "lecture": 7,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"In AMS(R)S protocol architecture, what is the role of the R channel?\", the correct technical response is __________.",
+      "answer": "Random-access signaling from aircraft for call initiation and management functions."
+    },
+    {
+      "id": 157,
+      "lecture": 7,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"In AMS(R)S protocol architecture, what is the role of the P channel?\", the correct technical response is __________.",
+      "answer": "Continuous signaling stream supporting setup and synchronization from ground to aircraft."
+    },
+    {
+      "id": 158,
+      "lecture": 7,
+      "topic": "Satellite Communications",
+      "question": "For the aviation communication assessment prompt \"Why is priority and pre-emption policy essential in mixed satellite safety and non-safety services?\", the correct technical response is __________.",
+      "answer": "Safety communications must retain guaranteed access when non-safety demand is high."
+    },
+    {
+      "id": 159,
+      "lecture": 7,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"What key benefit can LEO constellations offer compared with GEO for mobile aviation links?\", the correct technical response is __________.",
+      "answer": "Lower propagation delay and improved link budgets due to shorter path distances."
+    },
+    {
+      "id": 160,
+      "lecture": 7,
+      "topic": "Aviation Communication Concepts",
+      "question": "For the aviation communication assessment prompt \"Why are MEO systems discussed cautiously in civil aeronautical applications?\", the correct technical response is __________.",
+      "answer": "Service availability and operational deployment maturity remain less established for this domain."
+    },
+    {
+      "id": 161,
+      "lecture": 7,
+      "topic": "CNS Framework",
+      "question": "The three foundational pillars of aviation communication architecture are collectively known as __________.",
+      "answer": "CNS (Communication, Navigation, Surveillance)"
+    },
+    {
+      "id": 162,
+      "lecture": 7,
+      "topic": "Spectrum Convergence",
+      "question": "The trend of merging traditionally separate aviation radio services into shared bands is called spectrum __________.",
+      "answer": "convergence"
+    },
+    {
+      "id": 163,
+      "lecture": 7,
+      "topic": "VHF Band",
+      "question": "Aeronautical VHF voice communication occupies approximately 108 MHz to __________ MHz.",
+      "answer": "137"
+    },
+    {
+      "id": 164,
+      "lecture": 7,
+      "topic": "HF Propagation",
+      "question": "HF long-range communication depends primarily on __________ reflection in the upper atmosphere.",
+      "answer": "ionospheric"
+    },
+    {
+      "id": 165,
+      "lecture": 7,
+      "topic": "L-Band Congestion",
+      "question": "The collision-avoidance system sharing L-band resources with DME is __________.",
+      "answer": "TCAS"
+    },
+    {
+      "id": 166,
+      "lecture": 7,
+      "topic": "Satellite Tradeoff",
+      "question": "Among C, Ku, and Ka bands, the highest-throughput but rain-sensitive option is the __________ band.",
+      "answer": "Ka"
+    },
+    {
+      "id": 167,
+      "lecture": 7,
+      "topic": "ATM Components",
+      "question": "The ATM function that balances demand with airspace capacity is __________.",
+      "answer": "ATFM (Air Traffic Flow Management)"
+    },
+    {
+      "id": 168,
+      "lecture": 7,
+      "topic": "RCP",
+      "question": "The communication quality specification used to support specific ATM applications is called Required Communication __________.",
+      "answer": "Performance"
+    },
+    {
+      "id": 169,
+      "lecture": 7,
+      "topic": "ICAO Role",
+      "question": "The UN specialized agency that sets global civil aviation standards is __________.",
+      "answer": "ICAO"
+    },
+    {
+      "id": 170,
+      "lecture": 7,
+      "topic": "RTCA",
+      "question": "The North American standards body that co-develops avionics MOPS with EUROCAE is __________.",
+      "answer": "RTCA"
+    },
+    {
+      "id": 171,
+      "lecture": 7,
+      "topic": "Isotropic Reference",
+      "question": "A theoretical radiator with uniform gain in all directions is an __________ radiator.",
+      "answer": "isotropic"
+    },
+    {
+      "id": 172,
+      "lecture": 7,
+      "topic": "FSPL Rule",
+      "question": "In free space, doubling distance increases path loss by about __________ dB.",
+      "answer": "6"
+    },
+    {
+      "id": 173,
+      "lecture": 7,
+      "topic": "FSPL Frequency",
+      "question": "At fixed range, a tenfold frequency increase raises free-space path loss by __________ dB.",
+      "answer": "20"
+    },
+    {
+      "id": 174,
+      "lecture": 7,
+      "topic": "PFD",
+      "question": "Power per unit area at the receiver plane is called power flux __________.",
+      "answer": "density"
+    },
+    {
+      "id": 175,
+      "lecture": 7,
+      "topic": "Free-Space Impedance",
+      "question": "The intrinsic impedance of free space used in field-strength calculations is approximately __________ ohms.",
+      "answer": "377"
+    },
+    {
+      "id": 176,
+      "lecture": 7,
+      "topic": "Radio Horizon",
+      "question": "Atmospheric refraction is commonly modeled with an effective-Earth-radius __________ factor.",
+      "answer": "k"
+    },
+    {
+      "id": 177,
+      "lecture": 7,
+      "topic": "Polarization",
+      "question": "A wave whose electric-field vector rotates with propagation has __________ polarization.",
+      "answer": "circular"
+    },
+    {
+      "id": 178,
+      "lecture": 7,
+      "topic": "Light Speed",
+      "question": "Electromagnetic waves in vacuum propagate at approximately __________ m/s.",
+      "answer": "3 x 10^8"
+    },
+    {
+      "id": 179,
+      "lecture": 7,
+      "topic": "Ducting",
+      "question": "Extended beyond-horizon propagation caused by refractive trapping is called __________.",
+      "answer": "ducting"
+    },
+    {
+      "id": 180,
+      "lecture": 7,
+      "topic": "Doppler",
+      "question": "Frequency shift due to relative motion between transmitter and receiver is the __________ effect.",
+      "answer": "Doppler"
+    },
+    {
+      "id": 181,
+      "lecture": 8,
+      "topic": "DSB-AM",
+      "question": "Legacy aeronautical VHF voice uses __________ amplitude modulation.",
+      "answer": "DSB-AM (Double Sideband AM)"
+    },
+    {
+      "id": 182,
+      "lecture": 8,
+      "topic": "SSB-AM",
+      "question": "The HF voice scheme that suppresses carrier and one sideband is __________.",
+      "answer": "SSB-AM"
+    },
+    {
+      "id": 183,
+      "lecture": 8,
+      "topic": "FSK",
+      "question": "Binary data encoded by switching between discrete carrier frequencies uses __________.",
+      "answer": "FSK"
+    },
+    {
+      "id": 184,
+      "lecture": 8,
+      "topic": "GFSK",
+      "question": "Mode S and related links use Gaussian-filtered frequency-shift keying called __________.",
+      "answer": "GFSK"
+    },
+    {
+      "id": 185,
+      "lecture": 8,
+      "topic": "QAM",
+      "question": "A modulation that varies both amplitude and phase is __________.",
+      "answer": "QAM (Quadrature Amplitude Modulation)"
+    },
+    {
+      "id": 186,
+      "lecture": 8,
+      "topic": "Shannon Capacity",
+      "question": "Maximum theoretical error-free rate for bandwidth and SNR is bounded by __________ theorem.",
+      "answer": "Shannon"
+    },
+    {
+      "id": 187,
+      "lecture": 8,
+      "topic": "FEC",
+      "question": "Adding redundancy so the receiver can correct errors without retransmission is __________.",
+      "answer": "forward error correction"
+    },
+    {
+      "id": 188,
+      "lecture": 8,
+      "topic": "CRC",
+      "question": "Polynomial-based burst-error detection in many aviation protocols is __________.",
+      "answer": "CRC (Cyclic Redundancy Check)"
+    },
+    {
+      "id": 189,
+      "lecture": 8,
+      "topic": "Interleaving",
+      "question": "Spreading burst errors across time to improve decoder recovery is called __________.",
+      "answer": "interleaving"
+    },
+    {
+      "id": 190,
+      "lecture": 8,
+      "topic": "AGC",
+      "question": "A receiver loop that stabilizes output despite large input variation is __________.",
+      "answer": "AGC (Automatic Gain Control)"
+    },
+    {
+      "id": 191,
+      "lecture": 8,
+      "topic": "Squelch",
+      "question": "Receiver muting in the absence of valid carrier is the __________ function.",
+      "answer": "squelch"
+    },
+    {
+      "id": 192,
+      "lecture": 8,
+      "topic": "VDL2",
+      "question": "The VHF data link mode widely used for ATN packet data over 25 kHz channels is __________.",
+      "answer": "VDL Mode 2"
+    },
+    {
+      "id": 193,
+      "lecture": 8,
+      "topic": "CPDLC",
+      "question": "Controller-pilot text messaging service replacing routine voice clearances is __________.",
+      "answer": "CPDLC"
+    },
+    {
+      "id": 194,
+      "lecture": 8,
+      "topic": "SELCAL",
+      "question": "HF selective alerting using aircraft-specific tone pairs is __________.",
+      "answer": "SELCAL"
+    },
+    {
+      "id": 195,
+      "lecture": 8,
+      "topic": "GEO Orbit",
+      "question": "Geostationary satellites orbit at roughly __________ km altitude.",
+      "answer": "35,790"
+    },
+    {
+      "id": 196,
+      "lecture": 8,
+      "topic": "AMS(R)S",
+      "question": "Safety-of-life aeronautical satellite route services are designated __________.",
+      "answer": "AMS(R)S"
+    },
+    {
+      "id": 197,
+      "lecture": 8,
+      "topic": "Link16",
+      "question": "The NATO/US tactical datalink using TDMA in 960-1215 MHz is __________.",
+      "answer": "Link 16"
+    },
+    {
+      "id": 198,
+      "lecture": 8,
+      "topic": "MPLS",
+      "question": "Label-switched deterministic packet transport in critical backhaul networks is __________.",
+      "answer": "MPLS"
+    },
+    {
+      "id": 199,
+      "lecture": 8,
+      "topic": "MIPv6",
+      "question": "Maintaining session continuity while changing point-of-attachment uses __________.",
+      "answer": "MIPv6"
+    },
+    {
+      "id": 200,
+      "lecture": 8,
+      "topic": "NEMO",
+      "question": "Extending mobile IP from a host to an entire aircraft subnet is __________.",
+      "answer": "NEMO"
+    }
+  ]
+}
