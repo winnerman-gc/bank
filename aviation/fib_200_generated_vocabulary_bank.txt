@@ -1,0 +1,170 @@
+Vocabulary Bank
+
+1. CNS
+2. convergence
+3. software-defined
+4. scarcity
+5. interoperability
+6. resilience
+7. future-proofing
+8. Organization
+9. Union
+10. FAA
+11. EASA
+12. RTCA
+13. EUROCAE
+14. IFATCA
+15. ALPA
+16. SWIM
+17. Upgrades
+18. Management
+19. Performance
+20. AM(R)S
+21. VHF band
+22. HF band
+23. L band
+24. Ka band
+25. 1852
+26. 0.3048
+27. dBm
+28. dBW
+29. decibel
+30. isotropic
+31. free-space
+32. 6
+33. decade
+34. PFD
+35. 377
+36. 6370
+37. sight
+38. horizon
+39. circular
+40. refraction
+41. reflection
+42. ground wave
+43. sky wave
+44. ionosphere
+45. Doppler
+46. ratio
+47. capacity
+48. latency
+49. jitter
+50. fading
+51. absorption
+52. tropics
+53. wave
+54. effect
+55. compensation
+56. AM
+57. keying
+58. GFSK
+59. bandwidth
+60. reliability
+61. throughput
+62. availability
+63. B
+64. fade
+65. companding
+66. emphasis
+67. squelch
+68. line
+69. kHz
+70. frequency
+71. noise
+72. control
+73. SINAD
+74. voting
+75. CLIMAX
+76. coupling
+77. PIAC
+78. quality
+79. compatibility
+80. spectrum
+81. station
+82. dial
+83. Group
+84. ACARS
+85. 0
+86. 1
+87. 2
+88. 3
+89. 4
+90. 8DPSK
+91. CSMA
+92. TDMA
+93. STDMA
+94. 31.5 kbps
+95. 10.5 baud
+96. 25 kHz
+97. 19.2 kbps
+98. super-frame
+99. 4500
+100. channel
+101. CPDLC
+102. D-FIS
+103. D-ATIS
+104. AOC
+105. Golay
+106. Reed-Solomon
+107. interleaving
+108. HF
+109. SSB-AM
+110. SELCAL
+111. MWARAs
+112. Volmet
+113. geostationary
+114. AMS(R)S
+115. AMSS
+116. C band
+117. Ku band
+118. GES
+119. P
+120. R
+121. T
+122. C
+123. Aloha
+124. ABPSK
+125. A-QPSK
+126. ms
+127. pre-emption
+128. SINCGARS
+129. HAVEQUICK
+130. EPLRS
+131. JTIDS
+132. MIDS
+133. Link 16
+134. hopping
+135. CDMA
+136. nodeless
+137. relative
+138. voice
+139. slots
+140. channels
+141. access
+142. Reference
+143. pulse
+144. kbps
+145. backhaul
+146. networks
+147. ATN
+148. VSAT
+149. cables
+150. stack
+151. modulation
+152. E1
+153. T1
+154. TCP/IP
+155. application
+156. transport
+157. internet
+158. network access
+159. point-to-point
+160. budget
+161. MIPv6
+162. NEMO
+163. systems
+164. S band
+165. OFDM
+166. VHF
+167. multipath
+168. continuity

@@ -1,0 +1,193 @@
+Vocabulary Bank
+
+1. CNS
+2. ADS-B (Automatic Dependent Surveillance-Broadcast)
+3. convergence
+4. software-defined
+5. 137
+6. ionospheric
+7. TCAS (Traffic Collision Avoidance System)
+8. Ka
+9. Management (ATFM)
+10. Performance
+11. Organization
+12. Union (ITU)
+13. Eurocontrol
+14. RTCA (Radio Technical Commission for Aeronautics)
+15. SWIM (System Wide Information Management)
+16. transmitter (Tx)
+17. antenna (aerial)
+18. 1,852
+19. milliwatts
+20. 10
+21. isotropic
+22. free space (FSPL)
+23. 6
+24. decade
+25. Density (PFD)
+26. 377
+27. 6,370
+28. circular
+29. 3 × 10⁸
+30. 15
+31. k
+32. great-circle
+33. ducting
+34. Fresnel
+35. absorption
+36. water
+37. 13
+38. ITU (International Telecommunication Union)
+39. vertically
+40. refractive
+41. Doppler
+42. GPS
+43. modulation
+44. Double Sideband (DSB)
+45. Single Sideband AM (SSB-AM)
+46. oscillator
+47. FSK (Frequency Shift Keying)
+48. GFSK (Gaussian Frequency Shift Keying)
+49. Quadrature (QAM)
+50. Trellis (TCM)
+51. Shannon
+52. turbo (or LDPC)
+53. 100
+54. bit (BER)
+55. Erlang
+56. Access (FDMA)
+57. Access (TDMA)
+58. Access (CDMA)
+59. Orthogonal (OFDM)
+60. Correction (FEC)
+61. Checking (CRC)
+62. Reed-Solomon
+63. maximal
+64. interleaving
+65. AM(R)S
+66. 720
+67. 2,280
+68. 195 (FL195)
+69. backward
+70. superheterodyne
+71. Amplifier (LNA)
+72. Control
+73. squelch
+74. companding
+75. −107
+76. Cs
+77. voting
+78. CLIMAX
+79. Count
+80. As
+81. allocation
+82. assignment
+83. intermodulation
+84. cavity
+85. ACARS (Aircraft Communications Addressing and Reporting System)
+86. OSI (Open Systems Interconnection)
+87. 8DPSK (8-Differential Phase Shift Keying)
+88. CSMA (Carrier Sense Multiple Access)
+89. 31.5
+90. TDMA (Time Division Multiple Access)
+91. Vocoder
+92. Self-Organizing (STDMA)
+93. 60
+94. −93.9
+95. N2
+96. 50 (or 75)
+97. CPDLC (Controller-Pilot Data Link Communications)
+98. PKI
+99. SSB-AM (Single Sideband Amplitude Modulation)
+100. 400
+101. 20
+102. SELCAL
+103. 16,300
+104. 14
+105. Volmet
+106. ACARS
+107. 35,790
+108. AMS(R)S
+109. L
+110. 240
+111. 70
+112. ABPSK
+113. R
+114. Unit (CMU)
+115. Systems
+116. LOS (Line-of-Sight)
+117. frequency
+118. SINCGARS (Single Channel Ground and Airborne Radio System)
+119. HAVEQUICK
+120. EPLRS (Enhanced Position Location Reporting System)
+121. JTIDS (Joint Tactical Information Distribution System)
+122. MIDS (Multifunctional Information Distribution System)
+123. 7.8125
+124. 12
+125. 26.88
+126. jitter
+127. Reference
+128. Software-Defined (SDR)
+129. Orthogonal
+130. multipath
+131. backhaul
+132. VSAT (Very Small Aperture Terminal)
+133. Modulation (PCM)
+134. 2,048
+135. 1.5
+136. Hierarchy (SDH)
+137. protection
+138. repeating
+139. MPLS (Multi-Protocol Label Switching)
+140. TCP (Transmission Control Protocol)
+141. UDP (User Datagram Protocol)
+142. Internet
+143. Access
+144. IPv6 (MIPv6)
+145. Mobility
+146. binding
+147. 80
+148. rain
+149. sky
+150. Network (ATN)
+151. Conferences (WRCs)
+152. exceeds
+153. resend (retransmission)
+154. higher
+155. 10–20
+156. spread
+157. worst-case
+158. 200
+159. 121.5
+160. dBμV/m
+161. Hata-Okumura
+162. cognitive
+163. dependent
+164. Ethernet
+165. GSM
+166. 4
+167. earth (GES)
+168. 2/3
+169. multilateral
+170. no (zero)
+171. 107.52
+172. kilohertz
+173. simplex
+174. clear
+175. sampling
+176. quantization
+177. wavelengths
+178. sunspot (solar)
+179. 150–200
+180. latitude (arc)
+181. priority
+182. within
+183. 180
+184. nodeless
+185. Viterbi
+186. clock
+187. polar
+188. Management (UTM)
+189. ±5
+190. 1
+191. atomic
