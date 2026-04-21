@@ -2,7 +2,6 @@ import json
 from pathlib import Path
 
 from docx import Document
-from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.shared import Inches, Pt
 
 
@@ -53,60 +52,14 @@ def build_document(meta, questions, output_path: Path):
     normal_style.font.name = "Calibri"
     normal_style.font.size = Pt(10.5)
 
-    title = document.add_paragraph()
-    title.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    title_run = title.add_run(meta["course"])
-    title_run.bold = True
-    title_run.font.size = Pt(16)
-
-    subtitle = document.add_paragraph()
-    subtitle.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    subtitle_run = subtitle.add_run("Fill-in-the-Blank Question Set")
-    subtitle_run.italic = True
-    subtitle_run.font.size = Pt(11)
-
-    meta_lines = [
-        f'Type: {meta["type"]}',
-        f'Total questions: {meta["total_questions"]}',
-        f'Lectures covered: {", ".join(str(item) for item in meta["lectures_covered"])}',
-        f'Blank token: {meta["blank_token"]}',
-    ]
-    for line in meta_lines:
-        paragraph = document.add_paragraph(style="Normal")
-        paragraph.paragraph_format.space_after = Pt(0)
-        paragraph.add_run(line)
-
-    document.add_paragraph()
-
-    table = document.add_table(rows=1, cols=5)
-    table.style = "Table Grid"
-    headers = ["#", "Lecture", "Topic", "Question", "Answer"]
-    for index, header in enumerate(headers):
-        set_cell_text(table.rows[0].cells[index], header, bold=True)
-
     for question in questions:
-        row = table.add_row().cells
-        set_cell_text(row[0], str(question["id"]))
-        set_cell_text(row[1], str(question["lecture"]))
-        set_cell_text(row[2], str(question["topic"]))
-        set_cell_text(row[3], str(question["question"]))
-        set_cell_text(row[4], str(question["answer"]))
+        question_paragraph = document.add_paragraph(style="Normal")
+        question_paragraph.paragraph_format.space_after = Pt(0)
+        question_paragraph.add_run(f'{question["id"]}. Q: {question["question"]}')
 
-    document.add_page_break()
-
-    heading = document.add_paragraph()
-    heading_run = heading.add_run("Vocabulary Bank")
-    heading_run.bold = True
-    heading_run.font.size = Pt(14)
-
-    vocab_intro = document.add_paragraph()
-    vocab_intro.paragraph_format.space_after = Pt(6)
-    vocab_intro.add_run("Unique answer entries listed in order of appearance.")
-
-    for answer in unique_answers(questions):
-        paragraph = document.add_paragraph(style="List Bullet")
-        paragraph.paragraph_format.space_after = Pt(0)
-        paragraph.add_run(answer)
+        answer_paragraph = document.add_paragraph(style="Normal")
+        answer_paragraph.paragraph_format.space_after = Pt(6)
+        answer_paragraph.add_run(f'A: {question["answer"]}')
 
     document.save(output_path)
 
