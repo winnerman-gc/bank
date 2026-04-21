@@ -1,4 +1,5 @@
 import json
+import random
 from pathlib import Path
 
 from docx import Document
@@ -60,6 +61,26 @@ def build_document(meta, questions, output_path: Path):
         answer_paragraph = document.add_paragraph(style="Normal")
         answer_paragraph.paragraph_format.space_after = Pt(6)
         answer_paragraph.add_run(f'A: {question["answer"]}')
+
+    # Add vocabulary bank at end with random mix
+    vocab_answers = unique_answers(questions)
+    shuffled_vocab = vocab_answers.copy()
+    random.shuffle(shuffled_vocab)
+    
+    # Add spacing before vocab section
+    document.add_paragraph()
+    
+    # Add vocab heading
+    vocab_heading = document.add_paragraph(style="Normal")
+    vocab_heading.paragraph_format.space_after = Pt(6)
+    vocab_run = vocab_heading.add_run("Vocabulary Bank (Random Mix)")
+    vocab_run.bold = True
+    
+    # Add shuffled vocabulary
+    for index, answer in enumerate(shuffled_vocab, 1):
+        vocab_paragraph = document.add_paragraph(style="Normal")
+        vocab_paragraph.paragraph_format.space_after = Pt(0)
+        vocab_paragraph.add_run(f"{index}. {answer}")
 
     document.save(output_path)
 
