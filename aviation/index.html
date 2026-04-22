@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Aviation Fill-in Practice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg-alt: #0c1a2f;
+      --panel: rgba(9, 18, 35, 0.82);
+      --panel-strong: rgba(12, 24, 44, 0.96);
+      --card: rgba(255, 255, 255, 0.92);
+      --card-soft: rgba(255, 255, 255, 0.72);
+      --text: #e8f1ff;
+      --muted: #a7b8d6;
+      --line: rgba(255, 255, 255, 0.1);
+      --accent: #7dd3fc;
+      --accent-2: #86efac;
+      --accent-3: #f9a8d4;
+      --good: #22c55e;
+      --bad: #ef4444;
+      --warn: #f59e0b;
+      --shadow: 0 22px 60px rgba(0, 0, 0, 0.32);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --radius-md: 16px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(125, 211, 252, 0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(134, 239, 172, 0.16), transparent 24%),
+        radial-gradient(circle at bottom left, rgba(249, 168, 212, 0.12), transparent 26%),
+        linear-gradient(160deg, #040915 0%, #08111d 42%, #0b1628 100%);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent 92%);
+      opacity: 0.45;
+      z-index: 0;
+    }
+
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(24px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.35;
+      animation: drift 18s ease-in-out infinite alternate;
+    }
+
+    .orb.one {
+      width: 260px;
+      height: 260px;
+      background: rgba(125, 211, 252, 0.38);
+      top: -80px;
+      left: -100px;
+    }
+
+    .orb.two {
+      width: 220px;
+      height: 220px;
+      background: rgba(134, 239, 172, 0.28);
+      top: 20vh;
+      right: -60px;
+      animation-delay: -7s;
+    }
+
+    .orb.three {
+      width: 300px;
+      height: 300px;
+      background: rgba(249, 168, 212, 0.2);
+      bottom: -120px;
+      left: 24%;
+      animation-delay: -12s;
+    }
+
+    @keyframes drift {
+      from { transform: translate3d(0, 0, 0) scale(1); }
+      to { transform: translate3d(16px, -22px, 0) scale(1.08); }
+    }
+
+    .shell {
+      position: relative;
+      z-index: 1;
+      width: min(1280px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 20px 0 54px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 16px;
+      z-index: 20;
+      backdrop-filter: blur(22px);
+      background: linear-gradient(180deg, rgba(7, 17, 31, 0.84), rgba(7, 17, 31, 0.7));
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      overflow: hidden;
+    }
+
+    .topbar::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(125, 211, 252, 0.18), transparent 34%);
+      pointer-events: none;
+    }
+
+    .topbar-row {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: grid;
+      gap: 6px;
+      min-width: 260px;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(1.45rem, 2vw, 2.25rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+
+    .brand p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+      max-width: 64ch;
+    }
+
+    .toolbar {
+      display: grid;
+      gap: 12px;
+      justify-items: end;
+    }
+
+    .toolbar-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+
+    .segmented {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 6px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .toolbar button,
+    .chip-button,
+    .card-action {
+      appearance: none;
+      border: 0;
+      cursor: pointer;
+      font-family: inherit;
+      transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease, color 0.16s ease, opacity 0.16s ease;
+    }
+
+    .segmented button,
+    .top-action {
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .segmented button:hover,
+    .top-action:hover,
+    .card-action:hover,
+    .chip-button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+    }
+
+    .segmented button.active {
+      color: #08111d;
+      background: linear-gradient(135deg, #7dd3fc, #86efac);
+      border-color: transparent;
+    }
+
+    .top-action.primary {
+      color: #08111d;
+      background: linear-gradient(135deg, #7dd3fc, #c4b5fd);
+      font-weight: 800;
+      box-shadow: 0 12px 28px rgba(125, 211, 252, 0.18);
+    }
+
+    .top-action.ghost {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--text);
+    }
+
+    .meta-strip {
+      position: relative;
+      z-index: 1;
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .stat-card {
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+    }
+
+    .stat-label {
+      display: block;
+      color: var(--muted);
+      font-size: 0.82rem;
+      margin-bottom: 6px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .stat-value {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .progress {
+      position: relative;
+      z-index: 1;
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .progress-track {
+      height: 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      width: 0%;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #7dd3fc, #86efac, #f9a8d4);
+      box-shadow: 0 0 22px rgba(125, 211, 252, 0.4);
+      transition: width 0.25s ease;
+    }
+
+    .progress-copy {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .content {
+      margin-top: 18px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .section-card {
+      border-radius: var(--radius-xl);
+      background: linear-gradient(180deg, rgba(12, 24, 44, 0.92), rgba(8, 16, 30, 0.98));
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      overflow: hidden;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .section-header h2 {
+      margin: 0;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: -0.02em;
+    }
+
+    .section-header .subtle {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .question-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .question-card {
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(245,249,255,0.92));
+      color: #0f172a;
+      border: 1px solid rgba(2, 8, 23, 0.08);
+      box-shadow: 0 18px 40px rgba(2, 8, 23, 0.12);
+      padding: 16px;
+      display: grid;
+      gap: 12px;
+      animation: rise 0.28s ease both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .question-card.correct {
+      border-color: rgba(34, 197, 94, 0.42);
+      box-shadow: 0 18px 36px rgba(34, 197, 94, 0.16);
+    }
+
+    .question-card.wrong {
+      border-color: rgba(239, 68, 68, 0.42);
+      box-shadow: 0 18px 36px rgba(239, 68, 68, 0.16);
+    }
+
+    .question-card.revealed {
+      border-color: rgba(245, 158, 11, 0.35);
+      box-shadow: 0 18px 36px rgba(245, 158, 11, 0.16);
+    }
+
+    .question-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .question-id {
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: #334155;
+      letter-spacing: 0.02em;
+    }
+
+    .question-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      background: rgba(125, 211, 252, 0.16);
+      color: #0369a1;
+    }
+
+    .tag.topic {
+      background: rgba(134, 239, 172, 0.18);
+      color: #166534;
+    }
+
+    .question-text {
+      color: #0f172a;
+      font-size: 1rem;
+      line-height: 1.55;
+    }
+
+    .question-text .blank-input {
+      display: inline-block;
+      vertical-align: baseline;
+      width: min(240px, 100%);
+      max-width: 100%;
+      margin: 0 4px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1.5px solid rgba(148, 163, 184, 0.55);
+      background: rgba(255,255,255,0.98);
+      color: #0f172a;
+      font: inherit;
+      font-weight: 700;
+      outline: none;
+      transition: border-color 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease;
+    }
+
+    .question-text .blank-input:focus {
+      border-color: #0ea5e9;
+      box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.16);
+      transform: translateY(-1px);
+    }
+
+    .question-text .blank-input.correct {
+      border-color: var(--good);
+      background: rgba(34, 197, 94, 0.08);
+    }
+
+    .question-text .blank-input.wrong {
+      border-color: var(--bad);
+      background: rgba(239, 68, 68, 0.08);
+    }
+
+    .question-text .blank-input.revealed {
+      border-color: var(--warn);
+      background: rgba(245, 158, 11, 0.1);
+    }
+
+    .question-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .action-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .card-action {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #0f172a;
+      color: white;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .card-action.secondary {
+      background: rgba(15, 23, 42, 0.08);
+      color: #0f172a;
+    }
+
+    .card-action.warn {
+      background: rgba(245, 158, 11, 0.14);
+      color: #92400e;
+    }
+
+    .answer-state {
+      display: none;
+      border-radius: 16px;
+      padding: 12px 14px;
+      line-height: 1.45;
+      font-size: 0.95rem;
+    }
+
+    .answer-state.show {
+      display: block;
+    }
+
+    .answer-state.correct {
+      background: rgba(34, 197, 94, 0.12);
+      color: #166534;
+    }
+
+    .answer-state.wrong {
+      background: rgba(239, 68, 68, 0.12);
+      color: #991b1b;
+    }
+
+    .answer-state.revealed {
+      background: rgba(245, 158, 11, 0.16);
+      color: #92400e;
+    }
+
+    .empty-state,
+    .loading-state {
+      border-radius: var(--radius-xl);
+      border: 1px dashed rgba(255,255,255,0.22);
+      background: rgba(255,255,255,0.05);
+      padding: 28px;
+      text-align: center;
+      color: var(--muted);
+      box-shadow: var(--shadow);
+    }
+
+    .loading-state {
+      min-height: 34vh;
+      display: grid;
+      place-items: center;
+      gap: 10px;
+    }
+
+    .spinner {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 4px solid rgba(255,255,255,0.18);
+      border-top-color: #7dd3fc;
+      animation: spin 0.9s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 7, 18, 0.72);
+      display: none;
+      place-items: center;
+      padding: 18px;
+      z-index: 40;
+      backdrop-filter: blur(12px);
+    }
+
+    .modal.open { display: grid; }
+
+    .modal-panel {
+      width: min(1100px, 100%);
+      max-height: min(88vh, 900px);
+      overflow: hidden;
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(12, 24, 44, 0.98), rgba(6, 12, 24, 0.98));
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+    }
+
+    .modal-header {
+      padding: 18px 20px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      flex-wrap: wrap;
+    }
+
+    .modal-header h3 {
+      margin: 0;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.2rem;
+    }
+
+    .modal-header p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .modal-body {
+      padding: 18px 20px 20px;
+      overflow: auto;
+    }
+
+    .blob-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .blob {
+      --hue: 194;
+      --sat: 88%;
+      --light: 60%;
+      border: 0;
+      color: #06111d;
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-radius: 999px;
+      padding: 11px 16px;
+      background: hsl(var(--hue) var(--sat) var(--light));
+      box-shadow: 0 16px 26px rgba(0, 0, 0, 0.18);
+      cursor: pointer;
+      max-width: 100%;
+      line-height: 1.2;
+      word-break: break-word;
+      transform: rotate(var(--rot, 0deg));
+    }
+
+    .blob:nth-child(3n) { --light: 66%; }
+    .blob:nth-child(4n) { --light: 70%; }
+    .blob:nth-child(5n) { --light: 64%; }
+
+    .blob:hover {
+      transform: translateY(-2px) rotate(var(--rot, 0deg)) scale(1.02);
+    }
+
+    .modal-footer {
+      padding: 14px 20px 18px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .toast {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 60;
+      padding: 12px 16px;
+      border-radius: 14px;
+      background: rgba(12, 24, 44, 0.94);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--text);
+      box-shadow: var(--shadow);
+      opacity: 0;
+      transform: translateY(8px);
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      font-size: 0.94rem;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 980px) {
+      .question-grid { grid-template-columns: 1fr; }
+      .meta-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .toolbar { justify-items: stretch; }
+      .toolbar-group { justify-content: flex-start; }
+    }
+
+    @media (max-width: 640px) {
+      .shell { width: min(100%, calc(100% - 20px)); padding-bottom: 28px; }
+      .topbar { top: 10px; padding: 14px; border-radius: 22px; }
+      .meta-strip { grid-template-columns: 1fr; }
+      .brand { min-width: 0; }
+      .segmented { width: 100%; justify-content: center; }
+      .segmented button { flex: 1 1 auto; }
+      .card-action, .top-action { width: 100%; justify-content: center; }
+      .modal-panel { max-height: 90vh; }
+    }
+  </style>
+</head>
+<body>
+  <div class="orb one"></div>
+  <div class="orb two"></div>
+  <div class="orb three"></div>
+
+  <div class="shell">
+    <header class="topbar">
+      <div class="topbar-row">
+        <div class="brand">
+          <h1>Aviation Fill-in Practice</h1>
+          <p>Use the vocabulary blobs to fill the blanks, check your answers case-insensitively, and practice either set in Part 1 or Part 2.</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="toolbar-group">
+            <div class="segmented" id="setButtons"></div>
+            <div class="segmented" id="partButtons"></div>
+          </div>
+          <div class="toolbar-group">
+            <button class="top-action primary" id="vocabButton" type="button">Vocabulary</button>
+            <button class="top-action ghost" id="resetButton" type="button">Reset Part</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="meta-strip" id="metaStrip">
+        <div class="stat-card"><span class="stat-label">Set</span><span class="stat-value" id="setLabel">Loading</span></div>
+        <div class="stat-card"><span class="stat-label">Part</span><span class="stat-value" id="partLabel">1</span></div>
+        <div class="stat-card"><span class="stat-label">Answered</span><span class="stat-value" id="answeredCount">0</span></div>
+        <div class="stat-card"><span class="stat-label">Accuracy</span><span class="stat-value" id="accuracyValue">0%</span></div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-copy">
+          <span id="progressText">Waiting for data...</span>
+          <span id="progressHint">Vocabulary chips can be clicked to insert the word into the active blank.</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="section-card">
+        <div class="section-header">
+          <div>
+            <h2 id="sectionTitle">Aviation practice</h2>
+            <div class="subtle" id="sectionSubtitle">Loading question bank...</div>
+          </div>
+          <div class="subtle" id="sectionCount">0 questions</div>
+        </div>
+        <div id="questionGrid" class="question-grid"></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal" id="vocabModal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="vocabTitle">
+      <div class="modal-header">
+        <div>
+          <h3 id="vocabTitle">Vocabulary</h3>
+          <p id="vocabSubtitle">Tap any word to put it into the current blank.</p>
+        </div>
+        <button class="top-action primary" id="closeVocabButton" type="button">Close</button>
+      </div>
+      <div class="modal-body">
+        <div class="blob-grid" id="blobGrid"></div>
+      </div>
+      <div class="modal-footer">
+        <span id="vocabCount">0 words</span>
+        <span>Matching is case-insensitive and accepts abbreviation/full-form variants when available.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    const BLANK_TOKEN = '__________';
+    const DATASETS = {
+      original: {
+        label: 'Set 1 / Original',
+        file: 'fib_200.json'
+      },
+      generated: {
+        label: 'Set 2 / Generated',
+        file: 'fib_200_generated.json'
+      }
+    };
+    const STORAGE_KEY = 'aviation_fillin_practice_v1';
+    const PARTS = [1, 2];
+
+    const state = {
+      activeSet: 'original',
+      activePart: 1,
+      datasets: {},
+      responses: loadState(),
+      activeInput: null,
+      lastFocusedInput: null
+    };
+
+    const refs = {
+      setButtons: document.getElementById('setButtons'),
+      partButtons: document.getElementById('partButtons'),
+      vocabButton: document.getElementById('vocabButton'),
+      resetButton: document.getElementById('resetButton'),
+      setLabel: document.getElementById('setLabel'),
+      partLabel: document.getElementById('partLabel'),
+      answeredCount: document.getElementById('answeredCount'),
+      accuracyValue: document.getElementById('accuracyValue'),
+      progressFill: document.getElementById('progressFill'),
+      progressText: document.getElementById('progressText'),
+      sectionTitle: document.getElementById('sectionTitle'),
+      sectionSubtitle: document.getElementById('sectionSubtitle'),
+      sectionCount: document.getElementById('sectionCount'),
+      questionGrid: document.getElementById('questionGrid'),
+      vocabModal: document.getElementById('vocabModal'),
+      vocabTitle: document.getElementById('vocabTitle'),
+      vocabSubtitle: document.getElementById('vocabSubtitle'),
+      blobGrid: document.getElementById('blobGrid'),
+      vocabCount: document.getElementById('vocabCount'),
+      closeVocabButton: document.getElementById('closeVocabButton'),
+      toast: document.getElementById('toast')
+    };
+
+    function loadState() {
+      try {
+        return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+      } catch (_err) {
+        return {};
+      }
+    }
+
+    function saveState() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state.responses));
+    }
+
+    function bucketFor(setKey, partKey) {
+      if (!state.responses[setKey]) state.responses[setKey] = {};
+      if (!state.responses[setKey][partKey]) state.responses[setKey][partKey] = {};
+      return state.responses[setKey][partKey];
+    }
+
+    function escapeHTML(text) {
+      return String(text ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function normalizeForComparison(text) {
+      return String(text ?? '')
+        .normalize('NFKD')
+        .toLowerCase()
+        .replace(/[\u2010-\u2015\u2212]/g, '-')
+        .replace(/[\u00b7\u00d7]/g, 'x')
+        .replace(/[\s,_]+/g, '')
+        .replace(/[^a-z0-9.\-/+x]/g, '');
+    }
+
+    function parseNumberLike(text) {
+      const cleaned = String(text ?? '')
+        .normalize('NFKD')
+        .replace(/[,\s]/g, '')
+        .replace(/[\u2212\u2010-\u2015]/g, '-')
+        .replace(/[\u00b7\u00d7]/g, 'x');
+
+      if (/^-?\d+(?:\.\d+)?$/.test(cleaned)) return Number(cleaned);
+      if (/^-?\d+(?:\.\d+)?e-?\d+$/i.test(cleaned)) return Number(cleaned);
+      return null;
+    }
+
+    function stripAnswerSuffix(text) {
+      return String(text ?? '')
+        .replace(/\b(?:Examiner|Author)\s*:\s*/i, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    function answerVariants(answer) {
+      const raw = stripAnswerSuffix(answer);
+      const variants = new Set();
+      const queue = [raw];
+
+      function add(value) {
+        const trimmed = String(value ?? '').trim();
+        if (!trimmed) return;
+        if (variants.has(trimmed)) return;
+        variants.add(trimmed);
+      }
+
+      while (queue.length) {
+        const current = queue.pop().trim();
+        if (!current) continue;
+        add(current);
+
+        const parenMatches = [...current.matchAll(/\(([^()]+)\)/g)];
+        for (const match of parenMatches) {
+          const inner = match[1].trim();
+          if (inner) {
+            queue.push(inner);
+            queue.push(inner.replace(/^or\s+/i, '').trim());
+            queue.push(inner.replace(/^and\s+/i, '').trim());
+          }
+        }
+
+        const withoutParens = current.replace(/\s*\([^()]*\)\s*/g, ' ').replace(/\s+/g, ' ').trim();
+        if (withoutParens && withoutParens !== current) queue.push(withoutParens);
+
+        if (/\bor\b/i.test(current)) {
+          current.split(/\bor\b/i).forEach(part => queue.push(part.trim()));
+        }
+
+        if (current.includes('/')) {
+          current.split('/').forEach(part => queue.push(part.trim()));
+        }
+
+        if (current.includes(',')) {
+          current.split(',').forEach(part => queue.push(part.trim()));
+        }
+
+        const sci = current.match(/^(\d+(?:\.\d+)?)\s*[x×]\s*10\s*\^?\s*([0-9⁰¹²³⁴⁵⁶⁷⁸⁹]+)$/i);
+        if (sci) {
+          const base = Number(sci[1]);
+          const exponent = String(sci[2]).replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]/g, ch => '⁰¹²³⁴⁵⁶⁷⁸⁹'.indexOf(ch));
+          if (Number.isFinite(base) && exponent) {
+            queue.push(String(base * Math.pow(10, Number(exponent))));
+            queue.push(`${base}e${exponent}`);
+          }
+        }
+      }
+
+      const numberValue = parseNumberLike(raw);
+      if (numberValue !== null) {
+        add(String(numberValue));
+      }
+
+      return [...variants];
+    }
+
+    function isCorrectResponse(input, answer) {
+      const inputNorm = normalizeForComparison(input);
+      if (!inputNorm) return false;
+
+      const inputNum = parseNumberLike(input);
+      const candidates = answerVariants(answer);
+
+      for (const candidate of candidates) {
+        const candidateNorm = normalizeForComparison(candidate);
+        if (inputNorm === candidateNorm) return true;
+
+        const candidateNum = parseNumberLike(candidate);
+        if (inputNum !== null && candidateNum !== null) {
+          if (Math.abs(inputNum - candidateNum) < 1e-9) return true;
+        }
+      }
+
+      return false;
+    }
+
+    function getPartQuestions(setKey, part) {
+      const allQuestions = state.datasets[setKey]?.questions || [];
+      const midpoint = Math.ceil(allQuestions.length / 2);
+      return part === 1 ? allQuestions.slice(0, midpoint) : allQuestions.slice(midpoint);
+    }
+
+    function currentQuestions() {
+      return getPartQuestions(state.activeSet, state.activePart);
+    }
+
+    function currentBucket() {
+      return bucketFor(state.activeSet, String(state.activePart));
+    }
+
+    function vocabularyForQuestions(questions) {
+      const unique = [];
+      const seen = new Set();
+      for (const question of questions) {
+        const answer = String(question.answer || '').trim();
+        const key = answer.toLowerCase();
+        if (!answer || seen.has(key)) continue;
+        seen.add(key);
+        unique.push(answer);
+      }
+      return unique.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+    }
+
+    function buildQuestionHTML(question) {
+      const parts = String(question.question || '').split(BLANK_TOKEN);
+      const before = escapeHTML(parts.shift() || question.question || '');
+      const after = escapeHTML(parts.join(BLANK_TOKEN));
+      return `${before} <input class="blank-input" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="Type answer"> ${after}`.trim();
+    }
+
+    function setActiveIndicators() {
+      refs.setLabel.textContent = DATASETS[state.activeSet].label;
+      refs.partLabel.textContent = `Part ${state.activePart}`;
+
+      [...refs.setButtons.querySelectorAll('button')].forEach(button => {
+        button.classList.toggle('active', button.dataset.set === state.activeSet);
+      });
+
+      [...refs.partButtons.querySelectorAll('button')].forEach(button => {
+        button.classList.toggle('active', Number(button.dataset.part) === state.activePart);
+      });
+    }
+
+    function updateSummary() {
+      const questions = currentQuestions();
+      const bucket = currentBucket();
+      const answered = Object.values(bucket).filter(entry => entry.status === 'correct' || entry.status === 'wrong').length;
+      const correct = Object.values(bucket).filter(entry => entry.status === 'correct').length;
+      const wrong = Object.values(bucket).filter(entry => entry.status === 'wrong').length;
+      const accuracy = answered ? Math.round((correct / answered) * 100) : 0;
+      const progress = questions.length ? Math.round((answered / questions.length) * 100) : 0;
+
+      refs.answeredCount.textContent = `${answered}/${questions.length}`;
+      refs.accuracyValue.textContent = `${accuracy}%`;
+      refs.progressFill.style.width = `${progress}%`;
+      refs.progressText.textContent = `${correct} correct, ${wrong} wrong, ${answered} checked`;
+      refs.sectionCount.textContent = `${questions.length} questions`;
+      refs.sectionSubtitle.textContent = `${DATASETS[state.activeSet].label} • Part ${state.activePart}`;
+      refs.vocabButton.textContent = `Vocabulary (${vocabularyForQuestions(questions).length})`;
+    }
+
+    function showToast(message) {
+      refs.toast.textContent = message;
+      refs.toast.classList.add('show');
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => refs.toast.classList.remove('show'), 1600);
+    }
+
+    function renderVocabularyModal() {
+      const words = vocabularyForQuestions(currentQuestions());
+      refs.blobGrid.innerHTML = '';
+
+      words.forEach((word, index) => {
+        const chip = document.createElement('button');
+        chip.type = 'button';
+        chip.className = 'blob';
+        chip.textContent = word;
+        chip.style.setProperty('--hue', String((index * 37 + 191) % 360));
+        chip.style.setProperty('--rot', `${((index % 5) - 2) * 1.4}deg`);
+        chip.addEventListener('click', () => {
+          const target = state.lastFocusedInput;
+          if (!target) {
+            showToast('Focus a blank first, then tap a word.');
+            return;
+          }
+          target.value = word;
+          target.dispatchEvent(new Event('input', { bubbles: true }));
+          target.focus();
+          showToast(`Inserted: ${word}`);
+        });
+        refs.blobGrid.appendChild(chip);
+      });
+
+      refs.vocabTitle.textContent = `${DATASETS[state.activeSet].label} • Part ${state.activePart} vocabulary`;
+      refs.vocabSubtitle.textContent = 'Tap any blob to insert it into the current blank.';
+      refs.vocabCount.textContent = `${words.length} words`;
+    }
+
+    function openVocabModal() {
+      renderVocabularyModal();
+      refs.vocabModal.classList.add('open');
+      refs.vocabModal.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeVocabModal() {
+      refs.vocabModal.classList.remove('open');
+      refs.vocabModal.setAttribute('aria-hidden', 'true');
+    }
+
+    function updateCardState(card, question, entry) {
+      card.classList.remove('correct', 'wrong', 'revealed');
+      const input = card.querySelector('.blank-input');
+      const stateBox = card.querySelector('.answer-state');
+      const checkButton = card.querySelector('[data-action="check"]');
+      const revealButton = card.querySelector('[data-action="reveal"]');
+
+      if (!input || !stateBox) return;
+
+      input.classList.remove('correct', 'wrong', 'revealed');
+      stateBox.className = 'answer-state';
+      stateBox.style.display = 'none';
+      stateBox.innerHTML = '';
+
+      if (!entry) {
+        if (checkButton) checkButton.textContent = 'Check';
+        return;
+      }
+
+      if (entry.status === 'correct') {
+        card.classList.add('correct');
+        input.classList.add('correct');
+        stateBox.classList.add('show', 'correct');
+        stateBox.innerHTML = `<strong>Correct.</strong> ${escapeHTML(question.answer)}`;
+        if (checkButton) checkButton.textContent = 'Recheck';
+      } else if (entry.status === 'wrong') {
+        card.classList.add('wrong');
+        input.classList.add('wrong');
+        stateBox.classList.add('show', 'wrong');
+        stateBox.innerHTML = `<strong>Not quite.</strong> The answer is <strong>${escapeHTML(question.answer)}</strong>.`;
+        if (checkButton) checkButton.textContent = 'Recheck';
+      } else if (entry.status === 'revealed') {
+        card.classList.add('revealed');
+        input.classList.add('revealed');
+        stateBox.classList.add('show', 'revealed');
+        stateBox.innerHTML = `<strong>Answer:</strong> ${escapeHTML(question.answer)}`;
+        if (checkButton) checkButton.textContent = 'Check';
+      }
+
+      if (revealButton) {
+        revealButton.textContent = entry.status === 'revealed' ? 'Hide' : 'Reveal';
+      }
+    }
+
+    function persistEntry(questionId, value, status) {
+      const bucket = currentBucket();
+      bucket[String(questionId)] = { value, status };
+      saveState();
+      updateSummary();
+    }
+
+    function renderQuestion(question, displayIndex) {
+      const card = document.createElement('article');
+      card.className = 'question-card';
+      card.dataset.questionId = String(question.id);
+
+      const entry = currentBucket()[String(question.id)] || null;
+
+      const top = document.createElement('div');
+      top.className = 'question-top';
+      top.innerHTML = `
+        <div class="question-id">Question ${displayIndex}</div>
+        <div class="question-tags">
+          <span class="tag">Lecture ${question.lecture}</span>
+          <span class="tag topic">${escapeHTML(question.topic)}</span>
+        </div>
+      `;
+
+      const text = document.createElement('div');
+      text.className = 'question-text';
+      text.innerHTML = buildQuestionHTML(question);
+
+      const input = text.querySelector('.blank-input');
+      if (input) {
+        input.value = entry?.value || '';
+        input.addEventListener('focus', () => {
+          state.activeInput = input;
+          state.lastFocusedInput = input;
+        });
+        input.addEventListener('blur', () => {
+          if (state.activeInput === input) state.activeInput = null;
+        });
+        input.addEventListener('input', () => {
+          persistEntry(question.id, input.value, 'editing');
+          updateCardState(card, question, { value: input.value, status: 'editing' });
+        });
+        input.addEventListener('keydown', event => {
+          if (event.key === 'Enter') {
+            event.preventDefault();
+            checkQuestion(question, card);
+          }
+        });
+      }
+
+      const actions = document.createElement('div');
+      actions.className = 'question-actions';
+      actions.innerHTML = `
+        <div class="action-group">
+          <button type="button" class="card-action" data-action="check">Check</button>
+          <button type="button" class="card-action warn" data-action="reveal">Reveal</button>
+          <button type="button" class="card-action secondary" data-action="clear">Clear</button>
+        </div>
+      `;
+
+      const stateBox = document.createElement('div');
+      stateBox.className = 'answer-state';
+
+      actions.querySelector('[data-action="check"]').addEventListener('click', () => checkQuestion(question, card));
+      actions.querySelector('[data-action="reveal"]').addEventListener('click', () => revealQuestion(question, card));
+      actions.querySelector('[data-action="clear"]').addEventListener('click', () => clearQuestion(question, card));
+
+      card.append(top, text, actions, stateBox);
+      updateCardState(card, question, entry);
+      return card;
+    }
+
+    function checkQuestion(question, card) {
+      const input = card.querySelector('.blank-input');
+      if (!input) return;
+
+      const value = input.value.trim();
+      if (!value) {
+        showToast('Type an answer first.');
+        return;
+      }
+
+      const correct = isCorrectResponse(value, question.answer);
+      const status = correct ? 'correct' : 'wrong';
+      persistEntry(question.id, value, status);
+      updateCardState(card, question, { value, status });
+    }
+
+    function revealQuestion(question, card) {
+      const input = card.querySelector('.blank-input');
+      if (!input) return;
+
+      const bucket = currentBucket();
+      const current = bucket[String(question.id)] || { value: input.value, status: 'revealed' };
+      const status = current.status === 'revealed' ? 'editing' : 'revealed';
+      persistEntry(question.id, input.value, status);
+      updateCardState(card, question, { value: input.value, status });
+    }
+
+    function clearQuestion(question, card) {
+      const input = card.querySelector('.blank-input');
+      if (input) input.value = '';
+      const bucket = currentBucket();
+      delete bucket[String(question.id)];
+      saveState();
+      updateCardState(card, question, null);
+      updateSummary();
+      showToast(`Cleared Question ${question.id}`);
+      if (input) input.focus();
+    }
+
+    function resetCurrentPart() {
+      const key = String(state.activePart);
+      if (state.responses[state.activeSet]) {
+        delete state.responses[state.activeSet][key];
+        saveState();
+      }
+      renderQuestions();
+      showToast('Current part reset.');
+    }
+
+    function renderQuestions() {
+      const questions = currentQuestions();
+      refs.questionGrid.innerHTML = '';
+
+      if (!questions.length) {
+        refs.questionGrid.innerHTML = '<div class="empty-state">No questions found for this part.</div>';
+        updateSummary();
+        return;
+      }
+
+      const fragment = document.createDocumentFragment();
+      questions.forEach((question, index) => {
+        fragment.appendChild(renderQuestion(question, index + 1));
+      });
+      refs.questionGrid.appendChild(fragment);
+      setActiveIndicators();
+      updateSummary();
+      refs.sectionTitle.textContent = `${DATASETS[state.activeSet].label} practice`;
+    }
+
+    function switchSet(setKey) {
+      if (state.activeSet === setKey) return;
+      state.activeSet = setKey;
+      saveState();
+      renderQuestions();
+    }
+
+    function switchPart(part) {
+      if (state.activePart === part) return;
+      state.activePart = part;
+      saveState();
+      renderQuestions();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    async function loadDataset(setKey) {
+      const url = `${DATASETS[setKey].file}?v=${Date.now()}`;
+      const response = await fetch(url, { cache: 'no-store' });
+      if (!response.ok) {
+        throw new Error(`Failed to load ${DATASETS[setKey].file}`);
+      }
+      const data = await response.json();
+      state.datasets[setKey] = data;
+    }
+
+    function restoreLastSelection() {
+      if (!state.responses[state.activeSet]) return;
+      if (![1, 2].includes(state.activePart)) state.activePart = 1;
+    }
+
+    function buildTopButtons() {
+      refs.setButtons.innerHTML = '';
+      Object.entries(DATASETS).forEach(([setKey, info]) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.textContent = info.label;
+        button.dataset.set = setKey;
+        button.addEventListener('click', () => switchSet(setKey));
+        refs.setButtons.appendChild(button);
+      });
+
+      refs.partButtons.innerHTML = '';
+      PARTS.forEach(part => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.textContent = `Part ${part}`;
+        button.dataset.part = String(part);
+        button.addEventListener('click', () => switchPart(part));
+        refs.partButtons.appendChild(button);
+      });
+    }
+
+    async function init() {
+      buildTopButtons();
+      refs.questionGrid.innerHTML = '<div class="loading-state"><div class="spinner"></div><div>Loading aviation question sets...</div></div>';
+
+      try {
+        await Promise.all(Object.keys(DATASETS).map(loadDataset));
+        restoreLastSelection();
+        renderQuestions();
+      } catch (error) {
+        refs.questionGrid.innerHTML = `<div class="empty-state">${escapeHTML(error.message)}</div>`;
+      }
+    }
+
+    refs.vocabButton.addEventListener('click', openVocabModal);
+    refs.resetButton.addEventListener('click', resetCurrentPart);
+    refs.closeVocabButton.addEventListener('click', closeVocabModal);
+    refs.vocabModal.addEventListener('click', event => {
+      if (event.target === refs.vocabModal) closeVocabModal();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') closeVocabModal();
+    });
+
+    init();
+  </script>
+</body>
+</html>

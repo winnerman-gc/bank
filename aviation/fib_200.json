@@ -1,0 +1,1422 @@
+{
+  "meta": {
+    "course": "TE 463: Aviation Communication",
+    "type": "Fill-in-the-Blank",
+    "total_questions": 200,
+    "lectures_covered": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "blank_token": "__________",
+    "description": "Each question contains exactly one blank represented by '__________'. The answer field contains the single correct technical term or phrase that completes the statement.",
+    "grading_note": "Matching should be case-insensitive. For answers with parenthetical abbreviations (e.g., 'TDMA (Time Division Multiple Access)'), accept either the abbreviation or the full form."
+  },
+  "questions": [
+    {
+      "id": 1,
+      "lecture": 1,
+      "topic": "CNS Framework",
+      "question": "Aviation safety and efficiency rest upon three interconnected pillars collectively known as the __________ triad.",
+      "answer": "CNS"
+    },
+    {
+      "id": 2,
+      "lecture": 1,
+      "topic": "CNS – Surveillance",
+      "question": "The surveillance technology that allows aircraft to autonomously broadcast their GNSS-derived position to air traffic controllers without ground interrogation is called __________.",
+      "answer": "ADS-B (Automatic Dependent Surveillance-Broadcast)"
+    },
+    {
+      "id": 3,
+      "lecture": 1,
+      "topic": "Spectrum Convergence",
+      "question": "The growing tendency to share the same radio band across communication, navigation, and surveillance functions for aviation is known as spectrum __________.",
+      "answer": "convergence"
+    },
+    {
+      "id": 4,
+      "lecture": 1,
+      "topic": "Spectrum – Drivers",
+      "question": "Radios that implement waveforms and frequency plans in software rather than dedicated hardware, enabling dynamic spectrum sharing across CNS functions, are called __________ radios.",
+      "answer": "software-defined"
+    },
+    {
+      "id": 5,
+      "lecture": 1,
+      "topic": "VHF Band",
+      "question": "The aeronautical VHF communication band occupies the frequency range from 108 MHz to __________ MHz.",
+      "answer": "137"
+    },
+    {
+      "id": 6,
+      "lecture": 1,
+      "topic": "HF Band",
+      "question": "HF radio achieves beyond-line-of-sight communication by exploiting __________ reflection, which refracts signals back to Earth over thousands of nautical miles.",
+      "answer": "ionospheric"
+    },
+    {
+      "id": 7,
+      "lecture": 1,
+      "topic": "L-Band",
+      "question": "The critical airborne collision avoidance system that shares the congested L-band (960–1215 MHz) with DME and UAT is __________.",
+      "answer": "TCAS (Traffic Collision Avoidance System)"
+    },
+    {
+      "id": 8,
+      "lecture": 1,
+      "topic": "Satellite Bands",
+      "question": "Among the C, Ku, and Ka satellite frequency bands, the __________ band (26–40 GHz) provides the highest data throughput for passenger connectivity but is most susceptible to rain attenuation.",
+      "answer": "Ka"
+    },
+    {
+      "id": 9,
+      "lecture": 1,
+      "topic": "ATM Components",
+      "question": "The ATM component responsible for optimizing traffic flow and managing demand–capacity imbalances across multiple sectors is called Air Traffic Flow __________.",
+      "answer": "Management (ATFM)"
+    },
+    {
+      "id": 10,
+      "lecture": 1,
+      "topic": "RCP",
+      "question": "The specification that defines the communication quality—including latency and continuity—required to support a specific ATM application is known as Required Communication __________ (RCP).",
+      "answer": "Performance"
+    },
+    {
+      "id": 11,
+      "lecture": 1,
+      "topic": "Organizational Structure – ICAO",
+      "question": "The United Nations specialized agency established in 1944 to develop international standards and recommended practices for civil aviation is the International Civil Aviation __________ (ICAO).",
+      "answer": "Organization"
+    },
+    {
+      "id": 12,
+      "lecture": 1,
+      "topic": "Organizational Structure – ITU",
+      "question": "The international body that allocates the VHF aeronautical band to the AM(R)S on a treaty-level basis, binding all member states, is the International Telecommunication __________.",
+      "answer": "Union (ITU)"
+    },
+    {
+      "id": 13,
+      "lecture": 1,
+      "topic": "Organizational Structure – Eurocontrol",
+      "question": "The European-wide body responsible for harmonizing and ensuring the safety of European skies under a 'one sky for Europe' policy is __________.",
+      "answer": "Eurocontrol"
+    },
+    {
+      "id": 14,
+      "lecture": 1,
+      "topic": "Standards Bodies",
+      "question": "The North American organization that develops Minimum Operational Performance Standards (MOPS) for avionics, working jointly with EUROCAE, is __________.",
+      "answer": "RTCA (Radio Technical Commission for Aeronautics)"
+    },
+    {
+      "id": 15,
+      "lecture": 1,
+      "topic": "ATM – Future Systems",
+      "question": "The future IP-based information-sharing framework that allows all ATM stakeholders to access a common pool of situational data, replacing bilateral point-to-point messaging, is called __________.",
+      "answer": "SWIM (System Wide Information Management)"
+    },
+    {
+      "id": 16,
+      "lecture": 2,
+      "topic": "Basic Definitions",
+      "question": "A device that converts electrical signals into emitted radio frequency energy and acts as the source of a radiated wave is called a __________.",
+      "answer": "transmitter (Tx)"
+    },
+    {
+      "id": 17,
+      "lecture": 2,
+      "topic": "Basic Definitions",
+      "question": "A passive device that converts electrical signals directly into radio waves, or vice versa, and forms part of both the transmitter and receiver system is called an __________.",
+      "answer": "antenna (aerial)"
+    },
+    {
+      "id": 18,
+      "lecture": 2,
+      "topic": "Units and Notation",
+      "question": "One nautical mile is defined as one minute of arc of latitude at the Earth's surface and equals exactly __________ meters.",
+      "answer": "1,852"
+    },
+    {
+      "id": 19,
+      "lecture": 2,
+      "topic": "Decibel Scale",
+      "question": "For power quantities in radio engineering, power expressed in dBm is computed using the formula 10 × log₁₀ of the power in __________.",
+      "answer": "milliwatts"
+    },
+    {
+      "id": 20,
+      "lecture": 2,
+      "topic": "Decibel Scale",
+      "question": "For amplitude quantities such as electric field strength, the decibel conversion uses the formula 20 × log₁₀(unit x), compared to __________ × log₁₀(unit x) used for power quantities.",
+      "answer": "10"
+    },
+    {
+      "id": 21,
+      "lecture": 2,
+      "topic": "Isotropic Radiator",
+      "question": "The theoretical point source that radiates radio power uniformly in all directions with no loss, used as the universal reference for antenna gain and link budget calculations, is called an __________ radiator.",
+      "answer": "isotropic"
+    },
+    {
+      "id": 22,
+      "lecture": 2,
+      "topic": "FSPL",
+      "question": "The fundamental path loss that accounts solely for geometric spreading of energy over a spherical wavefront, representing the minimum achievable loss in any radio link, is called __________ path loss.",
+      "answer": "free space (FSPL)"
+    },
+    {
+      "id": 23,
+      "lecture": 2,
+      "topic": "FSPL – Distance Dependency",
+      "question": "Free space path loss increases by __________ dB for every doubling of the distance between transmitter and receiver.",
+      "answer": "6"
+    },
+    {
+      "id": 24,
+      "lecture": 2,
+      "topic": "FSPL – Frequency Dependency",
+      "question": "Free space path loss increases by 20 dB for every __________ of frequency, meaning a tenfold frequency increase adds 20 dB of loss at the same range.",
+      "answer": "decade"
+    },
+    {
+      "id": 25,
+      "lecture": 2,
+      "topic": "Power Flux Density",
+      "question": "The power per unit area passing through a surface perpendicular to the direction of propagation, expressed in W/m², is called Power Flux __________.",
+      "answer": "Density (PFD)"
+    },
+    {
+      "id": 26,
+      "lecture": 2,
+      "topic": "Electric Field Strength",
+      "question": "The impedance of free space, which relates electric field strength E to power flux density S via the expression E = √(S × Z₀), is approximately __________ ohms.",
+      "answer": "377"
+    },
+    {
+      "id": 27,
+      "lecture": 2,
+      "topic": "Radio Geometry – LOS",
+      "question": "The approximate radio horizon distance d₁ (in meters) from an antenna at height h₁ (in meters) above mean sea level is given by d₁ ≈ √(2Rh₁), where R is the Earth's radius of approximately __________ km.",
+      "answer": "6,370"
+    },
+    {
+      "id": 28,
+      "lecture": 2,
+      "topic": "Polarization",
+      "question": "The type of polarization in which the electric field vector continuously rotates between vertical and horizontal planes as the wave propagates is called __________ polarization.",
+      "answer": "circular"
+    },
+    {
+      "id": 29,
+      "lecture": 2,
+      "topic": "Electromagnetic Waves",
+      "question": "The speed of electromagnetic wave propagation in free space, denoted c, is approximately __________ m/s.",
+      "answer": "3 × 10⁸"
+    },
+    {
+      "id": 30,
+      "lecture": 2,
+      "topic": "Radio Horizon Extension",
+      "question": "Due to atmospheric refraction gradually bending radio waves downward, the effective radio horizon extends beyond the geometric line-of-sight by approximately __________ percent.",
+      "answer": "15"
+    },
+    {
+      "id": 31,
+      "lecture": 2,
+      "topic": "k-Factor",
+      "question": "The multiplier applied to the Earth's physical radius to model the effect of atmospheric refraction on radio propagation paths is called the __________ factor.",
+      "answer": "k"
+    },
+    {
+      "id": 32,
+      "lecture": 2,
+      "topic": "Great-Circle Distance",
+      "question": "The shortest path between two points on the surface of a sphere, used in aviation navigation to minimize fuel consumption on long-haul routes, is called the __________ distance.",
+      "answer": "great-circle"
+    },
+    {
+      "id": 33,
+      "lecture": 3,
+      "topic": "Complex Propagation",
+      "question": "The propagation phenomenon in which a radio beam is guided along a duct within the atmosphere well beyond its natural horizon due to total internal refraction is called __________.",
+      "answer": "ducting"
+    },
+    {
+      "id": 34,
+      "lecture": 3,
+      "topic": "Refraction – k-Factor",
+      "question": "Layer refraction occurring incrementally at every point along a radio beam, described mathematically by adjusting the apparent Earth radius, introduces the concept of the __________ factor.",
+      "answer": "k"
+    },
+    {
+      "id": 35,
+      "lecture": 3,
+      "topic": "Obstacle Diffraction",
+      "question": "The physics framework that describes signal attenuation caused by a radio wave bending around a knife-edge or smooth obstacle encroaching into its path is called __________ physics.",
+      "answer": "Fresnel"
+    },
+    {
+      "id": 36,
+      "lecture": 3,
+      "topic": "Atmosphere Absorption",
+      "question": "The phenomenon whereby atmospheric gases remove energy from a passing radio wave—particularly when the gas resonant frequency is near the signal frequency—is called __________.",
+      "answer": "absorption"
+    },
+    {
+      "id": 37,
+      "lecture": 3,
+      "topic": "Water Absorption",
+      "question": "Above approximately 5 GHz, the dominant mechanism for terrestrial path fading becomes __________ absorption, with severity increasing during medium to heavy rainfall.",
+      "answer": "water"
+    },
+    {
+      "id": 38,
+      "lecture": 3,
+      "topic": "Oxygen Absorption",
+      "question": "Atmospheric oxygen absorption peaks at frequencies of 6 GHz and __________ GHz.",
+      "answer": "13"
+    },
+    {
+      "id": 39,
+      "lecture": 3,
+      "topic": "Rain Zones",
+      "question": "The body that has categorized world rain profiles with letter designations (e.g., C through X) to aid designers of high-frequency radio links is the __________.",
+      "answer": "ITU (International Telecommunication Union)"
+    },
+    {
+      "id": 40,
+      "lecture": 3,
+      "topic": "Ground Wave",
+      "question": "Ground wave propagation requires that the radio wave be __________ polarized to follow the curvature of the Earth.",
+      "answer": "vertically"
+    },
+    {
+      "id": 41,
+      "lecture": 3,
+      "topic": "Sky Wave",
+      "question": "Sky wave propagation relies on the __________ properties of the ionosphere to refract HF signals back to Earth, enabling communication well beyond the horizon.",
+      "answer": "refractive"
+    },
+    {
+      "id": 42,
+      "lecture": 3,
+      "topic": "Doppler Effect",
+      "question": "The apparent frequency shift proportional to the relative velocity between a transmitter and receiver, described by Δf = (v/c) × f₀, is known as the __________ effect.",
+      "answer": "Doppler"
+    },
+    {
+      "id": 43,
+      "lecture": 3,
+      "topic": "Doppler Compensation",
+      "question": "Modern aeronautical systems use __________ -derived velocity data to pre-correct transmitted frequencies or post-correct received signals and compensate for Doppler shift.",
+      "answer": "GPS"
+    },
+    {
+      "id": 44,
+      "lecture": 3,
+      "topic": "Modulation – Definition",
+      "question": "The process by which the raw baseband signal is transposed onto a carrier frequency for transmission, with the reverse process being called demodulation, is known as __________.",
+      "answer": "modulation"
+    },
+    {
+      "id": 45,
+      "lecture": 3,
+      "topic": "DSB-AM",
+      "question": "The amplitude modulation scheme that transmits both sidebands and the full carrier, used in legacy VHF aviation voice communications for its simplicity and tolerance to frequency drift, is called __________ AM.",
+      "answer": "Double Sideband (DSB)"
+    },
+    {
+      "id": 46,
+      "lecture": 3,
+      "topic": "SSB-AM",
+      "question": "The modulation scheme that suppresses the carrier and one sideband, providing a 9 dB power advantage and halving bandwidth—making it standard for HF aeronautical communications—is called __________.",
+      "answer": "Single Sideband AM (SSB-AM)"
+    },
+    {
+      "id": 47,
+      "lecture": 3,
+      "topic": "FM",
+      "question": "Frequency modulation is synthesized using a voltage-controlled __________, making it susceptible to Doppler shifts and impractical for mobile aeronautical voice communications.",
+      "answer": "oscillator"
+    },
+    {
+      "id": 48,
+      "lecture": 3,
+      "topic": "FSK",
+      "question": "The digital modulation scheme that switches between discrete carrier frequencies to represent binary states and forms the physical basis for ACARS data links is __________.",
+      "answer": "FSK (Frequency Shift Keying)"
+    },
+    {
+      "id": 49,
+      "lecture": 3,
+      "topic": "PSK – GFSK",
+      "question": "The digital modulation variant that applies Gaussian filtering to FSK to produce constant-envelope signals with excellent spectral containment, used in ADS-B and Mode S transponders, is __________.",
+      "answer": "GFSK (Gaussian Frequency Shift Keying)"
+    },
+    {
+      "id": 50,
+      "lecture": 3,
+      "topic": "QAM",
+      "question": "The digital modulation technique that simultaneously varies both the amplitude and phase of a carrier to achieve very high spectral efficiency is called __________ Amplitude Modulation.",
+      "answer": "Quadrature (QAM)"
+    },
+    {
+      "id": 51,
+      "lecture": 3,
+      "topic": "TCM",
+      "question": "The modulation technique that integrates forward error correction directly with the modulation process to achieve coding gain without any bandwidth expansion is called __________ Coded Modulation.",
+      "answer": "Trellis (TCM)"
+    },
+    {
+      "id": 52,
+      "lecture": 3,
+      "topic": "Shannon's Theorem",
+      "question": "Shannon's channel capacity formula C = B × log₂(1 + SNR) gives the maximum error-free data rate achievable for a given bandwidth B and signal-to-noise ratio; this theoretical upper bound is called the __________ limit.",
+      "answer": "Shannon"
+    },
+    {
+      "id": 53,
+      "lecture": 3,
+      "topic": "Shannon – Practical Codes",
+      "question": "The advanced error-correcting codes that approach within 0.5 dB of Shannon's theoretical limit and are widely used in satellite data links are called __________ codes.",
+      "answer": "turbo (or LDPC)"
+    },
+    {
+      "id": 54,
+      "lecture": 3,
+      "topic": "QoS – Latency",
+      "question": "For safety-critical aviation data links, the end-to-end latency must typically remain below __________ milliseconds.",
+      "answer": "100"
+    },
+    {
+      "id": 55,
+      "lecture": 3,
+      "topic": "QoS – BER",
+      "question": "Aviation data links are required to achieve a bit error rate of 10⁻⁶ or better; the metric used to express this is the __________ error rate.",
+      "answer": "bit (BER)"
+    },
+    {
+      "id": 56,
+      "lecture": 3,
+      "topic": "Erlang B",
+      "question": "The traffic engineering model used to calculate the blocking probability of a voice channel as a function of offered traffic load is called the __________ B formula.",
+      "answer": "Erlang"
+    },
+    {
+      "id": 57,
+      "lecture": 3,
+      "topic": "FDMA",
+      "question": "The multiple access scheme that assigns each user a dedicated, non-overlapping frequency band for the duration of a call is called Frequency Division Multiple __________.",
+      "answer": "Access (FDMA)"
+    },
+    {
+      "id": 58,
+      "lecture": 3,
+      "topic": "TDMA",
+      "question": "The multiple access scheme used by GSM and VDL Mode 3 that divides the time domain into slots, assigning each user a specific slot rather than a dedicated frequency, is called Time Division Multiple __________.",
+      "answer": "Access (TDMA)"
+    },
+    {
+      "id": 59,
+      "lecture": 3,
+      "topic": "CDMA",
+      "question": "The multiple access scheme in which each user is assigned a unique pseudo-random code, allowing all users to transmit simultaneously across the full bandwidth, is called Code Division Multiple __________.",
+      "answer": "Access (CDMA)"
+    },
+    {
+      "id": 60,
+      "lecture": 3,
+      "topic": "OFDM",
+      "question": "The multicarrier modulation technique that achieves immunity to multipath distortion by spacing subcarriers at integer frequencies, maintaining orthogonality between them, is called __________ Frequency Division Multiplexing.",
+      "answer": "Orthogonal (OFDM)"
+    },
+    {
+      "id": 61,
+      "lecture": 3,
+      "topic": "FEC",
+      "question": "The error control technique that adds redundant bits to transmitted data so that receivers can detect and correct errors without requesting retransmission is called Forward Error __________.",
+      "answer": "Correction (FEC)"
+    },
+    {
+      "id": 62,
+      "lecture": 3,
+      "topic": "CRC",
+      "question": "The error detection technique used in ACARS and Mode S protocols that detects burst errors through polynomial division checksums is called Cyclic Redundancy __________.",
+      "answer": "Checking (CRC)"
+    },
+    {
+      "id": 63,
+      "lecture": 3,
+      "topic": "Reed-Solomon",
+      "question": "The block error-correcting code that operates on multi-bit symbols rather than individual bits, making it particularly effective against the burst errors common in fading channels, is the __________ code.",
+      "answer": "Reed-Solomon"
+    },
+    {
+      "id": 64,
+      "lecture": 3,
+      "topic": "Diversity – Maximal Ratio Combining",
+      "question": "The diversity combining technique that co-phase-aligns and coherently sums all received antenna signals weighted by their individual SNR—extracting all available signal energy—is called __________ ratio combining.",
+      "answer": "maximal"
+    },
+    {
+      "id": 65,
+      "lecture": 3,
+      "topic": "Interleaving",
+      "question": "The technique that reorders data block sequences in time before transmission so that a burst fade corrupts scattered rather than contiguous bits, enabling FEC to recover the data, is called __________.",
+      "answer": "interleaving"
+    },
+    {
+      "id": 66,
+      "lecture": 4,
+      "topic": "VHF History",
+      "question": "The 1947 World Radio Conference in Atlantic City allocated the VHF band 118–132 MHz for the Aeronautical Mobile (Route) Service, abbreviated as __________.",
+      "answer": "AM(R)S"
+    },
+    {
+      "id": 67,
+      "lecture": 4,
+      "topic": "Channel Splitting",
+      "question": "In 1972, VHF channel spacing was reduced to 25 kHz, producing a theoretical total of __________ available channels within the aeronautical VHF band.",
+      "answer": "720"
+    },
+    {
+      "id": 68,
+      "lecture": 4,
+      "topic": "8.33 kHz Channelization",
+      "question": "The introduction of 8.33 kHz channel spacing in Europe provided a theoretical total of __________ channels, representing a threefold increase over the 25 kHz scheme.",
+      "answer": "2,280"
+    },
+    {
+      "id": 69,
+      "lecture": 4,
+      "topic": "8.33 kHz – Mandatory Altitude",
+      "question": "In Europe, 8.33 kHz channel capability is currently mandatory for aircraft operating above Flight Level __________.",
+      "answer": "195 (FL195)"
+    },
+    {
+      "id": 70,
+      "lecture": 4,
+      "topic": "DSB-AM Transceiver – Backward Compatibility",
+      "question": "The key engineering feature that allowed DSB-AM channel spacing to be progressively halved while still permitting older and newer radios to communicate on the same carrier frequency is called __________ compatibility.",
+      "answer": "backward"
+    },
+    {
+      "id": 71,
+      "lecture": 4,
+      "topic": "DSB-AM Architecture – IF Stage",
+      "question": "The DSB-AM receiver architecture that down-converts the received VHF signal to a fixed intermediate frequency for consistent channel filtering across the entire band is called the __________ architecture.",
+      "answer": "superheterodyne"
+    },
+    {
+      "id": 72,
+      "lecture": 4,
+      "topic": "DSB-AM Architecture – LNA",
+      "question": "The first active stage in a VHF receiver chain, which establishes the system noise figure with typical values of 2–4 dB, is the Low-Noise __________.",
+      "answer": "Amplifier (LNA)"
+    },
+    {
+      "id": 73,
+      "lecture": 4,
+      "topic": "DSB-AM Architecture – AGC",
+      "question": "The receiver circuit that maintains constant audio output level despite received signal strength variations spanning more than 80 dB by using fast attack and slow decay time constants is the Automatic Gain __________ (AGC).",
+      "answer": "Control"
+    },
+    {
+      "id": 74,
+      "lecture": 4,
+      "topic": "DSB-AM Architecture – Squelch",
+      "question": "The receiver circuit that mutes the audio output in the absence of a carrier signal to prevent operator fatigue from continuous background noise is called the __________ function.",
+      "answer": "squelch"
+    },
+    {
+      "id": 75,
+      "lecture": 4,
+      "topic": "DSB-AM Architecture – Companding",
+      "question": "The audio preprocessing technique that applies compression at the transmitter and expansion at the receiver to improve the signal-to-noise ratio by reducing dynamic range is called __________.",
+      "answer": "companding"
+    },
+    {
+      "id": 76,
+      "lecture": 4,
+      "topic": "DSB-AM Sensitivity",
+      "question": "The VHF receiver sensitivity threshold for 6 dB SINAD is specified as __________ dBm.",
+      "answer": "−107"
+    },
+    {
+      "id": 77,
+      "lecture": 4,
+      "topic": "System Dimensioning",
+      "question": "The three fundamental system design parameters governing VHF aviation network performance—Coverage, Capacity, and Quality—are collectively referred to as the Three __________.",
+      "answer": "Cs"
+    },
+    {
+      "id": 78,
+      "lecture": 4,
+      "topic": "Coverage – Voting Networks",
+      "question": "The extended coverage technique in which multiple geographically dispersed receivers simultaneously monitor the same frequency and a central circuit selects the strongest signal for the controller is called a __________ network.",
+      "answer": "voting"
+    },
+    {
+      "id": 79,
+      "lecture": 4,
+      "topic": "Coverage – CLIMAX",
+      "question": "The extended coverage technique in which multiple co-frequency transmitters broadcast the same audio with precise carrier frequency offsets of approximately 150–200 Hz to provide seamless blanket coverage is called __________.",
+      "answer": "CLIMAX"
+    },
+    {
+      "id": 80,
+      "lecture": 4,
+      "topic": "Capacity – PIAC",
+      "question": "The aviation capacity planning metric defined as the number of aircraft in the sky within a given service volume at a given instant is called the Peak Instantaneous Air __________ (PIAC).",
+      "answer": "Count"
+    },
+    {
+      "id": 81,
+      "lecture": 4,
+      "topic": "Regulatory Framework – Three As",
+      "question": "The ITU/ICAO hierarchical spectrum management framework comprising Allocation, Allotment, and Assignment is collectively known as the Three __________.",
+      "answer": "As"
+    },
+    {
+      "id": 82,
+      "lecture": 4,
+      "topic": "Regulatory – Allocation",
+      "question": "The regulatory tier at which the band 117.975–137.000 MHz is legally reserved for use by the AM(R)S on an international basis through World Radio Conferences is called spectrum __________.",
+      "answer": "allocation"
+    },
+    {
+      "id": 83,
+      "lecture": 4,
+      "topic": "Regulatory – Assignment",
+      "question": "The third regulatory tier, involving the individual licensing of a transmitter by the national administration of the country where the equipment is operated or where the aircraft is registered, is called spectrum __________.",
+      "answer": "assignment"
+    },
+    {
+      "id": 84,
+      "lecture": 4,
+      "topic": "Intermodulation",
+      "question": "The spurious signals generated when two or more strong transmitter signals mix in nonlinear components, potentially interfering with legitimate communications within the operating band, are called __________ products.",
+      "answer": "intermodulation"
+    },
+    {
+      "id": 85,
+      "lecture": 4,
+      "topic": "VHF Hardening",
+      "question": "High-Q preselector filters installed at receiver inputs to provide 40–60 dB rejection of out-of-band signals before they reach active components are called __________ filters.",
+      "answer": "cavity"
+    },
+    {
+      "id": 86,
+      "lecture": 5,
+      "topic": "VDL History – ACARS",
+      "question": "The first de facto aeronautical data link standard, developed in the late 1970s and sometimes called VDL Mode 0, is __________.",
+      "answer": "ACARS (Aircraft Communications Addressing and Reporting System)"
+    },
+    {
+      "id": 87,
+      "lecture": 5,
+      "topic": "VDL – OSI Compliance",
+      "question": "Unlike character-oriented ACARS, VDL modes comply with the __________ model, specifically providing the Physical and Data Link layers for the Aeronautical Telecommunication Network.",
+      "answer": "OSI (Open Systems Interconnection)"
+    },
+    {
+      "id": 88,
+      "lecture": 5,
+      "topic": "VDL Mode 2 – Modulation",
+      "question": "VDL Mode 2 uses __________ modulation running at 10,500 baud, delivering a raw data throughput of 31.5 kbps over a 25 kHz channel.",
+      "answer": "8DPSK (8-Differential Phase Shift Keying)"
+    },
+    {
+      "id": 89,
+      "lecture": 5,
+      "topic": "VDL Mode 2 – Access Protocol",
+      "question": "VDL Mode 2 uses a statistical, random-access protocol called __________ that allows latency of up to 3.5 seconds for 95% of packets, making it unsuitable for real-time voice.",
+      "answer": "CSMA (Carrier Sense Multiple Access)"
+    },
+    {
+      "id": 90,
+      "lecture": 5,
+      "topic": "VDL Mode 2 – Throughput",
+      "question": "VDL Mode 2 delivers a raw data throughput of __________ kbps, approximately ten times greater than the legacy ACARS data rate.",
+      "answer": "31.5"
+    },
+    {
+      "id": 91,
+      "lecture": 5,
+      "topic": "VDL Mode 3 – TDMA",
+      "question": "VDL Mode 3 was the first aeronautical communications system to use __________, employing a four-slot frame that enables simultaneous digital voice and data over a single 25 kHz channel.",
+      "answer": "TDMA (Time Division Multiple Access)"
+    },
+    {
+      "id": 92,
+      "lecture": 5,
+      "topic": "VDL Mode 3 – Voice Coding",
+      "question": "VDL Mode 3 compresses voice into 576-bit frames at 4.8 kbps using a proprietary vocoder called the Advanced Multiband Excitation __________ (AMEV).",
+      "answer": "Vocoder"
+    },
+    {
+      "id": 93,
+      "lecture": 5,
+      "topic": "VDL Mode 4 – Access Scheme",
+      "question": "VDL Mode 4 uses a __________ TDMA scheme in which each aircraft autonomously selects and reserves its own time slots without a central coordinating station.",
+      "answer": "Self-Organizing (STDMA)"
+    },
+    {
+      "id": 94,
+      "lecture": 5,
+      "topic": "VDL Mode 4 – Modulation",
+      "question": "VDL Mode 4 employs __________ modulation at 19.2 kbps, optimizing spectral efficiency for its surveillance and navigation broadcast role.",
+      "answer": "GFSK (Gaussian Frequency Shift Keying)"
+    },
+    {
+      "id": 95,
+      "lecture": 5,
+      "topic": "VDL Mode 4 – Frame Structure",
+      "question": "The VDL Mode 4 TDMA super-frame lasts __________ seconds and contains 4,500 slots of 13.33 ms each.",
+      "answer": "60"
+    },
+    {
+      "id": 96,
+      "lecture": 5,
+      "topic": "VDL2 – Receiver Sensitivity",
+      "question": "The VDL2 ICAO SARP specifies air-to-ground receiver sensitivity as 20 μV/m, equivalent to __________ dBm through an isotropic antenna.",
+      "answer": "−93.9"
+    },
+    {
+      "id": 97,
+      "lecture": 5,
+      "topic": "VDL2 – Handover",
+      "question": "At the boundary between coverage cells, the VDL protocol supports four handover triggers, including monitoring signal quality, timer expiry, and two conditions based on the __________ degraded link status.",
+      "answer": "N2"
+    },
+    {
+      "id": 98,
+      "lecture": 5,
+      "topic": "VDL2 – Guard Bands",
+      "question": "VDL2 and VDL4 require adjacent 25 kHz channels to be protected as guard bands, effectively increasing their spectral footprint to __________ kHz or more when guard bands are included.",
+      "answer": "50 (or 75)"
+    },
+    {
+      "id": 99,
+      "lecture": 5,
+      "topic": "CPDLC",
+      "question": "The datalink service that replaces routine ATC voice clearances with structured text messages—such as 'CLIMB TO FL350'—requiring a button-press acknowledgment from the pilot is called __________.",
+      "answer": "CPDLC (Controller-Pilot Data Link Communications)"
+    },
+    {
+      "id": 100,
+      "lecture": 5,
+      "topic": "ATN/IPS Security",
+      "question": "The aviation industry's transition from the legacy OSI-based protocol stack to the ATN/IPS (Internet Protocol Suite) enables modern cybersecurity protocols such as IPSec and __________ certificates to authenticate and protect critical datalink commands.",
+      "answer": "PKI"
+    },
+    {
+      "id": 101,
+      "lecture": 6,
+      "topic": "HF Architecture",
+      "question": "The HF modulation standard used for aeronautical long-range voice communications, which suppresses the carrier and one sideband to concentrate all power in the information-bearing sideband, is __________.",
+      "answer": "SSB-AM (Single Sideband Amplitude Modulation)"
+    },
+    {
+      "id": 102,
+      "lecture": 6,
+      "topic": "HF Transmitter Power",
+      "question": "The maximum allowable peak envelope power for an airborne HF transmitter, as defined by ICAO, is __________ watts (26 dBW).",
+      "answer": "400"
+    },
+    {
+      "id": 103,
+      "lecture": 6,
+      "topic": "HF Frequency Accuracy",
+      "question": "The ICAO SARPs require airborne HF transmitter frequency accuracy to be within __________ Hz, and ground station accuracy to be within 10 Hz.",
+      "answer": "20"
+    },
+    {
+      "id": 104,
+      "lecture": 6,
+      "topic": "HF – SELCAL",
+      "question": "The selective calling system that assigns each aircraft a unique four-letter code corresponding to specific audio tones, allowing crews to reduce monitoring of noisy HF channels, is called __________.",
+      "answer": "SELCAL"
+    },
+    {
+      "id": 105,
+      "lecture": 6,
+      "topic": "HF – SELCAL Code Pool",
+      "question": "The SELCAL system draws from a worldwide pool of __________ unique codes for assignment to individual aircraft.",
+      "answer": "16,300"
+    },
+    {
+      "id": 106,
+      "lecture": 6,
+      "topic": "HF – MWARA",
+      "question": "ICAO divides the world into __________ Major World Air Route Areas (MWARAs), each with dedicated HF ground stations and frequency subsets.",
+      "answer": "14"
+    },
+    {
+      "id": 107,
+      "lecture": 6,
+      "topic": "HF – Volmet",
+      "question": "The broadcast service that provides essential long-range meteorological information for zones, large areas, or individual airports over dedicated HF frequencies is called __________.",
+      "answer": "Volmet"
+    },
+    {
+      "id": 108,
+      "lecture": 6,
+      "topic": "HF Datalink",
+      "question": "The HF datalink standard defined by ARINC 635-2 that uses PSK modulation at a gross bit rate of 1,800 bps and was incorporated into ICAO Annex 10 in 1999 is HF __________.",
+      "answer": "ACARS"
+    },
+    {
+      "id": 109,
+      "lecture": 6,
+      "topic": "Geostationary Satellites",
+      "question": "Civil aviation satellite communications primarily rely on geostationary satellites, which orbit at approximately __________ km above the equator and appear stationary from the ground.",
+      "answer": "35,790"
+    },
+    {
+      "id": 110,
+      "lecture": 6,
+      "topic": "AMS(R)S",
+      "question": "The satellite equivalent of the AM(R)S, providing safety-of-life services via geostationary satellites and operated primarily by Inmarsat, is the Aeronautical Mobile Satellite (Route) Service, abbreviated __________.",
+      "answer": "AMS(R)S"
+    },
+    {
+      "id": 111,
+      "lecture": 6,
+      "topic": "Satellite – L-Band",
+      "question": "The mobile link frequency band used between aircraft and geostationary satellites for AMS(R)S is the __________ band, centered at approximately 1.4 GHz.",
+      "answer": "L"
+    },
+    {
+      "id": 112,
+      "lecture": 6,
+      "topic": "Satellite – GEO Latency",
+      "question": "The round-trip propagation delay for geostationary satellite communication, which makes it unsuitable for time-critical operations like take-off and landing, ranges from __________ to 280 ms.",
+      "answer": "240"
+    },
+    {
+      "id": 113,
+      "lecture": 6,
+      "topic": "LEO Satellites",
+      "question": "Low Earth Orbit satellites operating between 600 and 2,000 km altitude produce round-trip delays of only 4 to __________ ms, compared to the 240–280 ms of geostationary systems.",
+      "answer": "70"
+    },
+    {
+      "id": 114,
+      "lecture": 6,
+      "topic": "Satellite Modulation – Low Rate",
+      "question": "For lower bit-rate AMS(R)S services (0.6–2.4 kbps), the modulation scheme specified by ICAO is Aviation Binary Phase Shift Keying, abbreviated __________.",
+      "answer": "ABPSK"
+    },
+    {
+      "id": 115,
+      "lecture": 6,
+      "topic": "Satellite – R Channel",
+      "question": "In the AMS(R)S protocol, the uplink channel that uses a slotted Aloha random-access format for aircraft to initiate call or data message setup is the __________ channel.",
+      "answer": "R"
+    },
+    {
+      "id": 116,
+      "lecture": 6,
+      "topic": "CMU",
+      "question": "The avionics unit that automatically selects the best available communication medium—VHF, HF, or SATCOM—based on flight phase, location, and cost policy is the Communication Management __________.",
+      "answer": "Unit (CMU)"
+    },
+    {
+      "id": 117,
+      "lecture": 6,
+      "topic": "FANS",
+      "question": "The avionics and ATM concept that integrates CPDLC and GNSS to enable controller–pilot data link communications across continental and oceanic boundaries is called Future Air Navigation __________ (FANS).",
+      "answer": "Systems"
+    },
+    {
+      "id": 118,
+      "lecture": 7,
+      "topic": "VHF Military",
+      "question": "In military VHF communications, the technique of raising antenna height above terrain to extend the line-of-sight horizon—creating coverage where none previously existed—is described as extending __________ line-of-sight.",
+      "answer": "LOS (Line-of-Sight)"
+    },
+    {
+      "id": 119,
+      "lecture": 7,
+      "topic": "Military Evolution – Frequency Hopping",
+      "question": "The countermeasure against jamming and interception introduced in the 1970s–80s military radio systems, which rapidly and pseudo-randomly changes operating frequency across a wide band, is called __________ hopping.",
+      "answer": "frequency"
+    },
+    {
+      "id": 120,
+      "lecture": 7,
+      "topic": "SINCGARS",
+      "question": "The mature US military tactical ground and airborne radio system operating in the 30–88 MHz band with 2,320 channels at 25 kHz spacing using frequency hopping is called __________.",
+      "answer": "SINCGARS (Single Channel Ground and Airborne Radio System)"
+    },
+    {
+      "id": 121,
+      "lecture": 7,
+      "topic": "HAVEQUICK",
+      "question": "The ECM-resistant military frequency-hopping system operating in the 225–400 MHz band that must be initialized with a 'word of the day' and a net identifier to ensure secure communication is called __________.",
+      "answer": "HAVEQUICK"
+    },
+    {
+      "id": 122,
+      "lecture": 7,
+      "topic": "EPLRS/SADL",
+      "question": "The secure, jam-resistant US military network that integrates with SADL to provide near real-time position location and data distribution for tracking friendly units is called __________.",
+      "answer": "EPLRS (Enhanced Position Location Reporting System)"
+    },
+    {
+      "id": 123,
+      "lecture": 7,
+      "topic": "JTIDS",
+      "question": "The US Department of Defense tactical data communication system operating in the UHF band (960–1215 MHz) that uses TDMA for secure, jam-resistant information sharing among air and ground assets is __________.",
+      "answer": "JTIDS (Joint Tactical Information Distribution System)"
+    },
+    {
+      "id": 124,
+      "lecture": 7,
+      "topic": "MIDS",
+      "question": "The smaller, lighter successor to JTIDS—retaining its core Link 16 capabilities in a more compact package suitable for smaller aircraft and ground vehicles—is called __________.",
+      "answer": "MIDS (Multifunctional Information Distribution System)"
+    },
+    {
+      "id": 125,
+      "lecture": 7,
+      "topic": "Link 16 – Time Slot",
+      "question": "The duration of each precisely defined TDMA time slot in the Link 16 data link is __________ milliseconds (1/128 of a second).",
+      "answer": "7.8125"
+    },
+    {
+      "id": 126,
+      "lecture": 7,
+      "topic": "Link 16 – Frame Length",
+      "question": "The Link 16 TDMA frame lasts __________ seconds, containing 1,536 time slots.",
+      "answer": "12"
+    },
+    {
+      "id": 127,
+      "lecture": 7,
+      "topic": "Link 16 – Frequency Hopping",
+      "question": "Link 16 changes its operating frequency every __________ microseconds across 51 distinct channels to provide anti-jamming resilience.",
+      "answer": "13"
+    },
+    {
+      "id": 128,
+      "lecture": 7,
+      "topic": "Link 16 – Data Word",
+      "question": "Data in Link 16 is transmitted in fixed-length blocks of __________ bits, called 'words'.",
+      "answer": "70"
+    },
+    {
+      "id": 129,
+      "lecture": 7,
+      "topic": "Link 16 – Data Rate (Standard Double Pulse)",
+      "question": "The Standard Double Pulse (STDP) format in Link 16 duplicates data in both slots to maximize anti-jam resilience, yielding a maximum throughput of __________ kbps.",
+      "answer": "26.88"
+    },
+    {
+      "id": 130,
+      "lecture": 7,
+      "topic": "Link 16 – Jitter",
+      "question": "A randomized space left before the start of a Link 16 message, inserted to minimize the probability of jamming by preventing adversaries from predicting transmission timing, is called __________.",
+      "answer": "jitter"
+    },
+    {
+      "id": 131,
+      "lecture": 7,
+      "topic": "Synchronization – NTR",
+      "question": "The designated master clock source that broadcasts system time and network entry messages in a Link 16/JTIDS network, to which all units initially synchronize, is called the Network Time __________ (NTR).",
+      "answer": "Reference"
+    },
+    {
+      "id": 132,
+      "lecture": 7,
+      "topic": "SDR",
+      "question": "The most recent stage of military radio evolution, enabling a single hardware platform to operate across multiple frequency bands and adapt to new waveforms through reprogrammable software, is the __________ radio.",
+      "answer": "Software-Defined (SDR)"
+    },
+    {
+      "id": 133,
+      "lecture": 8,
+      "topic": "Telemetry – Frequency Bands",
+      "question": "Aeronautical Telemetry Systems (ATS) operate primarily in the S-band (2.3–2.4 GHz) and the __________ band (1.4 GHz) to balance range and data rate requirements.",
+      "answer": "L"
+    },
+    {
+      "id": 134,
+      "lecture": 8,
+      "topic": "Future Telemetry",
+      "question": "Airbus proposes a Future Telemetry System using Coded __________ Frequency-Division Multiplexing (OFDM) operating in the 5 GHz band for enhanced spectrum efficiency.",
+      "answer": "Orthogonal"
+    },
+    {
+      "id": 135,
+      "lecture": 8,
+      "topic": "GNSS Multipath",
+      "question": "In urban canyon environments, GNSS signal integrity is primarily degraded by __________ interference caused by signal reflections from buildings and other structures.",
+      "answer": "multipath"
+    },
+    {
+      "id": 136,
+      "lecture": 8,
+      "topic": "Terrestrial Backhaul",
+      "question": "The infrastructure that connects mobile base stations used in ATC and telemetry to core ground networks, enabling traffic to flow from the radio access layer to central systems, is called terrestrial __________.",
+      "answer": "backhaul"
+    },
+    {
+      "id": 137,
+      "lecture": 8,
+      "topic": "Backhaul – VSAT",
+      "question": "The satellite terminal type that uses geostationary (or LEO/MEO) satellites to provide backhaul connectivity in remote areas where fiber or microwave links are unavailable, is called a __________ terminal.",
+      "answer": "VSAT (Very Small Aperture Terminal)"
+    },
+    {
+      "id": 138,
+      "lecture": 8,
+      "topic": "PCM",
+      "question": "The encoding mechanism used to convert analog voice into digital data through sampling, quantization, and encoding for transmission and storage is called Pulse Code __________.",
+      "answer": "Modulation (PCM)"
+    },
+    {
+      "id": 139,
+      "lecture": 8,
+      "topic": "PCM – E1 Standard",
+      "question": "The international E1 trunk standard operates at __________ kbps and contains 32 TDM slots, each carrying one 64 kbps voice circuit.",
+      "answer": "2,048"
+    },
+    {
+      "id": 140,
+      "lecture": 8,
+      "topic": "PCM – T1",
+      "question": "The North American equivalent of the E1 standard, operating at approximately __________ Mbps and carrying slightly fewer payload slots, is called a T1.",
+      "answer": "1.5"
+    },
+    {
+      "id": 141,
+      "lecture": 8,
+      "topic": "SDH",
+      "question": "The standardized high-speed digital transmission protocol developed in the late 1980s, designed for optical fiber networks and defining a common multiplexing format to ensure interoperability between vendors, is called Synchronous Digital __________.",
+      "answer": "Hierarchy (SDH)"
+    },
+    {
+      "id": 142,
+      "lecture": 8,
+      "topic": "SDH – Benefits",
+      "question": "A key operational benefit of SDH in aviation backhaul is its automatic __________ switching, which provides redundant paths and minimizes downtime during link failures.",
+      "answer": "protection"
+    },
+    {
+      "id": 143,
+      "lecture": 8,
+      "topic": "Fiber Optic",
+      "question": "Fiber optic cables are preferred over copper for high-capacity backhaul because they offer electrical isolation, immunity from lightning, and the ability to carry systems over hundreds of kilometers without __________.",
+      "answer": "repeating"
+    },
+    {
+      "id": 144,
+      "lecture": 8,
+      "topic": "IP Networks – MPLS",
+      "question": "The networking technology that establishes pre-configured Label Switched Paths with guaranteed bandwidth and deterministic routing—critical for safety-critical ATC backhaul—is called __________.",
+      "answer": "MPLS (Multi-Protocol Label Switching)"
+    },
+    {
+      "id": 145,
+      "lecture": 8,
+      "topic": "TCP/IP – Transport Layer",
+      "question": "At the TCP/IP transport layer, the protocol that provides error-checking and retransmission of lost packets—critical for aviation safety data—is __________.",
+      "answer": "TCP (Transmission Control Protocol)"
+    },
+    {
+      "id": 146,
+      "lecture": 8,
+      "topic": "TCP/IP – Transport Layer (UDP)",
+      "question": "At the TCP/IP transport layer, the protocol used for time-sensitive aviation applications where speed is prioritized over guaranteed delivery—such as real-time voice—is __________.",
+      "answer": "UDP (User Datagram Protocol)"
+    },
+    {
+      "id": 147,
+      "lecture": 8,
+      "topic": "TCP/IP – Internet Layer",
+      "question": "The TCP/IP layer responsible for assigning addresses, routing packets across routers, and determining the best path for data to travel across networks is the __________ layer.",
+      "answer": "Internet"
+    },
+    {
+      "id": 148,
+      "lecture": 8,
+      "topic": "TCP/IP – Network Access Layer",
+      "question": "The TCP/IP layer that handles MAC addressing, converts data into physical signals, and performs error detection at the hardware level for technologies such as Ethernet and Wi-Fi is the Network __________ layer.",
+      "answer": "Access"
+    },
+    {
+      "id": 149,
+      "lecture": 8,
+      "topic": "MIPv6",
+      "question": "The IPv6 extension that allows an aircraft communication system to maintain a permanent home IP address while roaming across different networks, ensuring session continuity during handovers, is called Mobile __________.",
+      "answer": "IPv6 (MIPv6)"
+    },
+    {
+      "id": 150,
+      "lecture": 8,
+      "topic": "NEMO",
+      "question": "The protocol that extends MIPv6 to support entire aircraft networks—allowing all onboard subsystems such as avionics, passenger Wi-Fi, and sensors to be treated as a single mobile unit—is called Network __________ (NEMO).",
+      "answer": "Mobility"
+    },
+    {
+      "id": 151,
+      "lecture": 8,
+      "topic": "MIPv6 – Security",
+      "question": "A key security vulnerability of MIPv6 is that an attacker who can inject false __________ updates could redirect all traffic destined for the aircraft to a malicious address, disrupting ATC communication.",
+      "answer": "binding"
+    },
+    {
+      "id": 152,
+      "lecture": 8,
+      "topic": "Microwave Backhaul",
+      "question": "Microwave point-to-point links operate in the frequency range of typically 6 to __________ GHz, forming highly directional communication paths between base stations and data centers.",
+      "answer": "80"
+    },
+    {
+      "id": 153,
+      "lecture": 8,
+      "topic": "VSAT – Rain Fade",
+      "question": "VSAT systems using Ku-band and Ka-band are significantly affected by __________ fade, which is caused by signal absorption and scattering during heavy rainfall.",
+      "answer": "rain"
+    },
+    {
+      "id": 154,
+      "lecture": "cross",
+      "topic": "VHF vs HF Coverage",
+      "question": "While VHF is limited to line-of-sight coverage, HF achieves global range by exploiting __________ wave propagation via ionospheric reflection.",
+      "answer": "sky"
+    },
+    {
+      "id": 155,
+      "lecture": "cross",
+      "topic": "ATN Sub-Networks",
+      "question": "All VDL modes—as well as HF ACARS—are designed to function as sub-networks within the Aeronautical Telecommunications __________, providing physical and data link layers for its upper protocol stack.",
+      "answer": "Network (ATN)"
+    },
+    {
+      "id": 156,
+      "lecture": "cross",
+      "topic": "Spectrum Management – WRC",
+      "question": "The international conferences administered by the ITU-R, at which member states revise and update the ITU Radio Regulations including aviation spectrum allocations, are called World Radio __________.",
+      "answer": "Conferences (WRCs)"
+    },
+    {
+      "id": 157,
+      "lecture": "cross",
+      "topic": "FSPL vs Atmospheric Loss",
+      "question": "Free space path loss represents the minimum possible signal attenuation due to geometric spreading only; in practice, additional losses from atmosphere absorption, rain, and multipath mean real link loss always __________ the FSPL value.",
+      "answer": "exceeds"
+    },
+    {
+      "id": 158,
+      "lecture": "cross",
+      "topic": "VDL2 vs ACARS",
+      "question": "A key limitation that distinguishes ACARS from VDL2 is that ACARS does not include a __________ protocol, so corrupted messages are silently lost without any notification to the sender.",
+      "answer": "resend (retransmission)"
+    },
+    {
+      "id": 159,
+      "lecture": "cross",
+      "topic": "Modulation Selection – Aviation",
+      "question": "Shannon's theorem establishes that achieving a higher data rate in a fixed bandwidth requires a __________ signal-to-noise ratio, driving the use of more complex modulation schemes in high-capacity aviation data links.",
+      "answer": "higher"
+    },
+    {
+      "id": 160,
+      "lecture": "cross",
+      "topic": "HF vs VHF Power",
+      "question": "HF ground stations may transmit up to 6 kW (37.78 dBW), while VHF transceivers typically require only __________ watts of transmit power, reflecting VHF's lower atmospheric noise and more efficient line-of-sight propagation.",
+      "answer": "10–20"
+    },
+    {
+      "id": 161,
+      "lecture": "cross",
+      "topic": "Spread Spectrum – CDMA / JTIDS",
+      "question": "In CDMA and military systems like JTIDS, the process of multiplying user data by a unique pseudo-random bitstream to spread it across the full available bandwidth—making it indistinguishable from noise—is called __________ spectrum.",
+      "answer": "spread"
+    },
+    {
+      "id": 162,
+      "lecture": "cross",
+      "topic": "Rain Zone Design Margin",
+      "question": "When designing global aviation radio links, ICAO requires that systems be designed for the __________ rain zone attenuation, ensuring reliable operation even in tropical regions.",
+      "answer": "worst-case"
+    },
+    {
+      "id": 163,
+      "lecture": "cross",
+      "topic": "VHF Channel History",
+      "question": "When ICAO was formed in April 1947 and the AM(R)S band was first established, the original channel spacing was __________ kHz, providing only 70 available channels.",
+      "answer": "200"
+    },
+    {
+      "id": 164,
+      "lecture": "cross",
+      "topic": "Antenna Gain Reference",
+      "question": "Antenna gain is commonly expressed in dBi, where the 'i' refers to the __________ radiator used as the reference for all gain and link budget calculations.",
+      "answer": "isotropic"
+    },
+    {
+      "id": 165,
+      "lecture": "cross",
+      "topic": "VHF Safety – Emergency Frequency",
+      "question": "The globally allotted aeronautical emergency frequency in the VHF band is __________ MHz, with two 25 kHz channels on either side reserved as protection.",
+      "answer": "121.5"
+    },
+    {
+      "id": 166,
+      "lecture": "cross",
+      "topic": "Multipath Mitigation",
+      "question": "The technique that converts burst errors caused by multipath fading into distributed random errors—allowing FEC to recover the data—by reordering data blocks in time before transmission is called __________.",
+      "answer": "interleaving"
+    },
+    {
+      "id": 167,
+      "lecture": "cross",
+      "topic": "Decibel – Field Strength",
+      "question": "Electric field strength expressed in decibels relative to one microvolt per meter is denoted __________, and is computed using 20 × log₁₀(E in μV/m).",
+      "answer": "dBμV/m"
+    },
+    {
+      "id": 168,
+      "lecture": "cross",
+      "topic": "Coverage Model – Lower Airspace",
+      "question": "For lower airspace and airport terminal areas where LOS often does not exist, coverage planning uses complex empirical propagation models such as __________ alongside detailed terrain mapping.",
+      "answer": "Hata-Okumura"
+    },
+    {
+      "id": 169,
+      "lecture": "cross",
+      "topic": "Cognitive Radio – Future",
+      "question": "Next-generation aeronautical systems will exploit __________ radio techniques that sense the spectrum in real time and dynamically configure frequency, modulation, and power to use unoccupied spectrum without causing interference.",
+      "answer": "cognitive"
+    },
+    {
+      "id": 170,
+      "lecture": "cross",
+      "topic": "ADS-B vs SSR",
+      "question": "Unlike secondary surveillance radar, which requires ground interrogation of aircraft transponders, ADS-B is a __________ surveillance system in which aircraft autonomously broadcast their position.",
+      "answer": "dependent"
+    },
+    {
+      "id": 171,
+      "lecture": "cross",
+      "topic": "VHF Companding",
+      "question": "In a DSB-AM VHF transceiver, the audio preprocessing block applies __________ to reduce dynamic range during transmission and restore it on reception, improving the received signal-to-noise ratio.",
+      "answer": "companding"
+    },
+    {
+      "id": 172,
+      "lecture": "cross",
+      "topic": "Backhaul Evolution",
+      "question": "The evolution of aviation backhaul has followed the path: Analog → Digital PCM → SDH → IP & __________, reflecting the industry-wide shift to packet-based networking.",
+      "answer": "Ethernet"
+    },
+    {
+      "id": 173,
+      "lecture": "cross",
+      "topic": "VDL3 vs GSM",
+      "question": "VDL3's network architecture and TDMA frame structure closely resemble those of __________ mobile networks, which use the same access technology.",
+      "answer": "GSM"
+    },
+    {
+      "id": 174,
+      "lecture": "cross",
+      "topic": "Shannon – Practical Limit",
+      "question": "The 8.33 kHz channel spacing represents the practical lower limit for DSB-AM in aviation because further reduction would cut voice content below __________ kHz, unacceptably degrading speech intelligibility.",
+      "answer": "4"
+    },
+    {
+      "id": 175,
+      "lecture": "cross",
+      "topic": "Inmarsat Ground Infrastructure",
+      "question": "The Inmarsat ground stations that act as trunking points for the satellite mobile network, back-hauling voice and data over the public switched telephone network (PSTN), are called ground __________ stations.",
+      "answer": "earth (GES)"
+    },
+    {
+      "id": 176,
+      "lecture": "cross",
+      "topic": "VHF Coverage – Upper Airspace",
+      "question": "For upper airspace en-route coverage planning, a conservative Earth-radius factor of k = __________ is used to account for refraction and achieve high availability greater than 99.9%.",
+      "answer": "2/3"
+    },
+    {
+      "id": 177,
+      "lecture": "cross",
+      "topic": "Military vs Civil Spectrum",
+      "question": "JTIDS, SINCGARS, HAVEQUICK, and EPLRS all share the characteristic of having no formal status under ITU Radio Regulations; they are operated under __________ agreements between participating nations.",
+      "answer": "multilateral"
+    },
+    {
+      "id": 178,
+      "lecture": "cross",
+      "topic": "VDL4 – Ground Infrastructure",
+      "question": "Unlike VDL2 and VDL3, VDL4's self-organizing STDMA architecture means it requires __________ ground infrastructure to operate, making it suitable for oceanic and polar regions.",
+      "answer": "no (zero)"
+    },
+    {
+      "id": 179,
+      "lecture": "cross",
+      "topic": "Link 16 – Data Format (Packed 4)",
+      "question": "The Link 16 Packed 4 Single Pulse format provides the highest throughput of __________ kbps but offers the lowest resilience to multipath propagation and jamming.",
+      "answer": "107.52"
+    },
+    {
+      "id": 180,
+      "lecture": "cross",
+      "topic": "Doppler – LEO Satellites",
+      "question": "In satellite communications using LEO satellites, where relative velocities can exceed 7 km/s, Doppler effects can cause frequency shifts of tens of __________, requiring active compensation.",
+      "answer": "kilohertz"
+    },
+    {
+      "id": 181,
+      "lecture": "cross",
+      "topic": "VHF Simplex Operation",
+      "question": "The VHF aeronautical voice system operates in __________ mode, meaning the controller and pilot transmit and receive on the same frequency but cannot speak simultaneously.",
+      "answer": "simplex"
+    },
+    {
+      "id": 182,
+      "lecture": "cross",
+      "topic": "ACARS Security Vulnerability",
+      "question": "Early ACARS and VDL implementations transmitted data in __________ text, with no inherent encryption or authentication, making them susceptible to eavesdropping and spoofing attacks.",
+      "answer": "clear"
+    },
+    {
+      "id": 183,
+      "lecture": "cross",
+      "topic": "PCM – Sampling",
+      "question": "In PCM, the process of measuring the amplitude of an analog signal at uniform time intervals to produce a discrete-time signal is called __________.",
+      "answer": "sampling"
+    },
+    {
+      "id": 184,
+      "lecture": "cross",
+      "topic": "PCM – Quantization",
+      "question": "In PCM, the process of rounding each sampled amplitude value to one of a finite set of discrete levels before binary encoding is called __________.",
+      "answer": "quantization"
+    },
+    {
+      "id": 185,
+      "lecture": "cross",
+      "topic": "VSAT – Frequency Sensitivity",
+      "question": "VSAT systems using Ku-band and Ka-band frequencies are significantly more susceptible to rain fade than C-band systems because their shorter __________ are comparable in size to raindrops, increasing absorption and scattering.",
+      "answer": "wavelengths"
+    },
+    {
+      "id": 186,
+      "lecture": "cross",
+      "topic": "HF Propagation – Solar Activity",
+      "question": "HF propagation conditions—including the frequencies available for sky wave communication—vary with time of day, season, and __________ activity, requiring operators to frequently select new frequencies.",
+      "answer": "sunspot (solar)"
+    },
+    {
+      "id": 187,
+      "lecture": "cross",
+      "topic": "CLIMAX – Transmitter Offset",
+      "question": "In a CLIMAX system, co-frequency transmitters broadcast the same audio with carrier frequency offsets of approximately __________ Hz, preventing standing wave interference patterns in overlap areas.",
+      "answer": "150–200"
+    },
+    {
+      "id": 188,
+      "lecture": "cross",
+      "topic": "VDL3 – Reed-Solomon",
+      "question": "The VDL3 V Data Burst uses a __________ polynomial encoding that adds 80 bits of overhead to each frame, enabling correction of up to 40-bit errors.",
+      "answer": "Reed-Solomon"
+    },
+    {
+      "id": 189,
+      "lecture": "cross",
+      "topic": "Nautical Mile – Definition",
+      "question": "A nautical mile is defined as one minute of __________ extended at the Earth's surface, linking the unit directly to Earth's geometry.",
+      "answer": "latitude (arc)"
+    },
+    {
+      "id": 190,
+      "lecture": "cross",
+      "topic": "AMS(R)S – Priority",
+      "question": "Under the agreement between ICAO and satellite providers, AMS(R)S safety-of-life traffic shall have __________ over all non-AMS(R)S calls and shall be capable of pre-empting them.",
+      "answer": "priority"
+    },
+    {
+      "id": 191,
+      "lecture": "cross",
+      "topic": "Intermodulation – Third Order",
+      "question": "Third-order intermodulation is most problematic in aviation radio sites because the products at 2f₁ − f₂ and 2f₂ − f₁ often fall __________ the operating band, directly interfering with legitimate communications.",
+      "answer": "within"
+    },
+    {
+      "id": 192,
+      "lecture": "cross",
+      "topic": "VHF Channel Splitting – 1959",
+      "question": "In 1959, WRC extended the AM(R)S allocation to 118–136 MHz, and with 100 kHz channel spacing this yielded __________ available channels.",
+      "answer": "180"
+    },
+    {
+      "id": 193,
+      "lecture": "cross",
+      "topic": "Link 16 – Nodeless Architecture",
+      "question": "A key resilience feature of Link 16 is its __________ architecture, meaning that if any single terminal goes offline, the network continues to operate without a central point of failure.",
+      "answer": "nodeless"
+    },
+    {
+      "id": 194,
+      "lecture": "cross",
+      "topic": "Convolutional Codes",
+      "question": "Convolutional codes decoded using the __________ algorithm provide 5–7 dB coding gain and are widely used in FEC implementations for aeronautical data links.",
+      "answer": "Viterbi"
+    },
+    {
+      "id": 195,
+      "lecture": "cross",
+      "topic": "VDL2 – Scrambling",
+      "question": "VDL2 input data is scrambled before transmission primarily to ensure that the received signal contains sufficient transitions for __________ recovery at the receiver.",
+      "answer": "clock"
+    },
+    {
+      "id": 196,
+      "lecture": "cross",
+      "topic": "GEO Satellite – Polar Coverage",
+      "question": "Geostationary satellite coverage is poorest at extreme __________ regions because the satellite geometry results in a near-horizontal look angle and additional path length.",
+      "answer": "polar"
+    },
+    {
+      "id": 197,
+      "lecture": "cross",
+      "topic": "UTM",
+      "question": "The future system concept designed to manage the large-scale integration of drones and other unmanned aircraft into low-altitude airspace, analogous to ATM for manned aviation, is called Unmanned Traffic __________.",
+      "answer": "Management (UTM)"
+    },
+    {
+      "id": 198,
+      "lecture": "cross",
+      "topic": "CLIMAX – Phase Synchronization",
+      "question": "CLIMAX systems require transmitter audio phase alignment maintained within __________ degrees to prevent destructive interference between co-frequency transmitters.",
+      "answer": "±5"
+    },
+    {
+      "id": 199,
+      "lecture": "cross",
+      "topic": "Frequency Agility – HF",
+      "question": "Modern HF aeronautical transceivers are tunable in __________ kHz steps, enabling operators to select optimal frequencies based on current ionospheric propagation conditions.",
+      "answer": "1"
+    },
+    {
+      "id": 200,
+      "lecture": "cross",
+      "topic": "Link 16 – Synchronization Fallback",
+      "question": "In the Link 16 synchronization stack, a mobile unit that cannot synchronize to either the primary NTR or a secondary source reverts to its highly accurate __________ clock, allowing it to receive but not transmit until synchronization is restored.",
+      "answer": "atomic"
+    }
+  ]
+}
