@@ -535,7 +535,8 @@
       datasets: {},
       responses: loadState(),
       activeInput: null,
-      lastFocusedInput: null
+      lastFocusedInput: null,
+      answerChooseMode: null
     };
 
     const refs = {
@@ -781,7 +782,16 @@
           target.value = word;
           target.dispatchEvent(new Event('input', { bubbles: true }));
           target.focus();
-          showToast(`Inserted: ${word}`);
+          
+          // If in choose answer mode, auto-check the answer
+          if (state.answerChooseMode) {
+            const { question, card } = state.answerChooseMode;
+            closeVocabModal();
+            state.answerChooseMode = null;
+            setTimeout(() => checkQuestion(question, card), 100);
+          } else {
+            showToast(`Inserted: ${word}`);
+          }
         });
         refs.blobGrid.appendChild(chip);
       });
@@ -898,6 +908,7 @@
         <div class="action-group">
           <button type="button" class="card-action" data-action="check">Check</button>
           <button type="button" class="card-action warn" data-action="reveal">Reveal</button>
+          <button type="button" class="card-action" data-action="choose">Choose</button>
           <button type="button" class="card-action secondary" data-action="clear">Clear</button>
         </div>
       `;
@@ -907,6 +918,7 @@
 
       actions.querySelector('[data-action="check"]').addEventListener('click', () => checkQuestion(question, card));
       actions.querySelector('[data-action="reveal"]').addEventListener('click', () => revealQuestion(question, card));
+      actions.querySelector('[data-action="choose"]').addEventListener('click', () => chooseAnswer(question, card));
       actions.querySelector('[data-action="clear"]').addEventListener('click', () => clearQuestion(question, card));
 
       card.append(top, text, actions, stateBox);
@@ -935,10 +947,26 @@
       if (!input) return;
 
       const bucket = currentBucket();
-      const current = bucket[String(question.id)] || { value: input.value, status: 'editing' };
-      const status = current.status === 'revealed' ? 'editing' : 'revealed';
-      persistEntry(question.id, input.value, status);
-      updateCardState(card, question, { value: input.value, status });
+      const current = bucket[String(question.id)];
+      
+      if (current && current.status === 'revealed') {
+        // Toggle back to editing, keep input as-is
+        persistEntry(question.id, input.value, 'editing');
+        updateCardState(card, question, { value: input.value, status: 'editing' });
+      } else {
+        // Reveal: fill input with answer and mark as revealed
+        input.value = question.answer;
+        persistEntry(question.id, question.answer, 'revealed');
+        updateCardState(card, question, { value: question.answer, status: 'revealed' });
+      }
+    }
+
+    function chooseAnswer(question, card) {
+      const input = card.querySelector('.blank-input');
+      if (!input) return;
+      state.lastFocusedInput = input;
+      state.answerChooseMode = { question, card };
+      openVocabModal();
     }
 
     function syncHeaderOffset() {
