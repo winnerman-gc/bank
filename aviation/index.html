@@ -689,7 +689,8 @@
     .shell {
       width: 95%;
       max-width: 800px;
-      padding: 18px 0 40px;
+      margin-top: 110px;
+      padding: 0 0 40px;
     }
 
     .topbar {
@@ -768,13 +769,27 @@
       background: #e2e8f0;
     }
 
+    .section-card {
+      padding: 0;
+      border: 0;
+      box-shadow: none;
+      background: transparent;
+    }
+
+    .section-header {
+      padding: 0 0 12px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
     .question-grid {
       grid-template-columns: 1fr;
+      gap: 14px;
     }
 
     .question-card {
-      border-radius: 14px;
-      padding: 18px;
+      border-radius: 12px;
+      padding: 20px;
     }
 
     .question-text {
@@ -861,7 +876,7 @@
     }
 
     @media (max-width: 640px) {
-      .shell { width: min(100%, calc(100% - 20px)); padding-bottom: 24px; }
+      .shell { width: min(100%, calc(100% - 20px)); margin-top: 100px; padding-bottom: 24px; }
       .topbar { padding: 12px; }
       .meta-strip { grid-template-columns: 1fr; }
       .brand { min-width: 0; }
@@ -879,31 +894,30 @@
   <div class="orb two"></div>
   <div class="orb three"></div>
 
-  <div class="shell">
+    <div class="shell">
     <header class="topbar">
       <div class="topbar-row">
         <div class="brand">
           <h1>Aviation Fill-in Practice</h1>
-          <p>Use the vocabulary blobs to fill the blanks, check your answers case-insensitively, and practice either set in Part 1 or Part 2.</p>
+          <p>Use the vocabulary blobs to fill the blanks, check your answers case-insensitively, and switch between Set 1 and Set 2.</p>
         </div>
 
         <div class="toolbar">
           <div class="toolbar-group">
             <div class="segmented" id="setButtons"></div>
-            <div class="segmented" id="partButtons"></div>
           </div>
           <div class="toolbar-group">
             <button class="top-action primary" id="vocabButton" type="button">Vocabulary</button>
-            <button class="top-action ghost" id="resetButton" type="button">Reset Part</button>
+            <button class="top-action ghost" id="resetButton" type="button">Reset Set</button>
           </div>
         </div>
       </div>
 
       <div class="meta-strip" id="metaStrip">
         <div class="stat-card"><span class="stat-label">Set</span><span class="stat-value" id="setLabel">Loading</span></div>
-        <div class="stat-card"><span class="stat-label">Part</span><span class="stat-value" id="partLabel">1</span></div>
         <div class="stat-card"><span class="stat-label">Answered</span><span class="stat-value" id="answeredCount">0</span></div>
         <div class="stat-card"><span class="stat-label">Accuracy</span><span class="stat-value" id="accuracyValue">0%</span></div>
+        <div class="stat-card"><span class="stat-label">Words</span><span class="stat-value" id="wordCount">0</span></div>
       </div>
 
       <div class="progress">
@@ -954,20 +968,18 @@
     const BLANK_TOKEN = '__________';
     const DATASETS = {
       original: {
-        label: 'Set 1 / Original',
+        label: 'Set 1',
         file: 'fib_200.json'
       },
       generated: {
-        label: 'Set 2 / Generated',
+        label: 'Set 2',
         file: 'fib_200_generated.json'
       }
     };
-    const STORAGE_KEY = 'aviation_fillin_practice_v1';
-    const PARTS = [1, 2];
+    const STORAGE_KEY = 'aviation_fillin_practice_v2';
 
     const state = {
       activeSet: 'original',
-      activePart: 1,
       datasets: {},
       responses: loadState(),
       activeInput: null,
@@ -976,15 +988,14 @@
 
     const refs = {
       setButtons: document.getElementById('setButtons'),
-      partButtons: document.getElementById('partButtons'),
       vocabButton: document.getElementById('vocabButton'),
       resetButton: document.getElementById('resetButton'),
       setLabel: document.getElementById('setLabel'),
-      partLabel: document.getElementById('partLabel'),
       answeredCount: document.getElementById('answeredCount'),
       accuracyValue: document.getElementById('accuracyValue'),
       progressFill: document.getElementById('progressFill'),
       progressText: document.getElementById('progressText'),
+      wordCount: document.getElementById('wordCount'),
       sectionTitle: document.getElementById('sectionTitle'),
       sectionSubtitle: document.getElementById('sectionSubtitle'),
       sectionCount: document.getElementById('sectionCount'),
@@ -1010,10 +1021,11 @@
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state.responses));
     }
 
-    function bucketFor(setKey, partKey) {
-      if (!state.responses[setKey]) state.responses[setKey] = {};
-      if (!state.responses[setKey][partKey]) state.responses[setKey][partKey] = {};
-      return state.responses[setKey][partKey];
+    function bucketFor(setKey) {
+      if (!state.responses[setKey] || Array.isArray(state.responses[setKey])) {
+        state.responses[setKey] = {};
+      }
+      return state.responses[setKey];
     }
 
     function escapeHTML(text) {
@@ -1135,18 +1147,12 @@
       return false;
     }
 
-    function getPartQuestions(setKey, part) {
-      const allQuestions = state.datasets[setKey]?.questions || [];
-      const midpoint = Math.ceil(allQuestions.length / 2);
-      return part === 1 ? allQuestions.slice(0, midpoint) : allQuestions.slice(midpoint);
-    }
-
     function currentQuestions() {
-      return getPartQuestions(state.activeSet, state.activePart);
+      return state.datasets[state.activeSet]?.questions || [];
     }
 
     function currentBucket() {
-      return bucketFor(state.activeSet, String(state.activePart));
+      return bucketFor(state.activeSet);
     }
 
     function vocabularyForQuestions(questions) {
@@ -1171,14 +1177,9 @@
 
     function setActiveIndicators() {
       refs.setLabel.textContent = DATASETS[state.activeSet].label;
-      refs.partLabel.textContent = `Part ${state.activePart}`;
 
       [...refs.setButtons.querySelectorAll('button')].forEach(button => {
         button.classList.toggle('active', button.dataset.set === state.activeSet);
-      });
-
-      [...refs.partButtons.querySelectorAll('button')].forEach(button => {
-        button.classList.toggle('active', Number(button.dataset.part) === state.activePart);
       });
     }
 
@@ -1196,8 +1197,9 @@
       refs.progressFill.style.width = `${progress}%`;
       refs.progressText.textContent = `${correct} correct, ${wrong} wrong, ${answered} checked`;
       refs.sectionCount.textContent = `${questions.length} questions`;
-      refs.sectionSubtitle.textContent = `${DATASETS[state.activeSet].label} • Part ${state.activePart}`;
+      refs.sectionSubtitle.textContent = DATASETS[state.activeSet].label;
       refs.vocabButton.textContent = `Vocabulary (${vocabularyForQuestions(questions).length})`;
+      refs.wordCount.textContent = `${vocabularyForQuestions(questions).length}`;
     }
 
     function showToast(message) {
@@ -1232,7 +1234,7 @@
         refs.blobGrid.appendChild(chip);
       });
 
-      refs.vocabTitle.textContent = `${DATASETS[state.activeSet].label} • Part ${state.activePart} vocabulary`;
+      refs.vocabTitle.textContent = `${DATASETS[state.activeSet].label} vocabulary`;
       refs.vocabSubtitle.textContent = 'Tap any blob to insert it into the current blank.';
       refs.vocabCount.textContent = `${words.length} words`;
     }
@@ -1399,14 +1401,11 @@
       if (input) input.focus();
     }
 
-    function resetCurrentPart() {
-      const key = String(state.activePart);
-      if (state.responses[state.activeSet]) {
-        delete state.responses[state.activeSet][key];
-        saveState();
-      }
+    function resetCurrentSet() {
+      delete state.responses[state.activeSet];
+      saveState();
       renderQuestions();
-      showToast('Current part reset.');
+      showToast('Current set reset.');
     }
 
     function renderQuestions() {
@@ -1414,7 +1413,7 @@
       refs.questionGrid.innerHTML = '';
 
       if (!questions.length) {
-        refs.questionGrid.innerHTML = '<div class="empty-state">No questions found for this part.</div>';
+        refs.questionGrid.innerHTML = '<div class="empty-state">No questions found for this set.</div>';
         updateSummary();
         return;
       }
@@ -1436,14 +1435,6 @@
       renderQuestions();
     }
 
-    function switchPart(part) {
-      if (state.activePart === part) return;
-      state.activePart = part;
-      saveState();
-      renderQuestions();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
     async function loadDataset(setKey) {
       const url = `${DATASETS[setKey].file}?v=${Date.now()}`;
       const response = await fetch(url, { cache: 'no-store' });
@@ -1455,8 +1446,9 @@
     }
 
     function restoreLastSelection() {
-      if (!state.responses[state.activeSet]) return;
-      if (![1, 2].includes(state.activePart)) state.activePart = 1;
+      if (!state.responses[state.activeSet] || Array.isArray(state.responses[state.activeSet])) {
+        state.responses[state.activeSet] = {};
+      }
     }
 
     function buildTopButtons() {
@@ -1468,16 +1460,6 @@
         button.dataset.set = setKey;
         button.addEventListener('click', () => switchSet(setKey));
         refs.setButtons.appendChild(button);
-      });
-
-      refs.partButtons.innerHTML = '';
-      PARTS.forEach(part => {
-        const button = document.createElement('button');
-        button.type = 'button';
-        button.textContent = `Part ${part}`;
-        button.dataset.part = String(part);
-        button.addEventListener('click', () => switchPart(part));
-        refs.partButtons.appendChild(button);
       });
     }
 
@@ -1495,7 +1477,7 @@
     }
 
     refs.vocabButton.addEventListener('click', openVocabModal);
-    refs.resetButton.addEventListener('click', resetCurrentPart);
+    refs.resetButton.addEventListener('click', resetCurrentSet);
     refs.closeVocabButton.addEventListener('click', closeVocabModal);
     refs.vocabModal.addEventListener('click', event => {
       if (event.target === refs.vocabModal) closeVocabModal();
