@@ -77,7 +77,9 @@
     .toolbar {
       margin-top: 8px;
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
       gap: 8px;
     }
 
@@ -418,8 +420,21 @@
     }
 
     @media (max-width: 640px) {
-      .shell {
-        margin-top: 215px;
+      .toolbar {
+        align-items: stretch;
+      }
+
+      .toolbar-group {
+        width: 100%;
+      }
+
+      .segmented {
+        width: 100%;
+      }
+
+      .segmented button,
+      .top-action {
+        width: 100%;
       }
 
       .question-text .blank-input {
@@ -920,10 +935,17 @@
       if (!input) return;
 
       const bucket = currentBucket();
-      const current = bucket[String(question.id)] || { value: input.value, status: 'revealed' };
+      const current = bucket[String(question.id)] || { value: input.value, status: 'editing' };
       const status = current.status === 'revealed' ? 'editing' : 'revealed';
       persistEntry(question.id, input.value, status);
       updateCardState(card, question, { value: input.value, status });
+    }
+
+    function syncHeaderOffset() {
+      const header = document.querySelector('.topbar');
+      const shell = document.querySelector('.shell');
+      if (!header || !shell) return;
+      shell.style.marginTop = `${header.offsetHeight + 18}px`;
     }
 
     function clearQuestion(question, card) {
@@ -1001,6 +1023,7 @@
     }
 
     async function init() {
+      syncHeaderOffset();
       buildTopButtons();
       refs.questionGrid.innerHTML = '<div class="loading-state"><div class="spinner"></div><div>Loading aviation question sets...</div></div>';
 
@@ -1022,6 +1045,7 @@
     document.addEventListener('keydown', event => {
       if (event.key === 'Escape') closeVocabModal();
     });
+    window.addEventListener('resize', syncHeaderOffset);
 
     init();
   </script>
