@@ -896,11 +896,12 @@
             wrongCount = wrong;
             const total = correct + wrong;
             const percentage = total > 0 ? Math.round((correct / total) * 100) : 0;
+            const progressTotal = currentMode === 'retake' ? currentQuestionsData.length : allQuestionsData.length;
 
             document.getElementById('stat-correct').textContent = correct;
             document.getElementById('stat-wrong').textContent = wrong;
             document.getElementById('stat-score').textContent = `${percentage}%`;
-            document.getElementById('stat-progress').textContent = `${total}/${allQuestionsData.length}`;
+            document.getElementById('stat-progress').textContent = `${total}/${progressTotal}`;
         }
 
         function retakeWrongQuestions() {
@@ -943,7 +944,20 @@
         }
 
         function resetProgress() {
-            if (confirm('Are you sure you want to reset all progress?')) {
+            const isRetakeMode = currentMode === 'retake' || currentAnswerStore === 'retake';
+            const promptText = isRetakeMode
+                ? 'Reset retake progress only? Main progress will stay unchanged.'
+                : 'Are you sure you want to reset all progress?';
+
+            if (confirm(promptText)) {
+                if (isRetakeMode) {
+                    localStorage.removeItem(RETAKE_ANSWERS_STORAGE_KEY);
+                    retakeAnswers = {};
+                    renderQuestions(currentQuestionsData);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    return;
+                }
+
                 localStorage.removeItem(ANSWERS_STORAGE_KEY);
                 localStorage.removeItem(RETAKE_ANSWERS_STORAGE_KEY);
                 clearViewState();
