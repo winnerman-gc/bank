@@ -57,13 +57,16 @@
             max-width: 900px;
             width: 95%;
             margin: 0 auto;
-            const optionsToDisplay = [...question.options].map(normalizeOptionText);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
 
-            const correctAnswers = (question.correct_answers || []).map(normalizeOptionText);
+        .header-content h1 {
             color: var(--primary-color);
-            font-size: 1.3rem;
+            font-size: 1rem;
+            line-height: 1.2;
             font-weight: 700;
-            margin-bottom: 8px;
         }
 
         .stats {
@@ -413,6 +416,7 @@
 
     <script>
         const CACHE_VERSION = '2026-05-01.1';
+        const VIEW_STATE_KEY = 'aws_quiz_view_state';
 
         function normalizeOptionText(optionText) {
             return String(optionText || '').replace(/^\s*[A-E][.)]\s*/, '').trim();
@@ -435,6 +439,85 @@
         let currentExamFilter = null;
         let maxExamNumber = 23;
         let currentMode = 'exam';
+        let currentQuestionsData = [];
+
+        function getSavedViewState() {
+            try {
+                const savedState = localStorage.getItem(VIEW_STATE_KEY);
+                return savedState ? JSON.parse(savedState) : null;
+            } catch (err) {
+                console.warn('Unable to read saved view state', err);
+                return null;
+            }
+        }
+
+        function saveViewState(questionIndex = 0) {
+            if (currentMode !== 'exam' && currentMode !== 'all') {
+                return;
+            }
+
+            localStorage.setItem(VIEW_STATE_KEY, JSON.stringify({
+                mode: currentMode,
+                examNumber: currentExamFilter,
+                questionIndex: Number.isFinite(questionIndex) ? questionIndex : 0
+            }));
+        }
+
+        function clearViewState() {
+            localStorage.removeItem(VIEW_STATE_KEY);
+        }
+
+        function getQuestionCard(questionIndex) {
+            return document.getElementById(`q-${questionIndex}`);
+        }
+
+        function scrollToQuestion(questionIndex, behavior = 'smooth', saveState = true) {
+            const card = getQuestionCard(questionIndex);
+            if (!card) {
+                return false;
+            }
+
+            card.scrollIntoView({ behavior, block: 'start' });
+            if (saveState) {
+                saveViewState(questionIndex);
+            }
+            return true;
+        }
+
+        function scrollToContinuation(questionIndex, saveState = true) {
+            window.setTimeout(() => {
+                if (questionIndex < currentQuestionsData.length) {
+                    scrollToQuestion(questionIndex, 'smooth', saveState);
+                } else {
+                    const footer = document.getElementById('footer');
+                    if (footer) {
+                        footer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                    if (saveState) {
+                        saveViewState(Math.max(0, currentQuestionsData.length - 1));
+                    }
+                }
+            }, 250);
+        }
+
+        function restoreSavedView() {
+            const savedState = getSavedViewState();
+            if (!savedState || !savedState.mode) {
+                return false;
+            }
+
+            if (savedState.mode === 'exam' && savedState.examNumber) {
+                loadExam(savedState.examNumber, savedState.questionIndex || 0, false);
+                return true;
+            }
+
+            if (savedState.mode === 'all') {
+                loadAllQuestions(savedState.questionIndex || 0, false);
+                return true;
+            }
+
+            return false;
+        }
 
         function buildCacheBustedUrl(resourcePath) {
             const url = new URL(resourcePath, window.location.href);
@@ -459,8 +542,10 @@
                 });
                 allQuestionsData = await response.json();
                 initializeExamButtons();
-                calculateStats();
                 document.getElementById('loading').style.display = 'none';
+                if (!restoreSavedView()) {
+                    calculateStats();
+                }
             } catch (err) {
                 console.error(err);
                 document.getElementById('loading').innerHTML = `<p style="color:red">Error loading questions: ${err.message}</p>`;
@@ -483,13 +568,20 @@
             });
         }
 
-        function loadExam(examNum) {
+        function loadExam(examNum, questionIndex = 0, saveState = true) {
             currentExamFilter = examNum;
             currentMode = 'exam';
             const filtered = allQuestionsData.filter(q => q.exam_number === examNum);
             renderQuestions(filtered);
             updateExamButtonStates();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            if (saveState) {
+                saveViewState(questionIndex);
+            }
+            if (Number.isInteger(questionIndex) && questionIndex >= 0) {
+                window.requestAnimationFrame(() => scrollToQuestion(questionIndex, 'auto', false));
+            } else {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
         }
         
         function goToNextExam() {
@@ -498,12 +590,19 @@
             }
         }
 
-        function loadAllQuestions() {
+        function loadAllQuestions(questionIndex = 0, saveState = true) {
             currentExamFilter = null;
             currentMode = 'all';
             renderQuestions(allQuestionsData);
             updateExamButtonStates();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            if (saveState) {
+                saveViewState(questionIndex);
+            }
+            if (Number.isInteger(questionIndex) && questionIndex >= 0) {
+                window.requestAnimationFrame(() => scrollToQuestion(questionIndex, 'auto', false));
+            } else {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
         }
 
         function startRandomMode() {
@@ -524,6 +623,7 @@
         function renderQuestions(questions) {
             const feed = document.getElementById('feed');
             feed.innerHTML = '';
+            currentQuestionsData = questions;
 
             if (questions.length === 0) {
                 feed.innerHTML = '<p style="text-align:center;color:var(--text-muted)">No questions found.</p>';
@@ -543,6 +643,8 @@
             } else {
                 document.getElementById('next-exam-btn').style.display = 'none';
             }
+
+            calculateStats();
         }
 
         function createQuestionCard(question, globalIdx) {
@@ -603,7 +705,7 @@
                 const isCorrect = isMultiChoice 
                     ? selectedAnswers.sort().join('|') === correctAnswers.sort().join('|')
                     : selectedAnswers[0] === correctAnswers[0];
-                showAnswer(globalIdx, isCorrect, correctAnswers, isMultiChoice);
+                showAnswer(globalIdx, isCorrect, correctAnswers, isMultiChoice, false);
             }
 
             return card;
@@ -641,13 +743,13 @@
                 const isCorrect = isMultiChoice 
                     ? selectedAnswers.sort().join('|') === correctAnswers.sort().join('|')
                     : selectedAnswers[0] === correctAnswers[0];
-                showAnswer(qIdx, isCorrect, correctAnswers, isMultiChoice);
+                showAnswer(qIdx, isCorrect, correctAnswers, isMultiChoice, isCorrect);
             }
             
             calculateStats();
         }
 
-        function showAnswer(qIdx, isCorrect, correctAnswers, isMultiChoice) {
+        function showAnswer(qIdx, isCorrect, correctAnswers, isMultiChoice, autoScroll = false) {
             const optionBtns = document.querySelectorAll(`#q-${qIdx} .option-btn`);
             const feedback = document.getElementById(`feedback-${qIdx}`);
             const correctAnswersList = Array.isArray(correctAnswers) ? correctAnswers : [correctAnswers];
@@ -667,6 +769,9 @@
             if (isCorrect) {
                 feedback.className = 'answer-feedback show feedback-correct';
                 feedback.innerHTML = '<strong>✓ Correct!</strong>';
+                if (autoScroll) {
+                    scrollToContinuation(qIdx + 1);
+                }
             } else {
                 feedback.className = 'answer-feedback show feedback-wrong';
                 const answerText = isMultiChoice 
@@ -724,6 +829,7 @@
             currentMode = 'retake';
             currentExamFilter = null;
             localStorage.removeItem('aws_quiz_answers');
+            clearViewState();
             userAnswers = {};
             renderQuestions(wrongQuestions);
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -732,6 +838,7 @@
         function resetProgress() {
             if (confirm('Are you sure you want to reset all progress?')) {
                 localStorage.removeItem('aws_quiz_answers');
+                clearViewState();
                 userAnswers = {};
                 calculateStats();
                 loadAllQuestions();
