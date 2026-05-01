@@ -417,6 +417,7 @@
     <script>
         const CACHE_VERSION = '2026-05-01.1';
         const VIEW_STATE_KEY = 'aws_quiz_view_state';
+        const ANSWERS_STORAGE_KEY = 'aws_quiz_answers_v2';
 
         function normalizeOptionText(optionText) {
             return String(optionText || '').replace(/^\s*[A-E][.)]\s*/, '').trim();
@@ -432,8 +433,20 @@
             return normalized;
         }
 
+        function getAnswerKey(question) {
+            return String(question.question_number);
+        }
+
+        function getStoredAnswers() {
+            return normalizeStoredAnswers(JSON.parse(localStorage.getItem(ANSWERS_STORAGE_KEY) || '{}'));
+        }
+
+        function saveStoredAnswers() {
+            localStorage.setItem(ANSWERS_STORAGE_KEY, JSON.stringify(userAnswers));
+        }
+
         let allQuestionsData = [];
-        let userAnswers = normalizeStoredAnswers(JSON.parse(localStorage.getItem('aws_quiz_answers') || '{}'));
+        let userAnswers = getStoredAnswers();
         let correctCount = 0;
         let wrongCount = 0;
         let currentExamFilter = null;
@@ -686,6 +699,7 @@
             const optionsToDisplay = [...question.options].map(normalizeOptionText);
 
             const correctAnswers = (question.correct_answers || []).map(normalizeOptionText);
+            const answerKey = getAnswerKey(question);
 
             optionsToDisplay.forEach((option, idx) => {
                 const btn = document.createElement('button');
@@ -698,7 +712,7 @@
                 btn.onclick = () => selectAnswer(globalIdx, option, correctAnswers, btn, isMultiChoice);
                 
                 // Restore answer if exists
-                if (userAnswers[globalIdx] && userAnswers[globalIdx].includes(option)) {
+                if (userAnswers[answerKey] && userAnswers[answerKey].includes(option)) {
                     btn.classList.add('selected');
                 }
                 
@@ -715,8 +729,8 @@
             card.appendChild(feedback);
 
             // Restore previous answer state if exists
-            if (userAnswers[globalIdx]) {
-                const selectedAnswers = Array.isArray(userAnswers[globalIdx]) ? userAnswers[globalIdx] : [userAnswers[globalIdx]];
+            if (userAnswers[answerKey]) {
+                const selectedAnswers = Array.isArray(userAnswers[answerKey]) ? userAnswers[answerKey] : [userAnswers[answerKey]];
                 const isCorrect = isMultiChoice 
                     ? selectedAnswers.sort().join('|') === correctAnswers.sort().join('|')
                     : selectedAnswers[0] === correctAnswers[0];
@@ -727,9 +741,15 @@
         }
 
         function selectAnswer(qIdx, selectedOption, correctAnswers, button, isMultiChoice) {
+            const question = currentQuestionsData[qIdx];
+            if (!question) {
+                return;
+            }
+
+            const answerKey = getAnswerKey(question);
             if (isMultiChoice) {
                 // For multiple choice, allow selecting multiple options
-                let selectedAnswers = userAnswers[qIdx] && Array.isArray(userAnswers[qIdx]) ? userAnswers[qIdx] : [];
+                let selectedAnswers = userAnswers[answerKey] && Array.isArray(userAnswers[answerKey]) ? userAnswers[answerKey] : [];
                 const normalizedSelection = normalizeOptionText(selectedOption);
                 const idx = selectedAnswers.indexOf(normalizedSelection);
                 if (idx > -1) {
@@ -739,19 +759,19 @@
                     selectedAnswers.push(normalizedSelection);
                     button.classList.add('selected');
                 }
-                userAnswers[qIdx] = selectedAnswers;
+                userAnswers[answerKey] = selectedAnswers;
             } else {
                 // Single choice - clear previous selections
                 const optionBtns = document.querySelectorAll(`#q-${qIdx} .option-btn`);
                 optionBtns.forEach(btn => btn.classList.remove('selected'));
-                userAnswers[qIdx] = [normalizeOptionText(selectedOption)];
+                userAnswers[answerKey] = [normalizeOptionText(selectedOption)];
                 button.classList.add('selected');
             }
             
-            localStorage.setItem('aws_quiz_answers', JSON.stringify(userAnswers));
+            saveStoredAnswers();
 
             // Show answer if all answers selected or single choice
-            const selectedAnswers = Array.isArray(userAnswers[qIdx]) ? userAnswers[qIdx] : [userAnswers[qIdx]];
+            const selectedAnswers = Array.isArray(userAnswers[answerKey]) ? userAnswers[answerKey] : [userAnswers[answerKey]];
             const isComplete = !isMultiChoice || selectedAnswers.length === correctAnswers.length;
             
             if (isComplete) {
@@ -810,7 +830,7 @@
             let wrong = 0;
             
             Object.entries(userAnswers).forEach(([qIdx, answer]) => {
-                const q = allQuestionsData[parseInt(qIdx)];
+                const q = allQuestionsData.find(question => String(question.question_number) === String(qIdx));
                 if (q) {
                     const correctAnswers = q.correct_answers || [];
                     const selectedAnswers = Array.isArray(answer) ? answer : [answer];
@@ -840,7 +860,8 @@
 
         function retakeWrongQuestions() {
             const wrongQuestions = allQuestionsData.filter((q, idx) => {
-                const answer = Array.isArray(userAnswers[idx]) ? userAnswers[idx] : [userAnswers[idx]];
+                const answerKey = getAnswerKey(q);
+                const answer = Array.isArray(userAnswers[answerKey]) ? userAnswers[answerKey] : [userAnswers[answerKey]];
                 const correct = q.correct_answers || [q.correct_answer];
                 return answer && answer.sort().join('|') !== correct.sort().join('|');
             });
@@ -852,7 +873,7 @@
 
             currentMode = 'retake';
             currentExamFilter = null;
-            localStorage.removeItem('aws_quiz_answers');
+            localStorage.removeItem(ANSWERS_STORAGE_KEY);
             clearViewState();
             userAnswers = {};
             renderQuestions(wrongQuestions);
@@ -861,7 +882,7 @@
 
         function resetProgress() {
             if (confirm('Are you sure you want to reset all progress?')) {
-                localStorage.removeItem('aws_quiz_answers');
+                localStorage.removeItem(ANSWERS_STORAGE_KEY);
                 clearViewState();
                 userAnswers = {};
                 calculateStats();
