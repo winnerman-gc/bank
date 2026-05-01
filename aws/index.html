@@ -560,6 +560,19 @@
             return false;
         }
 
+        function setRetakeControls(isRetakeMode) {
+            const retakeBtn = document.querySelector('button[onclick="retakeWrongQuestions()"]');
+            const returnBtn = document.getElementById('return-btn');
+
+            if (retakeBtn) {
+                retakeBtn.style.display = isRetakeMode ? 'none' : 'inline-block';
+            }
+
+            if (returnBtn) {
+                returnBtn.style.display = isRetakeMode ? 'inline-block' : 'none';
+            }
+        }
+
         function buildCacheBustedUrl(resourcePath) {
             const url = new URL(resourcePath, window.location.href);
             url.searchParams.set('v', CACHE_VERSION);
@@ -893,9 +906,18 @@
         function retakeWrongQuestions() {
             const wrongQuestions = allQuestionsData.filter((q, idx) => {
                 const answerKey = getAnswerKey(q);
+                if (!Object.prototype.hasOwnProperty.call(userAnswers, answerKey)) {
+                    return false;
+                }
+
                 const answer = Array.isArray(userAnswers[answerKey]) ? userAnswers[answerKey] : [userAnswers[answerKey]];
+                const answeredValues = answer.filter(value => normalizeOptionText(value));
+                if (answeredValues.length === 0) {
+                    return false;
+                }
+
                 const correct = q.correct_answers || [q.correct_answer];
-                return answer && answer.sort().join('|') !== correct.sort().join('|');
+                return answeredValues.sort().join('|') !== correct.sort().join('|');
             });
 
             if (wrongQuestions.length === 0) {
@@ -908,7 +930,7 @@
             currentAnswerStore = 'retake';
             retakeAnswers = {};
             localStorage.removeItem(RETAKE_ANSWERS_STORAGE_KEY);
-            document.getElementById('return-btn').style.display = 'inline-block';
+            setRetakeControls(true);
             renderQuestions(wrongQuestions);
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
@@ -916,7 +938,7 @@
         function returnToMainQuestions() {
             currentMode = 'exam';
             currentAnswerStore = 'main';
-            document.getElementById('return-btn').style.display = 'none';
+            setRetakeControls(false);
             restoreSavedView();
         }
 
