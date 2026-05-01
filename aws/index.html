@@ -57,9 +57,9 @@
             max-width: 900px;
             width: 95%;
             margin: 0 auto;
-        }
+            const optionsToDisplay = [...question.options].map(normalizeOptionText);
 
-        .header h1 {
+            const correctAnswers = (question.correct_answers || []).map(normalizeOptionText);
             color: var(--primary-color);
             font-size: 1.3rem;
             font-weight: 700;
@@ -414,8 +414,22 @@
     <script>
         const CACHE_VERSION = '2026-05-01.1';
 
+        function normalizeOptionText(optionText) {
+            return String(optionText || '').replace(/^\s*[A-E][.)]\s*/, '').trim();
+        }
+
+        function normalizeStoredAnswers(storedAnswers) {
+            const normalized = {};
+            Object.entries(storedAnswers || {}).forEach(([key, value]) => {
+                normalized[key] = Array.isArray(value)
+                    ? value.map(normalizeOptionText)
+                    : [normalizeOptionText(value)];
+            });
+            return normalized;
+        }
+
         let allQuestionsData = [];
-        let userAnswers = JSON.parse(localStorage.getItem('aws_quiz_answers') || '{}');
+        let userAnswers = normalizeStoredAnswers(JSON.parse(localStorage.getItem('aws_quiz_answers') || '{}'));
         let correctCount = 0;
         let wrongCount = 0;
         let currentExamFilter = null;
@@ -552,9 +566,9 @@
             const optionsDiv = document.createElement('div');
             optionsDiv.className = 'options';
 
-            const optionsToDisplay = [...question.options];
+            const optionsToDisplay = [...question.options].map(normalizeOptionText);
 
-            const correctAnswers = question.correct_answers || [];
+            const correctAnswers = (question.correct_answers || []).map(normalizeOptionText);
 
             optionsToDisplay.forEach((option, idx) => {
                 const btn = document.createElement('button');
@@ -599,12 +613,13 @@
             if (isMultiChoice) {
                 // For multiple choice, allow selecting multiple options
                 let selectedAnswers = userAnswers[qIdx] && Array.isArray(userAnswers[qIdx]) ? userAnswers[qIdx] : [];
-                const idx = selectedAnswers.indexOf(selectedOption);
+                const normalizedSelection = normalizeOptionText(selectedOption);
+                const idx = selectedAnswers.indexOf(normalizedSelection);
                 if (idx > -1) {
                     selectedAnswers.splice(idx, 1);
                     button.classList.remove('selected');
                 } else {
-                    selectedAnswers.push(selectedOption);
+                    selectedAnswers.push(normalizedSelection);
                     button.classList.add('selected');
                 }
                 userAnswers[qIdx] = selectedAnswers;
@@ -612,7 +627,7 @@
                 // Single choice - clear previous selections
                 const optionBtns = document.querySelectorAll(`#q-${qIdx} .option-btn`);
                 optionBtns.forEach(btn => btn.classList.remove('selected'));
-                userAnswers[qIdx] = [selectedOption];
+                userAnswers[qIdx] = [normalizeOptionText(selectedOption)];
                 button.classList.add('selected');
             }
             
@@ -638,7 +653,7 @@
             const correctAnswersList = Array.isArray(correctAnswers) ? correctAnswers : [correctAnswers];
             
             optionBtns.forEach(btn => {
-                const optionText = btn.dataset.option || btn.textContent.trim();
+                const optionText = normalizeOptionText(btn.dataset.option || btn.textContent.trim());
                 if (correctAnswersList.includes(optionText)) {
                     btn.classList.add('correct');
                 } else if (btn.classList.contains('selected') && !isCorrect) {
