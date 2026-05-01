@@ -471,13 +471,28 @@
             return document.getElementById(`q-${questionIndex}`);
         }
 
+        function getHeaderOffset() {
+            const header = document.querySelector('.header');
+            return (header ? header.offsetHeight : 0) + 12;
+        }
+
         function scrollToQuestion(questionIndex, behavior = 'smooth', saveState = true) {
             const card = getQuestionCard(questionIndex);
             if (!card) {
                 return false;
             }
 
-            card.scrollIntoView({ behavior, block: 'start' });
+            const cardRect = card.getBoundingClientRect();
+            const currentScrollY = window.scrollY || window.pageYOffset;
+            const headerOffset = getHeaderOffset();
+            const topTarget = currentScrollY + cardRect.top - headerOffset;
+            const centerTarget = currentScrollY + cardRect.top - ((window.innerHeight - cardRect.height) / 2);
+            const targetScrollY = Math.min(centerTarget, topTarget);
+
+            window.scrollTo({
+                top: Math.max(0, targetScrollY),
+                behavior
+            });
             if (saveState) {
                 saveViewState(questionIndex);
             }
