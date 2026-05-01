@@ -705,7 +705,7 @@
                 const isCorrect = isMultiChoice 
                     ? selectedAnswers.sort().join('|') === correctAnswers.sort().join('|')
                     : selectedAnswers[0] === correctAnswers[0];
-                showAnswer(globalIdx, isCorrect, correctAnswers, isMultiChoice, false);
+                showAnswer(globalIdx, isCorrect, correctAnswers, isMultiChoice, false, card);
             }
 
             return card;
@@ -743,15 +743,24 @@
                 const isCorrect = isMultiChoice 
                     ? selectedAnswers.sort().join('|') === correctAnswers.sort().join('|')
                     : selectedAnswers[0] === correctAnswers[0];
-                showAnswer(qIdx, isCorrect, correctAnswers, isMultiChoice, isCorrect);
+                showAnswer(qIdx, isCorrect, correctAnswers, isMultiChoice, isCorrect, document.getElementById(`q-${qIdx}`));
             }
             
             calculateStats();
         }
 
-        function showAnswer(qIdx, isCorrect, correctAnswers, isMultiChoice, autoScroll = false) {
-            const optionBtns = document.querySelectorAll(`#q-${qIdx} .option-btn`);
-            const feedback = document.getElementById(`feedback-${qIdx}`);
+        function showAnswer(qIdx, isCorrect, correctAnswers, isMultiChoice, autoScroll = false, cardElement = null) {
+            const card = cardElement || document.getElementById(`q-${qIdx}`);
+            if (!card) {
+                return;
+            }
+
+            const optionBtns = card.querySelectorAll('.option-btn');
+            const feedback = card.querySelector(`#feedback-${qIdx}`);
+            if (!feedback) {
+                return;
+            }
+
             const correctAnswersList = Array.isArray(correctAnswers) ? correctAnswers : [correctAnswers];
             
             optionBtns.forEach(btn => {
