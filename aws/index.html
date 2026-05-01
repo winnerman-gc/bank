@@ -382,6 +382,7 @@
                 <div class="stat-item">Progress: <strong id="stat-progress">0/0</strong></div>
                 <div class="button-group">
                     <button class="btn btn-success" onclick="retakeWrongQuestions()" title="Retake Wrong Answers">Retake Wrong</button>
+                    <button class="btn btn-secondary" id="return-btn" onclick="returnToMainQuestions()" style="display:none">Back to Main</button>
                     <button class="btn btn-danger" onclick="resetProgress()">Reset</button>
                 </div>
             </div>
@@ -418,6 +419,7 @@
         const CACHE_VERSION = '2026-05-01.1';
         const VIEW_STATE_KEY = 'aws_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'aws_quiz_answers_v2';
+        const RETAKE_ANSWERS_STORAGE_KEY = 'aws_quiz_retake_answers_v1';
 
         function normalizeOptionText(optionText) {
             return String(optionText || '').replace(/^\s*[A-E][.)]\s*/, '').trim();
@@ -441,18 +443,29 @@
             return normalizeStoredAnswers(JSON.parse(localStorage.getItem(ANSWERS_STORAGE_KEY) || '{}'));
         }
 
-        function saveStoredAnswers() {
+        function getStoredRetakeAnswers() {
+            return normalizeStoredAnswers(JSON.parse(localStorage.getItem(RETAKE_ANSWERS_STORAGE_KEY) || '{}'));
+        }
+
+        function saveStoredAnswers(answerStore = 'main') {
+            if (answerStore === 'retake') {
+                localStorage.setItem(RETAKE_ANSWERS_STORAGE_KEY, JSON.stringify(retakeAnswers));
+                return;
+            }
+
             localStorage.setItem(ANSWERS_STORAGE_KEY, JSON.stringify(userAnswers));
         }
 
         let allQuestionsData = [];
         let userAnswers = getStoredAnswers();
+        let retakeAnswers = getStoredRetakeAnswers();
         let correctCount = 0;
         let wrongCount = 0;
         let currentExamFilter = null;
         let maxExamNumber = 23;
         let currentMode = 'exam';
         let currentQuestionsData = [];
+        let currentAnswerStore = 'main';
 
         function getSavedViewState() {
             try {
@@ -599,6 +612,7 @@
         function loadExam(examNum, questionIndex = 0, saveState = true) {
             currentExamFilter = examNum;
             currentMode = 'exam';
+            currentAnswerStore = 'main';
             const filtered = allQuestionsData.filter(q => q.exam_number === examNum);
             renderQuestions(filtered);
             updateExamButtonStates();
@@ -621,6 +635,7 @@
         function loadAllQuestions(questionIndex = 0, saveState = true) {
             currentExamFilter = null;
             currentMode = 'all';
+            currentAnswerStore = 'main';
             renderQuestions(allQuestionsData);
             updateExamButtonStates();
             if (saveState) {
@@ -636,6 +651,7 @@
         function startRandomMode() {
             currentMode = 'random';
             currentExamFilter = null;
+            currentAnswerStore = 'main';
             const shuffled = [...allQuestionsData].sort(() => Math.random() - 0.5);
             renderQuestions(shuffled);
             updateExamButtonStates();
@@ -700,6 +716,7 @@
 
             const correctAnswers = (question.correct_answers || []).map(normalizeOptionText);
             const answerKey = getAnswerKey(question);
+            const answersObj = currentAnswerStore === 'retake' ? retakeAnswers : userAnswers;
 
             optionsToDisplay.forEach((option, idx) => {
                 const btn = document.createElement('button');
@@ -712,7 +729,7 @@
                 btn.onclick = () => selectAnswer(globalIdx, option, correctAnswers, btn, isMultiChoice);
                 
                 // Restore answer if exists
-                if (userAnswers[answerKey] && userAnswers[answerKey].includes(option)) {
+                if (answersObj[answerKey] && answersObj[answerKey].includes(option)) {
                     btn.classList.add('selected');
                 }
                 
@@ -729,8 +746,8 @@
             card.appendChild(feedback);
 
             // Restore previous answer state if exists
-            if (userAnswers[answerKey]) {
-                const selectedAnswers = Array.isArray(userAnswers[answerKey]) ? userAnswers[answerKey] : [userAnswers[answerKey]];
+            if (answersObj[answerKey]) {
+                const selectedAnswers = Array.isArray(answersObj[answerKey]) ? answersObj[answerKey] : [answersObj[answerKey]];
                 const isCorrect = isMultiChoice 
                     ? selectedAnswers.sort().join('|') === correctAnswers.sort().join('|')
                     : selectedAnswers[0] === correctAnswers[0];
@@ -747,9 +764,12 @@
             }
 
             const answerKey = getAnswerKey(question);
+            const answerStore = currentAnswerStore;
             if (isMultiChoice) {
                 // For multiple choice, allow selecting multiple options
-                let selectedAnswers = userAnswers[answerKey] && Array.isArray(userAnswers[answerKey]) ? userAnswers[answerKey] : [];
+                let selectedAnswers = answerStore === 'retake'
+                    ? (retakeAnswers[answerKey] && Array.isArray(retakeAnswers[answerKey]) ? retakeAnswers[answerKey] : [])
+                    : (userAnswers[answerKey] && Array.isArray(userAnswers[answerKey]) ? userAnswers[answerKey] : []);
                 const normalizedSelection = normalizeOptionText(selectedOption);
                 const idx = selectedAnswers.indexOf(normalizedSelection);
                 if (idx > -1) {
@@ -759,19 +779,28 @@
                     selectedAnswers.push(normalizedSelection);
                     button.classList.add('selected');
                 }
-                userAnswers[answerKey] = selectedAnswers;
+                if (answerStore === 'retake') {
+                    retakeAnswers[answerKey] = selectedAnswers;
+                } else {
+                    userAnswers[answerKey] = selectedAnswers;
+                }
             } else {
                 // Single choice - clear previous selections
                 const optionBtns = document.querySelectorAll(`#q-${qIdx} .option-btn`);
                 optionBtns.forEach(btn => btn.classList.remove('selected'));
-                userAnswers[answerKey] = [normalizeOptionText(selectedOption)];
+                if (answerStore === 'retake') {
+                    retakeAnswers[answerKey] = [normalizeOptionText(selectedOption)];
+                } else {
+                    userAnswers[answerKey] = [normalizeOptionText(selectedOption)];
+                }
                 button.classList.add('selected');
             }
             
-            saveStoredAnswers();
+            saveStoredAnswers(answerStore);
 
             // Show answer if all answers selected or single choice
-            const selectedAnswers = Array.isArray(userAnswers[answerKey]) ? userAnswers[answerKey] : [userAnswers[answerKey]];
+            const activeAnswers = answerStore === 'retake' ? retakeAnswers : userAnswers;
+            const selectedAnswers = Array.isArray(activeAnswers[answerKey]) ? activeAnswers[answerKey] : [activeAnswers[answerKey]];
             const isComplete = !isMultiChoice || selectedAnswers.length === correctAnswers.length;
             
             if (isComplete) {
@@ -828,9 +857,12 @@
         function calculateStats() {
             let correct = 0;
             let wrong = 0;
+            const activeAnswers = currentAnswerStore === 'retake' ? retakeAnswers : userAnswers;
+            const activeQuestions = currentMode === 'retake' ? currentQuestionsData : allQuestionsData;
             
-            Object.entries(userAnswers).forEach(([qIdx, answer]) => {
-                const q = allQuestionsData.find(question => String(question.question_number) === String(qIdx));
+            Object.entries(activeAnswers).forEach(([qIdx, answer]) => {
+                const q = activeQuestions.find(question => String(question.question_number) === String(qIdx))
+                    || allQuestionsData.find(question => String(question.question_number) === String(qIdx));
                 if (q) {
                     const correctAnswers = q.correct_answers || [];
                     const selectedAnswers = Array.isArray(answer) ? answer : [answer];
@@ -873,18 +905,28 @@
 
             currentMode = 'retake';
             currentExamFilter = null;
-            localStorage.removeItem(ANSWERS_STORAGE_KEY);
-            clearViewState();
-            userAnswers = {};
+            currentAnswerStore = 'retake';
+            retakeAnswers = {};
+            localStorage.removeItem(RETAKE_ANSWERS_STORAGE_KEY);
+            document.getElementById('return-btn').style.display = 'inline-block';
             renderQuestions(wrongQuestions);
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function returnToMainQuestions() {
+            currentMode = 'exam';
+            currentAnswerStore = 'main';
+            document.getElementById('return-btn').style.display = 'none';
+            restoreSavedView();
         }
 
         function resetProgress() {
             if (confirm('Are you sure you want to reset all progress?')) {
                 localStorage.removeItem(ANSWERS_STORAGE_KEY);
+                localStorage.removeItem(RETAKE_ANSWERS_STORAGE_KEY);
                 clearViewState();
                 userAnswers = {};
+                retakeAnswers = {};
                 calculateStats();
                 loadAllQuestions();
             }
