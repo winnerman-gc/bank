@@ -10,6 +10,7 @@ A comprehensive interactive practice platform for AWS Certified Cloud Practition
 ✅ **Exam Filtering** - Select and practice specific exams or view all questions
 ✅ **Random Mode** - Practice random questions for variety
 ✅ **Option Shuffling** - Randomize answer options to prevent memorization
+✅ **Cache Busting** - Versioned page/data URLs help GitHub Pages pick up fresh builds
 ✅ **Progress Tracking** - Automatic tracking of correct/wrong answers
 ✅ **Answer Review** - Review and retake only wrong answers
 ✅ **Persistent Storage** - Progress saved locally in browser storage
@@ -47,6 +48,11 @@ Simply open `index.html` in your web browser:
 - Click "Shuffle" button to randomize answer positions
 - Prevents memorization by position
 - Helps identify deep understanding
+
+**Cache Busting**
+- The page and `compiled.json` are loaded with a shared version token
+- If you update the page and want to force a refresh, bump the `CACHE_VERSION` value in `index.html`
+- The page also updates the browser URL to include that version, so refreshes stay on the latest build
 
 **Retake Wrong Answers**
 - Click "Retake Wrong" to focus on problem areas

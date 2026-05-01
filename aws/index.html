@@ -412,6 +412,8 @@
     </div>
 
     <script>
+        const CACHE_VERSION = '2026-05-01.1';
+
         let allQuestionsData = [];
         let userAnswers = JSON.parse(localStorage.getItem('aws_quiz_answers') || '{}');
         let correctCount = 0;
@@ -420,9 +422,25 @@
         let maxExamNumber = 23;
         let currentMode = 'exam';
 
+        function buildCacheBustedUrl(resourcePath) {
+            const url = new URL(resourcePath, window.location.href);
+            url.searchParams.set('v', CACHE_VERSION);
+            return url.toString();
+        }
+
+        function ensureVersionedPageUrl() {
+            const currentUrl = new URL(window.location.href);
+            if (currentUrl.searchParams.get('v') !== CACHE_VERSION) {
+                currentUrl.searchParams.set('v', CACHE_VERSION);
+                window.history.replaceState({}, '', currentUrl.toString());
+            }
+        }
+
         async function loadQuestions() {
             try {
-                const response = await fetch(`compiled.json?t=${new Date().getTime()}`, {
+                ensureVersionedPageUrl();
+
+                const response = await fetch(buildCacheBustedUrl('compiled.json'), {
                     cache: 'no-store'
                 });
                 allQuestionsData = await response.json();
