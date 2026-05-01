@@ -379,7 +379,6 @@
                 <div class="stat-item">Progress: <strong id="stat-progress">0/0</strong></div>
                 <div class="button-group">
                     <button class="btn btn-success" onclick="retakeWrongQuestions()" title="Retake Wrong Answers">Retake Wrong</button>
-                    <button class="btn btn-secondary" onclick="toggleShuffleOptions()" id="shuffle-btn">Shuffle</button>
                     <button class="btn btn-danger" onclick="resetProgress()">Reset</button>
                 </div>
             </div>
@@ -405,7 +404,10 @@
 
         <div class="footer" id="footer">
             <p>End of questions reached.</p>
-            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="btn btn-primary">Back to Top</button>
+            <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="btn btn-primary">Back to Top</button>
+                <button id="next-exam-btn" onclick="goToNextExam()" class="btn btn-success" style="display:none">Next Exam →</button>
+            </div>
         </div>
     </div>
 
@@ -415,8 +417,8 @@
         let correctCount = 0;
         let wrongCount = 0;
         let currentExamFilter = null;
-        let shuffleEnabled = localStorage.getItem('aws_shuffle_enabled') !== 'false';
-        let currentMode = 'exam'; // exam, all, random
+        let maxExamNumber = 23;
+        let currentMode = 'exam';
 
         async function loadQuestions() {
             try {
@@ -455,6 +457,13 @@
             const filtered = allQuestionsData.filter(q => q.exam_number === examNum);
             renderQuestions(filtered);
             updateExamButtonStates();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        function goToNextExam() {
+            if (currentExamFilter && currentExamFilter < maxExamNumber) {
+                loadExam(currentExamFilter + 1);
+            }
         }
 
         function loadAllQuestions() {
@@ -462,13 +471,16 @@
             currentMode = 'all';
             renderQuestions(allQuestionsData);
             updateExamButtonStates();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function startRandomMode() {
             currentMode = 'random';
+            currentExamFilter = null;
             const shuffled = [...allQuestionsData].sort(() => Math.random() - 0.5);
             renderQuestions(shuffled);
             updateExamButtonStates();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function updateExamButtonStates() {
@@ -492,6 +504,13 @@
             });
 
             document.getElementById('footer').style.display = 'block';
+            
+            // Show next exam button if viewing a specific exam
+            if (currentMode === 'exam' && currentExamFilter && currentExamFilter < maxExamNumber) {
+                document.getElementById('next-exam-btn').style.display = 'inline-block';
+            } else {
+                document.getElementById('next-exam-btn').style.display = 'none';
+            }
         }
 
         function createQuestionCard(question, globalIdx) {
@@ -515,24 +534,16 @@
             const optionsDiv = document.createElement('div');
             optionsDiv.className = 'options';
 
-            const optionLabels = ['A', 'B', 'C', 'D', 'E'];
-            let optionsToDisplay = question.options;
-            
-            if (shuffleEnabled) {
-                optionsToDisplay = [...question.options];
-                for (let i = optionsToDisplay.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [optionsToDisplay[i], optionsToDisplay[j]] = [optionsToDisplay[j], optionsToDisplay[i]];
-                }
-            }
+            const optionsToDisplay = [...question.options];
 
             const correctAnswers = question.correct_answers || [];
 
             optionsToDisplay.forEach((option, idx) => {
                 const btn = document.createElement('button');
                 btn.className = 'option-btn';
+                btn.dataset.option = option;
                 btn.innerHTML = `
-                    <span>${optionLabels[idx]}. ${option}</span>
+                    <span>${option}</span>
                     <span class="option-icon"></span>
                 `;
                 btn.onclick = () => selectAnswer(globalIdx, option, correctAnswers, btn, isMultiChoice);
@@ -609,7 +620,7 @@
             const correctAnswersList = Array.isArray(correctAnswers) ? correctAnswers : [correctAnswers];
             
             optionBtns.forEach(btn => {
-                const optionText = btn.textContent.split('. ')[1]?.trim();
+                const optionText = btn.dataset.option || btn.textContent.trim();
                 if (correctAnswersList.includes(optionText)) {
                     btn.classList.add('correct');
                 } else if (btn.classList.contains('selected') && !isCorrect) {
@@ -642,7 +653,6 @@
                     const correctAnswers = q.correct_answers || [];
                     const selectedAnswers = Array.isArray(answer) ? answer : [answer];
                     const isMultiChoice = q.is_multiple_choice || correctAnswers.length > 1;
-                    
                     const isCorrect = isMultiChoice
                         ? selectedAnswers.sort().join('|') === correctAnswers.sort().join('|')
                         : selectedAnswers[0] === correctAnswers[0];
@@ -668,7 +678,9 @@
 
         function retakeWrongQuestions() {
             const wrongQuestions = allQuestionsData.filter((q, idx) => {
-                return userAnswers[idx] && userAnswers[idx] !== q.correct_answer;
+                const answer = Array.isArray(userAnswers[idx]) ? userAnswers[idx] : [userAnswers[idx]];
+                const correct = q.correct_answers || [q.correct_answer];
+                return answer && answer.sort().join('|') !== correct.sort().join('|');
             });
 
             if (wrongQuestions.length === 0) {
@@ -676,16 +688,12 @@
                 return;
             }
 
+            currentMode = 'retake';
+            currentExamFilter = null;
             localStorage.removeItem('aws_quiz_answers');
             userAnswers = {};
             renderQuestions(wrongQuestions);
-        }
-
-        function toggleShuffleOptions() {
-            shuffleEnabled = !shuffleEnabled;
-            localStorage.setItem('aws_shuffle_enabled', shuffleEnabled);
-            document.getElementById('shuffle-btn').textContent = shuffleEnabled ? 'Shuffle: On' : 'Shuffle: Off';
-            location.reload();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function resetProgress() {
