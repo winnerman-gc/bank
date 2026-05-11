@@ -79,27 +79,32 @@
 
         .stat {
             flex: 0 0 auto;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
             border: 1px solid var(--border);
-            border-radius: 10px;
+            border-radius: 999px;
             background: rgba(255, 255, 255, 0.95);
-            padding: 6px 9px;
+            padding: 7px 11px;
             box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+            white-space: nowrap;
         }
 
         .stat .label {
-            display: block;
-            font-size: 0.62rem;
+            display: inline;
+            font-size: 0.64rem;
             text-transform: uppercase;
             letter-spacing: 0.08em;
             color: var(--muted);
-            margin-bottom: 2px;
-            white-space: nowrap;
+            margin-bottom: 0;
+            line-height: 1;
         }
 
         .stat .value {
             font-size: 0.84rem;
             font-weight: 700;
             white-space: nowrap;
+            line-height: 1;
         }
 
         .toolbar {
@@ -318,10 +323,10 @@
                 </div>
             </div>
             <div class="stats">
-                <div class="stat"><span class="label">Correct</span><span class="value" id="stat-correct">0</span></div>
-                <div class="stat"><span class="label">Wrong</span><span class="value" id="stat-wrong">0</span></div>
-                <div class="stat"><span class="label">Score</span><span class="value" id="stat-score">0%</span></div>
-                <div class="stat"><span class="label">Progress</span><span class="value" id="stat-progress">0/0</span></div>
+                <div class="stat">Correct: <span class="value" id="stat-correct">0</span></div>
+                <div class="stat">Wrong: <span class="value" id="stat-wrong">0</span></div>
+                <div class="stat">Score: <span class="value" id="stat-score">0%</span></div>
+                <div class="stat">Progress: <span class="value" id="stat-progress">0/0</span></div>
             </div>
         </div>
     </header>
@@ -366,7 +371,7 @@
                 id: 'set-200',
                 label: 'Set 1',
                 file: 'advanced_excel_mastery_200_mcqs_json.json',
-                description: '15 questions focused on core Excel concepts.'
+                description: '100 questions focused on core Excel concepts.'
             },
             {
                 id: 'set-mcqs',
@@ -878,7 +883,7 @@
             let correct = 0;
             let wrong = 0;
             const answersObj = currentAnswerStore === 'retake' ? retakeAnswers : userAnswers;
-            const questions = currentMode === 'retake' ? currentQuestionsData : currentModeQuestions.length ? currentModeQuestions : allQuestionsData;
+            const questions = currentQuestionsData.length ? currentQuestionsData : allQuestionsData;
 
             Object.entries(answersObj).forEach(([key, answer]) => {
                 const question = questions.find(item => getQuestionKey(item, item.sourceId) === key)
@@ -896,7 +901,7 @@
             });
 
             const total = correct + wrong;
-            const progressTotal = currentMode === 'retake' ? currentQuestionsData.length : (currentMode === 'all' ? allQuestionsData.length : currentQuestionsData.length);
+            const progressTotal = currentQuestionsData.length || allQuestionsData.length;
             document.getElementById('stat-correct').textContent = correct;
             document.getElementById('stat-wrong').textContent = wrong;
             document.getElementById('stat-score').textContent = `${total ? Math.round((correct / total) * 100) : 0}%`;
