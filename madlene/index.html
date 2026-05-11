@@ -441,6 +441,21 @@
             return `${sourceId}:${question.question_number}`;
         }
 
+        function getAnswerForQuestion(question, sourceId, viewSourceId, answersObj) {
+            const candidateKeys = [getQuestionKey(question, sourceId)];
+            if (viewSourceId === 'all' || viewSourceId === 'random') {
+                candidateKeys.push(getQuestionKey(question, viewSourceId));
+            }
+
+            for (const key of candidateKeys) {
+                if (Object.prototype.hasOwnProperty.call(answersObj, key)) {
+                    return { key, value: answersObj[key] };
+                }
+            }
+
+            return { key: candidateKeys[0], value: undefined };
+        }
+
         function shuffleArray(values) {
             const shuffled = [...values];
             for (let index = shuffled.length - 1; index > 0; index -= 1) {
@@ -629,6 +644,16 @@
                 return true;
             }
 
+            if (savedState.mode === 'all') {
+                showAllQuestions(false, savedState.questionIndex || 0);
+                return true;
+            }
+
+            if (savedState.mode === 'random') {
+                showRandomMode();
+                return true;
+            }
+
             showSource(savedState.sourceId, false, savedState.questionIndex || 0);
             return true;
         }
@@ -748,17 +773,19 @@
         }
 
         function createQuestionCard(question, idx, answerStore, mode, sourceId) {
-            const answerKey = getQuestionKey(question, sourceId);
+            const effectiveSourceId = sourceId === 'all' || sourceId === 'random' ? question.sourceId : sourceId;
+            const answerKey = getQuestionKey(question, effectiveSourceId);
             const isMultiChoice = Array.isArray(question.correct_answer) && question.correct_answer.length > 1;
             const correctAnswers = (question.correct_answer || []).map(normalizeOptionText);
             const answersObj = answerStore === 'retake' ? retakeAnswers : userAnswers;
-            const stored = answersObj[answerKey];
+            const storedLookup = getAnswerForQuestion(question, effectiveSourceId, sourceId, answersObj);
+            const stored = storedLookup.value;
             const card = document.createElement('article');
             card.className = 'question-card';
             card.id = `q-${idx}`;
 
             const tagParts = [`Question ${question.question_number}`];
-            if (sourceId !== 'all') tagParts.push(sourceLabel(sourceId));
+            if (effectiveSourceId) tagParts.push(sourceLabel(effectiveSourceId));
             if (isMultiChoice) tagParts.push('Choose Multiple');
 
             card.innerHTML = `
@@ -783,7 +810,7 @@
                 button.dataset.option = normalized;
                 button.innerHTML = `<span>${escapeHtml(option)}</span><span class="option-icon"></span>`;
                 if (selectedValues.includes(normalized)) button.classList.add('selected');
-                button.onclick = () => handleAnswer(question, idx, normalized, button, answerStore, mode, sourceId, isMultiChoice, correctAnswers);
+                button.onclick = () => handleAnswer(question, idx, normalized, button, answerStore, mode, effectiveSourceId, isMultiChoice, correctAnswers);
                 optionsWrap.appendChild(button);
             });
 
@@ -884,11 +911,15 @@
             let wrong = 0;
             const answersObj = currentAnswerStore === 'retake' ? retakeAnswers : userAnswers;
             const questions = currentQuestionsData.length ? currentQuestionsData : allQuestionsData;
+            const viewSourceId = currentMode === 'all'
+                ? 'all'
+                : currentMode === 'random'
+                    ? 'random'
+                    : currentSourceId;
 
-            Object.entries(answersObj).forEach(([key, answer]) => {
-                const question = questions.find(item => getQuestionKey(item, item.sourceId) === key)
-                    || allQuestionsData.find(item => getQuestionKey(item, item.sourceId) === key);
-                if (!question) return;
+            questions.forEach(question => {
+                const answer = getAnswerForQuestion(question, question.sourceId, viewSourceId, answersObj).value;
+                if (!answer || !answer.length) return;
 
                 const correctAnswers = (question.correct_answer || []).map(normalizeOptionText);
                 const selectedAnswers = Array.isArray(answer) ? answer : [answer];
@@ -909,8 +940,12 @@
         }
 
         function isQuestionWrong(question) {
-            const key = getQuestionKey(question, question.sourceId);
-            const answer = userAnswers[key];
+            const viewSourceId = currentMode === 'all'
+                ? 'all'
+                : currentMode === 'random'
+                    ? 'random'
+                    : currentSourceId;
+            const answer = getAnswerForQuestion(question, question.sourceId, viewSourceId, userAnswers).value;
             if (!answer || !answer.length) return false;
             const selectedAnswers = Array.isArray(answer) ? answer : [answer];
             const correctAnswers = (question.correct_answer || []).map(normalizeOptionText);
