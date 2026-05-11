@@ -331,16 +331,12 @@
         </div>
     </header>
 
-    <div class="mode-banner" id="mode-banner"></div>
+
 
     <main class="container">
         <section class="selector panel">
             <h2>Select a question set</h2>
             <div class="source-grid" id="source-grid"></div>
-            <div class="view-grid" style="margin-top:12px;">
-                <button class="btn btn-primary" onclick="showAllQuestions()">All Questions</button>
-                <button class="btn btn-secondary" onclick="showRandomMode()">Random Mode</button>
-            </div>
         </section>
 
         <section id="feed">
@@ -543,11 +539,7 @@
             }
         }
 
-        function setModeBanner(text) {
-            const banner = document.getElementById('mode-banner');
-            banner.textContent = text;
-            banner.style.display = 'block';
-        }
+
 
         function setRetakeControls(isRetakeMode) {
             document.getElementById('retake-btn').style.display = isRetakeMode ? 'none' : 'inline-block';
@@ -644,16 +636,6 @@
                 return true;
             }
 
-            if (savedState.mode === 'all') {
-                showAllQuestions(false, savedState.questionIndex || 0);
-                return true;
-            }
-
-            if (savedState.mode === 'random') {
-                showRandomMode();
-                return true;
-            }
-
             showSource(savedState.sourceId, false, savedState.questionIndex || 0);
             return true;
         }
@@ -665,7 +647,6 @@
             currentAnswerStore = 'main';
             setRetakeControls(false);
             setActiveSourceCard(sourceId);
-            setModeBanner(`Viewing ${sourceLabel(sourceId)}. Use Retake Wrong to review only missed questions from this set.`);
 
             const questions = getQuestionsForSource(sourceId);
             renderQuestions(questions, {
@@ -685,48 +666,7 @@
             }
         }
 
-        function showAllQuestions(pushState = true, questionIndex = 0) {
-            currentMode = 'all';
-            currentViewKey = 'all';
-            currentSourceId = 'all';
-            currentAnswerStore = 'main';
-            setRetakeControls(false);
-            setActiveSourceCard('');
-            setModeBanner('Viewing all questions across both sets.');
-            renderQuestions(allQuestionsData, {
-                answerStore: 'main',
-                mode: 'all',
-                sourceId: 'all',
-                shouldRestore: true,
-                shouldAutoscroll: false,
-                questionIndex
-            });
-            if (pushState) saveViewState(questionIndex);
-            if (Number.isInteger(questionIndex) && questionIndex >= 0) {
-                window.requestAnimationFrame(() => scrollToQuestion(questionIndex, 'auto', false));
-            } else {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
-        }
 
-        function showRandomMode() {
-            currentMode = 'random';
-            currentViewKey = 'random';
-            currentSourceId = 'random';
-            currentAnswerStore = 'main';
-            setRetakeControls(false);
-            setActiveSourceCard('');
-            setModeBanner('Random mode: questions are shuffled from the currently loaded data.');
-            const shuffled = [...allQuestionsData].sort(() => Math.random() - 0.5);
-            renderQuestions(shuffled, {
-                answerStore: 'main',
-                mode: 'random',
-                sourceId: 'random',
-                shouldRestore: true,
-                shouldAutoscroll: false
-            });
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
 
         function goToNextSource() {
             if (currentMode !== 'set') return;
@@ -764,7 +704,9 @@
                 feed.appendChild(card);
             });
 
-            document.getElementById('next-source-btn').style.display = currentMode === 'set' && currentSourceId === SOURCES[0].id ? 'inline-block' : 'none';
+            const currentIndex = SOURCES.findIndex(s => s.id === currentSourceId);
+            const isLastSet = currentIndex === SOURCES.length - 1;
+            document.getElementById('next-source-btn').style.display = currentMode === 'set' && !isLastSet ? 'inline-block' : 'none';
             calculateStats();
 
             if (shouldAutoscroll) {
@@ -911,14 +853,9 @@
             let wrong = 0;
             const answersObj = currentAnswerStore === 'retake' ? retakeAnswers : userAnswers;
             const questions = currentQuestionsData.length ? currentQuestionsData : allQuestionsData;
-            const viewSourceId = currentMode === 'all'
-                ? 'all'
-                : currentMode === 'random'
-                    ? 'random'
-                    : currentSourceId;
 
             questions.forEach(question => {
-                const answer = getAnswerForQuestion(question, question.sourceId, viewSourceId, answersObj).value;
+                const answer = getAnswerForQuestion(question, question.sourceId, currentSourceId, answersObj).value;
                 if (!answer || !answer.length) return;
 
                 const correctAnswers = (question.correct_answer || []).map(normalizeOptionText);
@@ -940,12 +877,7 @@
         }
 
         function isQuestionWrong(question) {
-            const viewSourceId = currentMode === 'all'
-                ? 'all'
-                : currentMode === 'random'
-                    ? 'random'
-                    : currentSourceId;
-            const answer = getAnswerForQuestion(question, question.sourceId, viewSourceId, userAnswers).value;
+            const answer = getAnswerForQuestion(question, question.sourceId, currentSourceId, userAnswers).value;
             if (!answer || !answer.length) return false;
             const selectedAnswers = Array.isArray(answer) ? answer : [answer];
             const correctAnswers = (question.correct_answer || []).map(normalizeOptionText);
@@ -966,7 +898,6 @@
             setRetakeControls(true);
             currentQuestionsData = wrongQuestions;
             currentViewKey = `${currentSourceId}-retake`;
-            setModeBanner('Retake Wrong mode: review only the questions you answered incorrectly.');
             renderQuestions(wrongQuestions, {
                 answerStore: 'retake',
                 mode: 'retake',
