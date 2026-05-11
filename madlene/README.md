@@ -10,6 +10,7 @@ A static MCQ practice site for the two question banks in this folder:
 - Source selector for each question bank
 - All Questions mode
 - Random mode
+- Auto-shuffled answer options with stable per-question order
 - Retake Wrong mode that only includes questions answered incorrectly
 - Back to Main button to return from retake mode
 - Persistent answer storage in the browser

@@ -360,6 +360,7 @@
         const VIEW_STATE_KEY = 'madlene_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'madlene_quiz_answers_v1';
         const RETAKE_ANSWERS_STORAGE_KEY = 'madlene_quiz_retake_answers_v1';
+        const OPTION_ORDER_STORAGE_KEY = 'madlene_quiz_option_orders_v1';
 
         const SOURCES = [
             {
@@ -388,6 +389,7 @@
         let correctCount = 0;
         let wrongCount = 0;
         let currentModeQuestions = [];
+        let optionOrders = getStoredOptionOrders();
 
         function normalizeOptionText(optionText) {
             return String(optionText || '').replace(/^\s*[A-E][.)]\s*/, '').trim();
@@ -411,6 +413,14 @@
             return normalizeStoredAnswers(JSON.parse(localStorage.getItem(RETAKE_ANSWERS_STORAGE_KEY) || '{}'));
         }
 
+        function getStoredOptionOrders() {
+            try {
+                return JSON.parse(localStorage.getItem(OPTION_ORDER_STORAGE_KEY) || '{}');
+            } catch (error) {
+                return {};
+            }
+        }
+
         function saveAnswers(answerStore = 'main') {
             if (answerStore === 'retake') {
                 localStorage.setItem(RETAKE_ANSWERS_STORAGE_KEY, JSON.stringify(retakeAnswers));
@@ -419,8 +429,38 @@
             localStorage.setItem(ANSWERS_STORAGE_KEY, JSON.stringify(userAnswers));
         }
 
+        function saveOptionOrders() {
+            localStorage.setItem(OPTION_ORDER_STORAGE_KEY, JSON.stringify(optionOrders));
+        }
+
         function getQuestionKey(question, sourceId) {
             return `${sourceId}:${question.question_number}`;
+        }
+
+        function shuffleArray(values) {
+            const shuffled = [...values];
+            for (let index = shuffled.length - 1; index > 0; index -= 1) {
+                const swapIndex = Math.floor(Math.random() * (index + 1));
+                [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+            }
+            return shuffled;
+        }
+
+        function getOptionOrder(question, sourceId, options) {
+            const key = getQuestionKey(question, sourceId);
+            const storedOrder = optionOrders[key];
+
+            if (Array.isArray(storedOrder)
+                && storedOrder.length === options.length
+                && new Set(storedOrder).size === options.length
+                && storedOrder.every(index => Number.isInteger(index) && index >= 0 && index < options.length)) {
+                return storedOrder;
+            }
+
+            const order = shuffleArray(options.map((_, index) => index));
+            optionOrders[key] = order;
+            saveOptionOrders();
+            return order;
         }
 
         function getHeaderOffset() {
@@ -728,9 +768,11 @@
             const optionsWrap = document.createElement('div');
             optionsWrap.className = 'options';
             const options = Array.isArray(question.options) ? question.options : [];
+            const optionOrder = getOptionOrder(question, sourceId, options);
             const selectedValues = Array.isArray(stored) ? stored : stored ? [stored] : [];
 
-            options.forEach(option => {
+            optionOrder.forEach(optionIndex => {
+                const option = options[optionIndex];
                 const normalized = normalizeOptionText(option);
                 const button = document.createElement('button');
                 button.className = 'option-btn';
