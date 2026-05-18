@@ -1,0 +1,1302 @@
+[
+  {
+    "question_number": 101,
+    "question_text": "An enterprise data analyst is designing a Power BI semantic model using data from a highly normalized transactional database. Why is a denormalized Star Schema preferred over a normalized Snowflake Schema for visual report performance?",
+    "options": [
+      "It minimizes the number of relationship joins that the storage engine must execute at visual runtime.",
+      "It reduces the physical memory footprint by eliminating duplicate text strings across dimension tables.",
+      "It allows Power Query to execute query folding routines across a wider selection of cloud data sources.",
+      "It automatically resolves data granularity mismatches when combining daily ledger files with monthly forecasts."
+    ],
+    "correct_answer": [
+      "It minimizes the number of relationship joins that the storage engine must execute at visual runtime."
+    ]
+  },
+  {
+    "question_number": 102,
+    "question_text": "A business model contains a FactSales table with transaction details and a DimGeography table containing regions. Instead of linking geography directly to sales, the developer links geography to DimCustomer, and customer to sales. What is the main analytical disadvantage of this Snowflake configuration?",
+    "options": [
+      "It increases structural complexity and can degrade filter propagation performance across the dimensional path.",
+      "It prevents the model from utilizing explicit DAX measures for calculating high-level cross-tabulations.",
+      "It forces the Power BI Service to require an enterprise gateway cluster for processing cloud data refreshes.",
+      "It disables the ability of report designers to configure row-level security roles based on regional variables."
+    ],
+    "correct_answer": [
+      "It increases structural complexity and can degrade filter propagation performance across the dimensional path."
+    ]
+  },
+  {
+    "question_number": 103,
+    "question_text": "A developer needs to configure a data relationship between a DimEmployee dimension table and a FactSales fact table. In the employee table, each row represents a unique staff member identified by an EmployeeID key. Which cardinality setting is structurally correct?",
+    "options": [
+      "Many-to-one (*:1) from the FactSales table pointing directly to the DimEmployee dimension table.",
+      "One-to-one (1:1) established symmetrically between the DimEmployee table and the FactSales table.",
+      "One-to-many (1:*) configured from the FactSales table pointing toward the DimEmployee dimension table.",
+      "Many-to-many (*:*) established dynamically between the EmployeeID keys across both business tables."
+    ],
+    "correct_answer": [
+      "Many-to-one (*:1) from the FactSales table pointing directly to the DimEmployee dimension table."
+    ]
+  },
+  {
+    "question_number": 104,
+    "question_text": "A Power BI data model includes an active relationship between a Product dimension table and an Orders fact table. If a developer switches the cross-filter direction from Single to Both, what architectural behavior is enabled within the model?",
+    "options": [
+      "Filters applied to the Orders fact table will automatically propagate up and restrict rows in the Product table.",
+      "The underlying storage engine merges the two tables into a single physical entity inside system memory.",
+      "Power Query will automatically push all data transformation steps down to the hosting source relational server.",
+      "Report viewers are granted permission to modify underlying transaction data directly from the report visuals."
+    ],
+    "correct_answer": [
+      "Filters applied to the Orders fact table will automatically propagate up and restrict rows in the Product table."
+    ]
+  },
+  {
+    "question_number": 105,
+    "question_text": "An organization tracks actual sales transactions daily, but corporate budgets are formulated at the monthly level. What modeling mistake occurs if a developer attempts to join the Budget table directly to a daily Date dimension table via a standard Date key?",
+    "options": [
+      "The relationship produces ambiguous data mapping or blank rows because granularities between the fields do not match.",
+      "The VertiPaq engine completely blocks the loading phase and returns a structural file serialization error.",
+      "Power BI Service permanently disables automated cloud synchronization settings for the entire workspace repository.",
+      "All explicit DAX measures written across the model are forced to evaluate using implicit string type coercion parameters."
+    ],
+    "correct_answer": [
+      "The relationship produces ambiguous data mapping or blank rows because granularities between the fields do not match."
+    ]
+  },
+  {
+    "question_number": 106,
+    "question_text": "A developer needs to resolve a granularity mismatch where a Target table is stored at the month level, but the calendar dimension is granular to the day. Which approach represents an elegant data modeling solution to establish a star schema?",
+    "options": [
+      "Create a MonthID key in both tables and link the Target table to the Date dimension using this monthly attribute field.",
+      "Merge the Target table horizontally into the daily Sales fact table inside Power Query using an outer join routine.",
+      "Configure a bidirectional many-to-many relationship using a precise text string timestamp tracking column.",
+      "Write a calculated column in the Target table that repeats the monthly target figure across every calendar day."
+    ],
+    "correct_answer": [
+      "Create a MonthID key in both tables and link the Target table to the Date dimension using this monthly attribute field."
+    ]
+  },
+  {
+    "question_number": 107,
+    "question_text": "A data model possesses a FactSales table with two distinct foreign key columns: OrderDate and ShipDate. Both columns need to reference the DimDate dimension table. What standard star-schema practice should the modeler follow?",
+    "options": [
+      "Create two relationships, keep one active, and use the DAX USERELATIONSHIP function to activate the secondary path.",
+      "Establish active bidirectional relationships between both date keys and the Date dimension table simultaneously.",
+      "Combine the OrderDate and ShipDate columns into a single text string field inside Power Query before data load phases.",
+      "Force the model to parse the values by importing a separate, disconnected text document containing holiday records."
+    ],
+    "correct_answer": [
+      "Create two relationships, keep one active, and use the DAX USERELATIONSHIP function to activate the secondary path."
+    ]
+  },
+  {
+    "question_number": 108,
+    "question_text": "As an alternative to using inactive relationships for handling multiple dates (OrderDate and ShipDate), a developer imports the date dimension table twice, naming them DimOrderDate and DimShipDate. What is this modeling design pattern called?",
+    "options": [
+      "Role-playing dimensions, which allow independent filtering of transactions by different functional dates.",
+      "Degenerate dimensions, which embed structural reference keys directly inside the transaction ledger rows.",
+      "Junk dimensions, which consolidate miscellaneous low-cardinality indicator flags into a single master layout.",
+      "Bridge dimensions, which handle complex many-to-many entity associations via an intermediate mapping index."
+    ],
+    "correct_answer": [
+      "Role-playing dimensions, which allow independent filtering of transactions by different functional dates."
+    ]
+  },
+  {
+    "question_number": 109,
+    "question_text": "A transaction table contains a unique invoice identifier column named InvoiceNumber, but no other descriptive attributes are associated with it. The modeler decides to leave this column inside the fact table. What dimensional concept does this column represent?",
+    "options": [
+      "A degenerate dimension, which provides a high-cardinality transactional identifier directly within the fact table rows.",
+      "A factless fact table, which logs the occurrence of business activities without recording explicit numerical metrics.",
+      "A slowly changing dimension, which historical tracking engines utilize to preserve profile states over time.",
+      "A junk dimension, which aggregates unrelated low-cardinality attributes to optimize database memory usage."
+    ],
+    "correct_answer": [
+      "A degenerate dimension, which provides a high-cardinality transactional identifier directly within the fact table rows."
+    ]
+  },
+  {
+    "question_number": 110,
+    "question_text": "An institutional database records student enrollments in university courses. A student can enroll in multiple courses, and each course contains multiple students. Which data modeling strategy resolves this many-to-many relationship effectively within Power BI?",
+    "options": [
+      "Introduce an intermediate bridge enrollment fact table that establishes one-to-many connections to both dimension tables.",
+      "Set the relationship cross-filter direction parameter to Both directly between the Student and Course tables.",
+      "Append the rows of the Course table to the bottom of the Student table rows inside the Power Query transformation engine.",
+      "Convert the storage mode of both tables to DirectQuery to force database execution at interactive visual runtimes."
+    ],
+    "correct_answer": [
+      "Introduce an intermediate bridge enrollment fact table that establishes one-to-many connections to both dimension tables."
+    ]
+  },
+  {
+    "question_number": 111,
+    "question_text": "A retail model possesses a transaction table with five independent text flags tracking 'Payment Method', 'Delivery Type', 'Order Source', 'Wrap Flag', and 'Status'. Why should a data modeler consolidate these attributes into a single Junk Dimension?",
+    "options": [
+      "To reduce the total number of physical tables in the model, optimizing column compression and simplifying usability.",
+      "To allow the report visuals to execute automated forecasting transformations using internal cognitive features.",
+      "To eliminate the need for deploying an on-premises network gateway machine for automated cloud dataset synchronization.",
+      "To guarantee that query folding remains active across all data tables during complex Power Query steps."
+    ],
+    "correct_answer": [
+      "To reduce the total number of physical tables in the model, optimizing column compression and simplifying usability."
+    ]
+  },
+  {
+    "question_number": 112,
+    "question_text": "A manufacturing data model must track factory asset assignments. A table logs when an engineer checks out a tool, recording EmployeeID, ToolID, and Date, but it features no numerical transaction metrics. What is this type of schema asset called?",
+    "options": [
+      "A factless fact table, which records the relationship or occurrence of activities between multiple dimensions.",
+      "A degenerate dimension table, which maps transactional text indicators across structural database schemas.",
+      "A parent-child structural matrix, which maps administrative employee reporting chains across corporate boundaries.",
+      "A bridge table, which resolves mismatched numeric scale values when configuring disparate database dimensions."
+    ],
+    "correct_answer": [
+      "A factless fact table, which records the relationship or occurrence of activities between multiple dimensions."
+    ]
+  },
+  {
+    "question_number": 113,
+    "question_text": "An HR data analyst tracks employee changes over time. When an employee switches departments, the historical database preserves the old record and inserts a new row with an updated department key and a new validity date range. What modeling concept does this demonstrate?",
+    "options": [
+      "A Slowly Changing Dimension (SCD) Type 2, which captures and preserves historical profile changes over time.",
+      "A Slowly Changing Dimension (SCD) Type 1, which overwrites original historical attributes with current data entries.",
+      "A rapid dimension mutation phase, which updates database indexes without modifying underlying field values.",
+      "A structural context translation layer, which forces visual elements to compute statistics using row parameters."
+    ],
+    "correct_answer": [
+      "A Slowly Changing Dimension (SCD) Type 2, which captures and preserves historical profile changes over time."
+    ]
+  },
+  {
+    "question_number": 114,
+    "question_text": "A corporate dataset features an employee table containing an EmployeeID column and a ManagerID column that references other employee records within the same field list. What type of dimension hierarchy layout does this describe?",
+    "options": [
+      "A parent-child hierarchy, which represents a recursive relationship where an entity links back to an instance of itself.",
+      "A snowflake hierarchy, which normalizes descriptive categories across multiple independent low-cardinality entities.",
+      "A junk dimension framework, which merges unrelated corporate tracking variables into a single consolidated layout.",
+      "A star schema framework, which isolates numerical facts from administrative indicators using single-direction filters."
+    ],
+    "correct_answer": [
+      "A parent-child hierarchy, which represents a recursive relationship where an entity links back to an instance of itself."
+    ]
+  },
+  {
+    "question_number": 115,
+    "question_text": "While auditing a model's file size, a developer notices that a Date column containing both dates and precise execution times (e.g., 2026-03-12 08:14:22) is consuming massive amounts of memory. What engine mechanic explains this behavior?",
+    "options": [
+      "High cardinality limits the compression efficiency of the VertiPaq engine, which relies on dictionary and value encoding.",
+      "The local system automatically duplicates the timestamp strings across every visualization layer component layout.",
+      "Power BI forces all text fields containing numbers to generate internal index structures for every distinct cell row.",
+      "The DirectQuery gateway requires unique identity anchors to map transaction steps back to cloud data databases."
+    ],
+    "correct_answer": [
+      "High cardinality limits the compression efficiency of the VertiPaq engine, which relies on dictionary and value encoding."
+    ]
+  },
+  {
+    "question_number": 116,
+    "question_text": "A developer is configuring a model and leaves the default 'Auto Date/Time' feature enabled in Power BI Desktop options. How does this setting affect memory allocation when loading a model containing ten distinct date columns?",
+    "options": [
+      "It creates a hidden, independent date table for every single date column, which can bloat file size and waste memory.",
+      "It compresses all date values into an optimal binary format that reduces the processing load on local hardware engines.",
+      "It establishes automatic bidirectional filters between all data tables based on chronological intersection vectors.",
+      "It disables the requirement for writing explicit DAX metrics when calculating custom corporate financial indicators."
+    ],
+    "correct_answer": [
+      "It creates a hidden, independent date table for every single date column, which can bloat file size and waste memory."
+    ]
+  },
+  {
+    "question_number": 117,
+    "question_text": "A data model contains a Date dimension and a Sales fact table. The modeler represents the join keys using an integer format like '20260811' rather than a standard text string data type. What is the performance rationale behind this choice?",
+    "options": [
+      "Integer columns are processed and compressed much more efficiently by the analytic engine, optimizing relationship joins.",
+      "Integer keys allow the report to automatically bypass security checks defined within Row-Level Security parameters.",
+      "Integer formatting forces Power Query to execute full query folding steps across all cloud database sources.",
+      "Integer properties eliminate the need for creating manual single-direction data relationships in Model view."
+    ],
+    "correct_answer": [
+      "Integer columns are processed and compressed much more efficiently by the analytic engine, optimizing relationship joins."
+    ]
+  },
+  {
+    "question_number": 118,
+    "question_text": "A business intelligence developer builds a relationship between a Customer dimension and an Orders fact table using a bi-directional filter. During user testing, they discover that numbers on summary cards change incorrectly depending on page selections. What structural risk is occurring?",
+    "options": [
+      "Ambiguity in filter propagation paths, where filters flow backward across tables and create unexpected data masks.",
+      "An internal memory lock scenario, where the VertiPaq database engine refuses to compute explicit measures.",
+      "A schema definition error, where Power Query automatically converts numeric balances into alphanumeric text keys.",
+      "A gateway authentication timeout, where local connection profiles override cloud corporate permissions frameworks."
+    ],
+    "correct_answer": [
+      "Ambiguity in filter propagation paths, where filters flow backward across tables and create unexpected data masks."
+    ]
+  },
+  {
+    "question_number": 119,
+    "question_text": "A company wants to evaluate sales performance across a complex array of historical store re-organizations. They need to analyze data by original store structure and current updated management chains. Which modeling tool supports this dynamic comparative analytics goal?",
+    "options": [
+      "Preserving historical snapshots via a Slowly Changing Dimension framework and linking tracking keys to fact tables.",
+      "Flattening the transaction records into a single continuous wide text file without defining structural joins.",
+      "Deploying a separate cloud gateway server instance for every single historical corporate configuration layout.",
+      "Altering the global options menu to force implicit context transformations across all interactive visual metrics."
+    ],
+    "correct_answer": [
+      "Preserving historical snapshots via a Slowly Changing Dimension framework and linking tracking keys to fact tables."
+    ]
+  },
+  {
+    "question_number": 120,
+    "question_text": "A model includes a FactInventory table tracking daily stock items and a DimProduct table. A developer notices that the product table contains thousands of items that have never been ordered or stocked. How does a star schema handle this scenario when rendering a matrix visual?",
+    "options": [
+      "The dimension table provides the full master list of categories, and rows without matching facts evaluate as blank or zero metrics.",
+      "The visualization engine crashes automatically due to a structural mismatch between primary and foreign key indexes.",
+      "Power BI automatically executes a background purge command to delete non-matching rows from the dimension source.",
+      "The visual forces the report page to display a critical database error indicating that connection mappings are broken."
+    ],
+    "correct_answer": [
+      "The dimension table provides the full master list of categories, and rows without matching facts evaluate as blank or zero metrics."
+    ]
+  },
+  {
+    "question_number": 121,
+    "question_text": "A data architect is reviewing a model where a single relationship handles a link between an Orders table and a Returns table based on an OrderID. Since orders can have multiple returns, the filter cross direction is set to 'Both'. Why is a star schema alternative with a shared dimension table preferred?",
+    "options": [
+      "It establishes a clean, predictable single-direction filter flow from master lookups to distinct fact tracking tables.",
+      "It forces the system memory engine to cache table rows inside the client computer graphics hardware interface parameters.",
+      "It removes the requirement for creating explicit DAX measures when rendering multi-layered financial dashboard cards.",
+      "It enables Power Query to execute automated column renaming logic patterns across relational data structures."
+    ],
+    "correct_answer": [
+      "It establishes a clean, predictable single-direction filter flow from master lookups to distinct fact tracking tables."
+    ]
+  },
+  {
+    "question_number": 122,
+    "question_text": "An engineering model features a DimMachine lookup table and a FactTelemetry table that captures millions of operational temperature logs every minute. What step should a modeler take to minimize memory consumption while preserving hourly trend analysis capability?",
+    "options": [
+      "Aggregate the telemetry facts to the hourly level in the data source or Power Query, adjusting the model granularity.",
+      "Convert the machine lookup table storage configuration properties to DirectQuery to bypass disk boundaries.",
+      "Establish a bidirectional many-to-many link between the machine identifier keys and text string logging files.",
+      "Write a series of row-by-row DAX calculated tables that replicate the transactional data entries inside memory sectors."
+    ],
+    "correct_answer": [
+      "Aggregate the telemetry facts to the hourly level in the data source or Power Query, adjusting the model granularity."
+    ]
+  },
+  {
+    "question_number": 123,
+    "question_text": "A corporate modeler encounters a situation where two dimension tables, DimVendor and DimManufacturer, contain nearly identical columns. To streamline the schema and build a clean Star Schema, what design path should be evaluated?",
+    "options": [
+      "Consolidate or share a unified Partner dimension if business logic aligns, or maintain them as distinct star lookup dimensions.",
+      "Merge both tables into the primary transaction ledger table horizontally to construct a single flat 300-column layout.",
+      "Force a many-to-many bidirectional relationship path directly between the vendor keys and manufacturer codes.",
+      "Convert the column data types into explicit DAX measures that compute text descriptions dynamically during runtimes."
+    ],
+    "correct_answer": [
+      "Consolidate or share a unified Partner dimension if business logic aligns, or maintain them as distinct star lookup dimensions."
+    ]
+  },
+  {
+    "question_number": 124,
+    "question_text": "A user applies a filter to a 'Region' slicer derived from a Geography dimension table. The report contains a card showing total sales values. In a properly designed Star Schema model, how does this filter reach the sales metric?",
+    "options": [
+      "The filter propagates downstream along the single-direction relationship from the dimension table to the fact table.",
+      "The system engine scans the fact table rows first and builds a temporary vertical index to match the region selection.",
+      "The slicer selection executes a background script that rewrites the M transformation expressions inside Power Query.",
+      "The filter context is blocked until a bidirectional relationship path is configured between all dimension tables."
+    ],
+    "correct_answer": [
+      "The filter propagates downstream along the single-direction relationship from the dimension table to the fact table."
+    ]
+  },
+  {
+    "question_number": 125,
+    "question_text": "An analyst is building a dashboard using a star schema. They discover that a column in a dimension table contains numeric values representing unit costs. What is the best practice regarding the modeling configuration of this field?",
+    "options": [
+      "Set its default summarization property to 'Don't Summarize' to prevent accidental summation inside visuals.",
+      "Convert the numeric field into an alphanumeric text string to ensure that the VertiPaq engine compresses it.",
+      "Move the column physically into the fact table using an append transformation step inside the Power Query engine.",
+      "Create a many-to-many bidirectional relationship linking the unit costs directly to user profile security lists."
+    ],
+    "correct_answer": [
+      "Set its default summarization property to 'Don't Summarize' to prevent accidental summation inside visuals."
+    ]
+  },
+  {
+    "question_number": 126,
+    "question_text": "A company changes its regional managers every fiscal year. To evaluate historical sales performance under past managers versus current managers, what dimensional modeling framework must be implemented?",
+    "options": [
+      "A Slowly Changing Dimension structure that generates tracking surrogate keys for each managerial alignment phase.",
+      "A flat denormalized spreadsheet model that overwrites older manager records instantly during data refresh schedules.",
+      "A collection of ten separate isolated cloud data gateway clusters linked to separate user security profiles.",
+      "A bidirectional cross-filtering rule applied across all text attributes inside the relational model view schema."
+    ],
+    "correct_answer": [
+      "A Slowly Changing Dimension structure that generates tracking surrogate keys for each managerial alignment phase."
+    ]
+  },
+  {
+    "question_number": 127,
+    "question_text": "A developer is configuring a model with an active relationship between DimStore and FactInventory. They want to create an inactive relationship between DimStore and FactSales to support specialized logistics analysis. What constraint must be honored?",
+    "options": [
+      "The primary key column types and data formats must match exactly between the lookup and fact tables being connected.",
+      "The model must be converted entirely to DirectQuery mode before a secondary inactive relationship can be defined.",
+      "The developer must delete all explicit DAX measures from the model layout before connecting the secondary path.",
+      "The cross-filter direction parameter for the secondary relationship must be forced to use the Both configuration rule."
+    ],
+    "correct_answer": [
+      "The primary key column types and data formats must match exactly between the lookup and fact tables being connected."
+    ]
+  },
+  {
+    "question_number": 128,
+    "question_text": "A data model features a FactBudget table containing monthly operational estimates and a DimDate dimension table. Why would a developer include a MonthID surrogate key (e.g., 202603) in both tables rather than joining on a generic Month Name string field?",
+    "options": [
+      "To provide a unique, sequential integer key that handles chronological sorting and supports high-performance indexing.",
+      "To allow Power BI Service to process automated data refreshes without requiring a network gateway connection cluster.",
+      "To transform the fact table layout into an explicit DAX measure that automatically handles row context transitions.",
+      "To eliminate the requirement for defining security access filtering criteria within corporate reporting environments."
+    ],
+    "correct_answer": [
+      "To provide a unique, sequential integer key that handles chronological sorting and supports high-performance indexing."
+    ]
+  },
+  {
+    "question_number": 129,
+    "question_text": "During a data modeling review, a consultant recommends removing twenty unused columns from a wide transactional table before loading it into Power BI. What is the technical justification for this recommendation?",
+    "options": [
+      "It maximizes the efficiency of the VertiPaq columnar storage engine, reducing memory consumption and speeding up queries.",
+      "It enables query folding across subsequent append operations executed within the Power Query transformation wizard.",
+      "It allows the model to automatically support bidirectional filtering paths without causing ambiguity in calculations.",
+      "It eliminates the requirement for configuring corporate security access profiles inside the Power BI Service portal."
+    ],
+    "correct_answer": [
+      "It maximizes the efficiency of the VertiPaq columnar storage engine, reducing memory consumption and speeding up queries."
+    ]
+  },
+  {
+    "question_number": 130,
+    "question_text": "A business intelligence team tracks customer support interactions. They have a FactTickets table and want to filter it by individual product details, customer segments, and call center locations. What type of model layout matches this descriptive query goal?",
+    "options": [
+      "A Star Schema, where the FactTickets table sits at the center, linked to independent dimension lookup tables.",
+      "A Snowflake Schema, where every single dimension table is normalized into multiple horizontal granular fragments.",
+      "A parent-child recursive hierarchy, where ticket numbers link back to past service interactions within the same row list.",
+      "A flat transaction file ledger layout that combines all 200 tracking variables into a single uncompressed entity."
+    ],
+    "correct_answer": [
+      "A Star Schema, where the FactTickets table sits at the center, linked to independent dimension lookup tables."
+    ]
+  },
+  {
+    "question_number": 131,
+    "question_text": "A modeler is designing a star schema and notices that the FactSales table contains columns tracking unit prices, quantities, and discount percentages. Why are these numeric fields kept in the fact table rather than lookups?",
+    "options": [
+      "They represent operational metrics that vary with each transactional occurrence and match the granularity of the facts.",
+      "The analytic storage engine blocks the placement of numerical variables within dimension lookup table structures.",
+      "Moving them to lookup dimensions would force the model to implement bidirectional many-to-many connection parameters.",
+      "They are required to trigger automated query folding operations when retrieving data from remote cloud databases."
+    ],
+    "correct_answer": [
+      "They represent operational metrics that vary with each transactional occurrence and match the granularity of the facts."
+    ]
+  },
+  {
+    "question_number": 132,
+    "question_text": "An organization has a data model with a Customer dimension table and a Sales fact table. A requirement emerges to restrict visibility so that sales reps can only see data for customers within their territory. Where should this rule be modeled?",
+    "options": [
+      "By defining a Row-Level Security (RLS) role with a DAX filter expression applied directly to the Customer dimension table.",
+      "By writing an M parameter query script inside the Power Query editor that deletes rows based on local hardware profiles.",
+      "By altering the cross-filter direction parameter of the relationship framework to use the Both configuration rule.",
+      "By publishing the report layout inside ten independent cloud workspace containers distributed across corporate tiers."
+    ],
+    "correct_answer": [
+      "By defining a Row-Level Security (RLS) role with a DAX filter expression applied directly to the Customer dimension table."
+    ]
+  },
+  {
+    "question_number": 133,
+    "question_text": "A developer establishes a relationship between an Accounts table and a Transactions table using an AccountID key. The transaction table records thousands of daily items. What is the natural cardinality direction from lookups to facts?",
+    "options": [
+      "One-to-many (1:*) from the Accounts dimension table pointing toward the Transactions fact table.",
+      "Many-to-one (*:1) from the Accounts dimension table pointing toward the Transactions fact table.",
+      "One-to-one (1:1) configured symmetrically between the primary identifier keys of both relational business assets.",
+      "Many-to-many (*:*) established dynamically using an intermediate matrix data structure index tracking variable."
+    ],
+    "correct_answer": [
+      "One-to-many (1:*) from the Accounts dimension table pointing toward the Transactions fact table."
+    ]
+  },
+  {
+    "question_number": 134,
+    "question_text": "A data model includes a Product dimension table and a Sales fact table. A report author wants to build a visual that shows a count of distinct products that have never achieved any retail sales. How does a star schema architecture facilitate this analysis?",
+    "options": [
+      "The dimension table contains the complete list of products, allowing a DAX measure to count rows where fact records are blank.",
+      "The modeler must configure a bidirectional many-to-many relationship join path to force data evaluation patterns.",
+      "The visualization canvas automatically deletes non-matching rows during interactive filtering phases to protect memory.",
+      "The developer must write a custom M function query inside Power Query that duplicates the dimension data rows on disk."
+    ],
+    "correct_answer": [
+      "The dimension table contains the complete list of products, allowing a DAX measure to count rows where fact records are blank."
+    ]
+  },
+  {
+    "question_number": 135,
+    "question_text": "An enterprise model contains three separate fact tables: FactOnlineSales, FactStoreSales, and FactInventory. To allow users to filter all three tables by date, product, or store location, what design strategy must be executed?",
+    "options": [
+      "Establish single-direction relationships from shared, common dimension tables to each of the three fact tables.",
+      "Connect the three fact tables directly to one another using active bidirectional many-to-many relationship join paths.",
+      "Merge all three fact tables horizontally inside the Power Query transformation engine into a single 500-column layout.",
+      "Convert the storage configuration properties of all data assets to DirectQuery to force external schema parsing."
+    ],
+    "correct_answer": [
+      "Establish single-direction relationships from shared, common dimension tables to each of the three fact tables."
+    ]
+  },
+  {
+    "question_number": 136,
+    "question_text": "A data architect is reviewing a model where a table named DimCustomer contains a column for CustomerID and another column named CustomerBirthDate. Why should the developer avoid joining the birthdate directly to the main calendar table?",
+    "options": [
+      "It would distort filter propagation, as calendar filters should restrict sales transactions, not customer demographics rows.",
+      "The VertiPaq column compression engine blocks relationships between two dimension tables containing text descriptors.",
+      "Power BI Service requires dedicated administrative premium licenses to process joins across separate dimension paths.",
+      "It breaks query folding mechanisms and forces the data engine to execute transformation steps using local memory resources."
+    ],
+    "correct_answer": [
+      "It would distort filter propagation, as calendar filters should restrict sales transactions, not customer demographics rows."
+    ]
+  },
+  {
+    "question_number": 137,
+    "question_text": "A company tracks project milestones. A milestone has an ID, a description, and an execution date, but no numerical amounts or values are captured. What is the correct terminology for this structural business asset?",
+    "options": [
+      "A factless fact table, which records the occurrence of activities or relationships between dimensions without numeric measures.",
+      "A degenerate dimension table, which embeds low-cardinality indicator flags directly inside transaction text fields.",
+      "A slowly changing dimension matrix, which updates database values without modifying underlying entity structures.",
+      "A cross-joined bridge asset, which maps disparate data granularity scales across independent database environments."
+    ],
+    "correct_answer": [
+      "A factless fact table, which records the occurrence of activities or relationships between dimensions without numeric measures."
+    ]
+  },
+  {
+    "question_number": 138,
+    "question_text": "A developer needs to represent a classic corporate organizational reporting layout where an employee reports to a supervisor, who reports to a director. If they want to flatten this structure for simple filtering, what approach is optimal?",
+    "options": [
+      "Use DAX path functions (PATH, PATHITEM) in Power Query or data view to flatten the recursive hierarchy into distinct column levels.",
+      "Configure a complex series of twenty consecutive bidirectional single-cardinality relationship joins in Model view.",
+      "Combine all employee rows into a single continuous vertical text block parameter within the advanced query editor wizard.",
+      "Convert the data model storage engine properties to DirectQuery mode to force server execution at interactive runtimes."
+    ],
+    "correct_answer": [
+      "Use DAX path functions (PATH, PATHITEM) in Power Query or data view to flatten the recursive hierarchy into distinct column levels."
+    ]
+  },
+  {
+    "question_number": 139,
+    "question_text": "An analyst is building a Power BI data model using a massive transaction ledger table. They notice that a text field tracking 'Shipping Method' contains three unique values: 'Air', 'Ground', 'Sea'. How should this field be modeled?",
+    "options": [
+      "Leave it in the table or split it into a small lookup dimension, as its low cardinality allows efficient columnar compression.",
+      "Convert the text characters into precise binary float representations to bypass system storage memory boundaries.",
+      "Write an explicit DAX measure that loops row-by-row through the table to calculate string value text parameters.",
+      "Configure a many-to-many bidirectional relationship that maps the values to a cloud active directory security list."
+    ],
+    "correct_answer": [
+      "Leave it in the table or split it into a small lookup dimension, as its low cardinality allows efficient columnar compression."
+    ]
+  },
+  {
+    "question_number": 140,
+    "question_text": "A data model has a relationship between DimProduct and FactSales. A developer changes the properties of the relationship to enable security filtering in both directions. What operational effect does this configuration change trigger?",
+    "options": [
+      "Row-Level Security filters applied to the fact table will propagate back and restrict the visible rows in the product table.",
+      "The storage engine automatically merges the tables into a hidden physical partition to speed up database indexing rules.",
+      "Power Query parameters are forced to execute full query folding routines when loading values from cloud servers.",
+      "Report viewers are granted permission to download the raw database backup configuration files from the shared workspace."
+    ],
+    "correct_answer": [
+      "Row-Level Security filters applied to the fact table will propagate back and restrict the visible rows in the product table."
+    ]
+  },
+  {
+    "question_number": 141,
+    "question_text": "A financial company needs to combine a FactSales table (granular to the day) with a FactTargets table (granular to the quarter). What is the recommended modeling pattern to allow unified analytics by date attributes?",
+    "options": [
+      "Link both tables to a shared DimDate dimension table that contains both specific calendar days and explicit QuarterID tracking keys.",
+      "Merge both tables into a single horizontal layout inside Power Query using an unrestricted Cartesian cross-join command.",
+      "Establish a direct active bidirectional many-to-many relationship path between the daily date key and quarterly target strings.",
+      "Write a series of row-by-row DAX calculated columns that repeat the quarterly values across every single transaction entry."
+    ],
+    "correct_answer": [
+      "Link both tables to a shared DimDate dimension table that contains both specific calendar days and explicit QuarterID tracking keys."
+    ]
+  },
+  {
+    "question_number": 142,
+    "question_text": "A data model features a DimCustomer table. Over a five-year period, many customers change their residential addresses. The business wants reports to accurately reflect where a customer lived at the exact time an order was placed. What modeling pattern is required?",
+    "options": [
+      "A Slowly Changing Dimension Type 2 structure that tracks address changes by generating separate rows with unique surrogate keys.",
+      "A denormalized customer dimension schema that instantly overwrites historical address attributes during data updates.",
+      "Configuring a bidirectional cross-filtering relationship rule between the customer lookup table and geographic text registries.",
+      "Deploying ten separate on-premises data gateway cluster machines to manage distinct chronological data slice updates."
+    ],
+    "correct_answer": [
+      "A Slowly Changing Dimension Type 2 structure that tracks address changes by generating separate rows with unique surrogate keys."
+    ]
+  },
+  {
+    "question_number": 143,
+    "question_text": "A developer needs to add an index column to a fact table containing 80 million rows to use as an identity tracker. How will this modification impact the performance of the analytical model?",
+    "options": [
+      "It will significantly increase memory footprint and degrade query speed, as high cardinality impedes columnar compression.",
+      "It will automatically optimize visual loading times by forcing the model to sort all other data columns alphabetically.",
+      "It will reduce disk utilization because the engine converts high-cardinality alphanumeric fields into single-bit vectors.",
+      "It will bypass the requirement for establishing user access permissions when publishing the report to Power BI Service."
+    ],
+    "correct_answer": [
+      "It will significantly increase memory footprint and degrade query speed, as high cardinality impedes columnar compression."
+    ]
+  },
+  {
+    "question_number": 144,
+    "question_text": "A business model features a DimSalesperson table and a FactOrders table. A single salesperson can handle multiple orders, but orders are occasionally split among multiple sales staff. What structural asset should resolve this relationship?",
+    "options": [
+      "An intermediate bridge table containing unique key combinations that links with one-to-many paths to both business assets.",
+      "A direct active bidirectional filter configuration parameter established across the primary entity tables in Model view.",
+      "An append operation executed inside the Power Query transformation engine that stacks the data records vertically on disk.",
+      "A custom text string modification step written within the advanced query editor using parameter logic functions."
+    ],
+    "correct_answer": [
+      "An intermediate bridge table containing unique key combinations that links with one-to-many paths to both business assets."
+    ]
+  },
+  {
+    "question_number": 145,
+    "question_text": "A corporate data model contains a shared DimCalendar dimension. The business intelligence developer disables the default 'Auto Date/Time' options globally. What is the architectural benefit of this practice?",
+    "options": [
+      "It prevents the background creation of redundant hidden date tables for every date field, conserving memory and file size.",
+      "It enables the report visuals to execute real-time streaming data synchronization without using an on-premises network gateway.",
+      "It forces the Power Query editor to automatically push all data transformation operations down to the source server engine.",
+      "It removes the requirement for writing explicit DAX metrics when calculating custom corporate financial performance trends."
+    ],
+    "correct_answer": [
+      "It prevents the background creation of redundant hidden date tables for every date field, conserving memory and file size."
+    ]
+  },
+  {
+    "question_number": 146,
+    "question_text": "A data architect flatly rejects a proposed data model layout that contains an active circular relationship path between three tables. What is the fundamental problem with circular relationships in Power BI?",
+    "options": [
+      "They introduce filter ambiguity and loop contradictions, making it impossible for the engine to compute predictable filter contexts.",
+      "They force the storage engine to convert all numeric metrics into alphanumeric text string values during data refreshes.",
+      "They automatically terminate the active cloud data synchronization schedules deployed inside the Power BI Service workspace.",
+      "They prevent report authors from utilizing standard conditional formatting rules within corporate visualization components."
+    ],
+    "correct_answer": [
+      "They introduce filter ambiguity and loop contradictions, making it impossible for the engine to compute predictable filter contexts."
+    ]
+  },
+  {
+    "question_number": 147,
+    "question_text": "A corporate model possesses a FactSales table and a DimCustomer table. A developer notices that the fact table contains thousands of transaction rows where the CustomerID key is blank or null. How will this impact the relationship?",
+    "options": [
+      "The engine maps non-matching rows to a blank row row in the dimension table during visual evaluation to preserve fact integrity.",
+      "The model loading phase fails immediately with a critical schema serialization error when applying transformations.",
+      "Power BI Service permanently locks the workspace repository until the null values are cleared using source SQL scripts.",
+      "The values force all visuals on the report page to display metrics using alphanumeric text type parameters."
+    ],
+    "correct_answer": [
+      "The engine maps non-matching rows to a blank row row in the dimension table during visual evaluation to preserve fact integrity."
+    ]
+  },
+  {
+    "question_number": 148,
+    "question_text": "An organization relies on a star schema where multiple independent fact tables share several common dimension lookup tables. What is this architectural layout called within corporate business intelligence frameworks?",
+    "options": [
+      "A Galaxy Schema or Fact Constellation, which links multiple fact tables to a common set of conformed dimensions.",
+      "A normalized snowflake schema, which separates descriptive characteristics across multi-tiered text attributes.",
+      "A recursive parent-child hierarchy, which maps internal corporate leadership reporting lines across database entities.",
+      "A flat transactional single-table framework, which eliminates data relationship paths to optimize memory usage metrics."
+    ],
+    "correct_answer": [
+      "A Galaxy Schema or Fact Constellation, which links multiple fact tables to a common set of conformed dimensions."
+    ]
+  },
+  {
+    "question_number": 149,
+    "question_text": "A developer needs to write a DAX measure that combines filters from two independent dimension tables. Why is a star schema model structure superior to a single flat table layout for processing this measure?",
+    "options": [
+      "The separated dimensions create smaller, highly compressed column dictionaries that allow faster filtering and context transition.",
+      "Dimension tables allow the data engine to completely bypass row-level security criteria during computation phases.",
+      "A star schema layout enables Power Query to execute full query folding routines across unstructured text documents.",
+      "It eliminates the requirement for referencing explicit measure indicators within corporate visualization elements."
+    ],
+    "correct_answer": [
+      "The separated dimensions create smaller, highly compressed column dictionaries that allow faster filtering and context transition."
+    ]
+  },
+  {
+    "question_number": 150,
+    "question_text": "A company wants to distribute reports where sales staff can review active deals, but management can evaluate the entire historical funnel pipeline. What data modeling practice supports both analytical goals efficiently?",
+    "options": [
+      "Building a conformed star schema with historical tracking via SCD dimensions and clear single-direction relationship flows.",
+      "Creating ten identical copies of the database views and assigning them to independent on-premises network servers.",
+      "Altering the relationship properties to force bidirectional cross-filtering parameters across all text attributes.",
+      "Flattening all fields into a single continuous vertical text string field inside the Power Query editor workspace."
+    ],
+    "correct_answer": [
+      "Building a conformed star schema with historical tracking via SCD dimensions and clear single-direction relationship flows."
+    ]
+  },
+  {
+    "question_number": 151,
+    "question_text": "A data model contains a DimProduct table and a FactSales table. The product table features a unique surrogate integer key ProductKey. Why is a surrogate integer key preferred over a natural text key like Product SKU for establishing relationships?",
+    "options": [
+      "Integer values are processed faster and compress better than wide text strings, optimizing data join performance.",
+      "Surrogate keys allow report visuals to automatically bypass the filtering constraints enforced by Row-Level Security.",
+      "Integer identifiers force the Power Query transformation engine to maintain query folding across all custom steps.",
+      "They eliminate the requirement for writing explicit DAX metrics when calculating multi-layered corporate dashboard cards."
+    ],
+    "correct_answer": [
+      "Integer values are processed faster and compress better than wide text strings, optimizing data join performance."
+    ]
+  },
+  {
+    "question_number": 152,
+    "question_text": "A business user adds a slicer for 'Product Color' to a report page. A matrix visual displays total sales values. In a star schema with a single-direction relationship from DimProduct to FactSales, what happens when a color is selected?",
+    "options": [
+      "The product table is filtered, and this filter context propagates down the relationship to restrict rows in the sales table.",
+      "The sales table rows are evaluated first, and non-matching records are deleted from local hardware cache memory.",
+      "The system engine forces Power Query to execute a live database refresh cycle against the source relational servers.",
+      "The filter context is blocked from propagating until the cross-filter direction parameter is switched to Both."
+    ],
+    "correct_answer": [
+      "The product table is filtered, and this filter context propagates down the relationship to restrict rows in the sales table."
+    ]
+  },
+  {
+    "question_number": 153,
+    "question_text": "A developer is configuring a model and encounters a snowflake structure where DimProduct links to DimSubcategory, which links to DimCategory. To improve report query performance, what transformation should be considered?",
+    "options": [
+      "Flatten the subcategory and category attributes into the DimProduct table to create a consolidated Star Schema dimension.",
+      "Set the cross-filter direction parameter to Both across all existing relationships inside the snowflake schema path.",
+      "Convert the storage mode of the subcategory and category tables to DirectQuery to force runtime database execution.",
+      "Append the rows of all three tables vertically into a single continuous data tracking log inside Power Query Editor."
+    ],
+    "correct_answer": [
+      "Flatten the subcategory and category attributes into the DimProduct table to create a consolidated Star Schema dimension."
+    ]
+  },
+  {
+    "question_number": 154,
+    "question_text": "An institutional dataset tracks patient hospital visits. A patient can have multiple primary diagnoses, and a single diagnosis applies to thousands of patients. How should this relationship layout be modeled in Power BI?",
+    "options": [
+      "Use an intermediate bridge fact table linking patient visits to a standardized conformed Diagnosis dimension table.",
+      "Establish a direct active bidirectional relationship path between the patient profile values and text string logs.",
+      "Merge the diagnosis codes horizontally into a single continuous wide text file string format inside the data load phase.",
+      "Write a calculated column using complex nested DAX time intelligence functions to repeat values across every record row."
+    ],
+    "correct_answer": [
+      "Use an intermediate bridge fact table linking patient visits to a standardized conformed Diagnosis dimension table."
+    ]
+  },
+  {
+    "question_number": 155,
+    "question_text": "A corporate data model contains a FactSales table and a DimDate dimension table. A developer notices that a card visual displaying 'Total Sales' shows blank characters when a specific holiday is selected in a slicer. What does this signify?",
+    "options": [
+      "The FactSales table contains zero transaction records that occurred on that specific calendar holiday date entry.",
+      "The data relationship tracking connections between the two tables have been corrupted by an internal system memory leak.",
+      "The Date dimension table contains a missing sequence of calendar days that breaks the time intelligence functionality.",
+      "The DAX calculation engine requires an explicit context transition wrapper to compute statistics over holiday rows."
+    ],
+    "correct_answer": [
+      "The FactSales table contains zero transaction records that occurred on that specific calendar holiday date entry."
+    ]
+  },
+  {
+    "question_number": 156,
+    "question_text": "A company requires their sales dashboard to support analytical tracking by both country of manufacture and country of destination. The model features a shared DimGeography dimension. What is the recommended modeling design pattern?",
+    "options": [
+      "Deploy role-playing dimensions by importing the geography table twice as independent lookup assets with distinct names.",
+      "Configure active bidirectional many-to-many relationship join paths across both country key attributes simultaneously.",
+      "Merge the geographic attributes directly into the core transactional fact ledger records as wide text strings.",
+      "Write an explicit DAX measure that loops row-by-row through the table to substitute country codes during visual runtimes."
+    ],
+    "correct_answer": [
+      "Deploy role-playing dimensions by importing the geography table twice as independent lookup assets with distinct names."
+    ]
+  },
+  {
+    "question_number": 157,
+    "question_text": "A data architect is designing a corporate reporting database schema. They define a junk dimension table to hold miscellaneous business indicators. What type of attribute column belongs inside this specific dimension classification?",
+    "options": [
+      "Low-cardinality flags and operational indicator text fields like 'IsActive' or 'ApprovalStatus'.",
+      "High-cardinality alphanumeric transactional anchors like invoice serial sequences or individual ticket identities.",
+      "Chronological sorting keys and holiday logical parameters used to drive time intelligence calculation flows.",
+      "Numerical performance metrics and fractional variance calculations tracking actual sales balances over time."
+    ],
+    "correct_answer": [
+      "Low-cardinality flags and operational indicator text fields like 'IsActive' or 'ApprovalStatus'."
+    ]
+  },
+  {
+    "question_number": 158,
+    "question_text": "A data model contains a FactInventory table tracking stock levels and a DimStore table. The relationship is configured as many-to-one (*:1) from inventory to store. What happens if a store is deleted from the source database but inventory lines remain?",
+    "options": [
+      "Power BI maps those orphan inventory records to a blank row in the store dimension when visuals are rendered.",
+      "The entire data model file is automatically corrupted and throws a critical file system loading exception.",
+      "The local desktop authoring client deletes the matching relationship join path lines from the model view canvas layout.",
+      "The system engine forces all measures tracking inventory balances to return text string values instead of integers."
+    ],
+    "correct_answer": [
+      "Power BI maps those orphan inventory records to a blank row in the store dimension when visuals are rendered."
+    ]
+  },
+  {
+    "question_number": 159,
+    "question_text": "An analyst is evaluating a data model where a text column tracks transaction remarks (e.g., 'Customer called to request early delivery on afternoon container'). Why should this field be removed from the fact table in an Import model?",
+    "options": [
+      "High-cardinality text strings cannot be compressed efficiently by the columnar storage engine, bloated file sizes.",
+      "The presence of long text strings prevents the report visuals from utilizing standard single-direction relationships.",
+      "Leaving text fields inside a fact table automatically blocks the deployment of cloud-based row-level security roles.",
+      "The engine forces Power Query to execute full data refreshes using local hardware memory resources instead of servers."
+    ],
+    "correct_answer": [
+      "High-cardinality text strings cannot be compressed efficiently by the columnar storage engine, bloated file sizes."
+    ]
+  },
+  {
+    "question_number": 160,
+    "question_text": "A data model features an active relationship between DimCustomer and FactSales. A business requirement states that filtering by a product attribute must restrict the visible rows in a customer lookup grid visual. What configuration is needed?",
+    "options": [
+      "Set the cross-filter direction parameter of the relationship between DimCustomer and FactSales to Both.",
+      "Convert the storage mode of the DimCustomer table to DirectQuery while maintaining FactSales on Import settings.",
+      "Append the customer dimension records directly to the bottom of the transaction ledger rows inside Power Query.",
+      "Create a disconnected copy of the product table and link it using an explicit DAX calculated table formula wrapper."
+    ],
+    "correct_answer": [
+      "Set the cross-filter direction parameter of the relationship between DimCustomer and FactSales to Both."
+    ]
+  },
+  {
+    "question_number": 161,
+    "question_text": "A financial company needs to calculate year-over-year revenue variance using a star schema. Why is it vital that the DimDate dimension table contains continuous, unbroken date ranges even for weekend days with zero retail sales?",
+    "options": [
+      "DAX built-in time intelligence functions require an unbroken calendar sequence to evaluate date offsets accurately.",
+      "The VertiPaq column compression engine freezes and throws an indexing exception if dates contain physical gaps.",
+      "Power BI Service blocks automated cloud data refreshes if any date column lacks recorded transactions on disk.",
+      "Continuous ranges eliminate the requirement for establishing primary and foreign key joins within Model view."
+    ],
+    "correct_answer": [
+      "DAX built-in time intelligence functions require an unbroken calendar sequence to evaluate date offsets accurately."
+    ]
+  },
+  {
+    "question_number": 162,
+    "question_text": "A data model includes two massive tables with a many-to-many relationship based on a shared account code. Performance testing reveals that interactive report visuals load slowly. What is the recommended modeling fix?",
+    "options": [
+      "Create a distinct bridge dimension table holding unique account codes and link it with one-to-many paths to both fact tables.",
+      "Switch the data storage mode parameters of both tables to DirectQuery to force execution at visual runtime.",
+      "Change the relationship cross-filter direction setting to Both and apply a static security filter configuration.",
+      "Merge the two data structures horizontally into a single flat file layout inside the Power Query Editor workspace."
+    ],
+    "correct_answer": [
+      "Create a distinct bridge dimension table holding unique account codes and link it with one-to-many paths to both fact tables."
+    ]
+  },
+  {
+    "question_number": 163,
+    "question_text": "A developer is configuring an enterprise model with multiple fact tables. They want to ensure that all dimensions share consistent names and keys across the entire semantic framework. What concept describes these shared assets?",
+    "options": [
+      "Conformed dimensions, which ensure consistent data contexts and filtering behaviors across multiple business fact tables.",
+      "Degenerate dimensions, which provide unique alphanumeric reference identifiers directly inside transaction data rows.",
+      "Junk dimensions, which merge low-cardinality operational text indicators into a single horizontal tracking layout.",
+      "Role-playing dimensions, which substitute distinct chronological variables during explicit DAX context transitions."
+    ],
+    "correct_answer": [
+      "Conformed dimensions, which ensure consistent data contexts and filtering behaviors across multiple business fact tables."
+    ]
+  },
+  {
+    "question_number": 164,
+    "question_text": "A retail dataset features a FactSales table and a DimProduct table. A developer notices that the product table contains an explicit hierarchy configuration for Category > Subcategory > Product Name. What is the benefit of defining this structure in the model?",
+    "options": [
+      "It simplifies report design by allowing users to navigate between different granularities using built-in drill actions.",
+      "It allows the storage engine to automatically bypass the filtering restrictions enforced by Row-Level Security.",
+      "It forces the Power Query transformation wizard to maintain full query folding steps across cloud server databases.",
+      "It eliminates the requirement for creating single-direction relationship join path vectors within Model view."
+    ],
+    "correct_answer": [
+      "It simplifies report design by allowing users to navigate between different granularities using built-in drill actions."
+    ]
+  },
+  {
+    "question_number": 165,
+    "question_text": "A corporate workspace administrator wants to evaluate the complexity of a newly deployed semantic data model. They note that the diagram exhibits a high volume of bidirectional filters and snowflake tables. What optimization advice is appropriate?",
+    "options": [
+      "Convert the layout into a clean Star Schema configuration using single-direction filters to enhance stability and performance.",
+      "Increase the total volume of calculated columns to distribute the data processing load across memory partitions.",
+      "Deploy independent network data gateway machines for every single dimension table to separate download traffic lines.",
+      "Deactivate the automated cloud synchronization schedules to prevent the engine from re-indexing data profiles."
+    ],
+    "correct_answer": [
+      "Convert the layout into a clean Star Schema configuration using single-direction filters to enhance stability and performance."
+    ]
+  },
+  {
+    "question_number": 166,
+    "question_text": "A data model features a relationship between a DimEmployee lookup table and a FactTimesheets table based on an EmployeeID key. In the employee dimension, the key column contains duplicate values because records track historical title updates. What modeling issue exists?",
+    "options": [
+      "The dimension key must be unique to support a clean one-to-many link; duplicate keys cause configuration or mapping errors.",
+      "The storage engine requires the lookup key to use an alphanumeric string format instead of an integer sequence field.",
+      "Leaving duplicate keys inside a lookup dimension forces Power Query to disable query folding across data tables.",
+      "The relationship requires the cross-filter direction parameter to be locked on the Both configuration rule."
+    ],
+    "correct_answer": [
+      "The dimension key must be unique to support a clean one-to-many link; duplicate keys cause configuration or mapping errors."
+    ]
+  },
+  {
+    "question_number": 167,
+    "question_text": "An analyst needs to build a report combining a FactSales table (daily tracking) and a FactMarketShare table (yearly figures). What is the recommended strategy to align these two metrics by time variables inside a star schema?",
+    "options": [
+      "Link both tables to a shared DimDate dimension table that includes a YearID surrogate tracking key column field.",
+      "Merge both tables into a single horizontal matrix format inside Power Query using an unrestricted cross-join routine.",
+      "Establish an active bidirectional many-to-many relationship path between the transaction day keys and market share strings.",
+      "Write a series of row-by-row DAX calculated tables that repeat the yearly percentages across every individual sales log row."
+    ],
+    "correct_answer": [
+      "Link both tables to a shared DimDate dimension table that includes a YearID surrogate tracking key column field."
+    ]
+  },
+  {
+    "question_number": 168,
+    "question_text": "A corporate data model contains a shared DimStore dimension. The business changes the product managers assigned to stores every quarter and wants report users to evaluate sales by historical managers. What modeling practice applies?",
+    "options": [
+      "Implement a Slowly Changing Dimension framework that captures structural profile adjustments using distinct tracking keys.",
+      "Flatten the store attributes directly into the core transactional fact ledger rows as wide alphanumeric text strings.",
+      "Configure active bidirectional relationship paths across all text fields inside the relational model view schema.",
+      "Deploy separate on-premises network gateway machine instances to manage distinct chronological data updates."
+    ],
+    "correct_answer": [
+      "Implement a Slowly Changing Dimension framework that captures structural profile adjustments using distinct tracking keys."
+    ]
+  },
+  {
+    "question_number": 169,
+    "question_text": "A data model has an active relationship between DimBranch and FactLoans. A developer attempts to establish a second active relationship between different columns in the same tables, but it displays as a dashed line. What engine mechanic dictates this?",
+    "options": [
+      "Power BI permits only one active relationship path between any two tables at a time to prevent filter propagation ambiguity.",
+      "The column data types chosen for the secondary relationship join path do not match the primary identifier rules.",
+      "The destination fact table contains duplicate text values that conflict with the primary index parameters of the lookup asset.",
+      "The data model storage mode configuration must be converted to DirectQuery before secondary joins can be activated."
+    ],
+    "correct_answer": [
+      "Power BI permits only one active relationship path between any two tables at a time to prevent filter propagation ambiguity."
+    ]
+  },
+  {
+    "question_number": 170,
+    "question_text": "A report page contains a map visual tracking global branch locations. The database view contains location names like 'Washington' and 'Franklin', but points are plotting incorrectly on the map visual. How should the developer resolve this via modeling configurations?",
+    "options": [
+      "Select the column field, go to Column Tools, and assign the correct geographical metadata classification to Data Category.",
+      "Convert the location name strings into uppercase alphanumeric representations within the Power Query editor workspace.",
+      "Establish an active bidirectional relationship path between the branch table and primary transactional ledger view schemas.",
+      "Replace the map visual container element with a standard horizontal stacked bar chart component layout configuration."
+    ],
+    "correct_answer": [
+      "Select the column field, go to Column Tools, and assign the correct geographical metadata classification to Data Category."
+    ]
+  },
+  {
+    "question_number": 171,
+    "question_text": "An engineering model tracks hardware component failures. A table logs when a part undergoes servicing, recording MachineID, ComponentID, and Date, but contains no numeric cost values. What classification fits this table structure?",
+    "options": [
+      "A factless fact table, which registers the occurrence of relationship conditions across dimensions without tracking values.",
+      "A degenerate dimension table, which maps low-cardinality text tracking flags across structural database records.",
+      "A parent-child administrative matrix, which charts internal leadership chains across organizational layers.",
+      "A cross-joined bridge asset, which handles mismatched numerical scales when configuring corporate dimension fields."
+    ],
+    "correct_answer": [
+      "A factless fact table, which registers the occurrence of relationship conditions across dimensions without tracking values."
+    ]
+  },
+  {
+    "question_number": 172,
+    "question_text": "A business model features a DimVendor table and a FactPurchases table. A developer wants to calculate the exact percentage contribution of each vendor's cost relative to total procurement. Which DAX calculation pattern relies on clean star schema modeling to work efficiently?",
+    "options": [
+      "DIVIDE( [Total Purchases], CALCULATE( [Total Purchases], ALL( DimVendor ) ) ) to divide local context by the global lookup baseline.",
+      "SUMX( RELATEDTABLE( FactPurchases ), [Total Purchases] ) to execute a row-by-row iteration over active transaction records.",
+      "TOTALYTD( [Total Purchases], DimDate[DateKey] ) to aggregate monetary values chronologically across the calendar tracking path.",
+      "LOOKUPVALUE( DimVendor[Name], DimVendor[ID], MAX(FactPurchases[VendorID]) ) to search for scalar descriptive attributes on disk."
+    ],
+    "correct_answer": [
+      "DIVIDE( [Total Purchases], CALCULATE( [Total Purchases], ALL( DimVendor ) ) ) to divide local context by the global lookup baseline."
+    ]
+  },
+  {
+    "question_number": 173,
+    "question_text": "A data architect is designing a star schema and decides to split a single combined data stream into separate fact and dimension entities. Why is this structural separation considered a best practice for model scalability?",
+    "options": [
+      "It separates descriptive characteristics from numerical metrics, optimizing dictionary sizes and accelerating visual data queries.",
+      "It allows the published report to automatically bypass security configuration rules defined inside Row-Level Security parameters.",
+      "It forces Power Query to execute full query folding routines across unstructured data repositories and online web portals.",
+      "It eliminates the requirement for writing explicit DAX measures when rendering multi-layered corporate dashboard metrics."
+    ],
+    "correct_answer": [
+      "It separates descriptive characteristics from numerical metrics, optimizing dictionary sizes and accelerating visual data queries."
+    ]
+  },
+  {
+    "question_number": 174,
+    "question_text": "A corporate model possesses a FactSales table and a DimCustomer dimension table. A requirement states that filtering a visual by a customer attribute must restrict the visible items inside a distinct product slicer visual. What configuration path supports this interaction?",
+    "options": [
+      "Set the cross-filter direction parameter of the relationships between the fact and dimension tables to Both.",
+      "Convert the data storage mode settings of the customer table to DirectQuery while maintaining sales on Import settings rules.",
+      "Append the customer dimension records directly to the bottom of the transaction ledger data rows inside Power Query Editor.",
+      "Create an independent copy of the product table and link it using an explicit DAX calculated table script statement."
+    ],
+    "correct_answer": [
+      "Set the cross-filter direction parameter of the relationships between the fact and dimension tables to Both."
+    ]
+  },
+  {
+    "question_number": 175,
+    "question_text": "A data model features a DimProduct dimension table. A developer notices that a text column tracking 'Discontinued Flag' contains only 'Yes' or 'No' strings. How does a star schema handle this low-cardinality column within memory storage limits?",
+    "options": [
+      "The column is highly compressed using bit-string or dictionary encoding by the analytical engine, consuming minimal memory.",
+      "The system engine forces the text strings to generate separate structural partitions for every distinct cell row.",
+      "Power BI automatically executes a background database normalization step to convert the fields into measures.",
+      "The visual canvas requires the developer to split the flags across multiple independent tables to preserve memory space."
+    ],
+    "correct_answer": [
+      "The column is highly compressed using bit-string or dictionary encoding by the analytical engine, consuming minimal memory."
+    ]
+  },
+  {
+    "question_number": 176,
+    "question_text": "A company wants to build an analytical model to track corporate assets. They need to join a FactLeases table (granular to the day) with a FactDepreciation table (granular to the year). What is the standard data modeling path to allow shared filtering?",
+    "options": [
+      "Link both tables to a common DimDate dimension table using matching surrogate time tracking key columns.",
+      "Merge both tables into a single flat text ledger layout inside Power Query using an outer join sequence.",
+      "Establish active bidirectional many-to-many relationship join paths across both chronological attributes in Model view.",
+      "Write a calculated column in the Depreciation table that duplicates the yearly value across every calendar day field."
+    ],
+    "correct_answer": [
+      "Link both tables to a common DimDate dimension table using matching surrogate time tracking key columns."
+    ]
+  },
+  {
+    "question_number": 177,
+    "question_text": "A data architect is evaluating a data model where a table named DimCustomer contains a column for CustomerID and another column named CustomerCreditLimit. What is the best practice regarding the visual summary settings of the credit limit field?",
+    "options": [
+      "Set its default summarization configuration to 'Don't Summarize' to prevent accidental summation inside dashboard visual elements.",
+      "Convert the numerical values into alphanumeric text characters to optimize column compression metrics inside the database engine.",
+      "Move the column physically into the fact table using a merge transformation step inside the Power Query engine workspace.",
+      "Create a many-to-many bidirectional relationship linking the credit balances directly to cloud user active security profiles."
+    ],
+    "correct_answer": [
+      "Set its default summarization configuration to 'Don't Summarize' to prevent accidental summation inside dashboard visual elements."
+    ]
+  },
+  {
+    "question_number": 178,
+    "question_text": "A business intelligence model features a FactSales table and a DimDate dimension table. A developer notices that a card visual displaying 'Year-to-Date Sales' returns incorrect numbers during leap years. What is the most likely data model issue?",
+    "options": [
+      "The DimDate dimension table is missing calendar days or contains gaps that break chronological evaluation patterns.",
+      "The relationship join key columns between the two tables utilize an integer data format instead of alphanumeric text characters.",
+      "The report layout canvas has exceeded its maximum visual rendering budget allocation for tracking chronological metrics.",
+      "The DAX measure is utilizing an explicit context transition wrapper that deletes records from system memory partitions."
+    ],
+    "correct_answer": [
+      "The DimDate dimension table is missing calendar days or contains gaps that break chronological evaluation patterns."
+    ]
+  },
+  {
+    "question_number": 179,
+    "question_text": "A corporate dataset features a FactSales table with two foreign keys: CreationDate and FulfillmentDate. Both columns reference the DimDate dimension table. What modeling architecture should the developer configure for precise reporting?",
+    "options": [
+      "Configure role-playing dimensions by creating two independent views of the date dimension table with unique names.",
+      "Establish active bidirectional many-to-many relationship join paths across both date attributes simultaneously.",
+      "Merge the CreationDate and FulfillmentDate columns into a single combined field inside Power Query before data load phases.",
+      "Force the model to parse values by importing a separate, disconnected text document containing holiday records."
+    ],
+    "correct_answer": [
+      "Configure role-playing dimensions by creating two independent views of the date dimension table with unique names."
+    ]
+  },
+  {
+    "question_number": 180,
+    "question_text": "A data model features a relationship between a DimProduct lookup table and a FactOrders fact table. In the product dimension, the key column contains duplicate values because records track retail packaging variations. What issue exists?",
+    "options": [
+      "The primary key column in a lookup dimension must feature unique values to support a valid one-to-many data relationship join path.",
+      "The storage engine requires the lookup identifier to use an alphanumeric string format instead of an integer sequence field.",
+      "Leaving duplicate values inside a lookup table forces Power Query to disable query folding across all other tables.",
+      "The relationship requires the cross-filter direction parameter to be locked on the Both configuration rule."
+    ],
+    "correct_answer": [
+      "The primary key column in a lookup dimension must feature unique values to support a valid one-to-many data relationship join path."
+    ]
+  },
+  {
+    "question_number": 181,
+    "question_text": "An enterprise model contains a single flat table with 200 columns combining transaction details, store descriptions, and manager attributes. Why would an experienced modeler split this single table into a classic Star Schema configuration?",
+    "options": [
+      "To separate facts from dimensions, which maximizes columnar compression and optimizes query evaluation response times.",
+      "To force the report visuals to execute automated forecasting transformations using internal cognitive features.",
+      "To eliminate the need for deploying an on-premises network gateway machine for automated cloud dataset synchronization.",
+      "To guarantee that query folding remains active across all data tables during complex Power Query steps."
+    ],
+    "correct_answer": [
+      "To separate facts from dimensions, which maximizes columnar compression and optimizes query evaluation response times."
+    ]
+  },
+  {
+    "question_number": 182,
+    "question_text": "A developer establishes a relationship between an Inventory table and a Products table in Model view. Later, they attempt to create a secondary relationship between different columns in the same tables, but it defaults to inactive. Why?",
+    "options": [
+      "Power BI permits only one active relationship path between any two tables at a time to prevent filter propagation ambiguity.",
+      "The data types of the columns chosen for the secondary relationship join path do not match the primary identifier formats.",
+      "The destination table contains duplicate text values that conflict with the primary primary key definitions of the first join.",
+      "The data model storage configuration must be converted to DirectQuery before secondary joins can be activated."
+    ],
+    "correct_answer": [
+      "Power BI permits only one active relationship path between any two tables at a time to prevent filter propagation ambiguity."
+    ]
+  },
+  {
+    "question_number": 183,
+    "question_text": "A report page contains a matrix visual and a pie chart. When a segment of the pie chart is clicked, the matrix visual completely removes rows that do not match the selection. What interaction mode is currently active?",
+    "options": [
+      "Cross-filtering, which filters out non-matching rows entirely from the visual computation engine boundaries.",
+      "Cross-highlighting, which visually isolates the filtered proportion while maintaining the total structure framework layout.",
+      "Drill-down exploration, which navigates to a lower level of hierarchical category values in the timeline sequence.",
+      "Row-Level Security enforcement, which restricts visibility based on authenticated corporate email profile definitions."
+    ],
+    "correct_answer": [
+      "Cross-filtering, which filters out non-matching rows entirely from the visual computation engine boundaries."
+    ]
+  },
+  {
+    "question_number": 184,
+    "question_text": "An organization wants to build an automated data alert framework within Power BI Service. What data modeling characteristic is required to ensure that data alerts operate reliably over time?",
+    "options": [
+      "A clean dimensional structure with numeric metrics stored inside the fact table, aggregated via explicit DAX measures.",
+      "A flat spreadsheet schema containing a single continuous wide text field string format tracking alphanumeric parameters.",
+      "Establishing active bidirectional relationships across all columns to force data evaluation patterns in memory.",
+      "Converting all data model elements to DirectQuery mode to force server execution at interactive runtimes."
+    ],
+    "correct_answer": [
+      "A clean dimensional structure with numeric metrics stored inside the fact table, aggregated via explicit DAX measures."
+    ]
+  },
+  {
+    "question_number": 185,
+    "question_text": "A corporate data model contains a shared DimStore dimension. The business changes the product managers assigned to stores every quarter and wants report users to evaluate sales by historical managers. What modeling practice applies?",
+    "options": [
+      "Implement a Slowly Changing Dimension framework that captures structural profile adjustments using distinct tracking keys.",
+      "Flatten the store attributes directly into the core transactional fact ledger rows as wide alphanumeric text strings.",
+      "Configure active bidirectional relationship paths across all text fields inside the relational model view schema.",
+      "Deploy separate on-premises network gateway machine instances to manage distinct chronological data updates."
+    ],
+    "correct_answer": [
+      "Implement a Slowly Changing Dimension framework that captures structural profile adjustments using distinct tracking keys."
+    ]
+  },
+  {
+    "question_number": 186,
+    "question_text": "A developer needs to write a DAX measure that calculates the rolling average of sales over a 12-month window. Which modeling component is essential to ensure this time intelligence calculation evaluates accurately?",
+    "options": [
+      "A dedicated Date dimension table containing continuous, unbroken calendar ranges with zero physical date gaps.",
+      "A bidirectional filter context established across the primary transaction ledger views in the model schema canvas.",
+      "Altering the column formatting parameters inside Column Tools to force all numeric inputs into alphanumeric text.",
+      "Deploying a dedicated data gateway cluster infrastructure to process automated cloud synchronization schedules rules."
+    ],
+    "correct_answer": [
+      "A dedicated Date dimension table containing continuous, unbroken calendar ranges with zero physical date gaps."
+    ]
+  },
+  {
+    "question_number": 187,
+    "question_text": "A business user notices that a card visual displaying 'Total Orders' updates when clicking a specific store location slicer, but a card visual showing 'Corporate Revenue Target' does not. What does this indicate about the underlying model?",
+    "options": [
+      "The Store Location dimension table lacks a valid relationship path to filter the table containing the corporate targets.",
+      "The Corporate Revenue Target visual container is currently suffering from an internal system memory cache failure.",
+      "The relationship between the Store Location table and the Target table has been configured with an active bidirectional filter.",
+      "The Target table was imported into the model using DirectQuery mode instead of standard high-performance Import mode."
+    ],
+    "correct_answer": [
+      "The Store Location dimension table lacks a valid relationship path to filter the table containing the corporate targets."
+    ]
+  },
+  {
+    "question_number": 188,
+    "question_text": "An organization has a data model with a Customer dimension table and a Sales fact table. A requirement emerges to restrict visibility so that sales reps can only see data for customers within their territory. Where should this rule be modeled?",
+    "options": [
+      "By defining a Row-Level Security (RLS) role with a DAX filter expression applied directly to the Customer dimension table.",
+      "By writing an M parameter query script inside the Power Query editor that deletes rows based on local hardware profiles.",
+      "By altering the cross-filter direction parameter of the relationship framework to use the Both configuration rule.",
+      "By publishing the report layout inside ten independent cloud workspace containers distributed across corporate tiers."
+    ],
+    "correct_answer": [
+      "By defining a Row-Level Security (RLS) role with a DAX filter expression applied directly to the Customer dimension table."
+    ]
+  },
+  {
+    "question_number": 189,
+    "question_text": "A data model features an active relationship between a DimEmployee lookup table and a FactSales fact table. If a developer switches the cross-filter direction from Single to Both, what architectural behavior is enabled within the model?",
+    "options": [
+      "Filters applied to the FactSales table will automatically propagate up and restrict rows in the DimEmployee table.",
+      "The underlying storage engine merges the two tables into a single physical entity inside system memory partitions.",
+      "Power Query will automatically push all data transformation steps down to the hosting source relational database server.",
+      "Report viewers are granted permission to modify underlying transaction data directly from the report visuals canvas."
+    ],
+    "correct_answer": [
+      "Filters applied to the FactSales table will automatically propagate up and restrict rows in the DimEmployee table."
+    ]
+  },
+  {
+    "question_number": 190,
+    "question_text": "An institutional data model tracks university department courses. A single professor can teach multiple courses, and courses can be shared among multiple professors. Which data modeling strategy resolves this many-to-many relationship effectively?",
+    "options": [
+      "Introduce an intermediate bridge fact table that establishes one-to-many connections to both dimension tables.",
+      "Set the relationship cross-filter direction parameter to Both directly between the Professor and Course tables.",
+      "Append the rows of the Course table to the bottom of the Professor table rows inside the Power Query transformation engine.",
+      "Convert the storage mode of both tables to DirectQuery to force database execution at interactive visual runtimes."
+    ],
+    "correct_answer": [
+      "Introduce an intermediate bridge fact table that establishes one-to-many connections to both dimension tables."
+    ]
+  },
+  {
+    "question_number": 191,
+    "question_text": "A retail model possesses a transaction table with five independent text flags tracking 'Payment Method', 'Delivery Type', 'Order Source', 'Wrap Flag', and 'Status'. Why should a data modeler consolidate these attributes into a single Junk Dimension?",
+    "options": [
+      "To reduce the total number of physical tables in the model, optimizing column compression and simplifying usability.",
+      "To allow the report visuals to execute automated forecasting transformations using internal cognitive features.",
+      "To eliminate the need for deploying an on-premises network gateway machine for automated cloud data sync actions.",
+      "To guarantee that query folding remains active across all data tables during complex Power Query steps."
+    ],
+    "correct_answer": [
+      "To reduce the total number of physical tables in the model, optimizing column compression and simplifying usability."
+    ]
+  },
+  {
+    "question_number": 192,
+    "question_text": "A manufacturing data model must track factory asset assignments. A table logs when an engineer checks out a tool, recording EmployeeID, ToolID, and Date, but it features no numerical transaction metrics. What is this type of schema asset called?",
+    "options": [
+      "A factless fact table, which records the relationship or occurrence of activities between multiple dimensions.",
+      "A degenerate dimension table, which maps transactional text indicators across structural database schemas.",
+      "A parent-child structural matrix, which maps administrative employee reporting chains across corporate boundaries.",
+      "A bridge table, which resolves mismatched numeric scale values when configuring disparate database dimensions."
+    ],
+    "correct_answer": [
+      "A factless fact table, which records the relationship or occurrence of activities between multiple dimensions."
+    ]
+  },
+  {
+    "question_number": 193,
+    "question_text": "An HR data analyst tracks employee changes over time. When an employee switches departments, the historical database preserves the old record and inserts a new row with an updated department key and a new validity date range. What modeling concept does this demonstrate?",
+    "options": [
+      "A Slowly Changing Dimension (SCD) Type 2, which captures and preserves historical profile changes over time.",
+      "A Slowly Changing Dimension (SCD) Type 1, which overwrites original historical attributes with current data entries.",
+      "A rapid dimension mutation phase, which updates database indexes without modifying underlying field values.",
+      "A structural context translation layer, which forces visual elements to compute statistics using row parameters."
+    ],
+    "correct_answer": [
+      "A Slowly Changing Dimension (SCD) Type 2, which captures and preserves historical profile changes over time."
+    ]
+  },
+  {
+    "question_number": 194,
+    "question_text": "A corporate dataset features an employee table containing an EmployeeID column and a ManagerID column that references other employee records within the same field list. What type of dimension hierarchy layout does this describe?",
+    "options": [
+      "A parent-child hierarchy, which represents a recursive relationship where an entity links back to an instance of itself.",
+      "A snowflake hierarchy, which normalizes descriptive characteristics across multiple independent low-cardinality entities.",
+      "A junk dimension framework, which merges unrelated corporate tracking variables into a single consolidated layout.",
+      "A star schema framework, which isolates numerical facts from administrative indicators using single-direction filters."
+    ],
+    "correct_answer": [
+      "A parent-child hierarchy, which represents a recursive relationship where an entity links back to an instance of itself."
+    ]
+  },
+  {
+    "question_number": 195,
+    "question_text": "While auditing a model's file size, a developer notices that a Date column containing both dates and precise execution times (e.g., 2026-03-12 08:14:22) is consuming massive amounts of memory. What engine mechanic explains this behavior?",
+    "options": [
+      "High cardinality limits the compression efficiency of the VertiPaq engine, which relies on dictionary and value encoding.",
+      "The local system automatically duplicates the timestamp strings across every visualization layer component layout.",
+      "Power BI forces all text fields containing numbers to generate internal index structures for every distinct cell row.",
+      "The DirectQuery gateway requires unique identity anchors to map transaction steps back to cloud data databases."
+    ],
+    "correct_answer": [
+      "High cardinality limits the compression efficiency of the VertiPaq engine, which relies on dictionary and value encoding."
+    ]
+  },
+  {
+    "question_number": 196,
+    "question_text": "A developer is configuring a model and leaves the default 'Auto Date/Time' feature enabled in Power BI Desktop options. How does this setting affect memory allocation when loading a model containing ten distinct date columns?",
+    "options": [
+      "It creates a hidden, independent date table for every single date column, which can bloat file size and waste memory.",
+      "It compresses all date values into an optimal binary format that reduces the processing load on local hardware engines.",
+      "It establishes automatic bidirectional filters between all data tables based on chronological intersection vectors.",
+      "It disables the requirement for writing explicit DAX metrics when calculating custom corporate financial indicators."
+    ],
+    "correct_answer": [
+      "It creates a hidden, independent date table for every single date column, which can bloat file size and waste memory."
+    ]
+  },
+  {
+    "question_number": 197,
+    "question_text": "A data model contains a Date dimension and a Sales fact table. The modeler represents the join keys using an integer format like '20260811' rather than a standard text string data type. What is the performance rationale behind this choice?",
+    "options": [
+      "Integer columns are processed and compressed much more efficiently by the analytic engine, optimizing relationship joins.",
+      "Integer keys allow the report to automatically bypass security checks defined within Row-Level Security parameters.",
+      "Integer formatting forces Power Query to execute full query folding steps across all cloud database sources.",
+      "Integer properties eliminate the need for creating manual single-direction data relationships in Model view."
+    ],
+    "correct_answer": [
+      "Integer columns are processed and compressed much more efficiently by the analytic engine, optimizing relationship joins."
+    ]
+  },
+  {
+    "question_number": 198,
+    "question_text": "A business intelligence developer builds a relationship between a Customer dimension and an Orders fact table using a bi-directional filter. During user testing, they discover that numbers on summary cards change incorrectly depending on page selections. What structural risk is occurring?",
+    "options": [
+      "Ambiguity in filter propagation paths, where filters flow backward across tables and create unexpected data masks.",
+      "An internal memory lock scenario, where the VertiPaq database engine refuses to compute explicit measures.",
+      "A schema definition error, where Power Query automatically converts numeric balances into alphanumeric text keys.",
+      "A gateway authentication timeout, where local connection profiles override cloud corporate permissions frameworks."
+    ],
+    "correct_answer": [
+      "Ambiguity in filter propagation paths, where filters flow backward across tables and create unexpected data masks."
+    ]
+  },
+  {
+    "question_number": 199,
+    "question_text": "A company changes its regional managers every fiscal year. To evaluate historical sales performance under past managers versus current managers, what dimensional modeling framework must be implemented?",
+    "options": [
+      "A Slowly Changing Dimension structure that generates tracking surrogate keys for each managerial alignment phase.",
+      "A flat denormalized spreadsheet model that overwrites older manager records instantly during data refresh schedules.",
+      "A collection of ten separate isolated cloud data gateway clusters linked to separate user security profiles.",
+      "A bidirectional cross-filtering rule applied across all text attributes inside the relational model view schema."
+    ],
+    "correct_answer": [
+      "A Slowly Changing Dimension structure that generates tracking surrogate keys for each managerial alignment phase."
+    ]
+  },
+  {
+    "question_number": 200,
+    "question_text": "A model includes a FactInventory table tracking daily stock items and a DimProduct table. A developer notices that the product table contains thousands of items that have never been ordered or stocked. How does a star schema handle this scenario when rendering a matrix visual?",
+    "options": [
+      "The dimension table provides the full master list of categories, and rows without matching facts evaluate as blank or zero metrics.",
+      "The visualization engine crashes automatically due to a structural mismatch between primary and foreign key indexes.",
+      "Power BI automatically executes a background purge command to delete non-matching rows from the dimension source.",
+      "The visual forces the report page to display a critical database error indicating that connection mappings are broken."
+    ],
+    "correct_answer": [
+      "The dimension table provides the full master list of categories, and rows without matching facts evaluate as blank or zero metrics."
+    ]
+  }
+]

@@ -1,0 +1,1303 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "A data analyst needs to build a Power BI report using a large web-based CSV file that is updated hourly. Instead of downloading the file locally every time, they decide to use the Web connector with the file's direct URL. What is the primary architectural advantage of this approach regarding long-term maintenance?",
+    "options": [
+      "It removes the need for local data storage and allows direct automated cloud refreshes within Power BI Service.",
+      "It automatically optimizes the underlying file structure and indexes columns to improve Power Query execution times.",
+      "It compresses the data stream during import to minimize the report's overall memory footprint on the desktop.",
+      "It bypasses the requirement for a data gateway when updating reports stored inside an on-premises network server."
+    ],
+    "correct_answer": [
+      "It removes the need for local data storage and allows direct automated cloud refreshes within Power BI Service."
+    ]
+  },
+  {
+    "question_number": 2,
+    "question_text": "During the data transformation phase in Power Query, an engineer notices that a text column containing product codes has inconsistent leading and trailing spaces. Which transformation strategy should be applied to clean this text column without altering the core alphabetical characters?",
+    "options": [
+      "Apply the Clean function to eliminate all non-printable characters from the strings.",
+      "Apply the Trim function to remove all leading and trailing whitespace characters.",
+      "Apply the Format function to standardize the length of each string using pad characters.",
+      "Apply the Split function to isolate the text characters based on fixed-width boundaries."
+    ],
+    "correct_answer": [
+      "Apply the Trim function to remove all leading and trailing whitespace characters."
+    ]
+  },
+  {
+    "question_number": 3,
+    "question_text": "When configuring relationships in the Power BI Model view, a developer establishes a relationship between a Sales fact table and a Date dimension table. Why is a single-direction filter from the dimension table to the fact table preferred over a bi-directional filter in this scenario?",
+    "options": [
+      "It forces the fact table to automatically inherit all aggregation structures from the dimension table.",
+      "It allows the dimension table to automatically update its values whenever the fact table expands.",
+      "It prevents ambiguity in filter propagation paths and avoids significant performance degradation.",
+      "It eliminates the need to define primary and foreign key constraints within the source database system."
+    ],
+    "correct_answer": [
+      "It prevents ambiguity in filter propagation paths and avoids significant performance degradation."
+    ]
+  },
+  {
+    "question_number": 4,
+    "question_text": "A developer needs to add a static categorization column to a table by evaluating an existing text field. The categorization logic will not change based on user interactions or slicers. Why is it generally considered best practice to create this column in Power Query rather than using a DAX calculated column?",
+    "options": [
+      "Power Query columns allow users to dynamically change calculation variables via report slicers.",
+      "DAX calculated columns consume more runtime CPU power during interactive visual filtering operations.",
+      "DAX calculated columns prevent the model from establishing relationships with any other table.",
+      "Power Query columns are compressed more efficiently by the xVelocity engine, optimizing file size."
+    ],
+    "correct_answer": [
+      "Power Query columns are compressed more efficiently by the xVelocity engine, optimizing file size."
+    ]
+  },
+  {
+    "question_number": 5,
+    "question_text": "A report developer modifies a column's data type from 'Text' to 'Whole Number' in Power Query. After applying the changes, several rows display errors because they contained alphanumeric characters. How should the developer resolve this issue to ensure no valid historical records are completely lost?",
+    "options": [
+      "Insert a step before the type change to replace or remove non-numeric characters from the strings.",
+      "Use the 'Remove Errors' option to automatically delete the rows that failed the data type conversion.",
+      "Create a duplicate table that isolates text values and link it back to the original using a cross-join.",
+      "Change the storage engine settings to allow implicit type coercion during visual rendering phases."
+    ],
+    "correct_answer": [
+      "Insert a step before the type change to replace or remove non-numeric characters from the strings."
+    ]
+  },
+  {
+    "question_number": 6,
+    "question_text": "A team wants to collaborate on building a suite of corporate dashboards and requires an environment where multiple authors can edit the same dataset and report files safely. Which component of the Power BI ecosystem is specifically designed to meet this collaborative requirement?",
+    "options": [
+      "A local template directory synchronized through an on-premises data gateway.",
+      "A shared workspace deployed within the cloud-based Power BI Service.",
+      "An enterprise deployment of the desktop application using shared network drives.",
+      "A centralized direct-connect fabric configured through local database schemas."
+    ],
+    "correct_answer": [
+      "A shared workspace deployed within the cloud-based Power BI Service."
+    ]
+  },
+  {
+    "question_number": 7,
+    "question_text": "In a Power BI data model, a relationship is being configured between an 'Orders' table and a 'Customers' table. Each customer can place multiple orders, but each order belongs to only one customer. Which cardinality setting should be applied to this relationship to ensure accurate behavior?",
+    "options": [
+      "One-to-many (1:*) from the Orders table to the Customers table.",
+      "One-to-one (1:1) between the Orders table and the Customers table.",
+      "Many-to-one (*:1) from the Orders table to the Customers table.",
+      "Many-to-many (*:*) between the Orders table and the Customers table."
+    ],
+    "correct_answer": [
+      "Many-to-one (*:1) from the Orders table to the Customers table."
+    ]
+  },
+  {
+    "question_number": 8,
+    "question_text": "A user selects a specific region from a slicer on a Power BI report page. A matrix visual on the same page displays total sales across various product categories. How does Power BI evaluate the data displayed inside the cells of the matrix visual?",
+    "options": [
+      "It calculates total sales for all regions first and then uses visual masking to hide extra rows.",
+      "It applies the slicer selection as a filter context that restricts rows before calculating the sales.",
+      "It temporarily rewrites the underlying table structures to exclude other regional records.",
+      "It forces the matrix visual to ignore all dimensions except for the selected regional value."
+    ],
+    "correct_answer": [
+      "It applies the slicer selection as a filter context that restricts rows before calculating the sales."
+    ]
+  },
+  {
+    "question_number": 9,
+    "question_text": "When transforming data from a relational SQL database in Power Query, some transformation steps are converted into a single SQL statement and executed directly by the source database. What is this optimization process called?",
+    "options": [
+      "Query folding, which reduces data processing overhead on the local Power BI engine.",
+      "DirectQuery schema mapping, which bypasses the memory limits of the desktop file.",
+      "Query caching, which saves pre-calculated data frames into the local system memory.",
+      "Index propagation, which creates temporary physical primary keys in the database source."
+    ],
+    "correct_answer": [
+      "Query folding, which reduces data processing overhead on the local Power BI engine."
+    ]
+  },
+  {
+    "question_number": 10,
+    "question_text": "An organization wants to distribute a finalized set of dashboards to hundreds of internal business consumers. The creators want to ensure that these consumers cannot see or alter the work-in-progress reports currently being modified by developers. What is the best method for distribution?",
+    "options": [
+      "Grant all business consumers the Member role directly within the development workspace.",
+      "Share the raw Power BI Desktop (.pbix) files via a corporate cloud storage folder.",
+      "Embed the report visuals directly into a shared text document distributed via email.",
+      "Publish a Power BI App from the workspace to provide a read-only view of finalized content."
+    ],
+    "correct_answer": [
+      "Publish a Power BI App from the workspace to provide a read-only view of finalized content."
+    ]
+  },
+  {
+    "question_number": 11,
+    "question_text": "A developer wants to add a new column in Power Query that categorizes transaction amounts into 'High', 'Medium', or 'Low' based on a set of numerical thresholds. Which feature provides a dedicated, wizard-driven user interface to achieve this without writing code manually?",
+    "options": [
+      "The Custom Column tool using advanced M code expressions.",
+      "The Index Column tool using sequential numbering steps.",
+      "The Conditional Column tool using a graphical rules builder.",
+      "The Column from Examples tool using manual data entry inputs."
+    ],
+    "correct_answer": [
+      "The Conditional Column tool using a graphical rules builder."
+    ]
+  },
+  {
+    "question_number": 12,
+    "question_text": "A data source provides monthly budget figures arranged horizontally, where each month (e.g., Jan, Feb, Mar) is a separate column header. To create a proper star schema model in Power BI, these columns must be normalized into a tabular format with two columns: 'Month' and 'Budget'. Which Power Query transformation is designed for this scenario?",
+    "options": [
+      "Transpose the entire table structure to swap rows and columns.",
+      "Unpivot the month columns to convert them into rows of attributes.",
+      "Merge columns using a custom separator to combine text values.",
+      "Group by the month attributes to consolidate the numerical metrics."
+    ],
+    "correct_answer": [
+      "Unpivot the month columns to convert them into rows of attributes."
+    ]
+  },
+  {
+    "question_number": 13,
+    "question_text": "A data analyst needs to combine two separate tables: one contains current employee records and the other contains historical employee records. Both tables share identical column names and data types. Which operation should be performed in Power Query to combine these records into a single consolidated master table?",
+    "options": [
+      "An Append operation to stack the rows of the tables vertically.",
+      "A Merge operation to join the columns of the tables horizontally.",
+      "A Cross-join operation to create a matrix product of all rows.",
+      "A Pivot operation to aggregate the metrics across distinct groups."
+    ],
+    "correct_answer": [
+      "An Append operation to stack the rows of the tables vertically."
+    ]
+  },
+  {
+    "question_number": 14,
+    "question_text": "A developer is deciding whether to create a business metric as a calculated column or as a measure in Power BI. The metric needs to compute profit margin dynamically based on whatever filters or slicers the end-user selects on the report page. Which implementation strategy is correct?",
+    "options": [
+      "Create a calculated column, because it computes values row-by-row during data refresh.",
+      "Create a calculated column, because it stores values permanently in the model memory.",
+      "Create a measure, because it automatically creates physical index structures in the table.",
+      "Create a measure, because it recalculates dynamically based on the current filter context."
+    ],
+    "correct_answer": [
+      "Create a measure, because it recalculates dynamically based on the current filter context."
+    ]
+  },
+  {
+    "question_number": 15,
+    "question_text": "An organization has a single flat database view containing 100 columns that combines transaction details, customer demographics, and store locations. Why would an experienced Power BI architect split this flat view into a dimensional model consisting of a central fact table and multiple dimension tables?",
+    "options": [
+      "To maximize the compression ratio of the columnar database engine and improve report performance.",
+      "To allow users to view every single column in alphabetical order without grouping fields.",
+      "To eliminate the need for writing data transformation steps or M formulas within Power Query.",
+      "To ensure that report pages load faster by bypassing the cloud-based gateway server completely."
+    ],
+    "correct_answer": [
+      "To maximize the compression ratio of the columnar database engine and improve report performance."
+    ]
+  },
+  {
+    "question_number": 16,
+    "question_text": "A business analyst publishes a report to the Power BI Service that connects directly to an Excel file located on an internal local network drive. When users view the report online, the data appears outdated. What infrastructure component must be configured to allow the online report to access the local network file?",
+    "options": [
+      "An on-premises data gateway installed on a local server with access to the file.",
+      "An active Azure Active Directory Service Principal granted global administrator rights.",
+      "A secure virtual private network client running on every viewer's personal device.",
+      "A customized Power Query custom connector published to the public marketplace."
+    ],
+    "correct_answer": [
+      "An on-premises data gateway installed on a local server with access to the file."
+    ]
+  },
+  {
+    "question_number": 17,
+    "question_text": "In Power BI Desktop, a relationship is configured with a Cross Filter Direction set to 'Both'. What does this configuration instruct the data model to do during report interactivity?",
+    "options": [
+      "Force both tables to automatically append their data records into a single physical entity.",
+      "Allow filters applied to either table to automatically propagate and filter the other table.",
+      "Require both tables to share the exact same primary key column names and data type formats.",
+      "Prevent either table from being modified or transformed during a scheduled cloud refresh."
+    ],
+    "correct_answer": [
+      "Allow filters applied to either table to automatically propagate and filter the other table."
+    ]
+  },
+  {
+    "question_number": 18,
+    "question_text": "A multinational company wants managers to only see sales figures for their specific country within a shared Power BI report. The architect decides to implement Row-Level Security (RLS). Where are the security roles and DAX filter expressions initially defined and tested before the report is shared?",
+    "options": [
+      "They are defined in Power BI Desktop and tested using the 'View as' feature.",
+      "They are defined in the Power BI Service settings under the workspace access panel.",
+      "They are defined in the source database management system using security views.",
+      "They are defined in the Microsoft 365 Admin Center under user licensing rules."
+    ],
+    "correct_answer": [
+      "They are defined in Power BI Desktop and tested using the 'View as' feature."
+    ]
+  },
+  {
+    "question_number": 19,
+    "question_text": "A financial institution requires a Power BI report that reflects real-time bank transactions as they hit the database, without waiting for a scheduled refresh. Which storage mode should the developer select for this dataset?",
+    "options": [
+      "Import mode, because it caches data in memory for instant responsiveness.",
+      "Dual mode, because it automatically switches based on user network speed.",
+      "Live Connection mode, because it copies data into a local temporary folder.",
+      "DirectQuery mode, because it queries the data source directly at visual runtime."
+    ],
+    "correct_answer": [
+      "DirectQuery mode, because it queries the data source directly at visual runtime."
+    ]
+  },
+  {
+    "question_number": 20,
+    "question_text": "A developer finishes renaming several columns and removing blank rows within the Power Query Editor window. What action must be taken to ensure these structural transformations are applied to the data model and made available for building visuals?",
+    "options": [
+      "Click the 'Close & Apply' button to execute the queries and load data to the model.",
+      "Save the Power BI Desktop file to automatically trigger a background data model rebuild.",
+      "Export the M code script to an external text file and import it into the Model view.",
+      "Publish the current workspace to the Power BI Service to process the transformations."
+    ],
+    "correct_answer": [
+      "Click the 'Close & Apply' button to execute the queries and load data to the model."
+    ]
+  },
+  {
+    "question_number": 21,
+    "question_text": "A scheduled data refresh fails in the Power BI Service with an error stating that a specific column in a data source table could not be found. What is the most likely root cause of this failure?",
+    "options": [
+      "The Power BI Service license expired for the user who originally authored the report.",
+      "A database administrator renamed or deleted a column in the underlying source schema.",
+      "The report visual layout reached its maximum allowed rendering capacity in the cloud.",
+      "A viewer applied a text filter that did not match any records inside the current column."
+    ],
+    "correct_answer": [
+      "A database administrator renamed or deleted a column in the underlying source schema."
+    ]
+  },
+  {
+    "question_number": 22,
+    "question_text": "In Power BI, what is the core architectural difference between an implicit measure created by dragging a numeric field into a visual and an explicit measure written using DAX syntax?",
+    "options": [
+      "Implicit measures are pre-calculated during the data load phase and stored permanently on disk.",
+      "Explicit measures automatically bypass the security restrictions enforced by Row-Level Security.",
+      "Explicit measures can be reused across multiple visuals and referenced inside other DAX metrics.",
+      "Implicit measures offer advanced performance tuning options through the Power Query engine."
+    ],
+    "correct_answer": [
+      "Explicit measures can be reused across multiple visuals and referenced inside other DAX metrics."
+    ]
+  },
+  {
+    "question_number": 23,
+    "question_text": "A report author wants to show a small, customized pop-up chart showing historical sales trends whenever an end-user hovers their mouse pointer over a bar in a main summary chart. How can this be accomplished in Power BI?",
+    "options": [
+      "Design a dedicated report page, set it as a tooltip, and link it to the main visual.",
+      "Enable drill-down actions on the main visual and add a line chart to the same layer.",
+      "Create a DAX measure using conditional text formatting to render a geometric vector.",
+      "Configure a bookmark action that toggles the visibility of a hidden visual container."
+    ],
+    "correct_answer": [
+      "Design a dedicated report page, set it as a tooltip, and link it to the main visual."
+    ]
+  },
+  {
+    "question_number": 24,
+    "question_text": "Within the context of the Power BI Service ecosystem, what is the primary structural distinction between a report and a dashboard?",
+    "options": [
+      "A report is created exclusively on the web service, while a dashboard can only be developed using the Power BI Desktop application.",
+      "A report supports live data streaming, while a dashboard relies entirely on manual imports and scheduled file modifications.",
+      "A report contains multiple pages built from a single dataset, while a dashboard is a single page pinning visuals from multiple reports.",
+      "A report enforces row-level data security filters, while a dashboard allows all organizational users to bypass access rules."
+    ],
+    "correct_answer": [
+      "A report contains multiple pages built from a single dataset, while a dashboard is a single page pinning visuals from multiple reports."
+    ]
+  },
+  {
+    "question_number": 25,
+    "question_text": "A data engineer needs to inspect or debug the entire sequential series of transformation steps applied to a query in Power Query. Which interface provides a full, read-write code view of these operations written in the M formula language?",
+    "options": [
+      "The Performance Analyzer pane found under the main View menu of the report.",
+      "The DAX Studio plugin connected to the active data model engine instance.",
+      "The Model View relationship properties pane located on the left-hand sidebar.",
+      "The Advanced Editor window available within the Power Query Editor interface."
+    ],
+    "correct_answer": [
+      "The Advanced Editor window available within the Power Query Editor interface."
+    ]
+  },
+  {
+    "question_number": 26,
+    "question_text": "A Power BI developer configures an explicit parameters database connection in Power Query. Why is this architectural approach superior to hardcoding server names inside individual source queries?",
+    "options": [
+      "It allows environments to be swapped dynamically across deployment pipelines without altering individual queries.",
+      "It completely eliminates the requirement for configuring data credentials inside the online Power BI Service portal.",
+      "It forces the underlying data engine to execute database indexing steps before fetching data into the local model.",
+      "It bypasses the maximum security restrictions usually enforced by institutional network firewall infrastructures."
+    ],
+    "correct_answer": [
+      "It allows environments to be swapped dynamically across deployment pipelines without altering individual queries."
+    ]
+  },
+  {
+    "question_number": 27,
+    "question_text": "An analyst combines data from an internal corporate SQL Server database and a public webpage in the same Power Query model. During refresh, a 'Formula.Firewall' error occurs. What is the root cause of this error?",
+    "options": [
+      "The public webpage does not possess a valid security certificate to establish an encrypted data connection.",
+      "The network data privacy levels are configured in a way that prevents data leakage across disparate sources.",
+      "The total volume of combined records exceeds the maximum memory limits allocated to the Power Query engine.",
+      "The SQL Server database is blocking inbound traffic originated from public cloud infrastructure endpoints."
+    ],
+    "correct_answer": [
+      "The network data privacy levels are configured in a way that prevents data leakage across disparate sources."
+    ]
+  },
+  {
+    "question_number": 28,
+    "question_text": "A developer adds an index column to a massive historical table in Power Query to act as a unique identifier. How does adding this sequential index column affect the performance of the Import data model?",
+    "options": [
+      "It increases model size significantly because highly unique values limit the efficiency of columnar compression.",
+      "It improves model loading speeds by forcing the data engine to sort all columns alphabetically during import.",
+      "It drastically reduces memory utilization since the xVelocity engine converts text values into small integers.",
+      "It disables query folding across all subsequent transformation steps applied within that specific data table."
+    ],
+    "correct_answer": [
+      "It increases model size significantly because highly unique values limit the efficiency of columnar compression."
+    ]
+  },
+  {
+    "question_number": 29,
+    "question_text": "While designing a data pipeline in Power Query, a developer implements a 'Group By' operation on a transaction table. What structural change happens to the underlying data architecture after this step executes?",
+    "options": [
+      "The detailed rows are aggregated into a summary table, reducing the total row count and altering granularity.",
+      "The table rows are converted into horizontal columns while maintaining the exact original record granularity.",
+      "The underlying database indexes are rebuilt to prioritize the columns selected inside the grouping interface.",
+      "The entire dataset is duplicated into a hidden system partition to enable rapid historical trend analysis."
+    ],
+    "correct_answer": [
+      "The detailed rows are aggregated into a summary table, reducing the total row count and altering granularity."
+    ]
+  },
+  {
+    "question_number": 30,
+    "question_text": "A Power BI data model includes a Date dimension table and a Sales fact table. The Date table contains no missing dates, but a visual displaying sales by year shows a blank row with sales values. What does this blank row signify?",
+    "options": [
+      "The Date dimension table contains a corrupted date format that cannot be rendered properly by report visuals.",
+      "The Sales fact table contains transaction dates that do not exist within the boundaries of the Date dimension table.",
+      "The relationship between the two tables was accidentally configured using a bi-directional cross-filtering rule.",
+      "The DAX engine is encountering a memory allocation error while attempting to sort the chronological records."
+    ],
+    "correct_answer": [
+      "The Sales fact table contains transaction dates that do not exist within the boundaries of the Date dimension table."
+    ]
+  },
+  {
+    "question_number": 31,
+    "question_text": "A developer needs to reference a custom text column multiple times across different analytical dashboards. They choose to build this column in the source SQL view rather than using M or DAX. What is the main advantage of this strategy?",
+    "options": [
+      "It shifts the processing load completely to the source database and maximizes reuse across other business tools.",
+      "It enables the Power BI report to execute real-time interactive filtering without changing filter contexts.",
+      "It removes the need for configuring any security definitions or row-level permissions within Power BI Service.",
+      "It forces the Power BI Desktop application to cache the entire dataset inside the local hardware graphics card."
+    ],
+    "correct_answer": [
+      "It shifts the processing load completely to the source database and maximizes reuse across other business tools."
+    ]
+  },
+  {
+    "question_number": 32,
+    "question_text": "An organization wants to connect Power BI to a data warehouse using DirectQuery mode. Which data transformation scenario would cause significant performance bottlenecks under this architectural configuration?",
+    "options": [
+      "Executing complex text splits and string manipulations within Power Query that break query folding mechanisms.",
+      "Establishing single-direction relationships between the primary fact tables and corporate dimension tables.",
+      "Using simple integer columns as the foundational join keys between tables within the relationship diagram.",
+      "Renaming the user-facing column headers in Power Query to match the terminology used by business teams."
+    ],
+    "correct_answer": [
+      "Executing complex text splits and string manipulations within Power Query that break query folding mechanisms."
+    ]
+  },
+  {
+    "question_number": 33,
+    "question_text": "A data model contains a Customer dimension table and an Orders fact table. A business requirement states that filtering by a specific product in the report must update a card showing the total count of distinct customers who purchased that product. How should the model be configured?",
+    "options": [
+      "Set the relationship cross-filter direction to 'Both' between the Customer table and the Orders table.",
+      "Create an independent disconnected copy of the Customer table and link it using a calculated table script.",
+      "Convert the data storage mode of the Customer table to DirectQuery while keeping the Orders table as Import.",
+      "Append the Customer table rows directly to the bottom of the Orders table rows inside the Power Query Editor."
+    ],
+    "correct_answer": [
+      "Set the relationship cross-filter direction to 'Both' between the Customer table and the Orders table."
+    ]
+  },
+  {
+    "question_number": 34,
+    "question_text": "A developer merges two tables in Power Query based on an email address column. They notice that 'user@company.com' and 'User@company.com' are not matching for some rows. What is the most reliable way to resolve this issue?",
+    "options": [
+      "Apply an uppercase or lowercase transformation to the email column in both tables before executing the merge.",
+      "Change the data type of both email columns from 'Text' to 'True/False' to force binary alignment during evaluation.",
+      "Use the transpose function on both tables to convert the email records into column headers prior to matching.",
+      "Configure a many-to-many relationship in the model view to bypass text character evaluation constraints entirely."
+    ],
+    "correct_answer": [
+      "Apply an uppercase or lowercase transformation to the email column in both tables before executing the merge."
+    ]
+  },
+  {
+    "question_number": 35,
+    "question_text": "An enterprise model contains a central Sales fact table connected to a Date dimension table. The Sales table contains two date keys: 'OrderDate' and 'ShipDate'. What is the standard star-schema design practice for handling these multiple date relationships?",
+    "options": [
+      "Create two separate relationships, keeping one active and the other inactive, then use DAX to activate the secondary path.",
+      "Create two identical copies of the Sales fact table and establish an active single-direction relationship for each date key.",
+      "Force a bi-directional many-to-many relationship between both date keys simultaneously to combine the filters.",
+      "Merge the OrderDate and ShipDate columns into a single text block within Power Query to remove the secondary key."
+    ],
+    "correct_answer": [
+      "Create two separate relationships, keeping one active and the other inactive, then use DAX to activate the secondary path."
+    ]
+  },
+  {
+    "question_number": 36,
+    "question_text": "A business user notices that a card visual displaying 'Total Transactions' changes when clicking a specific month slicer, but a card visual showing 'Annual Corporate Budget' does not. What does this behavior indicate about the underlying model?",
+    "options": [
+      "The Month slicer table lacks a valid data relationship path to filter the table containing the corporate budget.",
+      "The Annual Corporate Budget visual is currently suffering from a severe internal memory cache allocation error.",
+      "The relationship between the Month table and the Budget table has been configured with an active bi-directional filter.",
+      "The Corporate Budget table was imported into the model using DirectQuery mode instead of standard Import mode."
+    ],
+    "correct_answer": [
+      "The Month slicer table lacks a valid data relationship path to filter the table containing the corporate budget."
+    ]
+  },
+  {
+    "question_number": 37,
+    "question_text": "A report needs to display data from a high-velocity transactional database. The developer chooses a Hybrid table approach, combining historical Import data with real-time DirectQuery data. What is the primary operational trade-off of this architecture?",
+    "options": [
+      "Increased model design complexity balanced against the ability to see real-time data alongside compressed history.",
+      "Complete loss of Row-Level Security capabilities balanced against an absolute reduction in cloud report loading times.",
+      "Inability to write custom DAX measures balanced against an automatic optimization of all visual rendering structures.",
+      "Requirement for a premium dedicated gateway cluster balanced against the removal of all cloud dataset size limitations."
+    ],
+    "correct_answer": [
+      "Increased model design complexity balanced against the ability to see real-time data alongside compressed history."
+    ]
+  },
+  {
+    "question_number": 38,
+    "question_text": "A developer writes a custom M script to parse a collection of complex nested JSON payloads from a web service. Why is it critical to explicitly declare column data types at the final step of this custom Power Query transformation?",
+    "options": [
+      "It allows the xVelocity engine to allocate memory efficiently and prevents generic variant types from degrading visual performance.",
+      "It triggers an automatic database index modification on the hosting remote cloud server containing the source JSON payloads.",
+      "It bypasses the requirement for establishing user access permissions when publishing the report to the Power BI Service.",
+      "It converts the entire data structure into a relational schema that can only be altered by writing advanced DAX syntax."
+    ],
+    "correct_answer": [
+      "It allows the xVelocity engine to allocate memory efficiently and prevents generic variant types from degrading visual performance."
+    ]
+  },
+  {
+    "question_number": 39,
+    "question_text": "A Power BI data model contains a geography dimension table that links to a customer dimension table, which then links to a sales fact table. This structure resembles a snowflake schema. Why would a data architect flatten this into a pure star schema?",
+    "options": [
+      "To reduce the number of table joins during query evaluation, which simplifies the model and enhances visual performance.",
+      "To allow the report to use data gateways when refreshing data from cloud-hosted analytical databases.",
+      "To enable the use of calculated columns instead of measures for high-velocity aggregations across report pages.",
+      "To prevent users from applying multiple filters to a single visualization element inside the report layout."
+    ],
+    "correct_answer": [
+      "To reduce the number of table joins during query evaluation, which simplifies the model and enhances visual performance."
+    ]
+  },
+  {
+    "question_number": 40,
+    "question_text": "An analyst wants to look up the manager name from a Employee profile table and insert it directly into the Sales transaction table rows during the data load phase. Which Power Query operation achieves this efficiently?",
+    "options": [
+      "A Merge operation matching on EmployeeID, followed by expanding only the required ManagerName column field.",
+      "An Append operation stacking the Employee profile rows directly on top of the Sales transaction records.",
+      "A Pivot operation grouped by EmployeeID to transform text values into distinct aggregate numerical statistics.",
+      "A Transpose operation executed on both tables to align the structural orientation of the corporate variables."
+    ],
+    "correct_answer": [
+      "A Merge operation matching on EmployeeID, followed by expanding only the required ManagerName column field."
+    ]
+  },
+  {
+    "question_number": 41,
+    "question_text": "A developer is building a matrix visual that displays a custom DAX measure. They notice that the performance is sluggish when thousands of rows are expanded. What tool within Power BI Desktop should they use to isolate the exact cause of this latency?",
+    "options": [
+      "Performance Analyzer, which tracks the precise time taken by DAX queries, visual display steps, and internal processing.",
+      "Advanced Editor, which displays the M formula code blocks and highlights syntax errors within the data load sequence.",
+      "Data Model View, which illustrates table relationships and highlights broken connection vectors in red outlines.",
+      "Row-Level Security tester, which validates user profile credentials against cloud enterprise access control directories."
+    ],
+    "correct_answer": [
+      "Performance Analyzer, which tracks the precise time taken by DAX queries, visual display steps, and internal processing."
+    ]
+  },
+  {
+    "question_number": 42,
+    "question_text": "A Power BI model includes a large fact table containing 50 million rows. A string column indicates the 'Status' of an order with four distinct possibilities: 'New', 'Processing', 'Shipped', 'Cancelled'. How should this column be optimized to minimize file size?",
+    "options": [
+      "Replace the text strings with small integer keys (1-4) and link them to a separate small Status dimension table.",
+      "Split the text column into four individual binary columns containing True/False flags for each status option.",
+      "Duplicate the status text column across three independent tables to distribute the data compression overhead.",
+      "Convert the status column into a DAX measure that dynamically evaluates string flags using conditional rules."
+    ],
+    "correct_answer": [
+      "Replace the text strings with small integer keys (1-4) and link them to a separate small Status dimension table."
+    ]
+  },
+  {
+    "question_number": 43,
+    "question_text": "A report contains a slicer for 'Product Category' and a bar chart showing 'Sales Amount' by 'Product Subcategory'. By default, selecting an item in the slicer filters the bar chart. How can a developer change this behavior so the bar chart remains unaffected?",
+    "options": [
+      "Select the slicer, go to the Format menu, click Edit Interactions, and select the 'None' icon above the bar chart.",
+      "Modify the relationship between the two tables in the Model view to cross-filter in both directions simultaneously.",
+      "Write a Power Query step that isolates the Product Category column inside a hidden background parameter object.",
+      "Change the data category setting of the Product Subcategory field to unclassified inside the Data view options."
+    ],
+    "correct_answer": [
+      "Select the slicer, go to the Format menu, click Edit Interactions, and select the 'None' icon above the bar chart."
+    ]
+  },
+  {
+    "question_number": 44,
+    "question_text": "A developer wants to create a reusable logic block in Power Query that can clean phone number strings across multiple distinct data tables. What is the most efficient architectural solution for this?",
+    "options": [
+      "Convert the cleaning steps of one query into a custom M function that accepts a text parameter and call it from other queries.",
+      "Copy and paste the exact transformation steps manually into the Advanced Editor window of every single data table.",
+      "Create a DAX calculated column in each table that uses nested text manipulation formulas to rearrange characters.",
+      "Configure a many-to-many relationship between all tables based on a shared uncleaned phone number column attribute."
+    ],
+    "correct_answer": [
+      "Convert the cleaning steps of one query into a custom M function that accepts a text parameter and call it from other queries."
+    ]
+  },
+  {
+    "question_number": 45,
+    "question_text": "A dataset contains an 'Order Date' column with values ranging from 2021 to 2025. The developer wants to ensure that built-in DAX time intelligence functions work reliably across all reports. What rule must be strictly followed regarding the Date table?",
+    "options": [
+      "The Date table must contain continuous, unbroken calendar days for the entire span of years, with no missing dates.",
+      "The Date table must only contain dates that possess recorded transactions inside the primary Sales fact table.",
+      "The Date table columns must be stored as alphanumeric text values to prevent indexing errors within the engine.",
+      "The Date table must be configured as a DirectQuery source linked directly to an online public calendar server."
+    ],
+    "correct_answer": [
+      "The Date table must contain continuous, unbroken calendar days for the entire span of years, with no missing dates."
+    ]
+  },
+  {
+    "question_number": 46,
+    "question_text": "An organization relies on an on-premises data gateway to keep their cloud reports updated. The gateway machine occasionally shuts down due to local IT maintenance schedules. What happens to the scheduled report refreshes during this maintenance window?",
+    "options": [
+      "The refreshes fail immediately, and Power BI Service logs a data source connection error for those attempts.",
+      "The cloud service automatically migrates the connection to a public web server to bypass the offline machine.",
+      "The reports continue to update normally by reading data cached within the web browsers of active viewers.",
+      "The system delays the database execution and holds the data packets in a cloud buffer until the machine restarts."
+    ],
+    "correct_answer": [
+      "The refreshes fail immediately, and Power BI Service logs a data source connection error for those attempts."
+    ]
+  },
+  {
+    "question_number": 47,
+    "question_text": "A data analyst creates a complex Power BI report page with twenty separate card visuals, three line charts, and two slicers. Users complain that the page loads slowly. From an architectural perspective, why is this layout causing poor performance?",
+    "options": [
+      "Each visual generates one or more independent queries, and a high volume of concurrent visual requests overwhelms the engine.",
+      "The card visuals force Power BI to duplicate the entire dataset memory structure for every single element on screen.",
+      "Slicers cannot operate efficiently when placed on the same report page layout alongside standard line visualizations.",
+      "Power BI Service requires dedicated premium cloud licenses to render more than five individual visuals on a single page."
+    ],
+    "correct_answer": [
+      "Each visual generates one or more independent queries, and a high volume of concurrent visual requests overwhelms the engine."
+    ]
+  },
+  {
+    "question_number": 48,
+    "question_text": "A business team wants a feature where clicking a button resets all report filters, switches a bar chart to a line chart, and updates page text. Which combination of features should the developer use to build this interaction?",
+    "options": [
+      "Bookmarks combined with Selection pane visibility toggles, assigned to a button visual action.",
+      "Conditional formatting metrics combined with Row-Level Security definitions linked to a slicer.",
+      "Power Query parameters combined with custom M function calls triggered by an image visual wrapper.",
+      "DirectQuery partition switching rules combined with automatic page refresh timers on the report canvas."
+    ],
+    "correct_answer": [
+      "Bookmarks combined with Selection pane visibility toggles, assigned to a button visual action."
+    ]
+  },
+  {
+    "question_number": 49,
+    "question_text": "A Power BI data model contains two large tables with a many-to-many relationship based on a shared text column. Performance testing reveals that filters across these tables are extremely slow. What is the recommended remediation strategy?",
+    "options": [
+      "Create a distinct bridge table containing unique values of the text column and establish one-to-many links to both tables.",
+      "Switch both tables to DirectQuery mode to force the local client computer to calculate the joins at runtime.",
+      "Change the relationship cross-filter direction to 'Both' and enable security filtering rules across both directions.",
+      "Merge both tables horizontally inside the data model view using a DAX calculated table schema expression."
+    ],
+    "correct_answer": [
+      "Create a distinct bridge table containing unique values of the text column and establish one-to-many links to both tables."
+    ]
+  },
+  {
+    "question_number": 50,
+    "question_text": "A corporate dataset contains sensitive salary information. The developer needs to implement static Row-Level Security (RLS) so that managers only see rows corresponding to their department. What DAX expression template should be applied to the security role filter?",
+    "options": [
+      "[Department] = \"Sales\" (or the respective department string value matching the target group scope).",
+      "CALCULATE(SUM([Salary]), ALL([Department]) = \"Sales\") to isolate the numerical values from other views.",
+      "USERPRINCIPALNAME() combined with an append step inside the Power Query M code schema parameters.",
+      "RELATED('Salary Table'[Department]) establishing an explicit bidirectional structural join path across filters."
+    ],
+    "correct_answer": [
+      "[Department] = \"Sales\" (or the respective department string value matching the target group scope)."
+    ]
+  },
+  {
+    "question_number": 51,
+    "question_text": "An engineering model uses a deep folder structure filled with daily CSV transaction logs. When importing this folder into Power Query, what is the best technique to combine all logs into a single master fact table efficiently?",
+    "options": [
+      "Use the 'Combine Files' wizard from the folder connector to automatically generate a parsing function and loop it over the files.",
+      "Create a separate web connection query for every individual CSV file and use ninety consecutive merge operations.",
+      "Convert the CSV files into individual Excel workbooks manually before importing them via the local file system connector.",
+      "Write a custom DAX calculated table that uses cross-join commands to read raw binary information from disk sectors."
+    ],
+    "correct_answer": [
+      "Use the 'Combine Files' wizard from the folder connector to automatically generate a parsing function and loop it over the files."
+    ]
+  },
+  {
+    "question_number": 52,
+    "question_text": "A developer wants to apply a dark corporate theme to an entire Power BI report containing dozens of pages. Instead of modifying each visual manually, what is the most efficient design method?",
+    "options": [
+      "Import a standardized theme JSON file via the View tab to apply global style rules across all visuals.",
+      "Create a custom M function that overrides visual rendering options during the data transformation load phase.",
+      "Use the format painter tool to copy styles between individual elements across different pages one by one.",
+      "Deploy a separate workspace in Power BI Service for every distinct color palette variation required by users."
+    ],
+    "correct_answer": [
+      "Import a standardized theme JSON file via the View tab to apply global style rules across all visuals."
+    ]
+  },
+  {
+    "question_number": 53,
+    "question_text": "A developer configures an automated incremental refresh policy for a massive ledger table in Power BI Service. What is the fundamental requirement for the underlying data source to support this feature?",
+    "options": [
+      "The data source must support query folding so that the engine can filter records using date parameters at the source.",
+      "The data source must be hosted within the Microsoft Azure ecosystem and use a premium dedicated cluster tier.",
+      "The data source must be a static file structure that cannot be modified by external transactional enterprise systems.",
+      "The data source must allow implicit cross-filtering across all dimensions without requiring predefined key columns."
+    ],
+    "correct_answer": [
+      "The data source must support query folding so that the engine can filter records using date parameters at the source."
+    ]
+  },
+  {
+    "question_number": 54,
+    "question_text": "A report page includes a line chart tracking financial metrics over time. Users want to be able to dynamically switch the chart axis between viewing data by Week, Month, or Quarter. Which Power BI feature delivers this experience directly?",
+    "options": [
+      "Creating a Field Parameter selection table and adding the parameter field as the axis of the line visual.",
+      "Configuring a separate page for each time granularity and distributing them via a corporate Power BI App container.",
+      "Writing an M function that recreates the date dimension schema based on the item clicked inside an interactive slicer.",
+      "Using Row-Level Security roles to filter the calendar days visible to distinct corporate reporting profiles."
+    ],
+    "correct_answer": [
+      "Creating a Field Parameter selection table and adding the parameter field as the axis of the line visual."
+    ]
+  },
+  {
+    "question_number": 55,
+    "question_text": "A Power BI data model contains a column with highly precise timestamps (e.g., '2026-05-18 14:23:11.453'). The report file size is unexpectedly large. What optimization step should be performed in Power Query to address this?",
+    "options": [
+      "Split the timestamp into separate Date and Time columns, and round the Time column to the nearest minute or hour.",
+      "Convert the timestamp column data type to an alphanumeric text field and apply a fuzzy matching transformation step.",
+      "Duplicate the timestamp column across five separate lookup tables to split the processing overhead of the values.",
+      "Create a DAX measure that parses the millisecond fractions dynamically during interactive report rendering phases."
+    ],
+    "correct_answer": [
+      "Split the timestamp into separate Date and Time columns, and round the Time column to the nearest minute or hour."
+    ]
+  },
+  {
+    "question_number": 56,
+    "question_text": "A user uploads a Power BI Desktop report to a shared workspace. Another team member wants to build a completely new report using the exact same calculated measures and data relationships. What is the best architectural approach?",
+    "options": [
+      "Connect the new Power BI Desktop file directly to the published Power BI semantic model in the cloud workspace.",
+      "Export the data tables to Excel files locally and import them back into a blank Power BI Desktop application workspace.",
+      "Re-write all M transformation code scripts and DAX expressions manually within a fresh local template file.",
+      "Request a copy of the raw database credentials to rebuild the entire connection framework from the ground up."
+    ],
+    "correct_answer": [
+      "Connect the new Power BI Desktop file directly to the published Power BI semantic model in the cloud workspace."
+    ]
+  },
+  {
+    "question_number": 57,
+    "question_text": "A developer wants a bar chart to display categories sorted by a non-alphabetical business order (e.g., 'Gold', 'Silver', 'Bronze'). How can this custom sorting logic be implemented within Power BI Desktop?",
+    "options": [
+      "Add a numeric sort order column to the dimension table, select the category column, and use the 'Sort by Column' tool.",
+      "Write a complex nested conditional statement inside a Power Query custom parameter to rename the categories with prefixes.",
+      "Configure a bidirectional many-to-many relationship that links the category strings to an external index matrix table.",
+      "Apply a visual-level text filter to the chart that manually masks the sequence of values during rendering phases."
+    ],
+    "correct_answer": [
+      "Add a numeric sort order column to the dimension table, select the category column, and use the 'Sort by Column' tool."
+    ]
+  },
+  {
+    "question_number": 58,
+    "question_text": "A workspace administrator wants to ensure that a newly developed dashboard performs well before launching it. They want to check if any specific data model relationships are causing visual computation delays. Which process is recommended?",
+    "options": [
+      "Open Performance Analyzer in the report desktop client, refresh visuals, and examine the DAX query execution times.",
+      "Check the historical file upload log details inside the corporate Microsoft 365 compliance administration portal.",
+      "Review the total lines of code written within the Advanced Editor across all background data loading queries.",
+      "Validate the network latency of the corporate on-premises data gateway using a specialized server ping script."
+    ],
+    "correct_answer": [
+      "Open Performance Analyzer in the report desktop client, refresh visuals, and examine the DAX query execution times."
+    ]
+  },
+  {
+    "question_number": 59,
+    "question_text": "A Power BI report links to a central SQL database. A developer notices that adding a specific conditional column in Power Query stops query folding from happening on all subsequent steps. How can this sequence be optimized?",
+    "options": [
+      "Move the non-folding conditional column step to the very end of the Power Query transformation sequence list.",
+      "Convert the data model storage engine settings to DirectQuery mode to force query folding on all custom steps.",
+      "Re-create the entire transformation sequence using DAX calculated columns instead of Power Query transformation tools.",
+      "Disable data privacy security level checks within the global application option settings of Power BI Desktop."
+    ],
+    "correct_answer": [
+      "Move the non-folding conditional column step to the very end of the Power Query transformation sequence list."
+    ]
+  },
+  {
+    "question_number": 60,
+    "question_text": "A company wants to embed an interactive Power BI report directly into an internal secure SharePoint portal for executive tracking. What security constraint must be considered regarding user licensing?",
+    "options": [
+      "Every executive viewing the embedded report must possess an appropriate Power BI Pro or Premium Per User license.",
+      "The developer must share their personal credentials with the portal hosting engine to grant global background access.",
+      "The report must be published to a completely public webpage to bypass corporate network credential challenges.",
+      "The underlying semantic model must be converted entirely to a flat text file structure before embedding actions."
+    ],
+    "correct_answer": [
+      "Every executive viewing the embedded report must possess an appropriate Power BI Pro or Premium Per User license."
+    ]
+  },
+  {
+    "question_number": 61,
+    "question_text": "A data model contains an explicit measure that calculates total operational cost. A developer wants to build another measure that calculates the variance between sales and this cost. What is the best practice for references?",
+    "options": [
+      "Reference the existing cost measure directly by its name inside the new DAX expression formula.",
+      "Copy and paste the entire physical DAX formula of the cost measure into the body of the new calculation script.",
+      "Recreate the cost metric as a physical calculated column inside the fact table before computing the variance value.",
+      "Merge the cost and sales data tables together within Power Query to create a pre-aggregated horizontal row structure."
+    ],
+    "correct_answer": [
+      "Reference the existing cost measure directly by its name inside the new DAX expression formula."
+    ]
+  },
+  {
+    "question_number": 62,
+    "question_text": "A Power BI Service user configures a scheduled data refresh to occur eight times a day. After a few weeks, the refresh stops running. What is a common administrative reason for this automated pause?",
+    "options": [
+      "The data refresh schedule is automatically deactivated if the report experiences consecutive failures over several days.",
+      "The underlying cloud tenant automatically deletes reports that consume more than ten gigabytes of active memory space.",
+      "The user's computer hosting the Power BI Desktop application authoring file was turned off during the evening hours.",
+      "The network data gateway automatically locks connections that are executed more than three times within a single week."
+    ],
+    "correct_answer": [
+      "The data refresh schedule is automatically deactivated if the report experiences consecutive failures over several days."
+    ]
+  },
+  {
+    "question_number": 63,
+    "question_text": "An analyst is designing a executive summary report page. They want to ensure that the most critical business metrics are immediately visible and scannable. Which visualization component is best suited for this specific design requirement?",
+    "options": [
+      "Card visuals displaying individual high-level explicit metrics with clean descriptive label contexts.",
+      "A dense scatter plot chart mapping hundreds of individual transactional items across two numerical axes.",
+      "A detailed matrix visualization containing twenty expanded columns and multiple nested hierarchical row steps.",
+      "A customized map visualization plotting every individual customer shipping destination globally with precise icons."
+    ],
+    "correct_answer": [
+      "Card visuals displaying individual high-level explicit metrics with clean descriptive label contexts."
+    ]
+  },
+  {
+    "question_number": 64,
+    "question_text": "A developer needs to configure a connection to an Excel file stored inside an organization's Microsoft OneDrive for Business account. What is the most efficient connection strategy to avoid using a local data gateway?",
+    "options": [
+      "Copy the web URL path of the Excel file from OneDrive and connect using the standard Power BI Web connector.",
+      "Download the file to a local drive daily and link to it using the standard local File system path connection tool.",
+      "Export the sheets to independent text documents and host them on a local on-premises network server structure.",
+      "Create an active SQL Server database view that links back to the cloud storage account using an external api wrapper."
+    ],
+    "correct_answer": [
+      "Copy the web URL path of the Excel file from OneDrive and connect using the standard Power BI Web connector."
+    ]
+  },
+  {
+    "question_number": 65,
+    "question_text": "A dataset contains a table with a many-to-many relationship. A developer decides to resolve this by setting the cross-filter direction to 'Both'. What unexpected issue might arise during subsequent report analysis?",
+    "options": [
+      "Filters from one table will unexpectedly propagate through other tables, causing ambiguous data contexts and wrong numbers.",
+      "The model will completely block the addition of any new tables or relationships within the entity diagram framework.",
+      "The Power Query editor will automatically delete the relationship step during the next automated data refresh cycle.",
+      "Report viewers will lose the ability to export data rows from any visuals that display metrics from those tables."
+    ],
+    "correct_answer": [
+      "Filters from one table will unexpectedly propagate through other tables, causing ambiguous data contexts and wrong numbers."
+    ]
+  },
+  {
+    "question_number": 66,
+    "question_text": "A corporate workspace has ten different reports that all use the exact same definition of Customer and Product. What architectural strategy ensures consistency and minimizes maintenance across these reports?",
+    "options": [
+      "Publish a single master semantic model to the service, and have all ten reports connect to it via Live Connection.",
+      "Embed the duplicate tables manually into the Power Query editor of every individual report file separately.",
+      "Create ten independent data gateway connections pointing to the same database views simultaneously on the server.",
+      "Export the layout configurations as an application theme file and apply it to each report file structure."
+    ],
+    "correct_answer": [
+      "Publish a single master semantic model to the service, and have all ten reports connect to it via Live Connection."
+    ]
+  },
+  {
+    "question_number": 67,
+    "question_text": "A developer creates a line chart showing sales trends over time. They want users to be able to right-click a data point for a specific year and navigate to a separate detailed page filtered for that exact year. What feature supports this?",
+    "options": [
+      "Drill-through filters, configured by adding the destination field to the drill-through section of the target detail page.",
+      "Bookmark actions, created by saving the state of the line chart visual containers on the main page canvas.",
+      "Tooltip pages, designed by changing the page size settings to a standard tooltip form factor block framework.",
+      "Edit interactions, activated by altering the filter propagation settings via the format configuration menu panel."
+    ],
+    "correct_answer": [
+      "Drill-through filters, configured by adding the destination field to the drill-through section of the target detail page."
+    ]
+  },
+  {
+    "question_number": 68,
+    "question_text": "A data model contains an internal column that is only used as a tracking key to join two tables together. It has no analytical meaning for end-users. What is the best practice regarding this column's visibility?",
+    "options": [
+      "Hide the column in the Report view so it does not clutter the field list for business report authors.",
+      "Delete the column completely from the model using Power Query steps to force a structural error condition.",
+      "Convert the column data type into an explicit DAX measure that returns a static text string flag parameter.",
+      "Rename the column with a special prefix to force it to render at the very bottom of every visual hierarchy block."
+    ],
+    "correct_answer": [
+      "Hide the column in the Report view so it does not clutter the field list for business report authors."
+    ]
+  },
+  {
+    "question_number": 69,
+    "question_text": "A Power BI report performs beautifully when tested locally with 1,000 rows of data but becomes extremely laggy when deployed to production with 10,000,000 rows. Which design element is the most likely culprit for this scalability bottleneck?",
+    "options": [
+      "The use of complex row-by-row DAX calculated columns instead of implementing pre-calculated fields or Power Query steps.",
+      "The choice of using single-direction filters instead of bi-directional filters across all dimension table connections.",
+      "The implementation of a standardized JSON theme file to control the background canvas color properties across pages.",
+      "The configuration of a dedicated data gateway cluster infrastructure to handle automated cloud synchronization schedules."
+    ],
+    "correct_answer": [
+      "The use of complex row-by-row DAX calculated columns instead of implementing pre-calculated fields or Power Query steps."
+    ]
+  },
+  {
+    "question_number": 70,
+    "question_text": "An organization wants to configure dynamic Row-Level Security (RLS) so that a single security role handles thousands of employees automatically based on corporate emails. Which DAX function is designed to achieve this?",
+    "options": [
+      "USERPRINCIPALNAME(), which returns the current authenticated cloud user's login email address string.",
+      "USERNAME(), which always outputs the local computer hardware domain name configuration settings frame.",
+      "LOOKUPVALUE(), which forces the data engine to scan external text documents for authorization keys.",
+      "CALCULATE(), which switches the visual layout context to override default filter propagation mechanics."
+    ],
+    "correct_answer": [
+      "USERPRINCIPALNAME(), which returns the current authenticated cloud user's login email address string."
+    ]
+  },
+  {
+    "question_number": 71,
+    "question_text": "A developer needs to convert a column containing timestamps into a standardized 'Short Date' format in the data model. Where is the most appropriate place to change this formatting property for optimal user experience?",
+    "options": [
+      "In the Data view or Model view, by selecting the column and adjusting the Format dropdown under Column Tools.",
+      "Inside the Advanced Editor window of Power Query by writing a custom binary transformation code wrapper.",
+      "Within the conditional formatting properties panel of the individual report visualization canvas components.",
+      "By modifying the regional language preferences settings inside the local computer operating system control panel."
+    ],
+    "correct_answer": [
+      "In the Data view or Model view, by selecting the column and adjusting the Format dropdown under Column Tools."
+    ]
+  },
+  {
+    "question_number": 72,
+    "question_text": "A report contains a map visual tracking global sales locations. The data contains city names like 'London' and 'Paris', but some points are plotting incorrectly in the wrong countries. How can the developer quickly improve the accuracy of the map visual?",
+    "options": [
+      "Select the city column and set its Data Category property to 'City' under the column tools tab interface.",
+      "Convert the city name strings into uppercase alphanumeric representations within the Power Query editor.",
+      "Establish a bidirectional connection between the geography table and the primary transactional ledger view.",
+      "Replace the map visual container element with a standard horizontal stacked bar chart component layout."
+    ],
+    "correct_answer": [
+      "Select the city column and set its Data Category property to 'City' under the column tools tab interface."
+    ]
+  },
+  {
+    "question_number": 73,
+    "question_text": "A developer is creating an advanced financial model. They want a mechanism where clicking a visual element filters everything on the current page but highlights values instead of removing rows entirely. What configuration controls this?",
+    "options": [
+      "Visual Interactions settings, toggling the interaction option from 'Filter' to 'Highlight' for the target visual element.",
+      "The cross-filter direction properties of the underlying data tables within the Model view diagram matrix.",
+      "The security assignment definitions established inside the Row-Level Security configuration popup wizard menu.",
+      "Writing a custom DAX measure that overrides evaluation contexts using explicit context transition modifiers."
+    ],
+    "correct_answer": [
+      "Visual Interactions settings, toggling the interaction option from 'Filter' to 'Highlight' for the target visual element."
+    ]
+  },
+  {
+    "question_number": 74,
+    "question_text": "A Power BI cloud dataset fails to refresh with a credential validation error. A gateway is not required because the data source is an online Azure SQL database. How should a workspace administrator resolve this issue?",
+    "options": [
+      "Go to the semantic model settings in Power BI Service, expand Data Source Credentials, and edit the credentials.",
+      "Re-download the original desktop file, change the server names to lowercase text, and republish the report.",
+      "Delete the shared cloud workspace entirely and recreate it using a different organizational user profile license.",
+      "Add a calculated table using DAX script that mimics the database connection tokens inside the model framework."
+    ],
+    "correct_answer": [
+      "Go to the semantic model settings in Power BI Service, expand Data Source Credentials, and edit the credentials."
+    ]
+  },
+  {
+    "question_number": 75,
+    "question_text": "A data model contains an 'Inventory' fact table that records product stock levels at the end of every week. Why would an experienced developer avoid simple SUM aggregations when building measures for this column?",
+    "options": [
+      "Summing stock levels across multiple consecutive time periods produces artificial numbers that distort actual inventory on hand.",
+      "The xVelocity compression engine completely blocks numerical summation operations on non-transactional database metrics.",
+      "Summing inventory figures automatically triggers an internal memory leak within cloud visualization container frames.",
+      "The Power BI Service gateway cannot parse the field values if they are summarized across a date dimension path."
+    ],
+    "correct_answer": [
+      "Summing stock levels across multiple consecutive time periods produces artificial numbers that distort actual inventory on hand."
+    ]
+  },
+  {
+    "question_number": 76,
+    "question_text": "A user wants to view a matrix visual showing sales per category, but they want the background color of each cell to scale from light green to dark green based on performance. What feature meets this requirement?",
+    "options": [
+      "Conditional formatting applied to the specific background color property of the target metric field inside the visual.",
+      "A custom theme JSON definition file imported to change the default font properties of the report workspace layout.",
+      "A Power Query transformation step that replaces text character strings with hex color code representations directly.",
+      "Configuring a separate bookmark layer that toggles the visibility of green geometric image boxes behind text cells."
+    ],
+    "correct_answer": [
+      "Conditional formatting applied to the specific background color property of the target metric field inside the visual."
+    ]
+  },
+  {
+    "question_number": 77,
+    "question_text": "A developer needs to write a DAX measure that calculates year-to-date sales. They want to ensure it calculates accurately regardless of individual visual layout contexts. Which function is specialized for this calculation path?",
+    "options": [
+      "TOTALYTD(), which evaluates the expression across a continuous date column from the start of the current year.",
+      "SUMX(), which loops row-by-row through an entire uncompressed transactional data ledger table structure.",
+      "CALCULATE(), which switches the active relationship tracking index vectors without altering date ranges.",
+      "EARLIER(), which isolates historical record variables during complex nested row evaluation loops in tables."
+    ],
+    "correct_answer": [
+      "TOTALYTD(), which evaluates the expression across a continuous date column from the start of the current year."
+    ]
+  },
+  {
+    "question_number": 78,
+    "question_text": "A corporate report needs to be distributed to external business clients who do not belong to the internal corporate Azure Active Directory tenant. What is the recommended secure sharing method within Power BI Service?",
+    "options": [
+      "Invite the external clients as guest users via Azure AD Business-to-Business (B2B) and grant report access.",
+      "Publish the report using 'Publish to Web' and send the public link via an unencrypted corporate email stream.",
+      "Provide the external clients with the raw database connection strings and the original authoring desktop file.",
+      "Export the report as a collection of static screenshots embedded inside a presentation document attachment."
+    ],
+    "correct_answer": [
+      "Invite the external clients as guest users via Azure AD Business-to-Business (B2B) and grant report access."
+    ]
+  },
+  {
+    "question_number": 79,
+    "question_text": "A data engineer notices that a Power Query model contains ten separate transformation steps. They want to check if the database is executing these steps together or if Power BI is doing it locally. What UI indicator should they check?",
+    "options": [
+      "Right-click the final query step and look for an active, selectable 'View Native Query' option in the menu context.",
+      "Inspect the performance analyzer log files to count the total millisecond latency metrics of data processing frames.",
+      "Verify if the query names are displayed in italic font structures inside the left navigator panel hierarchy list.",
+      "Check if the advanced editor code blocks contain any references to explicit M parameters or custom data schemas."
+    ],
+    "correct_answer": [
+      "Right-click the final query step and look for an active, selectable 'View Native Query' option in the menu context."
+    ]
+  },
+  {
+    "question_number": 80,
+    "question_text": "A company requires their sales dashboard to update automatically every fifteen minutes to show live retail tracking figures. The dataset is configured in Import mode. Why is this configuration inappropriate for the requirement?",
+    "options": [
+      "Import datasets in shared cloud workspaces have a strict limit of eight scheduled refresh operations per calendar day.",
+      "The Import storage mode disables all interactive visual filtering features on the published report canvas screens.",
+      "Importing data requires the local user to manually click the desktop refresh button from their personal machine daily.",
+      "The xVelocity compression engine cannot process new rows unless the entire historical table schema is deleted first."
+    ],
+    "correct_answer": [
+      "Import datasets in shared cloud workspaces have a strict limit of eight scheduled refresh operations per calendar day."
+    ]
+  },
+  {
+    "question_number": 81,
+    "question_text": "A developer establishes an active relationship between two tables in the Model view. Later, they attempt to create a second relationship between different columns in the same tables, but it defaults to inactive. Why?",
+    "options": [
+      "Power BI permits only one active relationship path between any two tables at a time to prevent filter ambiguity.",
+      "The data types of the columns chosen for the secondary relationship do not match the primary key parameters.",
+      "The destination table contains duplicate values that conflict with the primary key definitions of the first join.",
+      "The data model storage configuration must be converted to DirectQuery before secondary joins can be activated."
+    ],
+    "correct_answer": [
+      "Power BI permits only one active relationship path between any two tables at a time to prevent filter ambiguity."
+    ]
+  },
+  {
+    "question_number": 82,
+    "question_text": "A report page contains a line chart and a pie chart. When a slice of the pie chart is clicked, the line chart fades out unselected segments instead of reducing its timeline bounds. What interaction mode is currently active?",
+    "options": [
+      "Cross-highlighting, which visually isolates the filtered proportion while maintaining the total structure framework.",
+      "Cross-filtering, which completely removes non-matching data rows from the visual calculation engine boundaries.",
+      "Drill-down exploration, which navigates to a lower level of hierarchical category values in the timeline sequence.",
+      "Row-Level Security enforcement, which restricts visibility based on authenticated corporate email profile definitions."
+    ],
+    "correct_answer": [
+      "Cross-highlighting, which visually isolates the filtered proportion while maintaining the total structure framework."
+    ]
+  },
+  {
+    "question_number": 83,
+    "question_text": "An organization wants to configure an alert so that facility managers receive an automated email the instant a data metric crosses a specific critical threshold. Where can this data alert capability be set up?",
+    "options": [
+      "In the Power BI Service, by pinning a card or gauge visual to a dashboard and configuring a data alert rule.",
+      "Inside the Power Query Editor window, by adding a conditional column transformation step using advanced M syntax.",
+      "Within the Power BI Desktop client options menu, under the local application diagnostics tracking definitions panel.",
+      "By writing a specialized DAX measure that references the email distribution lists via a custom lookup formula."
+    ],
+    "correct_answer": [
+      "In the Power BI Service, by pinning a card or gauge visual to a dashboard and configuring a data alert rule."
+    ]
+  },
+  {
+    "question_number": 84,
+    "question_text": "A data model contains a flat table with millions of rows of web traffic data. A column tracks user country strings, but 95% of the rows contain 'United States'. How does this high skew affect columnar compression in Import mode?",
+    "options": [
+      "It benefits compression significantly because the xVelocity engine optimizes memory by encoding repeating values efficiently.",
+      "It degrades compression performance because repeating values confuse the data dictionary indexing structures.",
+      "It forces the Power Query engine to break the query folding mechanisms when loading rows into system memory partitions.",
+      "It requires the developer to split the country field into multiple binary flags to allow visual elements to load."
+    ],
+    "correct_answer": [
+      "It benefits compression significantly because the xVelocity engine optimizes memory by encoding repeating values efficiently."
+    ]
+  },
+  {
+    "question_number": 85,
+    "question_text": "A developer wants to calculate the percentage of total sales that each individual product contributes. Which DAX function combination should be used to calculate the denominator value accurately regardless of row filters?",
+    "options": [
+      "CALCULATE( [Total Sales], ALL( 'Product' ) ), which removes filters from the product table context to get the baseline.",
+      "SUMX( RELATEDTABLE( 'Product' ), [Total Sales] ), which forces a row-by-row iteration over active records.",
+      "TOTALYTD( [Total Sales], 'Calendar'[Date] ), which aggregates values chronologically across the active dimension path.",
+      "LOOKUPVALUE( 'Product'[Sales], 'Product'[ID], MAX('Product'[ID]) ), which performs a static search for scalar attributes."
+    ],
+    "correct_answer": [
+      "CALCULATE( [Total Sales], ALL( 'Product' ) ), which removes filters from the product table context to get the baseline."
+    ]
+  },
+  {
+    "question_number": 86,
+    "question_text": "A business user creates a personal workspace in Power BI Service and shares a report link with a teammate. The teammate receives an 'Access Denied' error message when clicking the link. What is the most likely reason?",
+    "options": [
+      "Sharing reports from a personal workspace requires the content creator to have appropriate permissions and sharing rights.",
+      "The teammate's local desktop application version is outdated compared to the cloud service deployment environment.",
+      "The underlying semantic model data source views were built using M parameters instead of standard database tables.",
+      "The report contains more than three individual visualization canvas elements on a single dashboard layer frame."
+    ],
+    "correct_answer": [
+      "Sharing reports from a personal workspace requires the content creator to have appropriate permissions and sharing rights."
+    ]
+  },
+  {
+    "question_number": 87,
+    "question_text": "A developer updates a Power BI report by adding two new pages and altering a chart layout. They save the file and want corporate users to see these changes in the published Power BI App. What final step must be executed?",
+    "options": [
+      "Publish the updated file to the workspace in Power BI Service, then click 'Update App' within the workspace dashboard.",
+      "Reconfigure the on-premises network gateway cluster and force a manual hardware restart sequence on the server machine.",
+      "Generate a completely new security access token inside the Microsoft 365 global active directory portal panel.",
+      "Instruct every corporate viewer to clear their web browser cache and download a fresh copy of the desktop application."
+    ],
+    "correct_answer": [
+      "Publish the updated file to the workspace in Power BI Service, then click 'Update App' within the workspace dashboard."
+    ]
+  },
+  {
+    "question_number": 88,
+    "question_text": "An organization utilizes a Power BI report connected via DirectQuery to an AWS Redshift data warehouse. Executives complain that visual interactions are slow during peak business hours. What architectural remediation should be prioritized?",
+    "options": [
+      "Implement a localized aggregate table strategy in the model or configure performance indexes on the source database warehouse.",
+      "Convert all data relationships from single-direction propagation paths into active bidirectional filter contexts.",
+      "Re-write all M transformation queries using custom parameters inside the advanced editor configuration panel console.",
+      "Distribute the report visuals across ten independent cloud workspaces to share the network bandwidth allocation bounds."
+    ],
+    "correct_answer": [
+      "Implement a localized aggregate table strategy in the model or configure performance indexes on the source database warehouse."
+    ]
+  },
+  {
+    "question_number": 89,
+    "question_text": "A data analyst needs to clean a column of text entries containing customer feedback. They need to extract all words that appear after a specific delimiter character symbol '|'. Which Power Query function tool is optimal?",
+    "options": [
+      "Extract Text After Delimiter, which creates a wizard-driven transformation step to isolate the target text substring fields.",
+      "Split Column by Digit to Alphanumeric, which automatically splits records based on character type boundaries.",
+      "The Trim function modifier, which strips out leading and trailing whitespaces from the structural string variables.",
+      "The Replace Values tool, which searches for exact matches and swaps characters across the entire selected column domain."
+    ],
+    "correct_answer": [
+      "Extract Text After Delimiter, which creates a wizard-driven transformation step to isolate the target text substring fields."
+    ]
+  },
+  {
+    "question_number": 90,
+    "question_text": "A Power BI developer notices that a DAX measure is returning incorrect results because a row context exists but a filter context is required to evaluate a calculation. What mechanism converts a row context into a filter context?",
+    "options": [
+      "Context transition, which is triggered automatically when wrapping an expression inside the CALCULATE function block.",
+      "Implicit coercion, which happens when changing a column data type from alphanumeric text string to integer format.",
+      "Query folding propagation, which converts local M expressions into a single structured native SQL database statement.",
+      "Cross-filter direction switching, which alters relationship properties within the model diagram visual interface matrix."
+    ],
+    "correct_answer": [
+      "Context transition, which is triggered automatically when wrapping an expression inside the CALCULATE function block."
+    ]
+  },
+  {
+    "question_number": 91,
+    "question_text": "A workspace member with the 'Contributor' role wants to configure a scheduled data refresh pattern for a semantic model. However, they are unable to edit the schedule settings. What is the administrative reason for this restriction?",
+    "options": [
+      "Only the explicit owner of the dataset credentials or a workspace Administrator can configure data refresh schedules.",
+      "The Contributor role is restricted to a read-only view of all published report page canvas layouts and cannot edit items.",
+      "The semantic model contains measures that utilize time intelligence functions, requiring an Admin account assignment.",
+      "The report file size exceeds the maximum memory boundary limits allocated to standard developer group accounts."
+    ],
+    "correct_answer": [
+      "Only the explicit owner of the dataset credentials or a workspace Administrator can configure data refresh schedules."
+    ]
+  },
+  {
+    "question_number": 92,
+    "question_text": "A data model contains a Sales table and a Target table. Sales records are logged daily, while Targets are set at the monthly level. What modeling step is required to build accurate comparative visualizations across these tables?",
+    "options": [
+      "Ensure both tables link to a shared Date dimension table at the Month level or allocate daily values to match granularity.",
+      "Establish a direct bidirectional many-to-many relationship between the daily date key and the monthly target string field.",
+      "Append the rows of the Target table directly to the bottom of the Sales table inside the Power Query editor workspace.",
+      "Convert the storage mode of the Target table to DirectQuery while maintaining the Sales table on Import configuration settings."
+    ],
+    "correct_answer": [
+      "Ensure both tables link to a shared Date dimension table at the Month level or allocate daily values to match granularity."
+    ]
+  },
+  {
+    "question_number": 93,
+    "question_text": "A developer wants to restrict users from exporting underlying row-level data from a corporate report visual in Power BI Service. Where should this configuration restriction be enforced?",
+    "options": [
+      "In Power BI Desktop report settings under Options, changing Export Data settings to allow summary data only or block export.",
+      "Inside the Power Query Editor data load configurations by unchecking the enable load option for the fact table entities.",
+      "By applying a specific DAX formula to the measure calculation block that returns blank characters during download requests.",
+      "Within the active directory tenant profiles panel by disabling file download rights for all corporate stakeholder groups."
+    ],
+    "correct_answer": [
+      "In Power BI Desktop report settings under Options, changing Export Data settings to allow summary data only or block export."
+    ]
+  },
+  {
+    "question_number": 94,
+    "question_text": "A database view contains a column named 'Region Code' containing entries like 'US-01' and 'EU-02'. A developer wants to isolate the continent prefix characters ('US', 'EU') into a new separate field. Which strategy is best?",
+    "options": [
+      "Use Split Column by Delimiter in Power Query, selecting the hyphen character as the splitting boundary marker rule.",
+      "Write a complex DAX time intelligence statement that calculates text character positions row-by-row during calculation phases.",
+      "Transpose the entire data table horizontal orientation to align column parameters with structural value boundaries.",
+      "Establish a many-to-many cross-filtering relationship that maps the region strings to an external index reference table."
+    ],
+    "correct_answer": [
+      "Use Split Column by Delimiter in Power Query, selecting the hyphen character as the splitting boundary marker rule."
+    ]
+  },
+  {
+    "question_number": 95,
+    "question_text": "A Power BI report contains a visual showing 'Total Revenue'. When a user filters the report for 'Product X', the revenue card turns blank. The database contains clear revenue records for Product X. What is the most likely data model issue?",
+    "options": [
+      "The relationship join key column between the Product table and the Sales table contains mismatched data values or types.",
+      "The Product table was loaded using Import mode while the Sales table was configured on DirectQuery storage settings rules.",
+      "The report layout canvas has reached its maximum visual rendering budget allocation for that specific category item row.",
+      "The DAX measure is utilizing an explicit context transition wrapper that deletes records from system memory partitions."
+    ],
+    "correct_answer": [
+      "The relationship join key column between the Product table and the Sales table contains mismatched data values or types."
+    ]
+  },
+  {
+    "question_number": 96,
+    "question_text": "A financial report needs to display monetary values in a table. The raw values look like '12450.4532'. The business requests these to display as '$12,450.45'. How should this presentation constraint be resolved?",
+    "options": [
+      "Select the column field, navigate to Measure or Column tools, click the Currency symbol button, and set decimals to 2.",
+      "Write a custom Power Query M step that appends a text string character symbol to the front of every numerical record data row.",
+      "Apply an aggregate grouping transformation step in Power Query that rounds values to the nearest integer index number format.",
+      "Change the visual interaction properties configuration from filter mode to highlight mode on the summary canvas view."
+    ],
+    "correct_answer": [
+      "Select the column field, navigate to Measure or Column tools, click the Currency symbol button, and set decimals to 2."
+    ]
+  },
+  {
+    "question_number": 97,
+    "question_text": "A corporate dataset contains distinct tables for 'Online Sales' and 'Store Sales'. Both tables have identical structures tracking dates, items, and costs. What is the ideal modeling path to build clean unified corporate visuals?",
+    "options": [
+      "Append both tables together vertically in Power Query into a single unified Sales fact table with a clear channel identifier attribute.",
+      "Create a bidirectional many-to-many relationship join path directly linking the product keys of both tables simultaneously.",
+      "Isolate both tables on independent DirectQuery storage configurations and avoid creating data relationship tracking connections.",
+      "Write a custom text string manipulation parameter rule inside the advanced editor to swap row data values during load phases."
+    ],
+    "correct_answer": [
+      "Append both tables together vertically in Power Query into a single unified Sales fact table with a clear channel identifier attribute."
+    ]
+  },
+  {
+    "question_number": 98,
+    "question_text": "A business team wants a report page that automatically filters itself to show data exclusively for the current rolling 30-day window relative to today. What configuration satisfies this requirement with minimal maintenance?",
+    "options": [
+      "Apply a Relative Date filter to the filter panel configuration for the page and set it to the last 30 days.",
+      "Write an automated macro script that deletes records older than thirty days from the source network folder directories daily.",
+      "Add a calculated column using complex nested DAX time intelligence statements that hardcode the current date boundaries.",
+      "Configure a bookmark layer setting that forces report viewers to select a custom range via a date slider component visual."
+    ],
+    "correct_answer": [
+      "Apply a Relative Date filter to the filter panel configuration for the page and set it to the last 30 days."
+    ]
+  },
+  {
+    "question_number": 99,
+    "question_text": "A data architect is evaluating a model layout. They see a single massive data table containing 150 columns combining store info, item info, and customer names. What performance issue is most likely to occur in Import mode?",
+    "options": [
+      "Poor memory compression and slow visual queries because wide tables with multi-topic combinations reduce columnar efficiency.",
+      "The Power BI Desktop authoring client application will block the user from writing any explicit DAX measure scripts completely.",
+      "The network gateway cluster infrastructure will refuse to process data sync operations for tables containing string fields.",
+      "Report pages will be restricted to rendering a maximum of two independent visualization elements on the summary canvas."
+    ],
+    "correct_answer": [
+      "Poor memory compression and slow visual queries because wide tables with multi-topic combinations reduce columnar efficiency."
+    ]
+  },
+  {
+    "question_number": 100,
+    "question_text": "A Power BI administrator wants to audit cloud usage trends to see which corporate reports are opened most frequently by staff members. Which environment provides this analytical tracking oversight out of the box?",
+    "options": [
+      "The Usage Metrics Report available within the Power BI Service workspace portal options panel for report items.",
+      "The Advanced Editor interface window located inside the Power Query transformation engine of the authoring tool client.",
+      "The Performance Analyzer tracking pane menu found under the view layout configuration tab of the local application desktop.",
+      "The Row-Level Security evaluation preview wizard module executed inside the local data model design matrix view.",
+      "The Row-Level Security evaluation preview wizard module executed inside the local data model design matrix view."
+    ],
+    "correct_answer": [
+      "The Usage Metrics Report available within the Power BI Service workspace portal options panel for report items."
+    ]
+  }
+]

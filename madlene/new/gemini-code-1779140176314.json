@@ -1,0 +1,1302 @@
+[
+  {
+    "question_number": 201,
+    "question_text": "A business analyst wants to apply conditional formatting to a Matrix visual to highlight exceptionally high sales. They want the background color to transition smoothly from light blue to dark blue based on the 'Total Sales' measure. Which conditional formatting type should they configure?",
+    "options": [
+      "Gradient scale based on the 'Total Sales' field.",
+      "Rules-based formatting with fixed numerical thresholds.",
+      "Field value formatting pointing to a hex code column.",
+      "Data bars with positive and negative color directions."
+    ],
+    "correct_answer": [
+      "Gradient scale based on the 'Total Sales' field."
+    ]
+  },
+  {
+    "question_number": 202,
+    "question_text": "A developer adds a Line chart to a report to display monthly revenue. They want to show a flat horizontal line indicating the annual budget target of $500,000 across all months. Which feature in the Analytics pane should be used?",
+    "options": [
+      "Constant line",
+      "Trend line",
+      "Forecast line",
+      "Average line"
+    ],
+    "correct_answer": [
+      "Constant line"
+    ]
+  },
+  {
+    "question_number": 203,
+    "question_text": "A multi-page report needs to have a 'Region' slicer on the first page that automatically filters the data on three other hidden detailed pages. What configuration should the report designer apply to achieve this?",
+    "options": [
+      "Enable 'Sync slicers' for the Region attribute across the target pages in the Sync Slicers pane.",
+      "Change the relationship cross-filter direction parameter to 'Both' for all dimension tables.",
+      "Set the visual interaction mode of the Region slicer component to 'Highlight' on all pages.",
+      "Re-import the Region table four separate times and link each to a separate page context."
+    ],
+    "correct_answer": [
+      "Enable 'Sync slicers' for the Region attribute across the target pages in the Sync Slicers pane."
+    ]
+  },
+  {
+    "question_number": 204,
+    "question_text": "A report contains a Column chart showing 'Sales by Category' and a Bar chart showing 'Sales by Region'. Clicking a column in the Category chart highlights a portion of the bars instead of filtering them completely. Where can the user change this behavior so it filters out the non-matching rows?",
+    "options": [
+      "Select the Category chart, go to the Format ribbon, click 'Edit interactions', and select the Filter icon on the Region chart.",
+      "Modify the relationship type in the Model view from One-to-Many to Many-to-Many with bidirectional filtering.",
+      "Open the Performance Analyzer pane and change the query caching strategy from Highlight to Filter.",
+      "Apply a Top N filter rule directly to the visual-level filter card within the Filters pane layout."
+    ],
+    "correct_answer": [
+      "Select the Category chart, go to the Format ribbon, click 'Edit interactions', and select the Filter icon on the Region chart."
+    ]
+  },
+  {
+    "question_number": 205,
+    "question_text": "A developer wants to create a personalized experience where hovering over a customer's name in a Table visual reveals a mini detailed chart showing that specific customer's purchase history over time. What pattern should be followed?",
+    "options": [
+      "Create a separate report page, configure it as a Tooltip page in Page Information, and link it in the Table's visual tooltip properties.",
+      "Configure a drill-through action pointing to a hidden summary dashboard tile in the cloud service workspace.",
+      "Insert a nested canvas grid inside the table cell formatting menu using custom M expression parameters.",
+      "Enable the 'Auto Date/Time' global option to force automated timeline matrix compilation frames."
+    ],
+    "correct_answer": [
+      "Create a separate report page, configure it as a Tooltip page in Page Information, and link it in the Table's visual tooltip properties."
+    ]
+  },
+  {
+    "question_number": 206,
+    "question_text": "A report designer configures three buttons to switch between three separate views of a report page by toggling the visibility of different visual elements. However, when users switch views, their active slicer selections are inadvertently reset. How can the designer fix this?",
+    "options": [
+      "Uncheck the 'Data' property for each bookmark in the Bookmarks pane while keeping 'Visuals' checked.",
+      "Uncheck the 'Display' option for each bookmark while keeping the 'Current Page' attribute enabled.",
+      "Convert the report storage engine settings to DirectQuery to enforce live state synchronization mechanics.",
+      "Configure a custom JSON canvas theme file that locks filter selections globally across all bookmarks."
+    ],
+    "correct_answer": [
+      "Uncheck the 'Data' property for each bookmark in the Bookmarks pane while keeping 'Visuals' checked."
+    ]
+  },
+  {
+    "question_number": 207,
+    "question_text": "An enterprise executive wants to understand which operational factors—such as shipping carrier, warehouse location, or order priority—have the largest statistical impact on late delivery rates. Which AI visual should the developer add?",
+    "options": [
+      "Key Influencers visual",
+      "Decomposition Tree visual",
+      "Smart Narrative visual",
+      "Q&A visual"
+    ],
+    "correct_answer": [
+      "Key Influencers visual"
+    ]
+  },
+  {
+    "question_number": 208,
+    "question_text": "A data analyst needs a visual that allows root-cause analysis by letting users click through a high-level metric like 'Total Expenses' and break it down step-by-step into 'Department', then 'Cost Center', and finally 'Expense Category' in an ad-hoc path. Which visual is designed for this?",
+    "options": [
+      "Decomposition Tree visual",
+      "Key Influencers visual",
+      "Waterfall chart",
+      "Scatter plot"
+    ],
+    "correct_answer": [
+      "Decomposition Tree visual"
+    ]
+  },
+  {
+    "question_number": 209,
+    "question_text": "A report page contains a variety of charts showing quarterly financial statistics. The manager wants a text block that automatically drafts a natural language summary of the trends, updating its values dynamically when slicers are changed. Which visual satisfies this?",
+    "options": [
+      "Smart Narrative visual",
+      "Multi-row card",
+      "Q&A visual",
+      "Paginated Report visual"
+    ],
+    "correct_answer": [
+      "Smart Narrative visual"
+    ]
+  },
+  {
+    "question_number": 210,
+    "question_text": "A logistics coordinator tracks vehicle fuel consumption anomalies on a Line chart showing daily usage. They want the chart to automatically flag data points that fall outside standard statistical deviations and display an explanatory tooltip. What feature should be enabled?",
+    "options": [
+      "Find anomalies in the Analytics pane options of the Line chart.",
+      "Add a cluster analysis overlay using the scatter plot context menus.",
+      "Write a complex DAX iterator measure utilizing nested EARLIER tracking metrics.",
+      "Configure a dynamic formatting string on the primary numerical ledger variable."
+    ],
+    "correct_answer": [
+      "Find anomalies in the Analytics pane options of the Line chart."
+    ]
+  },
+  {
+    "question_number": 211,
+    "question_text": "A modeler has a continuous numeric column 'Age' ranging from 0 to 100. They want to create a bar chart that displays the count of customers grouped into fixed 10-year age brackets (e.g., 0-10, 11-20). What is the most efficient modeling step?",
+    "options": [
+      "Right-click the Age column, select 'New group', and set the Group type to 'Bin' with a size of 10.",
+      "Write a nested IF statement calculated column checking every integer boundary value on disk.",
+      "Use Power Query to duplicate the table ten times and filter each instance to a specific age range.",
+      "Configure a bidirectional many-to-many relationship path with an isolated text registry."
+    ],
+    "correct_answer": [
+      "Right-click the Age column, select 'New group', and set the Group type to 'Bin' with a size of 10."
+    ]
+  },
+  {
+    "question_number": 212,
+    "question_text": "A dashboard developer needs to display a single strategic metric, 'Quarterly Revenue Target Achievement', which must show the current progress value, the fixed target goal, and a color-coded status indicator (Red/Green). Which visual is best optimized for this concise spatial requirement?",
+    "options": [
+      "KPI visual",
+      "Decomposition Tree",
+      "Funnel chart",
+      "Scatter plot with a play axis"
+    ],
+    "correct_answer": [
+      "KPI visual"
+    ]
+  },
+  {
+    "question_number": 213,
+    "question_text": "A Line chart displaying sensory data points collected every second appears messy and takes a long time to render. The developer wants to optimize visual performance without modifying the underlying model data. What chart behavior configuration can help?",
+    "options": [
+      "Ensure 'High-density sampling' is enabled in the visual's formatting properties under General.",
+      "Switch the visual type to a 100% Stacked Bar chart to suppress line segment rendering cycles.",
+      "Force visual-level interactions to use the Highlight option instead of standard Filter mechanics.",
+      "Change the formatting properties to display every single individual data marker as a custom SVG asset."
+    ],
+    "correct_answer": [
+      "Ensure 'High-density sampling' is enabled in the visual's formatting properties under General."
+    ]
+  },
+  {
+    "question_number": 214,
+    "question_text": "To ensure a Power BI report conforms to corporate accessibility guidelines, a developer needs to verify that visually impaired users utilizing screen readers can navigate through visuals in a logical sequence. Which layout setting should be configured?",
+    "options": [
+      "Tab order within the Selection pane.",
+      "Layer order within the Selection pane.",
+      "Conditional formatting alt-text scripts inside DAX.",
+      "Gridlines alignment properties under the View menu."
+    ],
+    "correct_answer": [
+      "Tab order within the Selection pane."
+    ]
+  },
+  {
+    "question_number": 215,
+    "question_text": "A report page with multiple intricate matrix visuals loads slowly when interacting with slicers. A developer needs to determine exactly which visual takes the longest to process its underlying DAX queries and render on-screen. What tool should be used?",
+    "options": [
+      "Performance Analyzer in Power BI Desktop",
+      "Query Diagnostics in Power Query Editor",
+      "ALM Toolkit schema validation profiles",
+      "Data Alert configuration thresholds in Power BI Service"
+    ],
+    "correct_answer": [
+      "Performance Analyzer in Power BI Desktop"
+    ]
+  },
+  {
+    "question_number": 216,
+    "question_text": "A team wants to use a custom visualization component found online that is not included in the standard core Power BI visual palette. What is a key security risk or administration consideration before importing it into an enterprise report?",
+    "options": [
+      "Uncertified custom visuals can potentially transmit data to external third-party services and may bypass data privacy controls.",
+      "Custom visuals permanently disable query folding capabilities for all underlying SQL server data connections.",
+      "Importing any custom visual forces the entire data model to change its storage configuration to DirectQuery.",
+      "The Power BI Service automatically blocks any workspace containing more than one custom marketplace layout."
+    ],
+    "correct_answer": [
+      "Uncertified custom visuals can potentially transmit data to external third-party services and may bypass data privacy controls."
+    ]
+  },
+  {
+    "question_number": 217,
+    "question_text": "A sales manager wants to perform a sensitivity analysis where they can move a slider to adjust a hypothetical 'Discount Rate' from 0% to 30% and see its immediate simulated impact on net profit. Which modeling/visualization feature supports this?",
+    "options": [
+      "What-If Parameter (Numeric Range Parameter)",
+      "Smart Narrative automated binding expressions",
+      "Grouping and Binning configuration wizard",
+      "Row-Level Security user configuration profiles"
+    ],
+    "correct_answer": [
+      "What-If Parameter (Numeric Range Parameter)"
+    ]
+  },
+  {
+    "question_number": 218,
+    "question_text": "A developer wants to allow users viewing a high-level summary report page to right-click a specific region and jump directly to a entirely separate report page that displays detailed transaction logs filtered for that region. What feature must be set up?",
+    "options": [
+      "Drill-through destination page configuration.",
+      "Cross-filtering visual interaction rules.",
+      "Dynamic formatting variables using field parameters.",
+      "Sync slicers activation across separate cloud workspaces."
+    ],
+    "correct_answer": [
+      "Drill-through destination page configuration."
+    ]
+  },
+  {
+    "question_number": 219,
+    "question_text": "A report contains four visual charts on a single page. The developer wants to restrict the entire page so it only displays data for the '2026' fiscal year, without adding an explicit slicer visual to the canvas layout. What filter context should be configured?",
+    "options": [
+      "Page-level filter in the Filters pane.",
+      "Visual-level filter in the Filters pane.",
+      "Report-level filter in the Filters pane.",
+      "Cross-report drill-through parameter filter."
+    ],
+    "correct_answer": [
+      "Page-level filter in the Filters pane."
+    ]
+  },
+  {
+    "question_number": 220,
+    "question_text": "A marketing dashboard needs to display a bar chart showing only the top 5 highest-grossing products sold. How can this layout be configured without writing a custom DAX measure?",
+    "options": [
+      "Add the Product Name field to the Filters pane under 'Filters on this visual', change the filter type to 'Top N', set the value to 5, and drag the 'Total Sales' field into the 'By value' well.",
+      "Configure a Page-level filter rule using basic filtering and manually check the boxes of the top 5 items.",
+      "Set the visual cross-filter interaction properties of the bar chart component layout to use the Highlight option rule.",
+      "Change the grouping and binning properties of the product description field to use a fixed bin count of 5 entries."
+    ],
+    "correct_answer": [
+      "Add the Product Name field to the Filters pane under 'Filters on this visual', change the filter type to 'Top N', set the value to 5, and drag the 'Total Sales' field into the 'By value' well."
+    ]
+  },
+  {
+    "question_number": 221,
+    "question_text": "A developer places a date slicer on Page 1 of a multi-page financial report. They use the Sync Slicers pane to sync it with Page 2, but they uncheck the visibility icon for Page 2. What is the operational outcome?",
+    "options": [
+      "Slicer selections on Page 1 will still filter Page 2, but no physical slicer visual will be visible to users navigating Page 2.",
+      "The slicer on Page 1 will stop propagating its filter context to Page 2 because visibility is a prerequisite for sync rules.",
+      "Power BI will return a critical rendering error indicating that visual references are misaligned on the canvas.",
+      "The data model storage mode properties for both pages are forced to synchronize using local hardware memory caches."
+    ],
+    "correct_answer": [
+      "Slicer selections on Page 1 will still filter Page 2, but no physical slicer visual will be visible to users navigating Page 2."
+    ]
+  },
+  {
+    "question_number": 222,
+    "question_text": "A data designer wants to build a spatial report showing regional market share across customized political boundary boundaries that do not match standard country or state lines. They have a collection of custom TopoJSON files. Which map visual should be utilized?",
+    "options": [
+      "Shape Map visual",
+      "Filled Map (Choropleth)",
+      "Azure Map visual",
+      "Standard Bubble Map"
+    ],
+    "correct_answer": [
+      "Shape Map visual"
+    ]
+  },
+  {
+    "question_number": 223,
+    "question_text": "A manufacturing dashboard features a Scatter chart that tracks operational metrics like 'Temperature' and 'Pressure'. The engineering team wants to visualize how these two metrics change simultaneously over a timeline sequence by watching the data points move automatically across the canvas. What feature supports this?",
+    "options": [
+      "Play Axis data field well in the Scatter chart configuration properties.",
+      "Trend Line overlay added via the Analytics pane options grid.",
+      "An explicit drill-through targeting rule linked to a hidden tooltip canvas frame.",
+      "What-If numeric range parameters combined with dynamic field formatting keys."
+    ],
+    "correct_answer": [
+      "Play Axis data field well in the Scatter chart configuration properties."
+    ]
+  },
+  {
+    "question_number": 224,
+    "question_text": "A marketing report needs to track the relative popularity ranking of five distinct brands over a 12-month period. The client wants to easily see when a brand changes its rank position (e.g., moves from 2nd to 1st place) using colored ribbons that cross over each other. Which visual is designed for this?",
+    "options": [
+      "Ribbon chart",
+      "Stacked Column chart",
+      "Line chart with smooth vectors",
+      "Waterfall chart"
+    ],
+    "correct_answer": [
+      "Ribbon chart"
+    ]
+  },
+  {
+    "question_number": 225,
+    "question_text": "A corporate finance officer wants a visual report that details how starting net profit is affected by a succession of positive gains and negative operational losses over a year, culminating in a final year-end balance card. Which visual should be chosen?",
+    "options": [
+      "Waterfall chart",
+      "Funnel chart",
+      "Scatter plot",
+      "Gauge visual"
+    ],
+    "correct_answer": [
+      "Waterfall chart"
+    ]
+  },
+  {
+    "question_number": 226,
+    "question_text": "An enterprise sales director wants to monitor a pipeline, tracking how many raw leads progress to initial meetings, then proposals, and finally closed contracts, highlighting the percentage drop-off at each stage. Which visual fits this flow?",
+    "options": [
+      "Funnel chart",
+      "Ribbon chart",
+      "Matrix visual",
+      "Key Influencers visual"
+    ],
+    "correct_answer": [
+      "Funnel chart"
+    ]
+  },
+  {
+    "question_number": 227,
+    "question_text": "A report contains a standard Card visual displaying total revenue. The designer wants to display three additional metrics—Net Margin, Units Sold, and Average Order Value—stacked neatly inside a single compact visual frame. Which visual handles this?",
+    "options": [
+      "Multi-row card visual",
+      "Standard Card visual with dynamic field string values",
+      "KPI visual configuration layout",
+      "Gauge visual container"
+    ],
+    "correct_answer": [
+      "Multi-row card visual"
+    ]
+  },
+  {
+    "question_number": 228,
+    "question_text": "When configuring a Scatter plot visual, what is the consequence of placing a high-cardinality dimension attribute into the 'Details' data well field bucket?",
+    "options": [
+      "The visual splits into multiple individual data points or markers on the grid coordinate canvas, one for each unique attribute value.",
+      "The underlying storage engine refuses to compress the metrics and returns an internal indexing memory error.",
+      "Power BI automatically locks all cross-filtering capabilities for other visuals displayed on the page.",
+      "The visual is forced to render as a vertical hierarchy matrix layout to preserve display space boundaries."
+    ],
+    "correct_answer": [
+      "The visual splits into multiple individual data points or markers on the grid coordinate canvas, one for each unique attribute value."
+    ]
+  },
+  {
+    "question_number": 229,
+    "question_text": "A developer wants to add an automated 3-month forecast line to a Line chart showing monthly customer acquisitions. Why is the 'Forecast' option missing or greyed out in the chart's Analytics pane options?",
+    "options": [
+      "The X-axis of the Line chart is using a categorical text string attribute instead of a continuous chronological date data type.",
+      "The modeler left the default 'Auto Date/Time' options enabled inside global hardware profile parameters.",
+      "The visual contains an active bidirectional cross-filtering rule pointing to secondary transactional fact data ledgers.",
+      "The report author has not published the semantic dataset model to a Power BI Premium cloud capacity workspace."
+    ],
+    "correct_answer": [
+      "The X-axis of the Line chart is using a categorical text string attribute instead of a continuous chronological date data type."
+    ]
+  },
+  {
+    "question_number": 230,
+    "question_text": "A Cartesian column chart contains hundreds of items along the X-axis, making it difficult to analyze dense clusters of columns without scroll bars. What layout feature can be added to allow interactive window scaling directly on the chart canvas?",
+    "options": [
+      "Zoom sliders enabled on the X-axis or Y-axis under formatting properties.",
+      "A What-If numeric parameter linked to a dynamic string title formula.",
+      "Setting the visual interaction mode property to use the Highlight option rule.",
+      "Grouping and binning the dimensions into a recursive parent-child hierarchy layout."
+    ],
+    "correct_answer": [
+      "Zoom sliders enabled on the X-axis or Y-axis under formatting properties."
+    ]
+  },
+  {
+    "question_number": 231,
+    "question_text": "An international enterprise wants a single 'Revenue' measure to display values formatted as Euros (€) when European regions are selected, and as US Dollars ($) when American regions are selected. Which asset feature supports this requirement?",
+    "options": [
+      "Dynamic format strings for measures setting inside the model data view properties.",
+      "Writing multiple independent measures and combining them using a nested Cartesian cross-join step.",
+      "Modifying the local system regional clock settings on the client machine hosting Power BI Desktop.",
+      "Enabling high-density canvas sampling configurations within the visual formatting menus."
+    ],
+    "correct_answer": [
+      "Dynamic format strings for measures setting inside the model data view properties."
+    ]
+  },
+  {
+    "question_number": 232,
+    "question_text": "A developer wants to show separate small line charts for twenty different countries simultaneously, arranged in a grid layout within a single visual container so they can easily compare trends. Which feature should be configured?",
+    "options": [
+      "Small multiples feature by dragging the Country field into the Small Multiples well of the visual.",
+      "Page Navigator visual pointing to hidden individual country report dashboard layout structures.",
+      "Establishing twenty separate inactive relationship join vectors using explicit DAX calculations.",
+      "Inserting a custom TopoJSON background map layer configuration via the Shape Map component options."
+    ],
+    "correct_answer": [
+      "Small multiples feature by dragging the Country field into the Small Multiples well of the visual."
+    ]
+  },
+  {
+    "question_number": 233,
+    "question_text": "A designer wants to add a dynamic navigation panel to a report that automatically updates to display a button for every visible page in the report layout, handling page routing seamlessly. Which element should be added?",
+    "options": [
+      "Page navigator visual from the Insert ribbon buttons menu.",
+      "Bookmark navigator visual configured to run explicit visibility macros.",
+      "A collection of ten separate standard blank buttons assigned to static hardcoded URL paths.",
+      "A What-If numeric range parameter slider mapped to dynamic field string formatting formulas."
+    ],
+    "correct_answer": [
+      "Page navigator visual from the Insert ribbon buttons menu."
+    ]
+  },
+  {
+    "question_number": 234,
+    "question_text": "A report author creates a group of five bookmarks that showcase specific filtering states of a dashboard page. They want an interactive button bar on top of the canvas that lets users switch between these bookmarks without manual button actions. What should they insert?",
+    "options": [
+      "Bookmark navigator visual from the Insert ribbon buttons menu.",
+      "Page navigator visual pointing toward corporate workspace container frameworks.",
+      "Key Influencers AI visualization component configured for categorical tracking variables.",
+      "A matrix visual with expand/collapse buttons enabled across deep multi-tiered hierarchies."
+    ],
+    "correct_answer": [
+      "Bookmark navigator visual from the Insert ribbon buttons menu."
+    ]
+  },
+  {
+    "question_number": 235,
+    "question_text": "A business intelligence team needs to enforce corporate branding—including exact hex colors for data series, fonts, and border styles—across fifty independent Power BI reports. What is the most efficient enforcement mechanism?",
+    "options": [
+      "Create and import a custom Power BI Theme JSON file via the View ribbon menu.",
+      "Manually configure every formatting grid properties card across every individual report visual asset.",
+      "Write a custom DAX calculated table script that establishes static text string color attributes.",
+      "Deploy an on-premises network data gateway cluster to force corporate branding configurations."
+    ],
+    "correct_answer": [
+      "Create and import a custom Power BI Theme JSON file via the View ribbon menu."
+    ]
+  },
+  {
+    "question_number": 236,
+    "question_text": "An operations manager wants to open a published Power BI report via a web URL link, but they want the report to load with the 'StoreRegion' field pre-filtered to 'North' automatically upon launch. What syntax approach handles this?",
+    "options": [
+      "Append query string parameters to the report URL using the format: ?filter=Table/Field eq 'Value'.",
+      "Modify the advanced M transformation script inside Power Query to query local client browser parameters.",
+      "Define a custom Row-Level Security rule that checks the authenticated email profile domain coordinates.",
+      "Configure a sync slicer relationship framework using a disconnected cross-joined table index code."
+    ],
+    "correct_answer": [
+      "Append query string parameters to the report URL using the format: ?filter=Table/Field eq 'Value'."
+    ]
+  },
+  {
+    "question_number": 237,
+    "question_text": "A report viewer complains that the gridlines inside a dense Table visual are invisible, making it difficult to read rows. Where can the report author quickly modify the formatting to apply a clean contrast preset style like 'Alternating rows'?",
+    "options": [
+      "Go to the Format pane for the Table visual, expand 'Style presets', and select the desired layout option.",
+      "Open the global settings menu options and increase the high-density canvas sampling frequency ratio.",
+      "Write a DAX measure using conditional formatting icons that references unicode checkmark characters.",
+      "Select the text field, go to Column Tools, and assign the correct metadata classification to Data Category."
+    ],
+    "correct_answer": [
+      "Go to the Format pane for the Table visual, expand 'Style presets', and select the desired layout option."
+    ]
+  },
+  {
+    "question_number": 238,
+    "question_text": "A developer writes a DAX measure named 'HexColorCode' that returns '#FF0000' if margins drop below 10%, and '#00FF00' otherwise. How can they use this measure to format a table visual's text background dynamically?",
+    "options": [
+      "In conditional formatting settings, select format style by 'Field value', and choose the 'HexColorCode' measure.",
+      "In conditional formatting, choose format style by 'Rules' and write string matching loops tracking hex codes.",
+      "Drag the measure directly into the visual-level filters card slot located within the central Filters pane.",
+      "Change the default summarization properties configuration card option to use the Don't Summarize rule."
+    ],
+    "correct_answer": [
+      "In conditional formatting settings, select format style by 'Field value', and choose the 'HexColorCode' measure."
+    ]
+  },
+  {
+    "question_number": 239,
+    "question_text": "A financial matrix visual displays annual revenue figures across rows of corporate divisions. The executive wants to see a tiny inline trend chart embedded directly within each row cell to see the monthly trajectory at a glance. What feature should be added?",
+    "options": [
+      "Right-click a value in the visual wells and select 'Add a sparkline'.",
+      "Configure an active report page tooltip that renders a separate full-size Line chart canvas.",
+      "Drag the continuous Date column attribute directly into the matrix column hierarchy layout area.",
+      "Activate the Zoom Sliders feature on the Cartesian formatting menu grid configurations choices."
+    ],
+    "correct_answer": [
+      "Right-click a value in the visual wells and select 'Add a sparkline'."
+    ]
+  },
+  {
+    "question_number": 240,
+    "question_text": "A report needs to let users toggle between viewing a bar chart broken down by 'Product Category', 'Sales Region', or 'Shipping Manager' dynamically using a single slicer selection. Which feature allows this without writing complex conditional DAX measures?",
+    "options": [
+      "Field Parameters",
+      "What-If parameters mapped to numeric values",
+      "Grouping and Binning configuration routines",
+      "Enabling bidirectional filters across all lookup paths"
+    ],
+    "correct_answer": [
+      "Field Parameters"
+    ]
+  },
+  {
+    "question_number": 241,
+    "question_text": "When building a custom Report Page Tooltip, a developer notices that the tooltip visual cuts off or appears too large when hovering over data cells. What fundamental setting was missed during the tooltip page setup phase?",
+    "options": [
+      "The Page Size property of the tooltip canvas page must be explicitly set to the 'Tooltip' preset layout option.",
+      "The cross-filter direction parameter of the core data relationship must be adjusted to use the Both rule.",
+      "The default summarization property configuration attributes for join keys must be set to Don't Summarize.",
+      "The page visibility settings must be configured to use the Sync Slicers workspace parameter settings."
+    ],
+    "correct_answer": [
+      "The Page Size property of the tooltip canvas page must be explicitly set to the 'Tooltip' preset layout option."
+    ]
+  },
+  {
+    "question_number": 242,
+    "question_text": "A manufacturing quality dashboard tracks part dimensions. A column chart displays the average thickness per batch. The production team wants to display vertical markers on top of each column showing the upper and lower statistical bounds of measurement error. Which configuration fits?",
+    "options": [
+      "Error bars enabled under the visual formatting options or Analytics pane.",
+      "Constant lines added across the categorical horizontal axis coordinates.",
+      "An explicit drill-through targeting path linked to a separate hidden report view.",
+      "Dynamic formatting strings applied to measures using custom decimal variables."
+    ],
+    "correct_answer": [
+      "Error bars enabled under the visual formatting options or Analytics pane."
+    ]
+  },
+  {
+    "question_number": 243,
+    "question_text": "A data model is configured in DirectQuery mode against a cloud relational database. A developer designs a report page containing thirty-five distinct visual cards, charts, and tables. What visual performance impact is likely to occur?",
+    "options": [
+      "Slower page rendering because every individual visual element generates its own concurrent query thread against the source database.",
+      "The VertiPaq engine will run out of memory space because it attempts to serialize text fields into binary float variables.",
+      "Power BI Service will permanently terminate the workspace connection due to an active circular layout loop error.",
+      "Report authors will be blocked from utilizing standard single-direction relationships between dimensions."
+    ],
+    "correct_answer": [
+      "Slower page rendering because every individual visual element generates its own concurrent query thread against the source database."
+    ]
+  },
+  {
+    "question_number": 244,
+    "question_text": "A report developer wants to ensure that multiple card visuals and charts are perfectly aligned horizontally and have exactly identical vertical spacing gaps on the canvas page. Which interface tools should they utilize?",
+    "options": [
+      "Enable 'Snap to grid' in the View menu, select the objects, and use the 'Align' and 'Distribute' options on the Format ribbon.",
+      "Open the Selection pane and drag the visual layer hierarchies manually until the automated index numbers line up.",
+      "Write a series of row-by-row conditional formatting rules inside a unified JSON custom layout corporate theme.",
+      "Apply a Top N filter rule directly to the visual-level filter card context within the Filter pane framework."
+    ],
+    "correct_answer": [
+      "Enable 'Snap to grid' in the View menu, select the objects, and use the 'Align' and 'Distribute' options on the Format ribbon."
+    ]
+  },
+  {
+    "question_number": 245,
+    "question_text": "An advanced data analyst wants to embed a custom statistical chart into a report page using a Python script (matplotlib). What limitation or behavior must they consider regarding Python visuals in Power BI?",
+    "options": [
+      "All data rows used by the Python visual script are aggregated automatically, and input data size is capped at 150,000 rows.",
+      "Python scripts run directly inside the local computer graphics hardware interface parameters with no memory restrictions.",
+      "Enabling Python visuals instantly switches the storage mode of the entire semantic dataset model to DirectQuery.",
+      "Python visuals automatically support bidirectional cross-filtering mechanics without manual script definitions."
+    ],
+    "correct_answer": [
+      "All data rows used by the Python visual script are aggregated automatically, and input data size is capped at 150,000 rows."
+    ]
+  },
+  {
+    "question_number": 246,
+    "question_text": "A company requires a highly formatted, pixel-perfect operational invoice report that users can print out on standard A4 paper directly from their Power BI dashboard workspace. Which component meets this operational print-ready constraint?",
+    "options": [
+      "Paginated Report visual inserted into the standard report canvas.",
+      "Matrix visual using conditional formatting rules with field value settings.",
+      "Decomposition Tree visual configured for recursive parent-child hierarchy tracking.",
+      "Smart Narrative text block with dynamic automated value binding tokens."
+    ],
+    "correct_answer": [
+      "Paginated Report visual inserted into the standard report canvas."
+    ]
+  },
+  {
+    "question_number": 247,
+    "question_text": "A sales executive reviews report pages primarily on their corporate mobile phone app. The desktop version of the report features a wide multi-column layout that requires horizontal scrolling on small screens. What design optimization should the developer execute?",
+    "options": [
+      "Open the 'Mobile layout' view option in Desktop and arrange the visuals into a vertical, single-column scrollable canvas.",
+      "Alter the global option parameters to force implicit string conversions across all text attribute entries.",
+      "Convert the column data formats to use precise binary float representations to preserve display bounds.",
+      "Instruct the executive to deploy ten separate on-premises network gateway machines to manage screen rendering."
+    ],
+    "correct_answer": [
+      "Open the 'Mobile layout' view option in Desktop and arrange the visuals into a vertical, single-column scrollable canvas."
+    ]
+  },
+  {
+    "question_number": 248,
+    "question_text": "A developer wants a Table visual to display a green up-arrow icon next to rows where profit margins exceed 20%, and a red down-arrow icon elsewhere. How can this layout detail be added efficiently?",
+    "options": [
+      "Configure conditional formatting 'Icons' on the margin column, setting rules based on numerical percentages.",
+      "Import a separate custom AppSource visualization tool that tracks alphanumeric indicator code sequences.",
+      "Write an explicit DAX filter rule that forces the entire table row entry to overwrite its text values.",
+      "Change the default data category configuration of the text attributes to use the Geographic Metadata rule."
+    ],
+    "correct_answer": [
+      "Configure conditional formatting 'Icons' on the margin column, setting rules based on numerical percentages."
+    ]
+  },
+  {
+    "question_number": 249,
+    "question_text": "A corporate manager wants a Table visual that shows horizontal colored bars directly inside the numeric cell background of the 'Sales Amount' column, mimicking an in-cell horizontal bar chart. What conditional formatting type fits?",
+    "options": [
+      "Data bars",
+      "Gradient scale",
+      "Icons styling",
+      "Rules-based text backgrounds"
+    ],
+    "correct_answer": [
+      "Data bars"
+    ]
+  },
+  {
+    "question_number": 250,
+    "question_text": "A developer writes a series of calculated columns to perform row-by-row string slicing on text fields, then drops these columns into a slicer visual. Users complain about slow filtering performance. What optimization rule applies here?",
+    "options": [
+      "Move text transformations upstream to Power Query or the data source to minimize model size and maximize columnar compression efficiency.",
+      "Change the relationship cross-filter direction parameter of the slicer to use the Both configuration setting rule.",
+      "Switch the storage mode properties configuration attributes of the lookup table elements to DirectQuery.",
+      "Deactivate the automated cloud dataset synchronization routines inside the shared service workspace container."
+    ],
+    "correct_answer": [
+      "Move text transformations upstream to Power Query or the data source to minimize model size and maximize columnar compression efficiency."
+    ]
+  },
+  {
+    "question_number": 251,
+    "question_text": "A report contains a large Filters pane on the right side of the canvas. The developer wants to hide specific backend technical join key filters from report consumers while keeping the business filters visible. What action should be taken inside Power BI Desktop?",
+    "options": [
+      "Click the eye icon (Hide filter) on the specific filter cards within the Filters pane before publishing the report.",
+      "Delete the filter cards completely from the visual wells and replace them with implicit text measures on disk.",
+      "Convert the storage configuration properties of all dimension tables to run under DirectQuery mode rules.",
+      "Configure a custom JSON canvas theme file that globally deactivates the structural filter visibility options."
+    ],
+    "correct_answer": [
+      "Click the eye icon (Hide filter) on the specific filter cards within the Filters pane before publishing the report."
+    ]
+  },
+  {
+    "question_number": 252,
+    "question_text": "A dashboard header text title needs to update automatically to read 'Sales Report for North Region' or 'Sales Report for South Region' depending on what territory is active in the user's slicer. How can this be built?",
+    "options": [
+      "Create a DAX text measure using SELECTEDVALUE and link it to the text visual title box via conditional formatting (fx button).",
+      "Write a complex nested IF script inside the advanced M query transformation block tracking browser parameters.",
+      "Establish active bidirectional filters between all dimension lookup pathways and the central text element canvas frames.",
+      "Apply a Top N filter rule directly to the canvas page title block container using a separate numeric index key."
+    ],
+    "correct_answer": [
+      "Create a DAX text measure using SELECTEDVALUE and link it to the text visual title box via conditional formatting (fx button)."
+    ]
+  },
+  {
+    "question_number": 253,
+    "question_text": "When report consumers use the Q&A visual to ask natural language questions like 'What are our top items?', the visual fails to understand that 'items' refers to the column 'ProductDescription'. How can the data modeler fix this permanently?",
+    "options": [
+      "Add 'items' as a synonym for the ProductDescription column in the linguistic schema or Q&A setup tools of the model.",
+      "Rename the physical column inside the SQL server database source views to use alphanumeric text characters.",
+      "Set the cross-filter direction parameter of the product table data relationship structure to use the Both configuration.",
+      "Write an explicit DAX summary measure that concatenates text strings row-by-row across memory partitions."
+    ],
+    "correct_answer": [
+      "Add 'items' as a synonym for the ProductDescription column in the linguistic schema or Q&A setup tools of the model."
+    ]
+  },
+  {
+    "question_number": 254,
+    "question_text": "A developer adds a Column chart showing 'Sales by Store Location' to a report page. They attempt to add a 'Trend line' via the Analytics pane options, but the option is unavailable. What is the technical explanation for this?",
+    "options": [
+      "Trend lines require a continuous numeric or chronological date axis; a categorical text axis like Store Location is invalid.",
+      "The modeler left the default 'Auto Date/Time' settings enabled inside global hardware profile parameters configuration.",
+      "The visual contains an active bidirectional cross-filtering rule pointing to secondary transactional fact ledger entries.",
+      "The report author has not published the semantic dataset model to a Power BI Premium cloud capacity workspace container."
+    ],
+    "correct_answer": [
+      "Trend lines require a continuous numeric or chronological date axis; a categorical text axis like Store Location is invalid."
+    ]
+  },
+  {
+    "question_number": 255,
+    "question_text": "A marketing analyst wants a Scatter plot tracking thousands of customers to automatically partition them into four distinct statistical groups based on similarity of purchasing behaviors. Which built-in visual action handles this?",
+    "options": [
+      "Click the three dots (More options) on the visual header and select 'Automatically find clusters'.",
+      "Write a complex series of nested DAX calculated table scripts utilizing cross-joined filter metrics keys.",
+      "Use Power Query to duplicate the customer ledger rows horizontally and execute an outer join text macro loop.",
+      "Configure a dynamic formatting string on the primary numerical variables using local character variables."
+    ],
+    "correct_answer": [
+      "Click the three dots (More options) on the visual header and select 'Automatically find clusters'."
+    ]
+  },
+  {
+    "question_number": 256,
+    "question_text": "A developer selects ten distinct card visuals on a busy canvas layout page. They want to group them together so that they can move or hide them as a single cohesive block. Which shortcut or pane setting should be executed?",
+    "options": [
+      "Press Ctrl + G to create a visual group, or manage the grouping hierarchy inside the Selection pane.",
+      "Go to the Format ribbon and click 'Edit interactions' to link the component layout boxes horizontally on disk.",
+      "Write a series of row-by-row conditional formatting parameters inside a single custom JSON corporate theme file.",
+      "Apply a Top N filter rule directly to the visual-level filter card slots within the central Filters pane framework."
+    ],
+    "correct_answer": [
+      "Press Ctrl + G to create a visual group, or manage the grouping hierarchy inside the Selection pane."
+    ]
+  },
+  {
+    "question_number": 257,
+    "question_text": "A user wants a Table visual to sort data first alphabetically by 'State Region', and then within each state, sort numerically by 'Total Revenue' in descending order. How can they achieve multi-column sorting directly on the visual?",
+    "options": [
+      "Click the column header for State Region, then hold the Shift key down while clicking the column header for Total Revenue.",
+      "Open the Performance Analyzer pane and adjust the rendering thread priority flags from basic to multi-sort rules.",
+      "Modify the relationship type in the Model view from One-to-Many to Many-to-Many with bidirectional filter propagation.",
+      "Add a custom text string modification step written within the advanced query editor using parameter logic choices."
+    ],
+    "correct_answer": [
+      "Click the column header for State Region, then hold the Shift key down while clicking the column header for Total Revenue."
+    ]
+  },
+  {
+    "question_number": 258,
+    "question_text": "A developer sets up a drill-through page for a Power BI report. They want the automated 'Back' button that Power BI creates on the destination canvas page to use a custom image instead of the default arrow icon. What properties panel path should they follow?",
+    "options": [
+      "Select the button, go to the Format pane, expand 'Button style', change the state to default, and upload a custom image under Fill or Icon properties.",
+      "Modify the advanced M transformation script inside Power Query to point toward an on-premises network image ledger file.",
+      "Define a custom Row-Level Security role checking the authenticated email profile domain attributes from server files.",
+      "Configure a sync slicer relationship framework using a disconnected cross-joined table index tracking variable."
+    ],
+    "correct_answer": [
+      "Select the button, go to the Format pane, expand 'Button style', change the state to default, and upload a custom image under Fill or Icon properties."
+    ]
+  },
+  {
+    "question_number": 259,
+    "question_text": "What is a primary functional difference between a Power BI Report page and a Power BI Service Dashboard?",
+    "options": [
+      "Reports can contain multiple pages, complex DAX slicers, and interactive visuals; Dashboards consolidate single tiles from multiple reports onto one page.",
+      "Dashboards allow full drill-down exploration across hierarchical values while reports are restricted to static text block views.",
+      "Creating any dashboard tile instantly forces the underlying semantic dataset storage engine to run in DirectQuery mode rules.",
+      "Reports require dedicated premium capacities to display visuals while dashboards run entirely on free user storage tiers."
+    ],
+    "correct_answer": [
+      "Reports can contain multiple pages, complex DAX slicers, and interactive visuals; Dashboards consolidate single tiles from multiple reports onto one page."
+    ]
+  },
+  {
+    "question_number": 260,
+    "question_text": "A report designer wants a specific interactive report page to be viewable on a Power BI Service cloud dashboard in its entirety, allowing users to interact with slicers directly on the dashboard canvas layout. What action should be executed?",
+    "options": [
+      "Click the three dots on the report menu bar and select 'Pin a live page' to the target dashboard.",
+      "Pin each individual chart visual separately one-by-one and set visual interactions to Filter manually.",
+      "Export the report page as an uncompressed flat PDF document and load it into a dashboard image tile frame.",
+      "Configure a custom web URL routing address using conditional formatting fields with string parameters keys."
+    ],
+    "correct_answer": [
+      "Click the three dots on the report menu bar and select 'Pin a live page' to the target dashboard."
+    ]
+  },
+  {
+    "question_number": 261,
+    "question_text": "An organization monitors factory sensor outputs in real-time. They configure a Power BI dashboard tile using a Push Dataset data source. Why do the numbers update automatically on screen without a manual page refresh cycle?",
+    "options": [
+      "Real-time streaming dashboard tiles automatically listen for data push events and refresh their UI layer instantly.",
+      "The local system automatically runs a background loop script that flashes the user browser cache index profiles.",
+      "Power BI Service forces all streaming visuals to compile using internal row-level calculated table frameworks on disk.",
+      "The network gateway machine maintains a continuous hardware micro-serialization link that re-indexes files constantly."
+    ],
+    "correct_answer": [
+      "Real-time streaming dashboard tiles automatically listen for data push events and refresh their UI layer instantly."
+    ]
+  },
+  {
+    "question_number": 262,
+    "question_text": "A risk analyst wants Power BI Service to send an automated email notification to their mobile device whenever the 'Defect Rate' metric on a dashboard card visual exceeds 5%. Where should they configure this alert rule?",
+    "options": [
+      "Hover over the dashboard tile card visual, click the three dots, select 'Manage alerts', and define the threshold rule conditions.",
+      "Open the advanced query editor wizard inside Power Query and write an M notification loop tracking row changes.",
+      "Alter the cross-filter direction parameter of the core relationship framework to use the Both configuration setting.",
+      "Publish the report layout inside ten independent cloud workspace containers distributed across corporate server capacities."
+    ],
+    "correct_answer": [
+      "Hover over the dashboard tile card visual, click the three dots, select 'Manage alerts', and define the threshold rule conditions."
+    ]
+  },
+  {
+    "question_number": 263,
+    "question_text": "A designer wants a Line chart showing inventory balances to display changes using harsh vertical and horizontal square increments rather than standard diagonal sloped vectors. Which formatting switch changes this shape profile?",
+    "options": [
+      "Change the line type formatting property under Lines from 'Linear' to 'Stepped'.",
+      "Switch the visual type to a 100% Stacked column chart to force vertical bar segment rendering cycles.",
+      "Activate the Zoom Sliders feature on the Cartesian formatting menu grid configurations parameters options.",
+      "Write an explicit DAX measure that loops row-by-row through the table to substitute numerical intervals."
+    ],
+    "correct_answer": [
+      "Change the line type formatting property under Lines from 'Linear' to 'Stepped'."
+    ]
+  },
+  {
+    "question_number": 264,
+    "question_text": "A report page contains a date slicer visual. The manager wants to minimize the physical canvas footprint of the slicer, transforming it from a wide slider object into a compact element that opens a flyout calendar selector card when clicked. Which type should be chosen?",
+    "options": [
+      "Dropdown list format selection.",
+      "Relative Date tracking layout window.",
+      "Between range slider configuration bars.",
+      "Before date marker alignment points."
+    ],
+    "correct_answer": [
+      "Dropdown list format selection."
+    ]
+  },
+  {
+    "question_number": 265,
+    "question_text": "A network monitoring operations room needs a slicer that restricts data views to look back precisely at the last 45 minutes of server logs, moving the data window forward continuously. Which slicer type fits?",
+    "options": [
+      "Relative Time slicer type selection.",
+      "Relative Date slicer type selection.",
+      "Numeric Range Parameter range slider bars.",
+      "Hierarchy slicer with explicit time fields."
+    ],
+    "correct_answer": [
+      "Relative Time slicer type selection."
+    ]
+  },
+  {
+    "question_number": 266,
+    "question_text": "A user complains that whenever they click an item in a list slicer visual, it deselects their previous choice unless they hold down the Ctrl key. Where can the report designer change this so multi-select works with simple individual clicks?",
+    "options": [
+      "Go to the Slicer visual formatting pane, expand 'Slicer settings' > 'Selection', and turn off 'Multi-select with Ctrl'.",
+      "Modify the relationship type in the Model view from One-to-Many to Many-to-Many with bidirectional filter rules.",
+      "Open the Performance Analyzer pane and adjust the rendering thread priority flags from basic to click-select rules.",
+      "Add a custom text string modification step written within the advanced query editor using parameter logic paths."
+    ],
+    "correct_answer": [
+      "Go to the Slicer visual formatting pane, expand 'Slicer settings' > 'Selection', and turn off 'Multi-select with Ctrl'."
+    ]
+  },
+  {
+    "question_number": 267,
+    "question_text": "A report page features five separate slicer visuals. Users frequently get confused about which filters are active and want a fast way to reset all five slicers back to default parameters simultaneously. What should the developer design?",
+    "options": [
+      "Create a default state bookmark with all filters cleared, and assign a button visual to run the Bookmark navigation action.",
+      "Add a blank text title card containing nested conditional text formulas pointing to browser parameters keys.",
+      "Instruct users to open the advanced query editor wizard inside Power Query and execute an M script update cycle.",
+      "Alter the cross-filter direction parameter of the central relationship framework to use the Both configuration rule."
+    ],
+    "correct_answer": [
+      "Create a default state bookmark with all filters cleared, and assign a button visual to run the Bookmark navigation action."
+    ]
+  },
+  {
+    "question_number": 268,
+    "question_text": "A developer is configuring bookmarks to alternate between an overlay filter menu card panel and the main summary screen. They notice that when the menu card is hidden using a bookmark macro, the underlying visual elements still block mouse clicks. What formatting detail was overlooked?",
+    "options": [
+      "The visual components tracking the menu panel must be explicitly hidden using the eye icon in the Selection pane before capturing the bookmark.",
+      "The data model storage mode properties for both pages are forced to synchronize using local hardware memory caches.",
+      "The cross-filter direction parameter of the core data relationship must be adjusted to use the Both configuration setting.",
+      "The default summarization property configuration attributes for join keys must be set to Don't Summarize."
+    ],
+    "correct_answer": [
+      "The visual components tracking the menu panel must be explicitly hidden using the eye icon in the Selection pane before capturing the bookmark."
+    ]
+  },
+  {
+    "question_number": 269,
+    "question_text": "A report designer wants a button to reset the visibility states of certain charts on a page without wiping out any filter slicer selections the user has made. How can this behavior be fine-tuned in the Bookmarks pane?",
+    "options": [
+      "Right-click the bookmark, uncheck the 'Data' property, and ensure the 'Display' property remains checked.",
+      "Right-click the bookmark, uncheck the 'Visuals' property, and ensure the 'Current Page' option remains checked.",
+      "Convert the report storage engine settings to DirectQuery to enforce live state synchronization mechanics tables.",
+      "Configure a custom JSON canvas theme file that locks filter selections globally across all bookmarks frameworks."
+    ],
+    "correct_answer": [
+      "Right-click the bookmark, uncheck the 'Data' property, and ensure the 'Display' property remains checked."
+    ]
+  },
+  {
+    "question_number": 270,
+    "question_text": "A user clicks a sector of a Donut chart visual tracking 'Sales by Brand'. They notice that while three other charts on the page filter down correctly, a specific statistical Table visual remains completely unchanged. What is the most likely cause?",
+    "options": [
+      "The visual interaction setting from the Donut chart to the Table visual has been set to 'None' in Edit Interactions.",
+      "The table visual contains text variables that cannot be compressed efficiently by the columnar storage engine database.",
+      "Leaving text fields inside a fact table automatically blocks the deployment of cloud-based row-level security roles workspace.",
+      "The engine forces Power Query to execute full data refreshes using local hardware memory resources instead of server files."
+    ],
+    "correct_answer": [
+      "The visual interaction setting from the Donut chart to the Table visual has been set to 'None' in Edit Interactions."
+    ]
+  },
+  {
+    "question_number": 271,
+    "question_text": "A developer adds a Map visual to a dashboard. When users click a country bubble on the map, they expect a detailed line chart on the same page to filter down to that country. However, the line chart does not change. What should the developer audit?",
+    "options": [
+      "The visual interactions configuration by selecting the map, clicking 'Edit interactions', and verifying the line chart filter icon is selected.",
+      "The data category metadata configuration of the country text attribute to ensure it is marked as Web URL format properties.",
+      "The geographic coordinate boundaries inside the underlying SQL database view records to see if points are plotted correctly.",
+      "The global options menu parameters to see if the high-density canvas sampling algorithms are running over data limits."
+    ],
+    "correct_answer": [
+      "The visual interactions configuration by selecting the map, clicking 'Edit interactions', and verifying the line chart filter icon is selected."
+    ]
+  },
+  {
+    "question_number": 272,
+    "question_text": "When importing a custom TopoJSON file into a Shape Map visual, the map remains blank or displays distorted geographic areas. What formatting standard must the TopoJSON file meet to render correctly in Power BI?",
+    "options": [
+      "The TopoJSON must contain an object layer attribute with matching key attribute names that align with the data model's text location values.",
+      "The geographic coordinates inside the vector model must be serialized using alphanumeric text float keys instead of integers.",
+      "The file size of the vector map must exceed 100 megabytes to trigger the high-density canvas sampling engine routines.",
+      "The data model storage mode parameters for the geographic lookup tables must be configured on DirectQuery rules."
+    ],
+    "correct_answer": [
+      "The TopoJSON must contain an object layer attribute with matching key attribute names that align with the data model's text location values."
+    ]
+  },
+  {
+    "question_number": 273,
+    "question_text": "A map visual plots city points globally. A city named 'Paris' is plotting incorrectly in Texas, USA instead of France. What modeling correction resolves this geocoding ambiguity without latitude and longitude coordinates?",
+    "options": [
+      "Create a concatenated column combining City and Country (e.g., 'Paris, France') and use that field in the Location well.",
+      "Change the default data category configuration of the text attributes to use the Alphanumeric Text Serial sequence rule.",
+      "Configure an active report page tooltip that renders a separate full-size Line chart canvas detailing state records.",
+      "Convert the column data formats to use precise binary float representations to preserve display bounds criteria data."
+    ],
+    "correct_answer": [
+      "Create a concatenated column combining City and Country (e.g., 'Paris, France') and use that field in the Location well."
+    ]
+  },
+  {
+    "question_number": 274,
+    "question_text": "A developer wants the bubbles on a standard map visual to represent total profitability, where larger bubbles signify higher profit balances. Which data well field bucket should hold the 'Total Profit' measure?",
+    "options": [
+      "Bubble size (or Size)",
+      "Location",
+      "Legend",
+      "Latitude"
+    ],
+    "correct_answer": [
+      "Bubble size (or Size)"
+    ]
+  },
+  {
+    "question_number": 275,
+    "question_text": "A product division wants to evaluate market share proportions over time. They need a chart that displays monthly categorical sales where the total vertical height of the bar always equals 100%, divided into color segments for each brand. Which visual should be chosen?",
+    "options": [
+      "100% Stacked Column chart",
+      "Stacked Column chart",
+      "Clustered Column chart",
+      "Ribbon chart"
+    ],
+    "correct_answer": [
+      "100% Stacked Column chart"
+    ]
+  },
+  {
+    "question_number": 276,
+    "question_text": "An executive views a multi-level Matrix visual showing data by Year > Quarter > Month. They complain that navigating the hierarchy is cumbersome because they have to use drill buttons on the visual header menu toolbar. How can the developer make row expansion more intuitive directly on the matrix grid?",
+    "options": [
+      "Enable the '+/- icons' expansion toggle switches under the visual formatting pane row headers section.",
+      "Write a complex series of nested DAX calculated table scripts utilizing cross-joined filter metrics data blocks.",
+      "Use Power Query to duplicate the customer ledger rows horizontally and execute an outer join text macro layout loop.",
+      "Configure a dynamic formatting string on the primary numerical variables using local character variables choices fields."
+    ],
+    "correct_answer": [
+      "Enable the '+/- icons' expansion toggle switches under the visual formatting pane row headers section."
+    ]
+  },
+  {
+    "question_number": 277,
+    "question_text": "A corporate accountant wants a financial matrix report to hide the 'Column grand totals' summary calculation block completely, as cross-category summation is mathematically invalid for their currency translation rows. Where is this setting configured?",
+    "options": [
+      "In the Matrix visual formatting pane, expand the 'Totals' (or Row/Column grand totals) card and switch off 'Column grand totals'.",
+      "Open the performance analyzer pane and adjust the rendering thread priority flags from basic to total suppression rules.",
+      "Modify the relationship type in the Model view from One-to-Many to Many-to-Many with bidirectional filter propagation frameworks.",
+      "Add a custom text string modification step written within the advanced query editor using parameter logic choices definitions."
+    ],
+    "correct_answer": [
+      "In the Matrix visual formatting pane, expand the 'Totals' (or Row/Column grand totals) card and switch off 'Column grand totals'."
+    ]
+  },
+  {
+    "question_number": 278,
+    "question_text": "When testing a newly designed KPI visual component layout, the background color turns red instead of green when current month performance hits 110% of the target goal. How can the designer invert the success coloration logic properties?",
+    "options": [
+      "Adjust the directional color coding parameters in the visual formatting options, changing high values from 'Good' to 'Bad' or vice-versa.",
+      "Write an explicit DAX measure filter rule that forces the entire table row entry to overwrite its text values numbers.",
+      "Import a separate custom AppSource visualization tool that tracks alphanumeric indicator code sequences across system data.",
+      "Change the default data category configuration of the text attributes to use the Geographic Metadata rule selection frames."
+    ],
+    "correct_answer": [
+      "Adjust the directional color coding parameters in the visual formatting options, changing high values from 'Good' to 'Bad' or vice-versa."
+    ]
+  },
+  {
+    "question_number": 279,
+    "question_text": "A decomposition tree visual is used to analyze 'Product Defects'. When users select split nodes, the tree branches scale independently, distorting the relative volume comparison between separate branches. What formatting property enforces uniform width scaling across nodes?",
+    "options": [
+      "Enable 'Relative scale' or fix node bar widths under the visual layout formatting options properties.",
+      "Configure an active report page tooltip that renders a separate full-size Line chart canvas detailing state data logs.",
+      "Convert the column data formats to use precise binary float representations to preserve display bounds criteria rules.",
+      "Select the text field, go to Column Tools, and assign the correct metadata classification to Data Category selection frames."
+    ],
+    "correct_answer": [
+      "Enable 'Relative scale' or fix node bar widths under the visual layout formatting options properties."
+    ]
+  },
+  {
+    "question_number": 280,
+    "question_text": "A data analyst drops a continuous numeric field like 'Discount Percentage' into the 'Explain by' bucket of a Key Influencers visual. How does the visual process this variable compared to a categorical field like 'Store Location'?",
+    "options": [
+      "The visual analyzes the field as a continuous variable, calculating coefficients or trends per unit change, rather than distinct attribute differences.",
+      "The underlying storage engine refuses to compress the metrics and returns an internal indexing memory error partition tables.",
+      "Power BI automatically locks all cross-filtering capabilities for other visuals displayed on the canvas page repository screens.",
+      "The visual is forced to render as a vertical hierarchy matrix layout to preserve display space boundaries criteria data logs."
+    ],
+    "correct_answer": [
+      "The visual analyzes the field as a continuous variable, calculating coefficients or trends per unit change, rather than distinct attribute differences."
+    ]
+  },
+  {
+    "question_number": 281,
+    "question_text": "A developer wants to insert a custom dynamic value placeholder inside an automated Smart Narrative text summary block. They need the text block to pull the exact execution result of a measure named 'YearToDateProfit'. What step handles this value binding?",
+    "options": [
+      "Click '+ Value' in the visual editing menu, type the measure name or query phrase, select it from the suggestions list, and save it.",
+      "Write an advanced M script query step that extracts text tokens directly from local client browser parameter files.",
+      "Define a custom Row-Level Security rule that checks the authenticated email profile domain coordinates from network files.",
+      "Configure a sync slicer relationship framework using a disconnected cross-joined table index tracking variable schema frames."
+    ],
+    "correct_answer": [
+      "Click '+ Value' in the visual editing menu, type the measure name or query phrase, select it from the suggestions list, and save it."
+    ]
+  },
+  {
+    "question_number": 282,
+    "question_text": "A business team deploys a Q&A visual tile on their corporate dashboard page. To monitor and audit what specific phrases or questions report consumers are searching for, what administrative utility should the developer launch?",
+    "options": [
+      "Q&A tooling menu from the modeling or visual properties options context, accessing the 'Review questions' log manager.",
+      "Performance Analyzer wizard tool checking visual rendering times across network connection framework configurations codes.",
+      "Query Diagnostics logging matrices available inside the advanced Power Query structural transformation workspace frames.",
+      "Data Alert configuration settings portal deployed across cloud-managed workspace infrastructure container models databases."
+    ],
+    "correct_answer": [
+      "Q&A tooling menu from the modeling or visual properties options context, accessing the 'Review questions' log manager."
+    ]
+  },
+  {
+    "question_number": 283,
+    "question_text": "A operations manager wants a chart to display an overlay indicator representing the 90th percentile of fulfillment timelines across historical records. Which area of the chart configuration supports adding a custom percentile marker?",
+    "options": [
+      "Percentile line in the Analytics pane options grid.",
+      "Constant line pointing to text string decimal parameters variables.",
+      "What-If range slider buttons combined with dynamic field formatting keys.",
+      "An explicit drill-through targeting rule linked to a hidden tooltip frame."
+    ],
+    "correct_answer": [
+      "Percentile line in the Analytics pane options grid."
+    ]
+  },
+  {
+    "question_number": 284,
+    "question_text": "A data designer wants to add an indicators layer representing the exact statistical median value across daily transaction counts on a Bar chart. Where should they configure this baseline?",
+    "options": [
+      "Median line in the Analytics pane options list.",
+      "Trend line overlay added via the central modeling formatting rules.",
+      "Dynamic formatting strings applied to measures using custom integer codes.",
+      "Gridlines alignment properties under the main layout options canvas menu."
+    ],
+    "correct_answer": [
+      "Median line in the Analytics pane options list."
+    ]
+  },
+  {
+    "question_number": 285,
+    "question_text": "When configuring an automated forecast line on a Line chart visual, the developer notices the forecast line is flat and lacks seasonal peaks, despite clear yearly retail seasonal trends. What parameter change can fix this visual trend?",
+    "options": [
+      "Adjust the 'Seasonality' parameter from 'Auto' to a fixed numeric value matching the data points per period (e.g., 12 for monthly data).",
+      "Switch the visual cross-filter interaction properties of the chart component layout to use the Highlight option rule framework.",
+      "Change the grouping and binning properties of the time description field to use a fixed bin count of 365 entries matrix.",
+      "Add the Date column attribute field to the Filters pane under 'Filters on this visual' and change the type to Top N values."
+    ],
+    "correct_answer": [
+      "Adjust the 'Seasonality' parameter from 'Auto' to a fixed numeric value matching the data points per period (e.g., 12 for monthly data)."
+    ]
+  },
+  {
+    "question_number": 286,
+    "question_text": "A Cartesian bar chart contains a Zoom Slider enabled. The user notices that when they adjust the slider handles, the axis scale changes interactively, but the numeric text labels along the axis vanish. What formatting property should be adjusted?",
+    "options": [
+      "Ensure the 'Slider labels' toggle switch is enabled under the Zoom sliders formatting menu options card.",
+      "Modify the relationship type in the Model view from One-to-Many to Many-to-Many with bidirectional filter rules paths.",
+      "Open the Performance Analyzer pane and adjust the rendering thread priority flags from basic to scale-select rules indices.",
+      "Add a custom text string modification step written within the advanced query editor using parameter logic choices structures."
+    ],
+    "correct_answer": [
+      "Ensure the 'Slider labels' toggle switch is enabled under the Zoom sliders formatting menu options card."
+    ]
+  },
+  {
+    "question_number": 287,
+    "question_text": "When configuring a visual utilizing the 'Small multiples' layout feature, a developer wants to change the default grid structure from a 2x2 grid layout to a 4x5 grid matrix layout container. Where is this property located?",
+    "options": [
+      "Visual formatting pane, expand the 'Small multiples' card, and modify the Rows and Columns parameters grids values.",
+      "Selection pane layer hierarchy settings, modifying the horizontal layout anchors parameters choices lists variables.",
+      "Advanced custom JSON canvas theme file rules, defining global multi-grid rendering threshold limits properties fields.",
+      "Filters pane 'Filters on this page' card options slot, applying an explicit Top N index sort rule parameters block."
+    ],
+    "correct_answer": [
+      "Visual formatting pane, expand the 'Small multiples' card, and modify the Rows and Columns parameters grids values."
+    ]
+  },
+  {
+    "question_number": 288,
+    "question_text": "A report designer wants a navigation button visual to route users to separate pages dynamically depending on what corporate group profile the user selects in a slicer. What feature supports a dynamic button routing rule?",
+    "options": [
+      "Conditional formatting (fx button) applied to the Destination property of the button visual action configuration.",
+      "Writing an advanced M transformation script inside Power Query query blocks tracking local client system variables.",
+      "Defining a custom Row-Level Security role checking the authenticated email profile configuration schemas from server fields.",
+      "Configure a sync slicer relationship framework using a disconnected cross-joined table index tracking variable format rule."
+    ],
+    "correct_answer": [
+      "Conditional formatting (fx button) applied to the Destination property of the button visual action configuration."
+    ]
+  },
+  {
+    "question_number": 289,
+    "question_text": "A developer inserts a 'Page navigator' visual element onto a canvas page. By default, it displays as a horizontal strip of buttons. The client wants this panel rearranged into a clean vertical list on the left margin. Which property should be switched?",
+    "options": [
+      "Visual formatting pane > Navigator > Layout > Orientation changed from Horizontal to Vertical.",
+      "Selection pane dragging layout coordinates, altering visual orientation indexes from row-based to columnar matrix rows.",
+      "Write an explicit DAX table function that transforms page indices vertically across system memory partitions definitions.",
+      "Change the data model storage mode properties for page metadata lookups from standard import settings to DirectQuery."
+    ],
+    "correct_answer": [
+      "Visual formatting pane > Navigator > Layout > Orientation changed from Horizontal to Vertical."
+    ]
+  },
+  {
+    "question_number": 290,
+    "question_text": "A dashboard author places a 'Bookmark navigator' button bar on a report page. They want the active button corresponding to the selected bookmark to stand out visually with a bright yellow background fill, while inactive buttons remain light grey. Where is this behavior configured?",
+    "options": [
+      "Visual formatting pane > Bookmark navigator > State setting changed from Default to Selected, then altering Fill color properties.",
+      "Advanced custom JSON corporate canvas theme files, writing string matching parameters keys tracking active selections structures.",
+      "Performance Analyzer panel tuning visual rendering behavior priorities toggles from static background layouts to dynamic fills.",
+      "Filters pane visual-level filter card context fields slots, mapping conditional formatting hex rules variables indicators codes."
+    ],
+    "correct_answer": [
+      "Visual formatting pane > Bookmark navigator > State setting changed from Default to Selected, then altering Fill color properties."
+    ]
+  },
+  {
+    "question_number": 291,
+    "question_text": "Why are certified custom visuals downloaded from AppSource considered more secure than uncertified custom visuals within corporate networks environments frameworks?",
+    "options": [
+      "Certified visuals undergo code security audits by Microsoft to verify they do not access external network services or transmit data.",
+      "Certified visuals run inside a local hardware micro-serialization layer that completely bypasses system file path limits.",
+      "Enabling certified visuals automatically pushes all data transformation steps down to the source server database engines layers.",
+      "They eliminate the requirement for defining row-level security criteria filtering rules within shared cloud capacity containers."
+    ],
+    "correct_answer": [
+      "Certified visuals undergo code security audits by Microsoft to verify they do not access external network services or transmit data."
+    ]
+  },
+  {
+    "question_number": 292,
+    "question_text": "A business analyst builds an elaborate single-page operational dashboard that features eighty-five individual card visuals tracking granular sales points. Users complain the page takes a long time to load. What visualization best practice should be applied?",
+    "options": [
+      "Consolidate multiple metrics into single Multi-row cards or Matrix visuals to reduce the total number of independent visual engine query threads.",
+      "Increase the global options menu parameters to maximize the high-density canvas sampling algorithms frequency ratios indices.",
+      "Convert the column data formats to use precise binary float representations to accelerate screen serialization processing loops.",
+      "Establish active bidirectional filters between all dimension lookup pathways and the central cards canvas frames layouts."
+    ],
+    "correct_answer": [
+      "Consolidate multiple metrics into single Multi-row cards or Matrix visuals to reduce the total number of independent visual engine query threads."
+    ]
+  },
+  {
+    "question_number": 293,
+    "question_text": "An organization utilizes custom visual files (.pbiviz) imported manually from a local drive directory. A new version of the visual is released fixing a rendering bug. How must the developer deploy the update to existing reports?",
+    "options": [
+      "Re-import the updated .pbiviz file manually into each individual report file to overwrite the old visual package context.",
+      "The Power BI Service cloud architecture automatically scans local computer file path folders to update packages.",
+      "The advanced M scripting engine inside Power Query will query online repositories automatically during data refreshes.",
+      "Configure a sync slicer relationship framework using a disconnected cross-joined table index code tracking variable fields."
+    ],
+    "correct_answer": [
+      "Re-import the updated .pbiviz file manually into each individual report file to overwrite the old visual package context."
+    ]
+  },
+  {
+    "question_number": 294,
+    "question_text": "A report contains several visuals arranged on a fixed 16:9 canvas layout grid. The designer wants specific chart elements to automatically scale down and reflow smoothly when viewed on narrow mobile device touch interfaces. Which toggle switch supports this scaling response?",
+    "options": [
+      "Responsive property toggle switch under General formatting properties cards options lists for each visual.",
+      "Auto Date/Time option settings activated globally within cloud database management servers profile registries variables.",
+      "High-density canvas sampling frequency ratios switched from basic configurations adjustments to max performance parameters rules.",
+      "Cross-report drill-through target settings activated inside corporate workspace administrative preference control panel tabs."
+    ],
+    "correct_answer": [
+      "Responsive property toggle switch under General formatting properties cards options lists for each visual."
+    ]
+  },
+  {
+    "question_number": 295,
+    "question_text": "A developer creates a Scatter plot visual that displays daily operational logs tracking 500,000 asset points. They notice that Power BI does not draw every single point, but instead samples data points representatively. What engineering algorithm regulates this canvas density threshold?",
+    "options": [
+      "High-density line and scatter sampling algorithms that balance visualization detail with browser rendering thread execution limits.",
+      "The VertiPaq database column compression serialization engine running automatic background purge routines over row records lists.",
+      "The network data gateway machine tracking micro-serialization links that convert continuous float metrics into integer ranges values.",
+      "The implicit context translation frameworks that force visual elements to execute database query loops over memory slots indices."
+    ],
+    "correct_answer": [
+      "High-density line and scatter sampling algorithms that balance visualization detail with browser rendering thread execution limits."
+    ]
+  },
+  {
+    "question_number": 296,
+    "question_text": "A data developer builds a model utilizing Field Parameters to support dynamic axis swapping across charts. What security restriction or limitation must they evaluate regarding Field Parameters in Power BI dashboards environment frames?",
+    "options": [
+      "Field parameters do not automatically inherit localized translations if row-level data access criteria filters are applied directly over metadata strings.",
+      "Field parameters permanently block Power Query from executing any upstream data transformation steps down to relational SQL servers.",
+      "Creating any field parameter configuration forces the entire semantic dataset model to switch its storage mode to DirectQuery rules.",
+      "The visualization canvas requires the developer to establish bidirectional many-to-many relationship join paths to compile selections."
+    ],
+    "correct_answer": [
+      "Field parameters do not automatically inherit localized translations if row-level data access criteria filters are applied directly over metadata strings."
+    ]
+  },
+  {
+    "question_number": 297,
+    "question_text": "When writing a DAX expression to control a Dynamic Format String for a financial revenue measure, what is the correct syntax approach to guarantee formatting string results evaluate as a text string expression?",
+    "options": [
+      "The dynamic format DAX code block must return a scalar text string formula, such as \"$#,##0\" or \"€#,##0\" based on conditional filters.",
+      "The code block must wrap numeric variables inside an explicit context transition CALCULATE statement combined with binary float fields.",
+      "The data model storage mode properties for formatting definitions metrics maps must be forced to use the DirectQuery rule paths.",
+      "The formatting measure must be dragged directly into the visual-level filter card slot located within the central Filters pane layout."
+    ],
+    "correct_answer": [
+      "The dynamic format DAX code block must return a scalar text string formula, such as \"$#,##0\" or \"€#,##0\" based on conditional filters."
+    ]
+  },
+  {
+    "question_number": 298,
+    "question_text": "A developer adds sparklines to a high-density table visual tracking monthly defects per plant. They want the tiny charts to highlight the absolute highest data point in bright blue and the lowest in dark red. Which formatting property handles this visual highlight?",
+    "options": [
+      "Enable 'High point' and 'Low point' markers checkboxes under the sparklines formatting options menu list card properties.",
+      "Configure conditional formatting rules based on gradient field values pointing to alphanumeric color tracking codes indices.",
+      "Modify the visual cross-filter interactions configurations modes parameters to use the Highlight option rule settings layout fields.",
+      "Add a What-If numeric parameter range slider bar combined with structural conditional text definitions formula tokens templates."
+    ],
+    "correct_answer": [
+      "Enable 'High point' and 'Low point' markers checkboxes under the sparklines formatting options menu list card properties."
+    ]
+  },
+  {
+    "question_number": 299,
+    "question_text": "When configuring Error Bars on a Cartesian Column chart, a developer needs to define where the upper and lower bounds indicators derive their values. What type of model column fields must be provided to the error well wells?",
+    "options": [
+      "Explicit statistical numeric measures or columns representing absolute upper and lower value boundaries coordinates thresholds.",
+      "Alphanumeric text descriptive attribute strings tracking system identifier codes registries lists historical entries records fields.",
+      "Chronological sequential dates sorting indexing references arrays keys used to establish time intelligence calculation flows algorithms.",
+      "Low-cardinality binary operational flags tracking text status variables expressions like validation keys check indicators strings."
+    ],
+    "correct_answer": [
+      "Explicit statistical numeric measures or columns representing absolute upper and lower value boundaries coordinates thresholds."
+    ]
+  },
+  {
+    "question_number": 300,
+    "question_text": "A developer establishes a Cross-Report Drill-Through target path for an enterprise report deployment. What requirement must be satisfied in Power BI Service to ensure report consumers can successfully drill across the independent report boundaries?",
+    "options": [
+      "Both the source and destination reports must be published within the same Power BI Service workspace or app capacity container, and cross-report drilling must be enabled in tenant settings.",
+      "The storage engine mode parameters for all data tables across both models must be locked on DirectQuery configuration parameters rules.",
+      "The developer must configure twenty consecutive active bidirectional single-cardinality relationship join pathways between dataset systems grids.",
+      "Report authors must delete all explicit row-level security role filters definitions from both model layouts files before compilation blocks."
+    ],
+    "correct_answer": [
+      "Both the source and destination reports must be published within the same Power BI Service workspace or app capacity container, and cross-report drilling must be enabled in tenant settings."
+    ]
+  }
+]
