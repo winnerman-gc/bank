@@ -51,11 +51,12 @@ GROUP_A = [
       "Fixed gNBs and fibre cables",
       "Undersea cables and microwave relay towers"]),
 
-    ("The airborne NTN platform abbreviated HAPS stands for:",
-     "High-Altitude Platform Station",
-     ["High-Availability Packet Switch",
-      "Hybrid Aerial Positioning System",
-      "High-Altitude Payload Satellite"]),
+    ("A High-Altitude Platform Station (HAPS), such as a balloon or airship in the "
+     "stratosphere, is best characterised as an NTN platform that is:",
+     "Unmanned, with lower latency than LEO and easier maintainability than a satellite",
+     ["A satellite in medium Earth orbit at about 20,000 km",
+      "A ground-based mast forming part of the terrestrial network",
+      "A geostationary spacecraft fixed above the equator"]),
 
     ("One motivation for NTN cited in the 6G vision is that terrestrial networks currently:",
      "Cover less than 40% of the Earth's surface",
@@ -104,12 +105,11 @@ GROUP_A = [
       "Government bans on manufacturing satellites",
       "An unlimited supply of cheap, interchangeable devices"]),
 
-    ("Compared with satellite systems, a key characteristic of terrestrial networks is that "
-     "they offer:",
-     "Low propagation delay, which is important for real-time applications",
-     ["Global coverage of oceans and polar regions",
-      "Complete immunity to congestion and interference",
-      "Very high latency measured in hundreds of milliseconds"]),
+    ("In a TN-versus-NTN comparison, the typical cell size differs in that:",
+     "TN cells are small (giving high capacity per cell), whereas NTN cells are massive, tens to thousands of km across",
+     ["TN cells are massive while NTN cells are only a few metres across",
+      "Both TN and NTN use cells of an identical fixed diameter",
+      "NTN cells are always smaller than TN cells to limit interference"]),
 
     ("The infrastructure of a terrestrial network is characterised by:",
      "Fixed ground-based base stations (e.g., gNodeB), cables and switching centres",
@@ -150,11 +150,12 @@ GROUP_A = [
       "Requires no ground gateways whatsoever",
       "Eliminates the need for any radio spectrum"]),
 
-    ("The integration of satellite communications into 5G is anticipated to facilitate:",
-     "Anything, anytime, anywhere connectivity",
-     ["Connectivity only within licensed urban cells",
-      "Fixed-line-only broadband services",
-      "Connectivity that works solely during daylight hours"]),
+    ("Comparing latency, terrestrial networks are typically ultra-low (under about 1 ms), "
+     "whereas non-terrestrial networks range from:",
+     "About 20 ms for LEO up to 500 ms or more for GEO, owing to the large distances",
+     ["About 1 ms for LEO up to 5 ms for GEO",
+      "A fixed 100 ms regardless of the orbit used",
+      "Lower latency than terrestrial networks in every case"]),
 
     ("Which statement best summarises the primary limitations of terrestrial networks?",
      "Restricted global reach, vulnerability to physical damage, and high cost in rugged terrain",
@@ -162,11 +163,11 @@ GROUP_A = [
       "Perfect disaster resilience but poor data speed",
       "Global ocean coverage but no urban coverage"]),
 
-    ("The TE 456 course explicitly shifts its focus from:",
-     "Legacy satellite communication toward Non-Terrestrial Networks",
-     ["Non-Terrestrial Networks back toward fixed telephony",
-      "5G NR back toward 2G GSM systems",
-      "Optical fibre toward copper access networks"]),
+    ("Regarding mobility support, a key contrast between the two networks is that:",
+     "A TN requires frequent handovers, while an NTN can offer seamless mobility across wide areas",
+     ["A TN offers seamless wide-area mobility, while an NTN needs constant handovers",
+      "Neither a TN nor an NTN supports user mobility at all",
+      "Both require a handover only once per day"]),
 
     ("Relative to extensive terrestrial deployments in remote regions, NTNs are described as:",
      "Potentially more cost-effective, while extending coverage and providing a backup",
@@ -181,12 +182,12 @@ GROUP_A = [
       "Satellite broadband that is already deployed",
       "Fibre-to-the-home connections"]),
 
-    ("An NTN is characterised as a network that uses a communications platform at an altitude "
-     "of:",
-     "More than tens of kilometres above the Earth",
-     ["A few hundred metres, like a typical cell tower",
-      "Exactly at sea level",
-      "Below the tropopause only"]),
+    ("Compared with a terrestrial network's standard path loss, the signal constraints of an "
+     "NTN are dominated by:",
+     "Severe path loss and high Doppler shifts from satellite mobility, plus atmospheric/ionospheric interference",
+     ["Negligible path loss and no Doppler effect whatsoever",
+      "Interference only from other ground-based cell towers",
+      "A complete absence of any propagation impairments"]),
 ]
 
 # ---------------------------------------------------------------------------
@@ -199,11 +200,12 @@ GROUP_B = [
       "Straight lines tangent to the equator",
       "Squares traced around the two poles"]),
 
-    ("As a satellite's orbital altitude decreases and it gets closer to Earth, its:",
-     "Orbital speed increases and its orbital period reduces",
-     ["Orbital speed decreases and its period lengthens",
-      "Speed and period both remain constant",
-      "Field of view increases while its speed drops"]),
+    ("In an altitude-versus-orbital-speed table, orbital speed falls from about 7.8 km/s near "
+     "200 km to about 3.1 km/s at roughly 35,800 km. This illustrates that:",
+     "Orbital speed decreases as altitude increases, while the orbital period lengthens",
+     ["Orbital speed increases as altitude increases",
+      "Orbital speed is the same at every altitude",
+      "The orbital period shortens as altitude increases"]),
 
     ("A geostationary (GEO) satellite orbits at an altitude of approximately:",
      "35,786 km",
@@ -237,11 +239,13 @@ GROUP_B = [
       "An extremely short, negligible propagation delay",
       "A requirement for thousands of satellites for coverage"]),
 
-    ("Non-Geostationary Earth Orbit (NGEO) satellites are characterised by:",
-     "Orbital periods of less than 24 hours and positions that change relative to observers",
-     ["Fixed positions above the equator at all times",
-      "Orbital periods of exactly 24 hours",
-      "Being permanently invisible from the ground"]),
+    ("A satellite whose orbital period matches the Earth's rotation but which may be inclined "
+     "or elliptical, lacking the strict 0-degree equatorial, fixed-point constraint of a GEO, "
+     "is classified as:",
+     "Geosynchronous orbit (GSO), of which GEO is a special case",
+     ["Low Earth orbit (LEO)",
+      "Medium Earth orbit (MEO)",
+      "A High-Altitude Platform Station (HAPS)"]),
 
     ("Low Earth Orbit (LEO) satellites typically operate at altitudes of:",
      "300 to 1,500 km",
@@ -275,11 +279,12 @@ GROUP_B = [
       "Thousands of LEO satellites",
       "A single HAPS platform"]),
 
-    ("Achieving continuous global coverage with LEO satellites requires:",
-     "Hundreds of satellites, forming a mega-constellation",
-     ["A single satellite",
-      "Exactly three satellites",
-      "No more than six satellites"]),
+    ("A navigation satellite orbiting at an altitude of about 20,200 km is described as "
+     "semi-synchronous, meaning its orbital period is approximately:",
+     "12 hours",
+     ["24 hours",
+      "90 minutes",
+      "1 hour"]),
 
     ("Starlink provides broadband using thousands of LEO satellites flying at about 550 km, "
      "achieving a round-trip delay of roughly:",
@@ -312,12 +317,12 @@ GROUP_B = [
       "Are completely immune to strong winds and storms",
       "Provide permanent global coverage from a single unit"]),
 
-    ("The satellite-period relation Period = C x distance^1.5 indicates that the orbital "
-     "period:",
-     "Increases with the 1.5 power of the orbital distance",
-     ["Is independent of the orbital distance",
-      "Decreases as the orbital distance increases",
-      "Varies linearly with the orbital distance"]),
+    ("For an Unmanned Aircraft System (UAS) used as an airborne NTN platform, the drone's "
+     "operating altitude is typically limited to about:",
+     "90 to 150 m, depending on country and region",
+     ["8 to 50 km, up in the stratosphere",
+      "300 to 1,500 km, like a LEO satellite",
+      "35,786 km, like a GEO satellite"]),
 
     ("The three types of beams used in an NTN to provide radio coverage are Earth-fixed, "
      "Earth-moving, and:",
@@ -369,11 +374,12 @@ GROUP_C = [
       "The gNB and the 5G core network",
       "Two user devices directly"]),
 
-    ("In NTN, the term SAN refers to the:",
-     "Satellite Access Node",
-     ["Secure Access Network",
-      "Satellite Antenna Numerology",
-      "Signal Attenuation Node"]),
+    ("An NTN round-trip time is expressed as RTT = 2(Tprop1 + Tprop2) + 2 Tslot + Tproc1 + "
+     "Tproc2. In this expression, the propagation terms Tprop1 and Tprop2 correspond to the:",
+     "UE-to-satellite link and the satellite-to-gateway link",
+     ["Uplink and downlink of a single terrestrial cell",
+      "Two processing steps carried out inside the gNB",
+      "Inter-satellite link and the terrestrial fibre backhaul"]),
 
     ("A transparent (bent-pipe) NTN payload:",
      "Amplifies, filters and frequency-translates the signal without onboard baseband processing",
@@ -437,12 +443,12 @@ GROUP_C = [
       "Only optical/visible-light bands",
       "Only sub-100 MHz HF bands"]),
 
-    ("The first 5G NR-NTN specifications target enhanced Mobile Broadband via 5G NR and "
-     "machine-type communication via:",
-     "NB-IoT",
-     ["Bluetooth Low Energy",
-      "Wi-Fi 6",
-      "LoRaWAN"]),
+    ("In the NTN HARQ retransmission process, after the receiver returns a negative "
+     "acknowledgement (NACK) for a corrupted packet, the transmitter responds by:",
+     "Retransmitting the data using a new redundancy version (RV)",
+     ["Permanently dropping the connection to the UE",
+      "Switching the UE to a different satellite constellation",
+      "Ignoring the NACK and sending entirely new data"]),
 
     ("The most challenging NTN characteristic inhibiting low-latency communication is:",
      "The long round-trip time due to the large UE-to-satellite distance",
