@@ -344,7 +344,7 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-07-01.1';
+        const CACHE_VERSION = '2026-07-01.2';
         const VIEW_STATE_KEY = 'scns_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'scns_quiz_answers_v1';
         const RETAKE_ANSWERS_STORAGE_KEY = 'scns_quiz_retake_answers_v1';
@@ -353,9 +353,15 @@
         const SOURCES = [
             {
                 id: 'set-1',
-                label: 'All Questions',
+                label: 'Part 1',
                 file: 'compiled.json',
-                description: '100 questions - Satellite communication, NTN & 5G NR-NTN (TE 456)'
+                description: '100 questions — NTN fundamentals, orbits & beams, 5G NR-NTN architecture, SatCom payload & 5G systems'
+            },
+            {
+                id: 'set-2',
+                label: 'Part 2',
+                file: 'compiled_2.json',
+                description: '100 questions — Frequency bands & IoT, orbit propagation, NR-NTN procedures & HARQ, DVB/VSAT & 5G SA core'
             }
         ];
 
