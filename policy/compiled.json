@@ -146,10 +146,10 @@
     "question_number": 12,
     "question_text": "In public finance, the term tax incidence refers specifically to:",
     "options": [
-      "The statutory rate at which a tax is officially levied",
-      "The total revenue a government collects from a tax",
+      "The statutory tax rate that a government formally sets out in legislation",
+      "The total amount of revenue that a government collects from levying the tax",
       "How the burden of a tax is distributed among the participants in a market",
-      "The administrative cost of collecting and enforcing a tax"
+      "The administrative cost a government incurs in collecting and enforcing the tax"
     ],
     "correct_answer": [
       "How the burden of a tax is distributed among the participants in a market"
@@ -185,23 +185,23 @@
     "question_number": 15,
     "question_text": "An economic system in which production and allocation follow long-standing customary patterns and local leaders have the ultimate say is best described as a:",
     "options": [
-      "Command economy",
-      "Market economy",
-      "Traditional economy",
-      "Mixed economy"
+      "Command economy, directed by a central government authority",
+      "Market economy, coordinated primarily through prices and competition",
+      "Traditional economy, based on inherited customs and social roles",
+      "Mixed economy, blending market forces with state intervention"
     ],
     "correct_answer": [
-      "Traditional economy"
+      "Traditional economy, based on inherited customs and social roles"
     ]
   },
   {
     "question_number": 16,
     "question_text": "Twentieth-century experience suggests that a command economy tends to fail largely because:",
     "options": [
-      "Prices adjust too quickly for producers to keep pace with demand",
-      "Private firms refuse to compete once the state withdraws",
+      "Prices adjust too quickly for producers to keep pace with rapidly shifting demand",
+      "Private firms refuse to compete once the state withdraws support and guaranteed contracts",
       "A central authority cannot efficiently gather and act on the information needed to allocate resources",
-      "Consumers are given too many choices to coordinate production"
+      "Consumers are given so many product choices that planners cannot coordinate production"
     ],
     "correct_answer": [
       "A central authority cannot efficiently gather and act on the information needed to allocate resources"
@@ -211,9 +211,9 @@
     "question_number": 17,
     "question_text": "A mixed economy is best characterised as one in which:",
     "options": [
-      "A central planner sets all prices, wages and output levels",
-      "Custom and tradition determine nearly all economic decisions",
-      "Market forces operate with no government involvement of any kind",
+      "A central planner sets all prices, wages and output levels across the whole economy",
+      "Custom and tradition determine nearly all economic decisions, with no market pricing",
+      "Market forces operate freely with no government involvement of any kind whatsoever",
       "Markets allocate most resources while governments intervene to correct market failures"
     ],
     "correct_answer": [
@@ -224,9 +224,9 @@
     "question_number": 18,
     "question_text": "Advocates argue that a market economy can be self-optimising because, when individuals are free to pursue their own interests, the system tends to:",
     "options": [
-      "Eliminate the need for any property rights or contracts",
-      "Guarantee an equal distribution of income across society",
-      "Prevent monopolies from ever arising in any industry",
+      "Eliminate the need for any property rights, contracts or enforcement mechanisms",
+      "Guarantee an equal distribution of income across the whole of society",
+      "Prevent monopolies from ever arising in any industry whatsoever",
       "Settle at a stable equilibrium of supply, consumption and prices"
     ],
     "correct_answer": [
@@ -237,10 +237,10 @@
     "question_number": 19,
     "question_text": "In a perfectly competitive market each individual buyer and seller is assumed to be a price taker. This assumption follows from the fact that:",
     "options": [
-      "A single dominant firm sets the price that all others follow",
-      "The government fixes the price at which all trades must occur",
+      "A single dominant firm sets the price that every other participant follows",
+      "The government fixes the price at which every trade in the market must occur",
       "There are so many participants that no single one can influence the market price",
-      "Buyers and sellers collude to maintain a common price"
+      "Buyers and sellers openly collude with one another to maintain a single common price"
     ],
     "correct_answer": [
       "There are so many participants that no single one can influence the market price"
@@ -263,9 +263,9 @@
     "question_number": 21,
     "question_text": "An industry is termed a natural monopoly when:",
     "options": [
-      "Two firms can always supply the market more cheaply than one",
-      "The government legally bans all but one firm from entering",
-      "Firms naturally collude to behave as though they were one",
+      "Two or more competing firms can always supply the market more cheaply than one",
+      "The government simply bans all but one licensed firm from entering the market",
+      "Firms in the industry naturally collude to behave as though they were one",
       "A single firm can supply the whole market at lower cost than two or more firms could"
     ],
     "correct_answer": [
@@ -302,10 +302,10 @@
     "question_number": 24,
     "question_text": "An economist distinguishes a change in demand from a change in quantity demanded. A change in demand (a shift of the curve) is caused by:",
     "options": [
-      "A change in the good's own price alone",
-      "Movement to a different point on the same demand curve",
+      "A change in the good's own price alone, holding all else constant",
+      "A movement to a different point along the same, unchanged demand curve",
       "A change in a determinant other than the good's own price, such as income or tastes",
-      "A simultaneous and exactly offsetting change in supply"
+      "A simultaneous change in supply that happens to exactly offset any change in demand"
     ],
     "correct_answer": [
       "A change in a determinant other than the good's own price, such as income or tastes"
@@ -354,9 +354,9 @@
     "question_number": 28,
     "question_text": "A political factor behind early state telecom monopolies was that governments:",
     "options": [
-      "Were barred by treaty from licensing any private firm",
-      "Lacked any ministry capable of running a postal service",
-      "Preferred to auction spectrum to the highest private bidder",
+      "Were legally barred by international postal treaty from ever licensing a private telecom firm",
+      "Lacked any government ministry with the technical capacity to run even a basic postal service",
+      "Preferred to auction off spectrum rights directly to the highest-bidding private investor",
       "Wished to retain state control over communications, often treating them as an extension of postal networks"
     ],
     "correct_answer": [
@@ -381,9 +381,9 @@
     "question_text": "A central element of liberalization is the removal of exclusivities from the former monopoly fixed-network operator, commonly called the incumbent. The direct effect of removing these exclusivities is to:",
     "options": [
       "Allow new entrants to compete in services that were previously monopolised",
-      "Transfer the incumbent's shares to private investors",
-      "Guarantee the incumbent a permanently protected market",
-      "Impose price caps on every service the incumbent offers"
+      "Transfer ownership of the incumbent's shares to a group of private investors",
+      "Guarantee the incumbent a permanently protected and exclusive market position",
+      "Impose strict price caps on every single service the incumbent operator offers"
     ],
     "correct_answer": [
       "Allow new entrants to compete in services that were previously monopolised"
@@ -393,10 +393,10 @@
     "question_number": 31,
     "question_text": "Privatization in the telecom sector refers to:",
     "options": [
-      "The transition of a market from monopoly to competition",
-      "The imposition of universal-service obligations on operators",
+      "The transition of an entire market from monopoly toward open competition",
+      "The imposition of universal-service obligations on all licensed operators",
       "The transfer of ownership of an operator from the state to the private sector",
-      "The creation of an independent national regulatory authority"
+      "The creation of a wholly independent national regulatory authority"
     ],
     "correct_answer": [
       "The transfer of ownership of an operator from the state to the private sector"
@@ -419,13 +419,13 @@
     "question_number": 33,
     "question_text": "A country opens its mobile market to several competing firms but keeps the incumbent fixed-line operator fully state-owned. This situation is best described as:",
     "options": [
-      "Privatization without liberalization",
-      "Liberalization without privatization of the incumbent",
-      "Both full liberalization and full privatization",
-      "Neither liberalization nor privatization"
+      "Privatization of the incumbent operator without any market liberalization",
+      "Liberalization of the market without privatization of the incumbent operator",
+      "Both full market liberalization and full privatization of the incumbent",
+      "Neither market liberalization nor privatization of the incumbent at all"
     ],
     "correct_answer": [
-      "Liberalization without privatization of the incumbent"
+      "Liberalization of the market without privatization of the incumbent operator"
     ]
   },
   {
@@ -433,9 +433,9 @@
     "question_text": "In the context of the telecom sector, regulation is best defined as:",
     "options": [
       "Government intervention in markets to achieve certain desired outcomes",
-      "The complete removal of government from market activity",
-      "The transfer of state assets into private ownership",
-      "The voluntary self-policing of firms with no oversight"
+      "The complete and permanent removal of government from all market activity",
+      "The wholesale transfer of state-owned assets into full private ownership",
+      "The voluntary self-policing of firms with absolutely no external oversight"
     ],
     "correct_answer": [
       "Government intervention in markets to achieve certain desired outcomes"
@@ -510,10 +510,10 @@
     "question_number": 40,
     "question_text": "A recognised regulatory objective is that, where competitive markets do not exist or have failed, the regulator should:",
     "options": [
-      "Guarantee the dominant firm protection from all competitors",
+      "Guarantee the dominant firm full protection from all potential competitors",
       "Prevent abuses of market power such as excessive pricing by dominant firms",
-      "Withdraw oversight so the market can correct itself",
-      "Fix every operator's retail prices at identical levels"
+      "Withdraw all regulatory oversight and let the market correct itself unaided",
+      "Fix every operator's retail prices at exactly identical levels nationwide"
     ],
     "correct_answer": [
       "Prevent abuses of market power such as excessive pricing by dominant firms"
@@ -524,9 +524,9 @@
     "question_text": "Which statement best captures the distinction between policy and law as drawn in the course material?",
     "options": [
       "Law can compel or prohibit behaviour, whereas policy merely guides actions toward a desired outcome",
-      "Policy can compel behaviour, whereas law only offers guidance",
-      "Policy and law are identical and fully interchangeable terms",
-      "Regulation sets broad goals while policy enforces them in court"
+      "Policy can compel or prohibit behaviour, whereas law only ever offers non-binding guidance",
+      "Policy and law are identical concepts, so the two terms may always be used interchangeably",
+      "Regulation sets the broad long-term goals while policy enforces them through the courts"
     ],
     "correct_answer": [
       "Law can compel or prohibit behaviour, whereas policy merely guides actions toward a desired outcome"
@@ -537,9 +537,9 @@
     "question_text": "In the policy-to-practice chain, regulation is primarily concerned with:",
     "options": [
       "Translating the objectives of policy decisions into practical rules and decisions",
-      "Setting the broad long-term vision before any policy exists",
-      "Replacing the need for any underlying legislation",
-      "Auditing the personal finances of government ministers"
+      "Setting the broad, long-term national vision that exists prior to any policy",
+      "Replacing the need for any underlying legislation or statutory authority",
+      "Auditing the personal finances of individual government ministers each year"
     ],
     "correct_answer": [
       "Translating the objectives of policy decisions into practical rules and decisions"
@@ -549,10 +549,10 @@
     "question_number": 43,
     "question_text": "In many countries before reform, a single ministry or government unit often acted simultaneously as:",
     "options": [
-      "An independent regulator fully separated from the operator",
-      "A purely commercial firm with no policy responsibilities",
+      "An independent regulator that is fully separated from the operator",
+      "A purely commercial firm with no policy responsibilities whatsoever",
       "Policy maker, policy implementer and operator of the telephone service",
-      "A neutral standards body with no operational role"
+      "A neutral standards body with no operational role in the sector"
     ],
     "correct_answer": [
       "Policy maker, policy implementer and operator of the telephone service"
@@ -562,10 +562,10 @@
     "question_number": 44,
     "question_text": "The International Telecommunication Union (ITU) is best described as:",
     "options": [
-      "A private consortium of the world's largest mobile operators",
-      "A regional trade bloc that sets tariffs on telecom equipment",
+      "A private consortium formed and funded by the world's largest mobile network operators worldwide",
+      "A regional trade bloc that negotiates import tariffs on telecommunications equipment for its members",
       "A specialised agency of the United Nations responsible for information and communication technology issues",
-      "A commercial standards firm owned by equipment vendors"
+      "A commercial standards-setting firm that is owned and controlled by major equipment vendors"
     ],
     "correct_answer": [
       "A specialised agency of the United Nations responsible for information and communication technology issues"
@@ -614,10 +614,10 @@
     "question_number": 48,
     "question_text": "The World Trade Organization's Agreement on Basic Telecommunications (the BTA) primarily:",
     "options": [
-      "Allocates radio spectrum directly to individual operators",
+      "Allocates radio spectrum directly to individual telecom operators in each member state",
       "Establishes rules for competition and promotes open investment in telecoms across countries",
-      "Sets the retail tariffs that operators may charge consumers",
-      "Issues operating licences to individual carriers in member states"
+      "Sets the maximum retail tariffs that operators may charge their consumers directly",
+      "Issues operating licences directly to individual carriers within each member state"
     ],
     "correct_answer": [
       "Establishes rules for competition and promotes open investment in telecoms across countries"
@@ -641,9 +641,9 @@
     "question_text": "The WTO Reference Paper requires telecom regulators to be independent of operating companies. On independence from government, the material indicates that regulators are:",
     "options": [
       "Not necessarily independent of governments, though greater independence is often regarded as better",
-      "Required to be wholly controlled by the relevant ministry",
-      "Required to be completely independent of government in every respect",
-      "Required to be jointly owned by the operators they regulate"
+      "Required by law to be wholly controlled and directed by the relevant government ministry",
+      "Required by law to be completely and formally independent of government in every respect",
+      "Required by law to be jointly owned and controlled by the operators that they regulate"
     ],
     "correct_answer": [
       "Not necessarily independent of governments, though greater independence is often regarded as better"
@@ -653,10 +653,10 @@
     "question_number": 51,
     "question_text": "According to the framework for regulation, the laws passed by governments to enable regulation typically:",
     "options": [
-      "Guarantee monopoly status to the incumbent operator",
+      "Guarantee permanent monopoly status to the incumbent state operator",
       "Appoint regulatory bodies and confer on them powers to take action",
-      "Remove all accountability requirements from regulators",
-      "Fix the retail prices of every regulated service"
+      "Remove all accountability and reporting requirements from regulators",
+      "Fix the retail prices of every single regulated service nationwide"
     ],
     "correct_answer": [
       "Appoint regulatory bodies and confer on them powers to take action"
@@ -667,9 +667,9 @@
     "question_text": "Which option best lists the categories of law that bear specifically on the telecommunications services industry?",
     "options": [
       "Sector-specific telecom law, competition and fair-trading law, and other relevant law such as privacy",
-      "Criminal law, maritime law and constitutional law only",
-      "Tax law, employment law and intellectual-property law only",
-      "Banking law, insurance law and environmental law only"
+      "Criminal law, international maritime law and constitutional law only, excluding all else",
+      "Tax law, general employment law and intellectual-property law only, and nothing further",
+      "Banking law, insurance law and environmental law only, excluding any other category"
     ],
     "correct_answer": [
       "Sector-specific telecom law, competition and fair-trading law, and other relevant law such as privacy"
@@ -680,9 +680,9 @@
     "question_text": "Provisions enacted by bodies such as ECOWAS or the WTO take force in a member or signatory country when they are:",
     "options": [
       "Transposed into national law in accordance with treaty obligations",
-      "Published on the regional body's website",
-      "Approved by a majority of the country's operators",
-      "Adopted automatically without any national action"
+      "Simply published on the regional body's official website",
+      "Approved by a majority vote of the country's licensed operators",
+      "Adopted automatically the moment they are agreed upon regionally"
     ],
     "correct_answer": [
       "Transposed into national law in accordance with treaty obligations"
@@ -693,9 +693,9 @@
     "question_text": "The framework notes that the function of regulation may be split between two or more bodies. A risk a country must manage when doing so is that:",
     "options": [
       "Poorly designed division of functions can lead to disagreements and slow decision-making",
-      "A single regulator will inevitably capture the entire market",
-      "Operators will be unable to obtain any licence at all",
-      "Spectrum will automatically be allocated free of charge"
+      "A single national regulator will inevitably end up capturing the entire market",
+      "Operators will find themselves completely unable to obtain any licence at all",
+      "Spectrum will automatically be allocated to all operators entirely free of charge"
     ],
     "correct_answer": [
       "Poorly designed division of functions can lead to disagreements and slow decision-making"
@@ -718,9 +718,9 @@
     "question_number": 56,
     "question_text": "An industry described as operating under zero regulation is one in which:",
     "options": [
-      "A regulator intervenes minutely in daily operations",
-      "Firms jointly agree binding rules under a watchdog",
-      "Prices are set directly by a government ministry",
+      "A regulator intervenes minutely in the firm's daily operations",
+      "Firms jointly agree binding rules under an industry watchdog",
+      "Prices are set directly and solely by a government ministry",
       "Market forces are allowed to work with no external intervention"
     ],
     "correct_answer": [
@@ -745,9 +745,9 @@
     "question_text": "A frequently cited benefit of self-regulation is that:",
     "options": [
       "Companies usually understand their own businesses better than an external regulator does",
-      "It removes all costs of regulation from consumers and industry",
-      "It guarantees that no company will ever act opportunistically",
-      "It eliminates the need for any underlying legislation"
+      "It removes all administrative costs of regulation from consumers and industry",
+      "It guarantees that no company will ever act opportunistically toward rivals",
+      "It eliminates the need for any underlying legislation or licensing regime"
     ],
     "correct_answer": [
       "Companies usually understand their own businesses better than an external regulator does"
@@ -757,10 +757,10 @@
     "question_number": 59,
     "question_text": "Co-regulation is best described as an arrangement in which:",
     "options": [
-      "Firms operate with no oversight of any kind",
-      "The regulator dictates every technical and pricing decision",
+      "Firms operate entirely independently with no external oversight of any kind whatsoever",
+      "The regulator alone dictates every technical and pricing decision unilaterally",
       "The regulator joins industry players in a joint forum rather than regulating purely from outside",
-      "A foreign body assumes all regulatory authority"
+      "A foreign international body simply assumes all domestic regulatory authority"
     ],
     "correct_answer": [
       "The regulator joins industry players in a joint forum rather than regulating purely from outside"
@@ -770,10 +770,10 @@
     "question_number": 60,
     "question_text": "While potentially very successful, co-regulation is particularly vulnerable to:",
     "options": [
-      "An immediate and total loss of all regulatory powers",
-      "The automatic capture of the regulator by consumers",
+      "An immediate and total loss of all formal regulatory powers",
+      "The automatic capture of the regulator by consumer groups",
       "Role ambiguity and differing perceptions of what each player will do",
-      "A legal prohibition on any form of industry collaboration"
+      "A blanket legal prohibition on any form of industry collaboration"
     ],
     "correct_answer": [
       "Role ambiguity and differing perceptions of what each player will do"
@@ -783,10 +783,10 @@
     "question_number": 61,
     "question_text": "Regulation is described as intrusive when the regulator:",
     "options": [
-      "Lays down only general principles and leaves methods to firms",
-      "Withdraws entirely and lets market forces operate",
+      "Lays down only general principles and leaves the methods to firms themselves",
+      "Withdraws entirely from the market and lets market forces operate unaided",
       "Intervenes often and minutely in the day-to-day running of a company's business",
-      "Limits itself to publishing non-binding guidelines"
+      "Limits itself only to publishing occasional, non-binding guidelines"
     ],
     "correct_answer": [
       "Intervenes often and minutely in the day-to-day running of a company's business"
@@ -796,10 +796,10 @@
     "question_number": 62,
     "question_text": "One reason intrusive regulation is considered undesirable is that:",
     "options": [
-      "It always reduces the total cost of administering regulation",
-      "It guarantees that competitive market forces will prevail",
+      "It always sharply reduces the total administrative cost of regulating the industry",
+      "It guarantees that competitive market forces will always prevail entirely unaided",
       "The regulator effectively becomes a proxy manager of the industry, weakening operators' freedom",
-      "It removes the regulator's responsibility for outcomes"
+      "It completely removes the regulator's responsibility for any market outcomes at all"
     ],
     "correct_answer": [
       "The regulator effectively becomes a proxy manager of the industry, weakening operators' freedom"
@@ -810,9 +810,9 @@
     "question_text": "A good regulator is advised to make regulation pervasive rather than intrusive. This means regulation should:",
     "options": [
       "Influence operators broadly while letting them manage their own affairs within the spirit of the rules",
-      "Dictate the precise technical solution for every operator",
-      "Have as little impact as possible on companies in the market",
-      "Apply to only a single dominant operator at a time"
+      "Dictate the exact, precise technical solution required of every single licensed operator",
+      "Have as little practical impact as possible on any of the companies operating in the market",
+      "Apply narrowly to only a single dominant operator in the market, ignoring all the rest"
     ],
     "correct_answer": [
       "Influence operators broadly while letting them manage their own affairs within the spirit of the rules"
@@ -835,10 +835,10 @@
     "question_number": 65,
     "question_text": "A system of authorization may issue specific authorizations and general authorizations. These correspond respectively to:",
     "options": [
-      "Spectrum licences and numbering plans",
+      "Spectrum licences and national numbering plans",
       "Individual operator licences and class licences",
-      "Price caps and interconnection orders",
-      "Consents and determinations"
+      "Regulatory price caps and interconnection orders",
+      "Formal consents and regulatory determinations"
     ],
     "correct_answer": [
       "Individual operator licences and class licences"
@@ -848,10 +848,10 @@
     "question_number": 66,
     "question_text": "Determinations are instruments of ongoing regulation that, in effect:",
     "options": [
-      "Permanently revoke an operator's licence without appeal",
-      "Replace the underlying legislation entirely",
+      "Permanently revoke an operator's licence without any right of appeal",
+      "Replace the underlying legislation entirely and without warning",
       "Elaborate the rules, for example in the periodic review of price controls",
-      "Carry no legal force and are merely advisory"
+      "Carry no legal force at all and are merely advisory in nature"
     ],
     "correct_answer": [
       "Elaborate the rules, for example in the periodic review of price controls"
@@ -861,9 +861,9 @@
     "question_number": 67,
     "question_text": "A consent is best understood as:",
     "options": [
-      "An order that imposes an additional obligation on an operator",
-      "An informal guideline that carries no legal status",
-      "A penalty levied for breach of a licence condition",
+      "An order that formally imposes an additional new obligation on the operator concerned",
+      "An informal guideline document that carries no legal status whatsoever in practice",
+      "A formal financial penalty levied against an operator for breach of a licence condition",
       "A negative determination that formally relieves an operator from complying with a requirement"
     ],
     "correct_answer": [
@@ -874,10 +874,10 @@
     "question_number": 68,
     "question_text": "Guidelines differ from rules and determinations in that guidelines:",
     "options": [
-      "Have greater legal force than the licence conditions themselves",
+      "Have far greater binding legal force than the licence conditions do themselves",
       "Do not in themselves possess legal status and are usually written in user-friendly language",
-      "Can be issued only by the courts after a successful appeal",
-      "Automatically revoke a licence the moment they are breached"
+      "Can be issued only by the courts, and only following a successful appeal process",
+      "Automatically and permanently revoke a licence the very moment they are breached"
     ],
     "correct_answer": [
       "Do not in themselves possess legal status and are usually written in user-friendly language"
@@ -887,10 +887,10 @@
     "question_number": 69,
     "question_text": "A key reason regulators consult widely before finalising instruments is that consultation:",
     "options": [
-      "Transfers formal decision-making power to the consulted parties",
-      "Removes the regulator's obligation to justify its decisions",
+      "Transfers all formal decision-making power directly to the consulted parties",
+      "Entirely removes the regulator's legal obligation to justify its decisions",
       "Gives industry ownership and pre-knowledge of decisions and enriches decision-making",
-      "Guarantees that no party will ever appeal the outcome"
+      "Guarantees that no consulted party will ever appeal the final regulatory outcome"
     ],
     "correct_answer": [
       "Gives industry ownership and pre-knowledge of decisions and enriches decision-making"
@@ -926,9 +926,9 @@
     "question_number": 72,
     "question_text": "Regarding the funding of national regulatory authorities, the typical arrangement is that:",
     "options": [
-      "Operators are legally barred from contributing any funds",
-      "Regulators are funded solely by fines collected from consumers",
-      "Funding comes entirely from international donor agencies",
+      "Operators are always legally barred from contributing any funds to the regulator at all",
+      "Regulators are funded entirely by fines collected from ordinary telecom consumers",
+      "Funding comes entirely from international donor agencies and foreign aid grants",
       "Governments assume primary responsibility but usually pass the cost onto industry through fees"
     ],
     "correct_answer": [
@@ -939,9 +939,9 @@
     "question_number": 73,
     "question_text": "The concept of regulatory hazard refers to the fact that:",
     "options": [
-      "Regulators are physically endangered when inspecting networks",
-      "Regulation always removes all risk from the telecom market",
-      "Operators face no consequences for breaching the rules",
+      "Regulators personally face genuine physical danger when inspecting live telecom networks",
+      "Regulation always removes every last trace of risk from the telecom market entirely",
+      "Operators face absolutely no consequences whatsoever for repeatedly breaching the rules",
       "Regulatory power, if exercised unwisely, can distort markets and damage the industry it serves"
     ],
     "correct_answer": [
@@ -952,9 +952,9 @@
     "question_number": 74,
     "question_text": "Regulatory capture occurs when:",
     "options": [
-      "The regulator becomes paralysed and issues no decisions at all",
-      "Operators are captured and run directly by the regulator",
-      "Consumers take over the day-to-day running of the regulator",
+      "The regulator becomes completely paralysed and simply stops issuing any decisions at all",
+      "Individual operators are captured and then run directly by the regulator itself as owner",
+      "Ordinary consumers themselves take over the entire day-to-day running of the regulator",
       "The regulator identifies too closely with, and so serves the interests of, the industry it regulates"
     ],
     "correct_answer": [
@@ -965,9 +965,9 @@
     "question_number": 75,
     "question_text": "The information asymmetry, or knowledge gap, that regulators face arises because:",
     "options": [
-      "Regulators are legally forbidden from collecting any data",
-      "Consumers deliberately conceal their preferences from the regulator",
-      "Operators are required to share none of their financial records",
+      "Regulators are always legally forbidden from collecting any operational data at all",
+      "Consumers deliberately conceal their true preferences from the regulator entirely",
+      "Operators are always legally required to share none of their internal financial records",
       "The companies being regulated usually know far more about the business than the regulator does"
     ],
     "correct_answer": [
@@ -979,9 +979,9 @@
     "question_text": "Regulators issue licences to companies primarily to authorise them to:",
     "options": [
       "Operate telecommunications networks and provide telecommunications services",
-      "Manufacture and export telecommunications equipment",
-      "Set the national monetary policy for the sector",
-      "Audit the financial accounts of rival operators"
+      "Manufacture and export telecommunications equipment internationally",
+      "Set the national monetary and fiscal policy for the entire economy",
+      "Audit the financial accounts of every single rival operator each year"
     ],
     "correct_answer": [
       "Operate telecommunications networks and provide telecommunications services"
@@ -991,10 +991,10 @@
     "question_number": 77,
     "question_text": "Beyond granting permission to operate, a telecommunications licence characteristically specifies:",
     "options": [
-      "The retail prices that every other operator must charge",
-      "The internal staffing structure of the regulator itself",
+      "The exact retail prices that every other licensed operator in the country must charge consumers",
+      "The complete internal staffing structure and organisational chart of the regulator itself",
       "What facilities a company may deploy, what services it may offer, and how it must interact with other businesses",
-      "The personal tax obligations of the company's directors"
+      "The personal income tax obligations of each of the company's individual board directors"
     ],
     "correct_answer": [
       "What facilities a company may deploy, what services it may offer, and how it must interact with other businesses"
@@ -1005,9 +1005,9 @@
     "question_text": "In addition to facilities and services, major licences may govern access to scarce resources such as spectrum and numbers, and commonly require companies to pay:",
     "options": [
       "Upfront fees when the licence is awarded and annual payments thereafter",
-      "A fixed share of profits to every competing operator",
-      "Nothing, since licences are always granted free of charge",
-      "A one-time deposit that is fully refunded on expiry"
+      "A fixed share of annual profits paid to every competing operator",
+      "Nothing at all, since licences are always granted completely free of charge",
+      "A single one-time deposit that is always fully refunded upon expiry"
     ],
     "correct_answer": [
       "Upfront fees when the licence is awarded and annual payments thereafter"
@@ -1017,10 +1017,10 @@
     "question_number": 79,
     "question_text": "Historically, telecom licences were allocated separately for different sub-markets, for example fixed networks, mobile networks or paging. The main characteristic of this approach was that licences:",
     "options": [
-      "Were technology- and service-neutral by design",
-      "Imposed identical terms across every market segment",
+      "Were completely technology- and service-neutral by design",
+      "Imposed identical licence terms across every single market segment",
       "Differentiated between specific technologies and services",
-      "Were never tied to any particular type of service"
+      "Were never tied to any particular type of technology or service"
     ],
     "correct_answer": [
       "Differentiated between specific technologies and services"
@@ -1043,9 +1043,9 @@
     "question_number": 81,
     "question_text": "A technology-neutral licence to provide a telephone service is one that:",
     "options": [
-      "Requires the company to use a specified fixed-line technology",
-      "Forbids the company from offering any voice service at all",
-      "Mandates a single government-approved equipment vendor",
+      "Requires the company to use one single, specified fixed-line technology only",
+      "Strictly forbids the company from offering any form of voice service at all",
+      "Mandates the exclusive use of a single, government-approved equipment vendor only",
       "Lets the company choose whether to use a fixed network or a particular wireless technology"
     ],
     "correct_answer": [
@@ -1056,9 +1056,9 @@
     "question_number": 82,
     "question_text": "The two main types of licence awarded to telecom companies are:",
     "options": [
-      "Spectrum licences and numbering licences",
-      "Import licences and export licences",
-      "Provisional licences and probationary licences",
+      "Spectrum-specific licences and separate telephone numbering licences",
+      "International import licences and international export licences",
+      "Short-term provisional licences and longer-term probationary licences",
       "Individual operator licences and class licences (general authorizations)"
     ],
     "correct_answer": [
@@ -1069,9 +1069,9 @@
     "question_number": 83,
     "question_text": "Individual operator licences are used primarily where:",
     "options": [
-      "The market segment has unlimited room for new entrants",
-      "No scarce resources of any kind are involved",
-      "Identical terms are wanted for every business in the segment",
+      "The market segment has essentially unlimited room for any number of new entrants to join",
+      "Absolutely no scarce resources of any kind whatsoever are ever involved in that segment",
+      "Perfectly identical terms are wanted for every single business operating in that market segment",
       "The number of licences is limited, dominance is likely, or specific resources such as spectrum must be allocated"
     ],
     "correct_answer": [
@@ -1082,10 +1082,10 @@
     "question_number": 84,
     "question_text": "Class licences (general authorizations) are characterised by the fact that they:",
     "options": [
-      "Are tailored individually to one named operator",
+      "Are always tailored individually to just one single, specifically named operator",
       "Set out identical terms of operation for all businesses in a market segment, such as ISPs",
-      "Are reserved exclusively for the incumbent operator",
-      "Apply only where radio spectrum must be allocated"
+      "Are reserved exclusively for use by the former state incumbent operator",
+      "Apply only in the specific cases where radio spectrum must be allocated"
     ],
     "correct_answer": [
       "Set out identical terms of operation for all businesses in a market segment, such as ISPs"
@@ -1096,9 +1096,9 @@
     "question_text": "A current trend favours replacing individual operator licences with general authorizations wherever possible because doing so:",
     "options": [
       "Simplifies regulation, helps ensure a level playing field, and is more flexible to market change",
-      "Maximises the upfront revenue collected from each operator",
-      "Guarantees the incumbent a protected monopoly position",
-      "Eliminates the need for any regulator in the sector"
+      "Maximises the one-time upfront revenue collected from each and every individual operator",
+      "Permanently guarantees the incumbent a fully protected monopoly position",
+      "Completely eliminates the need for any independent regulator in the sector whatsoever"
     ],
     "correct_answer": [
       "Simplifies regulation, helps ensure a level playing field, and is more flexible to market change"
@@ -1108,7 +1108,7 @@
     "question_number": 86,
     "question_text": "One licensing objective treats basic telecommunications as an essential public service. This justifies:",
     "options": [
-      "Removing all oversight once the market is privatised",
+      "Removing all regulatory oversight the moment the market is privatised",
       "Retaining some controls to ensure services are provided in the public interest",
       "Reserving service provision for a single state monopoly forever",
       "Allowing operators to serve only the most profitable customers"
@@ -1121,9 +1121,9 @@
     "question_number": 87,
     "question_text": "Network roll-out and service-coverage obligations are often written into licences to advance which licensing objective?",
     "options": [
-      "Generation of one-time government auction revenue",
-      "Protection of the incumbent from any competition",
-      "Standardisation of company accounting practices",
+      "Generation of one-time government spectrum auction revenue",
+      "Protection of the incumbent operator from any competition",
+      "Standardisation of company accounting and reporting practices",
       "Expansion of networks and services, and universal service"
     ],
     "correct_answer": [
@@ -1134,10 +1134,10 @@
     "question_number": 88,
     "question_text": "When a state-owned incumbent is privatized, a licence is necessary because it:",
     "options": [
-      "Transfers ownership of the regulator to the investor",
+      "Transfers full legal ownership and operational control of the regulator to the investor",
       "Specifies what the investor is buying and what the government expects from the operator",
-      "Guarantees the investor permanent freedom from regulation",
-      "Removes the operator's obligation to serve any customers"
+      "Guarantees the investor complete and permanent freedom from all regulation",
+      "Entirely removes the operator's obligation to serve any customers at all"
     ],
     "correct_answer": [
       "Specifies what the investor is buying and what the government expects from the operator"
@@ -1147,10 +1147,10 @@
     "question_number": 89,
     "question_text": "Licensing can be used to regulate market structure, most directly by:",
     "options": [
-      "Fixing the wholesale price of every network input",
+      "Fixing the wholesale price of every single network input",
       "Determining the number of operators licensed to provide services",
-      "Setting the wages paid to operators' employees",
-      "Selecting the equipment vendors operators must use"
+      "Setting the wages paid to all of an operator's employees",
+      "Selecting which equipment vendors operators must always use"
     ],
     "correct_answer": [
       "Determining the number of operators licensed to provide services"
@@ -1160,9 +1160,9 @@
     "question_number": 90,
     "question_text": "Licence conditions intended to create a level playing field and limit incumbents' abuse of dominance are generally referred to as:",
     "options": [
-      "Universal-service obligations",
-      "Spectrum-refarming provisions",
-      "Tariff-rebalancing schedules",
+      "Universal-service obligations for underserved regions",
+      "Spectrum-refarming and reallocation provisions",
+      "Tariff-rebalancing and price-adjustment schedules",
       "Anti-competitive safeguards or fair-trading conditions"
     ],
     "correct_answer": [
@@ -1173,9 +1173,9 @@
     "question_number": 91,
     "question_text": "Finite resources such as radio spectrum, numbers and rights of way should, as a licensing objective, be allocated:",
     "options": [
-      "Entirely to the operator with the longest history",
-      "On a first-come basis with no regard to efficiency",
-      "Only to operators owned by the national government",
+      "Entirely to whichever operator has the longest operating history",
+      "Purely on a first-come basis with no regard to efficiency at all",
+      "Only to operators that are owned by the national government",
       "Between operators fairly, efficiently and in the public interest"
     ],
     "correct_answer": [
@@ -1187,9 +1187,9 @@
     "question_text": "Licensing can generate government revenue in two characteristic ways:",
     "options": [
       "One-time revenues from auctions and continuing revenue from annual licence fees",
-      "Confiscation of operator profits and seizure of their assets",
-      "Personal income taxes levied on the regulator's own staff",
-      "Mandatory donations collected from international agencies"
+      "Confiscation of operator profits and outright seizure of their assets",
+      "Personal income taxes levied directly on the regulator's own staff",
+      "Mandatory donations collected annually from international agencies"
     ],
     "correct_answer": [
       "One-time revenues from auctions and continuing revenue from annual licence fees"
@@ -1200,9 +1200,9 @@
     "question_text": "Consumer-protection conditions in telecom licences commonly address matters such as:",
     "options": [
       "Billing practices, complaint mechanisms and mandatory services like emergency calls",
-      "The internal share structure of the operator",
-      "The personal credit ratings of company directors",
-      "The choice of the regulator's external auditors"
+      "The detailed internal share structure of the operator's holding company",
+      "The personal credit ratings of each of the company's individual board directors",
+      "The choice of which external auditors are used by the regulator itself"
     ],
     "correct_answer": [
       "Billing practices, complaint mechanisms and mandatory services like emergency calls"
@@ -1213,9 +1213,9 @@
     "question_text": "By clearly defining the rights and obligations of the operator and the regulator, a licence advances the objective of:",
     "options": [
       "Regulatory certainty, which builds confidence and helps attract investment",
-      "Spectrum refarming across competing operators",
-      "Eliminating the regulator's discretion entirely",
-      "Guaranteeing every operator an equal market share"
+      "Spectrum refarming carried out across all competing operators",
+      "Eliminating the regulator's discretion entirely and permanently",
+      "Guaranteeing every single operator an exactly equal market share"
     ],
     "correct_answer": [
       "Regulatory certainty, which builds confidence and helps attract investment"
@@ -1238,9 +1238,9 @@
     "question_number": 96,
     "question_text": "Although telephone numbers are in principle infinite, they are treated as a scarce resource partly because:",
     "options": [
-      "There are physically only a few thousand digits in existence",
-      "Each number requires its own dedicated radio frequency",
-      "A given number can be used by only one country worldwide",
+      "There are physically only a very small, fixed number of usable digits in existence worldwide",
+      "Each individual telephone number requires its own permanently dedicated radio frequency to function",
+      "A given telephone number can only ever be assigned to and used by one single country worldwide",
       "People can hold only a limited number of digits in short-term memory, and numbers must be allocated in meaningful blocks"
     ],
     "correct_answer": [
@@ -1251,10 +1251,10 @@
     "question_number": 97,
     "question_text": "Number portability is a mechanism by which:",
     "options": [
-      "The operator permanently owns every number it issues",
+      "The operator permanently and exclusively owns every telephone number that it ever issues",
       "The subscriber, rather than the operator, owns the number and can take it when switching providers",
-      "Numbers are auctioned to the highest-bidding operator",
-      "Subscribers must change numbers each time they switch providers"
+      "Numbers are periodically auctioned off to whichever operator happens to bid the highest",
+      "Subscribers must always change their number each time they switch to a completely new provider"
     ],
     "correct_answer": [
       "The subscriber, rather than the operator, owns the number and can take it when switching providers"
@@ -1277,9 +1277,9 @@
     "question_number": 99,
     "question_text": "A primary reason spectrum must be allocated through agreements such as licences, rather than used freely, is to:",
     "options": [
-      "Increase the number of digits available for telephone numbers",
-      "Allow every operator to broadcast on any frequency it wishes",
-      "Remove the need for any international coordination of frequencies",
+      "Increase the total number of digits available for telephone numbers nationally",
+      "Allow every single licensed operator to broadcast on any frequency it wishes",
+      "Remove the need for any international coordination of frequencies at all",
       "Ensure it is properly distributed and that users do not interfere with one another"
     ],
     "correct_answer": [
@@ -1290,9 +1290,9 @@
     "question_number": 100,
     "question_text": "The core principle of interconnection is that:",
     "options": [
-      "Each operator should keep its subscribers isolated from rivals' networks",
-      "Only operators of an equal size are required to interconnect",
-      "Interconnection is required only between international carriers",
+      "Each operator should deliberately keep its subscribers isolated from rivals' networks",
+      "Only operators of a roughly similar size are ever legally required to interconnect",
+      "Interconnection is legally required only between the largest international carriers",
       "Everyone should be able to communicate with everyone else, regardless of which network they subscribe to"
     ],
     "correct_answer": [
