@@ -1,1302 +1,1303 @@
 [
-  {
-    "question_number": 1,
-    "question_text": "A financial analyst updates the value in cell B5 and notices that several summary cells automatically change. Which Excel concept is primarily responsible for this behavior?",
-    "options": [
-      "Cell referencing dynamically links formulas to source values",
-      "Conditional formatting automatically recalculates worksheet totals",
-      "Worksheet protection automatically synchronizes dependent values",
-      "Data validation automatically standardizes workbook calculations"
-    ],
-    "correct_answer": [
-      "Cell referencing dynamically links formulas to source values"
-    ]
-  },
-  {
-    "question_number": 2,
-    "question_text": "A user wants a formula copied across multiple columns without changing the referenced tax rate cell. Which reference type should be used?",
-    "options": [
-      "An absolute reference that locks both row and column",
-      "A relative reference that shifts with worksheet movement",
-      "A mixed reference that locks only the destination range",
-      "A dynamic reference that expands with inserted columns"
-    ],
-    "correct_answer": [
-      "An absolute reference that locks both row and column"
-    ]
-  },
-  {
-    "question_number": 3,
-    "question_text": "A worksheet contains monthly sales data and the analyst drags a formula downward using the auto-fill handle. Why does the referenced row change automatically?",
-    "options": [
-      "Relative references adjust based on the new cell position",
-      "Absolute references recalculate from the original worksheet",
-      "Mixed references convert values into fixed coordinates automatically",
-      "Structured references align formulas with named table objects"
-    ],
-    "correct_answer": [
-      "Relative references adjust based on the new cell position"
-    ]
-  },
-  {
-    "question_number": 4,
-    "question_text": "An operations manager wants employees to select department names only from a predefined list. Which Excel feature best supports this requirement?",
-    "options": [
-      "Data validation using the list validation type",
-      "Conditional formatting using highlight cell rules",
-      "Goal seek using predefined worksheet assumptions",
-      "Scenario manager using multiple variable configurations"
-    ],
-    "correct_answer": [
-      "Data validation using the list validation type"
-    ]
-  },
-  {
-    "question_number": 5,
-    "question_text": "A company wants cells containing values above a sales target to appear in green automatically. Which Excel capability should be applied?",
-    "options": [
-      "Conditional formatting with a greater-than rule",
-      "Data validation with a whole-number restriction",
-      "Pivot table filtering with value summarization",
-      "Worksheet grouping with formula-based protection"
-    ],
-    "correct_answer": [
-      "Conditional formatting with a greater-than rule"
-    ]
-  },
-  {
-    "question_number": 6,
-    "question_text": "A dataset imported from another system contains multiple blank rows that interfere with pivot table analysis. Which approach is most efficient for removing them?",
-    "options": [
-      "Use Go To Special to select blanks before deleting rows",
-      "Use scenario manager to isolate incomplete worksheet records",
-      "Use the formula bar to overwrite empty worksheet sections",
-      "Use worksheet tabs to reorganize incomplete data ranges"
-    ],
-    "correct_answer": [
-      "Use Go To Special to select blanks before deleting rows"
-    ]
-  },
-  {
-    "question_number": 7,
-    "question_text": "A data entry clerk typed \"Gana\" instead of \"Ghana\" hundreds of times in a worksheet. Which Excel tool provides the fastest correction method?",
-    "options": [
-      "Find and Replace for bulk text correction",
-      "Conditional formatting for automatic spelling detection",
-      "Goal seek for identifying invalid worksheet entries",
-      "Power Pivot for merging inconsistent workbook fields"
-    ],
-    "correct_answer": [
-      "Find and Replace for bulk text correction"
-    ]
-  },
-  {
-    "question_number": 8,
-    "question_text": "A regional manager wants to display only records from Accra in a large worksheet. Which Excel process should be used?",
-    "options": [
-      "Apply a filter to the Region column",
-      "Insert a slicer into the worksheet footer",
-      "Create a scenario summary from the dataset",
-      "Convert the worksheet into a forecast model"
-    ],
-    "correct_answer": [
-      "Apply a filter to the Region column"
-    ]
-  },
-  {
-    "question_number": 9,
-    "question_text": "An Excel formula contains brackets, multiplication, and subtraction operations. Which calculation principle determines the evaluation order?",
-    "options": [
-      "The BODMAS precedence structure used in Excel",
-      "The auto-fill dependency structure used in formulas",
-      "The relationship hierarchy embedded in Power Pivot",
-      "The aggregation sequence defined within pivot tables"
-    ],
-    "correct_answer": [
-      "The BODMAS precedence structure used in Excel"
-    ]
-  },
-  {
-    "question_number": 10,
-    "question_text": "A manager wants to calculate the total revenue generated across all product categories. Which function is most appropriate?",
-    "options": [
-      "SUM because it adds numeric values within a range",
-      "COUNT because it identifies populated numerical records",
-      "MAX because it selects the highest value available",
-      "AVERAGE because it determines the central tendency"
-    ],
-    "correct_answer": [
-      "SUM because it adds numeric values within a range"
-    ]
-  },
-  {
-    "question_number": 11,
-    "question_text": "A researcher needs to determine the mean score of all participants in a dataset. Which Excel function should be applied?",
-    "options": [
-      "AVERAGE because it computes the arithmetic mean",
-      "COUNTA because it counts all populated worksheet cells",
-      "MIN because it identifies the smallest numerical value",
-      "AGGREGATE because it ignores hidden worksheet sections"
-    ],
-    "correct_answer": [
-      "AVERAGE because it computes the arithmetic mean"
-    ]
-  },
-  {
-    "question_number": 12,
-    "question_text": "A teacher wants to know how many students submitted numerical test scores in a worksheet range. Which function best satisfies this need?",
-    "options": [
-      "COUNT because it evaluates cells containing numbers",
-      "COUNTA because it includes every non-empty worksheet cell",
-      "IF because it evaluates conditional logical statements",
-      "SUM because it combines values into a cumulative total"
-    ],
-    "correct_answer": [
-      "COUNT because it evaluates cells containing numbers"
-    ]
-  },
-  {
-    "question_number": 13,
-    "question_text": "A company stores employee IDs as numbers and employee names as text. Which function would count both IDs and names if the cells are not empty?",
-    "options": [
-      "COUNTA because it counts all non-empty entries",
-      "COUNT because it ignores cells containing text values",
-      "MAX because it evaluates the largest numeric record",
-      "AVERAGE because it calculates numerical central values"
-    ],
-    "correct_answer": [
-      "COUNTA because it counts all non-empty entries"
-    ]
-  },
-  {
-    "question_number": 14,
-    "question_text": "An analyst needs to calculate totals while ignoring hidden rows and worksheet errors. Which function is designed for this purpose?",
-    "options": [
-      "AGGREGATE because it can ignore errors and hidden rows",
-      "SUMIFS because it combines multiple criteria during calculation",
-      "VLOOKUP because it retrieves values from table columns",
-      "TRANSPOSE because it rearranges vertical and horizontal data"
-    ],
-    "correct_answer": [
-      "AGGREGATE because it can ignore errors and hidden rows"
-    ]
-  },
-  {
-    "question_number": 15,
-    "question_text": "A payroll officer wants Excel to display \"Rich\" if a salary exceeds 5000 and \"Not Rich\" otherwise. Which function structure is most suitable?",
-    "options": [
-      "IF because it returns outputs based on logical conditions",
-      "OR because it validates at least one logical statement",
-      "AND because it requires all logical tests to succeed",
-      "MATCH because it identifies positions within worksheet ranges"
-    ],
-    "correct_answer": [
-      "IF because it returns outputs based on logical conditions"
-    ]
-  },
-  {
-    "question_number": 16,
-    "question_text": "A manager wants to evaluate whether both revenue exceeded the target and expenses remained below budget before approving a bonus. Which function combination best supports this requirement?",
-    "options": [
-      "AND because all logical conditions must evaluate as TRUE",
-      "OR because only one worksheet condition must be satisfied",
-      "SUMIF because values are added based on one requirement",
-      "COUNTIF because qualifying worksheet entries are totaled"
-    ],
-    "correct_answer": [
-      "AND because all logical conditions must evaluate as TRUE"
-    ]
-  },
-  {
-    "question_number": 17,
-    "question_text": "A sales dashboard should mark a transaction as approved if either the customer has premium status or the order exceeds a target amount. Which logical function is most appropriate?",
-    "options": [
-      "OR because at least one logical statement must be TRUE",
-      "AND because every worksheet condition must be validated",
-      "IFS because all conditions are evaluated sequentially",
-      "MATCH because positions within a range are identified"
-    ],
-    "correct_answer": [
-      "OR because at least one logical statement must be TRUE"
-    ]
-  },
-  {
-    "question_number": 18,
-    "question_text": "A company wants to calculate the total sales generated only by employees in the Marketing department. Which function should be applied?",
-    "options": [
-      "SUMIF because it adds values meeting one criterion",
-      "COUNTIF because it counts records meeting one criterion",
-      "SUMIFS because it requires multiple criteria ranges",
-      "AGGREGATE because it ignores hidden worksheet entries"
-    ],
-    "correct_answer": [
-      "SUMIF because it adds values meeting one criterion"
-    ]
-  },
-  {
-    "question_number": 19,
-    "question_text": "A business analyst needs to total sales for female employees older than 30 years. Which function is designed for this type of calculation?",
-    "options": [
-      "SUMIFS because it evaluates multiple conditions simultaneously",
-      "SUMIF because it only evaluates a single worksheet criterion",
-      "COUNTIFS because it counts records instead of summing values",
-      "VLOOKUP because it retrieves data from table columns"
-    ],
-    "correct_answer": [
-      "SUMIFS because it evaluates multiple conditions simultaneously"
-    ]
-  },
-  {
-    "question_number": 20,
-    "question_text": "A teacher wants to determine how many students scored above a pass mark in a single score column. Which function best fits this requirement?",
-    "options": [
-      "COUNTIF because it counts records matching one criterion",
-      "COUNTIFS because it requires several conditions to operate",
-      "SUM because it combines values instead of counting records",
-      "AVERAGE because it calculates the dataset mean value"
-    ],
-    "correct_answer": [
-      "COUNTIF because it counts records matching one criterion"
-    ]
-  },
-  {
-    "question_number": 21,
-    "question_text": "An HR analyst wants to count employees who work in Accra and belong to the Finance department. Which function is most suitable?",
-    "options": [
-      "COUNTIFS because multiple criteria must be evaluated",
-      "COUNTIF because only one worksheet condition is supported",
-      "SUMIFS because numerical values are required for summation",
-      "IFERROR because invalid lookup results must be handled"
-    ],
-    "correct_answer": [
-      "COUNTIFS because multiple criteria must be evaluated"
-    ]
-  },
-  {
-    "question_number": 22,
-    "question_text": "A lookup table stores employee IDs in the first column and department names in later columns. Which function is traditionally used to retrieve the department name?",
-    "options": [
-      "VLOOKUP because it searches vertically through table columns",
-      "HLOOKUP because it searches horizontally through table rows",
-      "MATCH because it only returns a relative position number",
-      "INDEX because it requires coordinates instead of a lookup"
-    ],
-    "correct_answer": [
-      "VLOOKUP because it searches vertically through table columns"
-    ]
-  },
-  {
-    "question_number": 23,
-    "question_text": "A dataset is organized horizontally with product names across the top row. Which lookup function is best aligned with this structure?",
-    "options": [
-      "HLOOKUP because it searches values across worksheet rows",
-      "VLOOKUP because it searches values down worksheet columns",
-      "XLOOKUP because it only retrieves approximate matches",
-      "SUMIF because it aggregates data from specified criteria"
-    ],
-    "correct_answer": [
-      "HLOOKUP because it searches values across worksheet rows"
-    ]
-  },
-  {
-    "question_number": 24,
-    "question_text": "A data analyst wants a lookup function that can search in any direction and replace older lookup limitations. Which function is most appropriate?",
-    "options": [
-      "XLOOKUP because it supports flexible directional searches",
-      "VLOOKUP because it only retrieves values from the right",
-      "MATCH because it returns positions instead of data values",
-      "COUNTIFS because it evaluates multiple logical conditions"
-    ],
-    "correct_answer": [
-      "XLOOKUP because it supports flexible directional searches"
-    ]
-  },
-  {
-    "question_number": 25,
-    "question_text": "A user needs to return the value found at the intersection of a specific row and column within a table. Which function performs this task?",
-    "options": [
-      "INDEX because it retrieves data from specified coordinates",
-      "MATCH because it only identifies relative positions in ranges",
-      "IFERROR because it substitutes alternative worksheet outputs",
-      "TRANSPOSE because it rotates worksheet orientation directions"
-    ],
-    "correct_answer": [
-      "INDEX because it retrieves data from specified coordinates"
-    ]
-  },
-  {
-    "question_number": 26,
-    "question_text": "A formula must determine the relative position of a product code within a list before another function retrieves its value. Which function is designed for identifying the position?",
-    "options": [
-      "MATCH because it locates positions within worksheet ranges",
-      "INDEX because it directly retrieves values from coordinates",
-      "COUNT because it evaluates numerical worksheet entries only",
-      "LEFT because it extracts characters from text strings"
-    ],
-    "correct_answer": [
-      "MATCH because it locates positions within worksheet ranges"
-    ]
-  },
-  {
-    "question_number": 27,
-    "question_text": "A lookup formula occasionally returns errors when product IDs are missing. Which function can display a custom message such as \"Not Found\" instead?",
-    "options": [
-      "IFERROR because it replaces formula errors with custom output",
-      "IFS because it evaluates several conditions sequentially",
-      "COUNTA because it counts populated worksheet entries",
-      "AGGREGATE because it ignores hidden rows and errors"
-    ],
-    "correct_answer": [
-      "IFERROR because it replaces formula errors with custom output"
-    ]
-  },
-  {
-    "question_number": 28,
-    "question_text": "A dataset imported from the web contains unnecessary extra spaces between words. Which text function should be used first?",
-    "options": [
-      "TRIM because it removes extra spaces from text",
-      "CLEAN because it removes non-printable worksheet characters",
-      "UPPER because it converts text into uppercase letters",
-      "PROPER because it capitalizes the beginning of words"
-    ],
-    "correct_answer": [
-      "TRIM because it removes extra spaces from text"
-    ]
-  },
-  {
-    "question_number": 29,
-    "question_text": "An imported worksheet contains hidden non-printable characters that disrupt formulas and sorting. Which function is most suitable for resolving this issue?",
-    "options": [
-      "CLEAN because it removes non-printable text characters",
-      "TRIM because it only removes additional text spacing",
-      "LOWER because it converts text into lowercase letters",
-      "RIGHT because it extracts characters from text endings"
-    ],
-    "correct_answer": [
-      "CLEAN because it removes non-printable text characters"
-    ]
-  },
-  {
-    "question_number": 30,
-    "question_text": "A company database contains customer names entered entirely in lowercase. Which function will convert each name into title case formatting?",
-    "options": [
-      "PROPER because it capitalizes the first letter of words",
-      "UPPER because it converts every letter into capitals",
-      "LOWER because it converts text into lowercase format",
-      "MID because it extracts characters from text strings"
-    ],
-    "correct_answer": [
-      "PROPER because it capitalizes the first letter of words"
-    ]
-  },
-  {
-    "question_number": 31,
-    "question_text": "A report requires every employee email address to appear entirely in uppercase letters. Which function should be used?",
-    "options": [
-      "UPPER because it converts all letters into capitals",
-      "LOWER because it converts all letters into lowercase",
-      "TRIM because it removes spaces from worksheet text",
-      "LEFT because it extracts characters from the beginning"
-    ],
-    "correct_answer": [
-      "UPPER because it converts all letters into capitals"
-    ]
-  },
-  {
-    "question_number": 32,
-    "question_text": "A user needs to extract the first three characters from a product identification code. Which function is most appropriate?",
-    "options": [
-      "LEFT because it extracts characters from the beginning",
-      "RIGHT because it extracts characters from the ending",
-      "MID because it extracts characters from the middle",
-      "FIND because it identifies character starting positions"
-    ],
-    "correct_answer": [
-      "LEFT because it extracts characters from the beginning"
-    ]
-  },
-  {
-    "question_number": 33,
-    "question_text": "A financial analyst wants to isolate the last four digits of an account number stored as text. Which function should be selected?",
-    "options": [
-      "RIGHT because it extracts characters from the text end",
-      "LEFT because it extracts characters from the text start",
-      "MID because it requires a starting position argument",
-      "TRANSPOSE because it changes worksheet orientations"
-    ],
-    "correct_answer": [
-      "RIGHT because it extracts characters from the text end"
-    ]
-  },
-  {
-    "question_number": 34,
-    "question_text": "A worksheet contains product descriptions and the analyst needs characters beginning from a specific middle position. Which function best satisfies this requirement?",
-    "options": [
-      "MID because it extracts characters from chosen positions",
-      "LEFT because it only extracts characters from beginnings",
-      "RIGHT because it only extracts characters from endings",
-      "CLEAN because it removes hidden worksheet characters"
-    ],
-    "correct_answer": [
-      "MID because it extracts characters from chosen positions"
-    ]
-  },
-  {
-    "question_number": 35,
-    "question_text": "A user wants to combine first names and surnames from separate columns into one full-name field. Which function is most suitable?",
-    "options": [
-      "CONCATENATE because it joins text from multiple cells",
-      "FIND because it searches for character starting positions",
-      "TRANSPOSE because it rotates worksheet data orientation",
-      "MATCH because it identifies positions within data ranges"
-    ],
-    "correct_answer": [
-      "CONCATENATE because it joins text from multiple cells"
-    ]
-  },
-  {
-    "question_number": 36,
-    "question_text": "An analyst needs to determine where a specific word begins inside a larger text string. Which function should be used?",
-    "options": [
-      "FIND because it locates text within another string",
-      "MID because it extracts text from chosen positions",
-      "TRIM because it removes extra spacing from text",
-      "LOWER because it converts letters into lowercase form"
-    ],
-    "correct_answer": [
-      "FIND because it locates text within another string"
-    ]
-  },
-  {
-    "question_number": 37,
-    "question_text": "A manager wants to convert a vertical range of monthly values into a horizontal arrangement. Which Excel function supports this transformation?",
-    "options": [
-      "TRANSPOSE because it flips row and column orientation",
-      "INDEX because it retrieves values from table coordinates",
-      "MATCH because it identifies positions within worksheet lists",
-      "SUMIFS because it aggregates values across multiple criteria"
-    ],
-    "correct_answer": [
-      "TRANSPOSE because it flips row and column orientation"
-    ]
-  },
-  {
-    "question_number": 38,
-    "question_text": "Why are Excel tables considered more dynamic than ordinary data ranges when building dashboards?",
-    "options": [
-      "Tables automatically expand when new rows or columns are added",
-      "Tables automatically convert all formulas into Power Query steps",
-      "Tables automatically lock worksheet references during calculations",
-      "Tables automatically generate charts whenever data is modified"
-    ],
-    "correct_answer": [
-      "Tables automatically expand when new rows or columns are added"
-    ]
-  },
-  {
-    "question_number": 39,
-    "question_text": "In a star schema data model, which table typically stores numerical business events such as sales transactions?",
-    "options": [
-      "A fact table containing measurable business activity records",
-      "A dimension table containing descriptive contextual attributes",
-      "A lookup table containing worksheet formatting definitions",
-      "A scenario table containing predictive worksheet assumptions"
-    ],
-    "correct_answer": [
-      "A fact table containing measurable business activity records"
-    ]
-  },
-  {
-    "question_number": 40,
-    "question_text": "A Product table stores ProductID, Category, and Brand information that describes sales records. What type of table is this?",
-    "options": [
-      "A dimension table providing descriptive business context",
-      "A fact table recording measurable transactional worksheet events",
-      "A bridge table resolving many-to-many worksheet conflicts",
-      "A measure table calculating aggregated numerical worksheet values"
-    ],
-    "correct_answer": [
-      "A dimension table providing descriptive business context"
-    ]
-  },
-  {
-    "question_number": 41,
-    "question_text": "A dashboard designer drags Region into the Rows section and Revenue into the Values section of a pivot table. Which concept is being applied?",
-    "options": [
-      "Measures are summarized according to selected dimensions",
-      "Dimensions are converted into forecasted numerical outcomes",
-      "Relationships are transformed into worksheet filtering hierarchies",
-      "Fact tables are converted into continuous measurement scales"
-    ],
-    "correct_answer": [
-      "Measures are summarized according to selected dimensions"
-    ]
-  },
-  {
-    "question_number": 42,
-    "question_text": "Which field type is most appropriate for grouping and filtering data within a pivot table?",
-    "options": [
-      "Dimensions because they represent qualitative categories",
-      "Measures because they represent quantitative calculations",
-      "Forecasts because they represent projected future estimates",
-      "Relationships because they represent linked worksheet tables"
-    ],
-    "correct_answer": [
-      "Dimensions because they represent qualitative categories"
-    ]
-  },
-  {
-    "question_number": 43,
-    "question_text": "Which example best represents discrete data in a reporting environment?",
-    "options": [
-      "The number of students enrolled in a class",
-      "The temperature measured during a laboratory experiment",
-      "The time required to complete a manufacturing process",
-      "The distance traveled by a delivery vehicle yesterday"
-    ],
-    "correct_answer": [
-      "The number of students enrolled in a class"
-    ]
-  },
-  {
-    "question_number": 44,
-    "question_text": "Which example best represents continuous data in analytical reporting?",
-    "options": [
-      "The height measured for each participant in a study",
-      "The number of laptops issued to each department",
-      "The quantity of students registered for a course",
-      "The count of invoices generated during a month"
-    ],
-    "correct_answer": [
-      "The height measured for each participant in a study"
-    ]
-  },
-  {
-    "question_number": 45,
-    "question_text": "Why are pivot tables widely used in business analytics workflows?",
-    "options": [
-      "They summarize and analyze patterns without changing source data",
-      "They permanently overwrite formulas with calculated worksheet values",
-      "They replace relationships between tables inside Power Pivot models",
-      "They automatically forecast future trends from historical datasets"
-    ],
-    "correct_answer": [
-      "They summarize and analyze patterns without changing source data"
-    ]
-  },
-  {
-    "question_number": 46,
-    "question_text": "Before creating a pivot table, why is converting the dataset into an Excel table recommended?",
-    "options": [
-      "Tables dynamically expand as new data is added",
-      "Tables automatically remove all duplicate worksheet entries",
-      "Tables permanently lock formulas against accidental modification",
-      "Tables convert all worksheet functions into Power Query steps"
-    ],
-    "correct_answer": [
-      "Tables dynamically expand as new data is added"
-    ]
-  },
-  {
-    "question_number": 47,
-    "question_text": "A slicer is inserted into a pivot table dashboard. What is its primary purpose?",
-    "options": [
-      "To visually filter connected tables and charts interactively",
-      "To convert worksheet formulas into summarized calculations automatically",
-      "To establish relationships between disconnected workbook datasets instantly",
-      "To generate forecast sheets from historical worksheet information"
-    ],
-    "correct_answer": [
-      "To visually filter connected tables and charts interactively"
-    ]
-  },
-  {
-    "question_number": 48,
-    "question_text": "A company wants one slicer to filter multiple pivot tables in the same report. Which additional step is necessary?",
-    "options": [
-      "Configure report connections for the selected pivot tables",
-      "Create separate worksheets for every connected slicer object",
-      "Convert the pivot tables into forecast sheet visualizations",
-      "Apply conditional formatting to every pivot table field"
-    ],
-    "correct_answer": [
-      "Configure report connections for the selected pivot tables"
-    ]
-  },
-  {
-    "question_number": 49,
-    "question_text": "A finance team creates a Profit field by subtracting Cost from Revenue inside a pivot table. What type of feature is being used?",
-    "options": [
-      "A calculated field derived from existing worksheet columns",
-      "A relationship field connecting multiple workbook tables together",
-      "A validation field restricting worksheet data entry behavior",
-      "A forecast field predicting future business performance automatically"
-    ],
-    "correct_answer": [
-      "A calculated field derived from existing worksheet columns"
-    ]
-  },
-  {
-    "question_number": 50,
-    "question_text": "Why is Power Query considered an ETL tool in analytics workflows?",
-    "options": [
-      "It extracts, transforms, and loads analytical business data",
-      "It evaluates, totals, and labels worksheet information automatically",
-      "It expands, transfers, and links pivot table relationships dynamically",
-      "It exports, tracks, and localizes workbook formatting configurations"
-    ],
-    "correct_answer": [
-      "It extracts, transforms, and loads analytical business data"
-    ]
-  },
-  {
-    "question_number": 51,
-    "question_text": "An analyst repeatedly receives monthly CSV files with identical formatting issues. Why is Power Query especially useful in this scenario?",
-    "options": [
-      "It records cleaning steps that can be refreshed automatically",
-      "It permanently replaces worksheets with relational database systems",
-      "It converts every worksheet formula into a pivot table calculation",
-      "It automatically forecasts future records from imported datasets"
-    ],
-    "correct_answer": [
-      "It records cleaning steps that can be refreshed automatically"
-    ]
-  },
-  {
-    "question_number": 52,
-    "question_text": "Which Power Query interface component records every transformation performed on imported data?",
-    "options": [
-      "The Applied Steps pane tracking transformation history",
-      "The Formula Bar pane displaying worksheet calculations only",
-      "The Diagram View pane showing relationship structures visually",
-      "The Fields List pane summarizing pivot table categories"
-    ],
-    "correct_answer": [
-      "The Applied Steps pane tracking transformation history"
-    ]
-  },
-  {
-    "question_number": 53,
-    "question_text": "An imported dataset contains incorrect data types where dates are recognized as text. Which Power Query action should be applied?",
-    "options": [
-      "Change the column data types appropriately within Power Query",
-      "Create relationships between tables using diagram view tools",
-      "Insert a forecast sheet to predict future worksheet values",
-      "Use conditional formatting to correct worksheet inconsistencies"
-    ],
-    "correct_answer": [
-      "Change the column data types appropriately within Power Query"
-    ]
-  },
-  {
-    "question_number": 54,
-    "question_text": "Why is Power Pivot considered more powerful than standard Excel worksheets for analytics?",
-    "options": [
-      "It can manage millions of rows across multiple data sources",
-      "It permanently replaces all formulas with static worksheet values",
-      "It automatically converts pivot tables into predictive dashboards",
-      "It removes the need for relationships between analytical tables"
-    ],
-    "correct_answer": [
-      "It can manage millions of rows across multiple data sources"
-    ]
-  },
-  {
-    "question_number": 55,
-    "question_text": "A data model links a Sales table to a Products table through ProductID. What is the main purpose of this relationship?",
-    "options": [
-      "To enable analysis across connected business datasets",
-      "To automatically remove duplicated worksheet information entries",
-      "To convert discrete variables into continuous measurement scales",
-      "To replace lookup functions with scenario management tools"
-    ],
-    "correct_answer": [
-      "To enable analysis across connected business datasets"
-    ]
-  },
-  {
-    "question_number": 56,
-    "question_text": "Which relationship type is considered the most common and recommended in a star schema design?",
-    "options": [
-      "One-to-many relationships connecting dimensions to facts",
-      "Many-to-many relationships connecting several lookup tables",
-      "One-to-one relationships connecting duplicated information sets",
-      "Bi-directional relationships connecting every worksheet object"
-    ],
-    "correct_answer": [
-      "One-to-many relationships connecting dimensions to facts"
-    ]
-  },
-  {
-    "question_number": 57,
-    "question_text": "A Students table and a Courses table both contain repeated matching values because students take multiple courses. Which relationship type does this represent?",
-    "options": [
-      "Many-to-many because multiple records relate on both sides",
-      "One-to-one because every value appears exactly one time",
-      "One-to-many because one table contains only unique values",
-      "Single-direction because filters flow in one direction only"
-    ],
-    "correct_answer": [
-      "Many-to-many because multiple records relate on both sides"
-    ]
-  },
-  {
-    "question_number": 58,
-    "question_text": "Why should bi-directional filtering be used sparingly in Power BI or Power Pivot models?",
-    "options": [
-      "It can reduce dashboard performance when overused",
-      "It permanently disables relationships between workbook tables",
-      "It prevents calculated fields from updating dynamically",
-      "It converts dimensions into continuous analytical variables"
-    ],
-    "correct_answer": [
-      "It can reduce dashboard performance when overused"
-    ]
-  },
-  {
-    "question_number": 59,
-    "question_text": "In Power Pivot diagram view, what does the symbol '*' represent at the end of a relationship line?",
-    "options": [
-      "The many side of a table relationship structure",
-      "The one side of a table relationship structure",
-      "The active measure within a pivot table calculation",
-      "The applied step within a Power Query workflow"
-    ],
-    "correct_answer": [
-      "The many side of a table relationship structure"
-    ]
-  },
-  {
-    "question_number": 60,
-    "question_text": "A manager knows the desired profit target but does not know how many units must be sold to reach it. Which Excel tool is most appropriate?",
-    "options": [
-      "Goal Seek because it solves for one unknown input",
-      "Scenario Manager because it compares several fixed outcomes",
-      "Forecast Sheet because it predicts future trends automatically",
-      "Conditional Formatting because it highlights worksheet conditions"
-    ],
-    "correct_answer": [
-      "Goal Seek because it solves for one unknown input"
-    ]
-  },
-  {
-    "question_number": 61,
-    "question_text": "What is the major limitation of Goal Seek in predictive analysis?",
-    "options": [
-      "It changes only one variable during the calculation process",
-      "It requires relationships between all workbook data sources",
-      "It only works when data has already been summarized",
-      "It cannot operate on formulas containing logical functions"
-    ],
-    "correct_answer": [
-      "It changes only one variable during the calculation process"
-    ]
-  },
-  {
-    "question_number": 62,
-    "question_text": "A company wants to compare Best Case, Worst Case, and Most Likely financial outcomes. Which Excel feature is specifically designed for this task?",
-    "options": [
-      "Scenario Manager because it stores multiple worksheet assumptions",
-      "Forecast Sheet because it predicts future values automatically",
-      "Pivot Tables because they summarize historical business records",
-      "Conditional Formatting because it highlights value variations"
-    ],
-    "correct_answer": [
-      "Scenario Manager because it stores multiple worksheet assumptions"
-    ]
-  },
-  {
-    "question_number": 63,
-    "question_text": "Why is naming the changing cells in Scenario Manager considered a good practice?",
-    "options": [
-      "Named cells make generated summaries easier to interpret",
-      "Named cells automatically convert assumptions into pivot tables",
-      "Named cells prevent workbook formulas from recalculating dynamically",
-      "Named cells remove the need for worksheet data validation"
-    ],
-    "correct_answer": [
-      "Named cells make generated summaries easier to interpret"
-    ]
-  },
-  {
-    "question_number": 64,
-    "question_text": "Which type of dataset is required before creating a Forecast Sheet in Excel?",
-    "options": [
-      "Historical time-based data containing dates and values",
-      "Relational data connected through multiple dimension tables",
-      "Discrete survey data containing only categorical responses",
-      "Pivot table summaries containing grouped worksheet calculations"
-    ],
-    "correct_answer": [
-      "Historical time-based data containing dates and values"
-    ]
-  },
-  {
-    "question_number": 65,
-    "question_text": "What additional information does Excel include when generating a Forecast Sheet chart?",
-    "options": [
-      "Confidence intervals showing likely prediction ranges",
-      "Relationship diagrams connecting worksheet data structures",
-      "Applied steps documenting data cleaning transformations",
-      "Scenario summaries comparing alternative business outcomes"
-    ],
-    "correct_answer": [
-      "Confidence intervals showing likely prediction ranges"
-    ]
-  },
-  {
-    "question_number": 66,
-    "question_text": "Which Excel interface element displays the address of the currently selected cell and can also be used for navigation?",
-    "options": [
-      "The Name Box located beside the formula bar",
-      "The Status Bar located beneath the worksheet workspace",
-      "The Ribbon Group located under worksheet command tabs",
-      "The Quick Access Toolbar positioned above ribbon commands"
-    ],
-    "correct_answer": [
-      "The Name Box located beside the formula bar"
-    ]
-  },
-  {
-    "question_number": 67,
-    "question_text": "What is the primary function of the Formula Bar in Microsoft Excel?",
-    "options": [
-      "To view, enter, and edit the contents of cells",
-      "To organize workbook commands according to related categories",
-      "To display workbook statistics and worksheet status indicators",
-      "To switch between worksheet viewing and layout configurations"
-    ],
-    "correct_answer": [
-      "To view, enter, and edit the contents of cells"
-    ]
-  },
-  {
-    "question_number": 68,
-    "question_text": "Why is the Auto Fill Handle useful during spreadsheet analysis?",
-    "options": [
-      "It quickly copies formulas and extends logical data series",
-      "It automatically converts worksheets into relational databases",
-      "It permanently fixes formulas using absolute references only",
-      "It replaces conditional formatting with dynamic visual reports"
-    ],
-    "correct_answer": [
-      "It quickly copies formulas and extends logical data series"
-    ]
-  },
-  {
-    "question_number": 69,
-    "question_text": "A user presses the F4 key repeatedly while editing a formula reference. What Excel behavior is being controlled?",
-    "options": [
-      "Switching between relative, absolute, and mixed references",
-      "Cycling through worksheet tabs within the current workbook",
-      "Applying different conditional formatting color categories automatically",
-      "Refreshing pivot tables connected to external data sources"
-    ],
-    "correct_answer": [
-      "Switching between relative, absolute, and mixed references"
-    ]
-  },
-  {
-    "question_number": 70,
-    "question_text": "Which mixed reference format locks the column while allowing the row number to change?",
-    "options": [
-      "$A1 because the column reference is fixed",
-      "A$1 because the row reference is fixed",
-      "$A$1 because both references remain completely fixed",
-      "A1 because both references adjust dynamically"
-    ],
-    "correct_answer": [
-      "$A1 because the column reference is fixed"
-    ]
-  },
-  {
-    "question_number": 71,
-    "question_text": "A worksheet should display a helpful comment whenever a user selects a validated input cell. Which Data Validation tab supports this feature?",
-    "options": [
-      "The Input Message tab displaying contextual worksheet guidance",
-      "The Error Alert tab displaying invalid worksheet responses",
-      "The Settings tab displaying formula aggregation categories automatically",
-      "The Formula tab displaying workbook calculation dependencies visually"
-    ],
-    "correct_answer": [
-      "The Input Message tab displaying contextual worksheet guidance"
-    ]
-  },
-  {
-    "question_number": 72,
-    "question_text": "A company wants a customized warning message whenever invalid data is entered into a restricted cell. Which Data Validation feature should be configured?",
-    "options": [
-      "The Error Alert tab for invalid data notifications",
-      "The Formula Bar for interactive worksheet calculations",
-      "The Name Box for worksheet navigation and references",
-      "The Applied Steps pane for data transformation history"
-    ],
-    "correct_answer": [
-      "The Error Alert tab for invalid data notifications"
-    ]
-  },
-  {
-    "question_number": 73,
-    "question_text": "Why can blank cells negatively affect pivot table analysis?",
-    "options": [
-      "They can create inaccurate summaries and inconsistent calculations",
-      "They permanently prevent formulas from recalculating correctly",
-      "They disable relationships between workbook dimension tables",
-      "They automatically convert discrete values into continuous values"
-    ],
-    "correct_answer": [
-      "They can create inaccurate summaries and inconsistent calculations"
-    ]
-  },
-  {
-    "question_number": 74,
-    "question_text": "What is the fastest keyboard shortcut for directly opening the Find and Replace dialog box?",
-    "options": [
-      "Ctrl + H because it opens the replacement interface",
-      "Ctrl + T because it converts ranges into tables",
-      "Ctrl + Shift + L because it activates worksheet filters",
-      "Ctrl + Enter because it fills selected worksheet blanks"
-    ],
-    "correct_answer": [
-      "Ctrl + H because it opens the replacement interface"
-    ]
-  },
-  {
-    "question_number": 75,
-    "question_text": "A user wants Excel to search only for text with matching uppercase and lowercase characters. Which Find and Replace option should be enabled?",
-    "options": [
-      "Case matching to enforce exact character comparisons",
-      "Range lookup to allow approximate worksheet matching",
-      "Whole number validation to restrict numerical entries",
-      "Applied steps tracking for transformation automation"
-    ],
-    "correct_answer": [
-      "Case matching to enforce exact character comparisons"
-    ]
-  },
-  {
-    "question_number": 76,
-    "question_text": "Which shortcut is commonly used to activate or remove filters from a dataset?",
-    "options": [
-      "Ctrl + Shift + L for worksheet filtering operations",
-      "Ctrl + H for worksheet replacement and search functions",
-      "Ctrl + T for worksheet table conversion processes",
-      "Ctrl + Enter for worksheet blank value population"
-    ],
-    "correct_answer": [
-      "Ctrl + Shift + L for worksheet filtering operations"
-    ]
-  },
-  {
-    "question_number": 77,
-    "question_text": "What is the primary difference between formulas and functions in Excel?",
-    "options": [
-      "Functions are prebuilt formulas while formulas are user-created",
-      "Functions only process text while formulas process numerical values",
-      "Functions cannot reference cells while formulas always require references",
-      "Functions operate in Power Query while formulas operate in worksheets"
-    ],
-    "correct_answer": [
-      "Functions are prebuilt formulas while formulas are user-created"
-    ]
-  },
-  {
-    "question_number": 78,
-    "question_text": "Which operator category includes symbols such as >, <, and <> in Excel?",
-    "options": [
-      "Relational operators used for logical comparisons between values",
-      "Arithmetic operators used for mathematical worksheet calculations",
-      "Text operators used for combining worksheet character strings",
-      "Navigation operators used for workbook reference movement"
-    ],
-    "correct_answer": [
-      "Relational operators used for logical comparisons between values"
-    ]
-  },
-  {
-    "question_number": 79,
-    "question_text": "An analyst needs to identify the highest sales figure within a dataset. Which function should be selected?",
-    "options": [
-      "MAX because it returns the largest value in a range",
-      "MIN because it returns the smallest value in a range",
-      "AVERAGE because it calculates the dataset central value",
-      "COUNT because it totals the number of numeric entries"
-    ],
-    "correct_answer": [
-      "MAX because it returns the largest value in a range"
-    ]
-  },
-  {
-    "question_number": 80,
-    "question_text": "Which function is most appropriate for identifying the smallest value within a numerical dataset?",
-    "options": [
-      "MIN because it retrieves the lowest numerical value",
-      "MAX because it retrieves the highest numerical value",
-      "SUM because it combines values into a cumulative total",
-      "COUNT because it evaluates populated numeric worksheet cells"
-    ],
-    "correct_answer": [
-      "MIN because it retrieves the lowest numerical value"
-    ]
-  },
-  {
-    "question_number": 81,
-    "question_text": "A company wants to classify employees into performance bands without nesting several IF statements together. Which function offers a cleaner approach?",
-    "options": [
-      "IFS because it evaluates multiple conditions sequentially",
-      "AND because every logical condition must be simultaneously true",
-      "OR because only one logical condition must be true",
-      "MATCH because it identifies positions within worksheet ranges"
-    ],
-    "correct_answer": [
-      "IFS because it evaluates multiple conditions sequentially"
-    ]
-  },
-  {
-    "question_number": 82,
-    "question_text": "Why is XLOOKUP generally considered more advanced than VLOOKUP?",
-    "options": [
-      "It can search flexibly in multiple worksheet directions",
-      "It permanently stores lookup results inside pivot tables",
-      "It only requires approximate matches during calculations",
-      "It eliminates the need for worksheet relationships entirely"
-    ],
-    "correct_answer": [
-      "It can search flexibly in multiple worksheet directions"
-    ]
-  },
-  {
-    "question_number": 83,
-    "question_text": "What is the major analytical advantage of using Power Query over manual worksheet cleaning?",
-    "options": [
-      "Cleaning transformations can be automated and refreshed repeatedly",
-      "Worksheet calculations become permanently fixed after transformation",
-      "Relationships are automatically created between imported datasets",
-      "Forecast sheets are generated automatically after every refresh"
-    ],
-    "correct_answer": [
-      "Cleaning transformations can be automated and refreshed repeatedly"
-    ]
-  },
-  {
-    "question_number": 84,
-    "question_text": "Which action in Power Query is commonly used to separate \"First Name Last Name\" into two different fields?",
-    "options": [
-      "Splitting columns into separate text-based worksheet attributes",
-      "Promoting headers into top-level worksheet relationships automatically",
-      "Filtering values into different pivot table aggregations dynamically",
-      "Changing data types into numerical worksheet classifications"
-    ],
-    "correct_answer": [
-      "Splitting columns into separate text-based worksheet attributes"
-    ]
-  },
-  {
-    "question_number": 85,
-    "question_text": "What is the purpose of the \"Use First Row as Headers\" option in Power Query?",
-    "options": [
-      "It promotes row values into official column headings",
-      "It converts worksheet rows into forecasted analytical outputs",
-      "It changes worksheet formulas into relational data structures",
-      "It locks workbook references during pivot table calculations"
-    ],
-    "correct_answer": [
-      "It promotes row values into official column headings"
-    ]
-  },
-  {
-    "question_number": 86,
-    "question_text": "Why are one-to-one relationships relatively rare in professional data modeling?",
-    "options": [
-      "The tables are usually merged together during transformation",
-      "The relationships prevent pivot tables from summarizing measures",
-      "The relationships automatically generate duplicate worksheet records",
-      "The relationships disable filtering across connected dimensions"
-    ],
-    "correct_answer": [
-      "The tables are usually merged together during transformation"
-    ]
-  },
-  {
-    "question_number": 87,
-    "question_text": "What risk is commonly associated with poorly managed many-to-many relationships?",
-    "options": [
-      "Performance problems and possible double-counting of measures",
-      "Permanent corruption of workbook formulas and references",
-      "Automatic deletion of related records from fact tables",
-      "Conversion of dimensions into continuous numerical variables"
-    ],
-    "correct_answer": [
-      "Performance problems and possible double-counting of measures"
-    ]
-  },
-  {
-    "question_number": 88,
-    "question_text": "Which filter direction allows a dimension table to filter a fact table without the reverse occurring?",
-    "options": [
-      "Single-direction filtering from one side to many side",
-      "Bi-directional filtering from both related tables simultaneously",
-      "Many-to-many filtering across all worksheet relationships automatically",
-      "Cross-tab filtering through pivot chart aggregation controls"
-    ],
-    "correct_answer": [
-      "Single-direction filtering from one side to many side"
-    ]
-  },
-  {
-    "question_number": 89,
-    "question_text": "A Power Pivot model contains Sales and Products tables connected by ProductID. Which table is most likely the dimension table?",
-    "options": [
-      "Products because it provides descriptive business context information",
-      "Sales because it records measurable business transaction quantities",
-      "Sales because it stores foreign keys linking related dimensions",
-      "Products because it contains the highest quantity of worksheet rows"
-    ],
-    "correct_answer": [
-      "Products because it provides descriptive business context information"
-    ]
-  },
-  {
-    "question_number": 90,
-    "question_text": "Why is DAX important within Power Pivot environments?",
-    "options": [
-      "It enables advanced calculations and custom analytical measures",
-      "It automatically converts worksheets into relational database schemas",
-      "It replaces Power Query transformations with manual spreadsheet steps",
-      "It disables relationships when workbook performance becomes slow"
-    ],
-    "correct_answer": [
-      "It enables advanced calculations and custom analytical measures"
-    ]
-  },
-  {
-    "question_number": 91,
-    "question_text": "Which Excel feature allows analysts to compare several predefined assumptions without manually editing worksheet values repeatedly?",
-    "options": [
-      "Scenario Manager for switching between stored worksheet cases",
-      "Goal Seek for calculating one unknown worksheet variable",
-      "Forecast Sheet for predicting future time-based patterns automatically",
-      "Conditional Formatting for visually emphasizing worksheet conditions"
-    ],
-    "correct_answer": [
-      "Scenario Manager for switching between stored worksheet cases"
-    ]
-  },
-  {
-    "question_number": 92,
-    "question_text": "A chart displays months of the year as headers instead of numerical axes. What type of data is being represented?",
-    "options": [
-      "Discrete data because it represents distinct categories",
-      "Continuous data because it represents measurable quantities",
-      "Measure data because it supports mathematical aggregations",
-      "Fact data because it stores transactional business events"
-    ],
-    "correct_answer": [
-      "Discrete data because it represents distinct categories"
-    ]
-  },
-  {
-    "question_number": 93,
-    "question_text": "Why are measures commonly placed in the Values area of a pivot table?",
-    "options": [
-      "Measures contain quantitative data suitable for aggregation",
-      "Measures contain qualitative data suitable for worksheet grouping",
-      "Measures define relationships between workbook dimension tables",
-      "Measures identify worksheet formatting and visualization options"
-    ],
-    "correct_answer": [
-      "Measures contain quantitative data suitable for aggregation"
-    ]
-  },
-  {
-    "question_number": 94,
-    "question_text": "What is the primary role of foreign keys within fact tables?",
-    "options": [
-      "They connect transactional records to related dimension tables",
-      "They convert qualitative worksheet data into numerical measures",
-      "They prevent formulas from recalculating across workbook sheets",
-      "They generate forecast models from historical analytical datasets"
-    ],
-    "correct_answer": [
-      "They connect transactional records to related dimension tables"
-    ]
-  },
-  {
-    "question_number": 95,
-    "question_text": "Which Excel feature would be most useful for narrowing a dataset to show only transactions from a specific year and region?",
-    "options": [
-      "Filtering because it restricts displayed records by selected criteria",
-      "Goal Seek because it adjusts variables to reach target outputs",
-      "Scenario Manager because it stores multiple worksheet assumptions",
-      "Forecast Sheet because it predicts future analytical patterns"
-    ],
-    "correct_answer": [
-      "Filtering because it restricts displayed records by selected criteria"
-    ]
-  },
-  {
-    "question_number": 96,
-    "question_text": "Why is the AGGREGATE function often preferred over basic functions in complex datasets?",
-    "options": [
-      "It can ignore errors, hidden rows, and subtotals dynamically",
-      "It automatically creates relationships between workbook tables",
-      "It converts formulas into reusable Power Query transformations",
-      "It summarizes dimensions without requiring quantitative measures"
-    ],
-    "correct_answer": [
-      "It can ignore errors, hidden rows, and subtotals dynamically"
-    ]
-  },
-  {
-    "question_number": 97,
-    "question_text": "Which operation best demonstrates the use of relational operators in Excel?",
-    "options": [
-      "Comparing whether revenue is greater than a target value",
-      "Adding together monthly sales and quarterly expenses totals",
-      "Extracting characters from the middle of a product code",
-      "Rotating rows into columns within a worksheet range"
-    ],
-    "correct_answer": [
-      "Comparing whether revenue is greater than a target value"
-    ]
-  },
-  {
-    "question_number": 98,
-    "question_text": "What is the primary analytical advantage of pivot charts?",
-    "options": [
-      "They visually represent summarized pivot table information dynamically",
-      "They permanently replace worksheet formulas with static visualizations",
-      "They automatically generate relationships between workbook tables",
-      "They convert discrete categories into continuous measurement scales"
-    ],
-    "correct_answer": [
-      "They visually represent summarized pivot table information dynamically"
-    ]
-  },
-  {
-    "question_number": 99,
-    "question_text": "A business analyst copies an existing pivot table and replaces the row fields with new dimensions. Why is this approach efficient?",
-    "options": [
-      "It reuses existing summarization structures for new analyses",
-      "It permanently stores worksheet calculations inside source tables",
-      "It removes the requirement for quantitative measures automatically",
-      "It converts worksheet dimensions into predictive analytical models"
-    ],
-    "correct_answer": [
-      "It reuses existing summarization structures for new analyses"
-    ]
-  },
-  {
-    "question_number": 100,
-    "question_text": "Which feature allows analysts to quickly zoom into specific worksheet areas for detailed examination?",
-    "options": [
-      "The Zoom Slider controlling worksheet magnification levels",
-      "The Status Bar displaying workbook calculation notifications",
-      "The Formula Bar editing worksheet values and expressions",
-      "The Ribbon Groups organizing worksheet commands by category"
-    ],
-    "correct_answer": [
-      "The Zoom Slider controlling worksheet magnification levels"
-    ]
-  }
+{
+"question_number": 1,
+"question_text": "A financial analyst updates the value in cell B5 and notices that several summary cells automatically change. Which Excel concept is primarily responsible for this behavior?",
+"options": [
+"Cell referencing dynamically links formulas to source values",
+"Conditional formatting automatically recalculates worksheet totals",
+"Worksheet protection automatically synchronizes dependent values",
+"Data validation automatically standardizes workbook calculations"
+],
+"correct_answer": [
+"Cell referencing dynamically links formulas to source values"
+]
+},
+{
+"question_number": 2,
+"question_text": "A user wants a formula copied across multiple columns without changing the referenced tax rate cell. Which reference type should be used?",
+"options": [
+"An absolute reference that locks both row and column",
+"A relative reference that shifts with worksheet movement",
+"A mixed reference that locks only the destination range",
+"A dynamic reference that expands with inserted columns"
+],
+"correct_answer": [
+"An absolute reference that locks both row and column"
+]
+},
+{
+"question_number": 3,
+"question_text": "A worksheet contains monthly sales data and the analyst drags a formula downward using the auto-fill handle. Why does the referenced row change automatically?",
+"options": [
+"Relative references adjust based on the new cell position",
+"Absolute references recalculate from the original worksheet",
+"Mixed references convert values into fixed coordinates automatically",
+"Structured references align formulas with named table objects"
+],
+"correct_answer": [
+"Relative references adjust based on the new cell position"
+]
+},
+{
+"question_number": 4,
+"question_text": "An operations manager wants employees to select department names only from a predefined list. Which Excel feature best supports this requirement?",
+"options": [
+"Data validation using the list validation type",
+"Conditional formatting using highlight cell rules",
+"Goal seek using predefined worksheet assumptions",
+"Scenario manager using multiple variable configurations"
+],
+"correct_answer": [
+"Data validation using the list validation type"
+]
+},
+{
+"question_number": 5,
+"question_text": "A company wants cells containing values above a sales target to appear in green automatically. Which Excel capability should be applied?",
+"options": [
+"Conditional formatting with a greater-than rule",
+"Data validation with a whole-number restriction",
+"Pivot table filtering with value summarization",
+"Worksheet grouping with formula-based protection"
+],
+"correct_answer": [
+"Conditional formatting with a greater-than rule"
+]
+},
+{
+"question_number": 6,
+"question_text": "A dataset imported from another system contains multiple blank rows that interfere with pivot table analysis. Which approach is most efficient for removing them?",
+"options": [
+"Use Go To Special to select blanks before deleting rows",
+"Use scenario manager to isolate incomplete worksheet records",
+"Use the formula bar to overwrite empty worksheet sections",
+"Use worksheet tabs to reorganize incomplete data ranges"
+],
+"correct_answer": [
+"Use Go To Special to select blanks before deleting rows"
+]
+},
+{
+"question_number": 7,
+"question_text": "A data entry clerk typed 'Gana' instead of 'Ghana' hundreds of times in a worksheet. Which Excel tool provides the fastest correction method?",
+"options": [
+"Find and Replace for bulk text correction",
+"Conditional formatting for automatic spelling detection",
+"Goal seek for identifying invalid worksheet entries",
+"Power Pivot for merging inconsistent workbook fields"
+],
+"correct_answer": [
+"Find and Replace for bulk text correction"
+]
+},
+{
+"question_number": 8,
+"question_text": "A regional manager wants to display only records from Accra in a large worksheet. Which Excel process should be used?",
+"options": [
+"Apply a filter to the Region column",
+"Insert a slicer into the worksheet footer",
+"Create a scenario summary from the dataset",
+"Convert the worksheet into a forecast model"
+],
+"correct_answer": [
+"Apply a filter to the Region column"
+]
+},
+{
+"question_number": 9,
+"question_text": "An Excel formula contains brackets, multiplication, and subtraction operations. Which calculation principle determines the evaluation order?",
+"options": [
+"The BODMAS precedence structure used in Excel",
+"The auto-fill dependency structure used in formulas",
+"The relationship hierarchy embedded in Power Pivot",
+"The aggregation sequence defined within pivot tables"
+],
+"correct_answer": [
+"The BODMAS precedence structure used in Excel"
+]
+},
+{
+"question_number": 10,
+"question_text": "A manager wants to calculate the total revenue generated across all product categories. Which function is most appropriate?",
+"options": [
+"SUM because it adds numeric values within a range",
+"COUNT because it identifies populated numerical records",
+"MAX because it selects the highest value available",
+"AVERAGE because it determines the central tendency"
+],
+"correct_answer": [
+"SUM because it adds numeric values within a range"
+]
+},
+{
+"question_number": 11,
+"question_text": "A researcher needs to determine the mean score of all participants in a dataset. Which Excel function should be applied?",
+"options": [
+"AVERAGE because it computes the arithmetic mean",
+"COUNTA because it counts all populated worksheet cells",
+"MIN because it identifies the smallest numerical value",
+"AGGREGATE because it ignores hidden worksheet sections"
+],
+"correct_answer": [
+"AVERAGE because it computes the arithmetic mean"
+]
+},
+{
+"question_number": 12,
+"question_text": "A teacher wants to know how many students submitted numerical test scores in a worksheet range. Which function best satisfies this need?",
+"options": [
+"COUNT because it evaluates cells containing numbers",
+"COUNTA because it includes every non-empty worksheet cell",
+"IF because it evaluates conditional logical statements",
+"SUM because it combines values into a cumulative total"
+],
+"correct_answer": [
+"COUNT because it evaluates cells containing numbers"
+]
+},
+{
+"question_number": 13,
+"question_text": "A company stores employee IDs as numbers and employee names as text. Which function would count both IDs and names if the cells are not empty?",
+"options": [
+"COUNTA because it counts all non-empty entries",
+"COUNT because it ignores cells containing text values",
+"MAX because it evaluates the largest numeric record",
+"AVERAGE because it calculates numerical central values"
+],
+"correct_answer": [
+"COUNTA because it counts all non-empty entries"
+]
+},
+{
+"question_number": 14,
+"question_text": "An analyst needs to calculate totals while ignoring hidden rows and worksheet errors. Which function is designed for this purpose?",
+"options": [
+"AGGREGATE because it can ignore errors and hidden rows",
+"SUMIFS because it combines multiple criteria during calculation",
+"VLOOKUP because it retrieves values from table columns",
+"TRANSPOSE because it rearranges vertical and horizontal data"
+],
+"correct_answer": [
+"AGGREGATE because it can ignore errors and hidden rows"
+]
+},
+{
+"question_number": 15,
+"question_text": "A payroll officer wants Excel to display 'Rich' if a salary exceeds 5000 and 'Not Rich' otherwise. Which function structure is most suitable?",
+"options": [
+"IF because it returns outputs based on logical conditions",
+"OR because it validates at least one logical statement",
+"AND because it requires all logical tests to succeed",
+"MATCH because it identifies positions within worksheet ranges"
+],
+"correct_answer": [
+"IF because it returns outputs based on logical conditions"
+]
+}
+,
+{
+"question_number": 16,
+"question_text": "A manager wants to evaluate whether both revenue exceeded the target and expenses remained below budget before approving a bonus. Which function combination best supports this requirement?",
+"options": [
+"AND because all logical conditions must evaluate as TRUE",
+"OR because only one worksheet condition must be satisfied",
+"SUMIF because values are added based on one requirement",
+"COUNTIF because qualifying worksheet entries are totaled"
+],
+"correct_answer": [
+"AND because all logical conditions must evaluate as TRUE"
+]
+},
+{
+"question_number": 17,
+"question_text": "A sales dashboard should mark a transaction as approved if either the customer has premium status or the order exceeds a target amount. Which logical function is most appropriate?",
+"options": [
+"OR because at least one logical statement must be TRUE",
+"AND because every worksheet condition must be validated",
+"IFS because all conditions are evaluated sequentially",
+"MATCH because positions within a range are identified"
+],
+"correct_answer": [
+"OR because at least one logical statement must be TRUE"
+]
+},
+{
+"question_number": 18,
+"question_text": "A company wants to calculate the total sales generated only by employees in the Marketing department. Which function should be applied?",
+"options": [
+"SUMIF because it adds values meeting one criterion",
+"COUNTIF because it counts records meeting one criterion",
+"SUMIFS because it requires multiple criteria ranges",
+"AGGREGATE because it ignores hidden worksheet entries"
+],
+"correct_answer": [
+"SUMIF because it adds values meeting one criterion"
+]
+},
+{
+"question_number": 19,
+"question_text": "A business analyst needs to total sales for female employees older than 30 years. Which function is designed for this type of calculation?",
+"options": [
+"SUMIFS because it evaluates multiple conditions simultaneously",
+"SUMIF because it only evaluates a single worksheet criterion",
+"COUNTIFS because it counts records instead of summing values",
+"VLOOKUP because it retrieves data from table columns"
+],
+"correct_answer": [
+"SUMIFS because it evaluates multiple conditions simultaneously"
+]
+},
+{
+"question_number": 20,
+"question_text": "A teacher wants to determine how many students scored above a pass mark in a single score column. Which function best fits this requirement?",
+"options": [
+"COUNTIF because it counts records matching one criterion",
+"COUNTIFS because it requires several conditions to operate",
+"SUM because it combines values instead of counting records",
+"AVERAGE because it calculates the dataset mean value"
+],
+"correct_answer": [
+"COUNTIF because it counts records matching one criterion"
+]
+},
+{
+"question_number": 21,
+"question_text": "An HR analyst wants to count employees who work in Accra and belong to the Finance department. Which function is most suitable?",
+"options": [
+"COUNTIFS because multiple criteria must be evaluated",
+"COUNTIF because only one worksheet condition is supported",
+"SUMIFS because numerical values are required for summation",
+"IFERROR because invalid lookup results must be handled"
+],
+"correct_answer": [
+"COUNTIFS because multiple criteria must be evaluated"
+]
+},
+{
+"question_number": 22,
+"question_text": "A lookup table stores employee IDs in the first column and department names in later columns. Which function is traditionally used to retrieve the department name?",
+"options": [
+"VLOOKUP because it searches vertically through table columns",
+"HLOOKUP because it searches horizontally through table rows",
+"MATCH because it only returns a relative position number",
+"INDEX because it requires coordinates instead of a lookup"
+],
+"correct_answer": [
+"VLOOKUP because it searches vertically through table columns"
+]
+},
+{
+"question_number": 23,
+"question_text": "A dataset is organized horizontally with product names across the top row. Which lookup function is best aligned with this structure?",
+"options": [
+"HLOOKUP because it searches values across worksheet rows",
+"VLOOKUP because it searches values down worksheet columns",
+"XLOOKUP because it only retrieves approximate matches",
+"SUMIF because it aggregates data from specified criteria"
+],
+"correct_answer": [
+"HLOOKUP because it searches values across worksheet rows"
+]
+},
+{
+"question_number": 24,
+"question_text": "A data analyst wants a lookup function that can search in any direction and replace older lookup limitations. Which function is most appropriate?",
+"options": [
+"XLOOKUP because it supports flexible directional searches",
+"VLOOKUP because it only retrieves values from the right",
+"MATCH because it returns positions instead of data values",
+"COUNTIFS because it evaluates multiple logical conditions"
+],
+"correct_answer": [
+"XLOOKUP because it supports flexible directional searches"
+]
+},
+{
+"question_number": 25,
+"question_text": "A user needs to return the value found at the intersection of a specific row and column within a table. Which function performs this task?",
+"options": [
+"INDEX because it retrieves data from specified coordinates",
+"MATCH because it only identifies relative positions in ranges",
+"IFERROR because it substitutes alternative worksheet outputs",
+"TRANSPOSE because it rotates worksheet orientation directions"
+],
+"correct_answer": [
+"INDEX because it retrieves data from specified coordinates"
+]
+},
+{
+"question_number": 26,
+"question_text": "A formula must determine the relative position of a product code within a list before another function retrieves its value. Which function is designed for identifying the position?",
+"options": [
+"MATCH because it locates positions within worksheet ranges",
+"INDEX because it directly retrieves values from coordinates",
+"COUNT because it evaluates numerical worksheet entries only",
+"LEFT because it extracts characters from text strings"
+],
+"correct_answer": [
+"MATCH because it locates positions within worksheet ranges"
+]
+},
+{
+"question_number": 27,
+"question_text": "A lookup formula occasionally returns errors when product IDs are missing. Which function can display a custom message such as "Not Found" instead?",
+"options": [
+"IFERROR because it replaces formula errors with custom output",
+"IFS because it evaluates several conditions sequentially",
+"COUNTA because it counts populated worksheet entries",
+"AGGREGATE because it ignores hidden rows and errors"
+],
+"correct_answer": [
+"IFERROR because it replaces formula errors with custom output"
+]
+},
+{
+"question_number": 28,
+"question_text": "A dataset imported from the web contains unnecessary extra spaces between words. Which text function should be used first?",
+"options": [
+"TRIM because it removes extra spaces from text",
+"CLEAN because it removes non-printable worksheet characters",
+"UPPER because it converts text into uppercase letters",
+"PROPER because it capitalizes the beginning of words"
+],
+"correct_answer": [
+"TRIM because it removes extra spaces from text"
+]
+},
+{
+"question_number": 29,
+"question_text": "An imported worksheet contains hidden non-printable characters that disrupt formulas and sorting. Which function is most suitable for resolving this issue?",
+"options": [
+"CLEAN because it removes non-printable text characters",
+"TRIM because it only removes additional text spacing",
+"LOWER because it converts text into lowercase letters",
+"RIGHT because it extracts characters from text endings"
+],
+"correct_answer": [
+"CLEAN because it removes non-printable text characters"
+]
+},
+{
+"question_number": 30,
+"question_text": "A company database contains customer names entered entirely in lowercase. Which function will convert each name into title case formatting?",
+"options": [
+"PROPER because it capitalizes the first letter of words",
+"UPPER because it converts every letter into capitals",
+"LOWER because it converts text into lowercase format",
+"MID because it extracts characters from text strings"
+],
+"correct_answer": [
+"PROPER because it capitalizes the first letter of words"
+]
+},
+{
+"question_number": 31,
+"question_text": "A report requires every employee email address to appear entirely in uppercase letters. Which function should be used?",
+"options": [
+"UPPER because it converts all letters into capitals",
+"LOWER because it converts all letters into lowercase",
+"TRIM because it removes spaces from worksheet text",
+"LEFT because it extracts characters from the beginning"
+],
+"correct_answer": [
+"UPPER because it converts all letters into capitals"
+]
+},
+{
+"question_number": 32,
+"question_text": "A user needs to extract the first three characters from a product identification code. Which function is most appropriate?",
+"options": [
+"LEFT because it extracts characters from the beginning",
+"RIGHT because it extracts characters from the ending",
+"MID because it extracts characters from the middle",
+"FIND because it identifies character starting positions"
+],
+"correct_answer": [
+"LEFT because it extracts characters from the beginning"
+]
+},
+{
+"question_number": 33,
+"question_text": "A financial analyst wants to isolate the last four digits of an account number stored as text. Which function should be selected?",
+"options": [
+"RIGHT because it extracts characters from the text end",
+"LEFT because it extracts characters from the text start",
+"MID because it requires a starting position argument",
+"TRANSPOSE because it changes worksheet orientations"
+],
+"correct_answer": [
+"RIGHT because it extracts characters from the text end"
+]
+},
+{
+"question_number": 34,
+"question_text": "A worksheet contains product descriptions and the analyst needs characters beginning from a specific middle position. Which function best satisfies this requirement?",
+"options": [
+"MID because it extracts characters from chosen positions",
+"LEFT because it only extracts characters from beginnings",
+"RIGHT because it only extracts characters from endings",
+"CLEAN because it removes hidden worksheet characters"
+],
+"correct_answer": [
+"MID because it extracts characters from chosen positions"
+]
+},
+{
+"question_number": 35,
+"question_text": "A user wants to combine first names and surnames from separate columns into one full-name field. Which function is most suitable?",
+"options": [
+"CONCATENATE because it joins text from multiple cells",
+"FIND because it searches for character starting positions",
+"TRANSPOSE because it rotates worksheet data orientation",
+"MATCH because it identifies positions within data ranges"
+],
+"correct_answer": [
+"CONCATENATE because it joins text from multiple cells"
+]
+},
+{
+"question_number": 36,
+"question_text": "An analyst needs to determine where a specific word begins inside a larger text string. Which function should be used?",
+"options": [
+"FIND because it locates text within another string",
+"MID because it extracts text from chosen positions",
+"TRIM because it removes extra spacing from text",
+"LOWER because it converts letters into lowercase form"
+],
+"correct_answer": [
+"FIND because it locates text within another string"
+]
+},
+{
+"question_number": 37,
+"question_text": "A manager wants to convert a vertical range of monthly values into a horizontal arrangement. Which Excel function supports this transformation?",
+"options": [
+"TRANSPOSE because it flips row and column orientation",
+"INDEX because it retrieves values from table coordinates",
+"MATCH because it identifies positions within worksheet lists",
+"SUMIFS because it aggregates values across multiple criteria"
+],
+"correct_answer": [
+"TRANSPOSE because it flips row and column orientation"
+]
+},
+{
+"question_number": 38,
+"question_text": "Why are Excel tables considered more dynamic than ordinary data ranges when building dashboards?",
+"options": [
+"Tables automatically expand when new rows or columns are added",
+"Tables automatically convert all formulas into Power Query steps",
+"Tables automatically lock worksheet references during calculations",
+"Tables automatically generate charts whenever data is modified"
+],
+"correct_answer": [
+"Tables automatically expand when new rows or columns are added"
+]
+},
+{
+"question_number": 39,
+"question_text": "In a star schema data model, which table typically stores numerical business events such as sales transactions?",
+"options": [
+"A fact table containing measurable business activity records",
+"A dimension table containing descriptive contextual attributes",
+"A lookup table containing worksheet formatting definitions",
+"A scenario table containing predictive worksheet assumptions"
+],
+"correct_answer": [
+"A fact table containing measurable business activity records"
+]
+},
+{
+"question_number": 40,
+"question_text": "A Product table stores ProductID, Category, and Brand information that describes sales records. What type of table is this?",
+"options": [
+"A dimension table providing descriptive business context",
+"A fact table recording measurable transactional worksheet events",
+"A bridge table resolving many-to-many worksheet conflicts",
+"A measure table calculating aggregated numerical worksheet values"
+],
+"correct_answer": [
+"A dimension table providing descriptive business context"
+]
+},
+{
+"question_number": 41,
+"question_text": "A dashboard designer drags Region into the Rows section and Revenue into the Values section of a pivot table. Which concept is being applied?",
+"options": [
+"Measures are summarized according to selected dimensions",
+"Dimensions are converted into forecasted numerical outcomes",
+"Relationships are transformed into worksheet filtering hierarchies",
+"Fact tables are converted into continuous measurement scales"
+],
+"correct_answer": [
+"Measures are summarized according to selected dimensions"
+]
+},
+{
+"question_number": 42,
+"question_text": "Which field type is most appropriate for grouping and filtering data within a pivot table?",
+"options": [
+"Dimensions because they represent qualitative categories",
+"Measures because they represent quantitative calculations",
+"Forecasts because they represent projected future estimates",
+"Relationships because they represent linked worksheet tables"
+],
+"correct_answer": [
+"Dimensions because they represent qualitative categories"
+]
+},
+{
+"question_number": 43,
+"question_text": "Which example best represents discrete data in a reporting environment?",
+"options": [
+"The number of students enrolled in a class",
+"The temperature measured during a laboratory experiment",
+"The time required to complete a manufacturing process",
+"The distance traveled by a delivery vehicle yesterday"
+],
+"correct_answer": [
+"The number of students enrolled in a class"
+]
+},
+{
+"question_number": 44,
+"question_text": "Which example best represents continuous data in analytical reporting?",
+"options": [
+"The height measured for each participant in a study",
+"The number of laptops issued to each department",
+"The quantity of students registered for a course",
+"The count of invoices generated during a month"
+],
+"correct_answer": [
+"The height measured for each participant in a study"
+]
+},
+{
+"question_number": 45,
+"question_text": "Why are pivot tables widely used in business analytics workflows?",
+"options": [
+"They summarize and analyze patterns without changing source data",
+"They permanently overwrite formulas with calculated worksheet values",
+"They replace relationships between tables inside Power Pivot models",
+"They automatically forecast future trends from historical datasets"
+],
+"correct_answer": [
+"They summarize and analyze patterns without changing source data"
+]
+},
+{
+"question_number": 46,
+"question_text": "Before creating a pivot table, why is converting the dataset into an Excel table recommended?",
+"options": [
+"Tables dynamically expand as new data is added",
+"Tables automatically remove all duplicate worksheet entries",
+"Tables permanently lock formulas against accidental modification",
+"Tables convert all worksheet functions into Power Query steps"
+],
+"correct_answer": [
+"Tables dynamically expand as new data is added"
+]
+},
+{
+"question_number": 47,
+"question_text": "A slicer is inserted into a pivot table dashboard. What is its primary purpose?",
+"options": [
+"To visually filter connected tables and charts interactively",
+"To convert worksheet formulas into summarized calculations automatically",
+"To establish relationships between disconnected workbook datasets instantly",
+"To generate forecast sheets from historical worksheet information"
+],
+"correct_answer": [
+"To visually filter connected tables and charts interactively"
+]
+},
+{
+"question_number": 48,
+"question_text": "A company wants one slicer to filter multiple pivot tables in the same report. Which additional step is necessary?",
+"options": [
+"Configure report connections for the selected pivot tables",
+"Create separate worksheets for every connected slicer object",
+"Convert the pivot tables into forecast sheet visualizations",
+"Apply conditional formatting to every pivot table field"
+],
+"correct_answer": [
+"Configure report connections for the selected pivot tables"
+]
+},
+{
+"question_number": 49,
+"question_text": "A finance team creates a Profit field by subtracting Cost from Revenue inside a pivot table. What type of feature is being used?",
+"options": [
+"A calculated field derived from existing worksheet columns",
+"A relationship field connecting multiple workbook tables together",
+"A validation field restricting worksheet data entry behavior",
+"A forecast field predicting future business performance automatically"
+],
+"correct_answer": [
+"A calculated field derived from existing worksheet columns"
+]
+},
+{
+"question_number": 50,
+"question_text": "Why is Power Query considered an ETL tool in analytics workflows?",
+"options": [
+"It extracts, transforms, and loads analytical business data",
+"It evaluates, totals, and labels worksheet information automatically",
+"It expands, transfers, and links pivot table relationships dynamically",
+"It exports, tracks, and localizes workbook formatting configurations"
+],
+"correct_answer": [
+"It extracts, transforms, and loads analytical business data"
+]
+},
+{
+"question_number": 51,
+"question_text": "An analyst repeatedly receives monthly CSV files with identical formatting issues. Why is Power Query especially useful in this scenario?",
+"options": [
+"It records cleaning steps that can be refreshed automatically",
+"It permanently replaces worksheets with relational database systems",
+"It converts every worksheet formula into a pivot table calculation",
+"It automatically forecasts future records from imported datasets"
+],
+"correct_answer": [
+"It records cleaning steps that can be refreshed automatically"
+]
+},
+{
+"question_number": 52,
+"question_text": "Which Power Query interface component records every transformation performed on imported data?",
+"options": [
+"The Applied Steps pane tracking transformation history",
+"The Formula Bar pane displaying worksheet calculations only",
+"The Diagram View pane showing relationship structures visually",
+"The Fields List pane summarizing pivot table categories"
+],
+"correct_answer": [
+"The Applied Steps pane tracking transformation history"
+]
+},
+{
+"question_number": 53,
+"question_text": "An imported dataset contains incorrect data types where dates are recognized as text. Which Power Query action should be applied?",
+"options": [
+"Change the column data types appropriately within Power Query",
+"Create relationships between tables using diagram view tools",
+"Insert a forecast sheet to predict future worksheet values",
+"Use conditional formatting to correct worksheet inconsistencies"
+],
+"correct_answer": [
+"Change the column data types appropriately within Power Query"
+]
+},
+{
+"question_number": 54,
+"question_text": "Why is Power Pivot considered more powerful than standard Excel worksheets for analytics?",
+"options": [
+"It can manage millions of rows across multiple data sources",
+"It permanently replaces all formulas with static worksheet values",
+"It automatically converts pivot tables into predictive dashboards",
+"It removes the need for relationships between analytical tables"
+],
+"correct_answer": [
+"It can manage millions of rows across multiple data sources"
+]
+},
+{
+"question_number": 55,
+"question_text": "A data model links a Sales table to a Products table through ProductID. What is the main purpose of this relationship?",
+"options": [
+"To enable analysis across connected business datasets",
+"To automatically remove duplicated worksheet information entries",
+"To convert discrete variables into continuous measurement scales",
+"To replace lookup functions with scenario management tools"
+],
+"correct_answer": [
+"To enable analysis across connected business datasets"
+]
+},
+{
+"question_number": 56,
+"question_text": "Which relationship type is considered the most common and recommended in a star schema design?",
+"options": [
+"One-to-many relationships connecting dimensions to facts",
+"Many-to-many relationships connecting several lookup tables",
+"One-to-one relationships connecting duplicated information sets",
+"Bi-directional relationships connecting every worksheet object"
+],
+"correct_answer": [
+"One-to-many relationships connecting dimensions to facts"
+]
+},
+{
+"question_number": 57,
+"question_text": "A Students table and a Courses table both contain repeated matching values because students take multiple courses. Which relationship type does this represent?",
+"options": [
+"Many-to-many because multiple records relate on both sides",
+"One-to-one because every value appears exactly one time",
+"One-to-many because one table contains only unique values",
+"Single-direction because filters flow in one direction only"
+],
+"correct_answer": [
+"Many-to-many because multiple records relate on both sides"
+]
+},
+{
+"question_number": 58,
+"question_text": "Why should bi-directional filtering be used sparingly in Power BI or Power Pivot models?",
+"options": [
+"It can reduce dashboard performance when overused",
+"It permanently disables relationships between workbook tables",
+"It prevents calculated fields from updating dynamically",
+"It converts dimensions into continuous analytical variables"
+],
+"correct_answer": [
+"It can reduce dashboard performance when overused"
+]
+},
+{
+"question_number": 59,
+"question_text": "In Power Pivot diagram view, what does the symbol '*' represent at the end of a relationship line?",
+"options": [
+"The many side of a table relationship structure",
+"The one side of a table relationship structure",
+"The active measure within a pivot table calculation",
+"The applied step within a Power Query workflow"
+],
+"correct_answer": [
+"The many side of a table relationship structure"
+]
+},
+{
+"question_number": 60,
+"question_text": "A manager knows the desired profit target but does not know how many units must be sold to reach it. Which Excel tool is most appropriate?",
+"options": [
+"Goal Seek because it solves for one unknown input",
+"Scenario Manager because it compares several fixed outcomes",
+"Forecast Sheet because it predicts future trends automatically",
+"Conditional Formatting because it highlights worksheet conditions"
+],
+"correct_answer": [
+"Goal Seek because it solves for one unknown input"
+]
+},
+{
+"question_number": 61,
+"question_text": "What is the major limitation of Goal Seek in predictive analysis?",
+"options": [
+"It changes only one variable during the calculation process",
+"It requires relationships between all workbook data sources",
+"It only works when data has already been summarized",
+"It cannot operate on formulas containing logical functions"
+],
+"correct_answer": [
+"It changes only one variable during the calculation process"
+]
+},
+{
+"question_number": 62,
+"question_text": "A company wants to compare Best Case, Worst Case, and Most Likely financial outcomes. Which Excel feature is specifically designed for this task?",
+"options": [
+"Scenario Manager because it stores multiple worksheet assumptions",
+"Forecast Sheet because it predicts future values automatically",
+"Pivot Tables because they summarize historical business records",
+"Conditional Formatting because it highlights value variations"
+],
+"correct_answer": [
+"Scenario Manager because it stores multiple worksheet assumptions"
+]
+},
+{
+"question_number": 63,
+"question_text": "Why is naming the changing cells in Scenario Manager considered a good practice?",
+"options": [
+"Named cells make generated summaries easier to interpret",
+"Named cells automatically convert assumptions into pivot tables",
+"Named cells prevent workbook formulas from recalculating dynamically",
+"Named cells remove the need for worksheet data validation"
+],
+"correct_answer": [
+"Named cells make generated summaries easier to interpret"
+]
+},
+{
+"question_number": 64,
+"question_text": "Which type of dataset is required before creating a Forecast Sheet in Excel?",
+"options": [
+"Historical time-based data containing dates and values",
+"Relational data connected through multiple dimension tables",
+"Discrete survey data containing only categorical responses",
+"Pivot table summaries containing grouped worksheet calculations"
+],
+"correct_answer": [
+"Historical time-based data containing dates and values"
+]
+},
+{
+"question_number": 65,
+"question_text": "What additional information does Excel include when generating a Forecast Sheet chart?",
+"options": [
+"Confidence intervals showing likely prediction ranges",
+"Relationship diagrams connecting worksheet data structures",
+"Applied steps documenting data cleaning transformations",
+"Scenario summaries comparing alternative business outcomes"
+],
+"correct_answer": [
+"Confidence intervals showing likely prediction ranges"
+]
+},
+{
+"question_number": 66,
+"question_text": "Which Excel interface element displays the address of the currently selected cell and can also be used for navigation?",
+"options": [
+"The Name Box located beside the formula bar",
+"The Status Bar located beneath the worksheet workspace",
+"The Ribbon Group located under worksheet command tabs",
+"The Quick Access Toolbar positioned above ribbon commands"
+],
+"correct_answer": [
+"The Name Box located beside the formula bar"
+]
+},
+{
+"question_number": 67,
+"question_text": "What is the primary function of the Formula Bar in Microsoft Excel?",
+"options": [
+"To view, enter, and edit the contents of cells",
+"To organize workbook commands according to related categories",
+"To display workbook statistics and worksheet status indicators",
+"To switch between worksheet viewing and layout configurations"
+],
+"correct_answer": [
+"To view, enter, and edit the contents of cells"
+]
+},
+{
+"question_number": 68,
+"question_text": "Why is the Auto Fill Handle useful during spreadsheet analysis?",
+"options": [
+"It quickly copies formulas and extends logical data series",
+"It automatically converts worksheets into relational databases",
+"It permanently fixes formulas using absolute references only",
+"It replaces conditional formatting with dynamic visual reports"
+],
+"correct_answer": [
+"It quickly copies formulas and extends logical data series"
+]
+},
+{
+"question_number": 69,
+"question_text": "A user presses the F4 key repeatedly while editing a formula reference. What Excel behavior is being controlled?",
+"options": [
+"Switching between relative, absolute, and mixed references",
+"Cycling through worksheet tabs within the current workbook",
+"Applying different conditional formatting color categories automatically",
+"Refreshing pivot tables connected to external data sources"
+],
+"correct_answer": [
+"Switching between relative, absolute, and mixed references"
+]
+},
+{
+"question_number": 70,
+"question_text": "Which mixed reference format locks the column while allowing the row number to change?",
+"options": [
+"$A1 because the column reference is fixed",
+"A$1 because the row reference is fixed",
+"$A$1 because both references remain completely fixed",
+"A1 because both references adjust dynamically"
+],
+"correct_answer": [
+"$A1 because the column reference is fixed"
+]
+},
+{
+"question_number": 71,
+"question_text": "A worksheet should display a helpful comment whenever a user selects a validated input cell. Which Data Validation tab supports this feature?",
+"options": [
+"The Input Message tab displaying contextual worksheet guidance",
+"The Error Alert tab displaying invalid worksheet responses",
+"The Settings tab displaying formula aggregation categories automatically",
+"The Formula tab displaying workbook calculation dependencies visually"
+],
+"correct_answer": [
+"The Input Message tab displaying contextual worksheet guidance"
+]
+},
+{
+"question_number": 72,
+"question_text": "A company wants a customized warning message whenever invalid data is entered into a restricted cell. Which Data Validation feature should be configured?",
+"options": [
+"The Error Alert tab for invalid data notifications",
+"The Formula Bar for interactive worksheet calculations",
+"The Name Box for worksheet navigation and references",
+"The Applied Steps pane for data transformation history"
+],
+"correct_answer": [
+"The Error Alert tab for invalid data notifications"
+]
+},
+{
+"question_number": 73,
+"question_text": "Why can blank cells negatively affect pivot table analysis?",
+"options": [
+"They can create inaccurate summaries and inconsistent calculations",
+"They permanently prevent formulas from recalculating correctly",
+"They disable relationships between workbook dimension tables",
+"They automatically convert discrete values into continuous values"
+],
+"correct_answer": [
+"They can create inaccurate summaries and inconsistent calculations"
+]
+},
+{
+"question_number": 74,
+"question_text": "What is the fastest keyboard shortcut for directly opening the Find and Replace dialog box?",
+"options": [
+"Ctrl + H because it opens the replacement interface",
+"Ctrl + T because it converts ranges into tables",
+"Ctrl + Shift + L because it activates worksheet filters",
+"Ctrl + Enter because it fills selected worksheet blanks"
+],
+"correct_answer": [
+"Ctrl + H because it opens the replacement interface"
+]
+},
+{
+"question_number": 75,
+"question_text": "A user wants Excel to search only for text with matching uppercase and lowercase characters. Which Find and Replace option should be enabled?",
+"options": [
+"Case matching to enforce exact character comparisons",
+"Range lookup to allow approximate worksheet matching",
+"Whole number validation to restrict numerical entries",
+"Applied steps tracking for transformation automation"
+],
+"correct_answer": [
+"Case matching to enforce exact character comparisons"
+]
+},
+{
+"question_number": 76,
+"question_text": "Which shortcut is commonly used to activate or remove filters from a dataset?",
+"options": [
+"Ctrl + Shift + L for worksheet filtering operations",
+"Ctrl + H for worksheet replacement and search functions",
+"Ctrl + T for worksheet table conversion processes",
+"Ctrl + Enter for worksheet blank value population"
+],
+"correct_answer": [
+"Ctrl + Shift + L for worksheet filtering operations"
+]
+},
+{
+"question_number": 77,
+"question_text": "What is the primary difference between formulas and functions in Excel?",
+"options": [
+"Functions are prebuilt formulas while formulas are user-created",
+"Functions only process text while formulas process numerical values",
+"Functions cannot reference cells while formulas always require references",
+"Functions operate in Power Query while formulas operate in worksheets"
+],
+"correct_answer": [
+"Functions are prebuilt formulas while formulas are user-created"
+]
+},
+{
+"question_number": 78,
+"question_text": "Which operator category includes symbols such as >, <, and <> in Excel?",
+"options": [
+"Relational operators used for logical comparisons between values",
+"Arithmetic operators used for mathematical worksheet calculations",
+"Text operators used for combining worksheet character strings",
+"Navigation operators used for workbook reference movement"
+],
+"correct_answer": [
+"Relational operators used for logical comparisons between values"
+]
+},
+{
+"question_number": 79,
+"question_text": "An analyst needs to identify the highest sales figure within a dataset. Which function should be selected?",
+"options": [
+"MAX because it returns the largest value in a range",
+"MIN because it returns the smallest value in a range",
+"AVERAGE because it calculates the dataset central value",
+"COUNT because it totals the number of numeric entries"
+],
+"correct_answer": [
+"MAX because it returns the largest value in a range"
+]
+},
+{
+"question_number": 80,
+"question_text": "Which function is most appropriate for identifying the smallest value within a numerical dataset?",
+"options": [
+"MIN because it retrieves the lowest numerical value",
+"MAX because it retrieves the highest numerical value",
+"SUM because it combines values into a cumulative total",
+"COUNT because it evaluates populated numeric worksheet cells"
+],
+"correct_answer": [
+"MIN because it retrieves the lowest numerical value"
+]
+},
+{
+"question_number": 81,
+"question_text": "A company wants to classify employees into performance bands without nesting several IF statements together. Which function offers a cleaner approach?",
+"options": [
+"IFS because it evaluates multiple conditions sequentially",
+"AND because every logical condition must be simultaneously true",
+"OR because only one logical condition must be true",
+"MATCH because it identifies positions within worksheet ranges"
+],
+"correct_answer": [
+"IFS because it evaluates multiple conditions sequentially"
+]
+},
+{
+"question_number": 82,
+"question_text": "Why is XLOOKUP generally considered more advanced than VLOOKUP?",
+"options": [
+"It can search flexibly in multiple worksheet directions",
+"It permanently stores lookup results inside pivot tables",
+"It only requires approximate matches during calculations",
+"It eliminates the need for worksheet relationships entirely"
+],
+"correct_answer": [
+"It can search flexibly in multiple worksheet directions"
+]
+},
+{
+"question_number": 83,
+"question_text": "What is the major analytical advantage of using Power Query over manual worksheet cleaning?",
+"options": [
+"Cleaning transformations can be automated and refreshed repeatedly",
+"Worksheet calculations become permanently fixed after transformation",
+"Relationships are automatically created between imported datasets",
+"Forecast sheets are generated automatically after every refresh"
+],
+"correct_answer": [
+"Cleaning transformations can be automated and refreshed repeatedly"
+]
+},
+{
+"question_number": 84,
+"question_text": "Which action in Power Query is commonly used to separate \"First Name Last Name\" into two different fields?",
+"options": [
+"Splitting columns into separate text-based worksheet attributes",
+"Promoting headers into top-level worksheet relationships automatically",
+"Filtering values into different pivot table aggregations dynamically",
+"Changing data types into numerical worksheet classifications"
+],
+"correct_answer": [
+"Splitting columns into separate text-based worksheet attributes"
+]
+},
+{
+"question_number": 85,
+"question_text": "What is the purpose of the 'Use First Row as Headers' option in Power Query?",
+"options": [
+"It promotes row values into official column headings",
+"It converts worksheet rows into forecasted analytical outputs",
+"It changes worksheet formulas into relational data structures",
+"It locks workbook references during pivot table calculations"
+],
+"correct_answer": [
+"It promotes row values into official column headings"
+]
+},
+{
+"question_number": 86,
+"question_text": "Why are one-to-one relationships relatively rare in professional data modeling?",
+"options": [
+"The tables are usually merged together during transformation",
+"The relationships prevent pivot tables from summarizing measures",
+"The relationships automatically generate duplicate worksheet records",
+"The relationships disable filtering across connected dimensions"
+],
+"correct_answer": [
+"The tables are usually merged together during transformation"
+]
+},
+{
+"question_number": 87,
+"question_text": "What risk is commonly associated with poorly managed many-to-many relationships?",
+"options": [
+"Performance problems and possible double-counting of measures",
+"Permanent corruption of workbook formulas and references",
+"Automatic deletion of related records from fact tables",
+"Conversion of dimensions into continuous numerical variables"
+],
+"correct_answer": [
+"Performance problems and possible double-counting of measures"
+]
+},
+{
+"question_number": 88,
+"question_text": "Which filter direction allows a dimension table to filter a fact table without the reverse occurring?",
+"options": [
+"Single-direction filtering from one side to many side",
+"Bi-directional filtering from both related tables simultaneously",
+"Many-to-many filtering across all worksheet relationships automatically",
+"Cross-tab filtering through pivot chart aggregation controls"
+],
+"correct_answer": [
+"Single-direction filtering from one side to many side"
+]
+},
+{
+"question_number": 89,
+"question_text": "A Power Pivot model contains Sales and Products tables connected by ProductID. Which table is most likely the dimension table?",
+"options": [
+"Products because it provides descriptive business context information",
+"Sales because it records measurable business transaction quantities",
+"Sales because it stores foreign keys linking related dimensions",
+"Products because it contains the highest quantity of worksheet rows"
+],
+"correct_answer": [
+"Products because it provides descriptive business context information"
+]
+},
+{
+"question_number": 90,
+"question_text": "Why is DAX important within Power Pivot environments?",
+"options": [
+"It enables advanced calculations and custom analytical measures",
+"It automatically converts worksheets into relational database schemas",
+"It replaces Power Query transformations with manual spreadsheet steps",
+"It disables relationships when workbook performance becomes slow"
+],
+"correct_answer": [
+"It enables advanced calculations and custom analytical measures"
+]
+},
+{
+"question_number": 91,
+"question_text": "Which Excel feature allows analysts to compare several predefined assumptions without manually editing worksheet values repeatedly?",
+"options": [
+"Scenario Manager for switching between stored worksheet cases",
+"Goal Seek for calculating one unknown worksheet variable",
+"Forecast Sheet for predicting future time-based patterns automatically",
+"Conditional Formatting for visually emphasizing worksheet conditions"
+],
+"correct_answer": [
+"Scenario Manager for switching between stored worksheet cases"
+]
+},
+{
+"question_number": 92,
+"question_text": "A chart displays months of the year as headers instead of numerical axes. What type of data is being represented?",
+"options": [
+"Discrete data because it represents distinct categories",
+"Continuous data because it represents measurable quantities",
+"Measure data because it supports mathematical aggregations",
+"Fact data because it stores transactional business events"
+],
+"correct_answer": [
+"Discrete data because it represents distinct categories"
+]
+},
+{
+"question_number": 93,
+"question_text": "Why are measures commonly placed in the Values area of a pivot table?",
+"options": [
+"Measures contain quantitative data suitable for aggregation",
+"Measures contain qualitative data suitable for worksheet grouping",
+"Measures define relationships between workbook dimension tables",
+"Measures identify worksheet formatting and visualization options"
+],
+"correct_answer": [
+"Measures contain quantitative data suitable for aggregation"
+]
+},
+{
+"question_number": 94,
+"question_text": "What is the primary role of foreign keys within fact tables?",
+"options": [
+"They connect transactional records to related dimension tables",
+"They convert qualitative worksheet data into numerical measures",
+"They prevent formulas from recalculating across workbook sheets",
+"They generate forecast models from historical analytical datasets"
+],
+"correct_answer": [
+"They connect transactional records to related dimension tables"
+]
+},
+{
+"question_number": 95,
+"question_text": "Which Excel feature would be most useful for narrowing a dataset to show only transactions from a specific year and region?",
+"options": [
+"Filtering because it restricts displayed records by selected criteria",
+"Goal Seek because it adjusts variables to reach target outputs",
+"Scenario Manager because it stores multiple worksheet assumptions",
+"Forecast Sheet because it predicts future analytical patterns"
+],
+"correct_answer": [
+"Filtering because it restricts displayed records by selected criteria"
+]
+},
+{
+"question_number": 96,
+"question_text": "Why is the AGGREGATE function often preferred over basic functions in complex datasets?",
+"options": [
+"It can ignore errors, hidden rows, and subtotals dynamically",
+"It automatically creates relationships between workbook tables",
+"It converts formulas into reusable Power Query transformations",
+"It summarizes dimensions without requiring quantitative measures"
+],
+"correct_answer": [
+"It can ignore errors, hidden rows, and subtotals dynamically"
+]
+},
+{
+"question_number": 97,
+"question_text": "Which operation best demonstrates the use of relational operators in Excel?",
+"options": [
+"Comparing whether revenue is greater than a target value",
+"Adding together monthly sales and quarterly expenses totals",
+"Extracting characters from the middle of a product code",
+"Rotating rows into columns within a worksheet range"
+],
+"correct_answer": [
+"Comparing whether revenue is greater than a target value"
+]
+},
+{
+"question_number": 98,
+"question_text": "What is the primary analytical advantage of pivot charts?",
+"options": [
+"They visually represent summarized pivot table information dynamically",
+"They permanently replace worksheet formulas with static visualizations",
+"They automatically generate relationships between workbook tables",
+"They convert discrete categories into continuous measurement scales"
+],
+"correct_answer": [
+"They visually represent summarized pivot table information dynamically"
+]
+},
+{
+"question_number": 99,
+"question_text": "A business analyst copies an existing pivot table and replaces the row fields with new dimensions. Why is this approach efficient?",
+"options": [
+"It reuses existing summarization structures for new analyses",
+"It permanently stores worksheet calculations inside source tables",
+"It removes the requirement for quantitative measures automatically",
+"It converts worksheet dimensions into predictive analytical models"
+],
+"correct_answer": [
+"It reuses existing summarization structures for new analyses"
+]
+},
+{
+"question_number": 100,
+"question_text": "Which feature allows analysts to quickly zoom into specific worksheet areas for detailed examination?",
+"options": [
+"The Zoom Slider controlling worksheet magnification levels",
+"The Status Bar displaying workbook calculation notifications",
+"The Formula Bar editing worksheet values and expressions",
+"The Ribbon Groups organizing worksheet commands by category"
+],
+"correct_answer": [
+"The Zoom Slider controlling worksheet magnification levels"
+]
+}
 ]
