@@ -4,9 +4,9 @@
     "question_text": "A Non-Terrestrial Network (NTN) is best defined as a wireless communication network that:",
     "options": [
       "Uses radio network equipment carried on airborne or spaceborne vehicles",
-      "Relies exclusively on ground-based cell towers and fibre",
-      "Connects two mobile handsets without any base station",
-      "Operates only at optical wavelengths between ground stations"
+      "Relies on ground-based cell towers linked by buried fibre-optic backhaul",
+      "Connects two mobile handsets directly via a sidelink, bypassing any base station",
+      "Uses free-space optical laser links between two fixed ground stations on Earth"
     ],
     "correct_answer": [
       "Uses radio network equipment carried on airborne or spaceborne vehicles"
@@ -29,10 +29,10 @@
     "question_number": 3,
     "question_text": "In NTN terminology, a 'spaceborne' platform refers to:",
     "options": [
-      "Drones and balloons flying in the lower atmosphere",
-      "Fibre-optic backbone links between data centres",
+      "Drones and stratospheric balloons flying in the lower and upper atmosphere",
+      "Fibre-optic backbone cabling that links terrestrial data centres together",
       "Satellite communication using artificial satellites orbiting the Earth",
-      "Ground gateways that steer antennas toward satellites"
+      "Ground gateway stations that steer directional antennas toward orbiting satellites"
     ],
     "correct_answer": [
       "Satellite communication using artificial satellites orbiting the Earth"
@@ -42,9 +42,9 @@
     "question_number": 4,
     "question_text": "Which of the following are examples of airborne NTN platforms?",
     "options": [
-      "GEO, MEO and LEO satellites",
-      "Fixed gNBs and fibre cables",
-      "Undersea cables and microwave relay towers",
+      "GEO, MEO and LEO satellites orbiting hundreds to tens of thousands of km up",
+      "Fixed terrestrial gNBs connected by underground fibre-optic cables",
+      "Undersea fibre cables and ground-based microwave relay towers",
       "Drones (UAVs) and High-Altitude Platform Stations (HAPS)"
     ],
     "correct_answer": [
@@ -55,10 +55,10 @@
     "question_number": 5,
     "question_text": "A High-Altitude Platform Station (HAPS), such as a balloon or airship in the stratosphere, is best characterised as an NTN platform that is:",
     "options": [
-      "A satellite in medium Earth orbit at about 20,000 km",
+      "A navigation satellite in medium Earth orbit at an altitude of about 20,000 km",
       "Unmanned, with lower latency than LEO and easier maintainability than a satellite",
-      "A ground-based mast forming part of the terrestrial network",
-      "A geostationary spacecraft fixed above the equator"
+      "A ground-based mast and antenna forming a fixed part of the terrestrial network",
+      "A geostationary spacecraft fixed in orbit above a point on the equator"
     ],
     "correct_answer": [
       "Unmanned, with lower latency than LEO and easier maintainability than a satellite"
@@ -70,7 +70,7 @@
     "options": [
       "Cover less than 40% of the Earth's surface",
       "Cover more than 95% of the Earth's surface",
-      "Are completely immune to natural disasters",
+      "Already provide 5G coverage across more than 90% of the Earth's landmass",
       "Provide uniform, seamless coverage over the oceans"
     ],
     "correct_answer": [
@@ -133,10 +133,10 @@
     "question_number": 11,
     "question_text": "A major driver of the decades-long success of terrestrial mobile networks has been:",
     "options": [
-      "The complete absence of regulation in the sector",
+      "The complete absence of any government regulation across the sector",
       "International standardization ensuring vendor compatibility and lower costs",
-      "Exclusive reliance on proprietary, closed hardware",
-      "The use of a single global operator worldwide"
+      "Exclusive reliance on proprietary, vendor-locked, closed hardware platforms",
+      "The use of a single global mobile operator that dominates the worldwide market"
     ],
     "correct_answer": [
       "International standardization ensuring vendor compatibility and lower costs"
@@ -146,9 +146,9 @@
     "question_number": 12,
     "question_text": "Historically, the satellite communications market has been fragmented largely because of:",
     "options": [
-      "Excessive standardization that stifled all innovation",
-      "Government bans on manufacturing satellites",
-      "An unlimited supply of cheap, interchangeable devices",
+      "Excessive standardization efforts that limited vendor innovation and design freedom",
+      "Government bans on the domestic manufacturing of communication satellites",
+      "An abundant supply of low-cost, interchangeable satellite devices",
       "A lack of standardization, making interoperability between vendors difficult"
     ],
     "correct_answer": [
@@ -159,10 +159,10 @@
     "question_number": 13,
     "question_text": "In a TN-versus-NTN comparison, the typical cell size differs in that:",
     "options": [
-      "TN cells are massive while NTN cells are only a few metres across",
+      "TN cells are typically massive in size, whereas NTN cells shrink to just a few metres across in dense deployments",
       "TN cells are small (giving high capacity per cell), whereas NTN cells are massive, tens to thousands of km across",
-      "Both TN and NTN use cells of an identical fixed diameter",
-      "NTN cells are always smaller than TN cells to limit interference"
+      "Both TN and NTN use cells of an identical, fixed diameter regardless of platform or altitude",
+      "NTN cells are consistently smaller than TN cells specifically to limit inter-cell interference levels"
     ],
     "correct_answer": [
       "TN cells are small (giving high capacity per cell), whereas NTN cells are massive, tens to thousands of km across"
@@ -172,10 +172,10 @@
     "question_number": 14,
     "question_text": "The infrastructure of a terrestrial network is characterised by:",
     "options": [
-      "Satellites, HAPS and drones operating in the sky",
-      "Only end-user handsets communicating peer-to-peer",
+      "Satellites, HAPS platforms and drones operating high above the ground",
+      "End-user handsets communicating directly with each other via sidelink, peer-to-peer",
       "Fixed ground-based base stations (e.g., gNodeB), cables and switching centres",
-      "Optical inter-satellite links operating in orbit"
+      "Optical inter-satellite links relaying traffic between spacecraft in orbit"
     ],
     "correct_answer": [
       "Fixed ground-based base stations (e.g., gNodeB), cables and switching centres"
@@ -186,9 +186,9 @@
     "question_text": "The current relationship between the satellite and terrestrial mobile communication industries is best described as:",
     "options": [
       "Progressively converging toward TN-NTN integration",
-      "Diverging into two fully separate ecosystems",
-      "Remaining two permanently isolated industrial chains",
-      "Being replaced entirely by wired networks"
+      "Diverging into two fully separate, non-interoperable ecosystems",
+      "Remaining two historically isolated industrial supply chains",
+      "Being steadily replaced by fixed, wired fibre-optic networks"
     ],
     "correct_answer": [
       "Progressively converging toward TN-NTN integration"
@@ -198,10 +198,10 @@
     "question_number": 16,
     "question_text": "The 3rd Generation Partnership Project (3GPP) is significant to NTN because it:",
     "options": [
-      "Manufactures and launches communication satellites",
+      "Manufactures and launches its own fleet of communication satellites into orbit",
       "Completed the first global 5G NR standard and is extending it to support satellites",
-      "Owns and operates the Starlink constellation",
-      "Issues spectrum licences to operators in each country"
+      "Owns and commercially operates the Starlink broadband satellite constellation",
+      "Issues national spectrum licences to mobile operators in each member country"
     ],
     "correct_answer": [
       "Completed the first global 5G NR standard and is extending it to support satellites"
@@ -212,9 +212,9 @@
     "question_text": "In 5G rollout, NTN is expected to serve unserved areas such as isolated regions, aircraft and vessels, and additionally to serve:",
     "options": [
       "Underserved areas such as sub-urban/rural regions, upgrading limited terrestrial performance",
-      "Only dense urban centres that already have 5G",
-      "Only areas that already have a fibre backhaul",
-      "Only military installations, never civilian users"
+      "Dense urban centres that already enjoy full 5G coverage from terrestrial gNodeBs",
+      "Areas that already have a wired fibre-optic backhaul connection installed nearby",
+      "Military installations under a dedicated defence spectrum allocation, apart from civilian networks"
     ],
     "correct_answer": [
       "Underserved areas such as sub-urban/rural regions, upgrading limited terrestrial performance"
@@ -224,10 +224,10 @@
     "question_number": 18,
     "question_text": "Generally, compared with NTN, terrestrial networks are described as providing:",
     "options": [
-      "Lower reliability and higher bit error rates",
-      "Identical reliability under all conditions",
+      "Lower reliability and a higher bit error rate under typical conditions",
+      "Identical reliability regardless of weather or terrain conditions",
       "Higher reliability and lower bit error rates",
-      "Reliable service only over the open oceans"
+      "Reliable service specifically over open-ocean shipping routes"
     ],
     "correct_answer": [
       "Higher reliability and lower bit error rates"
@@ -238,9 +238,9 @@
     "question_text": "A frequently cited advantage of NTN over TN during earthquakes, floods or armed conflict is that NTN:",
     "options": [
       "Can maintain coverage when terrestrial infrastructure is damaged or destroyed",
-      "Is completely unaffected by weather of any kind",
-      "Requires no ground gateways whatsoever",
-      "Eliminates the need for any radio spectrum"
+      "Requires the same fibre-based backhaul infrastructure as terrestrial networks do",
+      "Relies on a single regenerative satellite payload rather than any ground gateway",
+      "Operates over dedicated fibre-optic links instead of licensed radio spectrum"
     ],
     "correct_answer": [
       "Can maintain coverage when terrestrial infrastructure is damaged or destroyed"
@@ -251,9 +251,9 @@
     "question_text": "Comparing latency, terrestrial networks are typically ultra-low (under about 1 ms), whereas non-terrestrial networks range from:",
     "options": [
       "About 20 ms for LEO up to 500 ms or more for GEO, owing to the large distances",
-      "About 1 ms for LEO up to 5 ms for GEO",
-      "A fixed 100 ms regardless of the orbit used",
-      "Lower latency than terrestrial networks in every case"
+      "About 1 ms for LEO up to roughly 5 ms for GEO, similar to fibre backhaul",
+      "A fixed 100 ms round-trip delay regardless of which orbit type is used",
+      "Consistently lower latency than terrestrial fibre networks in most deployment cases"
     ],
     "correct_answer": [
       "About 20 ms for LEO up to 500 ms or more for GEO, owing to the large distances"
@@ -263,10 +263,10 @@
     "question_number": 21,
     "question_text": "Which statement best summarises the primary limitations of terrestrial networks?",
     "options": [
-      "Unlimited reach but uniformly very high latency",
+      "Effectively unlimited global reach but consistently very high transmission latency",
       "Restricted global reach, vulnerability to physical damage, and high cost in rugged terrain",
-      "Perfect disaster resilience but poor data speed",
-      "Global ocean coverage but no urban coverage"
+      "Excellent resilience to natural disasters but comparatively poor data throughput",
+      "Strong global ocean coverage but comparatively weak coverage in dense urban centres"
     ],
     "correct_answer": [
       "Restricted global reach, vulnerability to physical damage, and high cost in rugged terrain"
@@ -277,9 +277,9 @@
     "question_text": "Regarding mobility support, a key contrast between the two networks is that:",
     "options": [
       "A TN requires frequent handovers, while an NTN can offer seamless mobility across wide areas",
-      "A TN offers seamless wide-area mobility, while an NTN needs constant handovers",
-      "Neither a TN nor an NTN supports user mobility at all",
-      "Both require a handover only once per day"
+      "A TN offers seamless wide-area mobility, while an NTN needs frequent, active handovers instead",
+      "Neither a TN nor an NTN is designed to support user mobility in current standards",
+      "Both require one scheduled handover procedure at a fixed daily interval"
     ],
     "correct_answer": [
       "A TN requires frequent handovers, while an NTN can offer seamless mobility across wide areas"
@@ -289,10 +289,10 @@
     "question_number": 23,
     "question_text": "Relative to extensive terrestrial deployments in remote regions, NTNs are described as:",
     "options": [
-      "Always more expensive, with no coverage benefit",
-      "Equivalent in cost but lower in coverage",
+      "Consistently more expensive than terrestrial builds, with no added coverage benefit",
+      "Roughly equivalent in total deployment cost but offering lower area coverage",
       "Potentially more cost-effective, while extending coverage and providing a backup",
-      "Cheaper only because they need no spectrum"
+      "Cheaper mainly because satellite operators are exempt from national spectrum licensing fees"
     ],
     "correct_answer": [
       "Potentially more cost-effective, while extending coverage and providing a backup"
@@ -315,9 +315,9 @@
     "question_number": 25,
     "question_text": "Compared with a terrestrial network's standard path loss, the signal constraints of an NTN are dominated by:",
     "options": [
-      "Negligible path loss and no Doppler effect whatsoever",
-      "Interference only from other ground-based cell towers",
-      "A complete absence of any propagation impairments",
+      "Minimal path loss and effectively no Doppler shift, resembling a short-range terrestrial Wi-Fi link",
+      "Interference arising mainly from neighbouring ground-based cellular towers and street-level clutter",
+      "A near-complete absence of any meaningful propagation loss, fading, or spectral interference effects",
       "Severe path loss and high Doppler shifts from satellite mobility, plus atmospheric/ionospheric interference"
     ],
     "correct_answer": [
@@ -341,10 +341,10 @@
     "question_number": 27,
     "question_text": "In an altitude-versus-orbital-speed table, orbital speed falls from about 7.8 km/s near 200 km to about 3.1 km/s at roughly 35,800 km. This illustrates that:",
     "options": [
-      "Orbital speed increases as altitude increases",
+      "Orbital speed increases as altitude increases, since higher orbits require greater velocity",
       "Orbital speed decreases as altitude increases, while the orbital period lengthens",
-      "Orbital speed is the same at every altitude",
-      "The orbital period shortens as altitude increases"
+      "Orbital speed remains essentially constant regardless of orbital altitude",
+      "The orbital period shortens as altitude increases, mirroring the decrease in orbital speed"
     ],
     "correct_answer": [
       "Orbital speed decreases as altitude increases, while the orbital period lengthens"
@@ -367,10 +367,10 @@
     "question_number": 29,
     "question_text": "A GEO satellite appears stationary to a fixed observer on Earth because it:",
     "options": [
-      "Does not actually move at all in its orbit",
+      "Does not actually move within its orbit, remaining fixed relative to the stars",
       "Completes one orbit in about 24 hours, matching the Earth's rotation",
-      "Orbits the Earth in under 90 minutes",
-      "Is physically held in place by a tether"
+      "Orbits the Earth in under 90 minutes, much faster than the planet's rotation",
+      "Is physically held in place by a tether anchored to a ground station below"
     ],
     "correct_answer": [
       "Completes one orbit in about 24 hours, matching the Earth's rotation"
@@ -419,10 +419,10 @@
     "question_number": 33,
     "question_text": "A satellite whose orbital period matches the Earth's rotation but which may be inclined or elliptical, lacking the strict 0-degree equatorial, fixed-point constraint of a GEO, is classified as:",
     "options": [
-      "Low Earth orbit (LEO)",
-      "Medium Earth orbit (MEO)",
+      "Low Earth orbit (LEO), typically a few hundred kilometres up",
+      "Medium Earth orbit (MEO), used mainly for navigation constellations",
       "Geosynchronous orbit (GSO), of which GEO is a special case",
-      "A High-Altitude Platform Station (HAPS)"
+      "A High-Altitude Platform Station (HAPS) flying in the stratosphere"
     ],
     "correct_answer": [
       "Geosynchronous orbit (GSO), of which GEO is a special case"
@@ -523,10 +523,10 @@
     "question_number": 41,
     "question_text": "A disadvantage of NGEO (LEO/MEO) systems compared with GEO is that they:",
     "options": [
-      "Have far higher latency than GEO satellites",
+      "Have significantly higher round-trip latency than a comparable GEO satellite link",
       "Require dynamic hand-offs and active ground-antenna tracking of moving satellites",
-      "Cannot provide any coverage of polar regions",
-      "Need only a stationary dish with no tracking"
+      "Cannot provide meaningful coverage of the polar regions at high latitudes",
+      "Need a single stationary dish pointed at a fixed spot, with no active tracking"
     ],
     "correct_answer": [
       "Require dynamic hand-offs and active ground-antenna tracking of moving satellites"
@@ -549,10 +549,10 @@
     "question_number": 43,
     "question_text": "Because a HAPS maintains its position relative to the Earth's surface, it:",
     "options": [
-      "Uses only Earth-moving beams like a fast LEO satellite",
-      "Has a round-trip delay of about 600 ms",
+      "Uses Earth-moving beams that sweep across new ground area, like a fast-moving LEO satellite",
+      "Has a round-trip propagation delay of about 600 ms, similar to a GEO satellite link",
       "Uses Earth-fixed beams like a GEO satellite, with delay comparable to terrestrial networks",
-      "Covers a smaller area than a single terrestrial gNB"
+      "Covers a ground area smaller than that of a single terrestrial gNB cell site"
     ],
     "correct_answer": [
       "Uses Earth-fixed beams like a GEO satellite, with delay comparable to terrestrial networks"
@@ -562,9 +562,9 @@
     "question_number": 44,
     "question_text": "Compared with spaceborne NTN, airborne NTN platforms:",
     "options": [
-      "Have a much larger propagation delay than GEO",
-      "Are completely immune to strong winds and storms",
-      "Provide permanent global coverage from a single unit",
+      "Have a considerably larger end-to-end propagation delay than a comparable GEO satellite link",
+      "Are largely unaffected by moderate winds and storms, unlike ground-based masts",
+      "Provide continuous global coverage from a single stationary platform overhead",
       "Deploy quickly at lower cost with smaller delay, but face stabilization and weather challenges"
     ],
     "correct_answer": [
@@ -575,10 +575,10 @@
     "question_number": 45,
     "question_text": "For an Unmanned Aircraft System (UAS) used as an airborne NTN platform, the drone's operating altitude is typically limited to about:",
     "options": [
-      "8 to 50 km, up in the stratosphere",
-      "300 to 1,500 km, like a LEO satellite",
+      "8 to 50 km, up in the stratosphere where a HAPS typically operates",
+      "300 to 1,500 km, the typical altitude range for a LEO satellite",
       "90 to 150 m, depending on country and region",
-      "35,786 km, like a GEO satellite"
+      "35,786 km, the fixed altitude of a GEO satellite"
     ],
     "correct_answer": [
       "90 to 150 m, depending on country and region"
@@ -601,10 +601,10 @@
     "question_number": 47,
     "question_text": "An Earth-fixed beam is one that:",
     "options": [
-      "Sweeps across a new area at every instant",
+      "Sweeps across a new patch of ground continuously as the satellite moves",
       "Covers the same fixed geographic region on Earth at all times",
-      "Covers area X then abruptly jumps to area Y",
-      "Can only be produced by a LEO satellite"
+      "Covers area X, then abruptly jumps to a distant area Y without transition",
+      "Is generated by a fast-moving LEO satellite rather than a stationary one"
     ],
     "correct_answer": [
       "Covers the same fixed geographic region on Earth at all times"
@@ -614,10 +614,10 @@
     "question_number": 48,
     "question_text": "An Earth-moving beam is characterised by the fact that it:",
     "options": [
-      "Always illuminates the exact same area permanently",
+      "Continuously illuminates the exact same ground area throughout the satellite pass",
       "Covers a slightly different geographic area at each successive instant as the platform moves",
-      "Is produced only by stationary GEO satellites",
-      "Requires beam steering to remain fixed on one spot"
+      "Is produced by a stationary GEO satellite that does not move relative to Earth",
+      "Requires active beam steering to remain fixed on one ground spot continuously"
     ],
     "correct_answer": [
       "Covers a slightly different geographic area at each successive instant as the platform moves"
@@ -627,9 +627,9 @@
     "question_number": 49,
     "question_text": "With a quasi-Earth-fixed beam covering area X from t1 to t2 and then a different area, continuity over area X is maintained because:",
     "options": [
-      "The satellite physically stops moving in its orbit",
-      "One beam covers all geographic areas simultaneously",
-      "The user device switches to a wired connection",
+      "The satellite physically slows down and briefly stops moving along its orbit",
+      "A single wide beam covers the entire visible hemisphere simultaneously",
+      "The user device seamlessly switches over to a wired terrestrial connection instead",
       "An incoming quasi-Earth-fixed beam replaces the outgoing beam over the same area"
     ],
     "correct_answer": [
@@ -640,9 +640,9 @@
     "question_number": 50,
     "question_text": "GEO satellites, with beam footprints from roughly 200 to 3,500 km, are most commonly used for services such as:",
     "options": [
-      "Ultra-low-latency competitive online gaming",
-      "Sub-millisecond industrial control loops",
-      "Short-range indoor positioning",
+      "Ultra-low-latency competitive online gaming requiring sub-20 ms response times",
+      "Sub-millisecond industrial control loops for robotic factory automation",
+      "Short-range indoor positioning within a single warehouse or building",
       "Weather monitoring, TV broadcasting, and remote sensing/positioning"
     ],
     "correct_answer": [
@@ -653,10 +653,10 @@
     "question_number": 51,
     "question_text": "In 5G NR-NTN, the 'service link' is:",
     "options": [
-      "The connection between the satellite and the gateway",
-      "The direct link between two satellites in orbit",
+      "The feeder-link connection between the satellite and the ground gateway station",
+      "The direct radio link between two satellites relaying traffic in orbit",
       "The 5G radio access (Uu interface) between the UE and the satellite",
-      "The wired link between the gateway and the 5GC"
+      "The wired terrestrial link between the ground gateway and the 5G core network"
     ],
     "correct_answer": [
       "The 5G radio access (Uu interface) between the UE and the satellite"
@@ -666,10 +666,10 @@
     "question_number": 52,
     "question_text": "The 'feeder link' (satellite radio interface, SRI) describes the connection between:",
     "options": [
-      "The UE and the satellite",
-      "The gNB and the 5G core network",
+      "The UE and the satellite over the radio service link",
+      "The gNB and the 5G core network via a wired N2/N3 interface",
       "The satellite and the ground gateway",
-      "Two user devices directly"
+      "Two user devices communicating directly via sidelink"
     ],
     "correct_answer": [
       "The satellite and the ground gateway"
@@ -693,9 +693,9 @@
     "question_text": "A transparent (bent-pipe) NTN payload:",
     "options": [
       "Amplifies, filters and frequency-translates the signal without onboard baseband processing",
-      "Fully decodes and re-encodes the signal in orbit",
-      "Hosts the complete gNB onboard the satellite",
-      "Terminates the Uu interface on the satellite"
+      "Fully decodes, error-corrects and re-encodes the signal onboard before retransmission",
+      "Hosts the complete gNB, including RRC and PDCP layers, onboard the satellite",
+      "Terminates the 5G Uu radio interface directly on the satellite payload itself"
     ],
     "correct_answer": [
       "Amplifies, filters and frequency-translates the signal without onboard baseband processing"
@@ -705,9 +705,9 @@
     "question_number": 55,
     "question_text": "With a transparent payload, the NTN gNB is located:",
     "options": [
-      "Onboard the satellite itself",
-      "Inside the UE handset",
-      "Distributed across several satellites",
+      "Onboard the satellite itself, alongside the on-board processor",
+      "Inside the UE handset, integrated with the baseband modem",
+      "Distributed redundantly across several satellites in the same orbital plane",
       "On the ground, typically co-located with the gateway"
     ],
     "correct_answer": [
@@ -718,10 +718,10 @@
     "question_number": 56,
     "question_text": "In the transparent-payload architecture, the 5G Uu radio interface terminates at:",
     "options": [
-      "The satellite payload",
+      "The satellite payload, acting as a transparent relay point",
       "The terrestrial gNB, not at the satellite",
-      "The UE only",
-      "The 5G core network"
+      "The UE alone, with no counterpart terminating on the network side",
+      "The 5G core network, several hops beyond the ground gateway"
     ],
     "correct_answer": [
       "The terrestrial gNB, not at the satellite"
@@ -731,10 +731,10 @@
     "question_number": 57,
     "question_text": "A regenerative (decode-and-forward) payload differs from a transparent one in that it:",
     "options": [
-      "Only amplifies and forwards, with no onboard processing",
-      "Removes the need for any gateway or 5G core",
+      "Simply amplifies and frequency-converts the signal, with no onboard processing",
+      "Removes the need for a ground-based gateway station between hops",
       "Incorporates gNB functions onboard, terminating the Uu interface at the satellite",
-      "Cannot support inter-satellite links"
+      "Cannot support any inter-satellite links due to onboard hardware limits"
     ],
     "correct_answer": [
       "Incorporates gNB functions onboard, terminating the Uu interface at the satellite"
@@ -744,10 +744,10 @@
     "question_number": 58,
     "question_text": "A key latency advantage of the regenerative architecture is that:",
     "options": [
-      "The satellite hardware becomes far simpler and cheaper",
-      "It eliminates the need for a service link entirely",
+      "The satellite hardware becomes far simpler, cheaper, and lighter to launch",
+      "It removes the need for a service link between the UE and the satellite altogether",
       "The single-way latency includes only the service link, reducing round-trip time",
-      "The Uu interface terminates on the ground"
+      "The Uu interface terminates on the ground at the gateway, not in orbit"
     ],
     "correct_answer": [
       "The single-way latency includes only the service link, reducing round-trip time"
@@ -757,10 +757,10 @@
     "question_number": 59,
     "question_text": "An Inter-Satellite Link (ISL) in a regenerative NTN:",
     "options": [
-      "Connects a satellite to a terrestrial fibre ring",
+      "Connects a satellite to a terrestrial fibre ring encircling a data centre",
       "Connects NTN payloads to one another, allowing relay toward a distant gateway",
-      "Links a UE directly to the 5G core network",
-      "Replaces the feeder link with a wired cable"
+      "Links a UE directly to the 5G core network without any radio interface",
+      "Replaces the feeder link with a buried fibre-optic cable to the gateway"
     ],
     "correct_answer": [
       "Connects NTN payloads to one another, allowing relay toward a distant gateway"
@@ -770,9 +770,9 @@
     "question_number": 60,
     "question_text": "A disaggregated gNB is split into a:",
     "options": [
-      "Uplink Unit and a Downlink Unit",
-      "Service Unit and a Feeder Unit",
-      "Primary Unit and a Secondary Unit",
+      "Uplink Processing Unit and a separate Downlink Processing Unit",
+      "Service Link Unit and a distinct Feeder Link Unit",
+      "Primary Radio Unit and a redundant Secondary Radio Unit",
       "Centralized Unit (CU) and a Distributed Unit (DU)"
     ],
     "correct_answer": [
@@ -784,9 +784,9 @@
     "question_text": "When a regenerative payload hosts only the gNB-DU while the CU stays on the ground, the feeder link carries the:",
     "options": [
       "F1 interface (F1-C signalling and F1-U user-plane traffic)",
-      "Uu air interface only",
-      "N6 interface toward the Internet",
-      "ISL optical control channel"
+      "Uu air interface signalling directly between the UE and the DU",
+      "N6 interface carrying user traffic toward the public Internet",
+      "ISL optical control channel linking neighbouring satellites"
     ],
     "correct_answer": [
       "F1 interface (F1-C signalling and F1-U user-plane traffic)"
@@ -796,9 +796,9 @@
     "question_number": 62,
     "question_text": "In a multi-connectivity NTN scenario, the NTN UE:",
     "options": [
-      "Connects to exactly one satellite at any time",
-      "Uses only a wired backhaul connection",
-      "Cannot connect to any terrestrial network",
+      "Connects to exactly one satellite at any given time, with no fallback",
+      "Relies on a wired backhaul connection instead of any radio link",
+      "Cannot connect to any terrestrial network alongside the satellite link",
       "Simultaneously communicates with multiple radio or core networks"
     ],
     "correct_answer": [
@@ -809,23 +809,23 @@
     "question_number": 63,
     "question_text": "For direct NTN access to handheld UEs within FR1, the commonly used frequency bands are:",
     "options": [
-      "Only the mmWave FR2 bands",
-      "Only optical/visible-light bands",
-      "S-band and L-band",
-      "Only sub-100 MHz HF bands"
+      "The mmWave FR2 bands above 24 GHz, unsuitable for handheld devices",
+      "Optical and visible-light bands used for free-space laser links",
+      "S-band and L-band, the sub-6 GHz FR1 ranges used for handheld access",
+      "Sub-100 MHz HF bands used for long-distance ionospheric skywave links"
     ],
     "correct_answer": [
-      "S-band and L-band"
+      "S-band and L-band, the sub-6 GHz FR1 ranges used for handheld access"
     ]
   },
   {
     "question_number": 64,
     "question_text": "In the NTN HARQ retransmission process, after the receiver returns a negative acknowledgement (NACK) for a corrupted packet, the transmitter responds by:",
     "options": [
-      "Permanently dropping the connection to the UE",
+      "Dropping the connection to the UE after a small fixed number of retries",
       "Retransmitting the data using a new redundancy version (RV)",
-      "Switching the UE to a different satellite constellation",
-      "Ignoring the NACK and sending entirely new data"
+      "Switching the UE over to a different satellite constellation mid-session",
+      "Ignoring the NACK and simply moving on to the next scheduled data block"
     ],
     "correct_answer": [
       "Retransmitting the data using a new redundancy version (RV)"
@@ -835,10 +835,10 @@
     "question_number": 65,
     "question_text": "The most challenging NTN characteristic inhibiting low-latency communication is:",
     "options": [
-      "The small physical size of satellite antennas",
+      "The small physical size of the satellite antenna array limiting gain",
       "The long round-trip time due to the large UE-to-satellite distance",
-      "The absence of any modulation scheme",
-      "The low cost of ground gateways"
+      "The absence of a standardized modulation scheme for the downlink carrier",
+      "The relatively low deployment cost of terrestrial ground gateway stations"
     ],
     "correct_answer": [
       "The long round-trip time due to the large UE-to-satellite distance"
@@ -861,10 +861,10 @@
     "question_number": 67,
     "question_text": "The Doppler (carrier-frequency) shift in NTN arises mainly because:",
     "options": [
-      "The satellite is perfectly stationary in space",
+      "The satellite remains perfectly stationary relative to a fixed point on the Earth's surface",
       "The satellite, and possibly the UE, moves, causing a time-variant carrier-frequency deviation",
-      "The gateway periodically changes its IP address",
-      "The UE increases its transmit power over time"
+      "The ground gateway periodically changes its assigned IP address mid-session",
+      "The UE gradually increases its transmit power as the session progresses"
     ],
     "correct_answer": [
       "The satellite, and possibly the UE, moves, causing a time-variant carrier-frequency deviation"
@@ -874,10 +874,10 @@
     "question_number": 68,
     "question_text": "The 'Doppler rate' in an NTN specifically refers to:",
     "options": [
-      "The fixed frequency offset at a single instant",
+      "The fixed frequency offset measured at a single instant in time",
       "The variation of the Doppler shift over the connection time",
-      "The data rate carried on the feeder link",
-      "The rate at which satellites are launched"
+      "The data throughput rate carried on the satellite feeder link",
+      "The rate at which new satellites are launched into a constellation"
     ],
     "correct_answer": [
       "The variation of the Doppler shift over the connection time"
@@ -888,9 +888,9 @@
     "question_text": "To compensate the uplink Doppler shift, the UE typically:",
     "options": [
       "Estimates its position via GNSS and uses satellite ephemeris to pre-adjust its uplink carrier frequency",
-      "Randomly hops across all available subcarriers",
-      "Increases transmit power to overpower the shift",
-      "Waits until the satellite stops moving"
+      "Randomly hops across the available subcarriers, hoping the receiver stays synchronized despite the shift",
+      "Increases its uplink transmit power in an attempt to overpower the frequency shift",
+      "Waits passively until the satellite pauses its motion along the orbital path"
     ],
     "correct_answer": [
       "Estimates its position via GNSS and uses satellite ephemeris to pre-adjust its uplink carrier frequency"
@@ -926,10 +926,10 @@
     "question_number": 72,
     "question_text": "In the transparent-payload protocol stack, the termination points for RRC, PDCP, RLC, MAC and PHY are on the:",
     "options": [
-      "Satellite payload and the gateway",
+      "Satellite payload and the ground gateway station, since both process baseband",
       "NTN UE and the NTN gNB, since the satellite and gateway are transparent",
-      "5G core network and the Internet",
-      "UE and the satellite only"
+      "5G core network and the public Internet, several hops beyond the gateway",
+      "UE and the satellite alone, without the gateway or gNB participating"
     ],
     "correct_answer": [
       "NTN UE and the NTN gNB, since the satellite and gateway are transparent"
@@ -940,7 +940,7 @@
     "question_text": "When a regenerative payload houses the full gNB, the RRC terminates in the satellite, which results in:",
     "options": [
       "A much longer RRC reaction time than the transparent case",
-      "No RRC layer being needed at all",
+      "No RRC layer being present anywhere in the regenerative architecture",
       "RRC termination out on the Internet",
       "A shorter reaction time for RRC procedures"
     ],
@@ -965,10 +965,10 @@
     "question_number": 75,
     "question_text": "The regenerative payload's on-board processor (OBP), inserted between the LNA and the HPA, enables:",
     "options": [
-      "Only analogue amplification with no processing",
-      "Elimination of the downlink antenna",
+      "Purely analogue amplification and frequency conversion, with no digital processing",
+      "Elimination of the separate downlink antenna, reusing the uplink array instead",
       "Error correction and routing of packets between beams before retransmission",
-      "A direct wired connection to the 5G core"
+      "A direct wired fibre connection from the satellite down to the 5G core network"
     ],
     "correct_answer": [
       "Error correction and routing of packets between beams before retransmission"
@@ -978,10 +978,10 @@
     "question_number": 76,
     "question_text": "At its most basic, a communication satellite acts as a:",
     "options": [
-      "Passive mirror that reflects signals unchanged",
-      "Data-storage warehouse held in orbit",
+      "A passive mirror that simply reflects incoming signals unchanged, with no amplification",
+      "A data-storage warehouse in orbit, downloading its contents once per day",
       "Repeater - a receiver linked to a transmitter using different frequencies",
-      "GNSS timing clock and nothing more"
+      "A GNSS timing clock broadcasting position data, with no communication relay function"
     ],
     "correct_answer": [
       "Repeater - a receiver linked to a transmitter using different frequencies"
@@ -1044,9 +1044,9 @@
     "question_text": "A satellite repeater always uses different frequencies for receive and transmit mainly in order to:",
     "options": [
       "Avoid interference between the incoming and outgoing signals",
-      "Save electrical power onboard the satellite",
-      "Comply with Kepler's laws of motion",
-      "Reduce the satellite to a single antenna"
+      "Save electrical power onboard the satellite by cutting amplifier duty cycles",
+      "Comply with Kepler's laws of motion governing the shape of the orbit",
+      "Reduce the satellite payload down to a single shared antenna element"
     ],
     "correct_answer": [
       "Avoid interference between the incoming and outgoing signals"
@@ -1057,9 +1057,9 @@
     "question_text": "A transparent (bent-pipe) repeater typically consists of a low-noise amplifier, a high-power amplifier, and:",
     "options": [
       "A mixer with a local oscillator for frequency conversion",
-      "An on-board baseband processor for decoding",
-      "A GNSS receiver for satellite positioning",
-      "A propulsion thruster for station-keeping"
+      "An on-board baseband processor that fully decodes and re-encodes the signal",
+      "A GNSS receiver used solely for determining the satellite's own position",
+      "A propulsion thruster used for periodic orbital station-keeping manoeuvres"
     ],
     "correct_answer": [
       "A mixer with a local oscillator for frequency conversion"
@@ -1069,10 +1069,10 @@
     "question_number": 83,
     "question_text": "Unlike a transparent repeater, a regenerative (processing) repeater:",
     "options": [
-      "Simply amplifies and forwards everything, including noise",
+      "Simply amplifies and forwards everything it receives, including any accumulated noise",
       "Demodulates the uplink to baseband, corrects errors, then remodulates for the downlink",
-      "Cannot change the carrier frequency at all",
-      "Contains no amplifiers of any kind"
+      "Cannot translate the uplink carrier frequency to a different downlink frequency",
+      "Contains no power amplifiers, relying purely on passive reflection of the signal"
     ],
     "correct_answer": [
       "Demodulates the uplink to baseband, corrects errors, then remodulates for the downlink"
@@ -1082,9 +1082,9 @@
     "question_number": 84,
     "question_text": "A benefit of a regenerative repeater over a bent-pipe one is that it:",
     "options": [
-      "Consumes far less power and mass",
-      "Operates without any antennas",
-      "Works only with analogue signals",
+      "Consumes noticeably less electrical power and structural mass than a bent-pipe design",
+      "Operates without any onboard antenna, coupling signals directly through waveguides",
+      "Works with analogue signals alone, unable to process digital baseband data",
       "Cleans the signal by decoding and correcting errors instead of forwarding noise"
     ],
     "correct_answer": [
@@ -1108,10 +1108,10 @@
     "question_number": 86,
     "question_text": "The Telemetry, Tracking, and Command (TTC&M) subsystem is responsible for:",
     "options": [
-      "Amplifying and retransmitting the user carriers",
-      "Allocating IP addresses to the user devices",
+      "Amplifying and retransmitting the user carriers between the uplink and downlink paths",
+      "Allocating dynamic IP addresses to each connected user device",
       "Monitoring subsystem health, tracking position, and executing commands from ground control",
-      "Performing OFDMA resource scheduling"
+      "Performing OFDMA resource-block scheduling for the user-plane traffic"
     ],
     "correct_answer": [
       "Monitoring subsystem health, tracking position, and executing commands from ground control"
@@ -1134,23 +1134,23 @@
     "question_number": 88,
     "question_text": "Inter-satellite links (ISLs) can be implemented using:",
     "options": [
-      "Either radio-frequency or optical links",
-      "Only copper cabling",
-      "Only acoustic signalling",
-      "Only undersea fibre"
+      "Either radio-frequency (RF) links or optical (laser) links",
+      "Copper coaxial cabling strung physically between adjacent satellites",
+      "Acoustic signalling pulses transmitted through the vacuum of space",
+      "Undersea fibre-optic cable strung between satellites in orbit"
     ],
     "correct_answer": [
-      "Either radio-frequency or optical links"
+      "Either radio-frequency (RF) links or optical (laser) links"
     ]
   },
   {
     "question_number": 89,
     "question_text": "The performance of transmitting equipment is measured by its EIRP, which is:",
     "options": [
-      "The ratio of antenna gain to system noise temperature",
-      "The Boltzmann constant multiplied by temperature",
+      "The ratio of antenna receive gain to the system's equivalent noise temperature",
+      "The Boltzmann constant multiplied by the absolute system noise temperature",
       "The power fed to the antenna multiplied by the antenna gain in the considered direction",
-      "The received carrier-to-noise density ratio"
+      "The received carrier power divided by the noise power spectral density"
     ],
     "correct_answer": [
       "The power fed to the antenna multiplied by the antenna gain in the considered direction"
@@ -1160,10 +1160,10 @@
     "question_number": 90,
     "question_text": "The receiver figure of merit, G/T, is the ratio of:",
     "options": [
-      "The transmit power to the antenna gain",
+      "The ratio of transmit power fed into the antenna to its gain",
       "The antenna receive gain to the system noise temperature",
-      "The carrier power to the user bit rate",
-      "The uplink frequency to the downlink frequency"
+      "The ratio of received carrier power to the user's data bit rate",
+      "The ratio of the uplink carrier frequency to the downlink carrier frequency"
     ],
     "correct_answer": [
       "The antenna receive gain to the system noise temperature"
@@ -1174,9 +1174,9 @@
     "question_text": "A satellite link budget is fundamentally used to:",
     "options": [
       "Predict whether the received signal will be strong enough relative to the noise",
-      "Schedule the satellite's launch window",
-      "Allocate telephone numbers to users",
-      "Determine the satellite's orbital inclination"
+      "Schedule the optimal launch window for the satellite's rocket vehicle",
+      "Allocate telephone numbers and IP addresses to individual subscriber devices",
+      "Determine the orbital inclination the satellite should maintain over its lifetime"
     ],
     "correct_answer": [
       "Predict whether the received signal will be strong enough relative to the noise"
@@ -1186,10 +1186,10 @@
     "question_number": 92,
     "question_text": "Noise power spectral density N0 is defined as:",
     "options": [
-      "The antenna gain divided by the temperature",
-      "The EIRP minus the free-space path loss",
+      "The antenna receive gain divided by the physical system temperature in kelvin",
+      "The transmitted EIRP minus the total free-space path loss along the link",
       "The product of the Boltzmann constant k and the system noise temperature T",
-      "The carrier power multiplied by the bit rate"
+      "The received carrier power multiplied by the transmitted bit rate"
     ],
     "correct_answer": [
       "The product of the Boltzmann constant k and the system noise temperature T"
@@ -1199,9 +1199,9 @@
     "question_number": 93,
     "question_text": "Which of the following is a link (propagation) loss accounted for in a satellite link budget?",
     "options": [
-      "The Boltzmann constant of the receiver",
-      "The EIRP of the transmitter",
-      "The number of transponders onboard",
+      "The Boltzmann constant used in the receiver's noise-temperature calculation",
+      "The EIRP radiated by the transmitting ground station or satellite",
+      "The total number of active transponders carried onboard the satellite",
       "Free-space path loss together with rain/atmospheric attenuation"
     ],
     "correct_answer": [
@@ -1212,13 +1212,13 @@
     "question_number": 94,
     "question_text": "In 5G NR, Frequency Range 1 (FR1) spans approximately:",
     "options": [
-      "410 MHz to 7.125 GHz",
-      "24 to 52 GHz",
-      "50 to 66 GHz",
-      "Below 100 MHz only"
+      "410 MHz to 7.125 GHz, the FR1 sub-6 GHz range",
+      "24 to 52 GHz, part of the FR2 mmWave range",
+      "50 to 66 GHz, part of the FR2 upper mmWave extension",
+      "Below 100 MHz, in the HF/VHF broadcast range"
     ],
     "correct_answer": [
-      "410 MHz to 7.125 GHz"
+      "410 MHz to 7.125 GHz, the FR1 sub-6 GHz range"
     ]
   },
   {
@@ -1251,10 +1251,10 @@
     "question_number": 97,
     "question_text": "In 5G NR, the subcarrier spacing given by delta-f = 2^u x 15 kHz means that it:",
     "options": [
-      "Is fixed at 15 kHz for every deployment",
-      "Decreases as the numerology u increases",
+      "Remains fixed at 15 kHz for a typical sub-6 GHz 5G NR deployment",
+      "Decreases steadily as the numerology index u increases in value",
       "Scales flexibly with the numerology u (e.g., 15, 30, 60, 120 kHz)",
-      "Depends only on the carrier frequency band"
+      "Depends primarily on the carrier frequency band rather than the numerology"
     ],
     "correct_answer": [
       "Scales flexibly with the numerology u (e.g., 15, 30, 60, 120 kHz)"
@@ -1290,13 +1290,13 @@
     "question_number": 100,
     "question_text": "To increase spectral efficiency, the 5G NR physical layer adopts which channel-coding techniques?",
     "options": [
-      "Convolutional and Reed-Solomon coding only",
-      "Turbo coding, exactly as used in LTE, only",
-      "No channel coding at all",
-      "Polar coding and LDPC coding"
+      "Convolutional coding and Reed-Solomon coding, inherited unchanged from earlier standards",
+      "Turbo coding, carried over unchanged from the LTE physical layer",
+      "No dedicated channel coding scheme, relying purely on modulation for robustness",
+      "Polar coding for control channels and LDPC coding for data channels"
     ],
     "correct_answer": [
-      "Polar coding and LDPC coding"
+      "Polar coding for control channels and LDPC coding for data channels"
     ]
   }
 ]
