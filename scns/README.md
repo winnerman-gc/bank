@@ -57,8 +57,9 @@ JSON matches the format used by the other practice sites in this repository.
 
 ## Question & answer PDF
 
-`TE456-NTN-MCQs-with-answers.pdf` is a printable copy of all 100 questions with
-their options and the correct answer marked. Regenerate it with:
+`TE456-NTN-MCQs-with-answers.pdf` is a printable copy of all 200 questions
+(both Part 1 and Part 2 banks) with their options and the correct answer
+marked. Regenerate it with:
 
 ```bash
 python3 make_pdf.py
