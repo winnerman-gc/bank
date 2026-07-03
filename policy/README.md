@@ -1,8 +1,9 @@
 # Telecommunications Policy & Regulation - MCQ Practice
 
 A static MCQ practice site covering the TE 452 / TE 462 telecommunications
-regulation course material. It is two 100-question banks (`compiled.json` and
-`compiled_2.json`, 200 questions total) spanning four themed areas:
+regulation course material. It is three 100-question banks (`compiled.json`,
+`compiled_2.json` and `compiled_3.json`, 300 questions total) spanning four
+themed areas:
 
 | Area | Focus |
 | ---- | ----- |
@@ -41,17 +42,22 @@ rote recall, with plausible distractors built around common misconceptions.
 
 ## Rebuilding the question bank
 
-`compiled.json` is generated from `build_questions.py`:
+Each bank is generated from its own build script — `build_questions.py`,
+`build_questions_2.py` and `build_questions_3.py` respectively:
 
 ```bash
 python3 build_questions.py
+python3 build_questions_2.py
+python3 build_questions_3.py
 ```
 
-The script holds every question as
+Each script holds every question as
 `(question_text, correct_answer, [distractor, distractor, distractor])` and
 places the correct answer at a balanced, reproducible position so the key
-(A/B/C/D) is evenly distributed across the bank (25 / 25 / 25 / 25). The output
-JSON matches the format used by the other practice sites in this repository:
+(A/B/C/D) is evenly distributed across the bank (25 / 25 / 25 / 25). Distractors
+are written to avoid answer-guessability tells (comparable option lengths, no
+absolutist wording). The output JSON matches the format used by the other
+practice sites in this repository:
 
 ```json
 {
@@ -65,7 +71,7 @@ JSON matches the format used by the other practice sites in this repository:
 ## Question & answer PDF
 
 `TE452-TE462-Policy-Regulation-MCQs-with-answers.pdf` is a printable copy of
-all 200 questions (both Part 1 and Part 2 banks) with their options and the
+all 300 questions (Part 1, Part 2 and Part 3 banks) with their options and the
 correct answer marked. Regenerate it with:
 
 ```bash

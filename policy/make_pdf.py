@@ -15,10 +15,11 @@ import fitz  # PyMuPDF
 SOURCES = [
     ("compiled.json", "Part 1"),
     ("compiled_2.json", "Part 2"),
+    ("compiled_3.json", "Part 3"),
 ]
 OUT = "TE452-TE462-Policy-Regulation-MCQs-with-answers.pdf"
 TITLE = "TE 452 / TE 462 - Telecommunications Policy & Regulation"
-SUBTITLE = "200 Multiple-Choice Questions with Answers"
+SUBTITLE = "300 Multiple-Choice Questions with Answers"
 
 CSS = """
 body { font-family: sans-serif; color: #14213a; }
