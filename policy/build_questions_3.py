@@ -144,13 +144,12 @@ SET1 = [
       "Market economy",
       "Mixed economy"]),
 
-    ("Supporters of the market economy argue that when buyers and sellers each pursue their own "
-     "interest, competition and prices tend to guide resources toward valued uses. This "
-     "coordinating tendency is often referred to as the:",
-     "Invisible hand of the market",
-     ["Central plan of the state",
-      "Fixed rule of inherited custom",
-      "Visible hand of the regulator"]),
+    ("The material states that market economies are founded on the principle that economic "
+     "efficiency and personal well-being reach their highest levels when:",
+     "Individuals are free to follow their own interests as buyers and sellers trading willingly",
+     ["A central authority sets output, earnings and consumption to direct the economy's resources",
+      "Inherited custom and community leaders settle how goods are produced and shared out",
+      "The state owns the principal industries and coordinates production through a single plan"]),
 
     ("A defining assumption of a perfectly competitive market is that:",
      "Many firms sell an essentially identical product, so no single firm sets the price",
@@ -178,36 +177,34 @@ SET1 = [
       "Step back from oversight and let the firm price the service as it sees fit",
       "Take the firm and its rivals across the economy into full public ownership"]),
 
-    ("A factory sells its output cheaply but discharges untreated waste that harms downstream "
-     "communities whose losses it does not pay for. This gap between private and social cost is "
-     "an example of a market failure known as a:",
-     "Negative externality",
-     ["Positive externality",
-      "Public good",
-      "Price ceiling"]),
+    ("Elasticity measures how much buyers and sellers respond to changes in market conditions. "
+     "The supply of a good is described as inelastic when:",
+     "The quantity supplied responds just slightly to a change in the good's price",
+     ["The quantity supplied responds substantially to a change in the good's price",
+      "The quantity demanded responds substantially to a change in the good's price",
+      "The price of the good stays fixed while the quantity supplied moves sharply"]),
 
-    ("On a supply-and-demand diagram, the area between the demand curve and the market price, up "
-     "to the quantity traded, measures:",
-     "Consumer surplus, the gain buyers get above what they actually pay",
-     ["Producer surplus, the gain sellers get above their marginal cost",
-      "Tax revenue, the amount the government raises from the market",
-      "Deadweight loss, the value of trades that fail to take place"]),
+    ("At the equilibrium price, the quantity buyers are willing to buy exactly balances the "
+     "quantity sellers are willing to sell. For this reason the equilibrium price is also "
+     "called the:",
+     "Market-clearing price, since it just clears the market of shortage or surplus",
+     ["Price ceiling, a legal maximum that is set below the market equilibrium price",
+      "Price floor, a legal minimum that is set above the market equilibrium price",
+      "Reservation price, the most that a single buyer is prepared to pay for one unit"]),
 
-    ("Compared with the competitive outcome, a profit-maximising monopoly restricts output and "
-     "raises price. The value of the mutually beneficial trades that are lost as a result is "
-     "referred to as the:",
-     "Deadweight loss caused by the monopoly",
-     ["Producer surplus captured by the monopoly",
-      "Consumer surplus retained by the buyers",
-      "Tax incidence shared across the market"]),
+    ("The material notes that, besides breaking up monopolies to secure lower prices and higher "
+     "output, governments sometimes create a monopoly deliberately by:",
+     "Issuing patents that grant inventors the right to market their inventions",
+     ["Requiring rival firms to share one network at a fixed regulated access price",
+      "Capping the retail prices that competing firms in the industry may charge",
+      "Splitting a large dominant firm into several smaller competing businesses"]),
 
-    ("Because society's resources are limited while people's wants are not, every choice to use "
-     "resources one way forgoes the next-best alternative. Economists call the value of that "
-     "forgone alternative the:",
-     "Opportunity cost of the choice",
-     ["Marginal revenue of the choice",
-      "Sunk cost of the choice",
-      "Fixed cost of the choice"]),
+    ("In an industry served by a single monopoly firm rather than many competing firms, one of "
+     "the socially harmful outcomes identified in the material is that the monopoly firm:",
+     "Supplies its output less efficiently and at a higher cost than a competitive industry would",
+     ["Supplies a larger output and charges a distinctly lower price than a competitive industry would",
+      "Supplies the same output and charges the same price as a competitive industry would",
+      "Supplies its output at the low cost and high efficiency typical of competitive firms"]),
 ]
 
 # ---------------------------------------------------------------------------
@@ -285,8 +282,8 @@ SET2 = [
       "Competition regulation",
       "Voluntary self-regulation"]),
 
-    ("Requiring operators to carry emergency calls and to meet content rules judged to serve the "
-     "public interest is an example of which basic form of regulation?",
+    ("Which basic form of regulation seeks to achieve certain objectives simply because they are "
+     "believed to be in the public interest?",
      "Public policy regulation",
      ["Technical standardization",
       "Competition regulation",
