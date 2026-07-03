@@ -1,8 +1,8 @@
 # Telecommunications Policy & Regulation - MCQ Practice
 
 A static MCQ practice site covering the TE 452 / TE 462 telecommunications
-regulation course material. It is a single bank of 100 questions
-(`compiled.json`) spanning four themed areas:
+regulation course material. It is two 100-question banks (`compiled.json` and
+`compiled_2.json`, 200 questions total) spanning four themed areas:
 
 | Area | Focus |
 | ---- | ----- |
@@ -60,6 +60,16 @@ JSON matches the format used by the other practice sites in this repository:
   "options": ["...", "...", "...", "..."],
   "correct_answer": ["..."]
 }
+```
+
+## Question & answer PDF
+
+`TE452-TE462-Policy-Regulation-MCQs-with-answers.pdf` is a printable copy of
+all 200 questions (both Part 1 and Part 2 banks) with their options and the
+correct answer marked. Regenerate it with:
+
+```bash
+python3 make_pdf.py
 ```
 
 ## Notes
