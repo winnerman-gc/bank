@@ -49,7 +49,7 @@ GROUP_E = [
 
     ("3GPP Release 17 is significant to NTN because it:",
      "Introduced the first standardised 5G NR enhancements specifically for satellite access, including timing and Doppler adaptations",
-     ["Defined the baseline 5G NR air interface itself, which did not yet include any satellite-specific provisions",
+     ["Defined the baseline 5G NR air interface itself, which did not yet include satellite-specific provisions",
       "Was the release that shelved the NTN study item proposed earlier, postponing satellite work indefinitely to a much later, unscheduled 3GPP release",
       "Focused mainly on mmWave terrestrial small-cell enhancements, with satellite access left for a future release"]),
 
@@ -65,7 +65,7 @@ GROUP_E = [
      "Offload or supplement congested terrestrial cells, providing capacity relief and backup connectivity",
      ["Take over as the primary network indefinitely once terrestrial capacity is exceeded, retiring the terrestrial cells",
       "Deliver lower round-trip latency than a terrestrial macro cell, thanks to its wide beam footprint",
-      "Operate on the same spectrum as the terrestrial network without any coordination or interference management"]),
+      "Operate on the same spectrum as the terrestrial network with minimal coordination or interference management"]),
 
     ("As satellite altitude increases, the coverage footprint of a single satellite:",
      "Increases, but at the cost of longer propagation delay and higher free-space path loss",
@@ -110,7 +110,7 @@ GROUP_E = [
      "Increase the power spectral density within each beam and enable frequency reuse across spatially separated beams",
      ["Lower the satellite's overall power consumption by shutting down amplifiers between transmissions",
       "Illuminate the satellite's entire visible Earth disc simultaneously from one wide antenna element",
-      "Remove any need for frequency coordination between beams, since adjacent spot beams are assumed not to share the same frequency"]),
+      "Remove the need for frequency coordination between beams, since adjacent spot beams are assumed not to share the same frequency"]),
 
     ("3GPP defines two categories of NTN UE based on their ability to assist Doppler and "
      "timing compensation. These are:",
@@ -146,13 +146,13 @@ GROUP_E = [
 
     ("Maritime vessels in open ocean beyond terrestrial coastal coverage rely on NTN for:",
      "Broadband internet, voice, safety and vessel-tracking services",
-     ["VHF terrestrial radio connections to land-based towers, which work solely within sight of the coastline",
+     ["VHF terrestrial radio connections to land-based towers, which work within a short range of the coastline",
       "Fibre-optic undersea cable connections spliced directly into the vessel's onboard equipment",
       "Microwave line-of-sight radio links relayed ship-to-ship until a coastal station is reached"]),
 
     ("In-flight connectivity (IFC) for commercial aircraft is provided by NTN because:",
      "Aircraft at cruise altitude are beyond the range of terrestrial networks, requiring satellite links for passenger and cockpit communications",
-     ["Aviation regulations require commercial aircraft to rely solely on terrestrial cellular towers for connectivity",
+     ["Aviation regulations require commercial aircraft to rely on terrestrial cellular towers relayed between airports for connectivity",
       "Aircraft fuselage-mounted antennas are physically incompatible with the frequency bands used by NTN satellites, requiring a redesigned antenna array",
       "In-flight connectivity is delivered over long-range HF radio links rather than through satellite transponders"]),
 
@@ -160,7 +160,7 @@ GROUP_E = [
      "terminals because:",
      "The received signal polarization is independent of the terminal's physical orientation, simplifying the antenna design",
      ["Circular polarization experiences measurably less rain attenuation than linear polarization at the same frequency",
-      "Linear polarization signals cannot be picked up by the feed horns used in typical satellite antennas",
+      "Linear polarization signals are rejected by the feed horns used in typical satellite antennas",
       "Circular polarization antennas achieve inherently higher peak gain than equivalent linear polarization antennas"]),
 
     ("The OneWeb LEO constellation differs from Starlink in that OneWeb focuses on:",
@@ -173,7 +173,7 @@ GROUP_E = [
      "by:",
      "Splitting the TCP connection into a terrestrial segment and a satellite segment, hiding the large satellite RTT from the end-to-end TCP feedback loop",
      ["Boosting the satellite's transmit power whenever congestion is detected, so packets arrive before timers expire",
-      "Replacing standard TCP with a proprietary transport protocol running solely on the UE, leaving the server unmodified",
+      "Replacing standard TCP with a proprietary transport protocol running on the UE alone, leaving the server unmodified",
       "Cutting the number of acknowledgement packets the server generates, though this does nothing to shorten the underlying satellite propagation delay"]),
 
     ("Which NTN platform offers the most rapid deployment and easiest recovery after "
@@ -210,13 +210,13 @@ GROUP_F = [
 
     ("A sun-synchronous orbit is used by Earth-observation satellites because:",
      "The orbital plane precesses at the same rate as the Earth's revolution around the Sun, keeping the local solar illumination time constant over each pass",
-     ["The satellite actually orbits the Sun directly rather than the Earth, giving it continuous solar exposure",
+     ["The satellite actually orbits the Sun directly rather than the Earth, following a heliocentric trajectory timed so that one hemisphere stays continuously lit for imaging",
       "The satellite remains fixed above the same point on the Earth's surface continuously, like a geostationary satellite in an equatorial orbit",
       "The satellite's solar panels are mechanically fixed perpendicular to the Sun for the entire mission by orbit design alone"]),
 
     ("The Van Allen radiation belts are a concern for satellite designers because:",
      "They are zones of trapped high-energy charged particles that can degrade semiconductor electronics and solar cells",
-     ["They are regions of charged dust that cause rain-like attenuation on Ku-band downlink signals",
+     ["They are regions of charged interstellar dust that scatter Ku-band downlink signals and produce rain-like attenuation across the whole coverage footprint",
       "They form a shielding layer that blocks most radio transmissions from reaching geostationary altitude",
       "They are dense cloud layers in the upper troposphere that scatter and absorb microwave signals"]),
 
@@ -246,13 +246,13 @@ GROUP_F = [
      "Both the satellite and the terminal are effectively stationary relative to each other — the satellite's angular velocity matches the Earth's rotation",
      ["GEO satellites orbit slowly enough that their absolute velocity, not their relative velocity to the ground, is assumed to be effectively zero in a typical mission scenario",
       "Doppler shift is actively cancelled inside the transponder's frequency-conversion stage before retransmission",
-      "GEO satellites broadcast a dedicated pilot tone that ground receivers use to null out any residual Doppler shift"]),
+      "GEO satellites broadcast a dedicated pilot tone that ground receivers use to null out the residual Doppler shift"]),
 
     ("The elevation angle of a satellite as seen from a ground station determines:",
      "The length of the signal path through the atmosphere; higher elevation means a shorter atmospheric path and less attenuation",
      ["The satellite's orbital altitude above mean sea level, independent of the ground station's location",
       "The satellite's velocity relative to the ground station, which sets the Doppler shift rather than the path length",
-      "The total number of other satellites simultaneously visible in the sky from that ground station"]),
+      "The total number of other satellites simultaneously visible in the sky, since a higher elevation angle is assumed to bring more spacecraft into view at the same time"]),
 
     ("Link margin in a satellite system is defined as:",
      "The excess of received Eb/N0 (or C/N0) above the minimum threshold required for the specified bit-error rate",
@@ -289,7 +289,7 @@ GROUP_F = [
 
     ("GEO satellites have poor coverage poleward of approximately ±75° latitude because:",
      "They orbit in the equatorial plane, so the elevation angle seen from high latitudes is very low, below the horizon or near it",
-     ["The Van Allen radiation belts are assumed to block radio propagation specifically over the polar regions",
+     ["The Van Allen radiation belts are assumed to block radio propagation over the polar regions, absorbing the downlink before it reaches high-latitude ground receivers",
       "International spectrum regulations are assumed to prohibit GEO satellite transmissions above 75° latitude",
       "Ionospheric absorption near the poles is assumed to be so severe that essentially no signal reaches the ground"]),
 
@@ -329,7 +329,7 @@ GROUP_F = [
     ("Satellite eclipse occurs when the Earth's shadow blocks sunlight from reaching the "
      "satellite. During eclipse, the satellite continues operating because:",
      "Onboard batteries are charged during sunlit periods and supply power during eclipse",
-     ["Solar panels are assumed to store energy chemically within themselves, removing any need for separate batteries",
+     ["Solar panels are assumed to store energy chemically within themselves, removing the need for separate batteries",
       "A backup radioisotope power unit is assumed to switch on once eclipse begins, without needing stored battery charge",
       "The satellite shuts its payload power down to zero during eclipse and simply waits for sunlight to return"]),
 
@@ -343,7 +343,7 @@ GROUP_F = [
      "determined by:",
      "The weaker of the uplink and downlink, since the total signal-to-noise ratio is dominated by the noisier hop",
      ["The direct sum of the uplink and downlink C/N ratios once both are converted to linear scale",
-      "The uplink alone, on the assumption that the satellite's transponder amplifies the downlink without adding any noise",
+      "The uplink alone, on the assumption that the satellite's transponder amplifies the downlink without adding noise of its own",
       "The downlink alone, on the assumption that the uplink carries a comfortable margin in most practical link designs"]),
 
     ("Polarization diversity allows a satellite to reuse the same frequency band twice by "
@@ -369,12 +369,12 @@ GROUP_G = [
      "Propagation delays of tens to hundreds of milliseconds must be pre-compensated so that uplink transmissions arrive at the gNB within the correct slot boundary",
      ["The satellite's onboard clock is assumed to run measurably faster than the ground station's reference clock",
       "Timing advance is applied to delay the downlink signal so that it matches the user's ground location",
-      "Timing advance is needed solely for stationary UEs and is switched off the moment a UE begins moving, unlike the fixed procedure used in terrestrial NR"]),
+      "Timing advance is needed just for stationary UEs and is switched off the moment a UE begins moving, unlike the fixed procedure used in terrestrial NR"]),
 
     ("The PRACH (Physical Random Access Channel) preamble design is modified for NTN by:",
      "Extending the preamble length and guard period to accommodate the large round-trip propagation delay, preventing preamble collisions",
      ["Shortening the preamble and guard period to cut overhead, on the assumption that a shorter window suits long delays",
-      "Replacing the Zadoff-Chu preamble sequence with a CDMA spreading code borrowed from 3G systems",
+      "Replacing the Zadoff-Chu preamble sequence with a CDMA spreading code borrowed from 3G systems, which is assumed to tolerate the long propagation delay better",
       "Moving the PRACH transmission to the downlink direction, where the gNB rather than the UE originates it"]),
 
     ("The fundamental problem HARQ faces in a GEO NTN system is that:",
@@ -400,12 +400,12 @@ GROUP_G = [
      "area changes as the satellite passes overhead. 3GPP addresses this by:",
      "Distinguishing between Earth-fixed and Earth-moving cell identities, and adapting cell re-selection and handover procedures accordingly",
      ["Assigning a fixed, permanent cell identity to each geographic point on Earth, independent of which satellite passes overhead",
-      "Requiring the UE to fall back temporarily to a terrestrial network during each cell transition",
+      "Requiring the UE to fall back temporarily to a terrestrial network during each cell transition, then re-registering with the satellite once the beam has swept past",
       "Removing the cell concept from NTN altogether and replacing it with continuous satellite-based tracking"]),
 
     ("Conditional Handover (CHO) is particularly beneficial in NTN because:",
      "The network can prepare the target cell in advance and trigger execution automatically when conditions are met, avoiding added signalling latency on a long-RTT link",
-     ["Conditional handover is assumed to require a very short RTT, which would actually suit GEO rather than LEO",
+     ["Conditional handover is assumed to require a very short RTT to exchange measurement reports, a condition that would actually suit a GEO deployment far better than a fast-moving LEO one",
       "Conditional handover is prohibited under NTN specifications, which instead rely on fast re-registration procedures",
       "Conditional handover applies solely to UEs that are physically moving on the ground, and offers no benefit against satellite-induced signalling latency"]),
 
@@ -426,14 +426,14 @@ GROUP_G = [
     ("In the RLC layer, the NTN large RTT creates an issue analogous to the TCP window "
      "problem, because:",
      "The RLC ARQ window may need to be enlarged to allow enough outstanding unacknowledged PDUs so that throughput is not stalled waiting for acknowledgements",
-     ["RLC ARQ is switched off for NTN links, which removes any window-size constraint from the resulting throughput calculation",
-      "The RLC window size is assumed to have no bearing on achievable throughput, regardless of the link's RTT",
+     ["RLC ARQ is switched off for NTN links, which removes the window-size constraint from the resulting throughput calculation",
+      "The RLC window size is assumed to have no bearing on achievable throughput, since the transmitter is thought to keep sending fresh PDUs while it waits for delayed acknowledgements",
       "The RLC sublayer itself was removed from the NTN protocol stack as part of the Release 17 specifications"]),
 
     ("In LEO NTN, paging areas tend to be larger than in terrestrial networks because:",
      "Satellite footprints cover vast geographic areas, and using large paging areas reduces the frequency of tracking area updates as the satellite moves",
      ["LEO satellites are assumed to have limited onboard resources, capping the number of UEs that can be paged at once",
-      "Larger paging areas are assumed to reduce the total data volume that needs to be transmitted to each UE",
+      "Larger paging areas are assumed to reduce the total data volume transmitted to each UE by letting the network address several tracking areas with a single compressed message",
       "Paging in NTN uses procedures and area sizes carried over unchanged from terrestrial 5G networks, ignoring the satellite footprint size"]),
 
     ("Open-loop power control is preferred over closed-loop power control for NTN uplinks "
@@ -462,31 +462,31 @@ GROUP_G = [
      "A wider subcarrier spacing means the Doppler shift is a smaller fraction of the subcarrier bandwidth, reducing ICI",
      ["Larger subcarrier spacing shortens the OFDM symbol duration, which is assumed to give the channel more time to change within a symbol",
       "Lower numerology, meaning smaller subcarrier spacing, is assumed to be the generally preferred configuration for NTN links",
-      "Doppler shift is assumed to be unrelated to subcarrier spacing in any OFDM-based system"]),
+      "Doppler shift is assumed to be unrelated to subcarrier spacing in a typical OFDM-based system"]),
 
     ("Gateway diversity in NTN means:",
      "Multiple geographically separated gateways can serve the same satellite, so if one suffers rain fade the satellite can switch to a clear-sky gateway automatically",
      ["Deploying multiple satellites to serve a single ground gateway simultaneously, rather than diversifying the gateway sites themselves geographically",
       "Installing redundant user terminals at each individual subscriber site to guard against local outages",
-      "Routing gateway traffic through two fully separate 5G core network instances for redundancy"]),
+      "Routing gateway traffic through two fully separate 5G core network instances, so that a failure of one core keeps the feeder link running through the second without a rain-fade switch"]),
 
     ("Ka-band is attractive for high-throughput satellite (HTS) systems because:",
      "Wide available bandwidths (~500 MHz or more per polarization) enable high throughput, despite more severe rain attenuation and stricter antenna pointing requirements than L- or S-band",
      ["Ka-band signals are assumed to be largely unaffected by rain, which would make the band especially well suited to tropical deployments",
       "Ka-band is assumed to offer narrower channel bandwidths than L-band, which would make it more spectrally efficient",
-      "Ka-band spectrum is assumed to be reserved solely for military satellite communications, excluding commercial use"]),
+      "Ka-band spectrum is assumed to be reserved for military satellite communications, which would exclude the commercial high-throughput services that in practice make the heaviest use of the band"]),
 
     ("NTN is well-suited for massive Machine-Type Communications (mMTC) IoT primarily "
      "because:",
      "IoT sensors are often deployed in remote or unpowered locations without terrestrial coverage, and their low data-rate and infrequent transmission requirements suit satellite capacity constraints",
      ["IoT sensors are assumed to demand ultra-high bandwidth that solely satellite trunk links are capable of supplying",
       "mMTC is assumed to require sub-millisecond latency, a target that specifically low-altitude LEO satellites are said to reliably reach",
-      "IoT devices are assumed to be unable to connect to any satellite because they lack an onboard GNSS receiver"]),
+      "IoT devices are assumed to be unable to connect to a satellite because they lack the onboard GNSS receiver needed for timing pre-compensation, treated here as mandatory hardware on the terminal side"]),
 
     ("When a UE moves between satellite beams or between satellites, 5G session continuity "
      "mechanisms ensure:",
      "PDU sessions are maintained without application-level disruption, through UPF selection and session anchor management in the 5G core",
-     ["PDU sessions are fully terminated and re-established from scratch each time the UE changes satellite or beam",
+     ["PDU sessions are fully terminated and re-established from scratch each time the UE changes satellite or beam, with the UE assigned a fresh IP address at each reconnection to the network",
       "Session continuity is managed solely by the UE's own software, without any coordination from the 5G core network",
       "Session continuity mechanisms are assumed to cover voice calls specifically, while data sessions are simply dropped"]),
 
@@ -499,7 +499,7 @@ GROUP_G = [
     ("Timing pre-compensation in NTN requires the UE to:",
      "Advance its uplink transmission by an amount equal to the computed propagation delay to the satellite, so the signal arrives within the expected slot window",
      ["Delay, rather than advance, its uplink transmission to compensate for the satellite's forward orbital motion",
-      "Request that the gNB shift the downlink timing by the propagation delay instead of adjusting its own uplink",
+      "Request that the gNB shift the downlink timing by the propagation delay instead of adjusting its own uplink, so that the two directions are realigned at the base station rather than at the terminal",
       "Transmit using a fixed timing offset of 0.5 ms that stays constant no matter how far away the satellite currently is in its orbit"]),
 
     ("Network slicing in 5G NTN allows different service types (broadband, IoT, emergency) "
@@ -517,7 +517,7 @@ GROUP_G = [
 
     ("The main factor limiting uplink throughput for direct-to-handset LEO NTN is:",
      "The constrained transmit power of handheld UEs (typically 23–26 dBm), which combined with the large path loss sets an upper bound on achievable uplink data rate",
-     ["The downlink direction, which is assumed to be the bottleneck across most NTN system designs regardless of UE type",
+     ["The downlink direction, which is assumed to be the bottleneck across most NTN system designs regardless of UE type, since the satellite's shared transmit power is split among many active users",
       "Excessive UE transmit power that is assumed to spill over and cause interference with neighbouring satellite constellations sharing the band",
       "The lack of multi-antenna MIMO support at the handset, which is assumed to force it into single-antenna transmission mode"]),
 ]
@@ -530,7 +530,7 @@ GROUP_H = [
      "for satellite broadband because it:",
      "Employs Adaptive Coding and Modulation (ACM), dynamically selecting the modulation and coding scheme to maximise throughput under varying link conditions",
      ["Uses a fixed QPSK modulation scheme at a constant code rate, chosen deliberately to keep receiver design simple",
-      "Is a 3GPP-defined standard, developed specifically as part of the 5G NR satellite access specifications",
+      "Is a 3GPP-defined standard developed as part of the 5G NR satellite access specifications, sharing its physical layer directly with the NR-NTN service-link waveform",
       "Is fundamentally a terrestrial digital broadcast standard, unrelated in design to any of the DVB satellite broadcast specifications"]),
 
     ("DVB-RCS2 (Return Channel via Satellite, Second Generation) defines:",
@@ -549,7 +549,7 @@ GROUP_H = [
      "disadvantage is:",
      "Spectrum is wasted when an assigned frequency sub-band is idle because its allocated user has no traffic to send",
      ["Each user is forced to transmit within the same shared time slot, which causes frequent collisions",
-      "FDMA is assumed to require tighter synchronization than any other multiple-access scheme, including TDMA",
+      "FDMA is assumed to require tighter synchronization than the other multiple-access schemes, including TDMA",
       "FDMA is assumed to be structurally incompatible with combining alongside TDMA on the same satellite transponder"]),
 
     ("Satellite TDMA (Time Division Multiple Access) requires tight time synchronization "
@@ -557,14 +557,14 @@ GROUP_H = [
      "Without synchronisation, bursts from different terminals will overlap in time at the satellite, causing interference",
      ["TDMA assigns a unique spreading code to each user, and synchronisation is what prevents those codes from colliding",
       "TDMA gives each terminal a separate carrier frequency, and timing synchronisation is what prevents frequency drift",
-      "Synchronisation is required solely at the ground gateway, since individual user terminals need no separate timing reference of their own"]),
+      "Synchronisation is required just at the ground gateway, since individual user terminals need no separate timing reference of their own"]),
 
     ("In CDMA (Code Division Multiple Access), all users share the same bandwidth "
      "simultaneously and are separated by unique spreading codes. A critical operational "
      "requirement is:",
      "Accurate uplink power control, so that no single user's signal overpowers the others (the near-far problem)",
      ["That no two users are ever scheduled to transmit within the same time slot, as in TDMA",
-      "That each user is instead assigned a dedicated separate frequency channel, as in FDMA",
+      "That each user is instead assigned a dedicated separate frequency channel, as in FDMA, so the spreading codes serve merely to label rather than to separate the users",
       "That the spreading codes assigned to each user are regenerated on a fixed one-millisecond cycle"]),
 
     ("OFDMA (Orthogonal Frequency Division Multiple Access) is used in the 5G NR "
@@ -614,7 +614,7 @@ GROUP_H = [
 
     ("Phased-array antennas are used in LEO satellite user terminals because they:",
      "Electronically steer narrow beams toward the moving satellite without mechanical movement, enabling rapid tracking at low latency",
-     ["Are generally cheaper to manufacture than an equivalent mechanically steered parabolic dish antenna",
+     ["Are generally cheaper to manufacture than an equivalent mechanically steered parabolic dish antenna, because the flat panel needs no motors, gimbals or moving reflector surface",
       "Radiate omnidirectionally and therefore need essentially no beam steering or pointing mechanism toward the satellite",
       "Are restricted to stationary, fixed-site installations and cannot be mounted on moving vehicles or aircraft"]),
 
@@ -622,12 +622,12 @@ GROUP_H = [
      "Form narrow, high-gain beams directed at individual UEs, greatly increasing spectral efficiency through spatial multiplexing",
      ["Deliberately reduce the antenna count compared with 4G LTE base stations, simplifying RF hardware",
       "Serve each UE within the cell from one single broad beam, which is assumed to simplify scheduling",
-      "Operate solely at sub-1 GHz frequencies, where the comparatively large wavelength is assumed to better suit big antenna arrays"]),
+      "Operate at sub-1 GHz frequencies alone, where the comparatively large wavelength is assumed to better suit big antenna arrays"]),
 
     ("Null-steering in multi-beam satellite antennas suppresses interfering signals by:",
      "Placing deep nulls in the antenna radiation pattern in the direction of interferers while maintaining high gain toward intended users",
      ["Reducing the satellite's overall transmit power across each beam simultaneously to lower interference",
-      "Assigning a distinct orthogonal frequency to each individual beam at the same time",
+      "Assigning a distinct orthogonal frequency to each individual beam at the same time, so that interferers land in a separate channel the receiver can filter out downstream",
       "Physically rotating the satellite's attitude to point its beams away from interfering sources on the ground"]),
 
     ("Higher-order modulation (e.g., 64QAM vs QPSK) transmits more bits per symbol but "
@@ -640,7 +640,7 @@ GROUP_H = [
     ("Adaptive Coding and Modulation (ACM) in a satellite system monitors the link quality "
      "and dynamically selects the MCS to:",
      "Maximise throughput when the link is good and switch to more robust coding during rain fade or shadowing",
-     ["Fix the modulation and coding scheme for the entire lifetime of a session, avoiding any signalling overhead",
+     ["Fix the modulation and coding scheme for the entire lifetime of a session, avoiding the signalling overhead",
       "Select the highest-order modulation available at each scheduling opportunity, irrespective of current link conditions",
       "Reduce the symbol rate during rain fade while deliberately holding the modulation order constant"]),
 
@@ -656,20 +656,20 @@ GROUP_H = [
      "consumption because:",
      "Solar panel area is constrained by mass and structural limits, and the high-power amplifiers (HPAs) are the dominant power consumers on the payload",
      ["Most communications satellites rely on onboard nuclear reactors, which supply effectively unlimited power to the payload",
-      "High-power amplifiers are assumed to consume a negligible fraction of power compared with the onboard processor",
+      "High-power amplifiers are assumed to consume a negligible fraction of power compared with the onboard digital processor, which is treated here as the dominant load on the spacecraft bus",
       "Solar panel technology is assumed to be mature enough that available power is rarely a limiting factor in modern payload design"]),
 
     ("In a hub-and-spoke satellite network, remote VSAT terminals communicate via the "
      "satellite to a central hub, which:",
      "Connects the satellite network to the terrestrial internet or PSTN and provides high-power, high-bandwidth uplinking to the satellite",
-     ["Is physically located in orbit as part of the satellite's own payload rather than on the ground",
+     ["Is physically located in orbit as part of the satellite's own payload rather than on the ground, routing each remote's traffic between spot beams before relaying it back downward",
       "Has been replaced by full-mesh inter-satellite-link topologies across most modern commercial satellite systems",
       "Needs no uplink of its own since it is assumed to solely receive traffic coming down from the satellite"]),
 
     ("A full-mesh satellite network enabled by ISLs or multi-spot beams allows:",
      "Terminals to communicate directly with each other through the satellite without routing through a terrestrial hub, reducing latency for terminal-to-terminal traffic",
      ["Each communication path to still be routed back through a single central hub, regardless of any ISLs present",
-      "Terminals to bypass the satellite altogether and exchange traffic through direct terrestrial radio links",
+      "Terminals to bypass the satellite altogether and exchange traffic through direct terrestrial radio links, falling back to the space segment just when the ground path happens to be unavailable",
       "Full-mesh connectivity to be achievable solely with GEO satellites, a capability assumed structurally unavailable to any LEO constellation"]),
 
     ("A satellite link availability specification of 99.9% per year means the link is "
@@ -684,13 +684,13 @@ GROUP_H = [
      "The uplink and downlink already use different frequency bands (e.g., 14 GHz up / 11 GHz down in Ku band), naturally accommodating simultaneous two-way transmission",
      ["TDD is assumed to require two separate satellite transponders while FDD needs just a single shared transponder",
       "TDD is assumed to be prohibited outright by ITU Radio Regulations for use in any commercial satellite communication system",
-      "FDD is assumed to require simpler transponder hardware overall than an equivalent TDD-based satellite payload"]),
+      "FDD is assumed to require simpler transponder hardware overall than an equivalent TDD-based satellite payload, since it avoids the fast transmit-receive switching that a shared band would demand"]),
 
     ("In 5G NR, PDSCH scheduling is performed by the gNB using:",
      "DCI (Downlink Control Information) transmitted on the PDCCH, which tells the UE which resource blocks carry its data in each slot",
      ["A fixed, static resource assignment configured once at network deployment and left unchanged thereafter",
       "Uplink control signalling that the UE itself sends to reserve its own downlink resource blocks",
-      "Random access preambles transmitted on the PRACH, which are assumed to directly initiate PDSCH scheduling without any DCI grant"]),
+      "Random access preambles transmitted on the PRACH, which are assumed to directly initiate PDSCH scheduling without a DCI grant"]),
 ]
 
 # All 100 Part-2 questions compiled into a single bank.

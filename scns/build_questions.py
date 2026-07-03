@@ -88,7 +88,7 @@ GROUP_A = [
     ("Deploying terrestrial base stations across sparsely populated deserts, mountains and "
      "oceans is generally avoided mainly because:",
      "It is not cost-effective and often lacks a viable business case",
-     ["Radio waves cannot physically travel over open water",
+     ["Salt-water spray corrodes tower electronics within weeks of installation",
       "Spectrum is legally unavailable outside cities",
       "Satellites legally prohibit ground towers in those areas"]),
 
@@ -403,7 +403,7 @@ GROUP_C = [
      "Incorporates gNB functions onboard, terminating the Uu interface at the satellite",
      ["Simply amplifies and frequency-converts the signal, with no onboard processing",
       "Removes the need for a ground-based gateway station between hops",
-      "Cannot support any inter-satellite links due to onboard hardware limits"]),
+      "Requires the ground gateway to re-decode the signal a second time after the satellite"]),
 
     ("A key latency advantage of the regenerative architecture is that:",
      "The single-way latency includes only the service link, reducing round-trip time",
@@ -432,9 +432,9 @@ GROUP_C = [
 
     ("In a multi-connectivity NTN scenario, the NTN UE:",
      "Simultaneously communicates with multiple radio or core networks",
-     ["Connects to exactly one satellite at any given time, with no fallback",
-      "Relies on a wired backhaul connection instead of any radio link",
-      "Cannot connect to any terrestrial network alongside the satellite link"]),
+     ["Hands over to a single new satellite each pass, using one link at a time",
+      "Relies on a wired backhaul connection rather than a satellite radio link",
+      "Drops the terrestrial connection whenever the satellite link is active"]),
 
     ("For direct NTN access to handheld UEs within FR1, the commonly used frequency bands "
      "are:",
@@ -575,8 +575,8 @@ GROUP_D = [
     ("Unlike a transparent repeater, a regenerative (processing) repeater:",
      "Demodulates the uplink to baseband, corrects errors, then remodulates for the downlink",
      ["Simply amplifies and forwards everything it receives, including any accumulated noise",
-      "Cannot translate the uplink carrier frequency to a different downlink frequency",
-      "Contains no power amplifiers, relying purely on passive reflection of the signal"]),
+      "Uses the same carrier frequency for the uplink and downlink to save bandwidth",
+      "Relies on passive reflectors rather than active power amplifiers to forward the signal"]),
 
     ("A benefit of a regenerative repeater over a bent-pipe one is that it:",
      "Cleans the signal by decoding and correcting errors instead of forwarding noise",
