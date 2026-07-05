@@ -1,0 +1,1614 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "In the context of this course, the phrase \"digital signal processing\" is best understood as:",
+    "options": [
+      "The branch of electronics devoted to designing analog amplifiers and filters",
+      "The study of how physical sensors convert measured quantities into voltages",
+      "The theories, methods and algorithms for processing signals in digital form",
+      "The fabrication of microprocessor chips from raw semiconductor wafer material"
+    ],
+    "correct_answer": [
+      "The theories, methods and algorithms for processing signals in digital form"
+    ]
+  },
+  {
+    "question_number": 2,
+    "question_text": "The term \"digital signal processor\" (as opposed to \"digital signal processing\") refers to:",
+    "options": [
+      "A kind of microprocessor used to implement digital signal processing algorithms",
+      "The mathematical algorithm through which an input signal is passed for its result",
+      "The analog front-end that band-limits a signal before it reaches the converter",
+      "The high-level software language in which the processing routines are written"
+    ],
+    "correct_answer": [
+      "A kind of microprocessor used to implement digital signal processing algorithms"
+    ]
+  },
+  {
+    "question_number": 3,
+    "question_text": "An analog signal is best characterised as one that is:",
+    "options": [
+      "Continuous in both time and magnitude",
+      "Continuous in time but discrete in magnitude",
+      "Discrete in time but continuous in magnitude",
+      "Discrete in both time and magnitude"
+    ],
+    "correct_answer": [
+      "Continuous in both time and magnitude"
+    ]
+  },
+  {
+    "question_number": 4,
+    "question_text": "A digital signal is best characterised as one that is:",
+    "options": [
+      "Discrete in both time and magnitude",
+      "Continuous in both time and magnitude",
+      "Continuous in time but discrete in magnitude",
+      "Discrete in time but continuous in magnitude"
+    ],
+    "correct_answer": [
+      "Discrete in both time and magnitude"
+    ]
+  },
+  {
+    "question_number": 5,
+    "question_text": "Before a real-world analog signal can be processed digitally, two transformations must be applied in order. They are:",
+    "options": [
+      "Quantize the signal in amplitude first, then sample it at discrete time points",
+      "Sample the signal at discrete time points, then quantize the sample values",
+      "Amplify the signal to full scale, then shift its frequency into a lower band",
+      "Filter the signal to remove noise, then store it directly in continuous form"
+    ],
+    "correct_answer": [
+      "Sample the signal at discrete time points, then quantize the sample values"
+    ]
+  },
+  {
+    "question_number": 6,
+    "question_text": "Quantization of a sampled signal is normally carried out by:",
+    "options": [
+      "Delaying each sample value by one sampling interval before it is stored",
+      "Averaging each sample value together with its two nearest neighbours",
+      "Rounding or truncating each sample value to an available level",
+      "Multiplying each sample value by a fixed scaling constant before storage"
+    ],
+    "correct_answer": [
+      "Rounding or truncating each sample value to an available level"
+    ]
+  },
+  {
+    "question_number": 7,
+    "question_text": "Why must most real-world signals be transformed before a DSP system can operate on them?",
+    "options": [
+      "Most real-world signals are already digital and merely need to be amplified",
+      "Most real-world signals are analog, while DSP works on signals in digital form",
+      "DSP systems can handle periodic signals but reject aperiodic ones outright",
+      "DSP systems require a signal to be expressed in the frequency domain first"
+    ],
+    "correct_answer": [
+      "Most real-world signals are analog, while DSP works on signals in digital form"
+    ]
+  },
+  {
+    "question_number": 8,
+    "question_text": "Which statement best captures the relationship between digitization and DSP that the course uses to motivate the subject?",
+    "options": [
+      "Digitization and DSP are competing techniques for handling the same signals",
+      "DSP is a narrow niche that has little bearing on the modern information technology field",
+      "Digitization underpins information technology, and its kernel is digital signal processing",
+      "Digitization replaced DSP once integrated circuits became widely available"
+    ],
+    "correct_answer": [
+      "Digitization underpins information technology, and its kernel is digital signal processing"
+    ]
+  },
+  {
+    "question_number": 9,
+    "question_text": "A key reason a digital system offers greater programmability than an analog system is that:",
+    "options": [
+      "A digital system needs no software at all once its hardware has been fixed",
+      "A digital system rewires its own internal circuits as its requirements change",
+      "An analog system is reconfigured purely by editing its onboard firmware code",
+      "A digital system can be changed by modifying software rather than hardware"
+    ],
+    "correct_answer": [
+      "A digital system can be changed by modifying software rather than hardware"
+    ]
+  },
+  {
+    "question_number": 10,
+    "question_text": "An engineer swaps a standard filter for an adaptive filter simply by loading new code, leaving the hardware untouched. This illustrates which advantage of digital systems?",
+    "options": [
+      "Programmability",
+      "Anti-noise performance",
+      "Large-scale integration",
+      "Real-time response"
+    ],
+    "correct_answer": [
+      "Programmability"
+    ]
+  },
+  {
+    "question_number": 11,
+    "question_text": "In a digital system, the precision of the processing is chiefly governed by:",
+    "options": [
+      "The tolerance ratings printed on the resistors and the capacitors used",
+      "The number of ADC bits, the processor word-length and the algorithm used",
+      "The ambient temperature and the humidity of the operating environment",
+      "The physical length of the wiring that connects the components together"
+    ],
+    "correct_answer": [
+      "The number of ADC bits, the processor word-length and the algorithm used"
+    ]
+  },
+  {
+    "question_number": 12,
+    "question_text": "Why is an analog system's precision considered harder to guarantee than a digital system's?",
+    "options": [
+      "Analog precision depends on component tolerances, such as resistors within 5% or capacitors within 20%",
+      "Analog precision is fixed by the bit count of its analog-to-digital converter alone",
+      "Analog components retain their exact printed rated values throughout their whole service life",
+      "Analog systems round each sample coarsely, discarding the finer detail of the signal"
+    ],
+    "correct_answer": [
+      "Analog precision depends on component tolerances, such as resistors within 5% or capacitors within 20%"
+    ]
+  },
+  {
+    "question_number": 13,
+    "question_text": "With respect to stability, how does a digital system typically compare with an analog one as temperature and humidity vary?",
+    "options": [
+      "The digital system drifts more because its logic gates are temperature-sensitive",
+      "The digital system shows essentially no variation across its rated operating range",
+      "Both systems drift by roughly the same amount for a given change in temperature",
+      "The digital system grows unstable while the analog system holds its values steady"
+    ],
+    "correct_answer": [
+      "The digital system shows essentially no variation across its rated operating range"
+    ]
+  },
+  {
+    "question_number": 14,
+    "question_text": "The characteristics of analog components such as resistors, capacitors and op-amps are a concern for stability because they:",
+    "options": [
+      "Change with temperature, humidity and similar environmental conditions",
+      "Grow hard to measure accurately once they are soldered onto a circuit board",
+      "Consume far more electrical power than the equivalent digital logic gates do",
+      "Can be readjusted afterwards by rewriting the controlling software routines"
+    ],
+    "correct_answer": [
+      "Change with temperature, humidity and similar environmental conditions"
+    ]
+  },
+  {
+    "question_number": 15,
+    "question_text": "The repeatability advantage of digital systems refers to the property that:",
+    "options": [
+      "A single digital unit can process many different inputs at the same time",
+      "A digital signal can be repeated indefinitely without needing any storage",
+      "Digital units detect and correct a wrong result soon after producing it",
+      "Identical digital units process the same input into the same output"
+    ],
+    "correct_answer": [
+      "Identical digital units process the same input into the same output"
+    ]
+  },
+  {
+    "question_number": 16,
+    "question_text": "Error-correcting codes are cited as an advantage of digital representation because they:",
+    "options": [
+      "Compress the data so that fewer bits need to be sent over the channel",
+      "Scramble the data so that unauthorised receivers are unable to read it",
+      "Convert the data back into an analog form that is suited to transmission",
+      "Add redundant bits so that introduced errors can be detected and corrected"
+    ],
+    "correct_answer": [
+      "Add redundant bits so that introduced errors can be detected and corrected"
+    ]
+  },
+  {
+    "question_number": 17,
+    "question_text": "Regarding fidelity in storage and transmission, the slides argue that:",
+    "options": [
+      "The fidelity of the analog medium exceeds that of the digital medium",
+      "Digital and analog media deliver essentially identical fidelity in practice",
+      "The fidelity of the digital medium is greater than that of the analog medium",
+      "Fidelity is governed mainly by the length of the transmission cable used"
+    ],
+    "correct_answer": [
+      "The fidelity of the digital medium is greater than that of the analog medium"
+    ]
+  },
+  {
+    "question_number": 18,
+    "question_text": "How does the course contrast analog and digital data compression?",
+    "options": [
+      "Analog compression is the genuinely lossless kind, whereas digital compression loses information",
+      "Neither analog nor digital compression is able to preserve the full information",
+      "Analog compression loses some information, whereas digital technology makes lossless compression possible",
+      "Digital compression suits images well but is not applicable to audio signals"
+    ],
+    "correct_answer": [
+      "Analog compression loses some information, whereas digital technology makes lossless compression possible"
+    ]
+  },
+  {
+    "question_number": 19,
+    "question_text": "The 3 kHz bandwidth limit applied to analog telephone lines is given as an example of:",
+    "options": [
+      "A lossless digital compression scheme applied to the line",
+      "An error-correcting code operating on the telephone line",
+      "Analog compression in which some information is lost",
+      "A sampling operation carried out before the quantization step"
+    ],
+    "correct_answer": [
+      "Analog compression in which some information is lost"
+    ]
+  },
+  {
+    "question_number": 20,
+    "question_text": "Which is listed as a genuine limitation of digital signal processing rather than an advantage?",
+    "options": [
+      "Digital systems drift heavily whenever the operating temperature changes",
+      "A/D and D/A conversion rates are not available for some applications, such as beyond GHz",
+      "Digital systems resist any reprogramming once they have been deployed out in the field",
+      "Digital systems are unable to store their data for later retrieval and use"
+    ],
+    "correct_answer": [
+      "A/D and D/A conversion rates are not available for some applications, such as beyond GHz"
+    ]
+  },
+  {
+    "question_number": 21,
+    "question_text": "One reason analog processing is still needed is real-time performance, because in an analog system:",
+    "options": [
+      "The processing time is set by the processor speed and the chosen algorithm",
+      "Aside from circuit delay, the processing happens in real time",
+      "The signal must first be sampled before any output can begin to appear",
+      "Each result must wait for a redundant error-correction pass to finish first"
+    ],
+    "correct_answer": [
+      "Aside from circuit delay, the processing happens in real time"
+    ]
+  },
+  {
+    "question_number": 22,
+    "question_text": "Why can analog systems still be preferred for very high-frequency signals such as microwave or light-wave signals?",
+    "options": [
+      "Analog systems can store such high-frequency signals far more compactly than digital ones",
+      "Such signals are limited by sample-and-hold, ADC and processor speeds, and fast ADCs cost a lot",
+      "Very high-frequency signals carry no useful information that is worth the effort of digitizing",
+      "Digital systems are designed to reject any signal lying above the standard audio band by rule"
+    ],
+    "correct_answer": [
+      "Such signals are limited by sample-and-hold, ADC and processor speeds, and fast ADCs cost a lot"
+    ]
+  },
+  {
+    "question_number": 23,
+    "question_text": "The remark that \"most signals in the real world are analog\" is used in the course to argue that:",
+    "options": [
+      "Analog signals are best kept in analog form rather than converted into digital form",
+      "DSP systems have by now made analog processing very nearly obsolete in practice",
+      "Real-world signals arrive already sampled by nature and so need no conversion step",
+      "Mixed-signal processing is needed to convert such signals into digital form for a DSP system"
+    ],
+    "correct_answer": [
+      "Mixed-signal processing is needed to convert such signals into digital form for a DSP system"
+    ]
+  },
+  {
+    "question_number": 24,
+    "question_text": "Base stations, switching centres and mobile phones are given as DSP applications under which broad area?",
+    "options": [
+      "Medical imaging",
+      "Satellite navigation",
+      "Consumer photography",
+      "Communications"
+    ],
+    "correct_answer": [
+      "Communications"
+    ]
+  },
+  {
+    "question_number": 25,
+    "question_text": "GPS and GIS are cited as DSP applications belonging to which area?",
+    "options": [
+      "Measurement and control",
+      "Satellite navigation",
+      "Military and safety",
+      "Consumer electronics"
+    ],
+    "correct_answer": [
+      "Satellite navigation"
+    ]
+  },
+  {
+    "question_number": 26,
+    "question_text": "Ultrasound, MRI and CT scanning are used in the slides as DSP examples in the field of:",
+    "options": [
+      "Medical imaging and analysis",
+      "Industrial measurement and control",
+      "Wireless communication systems",
+      "Satellite navigation and timing"
+    ],
+    "correct_answer": [
+      "Medical imaging and analysis"
+    ]
+  },
+  {
+    "question_number": 27,
+    "question_text": "MP3 audio decoding, digital cameras and HDTV are grouped in the slides under which application area?",
+    "options": [
+      "Military and safety",
+      "Consumer electronics",
+      "Biomedical analysis",
+      "Industrial control"
+    ],
+    "correct_answer": [
+      "Consumer electronics"
+    ]
+  },
+  {
+    "question_number": 28,
+    "question_text": "The general problem of signal analysis and processing is framed in the course as:",
+    "options": [
+      "Letting signals pass through systems and studying the response",
+      "Storing signals in memory and later retrieving them unchanged",
+      "Converting each signal into one single fixed reference frequency",
+      "Stripping the timing information from a signal before it is used"
+    ],
+    "correct_answer": [
+      "Letting signals pass through systems and studying the response"
+    ]
+  },
+  {
+    "question_number": 29,
+    "question_text": "The general strategy the course recommends for analysing a complicated signal through a system is to:",
+    "options": [
+      "Represent the signal as a sum of simple signals, get each response, then add the responses",
+      "Measure the output for the whole complicated signal without first decomposing it",
+      "Replace the whole system with a single resistor-and-capacitor network before analysing",
+      "Convert the input into one constant value before it is applied to the system"
+    ],
+    "correct_answer": [
+      "Represent the signal as a sum of simple signals, get each response, then add the responses"
+    ]
+  },
+  {
+    "question_number": 30,
+    "question_text": "A signal f(t) for which f(t) = 0 for all t < 0 is called:",
+    "options": [
+      "A periodic signal",
+      "A causal signal",
+      "An even signal",
+      "A singularity signal"
+    ],
+    "correct_answer": [
+      "A causal signal"
+    ]
+  },
+  {
+    "question_number": 31,
+    "question_text": "Multiplying an arbitrary (possibly non-causal) signal by the unit step u(t) has the effect of:",
+    "options": [
+      "Turning it into a causal signal that is zero for t < 0",
+      "Shifting it later in time by exactly one unit of time",
+      "Reflecting it about the vertical amplitude axis",
+      "Scaling its amplitude everywhere by a factor of two"
+    ],
+    "correct_answer": [
+      "Turning it into a causal signal that is zero for t < 0"
+    ]
+  },
+  {
+    "question_number": 32,
+    "question_text": "For the sinusoid f(t) = A sin(2 pi f t + phi), the quantity omega = 2 pi f is called the:",
+    "options": [
+      "Amplitude of the waveform",
+      "Start phase of the waveform in radians",
+      "Period of the waveform in seconds",
+      "Angular frequency in radians per second"
+    ],
+    "correct_answer": [
+      "Angular frequency in radians per second"
+    ]
+  },
+  {
+    "question_number": 33,
+    "question_text": "Why does the course classify a pure sinusoid as a non-causal signal?",
+    "options": [
+      "Its amplitude decays steadily toward zero as time increases",
+      "Being periodic, it has no start and no end in time",
+      "It is defined for negative values of time but not positive ones",
+      "It changes its frequency continuously as time goes on"
+    ],
+    "correct_answer": [
+      "Being periodic, it has no start and no end in time"
+    ]
+  },
+  {
+    "question_number": 34,
+    "question_text": "For the real exponential f(t) = e^(alpha t), the sign of alpha determines that the signal is:",
+    "options": [
+      "Growing when alpha < 0, and decaying when alpha > 0, for any real alpha",
+      "Periodic for each real value that alpha can happen to take on",
+      "Decaying when alpha < 0, constant when alpha = 0, and growing when alpha > 0",
+      "Constant at zero unless alpha happens to equal exactly one"
+    ],
+    "correct_answer": [
+      "Decaying when alpha < 0, constant when alpha = 0, and growing when alpha > 0"
+    ]
+  },
+  {
+    "question_number": 35,
+    "question_text": "For a complex exponential with alpha = sigma + j omega, the real part sigma governs the envelope so that the signal is:",
+    "options": [
+      "A pure sinusoid when sigma > 0, and a constant amplitude when sigma < 0",
+      "A constant-amplitude wave for each value that sigma may happen to take",
+      "A pure sinusoid when sigma = 0, growing when sigma > 0, and decaying (damped) when sigma < 0",
+      "A non-oscillatory signal for whatever value the frequency omega happens to take on"
+    ],
+    "correct_answer": [
+      "A pure sinusoid when sigma = 0, growing when sigma > 0, and decaying (damped) when sigma < 0"
+    ]
+  },
+  {
+    "question_number": 36,
+    "question_text": "A gate (rectangular) signal of width tau can be written using unit step signals as:",
+    "options": [
+      "The product of two shifted unit steps taken over the interval",
+      "The difference of two shifted unit steps, u(t + tau/2) - u(t - tau/2)",
+      "The integral of a single unit step evaluated over all of time",
+      "The derivative of a single unit step taken right at the origin"
+    ],
+    "correct_answer": [
+      "The difference of two shifted unit steps, u(t + tau/2) - u(t - tau/2)"
+    ]
+  },
+  {
+    "question_number": 37,
+    "question_text": "Why is the unit impulse delta(t) described as a singularity (generalized) function rather than a regular function?",
+    "options": [
+      "It takes a different finite constant value at each separate instant along the axis",
+      "It cannot be given an ordinary value even at t = 0 and is defined only through an integral",
+      "It stays non-zero over a wide but finite interval around the time origin",
+      "It is identical to the unit step function at each point along the time axis"
+    ],
+    "correct_answer": [
+      "It cannot be given an ordinary value even at t = 0 and is defined only through an integral"
+    ]
+  },
+  {
+    "question_number": 38,
+    "question_text": "Starting from a gate signal of width tau and unit area, the unit impulse delta(t) is obtained by:",
+    "options": [
+      "Shrinking the duration tau toward zero while keeping the area equal to one",
+      "Widening the duration tau while holding the pulse height fixed at one",
+      "Holding the duration fixed while raising the pulse height toward infinity",
+      "Averaging the gate signal over one full period of the waveform"
+    ],
+    "correct_answer": [
+      "Shrinking the duration tau toward zero while keeping the area equal to one"
+    ]
+  },
+  {
+    "question_number": 39,
+    "question_text": "As the width tau of the unit-area gate shrinks toward zero, its amplitude:",
+    "options": [
+      "Tends toward zero, so the impulse effectively vanishes from the signal",
+      "Tends toward infinity, so the impulse cannot be defined by a regular function",
+      "Stays fixed at one throughout the whole limiting process",
+      "Swings between plus one and minus one without ever settling down"
+    ],
+    "correct_answer": [
+      "Tends toward infinity, so the impulse cannot be defined by a regular function"
+    ]
+  },
+  {
+    "question_number": 40,
+    "question_text": "The sampling (sifting) property of the impulse follows from the facts that delta(t) is zero for t not equal to 0 and that:",
+    "options": [
+      "At t = 0 the other factor equals its value f(0), a constant, over the impulse",
+      "The impulse takes on a distinct value at each separate instant of time",
+      "The impulse integrates to a value of zero across the whole time axis",
+      "The impulse equals the unit step signal near the neighbourhood of the origin"
+    ],
+    "correct_answer": [
+      "At t = 0 the other factor equals its value f(0), a constant, over the impulse"
+    ]
+  },
+  {
+    "question_number": 41,
+    "question_text": "When the impulse is scaled as A*delta(t), the constant A is referred to as the:",
+    "options": [
+      "Angular frequency, equal to the rate of change of the impulse",
+      "Impulse intensity, equal to the area of the scaled impulse",
+      "Start phase, equal to the time offset applied to the impulse",
+      "Duration, equal to the width over which the impulse acts"
+    ],
+    "correct_answer": [
+      "Impulse intensity, equal to the area of the scaled impulse"
+    ]
+  },
+  {
+    "question_number": 42,
+    "question_text": "The integral of the unit impulse delta(t) is:",
+    "options": [
+      "Another impulse of twice the area",
+      "A decaying exponential signal",
+      "A constant equal to zero everywhere",
+      "The unit step signal"
+    ],
+    "correct_answer": [
+      "The unit step signal"
+    ]
+  },
+  {
+    "question_number": 43,
+    "question_text": "With respect to symmetry, the unit impulse delta(t) is:",
+    "options": [
+      "An odd function, so delta(t) = -delta(-t)",
+      "An even function, so delta(t) = delta(-t)",
+      "A causal function, zero for values of t below zero",
+      "A periodic function with some finite repetition period"
+    ],
+    "correct_answer": [
+      "An even function, so delta(t) = delta(-t)"
+    ]
+  },
+  {
+    "question_number": 44,
+    "question_text": "The course shows that any signal f(t) can be represented as:",
+    "options": [
+      "A single scaled copy of the unit step function of time",
+      "A product of two sinusoids lying at two different frequencies",
+      "A constant term plus one single decaying exponential term",
+      "A sum (limit of an integral) of shifted and weighted unit impulses"
+    ],
+    "correct_answer": [
+      "A sum (limit of an integral) of shifted and weighted unit impulses"
+    ]
+  },
+  {
+    "question_number": 45,
+    "question_text": "In approximating f(t) by narrow rectangles, the rectangle at t = k*(delta-tau) is represented as f(k*delta-tau)*(delta-tau)*delta(t - k*delta-tau). Making delta-tau smaller:",
+    "options": [
+      "Decreases the accuracy of the rectangle-based approximation",
+      "Increases the accuracy, becoming exact as delta-tau tends to d-tau",
+      "Leaves the accuracy of the approximation unchanged at each step",
+      "Removes the impulses entirely from the signal representation"
+    ],
+    "correct_answer": [
+      "Increases the accuracy, becoming exact as delta-tau tends to d-tau"
+    ]
+  },
+  {
+    "question_number": 46,
+    "question_text": "A system is linear if, for scaling and additivity, it satisfies:",
+    "options": [
+      "a*f1(t) + b*f2(t) produces a*y1(t) + b*y2(t)",
+      "f(t - t0) produces the shifted output y(t - t0) for any t0",
+      "The output equals the input multiplied by one fixed constant gain",
+      "f1(t)*f2(t) produces the product y1(t)*y2(t) for any two inputs"
+    ],
+    "correct_answer": [
+      "a*f1(t) + b*f2(t) produces a*y1(t) + b*y2(t)"
+    ]
+  },
+  {
+    "question_number": 47,
+    "question_text": "A system is time-invariant if:",
+    "options": [
+      "Shifting the input as f(t - t0) simply shifts the output to y(t - t0)",
+      "Scaling the input by a factor of a scales the output up to a*y(t)",
+      "Adding two separate inputs adds their two separate outputs",
+      "The output depends on the present value of the input alone"
+    ],
+    "correct_answer": [
+      "Shifting the input as f(t - t0) simply shifts the output to y(t - t0)"
+    ]
+  },
+  {
+    "question_number": 48,
+    "question_text": "Why are linear time-invariant (LTI) systems so central to this analysis method?",
+    "options": [
+      "Summing the responses to all the shifted, weighted impulses in f(t) works only for LTI systems",
+      "They form the sole class of systems capable of processing periodic input signals",
+      "They yield a valid output even without any known impulse response function being available",
+      "They convert each input signal into a single pure sinusoid at their output"
+    ],
+    "correct_answer": [
+      "Summing the responses to all the shifted, weighted impulses in f(t) works only for LTI systems"
+    ]
+  },
+  {
+    "question_number": 49,
+    "question_text": "The response of an LTI system to the unit impulse delta(t) is given a special name and symbol:",
+    "options": [
+      "The transfer function, denoted F(j*omega)",
+      "The unit step response, denoted u(t)",
+      "The unit impulse response, denoted h(t)",
+      "The system gain, denoted by the constant A"
+    ],
+    "correct_answer": [
+      "The unit impulse response, denoted h(t)"
+    ]
+  },
+  {
+    "question_number": 50,
+    "question_text": "Why is the impulse response h(t) regarded as such an important descriptor of an LTI system?",
+    "options": [
+      "Because it only gives the system response to a steady constant direct-current input",
+      "Because it fixes the system's operating frequency without needing any input",
+      "Because it lets you skip knowing the input signal when finding the output",
+      "Since any signal is a sum of shifted, weighted impulses, h(t) gives the response to any input"
+    ],
+    "correct_answer": [
+      "Since any signal is a sum of shifted, weighted impulses, h(t) gives the response to any input"
+    ]
+  },
+  {
+    "question_number": 51,
+    "question_text": "When an input f(t) passes through an LTI system with impulse response h(t), the output is written y(t) = f(t) * h(t), where the operation \"*\" denotes:",
+    "options": [
+      "Ordinary point-by-point multiplication",
+      "Convolution of f(t) and h(t)",
+      "Correlation of f(t) with itself",
+      "Simple addition of f(t) and h(t)"
+    ],
+    "correct_answer": [
+      "Convolution of f(t) and h(t)"
+    ]
+  },
+  {
+    "question_number": 52,
+    "question_text": "Convolution y(t) = f(t) * h(t) is built from the elementary LTI facts that delta(t) -> h(t) and that:",
+    "options": [
+      "A shifted impulse produces an unshifted, unscaled copy of h(t)",
+      "Any impulse produces the unit step response rather than h(t)",
+      "The impulse located at t = 0 alone produces a valid output",
+      "A shifted, scaled impulse a*delta(t - t0) produces a*h(t - t0)"
+    ],
+    "correct_answer": [
+      "A shifted, scaled impulse a*delta(t - t0) produces a*h(t - t0)"
+    ]
+  },
+  {
+    "question_number": 53,
+    "question_text": "How does the course contrast the decomposition used in time-domain analysis with that used in frequency-domain analysis?",
+    "options": [
+      "Time-domain uses shifted, weighted impulses; frequency-domain uses a sinusoid plus harmonics",
+      "Both of the approaches decompose the signal into shifted, weighted impulses in time",
+      "Time-domain analysis uses sinusoids and harmonics while frequency-domain uses impulses",
+      "Neither of the approaches decomposes the signal; each processes it as a single whole"
+    ],
+    "correct_answer": [
+      "Time-domain uses shifted, weighted impulses; frequency-domain uses a sinusoid plus harmonics"
+    ]
+  },
+  {
+    "question_number": 54,
+    "question_text": "The Fourier series is a tool that applies specifically to:",
+    "options": [
+      "Causal signals",
+      "Non-periodic signals",
+      "Periodic signals",
+      "Impulse signals"
+    ],
+    "correct_answer": [
+      "Periodic signals"
+    ]
+  },
+  {
+    "question_number": 55,
+    "question_text": "In frequency-domain analysis, a signal is decomposed into:",
+    "options": [
+      "A set of shifted and weighted impulse functions",
+      "A single decaying exponential component in time",
+      "A product of two unit step functions of time",
+      "A fundamental sinusoid together with its harmonics"
+    ],
+    "correct_answer": [
+      "A fundamental sinusoid together with its harmonics"
+    ]
+  },
+  {
+    "question_number": 56,
+    "question_text": "The sampling function that arises in the spectrum of a periodic rectangular waveform is:",
+    "options": [
+      "Sa(x) = sin(x)/x",
+      "Sa(x) = cos(x)/x",
+      "Sa(x) = x*sin(x)",
+      "Sa(x) = 1/(1 + x^2)"
+    ],
+    "correct_answer": [
+      "Sa(x) = sin(x)/x"
+    ]
+  },
+  {
+    "question_number": 57,
+    "question_text": "The Fourier transform is introduced as the tool needed when a signal is:",
+    "options": [
+      "Periodic, though repeating only over a very short period of time",
+      "Constant in both its time variable and its amplitude value",
+      "Non-periodic, formed as a periodic signal's period tends to infinity",
+      "Defined at only a single isolated instant along the time axis"
+    ],
+    "correct_answer": [
+      "Non-periodic, formed as a periodic signal's period tends to infinity"
+    ]
+  },
+  {
+    "question_number": 58,
+    "question_text": "As the period T of a periodic signal is expanded toward infinity, both the line amplitude Fn and the spacing omega_0 tend to zero, which motivates:",
+    "options": [
+      "Keeping the discrete frequency lines exactly as they were",
+      "Discarding all of the frequency information about the signal",
+      "Introducing spectrum density instead of discrete frequency lines",
+      "Treating the whole signal as a single impulse located in time"
+    ],
+    "correct_answer": [
+      "Introducing spectrum density instead of discrete frequency lines"
+    ]
+  },
+  {
+    "question_number": 59,
+    "question_text": "The Fourier transform of a unit impulse delta(t) is a constant across all frequencies, which means the impulse:",
+    "options": [
+      "Contains only one single frequency component in its spectrum",
+      "Has uniform frequency density and therefore an infinitely wide band",
+      "Has essentially no frequency content anywhere in its spectrum",
+      "Is band-limited to a narrow range of low frequencies"
+    ],
+    "correct_answer": [
+      "Has uniform frequency density and therefore an infinitely wide band"
+    ]
+  },
+  {
+    "question_number": 60,
+    "question_text": "The Fourier transform of a constant (DC) signal of value 1 is:",
+    "options": [
+      "A constant density spread across all frequencies",
+      "An impulse at zero frequency, 2*pi*delta(omega)",
+      "A pair of impulses at plus and minus omega_0",
+      "A sinc-shaped spectrum centred at the origin"
+    ],
+    "correct_answer": [
+      "An impulse at zero frequency, 2*pi*delta(omega)"
+    ]
+  },
+  {
+    "question_number": 61,
+    "question_text": "Why does the spectrum of the constant signal 1 consist of an impulse only at omega = 0?",
+    "options": [
+      "A constant represents a direct-current signal, whose energy lies entirely at zero frequency",
+      "A constant carries equal amounts of energy at every single frequency that is present",
+      "A constant is a high-frequency signal that occupies only a very narrow band",
+      "A constant places its energy at a pair of separate carrier frequencies only"
+    ],
+    "correct_answer": [
+      "A constant represents a direct-current signal, whose energy lies entirely at zero frequency"
+    ]
+  },
+  {
+    "question_number": 62,
+    "question_text": "The Fourier transform of cos(omega_0 t) consists of:",
+    "options": [
+      "A single impulse located exactly at zero frequency",
+      "A uniform density spread across all of the frequencies",
+      "A pair of impulses located at plus and minus omega_0",
+      "A sinc-shaped lobe centred at omega_0 by itself"
+    ],
+    "correct_answer": [
+      "A pair of impulses located at plus and minus omega_0"
+    ]
+  },
+  {
+    "question_number": 63,
+    "question_text": "The linearity property of the Fourier transform states that:",
+    "options": [
+      "The transform of a product equals the product of the two transforms",
+      "The transform of a sum equals the larger of the two transforms",
+      "Scaling a signal in time has no effect at all on its transform",
+      "The transform of a*f1(t) + b*f2(t) is a*F1(j*omega) + b*F2(j*omega)"
+    ],
+    "correct_answer": [
+      "The transform of a*f1(t) + b*f2(t) is a*F1(j*omega) + b*F2(j*omega)"
+    ]
+  },
+  {
+    "question_number": 64,
+    "question_text": "According to the time-shift property, delaying a signal by t0 in the time domain corresponds in the frequency domain to:",
+    "options": [
+      "Scaling the magnitude of the whole spectrum by the delay value of t0",
+      "Sliding the entire spectrum bodily along the frequency axis by t0 units",
+      "Adding a fixed constant phase equal to t0 radians at each frequency",
+      "Multiplying the spectrum by the phase e^(-j*omega*t0), the magnitude unchanged"
+    ],
+    "correct_answer": [
+      "Multiplying the spectrum by the phase e^(-j*omega*t0), the magnitude unchanged"
+    ]
+  },
+  {
+    "question_number": 65,
+    "question_text": "The frequency-shift (modulation) property says that multiplying f(t) by e^(j*omega_0 t) in the time domain:",
+    "options": [
+      "Multiplies the spectrum by the constant factor e^(-j*omega_0)",
+      "Delays the signal by omega_0 seconds along the time axis",
+      "Shifts the spectrum to F[j(omega - omega_0)] in the frequency domain",
+      "Leaves the spectrum of the signal unaffected altogether"
+    ],
+    "correct_answer": [
+      "Shifts the spectrum to F[j(omega - omega_0)] in the frequency domain"
+    ]
+  },
+  {
+    "question_number": 66,
+    "question_text": "Multiplying a baseband signal f(t) by a carrier cos(omega_0 t) produces a spectrum that is:",
+    "options": [
+      "A single copy of F(j*omega) left sitting right at the frequency origin",
+      "An impulse at zero frequency scaled by the carrier amplitude",
+      "The original spectrum F(j*omega) with its bandwidth halved",
+      "Two half-amplitude copies of F(j*omega) centred at plus and minus omega_0"
+    ],
+    "correct_answer": [
+      "Two half-amplitude copies of F(j*omega) centred at plus and minus omega_0"
+    ]
+  },
+  {
+    "question_number": 67,
+    "question_text": "Parseval's relation (the energy theorem) expresses that:",
+    "options": [
+      "The total energy of a real-valued signal always works out to be zero",
+      "The phase of a signal carries the whole of its energy information",
+      "Energy is conserved only for perfectly periodic signals but not for others",
+      "The total energy of a signal can be computed in the time or the frequency domain"
+    ],
+    "correct_answer": [
+      "The total energy of a signal can be computed in the time or the frequency domain"
+    ]
+  },
+  {
+    "question_number": 68,
+    "question_text": "The quantity |F(j*omega)|^2 is called the signal's energy spectrum because it represents:",
+    "options": [
+      "The instantaneous power carried by the signal at each separate moment in time",
+      "The phase of the signal expressed as a function of the frequency",
+      "The signal energy contained in a unit band of frequency, carrying no phase information",
+      "The total count of the frequency lines making up the whole spectrum"
+    ],
+    "correct_answer": [
+      "The signal energy contained in a unit band of frequency, carrying no phase information"
+    ]
+  },
+  {
+    "question_number": 69,
+    "question_text": "The time-domain convolution theorem of the Fourier transform states that:",
+    "options": [
+      "Convolution in time corresponds instead to convolution of the two spectra as well",
+      "Convolution in time corresponds to simple addition of the two spectra",
+      "Convolution in time leaves each of the two signal spectra unchanged",
+      "Convolution in time corresponds to multiplication of the spectra, F1(j*omega)*F2(j*omega)"
+    ],
+    "correct_answer": [
+      "Convolution in time corresponds to multiplication of the spectra, F1(j*omega)*F2(j*omega)"
+    ]
+  },
+  {
+    "question_number": 70,
+    "question_text": "The frequency-domain convolution theorem states that multiplication of two signals in time corresponds in frequency to:",
+    "options": [
+      "Convolution of their spectra, scaled by a factor of 1/(2*pi)",
+      "Multiplication of their spectra with no extra scaling factor",
+      "Addition of their two spectra with a factor of 2*pi applied",
+      "The difference of their two spectra taken across frequency"
+    ],
+    "correct_answer": [
+      "Convolution of their spectra, scaled by a factor of 1/(2*pi)"
+    ]
+  },
+  {
+    "question_number": 71,
+    "question_text": "What broad usefulness does the convolution theorem provide, according to the slides?",
+    "options": [
+      "It converts an input signal into a single sharp impulse located firmly in time",
+      "It removes the need to know a system's impulse response when solving",
+      "It applies solely to signals that happen to be perfectly periodic ones",
+      "It turns convolution in one domain into an algebraic operation in the other domain"
+    ],
+    "correct_answer": [
+      "It turns convolution in one domain into an algebraic operation in the other domain"
+    ]
+  },
+  {
+    "question_number": 72,
+    "question_text": "For a linear system, the quantity H(j*omega) that relates input and output spectra is called the:",
+    "options": [
+      "Energy spectrum of the applied input signal in frequency",
+      "Impulse intensity of the system",
+      "System function, also called the transfer function",
+      "Sampling function of the output"
+    ],
+    "correct_answer": [
+      "System function, also called the transfer function"
+    ]
+  },
+  {
+    "question_number": 73,
+    "question_text": "If a system has impulse response h(t) and transfer function H(j*omega), then the output spectrum is given by:",
+    "options": [
+      "Y(j*omega) = F(j*omega)*H(j*omega), the product of input spectrum and transfer function",
+      "Y(j*omega) = F(j*omega) + H(j*omega), the sum of the input and the function",
+      "Y(j*omega) = F(j*omega) / H(j*omega), the ratio of the input to the transfer function",
+      "Y(j*omega) = F(j*omega), taken independently of the system's own function"
+    ],
+    "correct_answer": [
+      "Y(j*omega) = F(j*omega)*H(j*omega), the product of input spectrum and transfer function"
+    ]
+  },
+  {
+    "question_number": 74,
+    "question_text": "The fact that Y(j*omega) = F(j*omega)*H(j*omega) in the frequency domain corresponds in the time domain to:",
+    "options": [
+      "The product y(t) = f(t)*h(t) taken sample by sample in time",
+      "The sum y(t) = f(t) + h(t) taken point by point in time",
+      "The convolution y(t) = f(t) * h(t) taken in the time domain",
+      "The derivative of f(t) with respect to time at each instant"
+    ],
+    "correct_answer": [
+      "The convolution y(t) = f(t) * h(t) taken in the time domain"
+    ]
+  },
+  {
+    "question_number": 75,
+    "question_text": "If a system is too complicated to express analytically, the slides suggest measuring its transfer function by:",
+    "options": [
+      "Applying sine inputs at different frequencies, measuring each output, and combining them",
+      "Applying a single impulse and reading off the final steady-state value",
+      "Applying a constant direct-current input and then scaling up the measured result",
+      "Computing the ratio between two arbitrarily chosen samples in time"
+    ],
+    "correct_answer": [
+      "Applying sine inputs at different frequencies, measuring each output, and combining them"
+    ]
+  },
+  {
+    "question_number": 76,
+    "question_text": "The technique of driving a system with sine inputs across a range of frequencies to characterise it is called:",
+    "options": [
+      "A convolution sum",
+      "A frequency sweep",
+      "A time reversal",
+      "An impulse decomposition"
+    ],
+    "correct_answer": [
+      "A frequency sweep"
+    ]
+  },
+  {
+    "question_number": 77,
+    "question_text": "Euler's relation is invoked in this material chiefly to:",
+    "options": [
+      "Express sine and cosine signals in terms of complex exponentials",
+      "Convert a periodic signal into an equivalent causal signal",
+      "Prove that the unit impulse is an even function of time",
+      "Define the sampling interval used for a discrete signal"
+    ],
+    "correct_answer": [
+      "Express sine and cosine signals in terms of complex exponentials"
+    ]
+  },
+  {
+    "question_number": 78,
+    "question_text": "The Fourier transform of the one-sided exponential e^(-a t)*u(t) with a > 0 has a magnitude spectrum that:",
+    "options": [
+      "Is a pair of sharp impulses located at plus and minus a",
+      "Is flat and equal in value at every one of the frequencies",
+      "Is zero at the low frequencies and then rises without any upper bound",
+      "Is largest at zero frequency and then rolls off as the frequency increases"
+    ],
+    "correct_answer": [
+      "Is largest at zero frequency and then rolls off as the frequency increases"
+    ]
+  },
+  {
+    "question_number": 79,
+    "question_text": "In the time domain, a discrete-time signal is represented as:",
+    "options": [
+      "A continuous waveform defined at every instant",
+      "A single scalar value that never changes in time",
+      "A frequency spectrum holding no time information",
+      "A sequence of numbers, called samples"
+    ],
+    "correct_answer": [
+      "A sequence of numbers, called samples"
+    ]
+  },
+  {
+    "question_number": 80,
+    "question_text": "When a discrete-time sequence is formed by sampling a continuous signal x_a(t), the n-th sample is given by:",
+    "options": [
+      "x[n] = x_a(t) integrated from time 0 up to t = nT",
+      "x[n] = x_a(nT), the value of x_a(t) taken at t = nT",
+      "x[n] = x_a(t) averaged across the interval of width T",
+      "x[n] = the derivative of x_a(t) evaluated at t = nT"
+    ],
+    "correct_answer": [
+      "x[n] = x_a(nT), the value of x_a(t) taken at t = nT"
+    ]
+  },
+  {
+    "question_number": 81,
+    "question_text": "The spacing T between two consecutive samples is called the sampling interval, and its reciprocal 1/T is called the:",
+    "options": [
+      "Angular frequency of the samples",
+      "Fundamental period of the sequence",
+      "Quantization step of the sequence",
+      "Sampling frequency"
+    ],
+    "correct_answer": [
+      "Sampling frequency"
+    ]
+  },
+  {
+    "question_number": 82,
+    "question_text": "The course distinguishes sampled-data signals from digital signals by noting that:",
+    "options": [
+      "Sampled-data signals have continuous-valued samples, while digital signals have discrete-valued samples",
+      "Sampled-data signals have discrete-valued samples, while the digital ones are continuous-valued",
+      "Both sampled-data and digital signals turn out to have continuous-valued samples",
+      "Sampled-data signals alone are the ones actually defined at discrete time instants"
+    ],
+    "correct_answer": [
+      "Sampled-data signals have continuous-valued samples, while digital signals have discrete-valued samples"
+    ]
+  },
+  {
+    "question_number": 83,
+    "question_text": "Signals in a practical DSP system are digital signals, obtained from sample values by:",
+    "options": [
+      "Convolving them with the unit step sequence in time",
+      "Quantizing them, either by rounding or by truncation",
+      "Reversing them in time about the sampling origin",
+      "Interpolating them up to a higher sampling rate"
+    ],
+    "correct_answer": [
+      "Quantizing them, either by rounding or by truncation"
+    ]
+  },
+  {
+    "question_number": 84,
+    "question_text": "A right-sided sequence has zero-valued samples for n < N1. It is additionally called a causal sequence when:",
+    "options": [
+      "N1 < 0",
+      "N1 >= 0",
+      "N1 is a non-integer value",
+      "N1 tends to negative infinity"
+    ],
+    "correct_answer": [
+      "N1 >= 0"
+    ]
+  },
+  {
+    "question_number": 85,
+    "question_text": "In the modulation (product) operation on sequences, the output is formed by:",
+    "options": [
+      "Adding the two input sequences sample by sample, y[n] = x[n] + w[n]",
+      "Delaying one of the input sequences by a single sampling interval",
+      "Multiplying the two input sequences sample by sample, y[n] = x[n]*w[n]",
+      "Reversing one input sequence in time before they are combined"
+    ],
+    "correct_answer": [
+      "Multiplying the two input sequences sample by sample, y[n] = x[n]*w[n]"
+    ]
+  },
+  {
+    "question_number": 86,
+    "question_text": "The scalar-multiplication operation on a sequence produces:",
+    "options": [
+      "y[n] = A*x[n], each sample scaled by a constant A",
+      "y[n] = x[n] + A, a constant A added to each sample",
+      "y[n] = x[n - A], the sequence delayed by A samples",
+      "y[n] = x[A*n], the sequence resampled in the time index"
+    ],
+    "correct_answer": [
+      "y[n] = A*x[n], each sample scaled by a constant A"
+    ]
+  },
+  {
+    "question_number": 87,
+    "question_text": "A unit-delay operation applied to x[n] produces the output:",
+    "options": [
+      "y[n] = x[n + 1]",
+      "y[n] = x[-n]",
+      "y[n] = x[n - 1]",
+      "y[n] = A*x[n]"
+    ],
+    "correct_answer": [
+      "y[n] = x[n - 1]"
+    ]
+  },
+  {
+    "question_number": 88,
+    "question_text": "The time-reversal (folding) operation on a sequence produces:",
+    "options": [
+      "y[n] = x[n - 1]",
+      "y[n] = x[n] + x[-n]",
+      "y[n] = x[-n]",
+      "y[n] = x[n]*x[-n]"
+    ],
+    "correct_answer": [
+      "y[n] = x[-n]"
+    ]
+  },
+  {
+    "question_number": 89,
+    "question_text": "The branching operation in a discrete-time structure is used to:",
+    "options": [
+      "Combine several separate sequences into just one single output",
+      "Delay a sequence by exactly one sampling period in time",
+      "Provide multiple copies of a sequence for use at different points",
+      "Reverse a sequence about the origin of the time axis"
+    ],
+    "correct_answer": [
+      "Provide multiple copies of a sequence for use at different points"
+    ]
+  },
+  {
+    "question_number": 90,
+    "question_text": "In sampling-rate alteration, the ratio R = F'_T / F_T describes the change of rate. The process is called interpolation when:",
+    "options": [
+      "R < 1, giving a lower sampling rate",
+      "R = 1, leaving the rate unchanged",
+      "R is negative, reversing the sequence",
+      "R > 1, giving a higher sampling rate"
+    ],
+    "correct_answer": [
+      "R > 1, giving a higher sampling rate"
+    ]
+  },
+  {
+    "question_number": 91,
+    "question_text": "In sampling-rate alteration, the process is called decimation when:",
+    "options": [
+      "R > 1, giving a higher sampling rate",
+      "R = 0, removing all of the samples",
+      "R < 1, giving a lower sampling rate",
+      "R = 1, leaving the rate unchanged"
+    ],
+    "correct_answer": [
+      "R < 1, giving a lower sampling rate"
+    ]
+  },
+  {
+    "question_number": 92,
+    "question_text": "A discrete-time sequence is classified as periodic when:",
+    "options": [
+      "Its samples all settle to one and the same constant value",
+      "It has only a finite number of non-zero samples in total",
+      "Its samples decay steadily toward zero as n increases",
+      "It repeats, so that x[n] equals x[n + N] for some period N"
+    ],
+    "correct_answer": [
+      "It repeats, so that x[n] equals x[n + N] for some period N"
+    ]
+  },
+  {
+    "question_number": 93,
+    "question_text": "With respect to length and energy, which statement matches the course's classification?",
+    "options": [
+      "A finite-length sequence with finite sample values instead has infinite energy",
+      "An infinite-length sequence is guaranteed to end up with finite energy",
+      "A sequence that has finite energy is bound to have an infinite length",
+      "A finite-length sequence with finite sample values always has finite energy"
+    ],
+    "correct_answer": [
+      "A finite-length sequence with finite sample values always has finite energy"
+    ]
+  },
+  {
+    "question_number": 94,
+    "question_text": "A sequence is classified as a power signal when it has:",
+    "options": [
+      "Infinite energy but finite average power, as a periodic sequence has",
+      "Finite energy but zero average power, as a short sequence has",
+      "Both finite energy and finite average power at the same time",
+      "Zero energy together with zero average power everywhere"
+    ],
+    "correct_answer": [
+      "Infinite energy but finite average power, as a periodic sequence has"
+    ]
+  },
+  {
+    "question_number": 95,
+    "question_text": "A sequence is classified as an energy signal when it has:",
+    "options": [
+      "Infinite energy but finite average power, as a periodic sequence has",
+      "Infinite energy together with an infinite average power at once",
+      "Finite energy together with a finite, non-zero average power",
+      "Finite energy but zero average power, as a finite-length sequence has"
+    ],
+    "correct_answer": [
+      "Finite energy but zero average power, as a finite-length sequence has"
+    ]
+  },
+  {
+    "question_number": 96,
+    "question_text": "A sequence x[n] is said to be bounded when:",
+    "options": [
+      "Its magnitude stays below a finite limit for all n, as cos(0.3*pi*n) does",
+      "The sum of all of its sample values turns out to be finite",
+      "The sum of the squares of all of its sample values turns out finite",
+      "It has only a finite number of non-zero samples in total"
+    ],
+    "correct_answer": [
+      "Its magnitude stays below a finite limit for all n, as cos(0.3*pi*n) does"
+    ]
+  },
+  {
+    "question_number": 97,
+    "question_text": "The two fundamental basic sequences introduced first in the discrete-time material are:",
+    "options": [
+      "The gate sequence and the linear ramp sequence",
+      "The chirp sequence and the constant sequence",
+      "The random sequence and the periodic sequence",
+      "The unit sample sequence and the unit step sequence"
+    ],
+    "correct_answer": [
+      "The unit sample sequence and the unit step sequence"
+    ]
+  },
+  {
+    "question_number": 98,
+    "question_text": "A real sinusoidal sequence is written x[n] = A*cos(omega_0*n + phi), where the symbol omega_0 is the:",
+    "options": [
+      "Angular frequency of the sequence",
+      "Amplitude of the sequence",
+      "Phase offset of the sequence",
+      "Sampling interval of the sequence"
+    ],
+    "correct_answer": [
+      "Angular frequency of the sequence"
+    ]
+  },
+  {
+    "question_number": 99,
+    "question_text": "For a complex exponential sequence, the real part sigma_0 of the exponent controls the amplitude so that the real sinusoidal parts are:",
+    "options": [
+      "Constant when sigma_0 = 0, growing when sigma_0 > 0, and decaying when sigma_0 < 0",
+      "Constant when sigma_0 > 0, and growing when sigma_0 turns out to equal zero",
+      "Growing whenever sigma_0 is less than zero, for any amplitude",
+      "Held at zero unless sigma_0 turns out to equal exactly one"
+    ],
+    "correct_answer": [
+      "Constant when sigma_0 = 0, growing when sigma_0 > 0, and decaying when sigma_0 < 0"
+    ]
+  },
+  {
+    "question_number": 100,
+    "question_text": "A sinusoidal sequence A*cos(omega_0*n + phi) is periodic only when:",
+    "options": [
+      "omega_0 is any real number that is greater than zero",
+      "omega_0 equals the sampling frequency of the sequence exactly",
+      "omega_0*N = 2*pi*r for positive integers N and r",
+      "N is chosen freely as any convenient non-integer value"
+    ],
+    "correct_answer": [
+      "omega_0*N = 2*pi*r for positive integers N and r"
+    ]
+  },
+  {
+    "question_number": 101,
+    "question_text": "For a periodic sequence, the fundamental period N is:",
+    "options": [
+      "The largest value of N that satisfies the periodicity condition",
+      "The smallest value of N satisfying omega_0*N = 2*pi*r",
+      "Any value of N for which omega_0*N is a whole integer",
+      "A value equal to the amplitude A of the sinusoidal sequence"
+    ],
+    "correct_answer": [
+      "The smallest value of N satisfying omega_0*N = 2*pi*r"
+    ]
+  },
+  {
+    "question_number": 102,
+    "question_text": "The sampling theorem (Nyquist theorem) states that a continuous signal can be represented uniquely by its samples if the sampling frequency is:",
+    "options": [
+      "Equal to the highest frequency that is contained in the signal",
+      "Less than half of the highest frequency present in the signal",
+      "Set independently of which frequencies are present in the signal",
+      "Greater than twice the highest frequency contained in the signal"
+    ],
+    "correct_answer": [
+      "Greater than twice the highest frequency contained in the signal"
+    ]
+  },
+  {
+    "question_number": 103,
+    "question_text": "The specific problem that the sampling theorem is meant to prevent is:",
+    "options": [
+      "Quantization error, which grows when too few bits are used",
+      "Truncation, which cuts the sequence down to a finite length",
+      "Phase loss, which discards the timing detail of the signal",
+      "Aliasing, which occurs when the sampling frequency is too low"
+    ],
+    "correct_answer": [
+      "Aliasing, which occurs when the sampling frequency is too low"
+    ]
+  },
+  {
+    "question_number": 104,
+    "question_text": "A discrete-time system is defined to be linear when, for x[n] = a*x1[n] + b*x2[n], the output is:",
+    "options": [
+      "y[n] = y1[n - n0], a shifted version of one of the responses",
+      "y[n] = y1[n]*y2[n], the product of the two responses formed",
+      "y[n] = a*y1[n] + b*y2[n] for any constants a and b and any inputs",
+      "y[n] = a*y1[n] on its own, disregarding the second input"
+    ],
+    "correct_answer": [
+      "y[n] = a*y1[n] + b*y2[n] for any constants a and b and any inputs"
+    ]
+  },
+  {
+    "question_number": 105,
+    "question_text": "A discrete-time system is shift-invariant when a shift of the input by n0, so that x[n] = x1[n - n0], produces:",
+    "options": [
+      "y[n] = y1[n - n0], the same response shifted along by n0",
+      "y[n] = y1[n], the same response with no shift applied to it",
+      "y[n] = n0*y1[n], the response scaled by the factor n0",
+      "y[n] = y1[-n], the response reversed about the time origin"
+    ],
+    "correct_answer": [
+      "y[n] = y1[n - n0], the same response shifted along by n0"
+    ]
+  },
+  {
+    "question_number": 106,
+    "question_text": "A linear time-invariant (LTI) discrete-time system is one that:",
+    "options": [
+      "Satisfies linearity but fails the shift-invariance property",
+      "Satisfies shift-invariance but fails the linearity property",
+      "Satisfies both the linearity and the shift-invariance properties",
+      "Satisfies neither property yet remains causal in all cases"
+    ],
+    "correct_answer": [
+      "Satisfies both the linearity and the shift-invariance properties"
+    ]
+  },
+  {
+    "question_number": 107,
+    "question_text": "Why are LTI discrete-time systems emphasised so strongly in the course?",
+    "options": [
+      "They form the sole class that is able to process periodic input sequences properly",
+      "They produce an output without any impulse response being known",
+      "They require the sampling rate to be altered before they are used",
+      "They are easy to analyze, characterize and design, and support many useful algorithms"
+    ],
+    "correct_answer": [
+      "They are easy to analyze, characterize and design, and support many useful algorithms"
+    ]
+  },
+  {
+    "question_number": 108,
+    "question_text": "The response of a discrete-time system to a unit sample sequence delta[n] is called the:",
+    "options": [
+      "Unit impulse response, denoted h[n]",
+      "Unit step response, denoted s[n]",
+      "Transfer function, denoted by H",
+      "Convolution sum, denoted y[n]"
+    ],
+    "correct_answer": [
+      "Unit impulse response, denoted h[n]"
+    ]
+  },
+  {
+    "question_number": 109,
+    "question_text": "A key consequence of the linear, time-invariant property is that an LTI discrete-time system is:",
+    "options": [
+      "Characterized instead by its unit step response",
+      "Independent of whatever input is applied to it",
+      "Fully described by a single output sample value",
+      "Completely characterized by its impulse response"
+    ],
+    "correct_answer": [
+      "Completely characterized by its impulse response"
+    ]
+  },
+  {
+    "question_number": 110,
+    "question_text": "Because any input can be written as a linear combination of shifted unit samples, the response of an LTI system to an input x[k]*delta[n - k] is:",
+    "options": [
+      "x[k]*delta[n - k], left unchanged by the system",
+      "x[k]*h[n - k]",
+      "h[n], taken independently of the index k",
+      "x[n]*h[k], with the two indices swapped over"
+    ],
+    "correct_answer": [
+      "x[k]*h[n - k]"
+    ]
+  },
+  {
+    "question_number": 111,
+    "question_text": "The summation that combines x[n] and h[n] to give the output of an LTI system, written y[n] = x[n] * h[n], is called the:",
+    "options": [
+      "Fourier series",
+      "Convolution sum",
+      "Frequency sweep",
+      "Sampling sum"
+    ],
+    "correct_answer": [
+      "Convolution sum"
+    ]
+  },
+  {
+    "question_number": 112,
+    "question_text": "The commutative property of the convolution sum states that:",
+    "options": [
+      "x[n] * h[n] = x[n] + h[n]",
+      "x[n] * h[n] = x[-n] * h[-n]",
+      "x[n] * h[n] varies with the operand order",
+      "x[n] * h[n] = h[n] * x[n]"
+    ],
+    "correct_answer": [
+      "x[n] * h[n] = h[n] * x[n]"
+    ]
+  },
+  {
+    "question_number": 113,
+    "question_text": "The distributive property of the convolution sum states that:",
+    "options": [
+      "x[n] * (h[n] + y[n]) = x[n] * h[n] + x[n] * y[n]",
+      "x[n] * (h[n] + y[n]) = x[n] * h[n] on its own",
+      "x[n] * (h[n] * y[n]) = (x[n] * h[n]) * y[n]",
+      "x[n] * (h[n] + y[n]) = h[n] + y[n] regardless of x"
+    ],
+    "correct_answer": [
+      "x[n] * (h[n] + y[n]) = x[n] * h[n] + x[n] * y[n]"
+    ]
+  },
+  {
+    "question_number": 114,
+    "question_text": "In the graphical interpretation of the convolution sum, the impulse response h[k] is first:",
+    "options": [
+      "Scaled by a fixed constant, then integrated over all of the values of k",
+      "Left just as it is, then added straight onto the sequence x[k]",
+      "Time-reversed to form h[-k], then shifted before multiplying and summing",
+      "Resampled to a higher rate, then quantized before being summed"
+    ],
+    "correct_answer": [
+      "Time-reversed to form h[-k], then shifted before multiplying and summing"
+    ]
+  },
+  {
+    "question_number": 115,
+    "question_text": "If two sequences of lengths M and N are convolved, the resulting sequence has length:",
+    "options": [
+      "M + N",
+      "M + N - 1",
+      "M * N",
+      "the larger of M and N"
+    ],
+    "correct_answer": [
+      "M + N - 1"
+    ]
+  },
+  {
+    "question_number": 116,
+    "question_text": "A discrete-time LTI system is classified as a finite impulse response (FIR) system when its impulse response h[n] is:",
+    "options": [
+      "Of infinite length",
+      "Of finite length",
+      "Equal to the unit step sequence",
+      "Undefined for negative values of n"
+    ],
+    "correct_answer": [
+      "Of finite length"
+    ]
+  },
+  {
+    "question_number": 117,
+    "question_text": "A discrete-time LTI system is classified as an infinite impulse response (IIR) system when its impulse response is:",
+    "options": [
+      "Of finite length",
+      "Zero outside one single sample",
+      "Of infinite length",
+      "Identical to its own input sequence"
+    ],
+    "correct_answer": [
+      "Of infinite length"
+    ]
+  },
+  {
+    "question_number": 118,
+    "question_text": "The IIR systems studied in this course are characterized mathematically by:",
+    "options": [
+      "Finite sums of products with no feedback path",
+      "Linear constant-coefficient difference equations",
+      "A single scalar-multiplication operation",
+      "The Fourier series of a periodic signal"
+    ],
+    "correct_answer": [
+      "Linear constant-coefficient difference equations"
+    ]
+  },
+  {
+    "question_number": 119,
+    "question_text": "The discrete-time accumulator defined by y[n] = y[n - 1] + x[n] is given as an example of:",
+    "options": [
+      "An FIR system, since it uses present and past inputs only",
+      "A non-linear system, since it adds two signals together",
+      "An IIR system, since its impulse response is of infinite length",
+      "A time-varying system, since its coefficients change over time"
+    ],
+    "correct_answer": [
+      "An IIR system, since its impulse response is of infinite length"
+    ]
+  },
+  {
+    "question_number": 120,
+    "question_text": "A discrete-time system is called non-recursive when its output can be computed:",
+    "options": [
+      "Using past output samples along with the inputs",
+      "Without knowing any of the input samples at all",
+      "From just the present and past input samples",
+      "Once the whole input sequence has been received"
+    ],
+    "correct_answer": [
+      "From just the present and past input samples"
+    ]
+  },
+  {
+    "question_number": 121,
+    "question_text": "A discrete-time system is called recursive when its output computation:",
+    "options": [
+      "Uses just the single present input sample each time",
+      "Uses present and past input samples but no outputs",
+      "Involves past output samples besides present and past inputs",
+      "Leaves out all the earlier values of the input and the output"
+    ],
+    "correct_answer": [
+      "Involves past output samples besides present and past inputs"
+    ]
+  },
+  {
+    "question_number": 122,
+    "question_text": "The response of a discrete-time system to a unit step sequence is called the:",
+    "options": [
+      "Unit impulse response, denoted h[n]",
+      "Convolution sum, denoted y[n]",
+      "Transfer function, denoted H[n]",
+      "Unit step response, denoted s[n]"
+    ],
+    "correct_answer": [
+      "Unit step response, denoted s[n]"
+    ]
+  },
+  {
+    "question_number": 123,
+    "question_text": "An arbitrary discrete-time sequence can be represented in the time domain as:",
+    "options": [
+      "A single scaled copy of the unit step sequence in time",
+      "The product of two sinusoidal sequences of different rates",
+      "A weighted sum of a basic sequence and its shifted versions",
+      "A constant term plus one single decaying exponential term"
+    ],
+    "correct_answer": [
+      "A weighted sum of a basic sequence and its shifted versions"
+    ]
+  },
+  {
+    "question_number": 124,
+    "question_text": "For a complex exponential sequence written A*alpha^n, the symbols A and alpha are, in general:",
+    "options": [
+      "Strictly positive integers",
+      "Real or complex numbers",
+      "Numbers equal to one another",
+      "Values between zero and one"
+    ],
+    "correct_answer": [
+      "Real or complex numbers"
+    ]
+  }
+]
