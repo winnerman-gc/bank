@@ -76,6 +76,16 @@ it with:
 python3 make_pdf.py
 ```
 
+## Quick reference PDF
+
+`TE454-Digital-Signal-Processing-Quick-Reference.pdf` is a compact theory
+cheat-sheet condensing every slide across all three lecture decks (definitions,
+formulas and properties, not a slide-by-slide dump). Regenerate it with:
+
+```bash
+python3 make_reference_pdf.py
+```
+
 ## Notes
 
 - Answers are stored separately for the main bank and the retake flow.
