@@ -11,7 +11,8 @@
     ],
     "correct_answer": [
       "political and economic"
-    ]
+    ],
+    "explanation": "The decks name exactly two factors behind the state-monopoly era: Economic (very high network cost + low demand → natural monopoly) and Political (governments kept control, treating telecoms like the state post office). 'Social' is not listed."
   },
   {
     "question_number": 2,
@@ -25,7 +26,8 @@
     ],
     "correct_answer": [
       "liberalising international trade"
-    ]
+    ],
+    "explanation": "The WTO 'regulates international trade', and its Basic Telecommunications Agreement opens telecom markets to competition and investment — i.e. it liberalises international (not domestic) trade."
   },
   {
     "question_number": 3,
@@ -36,7 +38,8 @@
     ],
     "correct_answer": [
       "TRUE"
-    ]
+    ],
+    "explanation": "Accounting separation forces a vertically-integrated dominant operator to keep separate wholesale/retail accounts, so the regulator can see whether it is cross-subsidising or favouring its own retail arm over rivals. (Standard competition-safeguard concept.)"
   },
   {
     "question_number": 4,
@@ -50,7 +53,8 @@
     ],
     "correct_answer": [
       "None of the above"
-    ]
+    ],
+    "explanation": "The decks list regulations, decisions, policies AND resolutions all as regulatory instruments ('regulations, decisions, orders, decrees, rules, policies, notices, resolutions'). Every option is an instrument, so none is the exception."
   },
   {
     "question_number": 5,
@@ -64,7 +68,8 @@
     ],
     "correct_answer": [
       "Universal Service"
-    ]
+    ],
+    "explanation": "Universal Service = availability on an individual/personal (household) basis; Universal Access = a shared/community basis. 'Personal basis' → Universal Service. (Compare Q41.)"
   },
   {
     "question_number": 6,
@@ -78,7 +83,8 @@
     ],
     "correct_answer": [
       "II or III"
-    ]
+    ],
+    "explanation": "A class licence / general authorisation 'sets out identical terms of operation for all businesses operating in a particular market segment', so both II and III describe it."
   },
   {
     "question_number": 7,
@@ -92,7 +98,8 @@
     ],
     "correct_answer": [
       "None of the above"
-    ]
+    ],
+    "explanation": "The principles of good regulatory decision-making listed are Transparency, Objectivity, Professionalism, Efficiency and Independence — so all three options are genuine principles and none is the exception."
   },
   {
     "question_number": 8,
@@ -105,7 +112,8 @@
     ],
     "correct_answer": [
       "Both I and II"
-    ]
+    ],
+    "explanation": "Bottom-of-the-Pyramid individuals have low individual purchasing power (can't spend large sums each) AND were historically judged commercially unviable by big firms — yet collectively form a huge market. Both statements are true. (Standard BoP concept.)"
   },
   {
     "question_number": 9,
@@ -119,7 +127,8 @@
     ],
     "correct_answer": [
       "ex-ante"
-    ]
+    ],
+    "explanation": "Ex-ante rules are fixed in advance, so in a fast-moving high-tech industry they quickly become dated or inappropriate. (ex ante = 'before certain issues arise'.)"
   },
   {
     "question_number": 10,
@@ -133,7 +142,8 @@
     ],
     "correct_answer": [
       "ITU-D"
-    ]
+    ],
+    "explanation": "ITU-D (Development) 'helps spread equitable, sustainable and affordable access to information and communication technologies (ICT).'"
   },
   {
     "question_number": 11,
@@ -146,8 +156,9 @@
       "None of the above"
     ],
     "correct_answer": [
-      "logic"
-    ]
+      "authority"
+    ],
+    "explanation": "The deck lists the grounds of appeal as law (illegality), procedure (misadministration), logic (irrationality) and the substance of the action. 'Authority' is NOT among them, so it is the odd one out. Note: 'logic' IS a valid ground."
   },
   {
     "question_number": 13,
@@ -161,7 +172,8 @@
     ],
     "correct_answer": [
       "The national telecommunication regulator"
-    ]
+    ],
+    "explanation": "Policy-making is the ministry's job; the technocratic, day-to-day regulation of the sector is done by the independent national regulator (the decks stress the regulator should be separate from the ministry). NB: this stem was cut off in the photo — if it actually asked about policy-making, the answer would be the ministry."
   },
   {
     "question_number": 14,
@@ -175,7 +187,8 @@
     ],
     "correct_answer": [
       "None of the above"
-    ]
+    ],
+    "explanation": "The deck gives the ITU mission as exactly these four: shared use of the radio spectrum, satellite-orbit assignment, telecom infrastructure in the developing world, and worldwide technical standards. All four are included, so none is the exception."
   },
   {
     "question_number": 15,
@@ -189,7 +202,8 @@
     ],
     "correct_answer": [
       "Inferior goods are produced"
-    ]
+    ],
+    "explanation": "The deck says a monopoly causes exactly three harms: lower output (low supply), higher price, and less-efficient/higher-cost production. 'Inferior goods are produced' is not one of them — so it is the false statement."
   },
   {
     "question_number": 16,
@@ -203,7 +217,8 @@
     ],
     "correct_answer": [
       "Market Efficiency Gap"
-    ]
+    ],
+    "explanation": "In the access-gap model the Market Efficiency Gap is the area that is commercially viable (would be profitable) but not yet served — closeable by market reforms rather than subsidy."
   },
   {
     "question_number": 17,
@@ -217,7 +232,8 @@
     ],
     "correct_answer": [
       "ex-post"
-    ]
+    ],
+    "explanation": "Ex-post regulation acts on proven grievances after the fact instead of via finely detailed pre-set rules; the deck notes 'intrusion can be lessened by the use of ex-post rules.'"
   },
   {
     "question_number": 18,
@@ -231,7 +247,8 @@
     ],
     "correct_answer": [
       "True Access Gap"
-    ]
+    ],
+    "explanation": "The True Access Gap is the area where service cannot be provided profitably at all — it needs subsidy / universal-access funding, unlike the Market Efficiency Gap."
   },
   {
     "question_number": 19,
@@ -245,7 +262,8 @@
     ],
     "correct_answer": [
       "Consumer protection regulation"
-    ]
+    ],
+    "explanation": "Regulation takes three basic forms: technical standardisation, public policy regulation and competition regulation. Consumer-protection regulation is not one of these three, so it is the exception."
   },
   {
     "question_number": 22,
@@ -259,7 +277,8 @@
     ],
     "correct_answer": [
       "ITU-R"
-    ]
+    ],
+    "explanation": "ITU-R (Radiocommunication) 'manages the international radio-frequency spectrum and satellite orbit resources.' (Stem was cut off in the photo, but the options fix it.)"
   },
   {
     "question_number": 23,
@@ -270,7 +289,8 @@
     ],
     "correct_answer": [
       "FALSE"
-    ]
+    ],
+    "explanation": "A price change causes a movement ALONG the supply curve, not a shift. The curve only shifts when input prices, technology, expectations or the number of sellers change — so this is FALSE."
   },
   {
     "question_number": 24,
@@ -284,7 +304,8 @@
     ],
     "correct_answer": [
       "None of the above"
-    ]
+    ],
+    "explanation": "Every option is a listed licensing objective — provision of an essential public service, privatization/commercialization, allocation of scarce resources, and generating government revenue. So none is the exception."
   },
   {
     "question_number": 25,
@@ -295,7 +316,8 @@
     ],
     "correct_answer": [
       "TRUE"
-    ]
+    ],
+    "explanation": "Matches the deck's definition: 'the quantity supplied … is the amount that sellers are willing and able to sell.' TRUE."
   },
   {
     "question_number": 26,
@@ -306,7 +328,8 @@
     ],
     "correct_answer": [
       "TRUE"
-    ]
+    ],
+    "explanation": "TRUE — as competition develops the regulator's role shifts (lighter-touch / more ex-post competition oversight); a regulator picks among zero/self/co/formal styles by what is appropriate."
   },
   {
     "question_number": 27,
@@ -320,7 +343,8 @@
     ],
     "correct_answer": [
       "ex-post"
-    ]
+    ],
+    "explanation": "Inferred: 'common-sense' regulation best fits ex-post — general principles applied with judgment after the fact, rather than detailed rules set in advance. NB: the phrase is not used verbatim in the provided decks, so confirm with your lecturer."
   },
   {
     "question_number": 28,
@@ -334,7 +358,8 @@
     ],
     "correct_answer": [
       "Class licences"
-    ]
+    ],
+    "explanation": "Class licences (general authorisations) 'simplify regulation, help ensure a level playing field, and are more flexible' — the deck's exact wording."
   },
   {
     "question_number": 29,
@@ -348,7 +373,8 @@
     ],
     "correct_answer": [
       "International Telecommunication Union"
-    ]
+    ],
+    "explanation": "The UN's ICT agency is the International Telecommunication Union (ITU) — the official name uses the singular 'Telecommunication' (option a's plural 'Telecommunications' is the trap)."
   },
   {
     "question_number": 30,
@@ -362,7 +388,8 @@
     ],
     "correct_answer": [
       "ITU-T"
-    ]
+    ],
+    "explanation": "ITU-T (Standardization) 'standardizes global telecommunications (except for radio)'; radio is ITU-R's job."
   },
   {
     "question_number": 34,
@@ -376,7 +403,8 @@
     ],
     "correct_answer": [
       "digital divide"
-    ]
+    ],
+    "explanation": "Inferred (standard): the digital divide is the gap between those who have access to modern ICT and those who do not. (Stem was cut off in the photo.) Don't confuse it with the digital dividend (Q39)."
   },
   {
     "question_number": 35,
@@ -390,7 +418,8 @@
     ],
     "correct_answer": [
       "There are significant restrictions on entry into the industry."
-    ]
+    ],
+    "explanation": "Perfect competition has free entry, so 'significant restrictions on entry' does NOT occur. The other options (many buyers, perfect information, no incumbent advantage, price-taking) all do occur."
   },
   {
     "question_number": 36,
@@ -404,7 +433,8 @@
     ],
     "correct_answer": [
       "ex-post"
-    ]
+    ],
+    "explanation": "Determining whether a breach occurred AFTER the event is ex-post regulation (ex post = 'after some issues have already occurred')."
   },
   {
     "question_number": 37,
@@ -418,7 +448,8 @@
     ],
     "correct_answer": [
       "A"
-    ]
+    ],
+    "explanation": "Under the usual convention a flatter supply curve (smaller slope in the price–quantity plane) is more elastic, so A (slope 2) is taken as more elastic than B (slope 3). NB: strictly, slope alone doesn't fix supply elasticity (it also depends on the intercept / reference price), so verify the intended answer."
   },
   {
     "question_number": 38,
@@ -432,7 +463,8 @@
     ],
     "correct_answer": [
       "To allocate scarce resources"
-    ]
+    ],
+    "explanation": "Allocating scarce resources (spectrum, numbers, rights of way) is a licensing/regulatory objective, not a universal-access objective — so it is the exception here."
   },
   {
     "question_number": 39,
@@ -446,7 +478,8 @@
     ],
     "correct_answer": [
       "digital dividend"
-    ]
+    ],
+    "explanation": "The digital dividend is the spectrum freed up when broadcasting switches from analogue to digital TV. (Contrast the digital divide, Q34.)"
   },
   {
     "question_number": 40,
@@ -460,7 +493,8 @@
     ],
     "correct_answer": [
       "zero regulation"
-    ]
+    ],
+    "explanation": "The deck's exact sentence: 'In industries with zero regulation (no regulation), market forces are allowed to work with no external intervention.'"
   },
   {
     "question_number": 41,
@@ -474,7 +508,8 @@
     ],
     "correct_answer": [
       "Universal Access"
-    ]
+    ],
+    "explanation": "Universal Access = availability on a shared/community basis (not necessarily to each individual). 'Within the community … not necessarily on an individual basis' → Universal Access. (Compare Q5.)"
   },
   {
     "question_number": 42,
@@ -488,7 +523,8 @@
     ],
     "correct_answer": [
       "nemo judex in sua causa debet esse"
-    ]
+    ],
+    "explanation": "'No one should be a judge in their own cause' is the maxim nemo judex in sua causa debet esse — the rule against bias ('justice must be seen to be done')."
   },
   {
     "question_number": 43,
@@ -502,7 +538,8 @@
     ],
     "correct_answer": [
       "Command"
-    ]
+    ],
+    "explanation": "The deck: the command economy 'fails because of … vulnerability to managerial corruption' (and the intractable complexity of central control)."
   },
   {
     "question_number": 44,
@@ -513,7 +550,8 @@
     ],
     "correct_answer": [
       "FALSE"
-    ]
+    ],
+    "explanation": "A price ceiling holds the price BELOW equilibrium (a maximum price); it is a price FLOOR that keeps price above equilibrium. So the statement is FALSE."
   },
   {
     "question_number": 45,
@@ -527,7 +565,8 @@
     ],
     "correct_answer": [
       "Audi alteram partem"
-    ]
+    ],
+    "explanation": "'Hear the other side' is the maxim audi alteram partem — the fair-hearing rule."
   },
   {
     "question_number": 46,
@@ -541,7 +580,8 @@
     ],
     "correct_answer": [
       "an identical product"
-    ]
+    ],
+    "explanation": "Perfect competition requires that 'the goods offered for sale are all exactly the same' — i.e. an identical (homogeneous) product."
   },
   {
     "question_number": 47,
@@ -554,7 +594,8 @@
     ],
     "correct_answer": [
       "substitute good"
-    ]
+    ],
+    "explanation": "If A's price rises and B's quantity demanded rises, buyers are switching from A to B — they are substitutes (positive cross-price relationship)."
   },
   {
     "question_number": 48,
@@ -568,7 +609,8 @@
     ],
     "correct_answer": [
       "Technical standardisation"
-    ]
+    ],
+    "explanation": "Technical standardisation 'establishes a common and legally enforceable platform for all businesses within a sector' — the deck's exact definition."
   },
   {
     "question_number": 49,
@@ -578,8 +620,9 @@
       "FALSE"
     ],
     "correct_answer": [
-      "FALSE"
-    ]
+      "TRUE"
+    ],
+    "explanation": "The deck equates the terms: 'industries with zero regulation … are also said to be completely deregulated (i.e. regulation has been completely removed),' with market forces working with no external intervention. So this reads as TRUE. (The exam sheet circled FALSE — treat with care and confirm.)"
   },
   {
     "question_number": 50,
@@ -593,7 +636,8 @@
     ],
     "correct_answer": [
       "ex-ante"
-    ]
+    ],
+    "explanation": "A rule stated in advance that a company must obey is ex-ante regulation (ex ante = 'before certain issues arise')."
   },
   {
     "question_number": 51,
@@ -607,7 +651,8 @@
     ],
     "correct_answer": [
       "co-regulation"
-    ]
+    ],
+    "explanation": "The deck: 'co-regulation is vulnerable to role ambiguity and the differing player perceptions of what the others will do.'"
   },
   {
     "question_number": 52,
@@ -621,7 +666,8 @@
     ],
     "correct_answer": [
       "Individual operator licences"
-    ]
+    ],
+    "explanation": "Individual operator licences are used 'primarily where … there is likely to be market dominance' (also limited licences / specific spectrum) — the deck's exact wording."
   },
   {
     "question_number": 53,
@@ -634,7 +680,8 @@
     ],
     "correct_answer": [
       "I only"
-    ]
+    ],
+    "explanation": "'Guidelines are informal documents that do not … possess a legal status' and are 'usually presented in user-friendly language'. So (I) is true and (II) is false — legal language is used for determinations/consents, not guidelines."
   },
   {
     "question_number": 54,
@@ -648,7 +695,8 @@
     ],
     "correct_answer": [
       "liberalization"
-    ]
+    ],
+    "explanation": "Liberalization = 'the removal of exclusive rights from the former monopoly … and the award of licences for all new services on a competitive basis' — the deck's exact description."
   },
   {
     "question_number": 55,
@@ -662,7 +710,8 @@
     ],
     "correct_answer": [
       "regulation"
-    ]
+    ],
+    "explanation": "Regulation 'refers to the intervention by governments in markets in order to achieve certain outcomes' — the deck's exact definition."
   },
   {
     "question_number": 56,
@@ -675,7 +724,8 @@
     ],
     "correct_answer": [
       "the process by which prices adjust to reconcile the allocation of resources"
-    ]
+    ],
+    "explanation": "The deck calls a market 'a group of buyers and sellers' and notes markets can be non-physical (e.g. online), so it is a price/allocation mechanism, not merely 'a place'. The most accurate description is the price-adjustment process that reconciles the allocation of resources."
   },
   {
     "question_number": 57,
@@ -689,7 +739,8 @@
     ],
     "correct_answer": [
       "Current Network Reach and Access"
-    ]
+    ],
+    "explanation": "'Current Network Reach and Access' is the already-well-served area (high density, higher income) that the market has already reached."
   },
   {
     "question_number": 58,
@@ -703,7 +754,8 @@
     ],
     "correct_answer": [
       "ex-post"
-    ]
+    ],
+    "explanation": "Reacting reasonably to unforeseen circumstances is ex-post regulation — you respond after events occur, unlike fixed ex-ante rules."
   },
   {
     "question_number": 59,
@@ -716,7 +768,8 @@
     ],
     "correct_answer": [
       "economic problems are solved by the government and market"
-    ]
+    ],
+    "explanation": "A mixed economy blends command and market: 'Command measures, blended with market economies, create the mixed economies,' with governments intervening to correct market failure."
   },
   {
     "question_number": 60,
@@ -730,6 +783,7 @@
     ],
     "correct_answer": [
       "Foster competitive markets to promote local entrepreneurial initiative"
-    ]
+    ],
+    "explanation": "The deck's widely-accepted objectives foster competitive markets to promote efficient supply, quality, advanced services and efficient prices — NOT 'local entrepreneurial initiative'. The other four options are listed objectives verbatim, so (a) is the odd one out."
   }
 ]

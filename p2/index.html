@@ -264,6 +264,40 @@
         .feedback-correct { background: rgba(22, 163, 74, 0.08); color: #14532d; border-left: 4px solid var(--success); }
         .feedback-wrong { background: rgba(220, 38, 38, 0.08); color: #7f1d1d; border-left: 4px solid var(--danger); }
 
+        .insight-lamp {
+            flex: 0 0 auto;
+            width: 34px;
+            height: 34px;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            background: #fff;
+            color: var(--muted);
+            cursor: pointer;
+            font-size: 0.95rem;
+            line-height: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+        }
+        .insight-lamp:hover { color: var(--accent); border-color: rgba(245, 158, 11, 0.6); background: rgba(245, 158, 11, 0.08); transform: translateY(-1px); }
+        .insight-lamp.active { color: #fff; background: var(--accent); border-color: var(--accent); box-shadow: 0 4px 12px rgba(245, 158, 11, 0.35); }
+
+        .insight {
+            margin-top: 12px;
+            padding: 12px 14px;
+            border-radius: 14px;
+            background: rgba(245, 158, 11, 0.08);
+            border-left: 4px solid var(--accent);
+            font-size: 0.92rem;
+            line-height: 1.55;
+            color: #1f2937;
+        }
+        .insight[hidden] { display: none; }
+        .insight-title { font-weight: 700; color: #92400e; margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
+        .insight-answer { font-weight: 700; color: #14532d; margin-bottom: 6px; }
+        .insight-body { color: #334155; }
+
         .footer {
             display: none;
             margin-top: 18px;
@@ -344,7 +378,7 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-07-06.1';
+        const CACHE_VERSION = '2026-07-06.2';
         const VIEW_STATE_KEY = 'p2_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'p2_quiz_answers_v1';
         const RETAKE_ANSWERS_STORAGE_KEY = 'p2_quiz_retake_answers_v1';
@@ -714,10 +748,11 @@
             if (effectiveSourceId && !singleSource) tagParts.push(sourceLabel(effectiveSourceId));
             if (isMultiChoice) tagParts.push('Choose Multiple');
 
+            const hasInsight = !!question.explanation;
             card.innerHTML = `
                 <div class="question-head">
                     <div class="question-tag">${tagParts.join(' · ')}</div>
-                    <div style="color:var(--muted);font-size:0.82rem;">${singleSource ? '' : sourceLabel(question.sourceId)}</div>
+                    ${hasInsight ? `<button type="button" class="insight-lamp" id="lamp-${idx}" title="Show insight" aria-label="Show insight for this question" onclick="toggleInsight(${idx})"><i class="fas fa-lightbulb"></i></button>` : `<div style="color:var(--muted);font-size:0.82rem;">${singleSource ? '' : sourceLabel(question.sourceId)}</div>`}
                 </div>
                 <div class="question-text">${escapeHtml(question.question_text)}</div>
             `;
@@ -745,6 +780,19 @@
             feedback.id = `feedback-${idx}`;
             card.appendChild(optionsWrap);
             card.appendChild(feedback);
+
+            if (hasInsight) {
+                const insight = document.createElement('div');
+                insight.className = 'insight';
+                insight.id = `insight-${idx}`;
+                insight.hidden = true;
+                const correctText = (question.correct_answer || []).join(', ');
+                insight.innerHTML =
+                    '<div class="insight-title"><i class="fas fa-lightbulb"></i> Insight</div>'
+                    + `<div class="insight-answer">Answer: ${escapeHtml(correctText)}</div>`
+                    + `<div class="insight-body">${escapeHtml(question.explanation)}</div>`;
+                card.appendChild(insight);
+            }
 
             if (selectedValues.length) {
                 const isCorrect = isMultiChoice
@@ -820,7 +868,23 @@
                     ? `Correct answers: ${correctAnswers.join(', ')}`
                     : `Correct answer: ${correctAnswers[0]}`;
                 feedback.innerHTML = `<strong>✗ Wrong</strong><br>${escapeHtml(text)}`;
+                revealInsight(idx);
             }
+        }
+
+        function toggleInsight(idx) {
+            const insight = document.getElementById(`insight-${idx}`);
+            if (!insight) return;
+            insight.hidden = !insight.hidden;
+            const lamp = document.getElementById(`lamp-${idx}`);
+            if (lamp) lamp.classList.toggle('active', !insight.hidden);
+        }
+
+        function revealInsight(idx) {
+            const insight = document.getElementById(`insight-${idx}`);
+            if (insight) insight.hidden = false;
+            const lamp = document.getElementById(`lamp-${idx}`);
+            if (lamp) lamp.classList.add('active');
         }
 
         function escapeHtml(text) {

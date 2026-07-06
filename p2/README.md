@@ -15,7 +15,22 @@ The exam photos have answers circled/bubbled in, but **many of those circles are
 Every answer in this bank was re-derived independently from the course lecture decks in
 [`../policy/`](../policy) (TE 452 - 1&2, TE 462 - Framework for Regulation, TE 462 -
 Licensing Telecommunication Services). Examples where the circle disagrees with the
-grounded correct answer include Q2, Q4, Q11, Q24, Q26, Q38, Q42, Q45, Q50, Q52, Q58 and Q60.
+grounded correct answer include Q2, Q4, Q24, Q26, Q38, Q42, Q45, Q49, Q50, Q58 and Q60.
+
+Every question carries an **insight** (the 💡 lamp icon on the card) explaining *why*
+the answer is right — grounded in the decks, quoting them where possible. The insight
+opens automatically when you answer wrong, or on demand by clicking the lamp. The same
+notes appear under each answer in the PDF.
+
+### Two answers were corrected on a second, careful pass
+
+- **Q11** — the framework deck lists the grounds of appeal verbatim as *law (illegality),
+  procedure (misadministration), logic (irrationality)* and the *substance* of the action.
+  So "logic" **is** a valid ground; **authority** is the odd one out → the answer is
+  **authority** (here the exam's circle was actually right).
+- **Q49** — the deck states "industries with zero regulation … are also said to be
+  **completely deregulated**", i.e. no external intervention, so a de-regulated industry
+  reads as **TRUE** (the exam circled FALSE — worth confirming with your lecturer).
 
 ## What's covered
 

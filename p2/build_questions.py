@@ -112,7 +112,7 @@ QUESTIONS = [
      "Which of the following is not one of the grounds on which a regulator's "
      "decision may be appealed?",
      ["law", "procedure", "logic", "authority", "None of the above"],
-     "logic"),
+     "authority"),
 
     (13,
      "[stem reconstructed] The body responsible for the technical and economic "
@@ -339,7 +339,7 @@ QUESTIONS = [
      "In a de-regulated industry, market forces are allowed to work with no external "
      "intervention.",
      ["TRUE", "FALSE"],
-     "FALSE"),
+     "TRUE"),
 
     (50,
      "______ regulation states, in advance, a rule that a company must obey.",
@@ -424,17 +424,187 @@ QUESTIONS = [
 
 OUTPUT_FILE = "compiled.json"
 
+# Per-question "insight" shown behind the lamp icon on the site (and in the PDF).
+# Grounded in the lecture decks in ../policy/ wherever the concept appears there;
+# a few (access-gap model, BoP, digital divide/dividend, supply-slope elasticity,
+# "common sense" regulation) are standard course material not stated verbatim in
+# those three decks and are marked "inferred"/"standard" so they can be checked.
+EXPLANATIONS = {
+    1: "The decks name exactly two factors behind the state-monopoly era: Economic "
+       "(very high network cost + low demand → natural monopoly) and Political "
+       "(governments kept control, treating telecoms like the state post office). "
+       "'Social' is not listed.",
+    2: "The WTO 'regulates international trade', and its Basic Telecommunications "
+       "Agreement opens telecom markets to competition and investment — i.e. it "
+       "liberalises international (not domestic) trade.",
+    3: "Accounting separation forces a vertically-integrated dominant operator to keep "
+       "separate wholesale/retail accounts, so the regulator can see whether it is "
+       "cross-subsidising or favouring its own retail arm over rivals. (Standard "
+       "competition-safeguard concept.)",
+    4: "The decks list regulations, decisions, policies AND resolutions all as "
+       "regulatory instruments ('regulations, decisions, orders, decrees, rules, "
+       "policies, notices, resolutions'). Every option is an instrument, so none is "
+       "the exception.",
+    5: "Universal Service = availability on an individual/personal (household) basis; "
+       "Universal Access = a shared/community basis. 'Personal basis' → Universal "
+       "Service. (Compare Q41.)",
+    6: "A class licence / general authorisation 'sets out identical terms of operation "
+       "for all businesses operating in a particular market segment', so both II and "
+       "III describe it.",
+    7: "The principles of good regulatory decision-making listed are Transparency, "
+       "Objectivity, Professionalism, Efficiency and Independence — so all three "
+       "options are genuine principles and none is the exception.",
+    8: "Bottom-of-the-Pyramid individuals have low individual purchasing power (can't "
+       "spend large sums each) AND were historically judged commercially unviable by "
+       "big firms — yet collectively form a huge market. Both statements are true. "
+       "(Standard BoP concept.)",
+    9: "Ex-ante rules are fixed in advance, so in a fast-moving high-tech industry they "
+       "quickly become dated or inappropriate. (ex ante = 'before certain issues "
+       "arise'.)",
+    10: "ITU-D (Development) 'helps spread equitable, sustainable and affordable access "
+        "to information and communication technologies (ICT).'",
+    11: "The deck lists the grounds of appeal as law (illegality), procedure "
+        "(misadministration), logic (irrationality) and the substance of the action. "
+        "'Authority' is NOT among them, so it is the odd one out. Note: 'logic' IS a "
+        "valid ground.",
+    13: "Policy-making is the ministry's job; the technocratic, day-to-day regulation "
+        "of the sector is done by the independent national regulator (the decks stress "
+        "the regulator should be separate from the ministry). NB: this stem was cut off "
+        "in the photo — if it actually asked about policy-making, the answer would "
+        "be the ministry.",
+    14: "The deck gives the ITU mission as exactly these four: shared use of the radio "
+        "spectrum, satellite-orbit assignment, telecom infrastructure in the developing "
+        "world, and worldwide technical standards. All four are included, so none is the "
+        "exception.",
+    15: "The deck says a monopoly causes exactly three harms: lower output (low supply), "
+        "higher price, and less-efficient/higher-cost production. 'Inferior goods are "
+        "produced' is not one of them — so it is the false statement.",
+    16: "In the access-gap model the Market Efficiency Gap is the area that is "
+        "commercially viable (would be profitable) but not yet served — closeable "
+        "by market reforms rather than subsidy.",
+    17: "Ex-post regulation acts on proven grievances after the fact instead of via "
+        "finely detailed pre-set rules; the deck notes 'intrusion can be lessened by "
+        "the use of ex-post rules.'",
+    18: "The True Access Gap is the area where service cannot be provided profitably at "
+        "all — it needs subsidy / universal-access funding, unlike the Market "
+        "Efficiency Gap.",
+    19: "Regulation takes three basic forms: technical standardisation, public policy "
+        "regulation and competition regulation. Consumer-protection regulation is not "
+        "one of these three, so it is the exception.",
+    22: "ITU-R (Radiocommunication) 'manages the international radio-frequency spectrum "
+        "and satellite orbit resources.' (Stem was cut off in the photo, but the options "
+        "fix it.)",
+    23: "A price change causes a movement ALONG the supply curve, not a shift. The curve "
+        "only shifts when input prices, technology, expectations or the number of sellers "
+        "change — so this is FALSE.",
+    24: "Every option is a listed licensing objective — provision of an essential "
+        "public service, privatization/commercialization, allocation of scarce resources, "
+        "and generating government revenue. So none is the exception.",
+    25: "Matches the deck's definition: 'the quantity supplied … is the amount that "
+        "sellers are willing and able to sell.' TRUE.",
+    26: "TRUE — as competition develops the regulator's role shifts (lighter-touch / "
+        "more ex-post competition oversight); a regulator picks among zero/self/co/formal "
+        "styles by what is appropriate.",
+    27: "Inferred: 'common-sense' regulation best fits ex-post — general principles "
+        "applied with judgment after the fact, rather than detailed rules set in advance. "
+        "NB: the phrase is not used verbatim in the provided decks, so confirm with your "
+        "lecturer.",
+    28: "Class licences (general authorisations) 'simplify regulation, help ensure a "
+        "level playing field, and are more flexible' — the deck's exact wording.",
+    29: "The UN's ICT agency is the International Telecommunication Union (ITU) — the "
+        "official name uses the singular 'Telecommunication' (option a's plural "
+        "'Telecommunications' is the trap).",
+    30: "ITU-T (Standardization) 'standardizes global telecommunications (except for "
+        "radio)'; radio is ITU-R's job.",
+    34: "Inferred (standard): the digital divide is the gap between those who have access "
+        "to modern ICT and those who do not. (Stem was cut off in the photo.) Don't "
+        "confuse it with the digital dividend (Q39).",
+    35: "Perfect competition has free entry, so 'significant restrictions on entry' does "
+        "NOT occur. The other options (many buyers, perfect information, no incumbent "
+        "advantage, price-taking) all do occur.",
+    36: "Determining whether a breach occurred AFTER the event is ex-post regulation "
+        "(ex post = 'after some issues have already occurred').",
+    37: "Under the usual convention a flatter supply curve (smaller slope in the "
+        "price–quantity plane) is more elastic, so A (slope 2) is taken as more "
+        "elastic than B (slope 3). NB: strictly, slope alone doesn't fix supply "
+        "elasticity (it also depends on the intercept / reference price), so verify the "
+        "intended answer.",
+    38: "Allocating scarce resources (spectrum, numbers, rights of way) is a "
+        "licensing/regulatory objective, not a universal-access objective — so it "
+        "is the exception here.",
+    39: "The digital dividend is the spectrum freed up when broadcasting switches from "
+        "analogue to digital TV. (Contrast the digital divide, Q34.)",
+    40: "The deck's exact sentence: 'In industries with zero regulation (no regulation), "
+        "market forces are allowed to work with no external intervention.'",
+    41: "Universal Access = availability on a shared/community basis (not necessarily to "
+        "each individual). 'Within the community … not necessarily on an individual "
+        "basis' → Universal Access. (Compare Q5.)",
+    42: "'No one should be a judge in their own cause' is the maxim nemo judex in sua "
+        "causa debet esse — the rule against bias ('justice must be seen to be "
+        "done').",
+    43: "The deck: the command economy 'fails because of … vulnerability to "
+        "managerial corruption' (and the intractable complexity of central control).",
+    44: "A price ceiling holds the price BELOW equilibrium (a maximum price); it is a "
+        "price FLOOR that keeps price above equilibrium. So the statement is FALSE.",
+    45: "'Hear the other side' is the maxim audi alteram partem — the fair-hearing "
+        "rule.",
+    46: "Perfect competition requires that 'the goods offered for sale are all exactly "
+        "the same' — i.e. an identical (homogeneous) product.",
+    47: "If A's price rises and B's quantity demanded rises, buyers are switching from A "
+        "to B — they are substitutes (positive cross-price relationship).",
+    48: "Technical standardisation 'establishes a common and legally enforceable platform "
+        "for all businesses within a sector' — the deck's exact definition.",
+    49: "The deck equates the terms: 'industries with zero regulation … are also "
+        "said to be completely deregulated (i.e. regulation has been completely "
+        "removed),' with market forces working with no external intervention. So this "
+        "reads as TRUE. (The exam sheet circled FALSE — treat with care and "
+        "confirm.)",
+    50: "A rule stated in advance that a company must obey is ex-ante regulation "
+        "(ex ante = 'before certain issues arise').",
+    51: "The deck: 'co-regulation is vulnerable to role ambiguity and the differing "
+        "player perceptions of what the others will do.'",
+    52: "Individual operator licences are used 'primarily where … there is likely "
+        "to be market dominance' (also limited licences / specific spectrum) — the "
+        "deck's exact wording.",
+    53: "'Guidelines are informal documents that do not … possess a legal status' "
+        "and are 'usually presented in user-friendly language'. So (I) is true and (II) "
+        "is false — legal language is used for determinations/consents, not "
+        "guidelines.",
+    54: "Liberalization = 'the removal of exclusive rights from the former monopoly … "
+        "and the award of licences for all new services on a competitive basis' — "
+        "the deck's exact description.",
+    55: "Regulation 'refers to the intervention by governments in markets in order to "
+        "achieve certain outcomes' — the deck's exact definition.",
+    56: "The deck calls a market 'a group of buyers and sellers' and notes markets can "
+        "be non-physical (e.g. online), so it is a price/allocation mechanism, not merely "
+        "'a place'. The most accurate description is the price-adjustment process that "
+        "reconciles the allocation of resources.",
+    57: "'Current Network Reach and Access' is the already-well-served area (high "
+        "density, higher income) that the market has already reached.",
+    58: "Reacting reasonably to unforeseen circumstances is ex-post regulation — you "
+        "respond after events occur, unlike fixed ex-ante rules.",
+    59: "A mixed economy blends command and market: 'Command measures, blended with "
+        "market economies, create the mixed economies,' with governments intervening to "
+        "correct market failure.",
+    60: "The deck's widely-accepted objectives foster competitive markets to promote "
+        "efficient supply, quality, advanced services and efficient prices — NOT "
+        "'local entrepreneurial initiative'. The other four options are listed objectives "
+        "verbatim, so (a) is the odd one out.",
+}
+
 
 def main():
     records = []
     for exam_no, q_text, options, correct in QUESTIONS:
         assert correct in options, f"correct answer not in options for Q{exam_no}"
         assert len(options) == len(set(options)), f"duplicate options in Q{exam_no}"
+        assert exam_no in EXPLANATIONS, f"missing explanation for Q{exam_no}"
         records.append({
             "question_number": exam_no,
             "question_text": q_text,
             "options": options,
             "correct_answer": [correct],
+            "explanation": EXPLANATIONS[exam_no],
         })
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as fh:

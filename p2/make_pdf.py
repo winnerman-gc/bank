@@ -29,6 +29,7 @@ h3 { font-size: 13px; margin: 18px 0 6px 0; color: #115e59; border-top: 1px soli
 .opt { font-size: 10px; margin: 1px 0 1px 16px; color: #1f2937; }
 .correct { color: #15803d; font-weight: bold; }
 .ans { font-size: 9.5px; margin: 3px 0 0 16px; color: #15803d; font-weight: bold; }
+.why { font-size: 9px; margin: 2px 0 0 16px; color: #92400e; }
 """
 
 LETTERS = ["A", "B", "C", "D", "E", "F"]
@@ -54,6 +55,9 @@ def build_html():
                     correct_letter = letter
                 parts.append(f'<p class="{cls}">{letter}. {html.escape(opt)}{mark}</p>')
             parts.append(f'<p class="ans">Answer: {correct_letter}. {html.escape(correct)}</p>')
+            why = q.get("explanation")
+            if why:
+                parts.append(f'<p class="why">Insight: {html.escape(why)}</p>')
         total += len(records)
     return "<body>" + "".join(parts) + "</body>", total
 
