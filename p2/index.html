@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Policy &amp; Regulation Past Paper (TE 452/462) - MCQ Practice</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f766e;
+            --primary-dark: #115e59;
+            --accent: #f59e0b;
+            --success: #16a34a;
+            --danger: #dc2626;
+            --bg: #f2f8f7;
+            --panel: #ffffff;
+            --text: #0f172a;
+            --muted: #64748b;
+            --border: #d7e6e3;
+            --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+        }
+
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at top left, rgba(15, 118, 110, 0.09), transparent 30%),
+                radial-gradient(circle at top right, rgba(245, 158, 11, 0.10), transparent 26%),
+                var(--bg);
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(14px);
+            background: rgba(255, 255, 255, 0.88);
+            border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 1px 0 rgba(15, 23, 42, 0.03);
+        }
+
+        .header-inner {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 10px 18px 8px;
+            display: grid;
+            gap: 8px;
+        }
+
+        .title-row {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .title-copy h1 {
+            margin: 0;
+            font-size: clamp(0.95rem, 1.7vw, 1.15rem);
+            line-height: 1.2;
+            color: var(--primary-dark);
+        }
+
+        .stats {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            gap: 6px;
+            overflow-x: auto;
+            padding-bottom: 2px;
+        }
+
+        .stat {
+            flex: 0 0 auto;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 7px 11px;
+            box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+            white-space: nowrap;
+        }
+
+        .stat .label {
+            display: inline;
+            font-size: 0.64rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            margin-bottom: 0;
+            line-height: 1;
+        }
+
+        .stat .value {
+            font-size: 0.84rem;
+            font-weight: 700;
+            white-space: nowrap;
+            line-height: 1;
+        }
+
+        .toolbar {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .btn {
+            border: 0;
+            border-radius: 999px;
+            padding: 8px 12px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+            white-space: nowrap;
+        }
+
+        .btn:hover { transform: translateY(-1px); }
+        .btn-primary { background: var(--primary); color: #fff; box-shadow: 0 8px 18px rgba(15, 118, 110, 0.18); }
+        .btn-primary:hover { background: var(--primary-dark); }
+        .btn-secondary { background: #475569; color: #fff; }
+        .btn-warning { background: var(--accent); color: #111827; }
+        .btn-danger { background: var(--danger); color: #fff; }
+        .btn-ghost { background: #e2e8f0; color: #0f172a; }
+        .btn.active { outline: 2px solid rgba(15, 118, 110, 0.24); }
+
+        .container {
+            max-width: 1120px;
+            margin: 18px auto 60px;
+            padding: 0 20px;
+        }
+
+        .selector {
+            display: grid;
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+
+        .panel {
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+            padding: 18px;
+        }
+
+        .panel h2 {
+            margin: 0 0 12px;
+            font-size: 1rem;
+            color: #0f172a;
+        }
+
+        .source-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+        }
+
+        .source-card {
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 14px;
+            background: #fff;
+            cursor: pointer;
+            transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .source-card:hover { transform: translateY(-1px); border-color: rgba(15, 118, 110, 0.35); box-shadow: 0 10px 20px rgba(15, 23, 42, 0.06); }
+        .source-card.active { border-color: rgba(15, 118, 110, 0.65); background: rgba(15, 118, 110, 0.05); }
+        .source-card h3 { margin: 0 0 6px; font-size: 0.98rem; }
+        .source-card p { margin: 0; color: var(--muted); font-size: 0.86rem; line-height: 1.4; }
+
+        #feed { display: grid; gap: 16px; }
+
+        .question-card {
+            background: rgba(255, 255, 255, 0.94);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 18px;
+            padding: 18px;
+            box-shadow: var(--shadow);
+            border-left: 5px solid var(--primary);
+            scroll-margin-top: 96px;
+            animation: fadeUp 0.25s ease;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .question-head {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .question-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 10px;
+            border-radius: 999px;
+            background: rgba(15, 118, 110, 0.08);
+            color: var(--primary-dark);
+            font-weight: 700;
+            font-size: 0.78rem;
+        }
+
+        .question-text {
+            font-size: 1.02rem;
+            line-height: 1.55;
+            font-weight: 600;
+            margin-bottom: 14px;
+        }
+
+        .options { display: grid; gap: 8px; }
+
+        .option-btn {
+            width: 100%;
+            border: 1px solid var(--border);
+            background: #fff;
+            border-radius: 14px;
+            padding: 12px 14px;
+            text-align: left;
+            cursor: pointer;
+            transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            align-items: center;
+            font-size: 0.96rem;
+        }
+
+        .option-btn:hover:not(.locked) { border-color: rgba(15, 118, 110, 0.45); background: rgba(15, 118, 110, 0.04); transform: translateY(-1px); }
+        .option-btn.selected:not(.locked) { border-color: rgba(15, 118, 110, 0.65); background: rgba(15, 118, 110, 0.08); }
+        .option-btn.correct { border-color: rgba(22, 163, 74, 0.8); background: rgba(22, 163, 74, 0.08); color: #14532d; }
+        .option-btn.wrong { border-color: rgba(220, 38, 38, 0.8); background: rgba(220, 38, 38, 0.08); color: #7f1d1d; }
+
+        .option-icon { min-width: 20px; text-align: center; color: currentColor; }
+
+        .answer-feedback {
+            display: none;
+            margin-top: 12px;
+            padding: 12px 14px;
+            border-radius: 14px;
+            font-size: 0.92rem;
+            line-height: 1.5;
+        }
+
+        .answer-feedback.show { display: block; }
+        .feedback-correct { background: rgba(22, 163, 74, 0.08); color: #14532d; border-left: 4px solid var(--success); }
+        .feedback-wrong { background: rgba(220, 38, 38, 0.08); color: #7f1d1d; border-left: 4px solid var(--danger); }
+
+        .footer {
+            display: none;
+            margin-top: 18px;
+            text-align: center;
+            color: var(--muted);
+            padding-bottom: 24px;
+        }
+
+        .footer-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+
+        .loading {
+            padding: 80px 20px;
+            text-align: center;
+            color: var(--muted);
+        }
+
+        .loading i { color: var(--primary); }
+
+        @media (max-width: 720px) {
+            .header-inner, .container { padding-left: 14px; padding-right: 14px; }
+            .question-card { padding: 16px; }
+            .title-row { gap: 6px; }
+            .toolbar { gap: 5px; }
+            .btn { padding: 6px 10px; font-size: 0.74rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="title-row">
+                <div class="title-copy">
+                    <h1>Policy &amp; Regulation Past Paper (TE 452/462) - MCQ Practice</h1>
+                </div>
+                <div class="toolbar">
+                    <button class="btn btn-warning" onclick="retakeWrongQuestions()" id="retake-btn">Retake Wrong</button>
+                    <button class="btn btn-secondary" onclick="returnToMainQuestions()" id="return-btn" style="display:none">Back to Main</button>
+                    <button class="btn btn-danger" onclick="resetProgress()">Reset</button>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat">Correct: <span class="value" id="stat-correct">0</span></div>
+                <div class="stat">Wrong: <span class="value" id="stat-wrong">0</span></div>
+                <div class="stat">Score: <span class="value" id="stat-score">0%</span></div>
+                <div class="stat">Progress: <span class="value" id="stat-progress">0/0</span></div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="container">
+        <section class="selector panel">
+            <h2>Select a question set</h2>
+            <div class="source-grid" id="source-grid"></div>
+        </section>
+
+        <section id="feed">
+            <div class="panel loading" id="loading">
+                <i class="fas fa-circle-notch fa-spin fa-2x"></i>
+                <p>Loading question banks...</p>
+            </div>
+        </section>
+
+        <section class="footer panel" id="footer">
+            <p>End of questions reached.</p>
+            <div class="footer-actions">
+                <button class="btn btn-ghost" onclick="scrollToTop()">Back to Top</button>
+                <button class="btn btn-primary" id="next-source-btn" onclick="goToNextSource()" style="display:none">Next Set →</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const CACHE_VERSION = '2026-07-06.1';
+        const VIEW_STATE_KEY = 'p2_quiz_view_state';
+        const ANSWERS_STORAGE_KEY = 'p2_quiz_answers_v1';
+        const RETAKE_ANSWERS_STORAGE_KEY = 'p2_quiz_retake_answers_v1';
+        const OPTION_ORDER_STORAGE_KEY = 'p2_quiz_option_orders_v1';
+
+        const SOURCES = [
+            {
+                id: 'set-1',
+                label: 'Past Paper',
+                file: 'compiled.json',
+                description: '54 questions — transcribed from the TE 452/462 Policy & Regulation past paper (Section A). Answers verified against the course lecture decks, not the circled marks.'
+            }
+        ];
+
+        let allQuestionsData = [];
+        let userAnswers = getStoredAnswers();
+        let retakeAnswers = getStoredRetakeAnswers();
+        let currentMode = 'set';
+        let currentSourceId = SOURCES[0].id;
+        let currentAnswerStore = 'main';
+        let currentQuestionsData = [];
+        let currentViewKey = 'set-1';
+        let currentExamLabel = 'All Questions';
+        let correctCount = 0;
+        let wrongCount = 0;
+        let currentModeQuestions = [];
+        let optionOrders = getStoredOptionOrders();
+
+        function normalizeOptionText(optionText) {
+            return String(optionText || '').replace(/^\s*[A-E][.)]\s*/, '').trim();
+        }
+
+        function normalizeStoredAnswers(storedAnswers) {
+            const normalized = {};
+            Object.entries(storedAnswers || {}).forEach(([key, value]) => {
+                normalized[key] = Array.isArray(value)
+                    ? value.map(normalizeOptionText)
+                    : [normalizeOptionText(value)];
+            });
+            return normalized;
+        }
+
+        function getStoredAnswers() {
+            return normalizeStoredAnswers(JSON.parse(localStorage.getItem(ANSWERS_STORAGE_KEY) || '{}'));
+        }
+
+        function getStoredRetakeAnswers() {
+            return normalizeStoredAnswers(JSON.parse(localStorage.getItem(RETAKE_ANSWERS_STORAGE_KEY) || '{}'));
+        }
+
+        function getStoredOptionOrders() {
+            try {
+                return JSON.parse(localStorage.getItem(OPTION_ORDER_STORAGE_KEY) || '{}');
+            } catch (error) {
+                return {};
+            }
+        }
+
+        function saveAnswers(answerStore = 'main') {
+            if (answerStore === 'retake') {
+                localStorage.setItem(RETAKE_ANSWERS_STORAGE_KEY, JSON.stringify(retakeAnswers));
+                return;
+            }
+            localStorage.setItem(ANSWERS_STORAGE_KEY, JSON.stringify(userAnswers));
+        }
+
+        function saveOptionOrders() {
+            localStorage.setItem(OPTION_ORDER_STORAGE_KEY, JSON.stringify(optionOrders));
+        }
+
+        function getQuestionKey(question, sourceId) {
+            return `${sourceId}:${question.question_number}`;
+        }
+
+        function getAnswerForQuestion(question, sourceId, viewSourceId, answersObj) {
+            const candidateKeys = [getQuestionKey(question, sourceId)];
+            if (viewSourceId === 'all' || viewSourceId === 'random') {
+                candidateKeys.push(getQuestionKey(question, viewSourceId));
+            }
+
+            for (const key of candidateKeys) {
+                if (Object.prototype.hasOwnProperty.call(answersObj, key)) {
+                    return { key, value: answersObj[key] };
+                }
+            }
+
+            return { key: candidateKeys[0], value: undefined };
+        }
+
+        function shuffleArray(values) {
+            const shuffled = [...values];
+            for (let index = shuffled.length - 1; index > 0; index -= 1) {
+                const swapIndex = Math.floor(Math.random() * (index + 1));
+                [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+            }
+            return shuffled;
+        }
+
+        function getOptionOrder(question, sourceId, options) {
+            const key = getQuestionKey(question, sourceId);
+            const storedOrder = optionOrders[key];
+
+            if (Array.isArray(storedOrder)
+                && storedOrder.length === options.length
+                && new Set(storedOrder).size === options.length
+                && storedOrder.every(index => Number.isInteger(index) && index >= 0 && index < options.length)) {
+                return storedOrder;
+            }
+
+            const order = shuffleArray(options.map((_, index) => index));
+            optionOrders[key] = order;
+            saveOptionOrders();
+            return order;
+        }
+
+        function getHeaderOffset() {
+            const header = document.querySelector('.header');
+            return (header ? header.offsetHeight : 0) + 14;
+        }
+
+        function getViewState() {
+            try {
+                const raw = localStorage.getItem(VIEW_STATE_KEY);
+                return raw ? JSON.parse(raw) : null;
+            } catch (error) {
+                return null;
+            }
+        }
+
+        function saveViewState(questionIndex = 0) {
+            localStorage.setItem(VIEW_STATE_KEY, JSON.stringify({
+                mode: currentMode,
+                sourceId: currentSourceId,
+                viewKey: currentViewKey,
+                questionIndex: Number.isFinite(questionIndex) ? questionIndex : 0
+            }));
+        }
+
+        function clearViewState() {
+            localStorage.removeItem(VIEW_STATE_KEY);
+        }
+
+        function scrollToQuestion(questionIndex, behavior = 'smooth', saveState = true) {
+            const card = document.getElementById(`q-${questionIndex}`);
+            if (!card) return false;
+
+            const rect = card.getBoundingClientRect();
+            const currentY = window.scrollY || window.pageYOffset;
+            const headerOffset = getHeaderOffset();
+            const topTarget = currentY + rect.top - headerOffset;
+            const centerTarget = currentY + rect.top - ((window.innerHeight - rect.height) / 2);
+            window.scrollTo({ top: Math.max(0, Math.min(centerTarget, topTarget)), behavior });
+            if (saveState) saveViewState(questionIndex);
+            return true;
+        }
+
+        function scrollToContinuation(questionIndex, saveState = true) {
+            window.setTimeout(() => {
+                if (questionIndex < currentQuestionsData.length) {
+                    scrollToQuestion(questionIndex, 'smooth', saveState);
+                } else {
+                    scrollToBottom(saveState);
+                }
+            }, 250);
+        }
+
+        function scrollToBottom(saveState = true) {
+            const footer = document.getElementById('footer');
+            if (footer) {
+                footer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+            if (saveState && currentQuestionsData.length > 0) {
+                saveViewState(Math.max(0, currentQuestionsData.length - 1));
+            }
+        }
+
+        function setRetakeControls(isRetakeMode) {
+            document.getElementById('retake-btn').style.display = isRetakeMode ? 'none' : 'inline-block';
+            document.getElementById('return-btn').style.display = isRetakeMode ? 'inline-block' : 'none';
+        }
+
+        function setActiveSourceCard(sourceId) {
+            document.querySelectorAll('.source-card').forEach(card => {
+                card.classList.toggle('active', card.dataset.sourceId === sourceId);
+            });
+        }
+
+        function sourceLabel(sourceId) {
+            return SOURCES.find(source => source.id === sourceId)?.label || sourceId;
+        }
+
+        function getQuestionsForSource(sourceId) {
+            return allQuestionsData.filter(question => question.sourceId === sourceId);
+        }
+
+        function buildSourcesUI() {
+            const grid = document.getElementById('source-grid');
+            grid.innerHTML = '';
+
+            // With a single combined bank there is nothing to choose between,
+            // so hide the set selector entirely.
+            const selector = document.querySelector('.selector');
+            if (selector) selector.style.display = SOURCES.length <= 1 ? 'none' : '';
+
+            SOURCES.forEach(source => {
+                const card = document.createElement('div');
+                card.className = 'source-card';
+                card.dataset.sourceId = source.id;
+                card.innerHTML = `
+                    <h3>${source.label}</h3>
+                    <p>${source.description}</p>
+                `;
+                card.onclick = () => showSource(source.id, true);
+                grid.appendChild(card);
+            });
+        }
+
+        async function loadQuestionBanks() {
+            try {
+                const baseUrl = new URL('.', window.location.href).toString();
+                const responses = await Promise.all(
+                    SOURCES.map(source => fetch(`${baseUrl}${source.file}?v=${CACHE_VERSION}`, { cache: 'no-store' }).then(response => response.json()))
+                );
+
+                allQuestionsData = responses.flatMap((questions, sourceIndex) => {
+                    const source = SOURCES[sourceIndex];
+                    return questions.map(question => ({
+                        ...question,
+                        sourceId: source.id,
+                        sourceLabel: source.label
+                    }));
+                });
+
+                buildSourcesUI();
+                document.getElementById('loading').style.display = 'none';
+
+                const savedState = getViewState();
+                if (savedState && savedState.mode && savedState.sourceId) {
+                    restoreSavedView(savedState);
+                } else {
+                    showSource(currentSourceId, false);
+                }
+            } catch (error) {
+                console.error(error);
+                document.getElementById('loading').innerHTML = `<p style="color:var(--danger)">Error loading question banks: ${error.message}</p>`;
+            }
+        }
+
+        function restoreSavedView(savedState) {
+            if (!savedState || !savedState.mode || !savedState.sourceId) {
+                return false;
+            }
+
+            currentMode = savedState.mode;
+            currentSourceId = savedState.sourceId;
+            currentAnswerStore = savedState.mode === 'retake' ? 'retake' : 'main';
+
+            if (savedState.mode === 'retake') {
+                const savedQuestions = getQuestionsForSource(savedState.sourceId);
+                const wrongQuestions = savedQuestions.filter(question => isQuestionWrong(question));
+                setRetakeControls(true);
+                currentQuestionsData = wrongQuestions;
+                renderQuestions(wrongQuestions, {
+                    answerStore: 'retake',
+                    mode: 'retake',
+                    sourceId: savedState.sourceId,
+                    shouldRestore: true,
+                    shouldAutoscroll: false
+                });
+                if (Number.isInteger(savedState.questionIndex)) {
+                    window.requestAnimationFrame(() => scrollToQuestion(savedState.questionIndex, 'auto', false));
+                }
+                setActiveSourceCard(savedState.sourceId);
+                return true;
+            }
+
+            showSource(savedState.sourceId, false, savedState.questionIndex || 0);
+            return true;
+        }
+
+        function showSource(sourceId, pushState = true, questionIndex = 0) {
+            currentSourceId = sourceId;
+            currentMode = 'set';
+            currentViewKey = sourceId;
+            currentAnswerStore = 'main';
+            setRetakeControls(false);
+            setActiveSourceCard(sourceId);
+
+            const questions = getQuestionsForSource(sourceId);
+            renderQuestions(questions, {
+                answerStore: 'main',
+                mode: 'set',
+                sourceId,
+                shouldRestore: true,
+                shouldAutoscroll: false,
+                questionIndex
+            });
+
+            if (pushState) saveViewState(questionIndex);
+            if (Number.isInteger(questionIndex) && questionIndex >= 0) {
+                window.requestAnimationFrame(() => scrollToQuestion(questionIndex, 'auto', false));
+            } else {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        function goToNextSource() {
+            if (currentMode !== 'set') return;
+            const index = SOURCES.findIndex(source => source.id === currentSourceId);
+            if (index >= 0 && index < SOURCES.length - 1) {
+                showSource(SOURCES[index + 1].id, true, 0);
+            }
+        }
+
+        function renderQuestions(questions, options = {}) {
+            const {
+                shouldRestore = false,
+                shouldAutoscroll = false,
+                answerStore = 'main',
+                mode = 'set',
+                sourceId = currentSourceId,
+                questionIndex = 0
+            } = options;
+
+            const feed = document.getElementById('feed');
+            feed.innerHTML = '';
+            currentQuestionsData = questions;
+            currentModeQuestions = questions;
+            currentAnswerStore = answerStore;
+            document.getElementById('footer').style.display = 'block';
+
+            if (!questions.length) {
+                feed.innerHTML = '<div class="panel"><p style="margin:0;color:var(--muted);text-align:center">No questions found.</p></div>';
+                calculateStats();
+                return;
+            }
+
+            questions.forEach((question, idx) => {
+                const card = createQuestionCard(question, idx, answerStore, mode, sourceId);
+                feed.appendChild(card);
+            });
+
+            const currentIndex = SOURCES.findIndex(s => s.id === currentSourceId);
+            const isLastSet = currentIndex === SOURCES.length - 1;
+            document.getElementById('next-source-btn').style.display = currentMode === 'set' && !isLastSet ? 'inline-block' : 'none';
+            calculateStats();
+
+            if (shouldAutoscroll) {
+                scrollToContinuation(questionIndex, false);
+            }
+        }
+
+        function createQuestionCard(question, idx, answerStore, mode, sourceId) {
+            const effectiveSourceId = sourceId === 'all' || sourceId === 'random' ? question.sourceId : sourceId;
+            const answerKey = getQuestionKey(question, effectiveSourceId);
+            const isMultiChoice = Array.isArray(question.correct_answer) && question.correct_answer.length > 1;
+            const correctAnswers = (question.correct_answer || []).map(normalizeOptionText);
+            const answersObj = answerStore === 'retake' ? retakeAnswers : userAnswers;
+            const storedLookup = getAnswerForQuestion(question, effectiveSourceId, sourceId, answersObj);
+            const stored = storedLookup.value;
+            const card = document.createElement('article');
+            card.className = 'question-card';
+            card.id = `q-${idx}`;
+
+            const singleSource = SOURCES.length <= 1;
+            const tagParts = [`Question ${question.question_number}`];
+            if (effectiveSourceId && !singleSource) tagParts.push(sourceLabel(effectiveSourceId));
+            if (isMultiChoice) tagParts.push('Choose Multiple');
+
+            card.innerHTML = `
+                <div class="question-head">
+                    <div class="question-tag">${tagParts.join(' · ')}</div>
+                    <div style="color:var(--muted);font-size:0.82rem;">${singleSource ? '' : sourceLabel(question.sourceId)}</div>
+                </div>
+                <div class="question-text">${escapeHtml(question.question_text)}</div>
+            `;
+
+            const optionsWrap = document.createElement('div');
+            optionsWrap.className = 'options';
+            const options = Array.isArray(question.options) ? question.options : [];
+            const optionOrder = getOptionOrder(question, sourceId, options);
+            const selectedValues = Array.isArray(stored) ? stored : stored ? [stored] : [];
+
+            optionOrder.forEach(optionIndex => {
+                const option = options[optionIndex];
+                const normalized = normalizeOptionText(option);
+                const button = document.createElement('button');
+                button.className = 'option-btn';
+                button.dataset.option = normalized;
+                button.innerHTML = `<span>${escapeHtml(option)}</span><span class="option-icon"></span>`;
+                if (selectedValues.includes(normalized)) button.classList.add('selected');
+                button.onclick = () => handleAnswer(question, idx, normalized, button, answerStore, mode, effectiveSourceId, isMultiChoice, correctAnswers);
+                optionsWrap.appendChild(button);
+            });
+
+            const feedback = document.createElement('div');
+            feedback.className = 'answer-feedback';
+            feedback.id = `feedback-${idx}`;
+            card.appendChild(optionsWrap);
+            card.appendChild(feedback);
+
+            if (selectedValues.length) {
+                const isCorrect = isMultiChoice
+                    ? selectedValues.slice().sort().join('|') === correctAnswers.slice().sort().join('|')
+                    : selectedValues[0] === correctAnswers[0];
+                showAnswer(idx, isCorrect, correctAnswers, isMultiChoice, false, card);
+            }
+
+            return card;
+        }
+
+        function handleAnswer(question, idx, selectedOption, button, answerStore, mode, sourceId, isMultiChoice, correctAnswers) {
+            const answerKey = getQuestionKey(question, sourceId);
+            const answersObj = answerStore === 'retake' ? retakeAnswers : userAnswers;
+
+            if (isMultiChoice) {
+                const current = Array.isArray(answersObj[answerKey]) ? [...answersObj[answerKey]] : [];
+                const found = current.indexOf(selectedOption);
+                if (found >= 0) {
+                    current.splice(found, 1);
+                    button.classList.remove('selected');
+                } else {
+                    current.push(selectedOption);
+                    button.classList.add('selected');
+                }
+                answersObj[answerKey] = current;
+            } else {
+                document.querySelectorAll(`#q-${idx} .option-btn`).forEach(btn => btn.classList.remove('selected'));
+                answersObj[answerKey] = [selectedOption];
+                button.classList.add('selected');
+            }
+
+            saveAnswers(answerStore);
+
+            const selectedAnswers = Array.isArray(answersObj[answerKey]) ? answersObj[answerKey] : [answersObj[answerKey]];
+            const isComplete = !isMultiChoice || selectedAnswers.length === correctAnswers.length;
+            if (isComplete) {
+                const isCorrect = isMultiChoice
+                    ? selectedAnswers.slice().sort().join('|') === correctAnswers.slice().sort().join('|')
+                    : selectedAnswers[0] === correctAnswers[0];
+                showAnswer(idx, isCorrect, correctAnswers, isMultiChoice, isCorrect, document.getElementById(`q-${idx}`));
+            }
+
+            calculateStats();
+        }
+
+        function showAnswer(idx, isCorrect, correctAnswers, isMultiChoice, autoScroll = false, cardElement = null) {
+            const card = cardElement || document.getElementById(`q-${idx}`);
+            if (!card) return;
+            const feedback = card.querySelector(`#feedback-${idx}`);
+            if (!feedback) return;
+
+            const optionBtns = card.querySelectorAll('.option-btn');
+            optionBtns.forEach(btn => {
+                const value = normalizeOptionText(btn.dataset.option || btn.textContent);
+                if (correctAnswers.includes(value)) {
+                    btn.classList.add('correct');
+                } else if (btn.classList.contains('selected') && !isCorrect) {
+                    btn.classList.add('wrong');
+                }
+                btn.classList.add('locked');
+                btn.style.pointerEvents = 'none';
+            });
+
+            feedback.classList.add('show');
+            if (isCorrect) {
+                feedback.className = 'answer-feedback show feedback-correct';
+                feedback.innerHTML = '<strong>✓ Correct!</strong>';
+                if (autoScroll) scrollToContinuation(idx + 1);
+            } else {
+                feedback.className = 'answer-feedback show feedback-wrong';
+                const text = isMultiChoice
+                    ? `Correct answers: ${correctAnswers.join(', ')}`
+                    : `Correct answer: ${correctAnswers[0]}`;
+                feedback.innerHTML = `<strong>✗ Wrong</strong><br>${escapeHtml(text)}`;
+            }
+        }
+
+        function escapeHtml(text) {
+            return String(text || '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function calculateStats() {
+            let correct = 0;
+            let wrong = 0;
+            const answersObj = currentAnswerStore === 'retake' ? retakeAnswers : userAnswers;
+            const questions = currentQuestionsData.length ? currentQuestionsData : allQuestionsData;
+
+            questions.forEach(question => {
+                const answer = getAnswerForQuestion(question, question.sourceId, currentSourceId, answersObj).value;
+                if (!answer || !answer.length) return;
+
+                const correctAnswers = (question.correct_answer || []).map(normalizeOptionText);
+                const selectedAnswers = Array.isArray(answer) ? answer : [answer];
+                const isMultiChoice = correctAnswers.length > 1;
+                const isCorrect = isMultiChoice
+                    ? selectedAnswers.slice().sort().join('|') === correctAnswers.slice().sort().join('|')
+                    : selectedAnswers[0] === correctAnswers[0];
+                if (isCorrect) correct++;
+                else if (selectedAnswers.filter(Boolean).length) wrong++;
+            });
+
+            const total = correct + wrong;
+            const progressTotal = currentQuestionsData.length || allQuestionsData.length;
+            document.getElementById('stat-correct').textContent = correct;
+            document.getElementById('stat-wrong').textContent = wrong;
+            document.getElementById('stat-score').textContent = `${total ? Math.round((correct / total) * 100) : 0}%`;
+            document.getElementById('stat-progress').textContent = `${total}/${progressTotal}`;
+        }
+
+        function isQuestionWrong(question) {
+            const answer = getAnswerForQuestion(question, question.sourceId, currentSourceId, userAnswers).value;
+            if (!answer || !answer.length) return false;
+            const selectedAnswers = Array.isArray(answer) ? answer : [answer];
+            const correctAnswers = (question.correct_answer || []).map(normalizeOptionText);
+            return selectedAnswers.slice().sort().join('|') !== correctAnswers.slice().sort().join('|');
+        }
+
+        function retakeWrongQuestions() {
+            const activeQuestions = currentQuestionsData.length ? currentQuestionsData : allQuestionsData;
+            const wrongQuestions = activeQuestions.filter(isQuestionWrong);
+
+            if (!wrongQuestions.length) {
+                alert('No wrong answers to retake!');
+                return;
+            }
+
+            currentMode = 'retake';
+            currentAnswerStore = 'retake';
+            setRetakeControls(true);
+            currentQuestionsData = wrongQuestions;
+            currentViewKey = `${currentSourceId}-retake`;
+            renderQuestions(wrongQuestions, {
+                answerStore: 'retake',
+                mode: 'retake',
+                sourceId: currentSourceId,
+                shouldRestore: true,
+                shouldAutoscroll: false
+            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function returnToMainQuestions() {
+            currentAnswerStore = 'main';
+            setRetakeControls(false);
+            const viewState = getViewState();
+            if (viewState && viewState.mode && viewState.mode !== 'retake') {
+                if (viewState.mode === 'set') {
+                    showSource(viewState.sourceId || SOURCES[0].id, false, viewState.questionIndex || 0);
+                    return;
+                }
+            }
+            showSource(currentSourceId || SOURCES[0].id, false, 0);
+        }
+
+        function resetProgress() {
+            const isRetakeMode = currentMode === 'retake' || currentAnswerStore === 'retake';
+            const promptText = isRetakeMode
+                ? 'Reset retake progress only? Main progress will stay unchanged.'
+                : 'Are you sure you want to reset all progress?';
+
+            if (!confirm(promptText)) return;
+
+            if (isRetakeMode) {
+                localStorage.removeItem(RETAKE_ANSWERS_STORAGE_KEY);
+                retakeAnswers = {};
+                renderQuestions(currentQuestionsData, {
+                    answerStore: 'retake',
+                    mode: 'retake',
+                    sourceId: currentSourceId,
+                    shouldRestore: false,
+                    shouldAutoscroll: false
+                });
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                return;
+            }
+
+            localStorage.removeItem(ANSWERS_STORAGE_KEY);
+            localStorage.removeItem(RETAKE_ANSWERS_STORAGE_KEY);
+            clearViewState();
+            userAnswers = {};
+            retakeAnswers = {};
+            currentMode = 'set';
+            currentAnswerStore = 'main';
+            showSource(currentSourceId || SOURCES[0].id, false, 0);
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function goToNextSource() {
+            if (currentMode !== 'set') return;
+            const currentIndex = SOURCES.findIndex(source => source.id === currentSourceId);
+            if (currentIndex >= 0 && currentIndex < SOURCES.length - 1) {
+                showSource(SOURCES[currentIndex + 1].id, true, 0);
+            }
+        }
+
+        window.addEventListener('load', loadQuestionBanks);
+    </script>
+</body>
+</html>

@@ -1,0 +1,735 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "The factors that encouraged the monopoly paradigm in the telecommunication sector can be categorized as",
+    "options": [
+      "social, political and economic",
+      "political and economic",
+      "social and political",
+      "social and economic",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "political and economic"
+    ]
+  },
+  {
+    "question_number": 2,
+    "question_text": "WTO aims at",
+    "options": [
+      "establishing rules for domestic trade",
+      "restricting trade practices",
+      "liberalising international trade",
+      "encouraging entrepreneurs",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "liberalising international trade"
+    ]
+  },
+  {
+    "question_number": 3,
+    "question_text": "Accounting separation enables regulators to examine whether a dominant operator is favouring its own retail business over its competitors.",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correct_answer": [
+      "TRUE"
+    ]
+  },
+  {
+    "question_number": 4,
+    "question_text": "The following are instruments of regulation EXCEPT",
+    "options": [
+      "regulations",
+      "resolutions",
+      "decisions",
+      "policies",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "None of the above"
+    ]
+  },
+  {
+    "question_number": 5,
+    "question_text": "The availability of affordable communications services for all citizens on a personal basis is ______.",
+    "options": [
+      "Universal Access",
+      "Universal Achievement",
+      "Universal Assess",
+      "Universal Service",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Universal Service"
+    ]
+  },
+  {
+    "question_number": 6,
+    "question_text": "A license which sets out identical terms of operation for all businesses operating in a particular market segment can be referred to as (I) individual operator  (II) class license  (III) general authorisation",
+    "options": [
+      "I or II",
+      "I or III",
+      "II or III",
+      "I, II or III",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "II or III"
+    ]
+  },
+  {
+    "question_number": 7,
+    "question_text": "The principles of good regulatory decision-making include all of the following EXCEPT",
+    "options": [
+      "Transparency",
+      "Objectivism",
+      "Professionalism",
+      "All of the above",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "None of the above"
+    ]
+  },
+  {
+    "question_number": 8,
+    "question_text": "Which of the following is/are true about individuals in the Bottom of the Pyramid markets?  (I) They are unable to spend significant sums of money.  (II) They have often been considered commercially unviable by large companies.",
+    "options": [
+      "I only",
+      "II only",
+      "Both I and II",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Both I and II"
+    ]
+  },
+  {
+    "question_number": 9,
+    "question_text": "What type of rules are vulnerable to becoming dated or inappropriate in a fast-moving high technology industry?",
+    "options": [
+      "ex-parte",
+      "ex-ante",
+      "ex-post",
+      "Audi alteram partem",
+      "nemo judex in sua causa debet esse"
+    ],
+    "correct_answer": [
+      "ex-ante"
+    ]
+  },
+  {
+    "question_number": 10,
+    "question_text": "Which of these sectors helps spread equitable, sustainable and affordable access to information and communication technologies (ICT)?",
+    "options": [
+      "ITU-R",
+      "ITU-T",
+      "ITU-D",
+      "ITU-S",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "ITU-D"
+    ]
+  },
+  {
+    "question_number": 11,
+    "question_text": "Which of the following is not one of the grounds on which a regulator's decision may be appealed?",
+    "options": [
+      "law",
+      "procedure",
+      "logic",
+      "authority",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "logic"
+    ]
+  },
+  {
+    "question_number": 13,
+    "question_text": "[stem reconstructed] The body responsible for the technical and economic regulation of the telecommunication sector (as distinct from policy-making) is",
+    "options": [
+      "The ministry in charge of the telecommunication sector",
+      "The national telecommunication regulator",
+      "Mobile network operators",
+      "The courts of law",
+      "The police"
+    ],
+    "correct_answer": [
+      "The national telecommunication regulator"
+    ]
+  },
+  {
+    "question_number": 14,
+    "question_text": "The mission of the UN specialized agency responsible for issues concerning information and communication technologies includes all of the following EXCEPT",
+    "options": [
+      "coordinating the shared global use of the radio spectrum",
+      "promoting international cooperation in assigning satellite orbits",
+      "working to improve telecommunication infrastructure in the developing world",
+      "assisting in the development of technical standards",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "None of the above"
+    ]
+  },
+  {
+    "question_number": 15,
+    "question_text": "Which of the following is FALSE about an industry with one monopoly firm?",
+    "options": [
+      "Higher prices are experienced",
+      "Supply is low",
+      "Production is inefficient",
+      "Inferior goods are produced",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Inferior goods are produced"
+    ]
+  },
+  {
+    "question_number": 16,
+    "question_text": "The area within the Access Model which captures population and geographical areas which are still unserved, but in which services would be profitable, is referred to as the",
+    "options": [
+      "True Access Gap",
+      "Current Network Reach and Access",
+      "Smart Subsidy Zone",
+      "Market Efficiency Gap",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Market Efficiency Gap"
+    ]
+  },
+  {
+    "question_number": 17,
+    "question_text": "By concentrating action on proven grievances rather than on compliance with finely detailed rules, ______ regulation is potentially efficient.",
+    "options": [
+      "ex-parte",
+      "ex-ante",
+      "ex-post",
+      "Audi alteram partem",
+      "nemo judex in sua causa debet esse"
+    ],
+    "correct_answer": [
+      "ex-post"
+    ]
+  },
+  {
+    "question_number": 18,
+    "question_text": "The area within the Access Model in which services cannot be provided profitably is referred to as",
+    "options": [
+      "True Access Gap",
+      "Current Network Reach and Access",
+      "Smart Subsidy Zone",
+      "Market Efficiency Gap",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "True Access Gap"
+    ]
+  },
+  {
+    "question_number": 19,
+    "question_text": "All the following are basic forms of regulation, EXCEPT",
+    "options": [
+      "Technical standardisation",
+      "Public policy regulation",
+      "Competition regulation",
+      "Consumer protection regulation",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Consumer protection regulation"
+    ]
+  },
+  {
+    "question_number": 22,
+    "question_text": "[stem reconstructed] Which of these sectors manages the international radio-frequency spectrum and satellite orbit resources?",
+    "options": [
+      "ITU-R",
+      "ITU-T",
+      "ITU-D",
+      "ITU-S",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "ITU-R"
+    ]
+  },
+  {
+    "question_number": 23,
+    "question_text": "An increase in price will cause a supply curve to shift to the left.",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correct_answer": [
+      "FALSE"
+    ]
+  },
+  {
+    "question_number": 24,
+    "question_text": "Licences may be issued to achieve all of the following objectives EXCEPT",
+    "options": [
+      "To regulate the provision of an essential public service",
+      "To encourage privatization",
+      "To allocate scarce resources",
+      "To generate revenue for government",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "None of the above"
+    ]
+  },
+  {
+    "question_number": 25,
+    "question_text": "Supply is the quantity of a good sellers wish to sell each time the market opens.",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correct_answer": [
+      "TRUE"
+    ]
+  },
+  {
+    "question_number": 26,
+    "question_text": "The role of regulators changes as markets become more competitive.",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correct_answer": [
+      "TRUE"
+    ]
+  },
+  {
+    "question_number": 27,
+    "question_text": "What type of rule is referred to as 'common sense' regulation?",
+    "options": [
+      "ex-parte",
+      "ex-ante",
+      "ex-post",
+      "Audi alteram partem",
+      "nemo judex in sua causa debet esse"
+    ],
+    "correct_answer": [
+      "ex-post"
+    ]
+  },
+  {
+    "question_number": 28,
+    "question_text": "Which of the following types of licences simplify regulation?",
+    "options": [
+      "Individual operator licences",
+      "Class licences",
+      "Intermediate licences",
+      "Consultative licences",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Class licences"
+    ]
+  },
+  {
+    "question_number": 29,
+    "question_text": "The specialized agency of the United Nations (UN) responsible for issues that concern information and communication technologies is",
+    "options": [
+      "International Telecommunications Union",
+      "International Telecommunication Union",
+      "Institute of Electrical and Electronics Engineers",
+      "Institute of Electrical and Electronic Engineers",
+      "World Trade Organization"
+    ],
+    "correct_answer": [
+      "International Telecommunication Union"
+    ]
+  },
+  {
+    "question_number": 30,
+    "question_text": "Which of these sectors standardizes global telecommunications (except for radio)?",
+    "options": [
+      "ITU-R",
+      "ITU-T",
+      "ITU-D",
+      "ITU-S",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "ITU-T"
+    ]
+  },
+  {
+    "question_number": 34,
+    "question_text": "[stem reconstructed] The gap between those who have access to modern information and communication technologies and those who do not is referred to as the ______.",
+    "options": [
+      "digital divide",
+      "digital dividend",
+      "white space",
+      "spectral efficiency",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "digital divide"
+    ]
+  },
+  {
+    "question_number": 35,
+    "question_text": "Which one of the following does NOT occur in perfect competition?",
+    "options": [
+      "There are many buyers.",
+      "Firms and buyers are completely informed about the prices of the products of each firm in the industry.",
+      "There are significant restrictions on entry into the industry.",
+      "Firms already in the industry have no advantage over potential new entrants.",
+      "No single firm can exert a significant influence on the price of the good."
+    ],
+    "correct_answer": [
+      "There are significant restrictions on entry into the industry."
+    ]
+  },
+  {
+    "question_number": 36,
+    "question_text": "What type of rule is being applied if a regulator states, 'You must not indulge in anti-competitive practice', but determines whether a breach has taken place after the event?",
+    "options": [
+      "ex-parte",
+      "ex-ante",
+      "ex-post",
+      "Audi alteram partem",
+      "nemo judex in sua causa debet esse"
+    ],
+    "correct_answer": [
+      "ex-post"
+    ]
+  },
+  {
+    "question_number": 37,
+    "question_text": "Two linear equations A and B represent two supply curves. A has a slope of 2 while B has a slope of 3. Which of the two equations represent a more elastic supply?",
+    "options": [
+      "A",
+      "B",
+      "All of the above",
+      "None of the above",
+      "Cannot be determined"
+    ],
+    "correct_answer": [
+      "A"
+    ]
+  },
+  {
+    "question_number": 38,
+    "question_text": "All of the following are universal access policy objectives EXCEPT",
+    "options": [
+      "To permit full participation in 21st Century society",
+      "To promote national political, economic and cultural cohesion",
+      "To allocate scarce resources",
+      "To promote economic development",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "To allocate scarce resources"
+    ]
+  },
+  {
+    "question_number": 39,
+    "question_text": "Which of the following refers to the radio spectrum released in the process of digital television transition?",
+    "options": [
+      "digital divide",
+      "digital dividend",
+      "white space",
+      "spectral efficiency",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "digital dividend"
+    ]
+  },
+  {
+    "question_number": 40,
+    "question_text": "In industries with ______, market forces are allowed to work with no external intervention.",
+    "options": [
+      "co-regulation",
+      "zero regulation",
+      "formal regulation",
+      "self-regulation",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "zero regulation"
+    ]
+  },
+  {
+    "question_number": 41,
+    "question_text": "The availability of affordable communications services for all citizens within the community in which they live but not necessarily on an individual basis is ______.",
+    "options": [
+      "Universal Access",
+      "Universal Achievement",
+      "Universal Assess",
+      "Universal Service",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Universal Access"
+    ]
+  },
+  {
+    "question_number": 42,
+    "question_text": "The principle ______ ensures that no person can judge a case in which they have an interest.",
+    "options": [
+      "ex-parte",
+      "ex-ante",
+      "ex-post",
+      "Audi alteram partem",
+      "nemo judex in sua causa debet esse"
+    ],
+    "correct_answer": [
+      "nemo judex in sua causa debet esse"
+    ]
+  },
+  {
+    "question_number": 43,
+    "question_text": "Which of these types of economies is vulnerable to managerial corruption?",
+    "options": [
+      "Traditional",
+      "Command",
+      "Market",
+      "All of the above",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Command"
+    ]
+  },
+  {
+    "question_number": 44,
+    "question_text": "Price ceilings are imposed to increase price above the free market equilibrium price.",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correct_answer": [
+      "FALSE"
+    ]
+  },
+  {
+    "question_number": 45,
+    "question_text": "The maxim 'hear the other side' is expressed in Latin as",
+    "options": [
+      "ex-parte",
+      "ex-ante",
+      "ex-post",
+      "Audi alteram partem",
+      "nemo judex in sua causa debet esse"
+    ],
+    "correct_answer": [
+      "Audi alteram partem"
+    ]
+  },
+  {
+    "question_number": 46,
+    "question_text": "Perfect competition occurs in a market where there are many firms each selling",
+    "options": [
+      "a unique product",
+      "a capital intensive product",
+      "a similar product",
+      "an identical product",
+      "a competitive product"
+    ],
+    "correct_answer": [
+      "an identical product"
+    ]
+  },
+  {
+    "question_number": 47,
+    "question_text": "If a price increase of good A increases the quantity demanded of good B, then good B is a",
+    "options": [
+      "substitute good",
+      "complementary good",
+      "inferior good",
+      "normal good"
+    ],
+    "correct_answer": [
+      "substitute good"
+    ]
+  },
+  {
+    "question_number": 48,
+    "question_text": "Which form of regulation establishes a common and legally enforceable platform for all businesses within a sector?",
+    "options": [
+      "Competition regulation",
+      "Public policy regulation",
+      "Business regulation",
+      "Technical standardisation",
+      "Business standardisation"
+    ],
+    "correct_answer": [
+      "Technical standardisation"
+    ]
+  },
+  {
+    "question_number": 49,
+    "question_text": "In a de-regulated industry, market forces are allowed to work with no external intervention.",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correct_answer": [
+      "FALSE"
+    ]
+  },
+  {
+    "question_number": 50,
+    "question_text": "______ regulation states, in advance, a rule that a company must obey.",
+    "options": [
+      "ex-parte",
+      "ex-ante",
+      "ex-post",
+      "Audi alteram partem",
+      "nemo judex in sua causa debet esse"
+    ],
+    "correct_answer": [
+      "ex-ante"
+    ]
+  },
+  {
+    "question_number": 51,
+    "question_text": "Which type of regulation is vulnerable to role ambiguity among the different actors in an industry?",
+    "options": [
+      "co-regulation",
+      "zero regulation",
+      "formal regulation",
+      "self-regulation",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "co-regulation"
+    ]
+  },
+  {
+    "question_number": 52,
+    "question_text": "Which of the following types of licences are used primarily where there is likely to be market dominance?",
+    "options": [
+      "Individual operator licences",
+      "Class licences",
+      "Intermediate licences",
+      "Consultative licences",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Individual operator licences"
+    ]
+  },
+  {
+    "question_number": 53,
+    "question_text": "Which of the following best describe(s) guidelines?  (I) They are informal documents.  (II) They are drafted in legal language.",
+    "options": [
+      "I only",
+      "II only",
+      "Both I and II",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "I only"
+    ]
+  },
+  {
+    "question_number": 54,
+    "question_text": "Characteristics of ______ include the removal of exclusive rights from monopoly firms and award of licences for all new services on a competitive basis.",
+    "options": [
+      "regulation",
+      "privatization",
+      "liberalization",
+      "de-regulation",
+      "reformation"
+    ],
+    "correct_answer": [
+      "liberalization"
+    ]
+  },
+  {
+    "question_number": 55,
+    "question_text": "______ refers to the intervention by governments in those markets in order to achieve certain outcomes.",
+    "options": [
+      "regulation",
+      "privatization",
+      "liberalization",
+      "de-regulation",
+      "policy"
+    ],
+    "correct_answer": [
+      "regulation"
+    ]
+  },
+  {
+    "question_number": 56,
+    "question_text": "A market can accurately be described as",
+    "options": [
+      "a place to buy things",
+      "a place to sell things",
+      "the process by which prices adjust to reconcile the allocation of resources",
+      "a place where buyers and sellers meet"
+    ],
+    "correct_answer": [
+      "the process by which prices adjust to reconcile the allocation of resources"
+    ]
+  },
+  {
+    "question_number": 57,
+    "question_text": "The area within the Access Model which captures high population density and higher-income citizens which have historically been well served is referred to as the",
+    "options": [
+      "True Access Gap",
+      "Current Network Reach and Access",
+      "Smart Subsidy Zone",
+      "Market Efficiency Gap",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Current Network Reach and Access"
+    ]
+  },
+  {
+    "question_number": 58,
+    "question_text": "______ regulation gives regulation its power to react reasonably in unforeseen circumstances.",
+    "options": [
+      "ex-parte",
+      "ex-ante",
+      "ex-post",
+      "Audi alteram partem",
+      "nemo judex in sua causa debet esse"
+    ],
+    "correct_answer": [
+      "ex-post"
+    ]
+  },
+  {
+    "question_number": 59,
+    "question_text": "In the mixed economy",
+    "options": [
+      "economic problems are solved by the government and market",
+      "economic decisions are made by the private sector and free market",
+      "economic allocation is achieved by the 'invisible hand'",
+      "economic questions are solved by government departments"
+    ],
+    "correct_answer": [
+      "economic problems are solved by the government and market"
+    ]
+  },
+  {
+    "question_number": 60,
+    "question_text": "Which of the following is NOT a widely accepted regulatory objective in the telecommunication sector?",
+    "options": [
+      "Foster competitive markets to promote local entrepreneurial initiative",
+      "Protect consumer rights, including privacy rights",
+      "Promote universal access to basic telecommunications services",
+      "Optimize use of scarce resources",
+      "Create a favourable climate to promote investment to expand telecommunications networks"
+    ],
+    "correct_answer": [
+      "Foster competitive markets to promote local entrepreneurial initiative"
+    ]
+  }
+]
