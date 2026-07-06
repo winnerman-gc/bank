@@ -6,6 +6,14 @@ examination paper for the Policy & Regulation course. The exam has:
 - **Section A** — 60 shuffled multiple-choice questions (this is what the site practises)
 - **Section B** — 4 essay questions (listed below for reference; not part of the quiz)
 
+The site now has **two selectable question sets**:
+
+- **Set 1 · Past Paper** — 54 questions transcribed from the exam (`compiled.json`,
+  built by `build_questions.py`).
+- **Set 2 · Deck-based** — 50 new questions authored in the same style as the past
+  paper but written from the lecture decks (`compiled_2.json`, built by
+  `build_questions_2.py`), for extra practice.
+
 Open `index.html` (or the GitHub Pages URL) to practise. Options are reshuffled per
 question, progress is saved locally, and a "Retake Wrong" button drills the ones you miss.
 
@@ -57,8 +65,9 @@ the question text: **Q13, Q22, Q34**.
 ## Rebuilding
 
 ```bash
-python3 build_questions.py     # writes compiled.json (stdlib only)
-python3 make_pdf.py            # writes the answer-key PDF (needs PyMuPDF)
+python3 build_questions.py     # writes compiled.json  (Set 1, stdlib only)
+python3 build_questions_2.py   # writes compiled_2.json (Set 2, stdlib only)
+python3 make_pdf.py            # writes the answer-key PDF for both sets (needs PyMuPDF)
 ```
 
 After editing content, bump `CACHE_VERSION` in `index.html` so the CDN serves the new JSON.

@@ -378,7 +378,7 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-07-06.3';
+        const CACHE_VERSION = '2026-07-06.4';
         const VIEW_STATE_KEY = 'p2_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'p2_quiz_answers_v1';
         const RETAKE_ANSWERS_STORAGE_KEY = 'p2_quiz_retake_answers_v1';
@@ -387,9 +387,15 @@
         const SOURCES = [
             {
                 id: 'set-1',
-                label: 'Past Paper',
+                label: 'Set 1 · Past Paper',
                 file: 'compiled.json',
                 description: '54 questions — transcribed from the TE 452/462 Policy & Regulation past paper (Section A). Answers verified against the course lecture decks, not the circled marks.'
+            },
+            {
+                id: 'set-2',
+                label: 'Set 2 · Deck-based',
+                file: 'compiled_2.json',
+                description: '50 extra questions modelled on the past-paper style and authored from the TE 452/462 lecture decks, each with a grounded insight.'
             }
         ];
 

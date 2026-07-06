@@ -1,0 +1,748 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "According to the Law of Demand, other things being equal, when the price of a good rises, the quantity demanded of that good",
+    "options": [
+      "rises",
+      "falls",
+      "stays exactly the same",
+      "rises then falls",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "falls"
+    ],
+    "explanation": "Law of Demand: 'when the price of a good rises, the quantity demanded of the good falls, and when the price falls, the quantity demanded rises.'"
+  },
+  {
+    "question_number": 2,
+    "question_text": "Which of the following would shift the demand curve rather than cause a movement along it?",
+    "options": [
+      "a change in the good's own price",
+      "a change in consumers' income",
+      "a change in the quantity supplied",
+      "a change in the equilibrium quantity",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "a change in consumers' income"
+    ],
+    "explanation": "The deck lists demand-curve shifters as income, prices of related goods, taste, expectations and the number of buyers. A change in the good's own price is a movement along the curve, not a shift."
+  },
+  {
+    "question_number": 3,
+    "question_text": "According to the Law of Supply, when the price of a good rises, the quantity supplied of the good also rises.",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correct_answer": [
+      "TRUE"
+    ],
+    "explanation": "Law of Supply: 'when the price of a good rises, the quantity supplied of the good also rises, and when the price falls, the quantity supplied falls as well.'"
+  },
+  {
+    "question_number": 4,
+    "question_text": "All of the following can shift the supply curve EXCEPT",
+    "options": [
+      "input prices",
+      "technology",
+      "the price of the good itself",
+      "the number of sellers",
+      "expectations"
+    ],
+    "correct_answer": [
+      "the price of the good itself"
+    ],
+    "explanation": "Supply-curve shifters are input prices, technology, expectations and the number of sellers. A change in the good's own price is a movement along the supply curve, not a shift."
+  },
+  {
+    "question_number": 5,
+    "question_text": "The single point at which the supply and demand curves intersect gives the",
+    "options": [
+      "ceiling price",
+      "equilibrium price",
+      "floor price",
+      "reservation price",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "equilibrium price"
+    ],
+    "explanation": "'Equilibrium is the one point at which the supply and demand curves intersect. The price at this intersection is called the equilibrium price.'"
+  },
+  {
+    "question_number": 6,
+    "question_text": "A government intervention that keeps a price below its market equilibrium is called a price",
+    "options": [
+      "floor",
+      "ceiling",
+      "band",
+      "peg",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "ceiling"
+    ],
+    "explanation": "'Prices below the market equilibrium … such policy interventions are called price ceilings, because they prevent the price from rising as high as it may have gone.'"
+  },
+  {
+    "question_number": 7,
+    "question_text": "A price floor is a government control that keeps the price ______ its market equilibrium value.",
+    "options": [
+      "below",
+      "above",
+      "equal to",
+      "independent of",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "above"
+    ],
+    "explanation": "'The opposite [of a ceiling] is a price floor, by which the government keeps the price above its market equilibrium value.'"
+  },
+  {
+    "question_number": 8,
+    "question_text": "______ refers to how the burden of a tax is distributed among the various people who make up the economy.",
+    "options": [
+      "Tax incidence",
+      "Tax elasticity",
+      "Tax equilibrium",
+      "Tax neutrality",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Tax incidence"
+    ],
+    "explanation": "'Tax incidence refers to how the burden of a tax is distributed among the various people who make up the economy.'"
+  },
+  {
+    "question_number": 9,
+    "question_text": "In a ______ economy, a powerful agent (usually the government) determines what people will produce, earn and consume.",
+    "options": [
+      "traditional",
+      "command",
+      "market",
+      "mixed",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "command"
+    ],
+    "explanation": "'In a command economy a powerful agent (usually the government) determines what people will produce, earn and consume.'"
+  },
+  {
+    "question_number": 10,
+    "question_text": "Which type of economy is typical of tribal societies, where economic affairs follow a customary pattern and local leaders have the final say on allocation?",
+    "options": [
+      "Market",
+      "Command",
+      "Traditional",
+      "Mixed",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Traditional"
+    ],
+    "explanation": "'Traditional economies are typical of tribal societies … economic affairs follow a customary pattern … local leaders have the ultimate say in matters of allocation.'"
+  },
+  {
+    "question_number": 11,
+    "question_text": "Twentieth-century experience shows the command economy fails because of (I) the intractable complexity of the control task  (II) vulnerability to managerial corruption.",
+    "options": [
+      "I only",
+      "II only",
+      "Both I and II",
+      "Neither I nor II"
+    ],
+    "correct_answer": [
+      "Both I and II"
+    ],
+    "explanation": "The deck gives both: the command economy 'fails because of the intractable complexity of the control task [and] vulnerability to managerial corruption.'"
+  },
+  {
+    "question_number": 12,
+    "question_text": "For a market to be perfectly competitive, the goods offered for sale must be",
+    "options": [
+      "branded and differentiated",
+      "all exactly the same",
+      "of varying quality",
+      "protected by patents",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "all exactly the same"
+    ],
+    "explanation": "Under perfect competition 'the goods offered for sale are all exactly the same', and no single buyer or seller has any influence over the market price."
+  },
+  {
+    "question_number": 13,
+    "question_text": "A firm that has no competitors in its industry is called a",
+    "options": [
+      "monopsony",
+      "monopoly",
+      "oligopoly",
+      "cartel",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "monopoly"
+    ],
+    "explanation": "'A firm that has no competitors in its industry is called a monopoly.'"
+  },
+  {
+    "question_number": 14,
+    "question_text": "A ______ monopoly exists when a single firm can supply a good to an entire market at a lower cost than could two or more firms.",
+    "options": [
+      "legal",
+      "natural",
+      "temporary",
+      "statutory",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "natural"
+    ],
+    "explanation": "'An industry is a natural monopoly when a single firm can supply a good or service to an entire market at a lower cost than could two or more.'"
+  },
+  {
+    "question_number": 15,
+    "question_text": "Which of the following is cited as an example of a natural monopoly?",
+    "options": [
+      "water supply",
+      "power distribution",
+      "telecommunications",
+      "All of the above",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "All of the above"
+    ],
+    "explanation": "'Examples of natural monopolies include water supply, power distribution, telecommunications.'"
+  },
+  {
+    "question_number": 16,
+    "question_text": "Governments deliberately create monopolies by issuing ______, which give inventors the right to sell and market their inventions.",
+    "options": [
+      "licences",
+      "patents",
+      "subsidies",
+      "tariffs",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "patents"
+    ],
+    "explanation": "'Governments issue patents, which give monopoly rights to inventors to sell and market their inventions.'"
+  },
+  {
+    "question_number": 17,
+    "question_text": "The process of transition from a monopoly market to a competitive one is called",
+    "options": [
+      "privatization",
+      "liberalization",
+      "standardization",
+      "commercialization",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "liberalization"
+    ],
+    "explanation": "'Liberalization … represents the process of transition from a monopoly market to a competitive one.'"
+  },
+  {
+    "question_number": 18,
+    "question_text": "The transfer of ownership of a business from the state to the private sector is called",
+    "options": [
+      "liberalization",
+      "privatization",
+      "regulation",
+      "nationalization",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "privatization"
+    ],
+    "explanation": "'Privatization … is the transfer of ownership of a business from the state to the private sector.'"
+  },
+  {
+    "question_number": 19,
+    "question_text": "The former monopoly fixed-network operator, from which exclusive rights are removed during liberalization, is usually called the",
+    "options": [
+      "incumbent",
+      "entrant",
+      "licensee",
+      "regulator",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "incumbent"
+    ],
+    "explanation": "Liberalization means 'the removal of exclusive rights … from the former monopoly fixed network operator, which is often called the incumbent.'"
+  },
+  {
+    "question_number": 20,
+    "question_text": "Before the 1980s, telecommunications services were provided mainly by",
+    "options": [
+      "private start-ups",
+      "state-owned monopolies",
+      "foreign investors",
+      "competitive markets",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "state-owned monopolies"
+    ],
+    "explanation": "'The Telecommunication Sector before the 1980s: Telecoms services were provided by state-owned monopolies.'"
+  },
+  {
+    "question_number": 21,
+    "question_text": "The principal focus of contemporary regulation of the telecommunications services industry is the creation, nourishment and maintenance of",
+    "options": [
+      "state monopolies",
+      "competitive markets",
+      "fixed retail prices",
+      "universal ownership",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "competitive markets"
+    ],
+    "explanation": "'The principal focus for contemporary regulation of the telecommunications services industry is the creation, nourishment and maintenance of competitive markets.'"
+  },
+  {
+    "question_number": 22,
+    "question_text": "Which basic form of regulation seeks to create and maintain fair competitive relationships between businesses, and between businesses and consumers?",
+    "options": [
+      "Technical standardization",
+      "Public policy regulation",
+      "Competition regulation",
+      "Self-regulation",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Competition regulation"
+    ],
+    "explanation": "'Competition regulation … seeks to create and maintain fair competitive relationships between businesses, and between businesses and consumers.'"
+  },
+  {
+    "question_number": 23,
+    "question_text": "Public policy regulation seeks to achieve objectives because they are believed to be in the",
+    "options": [
+      "interest of operators",
+      "public interest",
+      "regulator's interest",
+      "global interest",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "public interest"
+    ],
+    "explanation": "'Public policy regulation … seeks to achieve objectives because they are believed to be in the public interest.'"
+  },
+  {
+    "question_number": 24,
+    "question_text": "Policy-making is primarily a matter of ______ decision-making, whereas regulation is much more technocratic.",
+    "options": [
+      "technical",
+      "political",
+      "judicial",
+      "commercial",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "political"
+    ],
+    "explanation": "'Whereas policy making is primarily a matter of political decision making, regulation is much more technocratic.'"
+  },
+  {
+    "question_number": 25,
+    "question_text": "Which of the following is NOT listed among the principles of good regulatory decision-making?",
+    "options": [
+      "Transparency",
+      "Objectivity",
+      "Secrecy",
+      "Efficiency",
+      "Independence"
+    ],
+    "correct_answer": [
+      "Secrecy"
+    ],
+    "explanation": "The principles listed are Transparency, Objectivity, Professionalism, Efficiency and Independence. Secrecy is not among them — transparency is its opposite."
+  },
+  {
+    "question_number": 26,
+    "question_text": "The two 'fundamental rules' of procedural fairness noted in the deck are audi alteram partem and",
+    "options": [
+      "nemo judex in sua causa debet esse",
+      "res ipsa loquitur",
+      "caveat emptor",
+      "pacta sunt servanda",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "nemo judex in sua causa debet esse"
+    ],
+    "explanation": "The two fundamental rules are audi alteram partem ('hear the other side') and 'do not be a judge in your own case' — nemo judex in sua causa debet esse."
+  },
+  {
+    "question_number": 27,
+    "question_text": "The main instruments of regulation include authorizations, rules, determinations, consents and",
+    "options": [
+      "guidelines",
+      "statutes",
+      "patents",
+      "tariffs",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "guidelines"
+    ],
+    "explanation": "'The main instruments of regulation include authorizations, rules, determinations, consents and guidelines.'"
+  },
+  {
+    "question_number": 28,
+    "question_text": "Which international organization regulates international trade and issued the Reference Paper on Regulation?",
+    "options": [
+      "ITU",
+      "WTO",
+      "ATU",
+      "WATRA",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "WTO"
+    ],
+    "explanation": "'The World Trade Organization (WTO) is an inter-governmental organization which regulates international trade,' and its agreement includes a Reference Paper on Regulation."
+  },
+  {
+    "question_number": 29,
+    "question_text": "Adherence to how many basic principles does the WTO Reference Paper on Regulation require?",
+    "options": [
+      "three",
+      "four",
+      "six",
+      "ten",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "six"
+    ],
+    "explanation": "'They require adherence to six basic principles' — e.g. an independent regulator, anti-competitive safeguards, transparent licensing, interconnection, neutral universal-access obligations, and fair allocation of scarce resources."
+  },
+  {
+    "question_number": 30,
+    "question_text": "The WTO Reference Paper says a telecoms regulator should be independent of operating companies, but not necessarily of",
+    "options": [
+      "governments",
+      "consumers",
+      "the ITU",
+      "the courts",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "governments"
+    ],
+    "explanation": "'Telecoms regulators should be independent of operating companies (but not necessarily of governments).'"
+  },
+  {
+    "question_number": 31,
+    "question_text": "The International Telecommunication Union (ITU) is a specialized agency of the",
+    "options": [
+      "European Union",
+      "United Nations",
+      "African Union",
+      "World Bank",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "United Nations"
+    ],
+    "explanation": "'ITU is a specialized agency of the United Nations (UN) responsible for issues that concern information and communication technologies.'"
+  },
+  {
+    "question_number": 32,
+    "question_text": "Which of the following is NOT one of the three sectors of the ITU?",
+    "options": [
+      "ITU-R",
+      "ITU-T",
+      "ITU-D",
+      "ITU-S",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "ITU-S"
+    ],
+    "explanation": "The ITU has three sectors: Radiocommunication (ITU-R), Standardization (ITU-T) and Development (ITU-D). There is no 'ITU-S'."
+  },
+  {
+    "question_number": 33,
+    "question_text": "Which body is the West African Telecommunications Regulators Association?",
+    "options": [
+      "ATU",
+      "WATRA",
+      "ECOWAS",
+      "ITU-D",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "WATRA"
+    ],
+    "explanation": "The deck lists international bodies including the 'West African Telecommunications Regulators Association (WATRA)'."
+  },
+  {
+    "question_number": 34,
+    "question_text": "Which regulatory style is the LEAST intrusive?",
+    "options": [
+      "Formal regulation",
+      "Co-regulation",
+      "Self-regulation",
+      "Zero regulation",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Zero regulation"
+    ],
+    "explanation": "In increasing order of intrusiveness the styles are zero regulation, self-regulation, co-regulation, then formal (external) regulation — so zero regulation is least intrusive."
+  },
+  {
+    "question_number": 35,
+    "question_text": "Which regulatory style is the MOST intrusive (most severe)?",
+    "options": [
+      "Zero regulation",
+      "Self-regulation",
+      "Co-regulation",
+      "Formal regulation",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Formal regulation"
+    ],
+    "explanation": "The order of increasing severity is zero → self → co → formal regulation, so formal (external) regulation is the most intrusive."
+  },
+  {
+    "question_number": 36,
+    "question_text": "Pure ______ applies when the players in an industry regulate themselves.",
+    "options": [
+      "co-regulation",
+      "self-regulation",
+      "zero regulation",
+      "formal regulation",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "self-regulation"
+    ],
+    "explanation": "'Pure self-regulation applies when the players in an industry regulate themselves.'"
+  },
+  {
+    "question_number": 37,
+    "question_text": "Which of the following is given as a benefit of self-regulation?",
+    "options": [
+      "companies usually know their businesses better than an external regulator",
+      "it shifts regulatory costs onto taxpayers",
+      "it works best when commercial conflicts are strong",
+      "it removes the industry's need for a watchdog",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "companies usually know their businesses better than an external regulator"
+    ],
+    "explanation": "Benefits listed include that 'companies usually know their businesses better than an external regulator', and that internalizing regulation minimizes the costs ultimately borne by industry and consumers."
+  },
+  {
+    "question_number": 38,
+    "question_text": "Self-regulation is most effective when there is",
+    "options": [
+      "strong commercial conflict between players",
+      "high convergence of interest between stakeholders",
+      "an absence of any shared interest",
+      "frequent litigation",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "high convergence of interest between stakeholders"
+    ],
+    "explanation": "Self-regulation is 'most effective when there is high convergence of interest between stakeholders [and] least effective when there are strong commercial conflicts.'"
+  },
+  {
+    "question_number": 39,
+    "question_text": "Which style is a hybrid in which the regulator joins the industry players in a joint forum instead of regulating purely from outside?",
+    "options": [
+      "Zero regulation",
+      "Self-regulation",
+      "Co-regulation",
+      "Formal regulation",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Co-regulation"
+    ],
+    "explanation": "'Co-regulation is a hybrid option … [where] the regulator joins the industry players to work with them, as a participant in a joint forum.'"
+  },
+  {
+    "question_number": 40,
+    "question_text": "Co-regulation blends together which two styles of regulation?",
+    "options": [
+      "zero and formal regulation",
+      "formal and self-regulation",
+      "self and zero regulation",
+      "traditional and command regulation",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "formal and self-regulation"
+    ],
+    "explanation": "'Co-regulation … blends formal and self-regulation together.'"
+  },
+  {
+    "question_number": 41,
+    "question_text": "Intrusion can be lessened by using ex-post rules and by regulating ______ instead of individual prices.",
+    "options": [
+      "price floors",
+      "price baskets",
+      "retail tariffs",
+      "spectrum fees",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "price baskets"
+    ],
+    "explanation": "'Intrusion can be lessened by the use of ex-post rules and by regulating price baskets instead of individual prices.'"
+  },
+  {
+    "question_number": 42,
+    "question_text": "Good regulation should be ______ rather than intrusive, allowing operators to manage their own affairs within the spirit of the regulation.",
+    "options": [
+      "minimal",
+      "pervasive",
+      "invisible",
+      "punitive",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "pervasive"
+    ],
+    "explanation": "'Regulation should be pervasive rather than intrusive, to allow operators to manage their affairs, as they know best but within the spirit of the regulation.'"
+  },
+  {
+    "question_number": 43,
+    "question_text": "Fundamental to any system of regulation is a system of ______, where an undertaking needs permission to participate in a regulated market.",
+    "options": [
+      "enforcement",
+      "authorization",
+      "consultation",
+      "adjudication",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "authorization"
+    ],
+    "explanation": "'Fundamental to any system of regulation is a system of authorization, where an undertaking needs permission to participate in a regulated market.'"
+  },
+  {
+    "question_number": 44,
+    "question_text": "A ______ is a negative determination by which an authorized operator is formally relieved from the need to comply with a requirement.",
+    "options": [
+      "guideline",
+      "consent",
+      "licence",
+      "rule",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "consent"
+    ],
+    "explanation": "'A consent is a negative determination by which an authorized operator is formally relieved from the need to comply with a requirement.'"
+  },
+  {
+    "question_number": 45,
+    "question_text": "Because they have legal force, determinations and consents are drafted in ______ language.",
+    "options": [
+      "user-friendly",
+      "legal",
+      "technical",
+      "plain",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "legal"
+    ],
+    "explanation": "'Because they have legal force, determinations and consents are drafted in legal language' — unlike guidelines, which are user-friendly."
+  },
+  {
+    "question_number": 46,
+    "question_text": "All of the following are typical stages in a regulatory consultation EXCEPT",
+    "options": [
+      "notification and invitations to contribute",
+      "publication of consultation papers",
+      "conduct of consultative meetings",
+      "issue of a memorandum with the final instruments",
+      "immediate revocation of an operator's licence"
+    ],
+    "correct_answer": [
+      "immediate revocation of an operator's licence"
+    ],
+    "explanation": "Consultation stages are notification/invitations, publication of consultation papers, consultative meetings (with iteration), and a memorandum with the final legal instruments. Licence revocation is an enforcement action, not a consultation stage."
+  },
+  {
+    "question_number": 47,
+    "question_text": "Companies pay for licences through upfront fees and ______ payments.",
+    "options": [
+      "one-time",
+      "annual",
+      "hourly",
+      "voluntary",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "annual"
+    ],
+    "explanation": "'Companies pay fees for licenses, which may include both upfront fees, when a license is awarded, and annual payments.'"
+  },
+  {
+    "question_number": 48,
+    "question_text": "A licence that does not tie an operator to a specific technology or service is described as a ______ licence.",
+    "options": [
+      "class",
+      "technology- and service-neutral",
+      "provisional",
+      "spectrum",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "technology- and service-neutral"
+    ],
+    "explanation": "'Some regulators have … moved towards technology- and service-neutral licensing,' e.g. permitting a telephone service without specifying a fixed or wireless technology."
+  },
+  {
+    "question_number": 49,
+    "question_text": "Licence conditions that establish a 'level playing field' and limit an incumbent's abuse of a dominant position are generally referred to as",
+    "options": [
+      "universal service obligations",
+      "anti-competitive safeguards",
+      "spectrum caps",
+      "interconnection charges",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "anti-competitive safeguards"
+    ],
+    "explanation": "Such conditions 'are generally referred to in licenses as \"anti-competitive safeguards\" or \"fair trading conditions\".'"
+  },
+  {
+    "question_number": 50,
+    "question_text": "Which of the following is NOT one of the finite (scarce) resources used in operating a telecommunications service?",
+    "options": [
+      "radio spectrum",
+      "telephone numbers",
+      "rights of way",
+      "customer goodwill",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "customer goodwill"
+    ],
+    "explanation": "The finite/scarce resources listed are radio spectrum, numbers and rights of way. 'Customer goodwill' is not one of them."
+  }
+]

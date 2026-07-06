@@ -13,12 +13,13 @@ import json
 import fitz  # PyMuPDF
 
 SOURCES = [
-    ("compiled.json", "Section A - Multiple Choice (transcribed from the past paper)"),
+    ("compiled.json", "Set 1 - Past paper (transcribed, Section A)"),
+    ("compiled_2.json", "Set 2 - Deck-based practice questions"),
 ]
 OUT = "TE452-TE462-Policy-Regulation-Past-Paper-with-answers.pdf"
-TITLE = "TE 452 / TE 462 - Policy & Regulation (Past Paper)"
-SUBTITLE = ("54 transcribed multiple-choice questions with answers verified against "
-            "the course lecture decks")
+TITLE = "TE 452 / TE 462 - Policy & Regulation"
+SUBTITLE = ("Set 1: 54 past-paper questions (answers verified against the decks) + "
+            "Set 2: 50 deck-based practice questions, all with insights")
 
 CSS = """
 body { font-family: sans-serif; color: #14213a; }
