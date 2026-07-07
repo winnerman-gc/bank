@@ -1,0 +1,580 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "WTO aims at",
+    "options": [
+      "establishing rules for domestic trade",
+      "restricting trade practices",
+      "liberalising international trade",
+      "encouraging entrepreneurs",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "liberalising international trade"
+    ],
+    "explanation": "'The WTO … regulates international trade,' opening telecom markets to competition and investment — it liberalises international (not domestic) trade."
+  },
+  {
+    "question_number": 2,
+    "question_text": "All the following are rules or guidelines contained in the WTO Reference Paper on Regulation EXCEPT",
+    "options": [
+      "There should be a regulatory body independent of governments and operating companies",
+      "Licensing criteria should be publicly available and transparent",
+      "The regulator should allocate scarce resources fairly between operators",
+      "Regulation should provide for interconnection between major operators",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "There should be a regulatory body independent of governments and operating companies"
+    ],
+    "explanation": "The Reference Paper requires a regulator 'independent of operating companies (but not necessarily of governments)'. So requiring independence from governments as well overstates it — that option is the exception; (b), (c) and (d) are genuine Reference-Paper principles."
+  },
+  {
+    "question_number": 3,
+    "question_text": "Characteristics of ______ include the removal of exclusive rights from monopoly firms and award of licences for all new services on a competitive basis.",
+    "options": [
+      "regulation",
+      "privatization",
+      "liberalization",
+      "de-regulation",
+      "reformation"
+    ],
+    "correct_answer": [
+      "liberalization"
+    ],
+    "explanation": "Liberalization = 'the removal of exclusive rights from the former monopoly … and the award of licences for all new services on a competitive basis.'"
+  },
+  {
+    "question_number": 4,
+    "question_text": "In a de-regulated industry, market forces are allowed to work with no external intervention.",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correct_answer": [
+      "TRUE"
+    ],
+    "explanation": "The deck equates the terms: 'industries with zero regulation … are also said to be completely deregulated (i.e. regulation has been completely removed),' with no external intervention. (The mid-sem key left this un-highlighted, so confirm with your lecturer.)"
+  },
+  {
+    "question_number": 5,
+    "question_text": "The process of transition from a monopoly market to a competitive one is referred to as ______.",
+    "options": [
+      "regulation",
+      "privatization",
+      "liberalization",
+      "de-regulation",
+      "reformation"
+    ],
+    "correct_answer": [
+      "liberalization"
+    ],
+    "explanation": "'Liberalization … represents the process of transition from a monopoly market to a competitive one.'"
+  },
+  {
+    "question_number": 6,
+    "question_text": "Two linear equations A and B represent two supply curves. A has a slope of 2 while B has a slope of 3. Which of the two equations represent a more elastic supply?",
+    "options": [
+      "A",
+      "B",
+      "All of the above",
+      "None of the above",
+      "Cannot be determined"
+    ],
+    "correct_answer": [
+      "A"
+    ],
+    "explanation": "Under the usual convention a flatter supply curve (smaller slope in the price–quantity plane) is more elastic, so A (slope 2) is taken as more elastic than B. NB: slope alone doesn't strictly fix supply elasticity — the mid-sem key left this un-highlighted, so verify the intended answer."
+  },
+  {
+    "question_number": 7,
+    "question_text": "The following are instruments of regulation EXCEPT",
+    "options": [
+      "regulations",
+      "resolutions",
+      "decisions",
+      "policies",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "None of the above"
+    ],
+    "explanation": "The decks list regulations, decisions, policies AND resolutions all as regulatory instruments, so every option is an instrument and none is the exception."
+  },
+  {
+    "question_number": 8,
+    "question_text": "______ refers to the intervention by governments in markets in order to achieve certain outcomes in those markets.",
+    "options": [
+      "regulation",
+      "privatization",
+      "liberalization",
+      "de-regulation",
+      "policy"
+    ],
+    "correct_answer": [
+      "regulation"
+    ],
+    "explanation": "'Regulation … refers to the intervention by governments in markets in order to achieve certain outcomes in those markets.'"
+  },
+  {
+    "question_number": 9,
+    "question_text": "Supply is the quantity of a good sellers wish to sell each time the market opens.",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correct_answer": [
+      "FALSE"
+    ],
+    "explanation": "FALSE. Supply is the whole price–quantity relationship (the supply schedule / curve), not one fixed amount. The deck calls the amount sellers will sell at a given price the 'quantity supplied'. (Highlighted FALSE in the mid-sem key.)"
+  },
+  {
+    "question_number": 10,
+    "question_text": "Which form of regulation establishes a common and legally enforceable platform for all businesses within a sector?",
+    "options": [
+      "Competition regulation",
+      "Public policy regulation",
+      "Business regulation",
+      "Technical standardisation",
+      "Business standardisation"
+    ],
+    "correct_answer": [
+      "Technical standardisation"
+    ],
+    "explanation": "'Technical standardisation … establishes a common and legally enforceable platform for all businesses within a sector.'"
+  },
+  {
+    "question_number": 11,
+    "question_text": "A market can accurately be described as",
+    "options": [
+      "a place to buy things",
+      "a place to sell things",
+      "the process by which prices adjust to reconcile the allocation of resources",
+      "a place where buyers and sellers meet"
+    ],
+    "correct_answer": [
+      "a place where buyers and sellers meet"
+    ],
+    "explanation": "The deck defines a market as 'a group of buyers and sellers of a particular good or service' — i.e. where buyers and sellers meet. (Highlighted (d) in the mid-sem key.)"
+  },
+  {
+    "question_number": 12,
+    "question_text": "______ regulation states, in advance, a rule that a company must obey.",
+    "options": [
+      "ex-parte",
+      "ex-ante",
+      "ex-post",
+      "Audi alteram partem",
+      "nemo judex in sua causa debet esse"
+    ],
+    "correct_answer": [
+      "ex-ante"
+    ],
+    "explanation": "A rule stated in advance that a company must obey is ex-ante regulation (ex ante = 'before certain issues arise')."
+  },
+  {
+    "question_number": 13,
+    "question_text": "Which one of the following does NOT occur in perfect competition?",
+    "options": [
+      "There are many buyers.",
+      "Firms and buyers are completely informed about the prices of the products of each firm in the industry.",
+      "There are significant restrictions on entry into the industry.",
+      "Firms already in the industry have no advantage over potential new entrants.",
+      "No single firm can exert a significant influence on the market price of the good."
+    ],
+    "correct_answer": [
+      "There are significant restrictions on entry into the industry."
+    ],
+    "explanation": "Perfect competition has free entry, so 'significant restrictions on entry' does NOT occur; the other options all do."
+  },
+  {
+    "question_number": 14,
+    "question_text": "An increase in consumer income will increase demand for a/an ______ but decrease demand for a/an ______.",
+    "options": [
+      "substitute good, inferior good",
+      "normal good, inferior good",
+      "inferior good, normal good",
+      "normal good, complementary good"
+    ],
+    "correct_answer": [
+      "normal good, inferior good"
+    ],
+    "explanation": "For a normal good, demand rises as income rises; for an inferior good, demand falls as income rises. So income up → more of a normal good, less of an inferior good."
+  },
+  {
+    "question_number": 15,
+    "question_text": "The factors that encouraged the monopoly paradigm in the telecommunication sector can be categorized as",
+    "options": [
+      "social, political and economic",
+      "political and economic",
+      "social and political",
+      "social and economic",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "political and economic"
+    ],
+    "explanation": "The deck names exactly two factors behind the state-monopoly era: Economic (natural monopoly) and Political (state control). 'Social' is not listed."
+  },
+  {
+    "question_number": 16,
+    "question_text": "Which of the following is NOT a widely accepted regulatory objective in the telecommunication sector?",
+    "options": [
+      "Foster competitive markets to promote local entrepreneurial initiative",
+      "Protect consumer rights, including privacy rights",
+      "Promote universal access to basic telecommunications services",
+      "Optimize use of scarce resources",
+      "Create a favourable climate to promote investment to expand telecommunications networks"
+    ],
+    "correct_answer": [
+      "Foster competitive markets to promote local entrepreneurial initiative"
+    ],
+    "explanation": "The deck's objective is to foster competitive markets to promote efficient supply, quality, advanced services and efficient prices — NOT 'local entrepreneurial initiative'. The other four are listed objectives verbatim."
+  },
+  {
+    "question_number": 17,
+    "question_text": "What type of rule is referred to as 'common sense' regulation?",
+    "options": [
+      "ex-parte",
+      "ex-ante",
+      "ex-post",
+      "Audi alteram partem",
+      "nemo judex in sua causa debet esse"
+    ],
+    "correct_answer": [
+      "ex-post"
+    ],
+    "explanation": "Inferred: 'common-sense' regulation best fits ex-post — general principles applied with judgment after the fact. NB: the phrase is not verbatim in the decks and the mid-sem key left it un-highlighted, so confirm with your lecturer."
+  },
+  {
+    "question_number": 18,
+    "question_text": "The mission of the UN specialized agency responsible for issues concerning information and communication technologies includes all of the following EXCEPT",
+    "options": [
+      "coordinating the shared global use of the radio spectrum",
+      "promoting international cooperation in assigning satellite orbits",
+      "working to improve telecommunication infrastructure in the developing world",
+      "assisting in the development and coordination of worldwide technical standards",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "None of the above"
+    ],
+    "explanation": "The deck gives the ITU mission as exactly these four, so all are included and none is the exception."
+  },
+  {
+    "question_number": 19,
+    "question_text": "Perfect competition occurs in a market where there are many firms each selling",
+    "options": [
+      "a unique product",
+      "a capital intensive product",
+      "a similar product",
+      "an identical product",
+      "a competitive product"
+    ],
+    "correct_answer": [
+      "an identical product"
+    ],
+    "explanation": "Under perfect competition 'the goods offered for sale are all exactly the same' — i.e. an identical (homogeneous) product."
+  },
+  {
+    "question_number": 20,
+    "question_text": "The maxim 'hear the other side' is expressed in Latin as",
+    "options": [
+      "ex-parte",
+      "ex-ante",
+      "ex-post",
+      "Audi alteram partem",
+      "nemo judex in sua causa debet esse"
+    ],
+    "correct_answer": [
+      "Audi alteram partem"
+    ],
+    "explanation": "'Hear the other side' is the maxim audi alteram partem — the fair-hearing rule."
+  },
+  {
+    "question_number": 21,
+    "question_text": "Which of these entities is responsible for policy implementation in the telecommunication sector in most developed market economies?",
+    "options": [
+      "The ministry in charge of the telecommunication sector",
+      "The national telecommunication regulator",
+      "Mobile network operators",
+      "The courts of law",
+      "The police"
+    ],
+    "correct_answer": [
+      "The national telecommunication regulator"
+    ],
+    "explanation": "Policy-making is the ministry's (political) role; 'regulation focuses on translating the objectives of policy decisions into practical measures' — so the independent national regulator implements policy. (Un-highlighted in the key.)"
+  },
+  {
+    "question_number": 22,
+    "question_text": "Which of the following is FALSE about an industry with one monopoly firm?",
+    "options": [
+      "Higher prices are experienced",
+      "Supply is low",
+      "Production is inefficient",
+      "Inferior goods are produced",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Inferior goods are produced"
+    ],
+    "explanation": "The deck lists exactly three monopoly harms: lower output (low supply), higher price, and less-efficient/higher-cost production. 'Inferior goods are produced' is not one of them — so it is the false statement."
+  },
+  {
+    "question_number": 23,
+    "question_text": "Which of these sectors manages the international radio frequency spectrum and satellite orbit resources?",
+    "options": [
+      "ITU-R",
+      "ITU-T",
+      "ITU-D",
+      "ITU-S",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "ITU-R"
+    ],
+    "explanation": "'ITU-R (Radiocommunication) … manages the international radio frequency spectrum and satellite orbit resources.'"
+  },
+  {
+    "question_number": 24,
+    "question_text": "______ regulation gives regulation its power to react reasonably in unforeseen circumstances.",
+    "options": [
+      "ex-parte",
+      "ex-ante",
+      "ex-post",
+      "Audi alteram partem",
+      "nemo judex in sua causa debet esse"
+    ],
+    "correct_answer": [
+      "ex-post"
+    ],
+    "explanation": "Reacting reasonably to unforeseen circumstances is ex-post regulation — you respond after events occur, unlike fixed ex-ante rules."
+  },
+  {
+    "question_number": 25,
+    "question_text": "In the mixed economy",
+    "options": [
+      "economic problems are solved by the government and market",
+      "economic decisions are made by the private sector and free market",
+      "economic allocation is achieved by the 'invisible hand'",
+      "economic questions are solved by government departments"
+    ],
+    "correct_answer": [
+      "economic problems are solved by the government and market"
+    ],
+    "explanation": "A mixed economy blends command and market: 'Command measures, blended with market economies, create the mixed economies,' with governments intervening to correct market failure."
+  },
+  {
+    "question_number": 26,
+    "question_text": "Which of these sectors helps spread equitable, sustainable and affordable access to information and communication technologies (ICT)?",
+    "options": [
+      "ITU-R",
+      "ITU-T",
+      "ITU-D",
+      "ITU-S",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "ITU-D"
+    ],
+    "explanation": "'ITU-D (Development) … helps spread equitable, sustainable and affordable access to information and communication technologies (ICT).'"
+  },
+  {
+    "question_number": 27,
+    "question_text": "The specialized agency of the United Nations (UN) responsible for issues that concern information and communication technologies is",
+    "options": [
+      "International Telecommunications Union",
+      "International Telecommunication Union",
+      "Institute of Electrical and Electronics Engineers",
+      "Institute of Electrical and Electronic Engineers",
+      "World Trade Organization"
+    ],
+    "correct_answer": [
+      "International Telecommunication Union"
+    ],
+    "explanation": "The UN's ICT agency is the International Telecommunication Union (ITU) — note the official name uses the singular 'Telecommunication'."
+  },
+  {
+    "question_number": 28,
+    "question_text": "Which of these types of economies is vulnerable to managerial corruption?",
+    "options": [
+      "Traditional",
+      "Command",
+      "Market",
+      "All of the above",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "Command"
+    ],
+    "explanation": "The deck: the command economy 'fails because of … vulnerability to managerial corruption' (and the intractable complexity of central control)."
+  },
+  {
+    "question_number": 29,
+    "question_text": "The principles of good regulatory decision-making include all of the following EXCEPT",
+    "options": [
+      "Transparency",
+      "Objectivism",
+      "Professionalism",
+      "All of the above",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "None of the above"
+    ],
+    "explanation": "Transparency, Objectivity and Professionalism are all listed principles, so none of the three is an exception."
+  },
+  {
+    "question_number": 30,
+    "question_text": "A change in price can cause a shift of a demand curve.",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correct_answer": [
+      "FALSE"
+    ],
+    "explanation": "FALSE. A change in the good's own price is a movement ALONG the demand curve. The curve only shifts when income, prices of related goods, taste, expectations or the number of buyers change."
+  },
+  {
+    "question_number": 31,
+    "question_text": "A command economy decides resource allocation by government planning.",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correct_answer": [
+      "TRUE"
+    ],
+    "explanation": "TRUE. 'In a command economy a powerful agent (usually the government) determines what people will produce, earn and consume.'"
+  },
+  {
+    "question_number": 32,
+    "question_text": "What type of rules are vulnerable to becoming dated or inappropriate in a fast-moving high technology industry?",
+    "options": [
+      "ex-parte",
+      "ex-ante",
+      "ex-post",
+      "Audi alteram partem",
+      "nemo judex in sua causa debet esse"
+    ],
+    "correct_answer": [
+      "ex-ante"
+    ],
+    "explanation": "Ex-ante rules are fixed in advance, so in a fast-moving high-tech industry they quickly become dated or inappropriate."
+  },
+  {
+    "question_number": 33,
+    "question_text": "If a price increase of good A increases the quantity demanded of good B, then good B is a",
+    "options": [
+      "substitute good",
+      "complementary good",
+      "inferior",
+      "normal"
+    ],
+    "correct_answer": [
+      "substitute good"
+    ],
+    "explanation": "If A's price rises and B's quantity demanded rises, buyers are switching from A to B — they are substitutes (positive cross-price relationship)."
+  },
+  {
+    "question_number": 34,
+    "question_text": "What type of rule is being applied if a regulator states, 'You must not indulge in anti-competitive practice', but determines whether a breach has taken place after the event?",
+    "options": [
+      "ex-parte",
+      "ex-ante",
+      "ex-post",
+      "Audi alteram partem",
+      "nemo judex in sua causa debet esse"
+    ],
+    "correct_answer": [
+      "ex-post"
+    ],
+    "explanation": "Determining whether a breach occurred AFTER the event is ex-post regulation (ex post = 'after some issues have already occurred')."
+  },
+  {
+    "question_number": 35,
+    "question_text": "Opponents of ______ regulation believe that it gives regulators the combined functions of lawmaker, policeman, judge, jury and executioner.",
+    "options": [
+      "ex-parte",
+      "ex-ante",
+      "ex-post",
+      "Audi alteram partem",
+      "nemo judex in sua causa debet esse"
+    ],
+    "correct_answer": [
+      "ex-ante"
+    ],
+    "explanation": "Inferred: this classic criticism — one body that writes the rules, enforces them and judges breaches — is levelled at ex-ante (prescriptive, sector-specific) regulation, as opposed to ex-post competition law adjudicated by the courts. NB: not stated verbatim in the decks and un-highlighted in the key, so confirm."
+  },
+  {
+    "question_number": 36,
+    "question_text": "Price ceilings are imposed to increase price above the free market equilibrium price.",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correct_answer": [
+      "FALSE"
+    ],
+    "explanation": "FALSE. A price ceiling holds the price BELOW equilibrium (a maximum price); it is a price FLOOR that keeps price above equilibrium."
+  },
+  {
+    "question_number": 37,
+    "question_text": "The principle ______ ensures that no person can judge a case in which they have an interest.",
+    "options": [
+      "ex-parte",
+      "ex-ante",
+      "ex-post",
+      "Audi alteram partem",
+      "nemo judex in sua causa debet esse"
+    ],
+    "correct_answer": [
+      "nemo judex in sua causa debet esse"
+    ],
+    "explanation": "'No one should be a judge in their own cause' is the maxim nemo judex in sua causa debet esse — the rule against bias."
+  },
+  {
+    "question_number": 38,
+    "question_text": "The role of regulators changes as markets become more competitive.",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correct_answer": [
+      "TRUE"
+    ],
+    "explanation": "TRUE — as competition develops the regulator's role shifts (lighter-touch / more ex-post competition oversight)."
+  },
+  {
+    "question_number": 39,
+    "question_text": "Which of these sectors standardizes global telecommunications (except for radio)?",
+    "options": [
+      "ITU-R",
+      "ITU-T",
+      "ITU-D",
+      "ITU-S",
+      "None of the above"
+    ],
+    "correct_answer": [
+      "ITU-T"
+    ],
+    "explanation": "'ITU-T (Standardization) … standardizes global telecommunications (except for radio)'; radio is ITU-R's job."
+  },
+  {
+    "question_number": 40,
+    "question_text": "By concentrating action on proven grievances rather than on compliance with finely detailed rules, ______ regulation is potentially efficient regulation.",
+    "options": [
+      "ex-parte",
+      "ex-ante",
+      "ex-post",
+      "Audi alteram partem",
+      "nemo judex in sua causa debet esse"
+    ],
+    "correct_answer": [
+      "ex-post"
+    ],
+    "explanation": "Ex-post regulation acts on proven grievances after the fact instead of via finely detailed pre-set rules; the deck notes 'intrusion can be lessened by the use of ex-post rules.'"
+  }
+]

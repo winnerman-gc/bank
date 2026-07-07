@@ -15,11 +15,12 @@ import fitz  # PyMuPDF
 SOURCES = [
     ("compiled.json", "Set 1 - Past paper (transcribed, Section A)"),
     ("compiled_2.json", "Set 2 - Deck-based practice questions"),
+    ("compiled_3.json", "Set 3 - TE 462 Mid-Semester exam (March 2018)"),
 ]
 OUT = "TE452-TE462-Policy-Regulation-Past-Paper-with-answers.pdf"
 TITLE = "TE 452 / TE 462 - Policy & Regulation"
-SUBTITLE = ("Set 1: 54 past-paper questions (answers verified against the decks) + "
-            "Set 2: 50 deck-based practice questions, all with insights")
+SUBTITLE = ("Set 1: 54 past-paper questions + Set 2: 50 deck-based questions + "
+            "Set 3: 40 mid-sem 2018 questions, all with answers and insights")
 
 CSS = """
 body { font-family: sans-serif; color: #14213a; }

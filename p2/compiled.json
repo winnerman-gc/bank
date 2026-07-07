@@ -315,9 +315,9 @@
       "FALSE"
     ],
     "correct_answer": [
-      "TRUE"
+      "FALSE"
     ],
-    "explanation": "Matches the deck's definition: 'the quantity supplied … is the amount that sellers are willing and able to sell.' TRUE."
+    "explanation": "FALSE. Supply is the whole price–quantity relationship (the supply schedule / curve), not a single fixed amount. The deck calls the amount sellers will sell at a given price the 'quantity supplied'; describing supply as one quantity 'each time the market opens' is inaccurate. (The 2018 mid-sem answer key marks this FALSE.)"
   },
   {
     "question_number": 26,
@@ -723,9 +723,9 @@
       "a place where buyers and sellers meet"
     ],
     "correct_answer": [
-      "the process by which prices adjust to reconcile the allocation of resources"
+      "a place where buyers and sellers meet"
     ],
-    "explanation": "The deck calls a market 'a group of buyers and sellers' and notes markets can be non-physical (e.g. online), so it is a price/allocation mechanism, not merely 'a place'. The most accurate description is the price-adjustment process that reconciles the allocation of resources."
+    "explanation": "The deck defines a market as 'a group of buyers and sellers of a particular good or service' — i.e. where buyers and sellers meet. (The 2018 mid-sem answer key marks (d) 'a place where buyers and sellers meet'.)"
   },
   {
     "question_number": 57,

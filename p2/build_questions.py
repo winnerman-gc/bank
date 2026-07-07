@@ -194,7 +194,7 @@ QUESTIONS = [
     (25,
      "Supply is the quantity of a good sellers wish to sell each time the market opens.",
      ["TRUE", "FALSE"],
-     "TRUE"),
+     "FALSE"),
 
     (26,
      "The role of regulators changes as markets become more competitive.",
@@ -385,7 +385,7 @@ QUESTIONS = [
       "a place to sell things",
       "the process by which prices adjust to reconcile the allocation of resources",
       "a place where buyers and sellers meet"],
-     "the process by which prices adjust to reconcile the allocation of resources"),
+     "a place where buyers and sellers meet"),
 
     (57,
      "The area within the Access Model which captures high population density and "
@@ -500,8 +500,11 @@ EXPLANATIONS = {
     24: "Every option is a listed licensing objective — provision of an essential "
         "public service, privatization/commercialization, allocation of scarce resources, "
         "and generating government revenue. So none is the exception.",
-    25: "Matches the deck's definition: 'the quantity supplied … is the amount that "
-        "sellers are willing and able to sell.' TRUE.",
+    25: "FALSE. Supply is the whole price–quantity relationship (the supply schedule / "
+        "curve), not a single fixed amount. The deck calls the amount sellers will sell "
+        "at a given price the 'quantity supplied'; describing supply as one quantity "
+        "'each time the market opens' is inaccurate. (The 2018 mid-sem answer key marks "
+        "this FALSE.)",
     26: "TRUE — as competition develops the regulator's role shifts (lighter-touch / "
         "more ex-post competition oversight); a regulator picks among zero/self/co/formal "
         "styles by what is appropriate.",
@@ -575,10 +578,9 @@ EXPLANATIONS = {
         "the deck's exact description.",
     55: "Regulation 'refers to the intervention by governments in markets in order to "
         "achieve certain outcomes' — the deck's exact definition.",
-    56: "The deck calls a market 'a group of buyers and sellers' and notes markets can "
-        "be non-physical (e.g. online), so it is a price/allocation mechanism, not merely "
-        "'a place'. The most accurate description is the price-adjustment process that "
-        "reconciles the allocation of resources.",
+    56: "The deck defines a market as 'a group of buyers and sellers of a particular "
+        "good or service' — i.e. where buyers and sellers meet. (The 2018 mid-sem "
+        "answer key marks (d) 'a place where buyers and sellers meet'.)",
     57: "'Current Network Reach and Access' is the already-well-served area (high "
         "density, higher income) that the market has already reached.",
     58: "Reacting reasonably to unforeseen circumstances is ex-post regulation — you "

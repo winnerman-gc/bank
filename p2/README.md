@@ -6,13 +6,23 @@ examination paper for the Policy & Regulation course. The exam has:
 - **Section A** — 60 shuffled multiple-choice questions (this is what the site practises)
 - **Section B** — 4 essay questions (listed below for reference; not part of the quiz)
 
-The site now has **two selectable question sets**:
+The site now has **three selectable question sets**:
 
-- **Set 1 · Past Paper** — 54 questions transcribed from the exam (`compiled.json`,
+- **Set 1 · Past Paper** — 54 questions transcribed from `Policy.pdf` (`compiled.json`,
   built by `build_questions.py`).
 - **Set 2 · Deck-based** — 50 new questions authored in the same style as the past
   paper but written from the lecture decks (`compiled_2.json`, built by
   `build_questions_2.py`), for extra practice.
+- **Set 3 · Mid-Sem 2018** — 40 questions transcribed from the TE 462 Mid-Semester
+  exam (March 2018, `new doc 2019-01-23 18.24.pdf`), which came with a partial yellow
+  answer key (`compiled_3.json`, built by `build_questions_3.py`).
+
+That mid-sem answer key **corrected two Set 1 answers**: Q25 ("supply … each time the
+market opens") is **FALSE** (supply is a schedule, not one quantity), and Q56 ("a market
+can be described as") is **"a place where buyers and sellers meet"** — matching the
+deck's definition of a market as "a group of buyers and sellers". The key also left the
+supply-elasticity, "common sense" and de-regulated-industry items un-highlighted — the
+same three this project had flagged as genuinely uncertain.
 
 Open `index.html` (or the GitHub Pages URL) to practise. Options are reshuffled per
 question, progress is saved locally, and a "Retake Wrong" button drills the ones you miss.
@@ -67,7 +77,8 @@ the question text: **Q13, Q22, Q34**.
 ```bash
 python3 build_questions.py     # writes compiled.json  (Set 1, stdlib only)
 python3 build_questions_2.py   # writes compiled_2.json (Set 2, stdlib only)
-python3 make_pdf.py            # writes the answer-key PDF for both sets (needs PyMuPDF)
+python3 build_questions_3.py   # writes compiled_3.json (Set 3, stdlib only)
+python3 make_pdf.py            # writes the answer-key PDF for all sets (needs PyMuPDF)
 ```
 
 After editing content, bump `CACHE_VERSION` in `index.html` so the CDN serves the new JSON.
