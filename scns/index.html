@@ -344,7 +344,7 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-07-03.1';
+        const CACHE_VERSION = '2026-07-10.1';
         const VIEW_STATE_KEY = 'scns_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'scns_quiz_answers_v1';
         const RETAKE_ANSWERS_STORAGE_KEY = 'scns_quiz_retake_answers_v1';
@@ -352,16 +352,10 @@
 
         const SOURCES = [
             {
-                id: 'set-1',
-                label: 'Part 1',
-                file: 'compiled.json',
-                description: '100 questions — NTN fundamentals, orbits & beams, 5G NR-NTN architecture, SatCom payload & 5G systems'
-            },
-            {
-                id: 'set-2',
-                label: 'Part 2',
-                file: 'compiled_2.json',
-                description: '100 questions — Frequency bands & IoT, orbit propagation, NR-NTN procedures & HARQ, DVB/VSAT & 5G SA core'
+                id: 'set-3',
+                label: 'Part 3',
+                file: 'compiled_3.json',
+                description: '100 questions — NTN fundamentals & orbits (What & Why, Overview), SatCom payload & 5G NR systems'
             }
         ];
 
@@ -372,7 +366,7 @@
         let currentSourceId = SOURCES[0].id;
         let currentAnswerStore = 'main';
         let currentQuestionsData = [];
-        let currentViewKey = 'set-1';
+        let currentViewKey = 'set-3';
         let currentExamLabel = 'All Questions';
         let correctCount = 0;
         let wrongCount = 0;
