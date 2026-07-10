@@ -582,9 +582,11 @@
                 document.getElementById('loading').style.display = 'none';
 
                 const savedState = getViewState();
-                if (savedState && savedState.mode && savedState.sourceId) {
+                const savedSourceValid = savedState && SOURCES.some(source => source.id === savedState.sourceId);
+                if (savedSourceValid) {
                     restoreSavedView(savedState);
                 } else {
+                    if (savedState) clearViewState();
                     showSource(currentSourceId, false);
                 }
             } catch (error) {
