@@ -36,7 +36,7 @@ import json
 import random
 import re
 
-from explanations import EXPLANATIONS
+from explanations import EXPLANATIONS, verification
 
 # ---------------------------------------------------------------------------
 # SET 1 - Entrepreneurship and free enterprise
@@ -890,8 +890,11 @@ SET7 = [
     ("Directors of new ventures fulfil important roles beyond their decision-making duties "
      "that include (i) serving as members of an expanded social network (ii) mentors and "
      "professional advisors (iii) disturbance handlers and resource allocators",
-     "i, ii and iii are correct",
-     ["i and ii only are correct", "i and iii only are correct", "i only is correct",
+     # 2005 official key: B, i and ii only. ME 492 2025 NOTES lists the roles as
+     # mentors, professional advisers and members of an expanded social network.
+     # Disturbance handling and resource allocation are not among them.
+     "i and ii only are correct",
+     ["i, ii and iii are correct", "i and iii only are correct", "i only is correct",
       "iii only is correct"]),
 
     ("The entrepreneurial team is a very vital part of the management team of a new "
@@ -1562,6 +1565,7 @@ def main():
             record["source"] = source
         else:
             missing.append(number)
+        record["verified"] = verification(number)
         records.append(record)
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as fh:

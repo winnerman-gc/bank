@@ -135,6 +135,27 @@ questions onto the lecture slides, sets out the two answer codes the paper uses,
 works all three calculation types step by step, and lists the items where two
 papers disagree with each other.
 
+## How far the answers were verified
+
+Each record carries a `verified` field:
+
+| Value | Questions | What it means |
+| --- | --- | --- |
+| `checked against the 2005 official marking scheme` | 107 | The stem was matched to `ME492- 2005 MARKING SCHEME.pdf` and the recorded answer compared with the printed key. Section A keys are letters; Section C answers are marked in bold in the PDF. |
+| `recomputed from the printed data` | 30 | The calculation items. Every one was worked through from the figures in the stem. |
+| `not checked against a printed key` | 91 | These come from papers that are image-only scans with no text layer: `PASCO 1`, `Pasco2`, `IMAGE PASSCO`, `ENTREPRENEUR MCQ 1pdf` and `ME 492 ONLINE 2020`. The page calls these out under the explanation. |
+
+The cross-check found one wrong answer, since corrected: the roles of directors
+item. `ME 492 2025 NOTES` lists the roles beyond decision making as mentors,
+professional advisers and members of an expanded social network. Disturbance
+handling and resource allocation are not among them, and the 2005 key marks
+`i and ii only`. The bank had marked all three.
+
+It also found three items where the printed sources contradict each other. The
+bank keeps its answer and the explanation names both readings: Cantillon's
+description, the low tech products `because` item, and the market niche
+`because` item.
+
 ## Notes on disputed answers
 
 A few items have different answers in different sources. The bank follows the

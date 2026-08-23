@@ -13,7 +13,8 @@
       "entrepreneur"
     ],
     "explanation": "This is the textbook definition of the entrepreneur: initiative, risk, and value created either from something new or from resources used in unusual ways. Sole proprietor names a legal form, not the role.",
-    "source": "Guide 3, high frequency definitions"
+    "source": "Guide 3, high frequency definitions",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 2,
@@ -29,7 +30,8 @@
       "stakeholder"
     ],
     "explanation": "A stakeholder holds an interest in the business or is affected by it. The group is wide: owners, lenders, employees, customers, suppliers and society. A vendor or a partner is only one kind of stakeholder.",
-    "source": "Guide 3; Slide 1"
+    "source": "Guide 3; Slide 1",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 3,
@@ -45,7 +47,8 @@
       "window of opportunity"
     ],
     "explanation": "A window of opportunity is open only for a period. Competitors rush in, the market saturates, and the window closes. A corridor is different: it is the route the entrepreneur travels, where one idea leads to the next.",
-    "source": "Guide 5.4, windows and corridors"
+    "source": "Guide 5.4, windows and corridors",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 4,
@@ -60,8 +63,9 @@
     "correct_answer": [
       "consciously makes decisions about resource allocation and seeks higher yields for money and materials"
     ],
-    "explanation": "Cantillon put the entrepreneur at the centre of economics as the person who consciously decides how to allocate resources and seeks higher yields. He also buys at a certain price and sells at an uncertain one, so he carries the risk.",
-    "source": "Guide 4.1, the economists"
+    "explanation": "Cantillon put the entrepreneur at the centre of economics as the person who consciously decides how to allocate resources and seeks higher yields. He also buys at a certain price and sells at an uncertain one, so he carries the risk. Warning: the 2005 official key marks resource allocation plus exceptional insight into society's needs. The slides give that insight to Say, not Cantillon. If the paper prints the i/ii/iii version, answer as the key does.",
+    "source": "Guide 4.1; 2005 marking scheme item 7",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 5,
@@ -77,7 +81,8 @@
       "the process of converting resources into goods and services of value to consumers"
     ],
     "explanation": "Menger defined entrepreneurship as converting resources into goods and services that consumers value. Creative destruction and entrepreneurs as innovators belong to Schumpeter. This swap is the classic trap in this item.",
-    "source": "Guide 4.1; trap list 6"
+    "source": "Guide 4.1; trap list 6",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 6,
@@ -93,7 +98,8 @@
       "possessed certain arts and skills of creating new economic enterprises, yet had exceptional insight into society's needs and were able to fulfil them"
     ],
     "explanation": "Say merged Cantillon's risk taker with Smith's industrial manager. His entrepreneur holds the arts and skills to create new enterprises and has exceptional insight into what society needs.",
-    "source": "Guide 4.1, the economists"
+    "source": "Guide 4.1, the economists",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 7,
@@ -109,7 +115,8 @@
       "undertook the formation of an organisation for commercial purposes, recognised potential demand, and transformed demand into supply"
     ],
     "explanation": "Smith's enterpriser forms an organisation for commercial purposes, has unusual foresight to see potential demand, and transforms that demand into supply.",
-    "source": "Guide 4.1, the economists"
+    "source": "Guide 4.1, the economists",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 8,
@@ -125,7 +132,8 @@
       "uses resources not merely to solve problems but also to take advantage of opportunities"
     ],
     "explanation": "Drucker's point is the shift from problems to opportunities. Resources are redirected towards progressive opportunities, not merely used to fix what is broken.",
-    "source": "Guide 4.1, the economists"
+    "source": "Guide 4.1, the economists",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 9,
@@ -141,7 +149,8 @@
       "creative destruction"
     ],
     "explanation": "Creative destruction is Schumpeter's term. New and better products displace the old ones, and the firms behind them. Upscaling is circled on one student script, but it is not the term.",
-    "source": "Guide 4.1; Guide 16, conflicts"
+    "source": "Guide 4.1; Guide 16, conflicts",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 10,
@@ -157,7 +166,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "All three effects are taught. Entrepreneurship alters the direction of national economies, drives quantum leaps in technology, and forces resources out of old uses into more productive ones.",
-    "source": "Guide 4.7, effects on the economy"
+    "source": "Guide 4.7, effects on the economy",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 11,
@@ -173,7 +183,8 @@
       "i and iii only are correct"
     ],
     "explanation": "The four sources of change are scientific knowledge and the industrial revolution, demographic and market changes, process innovation, and social and cultural changes. As printed here, i and iii carry them, so the 2005 key marks i and iii only.",
-    "source": "Guide 4.2, sources of change"
+    "source": "Guide 4.2, sources of change",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 12,
@@ -189,7 +200,8 @@
       "i and iii only are correct"
     ],
     "explanation": "Vision for growth, commitment to constructive change and persistence mark the entrepreneur. Item ii fails on income substitution. That is what a small business person does, replacing a salary rather than building growth.",
-    "source": "Guide 4.3, entrepreneur versus small business person"
+    "source": "Guide 4.3, entrepreneur versus small business person",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 13,
@@ -205,7 +217,8 @@
       "i and ii only are correct"
     ],
     "explanation": "Small businesses stay small by their nature and by the owner's intention. Legal contracts create the legal form of a business, not its size.",
-    "source": "Guide 4.4, why small businesses are small"
+    "source": "Guide 4.4, why small businesses are small",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 14,
@@ -221,7 +234,8 @@
       "i and iii only are correct"
     ],
     "explanation": "The four success factors are a good entrepreneurial team, a well planned enterprise pursuing incremental growth, good timing, and a business ideology that serves customers. Item ii fails on a fat bank account. Most successful firms started with little money.",
-    "source": "Guide 4.6, success factors; Guide 4.5, myths"
+    "source": "Guide 4.6, success factors; Guide 4.5, myths",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 15,
@@ -237,7 +251,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "Menger, Mill and Say are all named in the slides as European economists who shaped the modern idea of entrepreneurship.",
-    "source": "Guide 4.1, the economists"
+    "source": "Guide 4.1, the economists",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 16,
@@ -253,7 +268,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "All three describe it. Corporate entrepreneurship makes established companies more productive, it is also called intrapreneurship, and it runs on the innovation of creative employees inside the firm.",
-    "source": "Guide 4.8, intrapreneurship"
+    "source": "Guide 4.8, intrapreneurship",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 17,
@@ -269,7 +285,8 @@
       "i and iii only are correct"
     ],
     "explanation": "Corporate managers combine resources in unusual ways, and they commit time, energy and their careers. They do not take personal investment risks. The company carries the money risk. That is the standard trap here.",
-    "source": "Guide 4.8; trap list 15"
+    "source": "Guide 4.8; trap list 15",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 18,
@@ -285,7 +302,8 @@
       "inexperience"
     ],
     "explanation": "Inexperience is the most common cause in the slides. It is an internal cause, but the paper wants the specific word, not the category.",
-    "source": "Guide 4.9, recurring facts"
+    "source": "Guide 4.9, recurring facts",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 19,
@@ -301,7 +319,8 @@
       "higher"
     ],
     "explanation": "Starting from scratch carries higher failure risk than buying a going concern or a franchise, because nothing is proven yet: no customers, no systems, no record.",
-    "source": "Guide 4.9, recurring facts"
+    "source": "Guide 4.9, recurring facts",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 20,
@@ -317,7 +336,8 @@
       "to live where I like"
     ],
     "explanation": "Money, independence, being your own boss and leaving an inheritance are all listed reasons. To live where I like is the odd one out in the slides.",
-    "source": "Guide 4.9, recurring facts"
+    "source": "Guide 4.9, recurring facts",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 21,
@@ -333,7 +353,8 @@
       "service businesses"
     ],
     "explanation": "Service businesses are the most common start, because they need the least capital and the least fixed plant.",
-    "source": "Guide 4.9, recurring facts"
+    "source": "Guide 4.9, recurring facts",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 22,
@@ -349,7 +370,8 @@
       "true"
     ],
     "explanation": "True. A high internal locus of control means the person believes outcomes follow from their own action, not from luck or fate. It is a standard entrepreneurial trait.",
-    "source": "Guide 4.9, recurring facts"
+    "source": "Guide 4.9, recurring facts",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 23,
@@ -365,7 +387,8 @@
       "value added products and services"
     ],
     "explanation": "Each stakeholder group wants something different. Society wants value added products and services. Lenders want cash flow and collateral, investors want a profitable return, and employees want income and job stability.",
-    "source": "Guide 10.10, stakeholders"
+    "source": "Guide 10.10, stakeholders",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 24,
@@ -381,7 +404,8 @@
       "innovation"
     ],
     "explanation": "Watch the wording. The slides define innovation as the ability to see, conceive and create new and unique products, processes or services. Creativity is the ability to bring something new into existence. Here the stem names products, processes and services, so the answer is innovation.",
-    "source": "Guide 5.1, definitions"
+    "source": "Guide 5.1, definitions",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 25,
@@ -397,7 +421,8 @@
       "the ability to bring something new into existence"
     ],
     "explanation": "Creativity is an ability, not an activity. It is the ability to bring something new into existence. Innovation is the process that follows, so creativity is a prerequisite for innovation.",
-    "source": "Guide 5.1, definitions"
+    "source": "Guide 5.1, definitions",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 26,
@@ -413,7 +438,8 @@
       "the process of doing new things, that is, the transformation of creative ideas into useful applications"
     ],
     "explanation": "Innovation is the process of doing new things: creative ideas turned into useful applications. The seed is creativity, the process is innovation.",
-    "source": "Guide 5.1, definitions"
+    "source": "Guide 5.1, definitions",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 27,
@@ -429,7 +455,8 @@
       "i only is correct"
     ],
     "explanation": "Verification is validation: apply or test the idea to prove it has value. Item ii is preparation, the conscious search. Item iii is illumination, the sudden flash. This mix-up is why the 2005 key marks i only.",
-    "source": "Guide 5.2, the five stages; trap list 5"
+    "source": "Guide 5.2, the five stages; trap list 5",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 28,
@@ -445,7 +472,8 @@
       "embarks on a conscious search for bringing the idea to life"
     ],
     "explanation": "Preparation is the conscious search for the knowledge needed to bring the idea to life. Note the word conscious. Incubation is the subconscious stage.",
-    "source": "Guide 5.2, the five stages"
+    "source": "Guide 5.2, the five stages",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 29,
@@ -461,7 +489,8 @@
       "application or test to prove that an idea has value"
     ],
     "explanation": "Verification is the fifth stage: the application or test that proves the idea has value. Recognising an idea as feasible is illumination, one stage earlier.",
-    "source": "Guide 5.2, the five stages"
+    "source": "Guide 5.2, the five stages",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 30,
@@ -477,7 +506,8 @@
       "incubation"
     ],
     "explanation": "Incubation is the subconscious stage, the one people call sleeping on the problem. Preparation is the conscious search that comes before it.",
-    "source": "Guide 5.2, the five stages"
+    "source": "Guide 5.2, the five stages",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 31,
@@ -493,7 +523,8 @@
       "illumination"
     ],
     "explanation": "Illumination is the realisation stage: the Oh, I see moment when the idea is recognised as feasible. The test that proves its value comes later, in verification.",
-    "source": "Guide 5.2, the five stages"
+    "source": "Guide 5.2, the five stages",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 32,
@@ -509,7 +540,8 @@
       "idea germination"
     ],
     "explanation": "Idea germination is stage one, the seeding stage. The seed is planted by the person's own curiosity or interest.",
-    "source": "Guide 5.2, the five stages"
+    "source": "Guide 5.2, the five stages",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 33,
@@ -525,7 +557,8 @@
       "i and iii only are correct"
     ],
     "explanation": "The innovation process holds analytical planning, organising resources, implementation and commercial application. Item ii lists germination, preparation and verification, which belong to the creative process. Do not mix the two lists.",
-    "source": "Guide 5.3; trap list 4"
+    "source": "Guide 5.3; trap list 4",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 34,
@@ -541,7 +574,8 @@
       "iii only is correct"
     ],
     "explanation": "The trio is the creative source, the champion and the sponsor. Reject any option that swaps in the inventor, the investor, the entrepreneur or the promoter. The 2020 paper reworded the stem and the answer stayed iii only.",
-    "source": "Guide 5.5, the three key people"
+    "source": "Guide 5.5, the three key people",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 35,
@@ -557,7 +591,8 @@
       "i and iii only are correct"
     ],
     "explanation": "No criticism, free wheeling, high quantity, and combining or improving ideas are the rules. Item ii fails because discarding ideas without merit is judgement, and no idea is judged during the session.",
-    "source": "Guide 5.6, brainstorming rules"
+    "source": "Guide 5.6, brainstorming rules",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 36,
@@ -573,7 +608,8 @@
       "low-tech products"
     ],
     "explanation": "Most new products are low-tech. That is why the advice is to make them easily, market them quickly and terminate them cheaply: patents cannot protect them.",
-    "source": "Guide 5.8, the technology spectrum"
+    "source": "Guide 5.8, the technology spectrum",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 37,
@@ -589,7 +625,8 @@
       "mind map"
     ],
     "explanation": "A mind map starts from the person's own interest, branches into related products and market opportunities, then follows each branch to expand new business ideas.",
-    "source": "Guide 5.7, mind map"
+    "source": "Guide 5.7, mind map",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 38,
@@ -605,7 +642,8 @@
       "corridor principle"
     ],
     "explanation": "The corridor principle. Entrepreneurs already positioned in similar work can move fast when a window opens. The window is the time horizon; the corridor is the route travelled.",
-    "source": "Guide 5.4, windows and corridors"
+    "source": "Guide 5.4, windows and corridors",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 39,
@@ -621,7 +659,8 @@
       "a business plan"
     ],
     "explanation": "The business plan describes where the business is going. Keep it apart from the pro forma statement, which predicts what the financial statements will look like at period end.",
-    "source": "Guide 3, high frequency definitions"
+    "source": "Guide 3, high frequency definitions",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 40,
@@ -637,7 +676,8 @@
       "give information to lenders and investors"
     ],
     "explanation": "Primarily it informs lenders and investors, the people who decide whether to put money in. It does guide the entrepreneur too, but the papers mark the funding purpose as the primary one.",
-    "source": "Guide 6.12, what the plan is for"
+    "source": "Guide 6.12, what the plan is for",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 41,
@@ -653,7 +693,8 @@
       "provide direction, prove feasibility and attract money"
     ],
     "explanation": "It does all three: provide direction, prove feasibility, and attract money. When the paper offers the combined option, take it.",
-    "source": "Guide 6.12, what the plan is for"
+    "source": "Guide 6.12, what the plan is for",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 42,
@@ -669,7 +710,8 @@
       "iii only is correct"
     ],
     "explanation": "The entrepreneur carries the responsibility, because the entrepreneur holds the vision and the motivation and can articulate the information. Consultants and university centres can help, but the duty does not transfer.",
-    "source": "Guide 6.1, who writes the plan"
+    "source": "Guide 6.1, who writes the plan",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 43,
@@ -685,7 +727,8 @@
       "iii only is correct"
     ],
     "explanation": "The entrepreneur prepares it, in consultation with specialists. Not alone, and not handed to a consultant. The related because item, that specialists prepare it best, is marked E, both statements false.",
-    "source": "Guide 6.1; Guide 16, conflicts"
+    "source": "Guide 6.1; Guide 16, conflicts",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 44,
@@ -701,7 +744,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "All three hold. It integrates operations, marketing, finance and human resources, it describes the external and internal elements of starting up, and the entrepreneur prepares it.",
-    "source": "Guide 6.2, what a feasibility plan is"
+    "source": "Guide 6.2, what a feasibility plan is",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 45,
@@ -717,7 +761,8 @@
       "iii only is correct"
     ],
     "explanation": "The feasibility plan is the pragmatic plan. It does enough planning to prove the venture can work, without drowning the entrepreneur in detail. It is not a summary, and it is not the full plan of an existing company.",
-    "source": "Guide 6.2, what a feasibility plan is"
+    "source": "Guide 6.2, what a feasibility plan is",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 46,
@@ -733,7 +778,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "Three perspectives: the entrepreneur, the market, and the investor. The plan has to satisfy all three readers at once.",
-    "source": "Guide 6.3, three perspectives"
+    "source": "Guide 6.3, three perspectives",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 47,
@@ -749,7 +795,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "All three areas are checked for barriers: market, finance and operations; the business concept and the team; and the goals, finance and the product itself. The 2020 exam confirms all three.",
-    "source": "Guide 6.4, barriers to success"
+    "source": "Guide 6.4, barriers to success",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 48,
@@ -765,7 +812,8 @@
       "i only is correct"
     ],
     "explanation": "Market potential comes first. Operational needs and profitability matter later, but if there is no market there is nothing to plan. The key marks i only.",
-    "source": "Guide 6.5, the first element of information"
+    "source": "Guide 6.5, the first element of information",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 49,
@@ -781,7 +829,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "All three are true. It stimulates interest, it is concise and convincing, and it is written last, after the whole plan exists. Two or three pages is the usual length.",
-    "source": "Guide 6.6, the executive summary"
+    "source": "Guide 6.6, the executive summary",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 50,
@@ -797,7 +846,8 @@
       "the venture definition names the business and states why it was founded, while the business concept covers the business evolution and the nature of market demand"
     ],
     "explanation": "The venture definition is short: the name of the business and why it was founded. The business concept in the main body goes further, into how the business evolved and the nature of market demand.",
-    "source": "Guide 6.6, the executive summary"
+    "source": "Guide 6.6, the executive summary",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 51,
@@ -813,7 +863,8 @@
       "a confidentiality clause"
     ],
     "explanation": "When the paper forces a single answer for the cover page, the answer is the confidentiality clause. The executive summary and the financial summary sit inside the plan, not on the cover page.",
-    "source": "Guide 6.7, the cover page"
+    "source": "Guide 6.7, the cover page",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 52,
@@ -829,7 +880,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "All three belong on the cover page: name, address and financing required; the confidentiality statement with the entrepreneurs' contacts; and a brief description of the business concept.",
-    "source": "Guide 6.7, the cover page"
+    "source": "Guide 6.7, the cover page",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 53,
@@ -845,7 +897,8 @@
       "Executive Summary"
     ],
     "explanation": "The executive summary is a business plan element. Abstract, literature review, product design and conclusions come from academic reports. Never pick those. When market research and analysis is offered instead, that is the answer.",
-    "source": "Guide 6.8, common elements"
+    "source": "Guide 6.8, common elements",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 54,
@@ -861,7 +914,8 @@
       "the organogram of the venture"
     ],
     "explanation": "The organisational plan sets out the organogram: who reports to whom. The 2020 online exam and the 2015 paper agree, against one compiled sheet that says the form of ownership.",
-    "source": "Guide 16, conflicts"
+    "source": "Guide 16, conflicts",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 55,
@@ -877,7 +931,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "All three. Location and immediate area, competitive strategies and industry trends, and the external uncontrollable variables. The word environmental points to what the venture cannot control.",
-    "source": "Guide 6.9, environmental and industry analysis"
+    "source": "Guide 6.9, environmental and industry analysis",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 56,
@@ -893,7 +948,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "All three. The older wording of this section is operations, human resources, facilities, inventory and related issues, with leadership and the team named alongside.",
-    "source": "Guide 6.10, manufacturing or operations section"
+    "source": "Guide 6.10, manufacturing or operations section",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 57,
@@ -909,7 +965,8 @@
       "Resumes of partners, facility layouts and partnership agreements"
     ],
     "explanation": "The appendix carries supporting documents: resumes of partners, facility layouts and partnership agreements. Take the fullest option printed. When only one is allowed, pick resumes of partners.",
-    "source": "Guide 6.11, the appendix"
+    "source": "Guide 6.11, the appendix",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 58,
@@ -925,7 +982,8 @@
       "a non-disclosure statement"
     ],
     "explanation": "A non-disclosure statement is the counter. It is a written, enforceable undertaking, which a verbal warning or a vague agreement is not. Hiding vital information defeats the purpose of the plan.",
-    "source": "Guide 6.16, security of the plan"
+    "source": "Guide 6.16, security of the plan",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 59,
@@ -941,7 +999,8 @@
       "changes in the market and the industry"
     ],
     "explanation": "For the single best answer, changes in the market and the industry. Those move the ground the whole plan stands on.",
-    "source": "Guide 6.13, why plans go out of date"
+    "source": "Guide 6.13, why plans go out of date",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 60,
@@ -957,7 +1016,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "All three change the direction of a plan: poor articulation of the concept, loss or addition of key team members, and a new location.",
-    "source": "Guide 6.13, why plans go out of date"
+    "source": "Guide 6.13, why plans go out of date",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 61,
@@ -973,7 +1033,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "All three. Unreasonable and unmeasurable goals, no total commitment from the entrepreneur, and no experience in the planned business. When only one option is allowed, the 2020 key marks the unreasonable goals.",
-    "source": "Guide 6.14, why business plans fail"
+    "source": "Guide 6.14, why business plans fail",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 62,
@@ -989,7 +1050,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "The 2015 red-marked paper takes all three: experience and family background, personal characteristics and skills, and successfully incubating a business. Pick the fuller option unless item iii is absent from the printed options.",
-    "source": "Guide 16, conflicts"
+    "source": "Guide 16, conflicts",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 63,
@@ -1005,7 +1067,8 @@
       "Pre-start-up"
     ],
     "explanation": "Pre-start-up is the assembly stage: gather the resources and organise the venture for opening. Nothing is trading yet.",
-    "source": "Guide 7.1, the four growth stages"
+    "source": "Guide 7.1, the four growth stages",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 64,
@@ -1021,7 +1084,8 @@
       "Start-up"
     ],
     "explanation": "Start-up is the stage of initial business operations. Pre-start-up is still assembly; early growth comes after the venture proves itself.",
-    "source": "Guide 7.1, the four growth stages"
+    "source": "Guide 7.1, the four growth stages",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 65,
@@ -1037,7 +1101,8 @@
       "Start-up"
     ],
     "explanation": "Reality shock belongs to the start-up stage. The entrepreneur meets the real market for the first time and has to position the business to compete in it.",
-    "source": "Guide 7.1, the four growth stages"
+    "source": "Guide 7.1, the four growth stages",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 66,
@@ -1053,7 +1118,8 @@
       "Early growth"
     ],
     "explanation": "Early growth. The venture worked and is growing at a healthy rate, so resources now need careful co-ordination for the entrepreneur to take profit.",
-    "source": "Guide 7.1, the four growth stages"
+    "source": "Guide 7.1, the four growth stages",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 67,
@@ -1069,7 +1135,8 @@
       "Later growth"
     ],
     "explanation": "Later growth. The enterprise is established and professionally managed, so the founder is no longer the only manager.",
-    "source": "Guide 7.1, the four growth stages"
+    "source": "Guide 7.1, the four growth stages",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 68,
@@ -1085,7 +1152,8 @@
       "product or market survey"
     ],
     "explanation": "The product or market survey is a pre-start-up activity, along with defining the business concept. Positioning the venture belongs to start-up, and going public belongs to later growth.",
-    "source": "Guide 7.2, pre-start-up activities"
+    "source": "Guide 7.2, pre-start-up activities",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 69,
@@ -1101,7 +1169,8 @@
       "meeting operating objectives and positioning the venture for long-term growth"
     ],
     "explanation": "The two benchmarks are meeting operating objectives and positioning the venture for long-term growth. This answer is fixed across the 2007, 2015 and 2020 papers, so learn it word for word.",
-    "source": "Guide 7.3, benchmark considerations"
+    "source": "Guide 7.3, benchmark considerations",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 70,
@@ -1117,7 +1186,8 @@
       "sales, revenue, growth and position"
     ],
     "explanation": "Sales, revenue, growth and position. Profit is not on the start-up list. The venture is buying its place in the market first.",
-    "source": "Guide 7.4, start-up operating objectives"
+    "source": "Guide 7.4, start-up operating objectives",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 71,
@@ -1133,7 +1203,8 @@
       "make a 12 months schedule to see if the plan has been successfully achieved"
     ],
     "explanation": "Make a 12 month schedule and check the plan against it. The other options are sensible habits, but the paper wants the scheduled review.",
-    "source": "Guide 7.5, measuring progress"
+    "source": "Guide 7.5, measuring progress",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 72,
@@ -1149,7 +1220,8 @@
       "planning assets carefully"
     ],
     "explanation": "Plan the assets carefully. Cutting capacity, cutting staff or underpaying people damages the venture instead of financing it.",
-    "source": "Guide 7.6, reducing the financial burden"
+    "source": "Guide 7.6, reducing the financial burden",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 73,
@@ -1165,7 +1237,8 @@
       "verifiable information"
     ],
     "explanation": "It need not be extensive, but it must rest on verifiable information. Figures you cannot verify make the whole plan worthless to a lender.",
-    "source": "Guide 7.7, financial planning before start-up"
+    "source": "Guide 7.7, financial planning before start-up",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 74,
@@ -1181,7 +1254,8 @@
       "market niche"
     ],
     "explanation": "Market niche. This item has appeared as option c, a and e in different years, and the answer text never changed. Learn the text, not the letter.",
-    "source": "Guide 3; Guide 1, rule 1"
+    "source": "Guide 3; Guide 1, rule 1",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 75,
@@ -1197,7 +1271,8 @@
       "positioning"
     ],
     "explanation": "The niche defines the positioning of the product or service. Positioning is where the product stands in the customer's mind against the alternatives.",
-    "source": "Guide 8.5, a market niche"
+    "source": "Guide 8.5, a market niche",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 76,
@@ -1213,7 +1288,8 @@
       "customer scenario"
     ],
     "explanation": "Customer scenario. It sets out who the primary clients are in specific terms. One compiled answer sheet says market survey, and that is wrong against every printed key.",
-    "source": "Guide 16, conflicts"
+    "source": "Guide 16, conflicts",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 77,
@@ -1229,7 +1305,8 @@
       "market"
     ],
     "explanation": "The objective is to prove a market exists. Customers, products and competitors are studied, but the finding you need is the market itself.",
-    "source": "Guide 3, high frequency definitions"
+    "source": "Guide 3, high frequency definitions",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 78,
@@ -1245,7 +1322,8 @@
       "identify potential customers, evaluate markets, analyse competitors and describe assumptions"
     ],
     "explanation": "Four activities: identify potential customers, evaluate markets, analyse competitors, and describe assumptions. The distractor drops the assumptions. Take the option that keeps them.",
-    "source": "Guide 8.2, market research activities"
+    "source": "Guide 8.2, market research activities",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 79,
@@ -1261,7 +1339,8 @@
       "sales forecast"
     ],
     "explanation": "Market research ends in a sales forecast, which sets the expected volume and revenue. The sales forecast is then the first step of the operating budget.",
-    "source": "Guide 3; Guide 12.2, the master budget"
+    "source": "Guide 3; Guide 12.2, the master budget",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 80,
@@ -1277,7 +1356,8 @@
       "i only is correct"
     ],
     "explanation": "Only the well defined sales forecast. A revenue estimate follows from the forecast, and investment needs come from the financial plan, not from market research.",
-    "source": "Guide 8.6, results of good market research"
+    "source": "Guide 8.6, results of good market research",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 81,
@@ -1293,7 +1373,8 @@
       "market research gathers the information and market plan then uses it in a marketing strategy to attract customers"
     ],
     "explanation": "Market research gathers the information. The market plan then uses it in a strategy to attract customers. This sentence appears almost every year, so learn it word for word.",
-    "source": "Guide 8.1, research versus plan"
+    "source": "Guide 8.1, research versus plan",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 82,
@@ -1309,7 +1390,8 @@
       "who is the customer and where is he or she located?"
     ],
     "explanation": "Who is the customer and where is he or she located. The plan starts from the customer, not from the product or the factory.",
-    "source": "Guide 8.3, what the market plan answers"
+    "source": "Guide 8.3, what the market plan answers",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 83,
@@ -1325,7 +1407,8 @@
       "market plan"
     ],
     "explanation": "The market plan carries the intended strategy. Distribution, operations and promotion are parts that serve it.",
-    "source": "Guide 8.10, the marketing plan"
+    "source": "Guide 8.10, the marketing plan",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 84,
@@ -1341,7 +1424,8 @@
       "competitive analysis"
     ],
     "explanation": "Competitive analysis is the marketing research done once the doors are open, when real competitors respond to you.",
-    "source": "Guide 8.14, marketing research after opening"
+    "source": "Guide 8.14, marketing research after opening",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 85,
@@ -1357,7 +1441,8 @@
       "i only is correct"
     ],
     "explanation": "The key marks the pre-start-up stage only. Take the stage the paper prints; the related item on research after opening is answered by the term competitive analysis itself.",
-    "source": "Guide 8.14; Guide 15, the i/ii/iii bank"
+    "source": "Guide 8.14; Guide 15, the i/ii/iii bank",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 86,
@@ -1373,7 +1458,8 @@
       "Product, Price, Distribution and Promotion"
     ],
     "explanation": "The 4 Ps: product, price, place or distribution, and promotion. Always take the fullest option printed. If promotion is not listed anywhere, product, price and distribution is the answer.",
-    "source": "Guide 8.4, the marketing functions; trap list 9"
+    "source": "Guide 8.4, the marketing functions; trap list 9",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 87,
@@ -1389,7 +1475,8 @@
       "function, form, packaging characteristics and service after sales support"
     ],
     "explanation": "Four elements: function, form, packaging characteristics, and after sales service support. The distractor stops at packaging and drops the service.",
-    "source": "Guide 8.8, product"
+    "source": "Guide 8.8, product",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 88,
@@ -1405,7 +1492,8 @@
       "pricing policy"
     ],
     "explanation": "Pricing policy. It is the planned process, including how prices change in the field for unusual circumstances. Price setting is the single act, not the policy.",
-    "source": "Guide 3; Guide 16, conflicts"
+    "source": "Guide 3; Guide 16, conflicts",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 89,
@@ -1421,7 +1509,8 @@
       "promotion"
     ],
     "explanation": "Promotion is the broad term. Advertising, publicity and personal selling are methods inside it.",
-    "source": "Guide 3, high frequency definitions"
+    "source": "Guide 3, high frequency definitions",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 90,
@@ -1437,7 +1526,8 @@
       "promotional mix"
     ],
     "explanation": "The promotional mix is the selected set of methods, chosen to fit the grand marketing strategy. Note it is the selection, not any single method.",
-    "source": "Guide 3, high frequency definitions"
+    "source": "Guide 3, high frequency definitions",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 91,
@@ -1453,7 +1543,8 @@
       "iii only is correct"
     ],
     "explanation": "Advertising seeks to convince someone to walk in your door. Making a satisfied customer is the job of the product and the service. Selling to someone who cannot afford it is not a marketing objective.",
-    "source": "Guide 8.9, promotion and advertising"
+    "source": "Guide 8.9, promotion and advertising",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 92,
@@ -1469,7 +1560,8 @@
       "i only is correct"
     ],
     "explanation": "Integrated means one consolidated, focused message. Item ii says the opposite, an assortment of forms with a variety of messages. Item iii describes the marketing mix, not communications.",
-    "source": "Guide 8.9, promotion and advertising"
+    "source": "Guide 8.9, promotion and advertising",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 93,
@@ -1485,7 +1577,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "All three: increase sales, build recognition and build consumer loyalty.",
-    "source": "Guide 8.9, promotion and advertising"
+    "source": "Guide 8.9, promotion and advertising",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 94,
@@ -1501,7 +1594,8 @@
       "marketing program"
     ],
     "explanation": "The marketing program implements the plan. Older hand-marked papers show marketing activities, but the printed 2015 key marks marketing program. Choose activities only when program is not printed.",
-    "source": "Guide 8.10; Guide 16, conflicts"
+    "source": "Guide 8.10; Guide 16, conflicts",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 95,
@@ -1517,7 +1611,8 @@
       "i only is correct"
     ],
     "explanation": "The 2005 key marks i only. The plan establishes how the entrepreneur will compete and operate in the market. Describing the customer belongs to market research, and solid projected sales data come from the sales forecast.",
-    "source": "Guide 8.10, the marketing plan"
+    "source": "Guide 8.10, the marketing plan",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 96,
@@ -1533,7 +1628,8 @@
       "lack of a real plan, lack of adequate situation analysis, unrealistic goals and unanticipated competitive moves"
     ],
     "explanation": "All four causes are listed together: no real plan, weak situation analysis, unrealistic goals, and unanticipated competitive moves. Take the combined option.",
-    "source": "Guide 8.10, the marketing plan"
+    "source": "Guide 8.10, the marketing plan",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 97,
@@ -1549,7 +1645,8 @@
       "ii and iii only are correct"
     ],
     "explanation": "Distribution covers the physical process of getting goods to market and the process of locating services. Item i describes production, which happens before distribution starts.",
-    "source": "Guide 8.7, distribution"
+    "source": "Guide 8.7, distribution",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 98,
@@ -1565,7 +1662,8 @@
       "consumer, industrial and service"
     ],
     "explanation": "Three channel types: consumer, industrial and service.",
-    "source": "Guide 8.7, distribution"
+    "source": "Guide 8.7, distribution",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 99,
@@ -1581,7 +1679,8 @@
       "distribution"
     ],
     "explanation": "Distribution. Everything else in the plan depends on being able to put the product or the service in front of the customer.",
-    "source": "Guide 8.7, distribution"
+    "source": "Guide 8.7, distribution",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 100,
@@ -1597,7 +1696,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "All three: age and sex, income status, and where the customer base is located. The profile answers who they are and where they are.",
-    "source": "Guide 8.13, customer profile"
+    "source": "Guide 8.13, customer profile",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 101,
@@ -1613,7 +1713,8 @@
       "patent"
     ],
     "explanation": "A patent is the government grant of a property right to an inventor. A trademark protects a mark that identifies a trader, and a disclosure document only states the intent to patent.",
-    "source": "Guide 9.1, patents"
+    "source": "Guide 9.1, patents",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 102,
@@ -1629,7 +1730,8 @@
       "if an inventor's creation already exists and remains actively protected under the law"
     ],
     "explanation": "The search answers one question: does the creation already exist, and is it still actively protected. Fees, oaths and filing sections are procedure, not the purpose of the search.",
-    "source": "Guide 9.1, patents"
+    "source": "Guide 9.1, patents",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 103,
@@ -1645,7 +1747,8 @@
       "a patent infringement has occurred"
     ],
     "explanation": "The disclosure document matters when infringement occurs, because it evidences the date the inventor declared the intent to patent.",
-    "source": "Guide 9.2, the disclosure document"
+    "source": "Guide 9.2, the disclosure document",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 104,
@@ -1661,7 +1764,8 @@
       "ii only is correct"
     ],
     "explanation": "Only ii. It is a statement to the patent office declaring the intent to patent an idea. It is not a patent, and it is not part of the business plan.",
-    "source": "Guide 9.2, the disclosure document"
+    "source": "Guide 9.2, the disclosure document",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 105,
@@ -1677,7 +1781,8 @@
       "ii and iii only are correct"
     ],
     "explanation": "The creation must be the applicant's own, and it must be useful and new. Personal investment risk is not a patent requirement. Note the split: the older papers mark ii and iii, while the 2020 online wording marked all three.",
-    "source": "Guide 9.1, patents"
+    "source": "Guide 9.1, patents",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 106,
@@ -1693,7 +1798,8 @@
       "ii and iii only are correct"
     ],
     "explanation": "Plant patents cover hybrid roses and food grains. The 17 years figure belongs to the old utility patent term, not to what a plant patent is given for.",
-    "source": "Guide 9.1, patents"
+    "source": "Guide 9.1, patents",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 107,
@@ -1709,7 +1815,8 @@
       "may be a particular sound, a word, a symbol, a design or a slogan, and can last indefinitely"
     ],
     "explanation": "A trademark may be a sound, a word, a symbol, a design or a slogan, and it can last indefinitely while it stays in use. Take the option that combines them.",
-    "source": "Guide 9.3, trademarks"
+    "source": "Guide 9.3, trademarks",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 108,
@@ -1725,7 +1832,8 @@
       "completion of the written form and payment of fee, drawing of the mark and five specimens showing actual use, and publication in the Trade Mark Official Gazette"
     ],
     "explanation": "Three requirements: the written form with the fee, the drawing plus five specimens showing actual use, and publication in the Trade Mark Official Gazette. All three are needed, so take the combined option.",
-    "source": "Guide 9.3, trademarks"
+    "source": "Guide 9.3, trademarks",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 109,
@@ -1741,7 +1849,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "All three. Describe the transaction in detail, obtain signatures, and remember that an oral agreement will not hold for a deal running over one year.",
-    "source": "Guide 9.5, contracts"
+    "source": "Guide 9.5, contracts",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 110,
@@ -1757,7 +1866,8 @@
       "ii and iii only are correct"
     ],
     "explanation": "Produce safe products and warn customers of potential hazards. Zero defects is not achievable, so it cannot be the protection.",
-    "source": "Guide 9.4, product liability"
+    "source": "Guide 9.4, product liability",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 111,
@@ -1773,7 +1883,8 @@
       "General partner"
     ],
     "explanation": "A general partner joins voluntarily and carries operational responsibility, with unlimited liability. A limited partner invests but may not legally help manage the firm.",
-    "source": "Guide 10.5, partnership"
+    "source": "Guide 10.5, partnership",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 112,
@@ -1789,7 +1900,8 @@
       "Franchisor"
     ],
     "explanation": "The franchisor originates the system and supplies the package for a fee and royalties. The franchisee is the acquiring owner. The franchise is the system created by the contract.",
-    "source": "Guide 10.9, franchising"
+    "source": "Guide 10.9, franchising",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 113,
@@ -1805,7 +1917,8 @@
       "franchise"
     ],
     "explanation": "The franchise is the business system itself, created by the contract. Keep the three words apart: franchisor originates, franchisee acquires, franchise is the system.",
-    "source": "Guide 10.9, franchising"
+    "source": "Guide 10.9, franchising",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 114,
@@ -1821,7 +1934,8 @@
       "corporation"
     ],
     "explanation": "A corporation is created by law as a separate legal entity, so it has perpetual life and survives its investors. That separation also gives limited liability.",
-    "source": "Guide 10.6, corporation"
+    "source": "Guide 10.6, corporation",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 115,
@@ -1837,7 +1951,8 @@
       "joint venture"
     ],
     "explanation": "A joint venture is formed by companies investing together to pursue one commercial activity. A partnership is formed by persons, and a corporation is chartered by the state.",
-    "source": "Guide 3, high frequency definitions"
+    "source": "Guide 3, high frequency definitions",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 116,
@@ -1853,7 +1968,8 @@
       "preferences of the entrepreneur, profile of the enterprise, and advantages and disadvantages of the legal business entity"
     ],
     "explanation": "Three criteria: the preferences of the entrepreneur, the profile of the enterprise, and the advantages and disadvantages of the legal entity. Tax and succession issues sit inside the third criterion.",
-    "source": "Guide 10.2, selecting the legal form"
+    "source": "Guide 10.2, selecting the legal form",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 117,
@@ -1869,7 +1985,8 @@
       "unlimited legal and financial liability"
     ],
     "explanation": "Unlimited legal and financial liability. The owner and the business are one in law, so personal assets are exposed. Limited life is a real disadvantage too, but the papers mark liability as the main one.",
-    "source": "Guide 10.4, sole proprietorship"
+    "source": "Guide 10.4, sole proprietorship",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 118,
@@ -1885,7 +2002,8 @@
       "easy to set up"
     ],
     "explanation": "Easy to set up. The other four options are the standard disadvantages: lack of continuity, limited resources, unlimited liability and few fringe benefits.",
-    "source": "Guide 10.4, sole proprietorship"
+    "source": "Guide 10.4, sole proprietorship",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 119,
@@ -1901,7 +2019,8 @@
       "i and iii only are correct"
     ],
     "explanation": "Items i and iii are true as printed here: autonomy of control, and inexpensive and self directing. Item ii is false, because a sole proprietor has a narrower network than a partnership or a corporation. Read option iii carefully; when it reads differently the 2020 exam marks i only.",
-    "source": "Guide 10.4, sole proprietorship"
+    "source": "Guide 10.4, sole proprietorship",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 120,
@@ -1917,7 +2036,8 @@
       "i and ii only are correct"
     ],
     "explanation": "The business ends on the death or withdrawal of a partner, and liability is unlimited for all parties, jointly and severally. Item iii is false: a partnership has more access to resources than a sole proprietorship, not less.",
-    "source": "Guide 10.5, partnership"
+    "source": "Guide 10.5, partnership",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 121,
@@ -1933,7 +2053,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "All three. The limited partner is exempt from management responsibility, profits and losses pass through to all partners, and the investment can be sold or assigned.",
-    "source": "Guide 10.5, partnership"
+    "source": "Guide 10.5, partnership",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 122,
@@ -1949,7 +2070,8 @@
       "expensive to start"
     ],
     "explanation": "Expensive to start. Incorporation costs money and paperwork. Limited liability, perpetual life and better access to resources are the advantages.",
-    "source": "Guide 10.6, corporation"
+    "source": "Guide 10.6, corporation",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 123,
@@ -1965,7 +2087,8 @@
       "incorporated companies"
     ],
     "explanation": "Only incorporated companies must have a formal board. Other forms may keep a board of advisors, but the law does not require one.",
-    "source": "Guide 10.7, boards"
+    "source": "Guide 10.7, boards",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 124,
@@ -1981,7 +2104,8 @@
       "5 to 9"
     ],
     "explanation": "Five to nine members. Large enough for a mix of skills, small enough to decide.",
-    "source": "Guide 10.7, boards"
+    "source": "Guide 10.7, boards",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 125,
@@ -1997,23 +2121,25 @@
       "a lawyer, a banker, an accountant and an advertising agent"
     ],
     "explanation": "Advisors are outside professionals. The 2015 paper prints a lawyer, a banker, an accountant and an advertising agent; the 2005 key prints a lawyer, a banker and a marketer. Take the fuller professional mix that is printed.",
-    "source": "Guide 10.7; Guide 16, conflicts"
+    "source": "Guide 10.7; Guide 16, conflicts",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 126,
     "question_text": "Directors of new ventures fulfil important roles beyond their decision-making duties that include\n(i) serving as members of an expanded social network\n(ii) mentors and professional advisors\n(iii) disturbance handlers and resource allocators",
     "options": [
-      "i and ii only are correct",
-      "i and iii only are correct",
       "i, ii and iii are correct",
+      "i and iii only are correct",
+      "i and ii only are correct",
       "i only is correct",
       "iii only is correct"
     ],
     "correct_answer": [
-      "i, ii and iii are correct"
+      "i and ii only are correct"
     ],
-    "explanation": "All three roles are listed: members of an expanded social network, mentors and professional advisors, and disturbance handlers and resource allocators.",
-    "source": "Guide 10.7, boards"
+    "explanation": "Two roles, not three. ME 492 2025 NOTES says directors act as mentors, professional advisers and members of an expanded social network. Disturbance handling and resource allocation are decision making duties, and the stem asks for the roles beyond those. The 2005 official key marks i and ii only.",
+    "source": "ME 492 2025 NOTES; 2005 marking scheme item 25",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 127,
@@ -2029,7 +2155,8 @@
       "building an organisation, giving identity to the venture, focusing on operational issues and immediate problems, and guiding the venture through change"
     ],
     "explanation": "All four duties belong to the team: build the organisation, give the venture its identity, handle operational issues, and guide the venture through change. When the paper forces one option, the 2015 key marks guiding the venture through change.",
-    "source": "Guide 10.8, the entrepreneurial team"
+    "source": "Guide 10.8, the entrepreneurial team",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 128,
@@ -2045,7 +2172,8 @@
       "defining their business and identifying human resource requirements"
     ],
     "explanation": "The founder defines the business and identifies the human resource requirements. Running the functional areas is the work of the team that the founder then hires.",
-    "source": "Guide 10.8, the entrepreneurial team"
+    "source": "Guide 10.8, the entrepreneurial team",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 129,
@@ -2061,7 +2189,8 @@
       "organisational structure"
     ],
     "explanation": "The first step is the organisational structure. Job analysis, job description, job specification and training all follow it, in that order.",
-    "source": "Guide 10.1, designing the organisation"
+    "source": "Guide 10.1, designing the organisation",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 130,
@@ -2077,7 +2206,8 @@
       "job analysis"
     ],
     "explanation": "Job analysis identifies the major activities. The job description then writes them down, and the job specification sets the person requirements.",
-    "source": "Guide 10.1, designing the organisation"
+    "source": "Guide 10.1, designing the organisation",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 131,
@@ -2093,7 +2223,8 @@
       "personal network"
     ],
     "explanation": "That circle is the personal network. It is the closest ring of contacts, tighter than the wider social network of loose ties.",
-    "source": "Guide 3, high frequency definitions"
+    "source": "Guide 3, high frequency definitions",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 132,
@@ -2109,7 +2240,8 @@
       "fixed capital"
     ],
     "explanation": "Fixed capital buys the physical facilities: buildings, fixtures and equipment. It is a long term investment, so it is financed with long term credit.",
-    "source": "Guide 11.1, the three capital requirements"
+    "source": "Guide 11.1, the three capital requirements",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 133,
@@ -2125,7 +2257,8 @@
       "working capital"
     ],
     "explanation": "Working capital pays the day to day costs: rent, utilities, inventories and payroll. Short term credit funds it, because the sales it generates repay it.",
-    "source": "Guide 11.1, the three capital requirements"
+    "source": "Guide 11.1, the three capital requirements",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 134,
@@ -2141,7 +2274,8 @@
       "fluid capital"
     ],
     "explanation": "Fluid or liquid capital is the emergency reserve, held as cash or as securities you can sell quickly. It is not spent on operations or on plant.",
-    "source": "Guide 11.1, the three capital requirements"
+    "source": "Guide 11.1, the three capital requirements",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 135,
@@ -2157,7 +2291,8 @@
       "working capital"
     ],
     "explanation": "Short term loans fund working capital. They are self liquidating: the trading they support brings in the cash that repays them.",
-    "source": "Guide 11.2, the three types of credit"
+    "source": "Guide 11.2, the three types of credit",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 136,
@@ -2173,7 +2308,8 @@
       "long-term financing"
     ],
     "explanation": "Long term financing, over five years, buys buildings and land. Intermediate term credit, one to five years, buys the smaller fixed items such as fixtures and equipment.",
-    "source": "Guide 11.2, the three types of credit"
+    "source": "Guide 11.2, the three types of credit",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 137,
@@ -2189,7 +2325,8 @@
       "sales and profits"
     ],
     "explanation": "Sales and profits repay short term funds. That is what makes them self liquidating. Selling fixed assets to repay a short term loan means the venture is in trouble.",
-    "source": "Guide 11.2, the three types of credit"
+    "source": "Guide 11.2, the three types of credit",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 138,
@@ -2205,7 +2342,8 @@
       "commercial bank"
     ],
     "explanation": "Commercial banks, when collateral is available. Venture capital targets high risk start-ups, and personal funds are the cheapest but the most limited.",
-    "source": "Guide 11.5, the sources ranked"
+    "source": "Guide 11.5, the sources ranked",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 139,
@@ -2221,7 +2359,8 @@
       "venture capital"
     ],
     "explanation": "Venture capital carries the high risk of start-ups. Development capital funds more mature investments, and replacement capital buys out an original shareholder.",
-    "source": "Guide 11.5, the sources ranked"
+    "source": "Guide 11.5, the sources ranked",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 140,
@@ -2237,7 +2376,8 @@
       "Venture capitalists"
     ],
     "explanation": "Venture capitalists. The three markers in the stem are their standard test: very high growth potential, willingness to give up equity, and a way to cash out in about five years.",
-    "source": "Guide 11.5, the sources ranked"
+    "source": "Guide 11.5, the sources ranked",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 141,
@@ -2253,7 +2393,8 @@
       "debt financing"
     ],
     "explanation": "Asset-based financing is debt financing, because the asset is the collateral. One compiled answer sheet says equity, and that is wrong against the notes and the 2005 key.",
-    "source": "Guide 11.3; Guide 16, conflicts"
+    "source": "Guide 11.3; Guide 16, conflicts",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 142,
@@ -2269,7 +2410,8 @@
       "equity financing"
     ],
     "explanation": "Equity financing. The investor gets an ownership position instead of security, and is repaid with a share of the profits, not with principal and interest.",
-    "source": "Guide 11.3, debt versus equity"
+    "source": "Guide 11.3, debt versus equity",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 143,
@@ -2285,7 +2427,8 @@
       "external fund"
     ],
     "explanation": "Grants are an external fund. Internal sources are profits, asset sales, lower working capital and faster collection of receivables. Money from outside the business is external, even when nobody has to repay it.",
-    "source": "Guide 11.4, internal versus external funds"
+    "source": "Guide 11.4, internal versus external funds",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 144,
@@ -2301,7 +2444,8 @@
       "Personal funds"
     ],
     "explanation": "Personal funds. They cost nothing in interest and nothing in control, and outside funders insist on seeing them. Nobody backs a founder who has not backed the venture.",
-    "source": "Guide 11.5, the sources ranked"
+    "source": "Guide 11.5, the sources ranked",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 145,
@@ -2317,7 +2461,8 @@
       "50 to 80"
     ],
     "explanation": "Lenders take 50 to 80 percent of the asset value as collateral. The margin protects them if the asset has to be sold in a hurry.",
-    "source": "Guide 11.3, debt versus equity"
+    "source": "Guide 11.3, debt versus equity",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 146,
@@ -2333,7 +2478,8 @@
       "debt"
     ],
     "explanation": "Debt. Cheap interest lets the entrepreneur borrow rather than sell shares, so ownership stays larger and the return on equity is greater.",
-    "source": "Guide 11.3; trap list 7"
+    "source": "Guide 11.3; trap list 7",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 147,
@@ -2349,7 +2495,8 @@
       "Equity"
     ],
     "explanation": "Equity is the ordinary share capital. Keep it apart from net worth, which is what owners have put in and left in.",
-    "source": "Guide 11.6, terms to know"
+    "source": "Guide 11.6, terms to know",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 148,
@@ -2365,7 +2512,8 @@
       "net worth"
     ],
     "explanation": "Net worth is what the owners invested plus what they retained from operations.",
-    "source": "Guide 11.6, terms to know"
+    "source": "Guide 11.6, terms to know",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 149,
@@ -2381,7 +2529,8 @@
       "retained earnings"
     ],
     "explanation": "Retained earnings are the accumulated profits above losses and payments to owners. They are profits kept in the business instead of paid out as dividends.",
-    "source": "Guide 11.6, terms to know"
+    "source": "Guide 11.6, terms to know",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 150,
@@ -2397,7 +2546,8 @@
       "account payable"
     ],
     "explanation": "An account payable is money going out: you bought on credit and owe. The receivable item is asked right beside this one, so read the direction of the money.",
-    "source": "Guide 11.6; trap list 8"
+    "source": "Guide 11.6; trap list 8",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 151,
@@ -2413,7 +2563,8 @@
       "account receivable"
     ],
     "explanation": "An account receivable is money coming in: you sold on credit and are owed. Receivable is due from another party.",
-    "source": "Guide 11.6; trap list 8"
+    "source": "Guide 11.6; trap list 8",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 152,
@@ -2429,7 +2580,8 @@
       "Financial co-ordination"
     ],
     "explanation": "Financial co-ordination. It ties the separate financial activities together so every function works towards the same objectives.",
-    "source": "Guide 11.6, terms to know"
+    "source": "Guide 11.6, terms to know",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 153,
@@ -2445,7 +2597,8 @@
       "covenants"
     ],
     "explanation": "Covenants are the restrictions written into a loan agreement. Collateral is the security pledged, which is a different thing.",
-    "source": "Guide 11.6, terms to know"
+    "source": "Guide 11.6, terms to know",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 154,
@@ -2461,7 +2614,8 @@
       "receipts minus disbursements"
     ],
     "explanation": "Cash flow is receipts minus disbursements: money in less money out. It is not profit, and it has nothing to do with equity.",
-    "source": "Guide 11.6, terms to know"
+    "source": "Guide 11.6, terms to know",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 155,
@@ -2477,7 +2631,8 @@
       "money portability"
     ],
     "explanation": "This is an except item. The three real factors are the type of financing needed, the nature and size of the business, and the entrepreneur's financial condition. Money portability is the invented option.",
-    "source": "Guide 11.5, the sources ranked"
+    "source": "Guide 11.5, the sources ranked",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 156,
@@ -2493,7 +2648,8 @@
       "i, ii and iii are correct"
     ],
     "explanation": "All three: cash flow, collateral and equity contribution. A 2020 script highlights ii only, but that is a student mark, not a key.",
-    "source": "Guide 16, conflicts"
+    "source": "Guide 16, conflicts",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 157,
@@ -2509,7 +2665,8 @@
       "Budgeting"
     ],
     "explanation": "Budgeting co-ordinates the finances of every area of the venture. Cost and financial accounting record what already happened; budgeting plans what will.",
-    "source": "Guide 12.1, levels of financial planning"
+    "source": "Guide 12.1, levels of financial planning",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 158,
@@ -2525,7 +2682,8 @@
       "Strategic planning"
     ],
     "explanation": "Strategic planning is the long term level. It defines the scope of the venture, which products to develop, and which niche should be profitable.",
-    "source": "Guide 12.1, levels of financial planning"
+    "source": "Guide 12.1, levels of financial planning",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 159,
@@ -2541,7 +2699,8 @@
       "capital budgeting"
     ],
     "explanation": "Capital budgeting is the intermediate level, and buy or lease is its standard example. The decision commits money for more than one year.",
-    "source": "Guide 12.1, levels of financial planning"
+    "source": "Guide 12.1, levels of financial planning",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 160,
@@ -2557,7 +2716,8 @@
       "operating budgeting"
     ],
     "explanation": "Operating budgeting is the short term level and the most specific: sales targets, production objectives and financing plans.",
-    "source": "Guide 12.1, levels of financial planning"
+    "source": "Guide 12.1, levels of financial planning",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 161,
@@ -2573,7 +2733,8 @@
       "financial statement budgets"
     ],
     "explanation": "Operating budgets, capital budgets and financial statement budgets. The financial statement budgets are the pro forma statements.",
-    "source": "Guide 12.2, the master budget"
+    "source": "Guide 12.2, the master budget",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 162,
@@ -2589,7 +2750,8 @@
       "one-year time span"
     ],
     "explanation": "One year. Perpetual budgeting keeps that one year rolling by adding a new month at the end as the current month closes.",
-    "source": "Guide 12.2, the master budget"
+    "source": "Guide 12.2, the master budget",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 163,
@@ -2605,7 +2767,8 @@
       "operating budgets"
     ],
     "explanation": "The operating budgets come first. Their information then feeds the financial statement budgets. The flow runs one way.",
-    "source": "Guide 12.2, the master budget"
+    "source": "Guide 12.2, the master budget",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 164,
@@ -2621,7 +2784,8 @@
       "sales forecast"
     ],
     "explanation": "The sales forecast. Everything else, from purchases to cash, depends on how much you expect to sell.",
-    "source": "Guide 12.2, the master budget"
+    "source": "Guide 12.2, the master budget",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 165,
@@ -2637,7 +2801,8 @@
       "master budget"
     ],
     "explanation": "That composition is the master budget. It gathers the departmental budgets for sales, production, manufacturing expenses and administrative expenses.",
-    "source": "Guide 12.2, the master budget"
+    "source": "Guide 12.2, the master budget",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 166,
@@ -2653,7 +2818,8 @@
       "a 12-month reporting period"
     ],
     "explanation": "A 12 month reporting period that rolls. At the end of the current month a new month is added at the end, so the horizon is always a year.",
-    "source": "Guide 12.2, the master budget"
+    "source": "Guide 12.2, the master budget",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 167,
@@ -2669,7 +2835,8 @@
       "Capital"
     ],
     "explanation": "Capital budgets cover expenditure that impacts the business for more than one year. Some hand-marked copies show strategic budgets, but the printed 2005 and 2007 keys both mark capital.",
-    "source": "Guide 12.2; Guide 16, conflicts"
+    "source": "Guide 12.2; Guide 16, conflicts",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 168,
@@ -2685,7 +2852,8 @@
       "pro forma statements"
     ],
     "explanation": "Pro forma statements. Pro forma means projected, so these are the budgeted income statement, balance sheet and cash flow.",
-    "source": "Guide 12.3, the pro forma statements"
+    "source": "Guide 12.3, the pro forma statements",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 169,
@@ -2701,7 +2869,8 @@
       "prepared primarily as a planning function, administered as a control function, and a statement of expected results or requirements expressed in financial or numerical terms"
     ],
     "explanation": "All three at once: prepared as a planning function, administered as a control function, and expressed in financial or numerical terms. Take the combined option.",
-    "source": "Guide 12.2, the master budget"
+    "source": "Guide 12.2, the master budget",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 170,
@@ -2717,7 +2886,8 @@
       "information contained in the operating budgets is used to prepare the financial statement budgets"
     ],
     "explanation": "The operating budgets feed the financial statement budgets. Never the reverse. That one way flow is the point of the question.",
-    "source": "Guide 12.2, the master budget"
+    "source": "Guide 12.2, the master budget",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 171,
@@ -2733,7 +2903,8 @@
       "projected net profits calculated from projected revenues and projected costs and expenses"
     ],
     "explanation": "The pro forma income statement projects net profit from projected revenues less projected costs and expenses. Assets, liabilities and equity belong to the balance sheet.",
-    "source": "Guide 12.3, the pro forma statements"
+    "source": "Guide 12.3, the pro forma statements",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 172,
@@ -2749,7 +2920,8 @@
       "Pro forma balance sheet"
     ],
     "explanation": "The pro forma balance sheet. One compiled answer sheet gives the income statement here, and that is wrong. Assets, liabilities and equity are always the balance sheet.",
-    "source": "Guide 12.3; Guide 16, conflicts"
+    "source": "Guide 12.3; Guide 16, conflicts",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 173,
@@ -2765,7 +2937,8 @@
       "Assets, liabilities and owners equity"
     ],
     "explanation": "Assets, liabilities and owners equity. Those three segments are the balance sheet equation.",
-    "source": "Guide 12.3, the pro forma statements"
+    "source": "Guide 12.3, the pro forma statements",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 174,
@@ -2781,7 +2954,8 @@
       "pro forma cash flow"
     ],
     "explanation": "The pro forma cash flow: projected cash in less projected cash out. It reports cash available, not profit.",
-    "source": "Guide 12.3, the pro forma statements"
+    "source": "Guide 12.3, the pro forma statements",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 175,
@@ -2797,7 +2971,8 @@
       "Sales budget"
     ],
     "explanation": "Develop the sales budget first. Sales drive the revenue line, and the costs follow from the volume you plan to sell.",
-    "source": "Guide 12.3, the pro forma statements"
+    "source": "Guide 12.3, the pro forma statements",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 176,
@@ -2813,7 +2988,8 @@
       "capital and operating budgets"
     ],
     "explanation": "The capital and operating budgets come before the pro forma income statement. The pro forma statements are built from budget information, not the other way round.",
-    "source": "Guide 12.3, the pro forma statements"
+    "source": "Guide 12.3, the pro forma statements",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 177,
@@ -2829,7 +3005,8 @@
       "a pro forma statement"
     ],
     "explanation": "A pro forma statement predicts the financial statements at the end of the forecast period. A business plan describes the future direction; a pro forma statement puts numbers on it.",
-    "source": "Guide 3, high frequency definitions"
+    "source": "Guide 3, high frequency definitions",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 178,
@@ -2845,7 +3022,8 @@
       "income statement"
     ],
     "explanation": "The income statement summarises operations over a period. The balance sheet is a position at one date.",
-    "source": "Guide 12.3, the pro forma statements"
+    "source": "Guide 12.3, the pro forma statements",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 179,
@@ -2861,7 +3039,8 @@
       "operations, human resources, facilities, inventory and related issues"
     ],
     "explanation": "The older wording of this section is operations, human resources, facilities, inventory and related issues. Take the option that keeps human resources in.",
-    "source": "Guide 6.10, manufacturing or operations section"
+    "source": "Guide 6.10, manufacturing or operations section",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 180,
@@ -2877,7 +3056,8 @@
       "debt to equity ratio"
     ],
     "explanation": "The debt to equity ratio measures long term solvency, because it compares borrowed funds with owners' funds. The current ratio measures short term liquidity, asset turnover measures efficiency, and return on equity measures profitability.",
-    "source": "Slide 10, financing new ventures"
+    "source": "Slide 10, financing new ventures",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 181,
@@ -2893,7 +3073,8 @@
       "$40,000"
     ],
     "explanation": "October is the first month, so there are no prior credit sales to collect. Use the given balance on 1 October: $40,000. Every other month uses the previous month's credit sales.",
-    "source": "Guide 13.1, rule 1"
+    "source": "Guide 13.1, rule 1",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 182,
@@ -2909,7 +3090,8 @@
       "$45,000"
     ],
     "explanation": "Accounts receivable for a month is the previous month's credit sales. November collects October's sales on account: $45,000.",
-    "source": "Guide 13.1, rule 1"
+    "source": "Guide 13.1, rule 1",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 183,
@@ -2925,7 +3107,8 @@
       "$51,750"
     ],
     "explanation": "December collects November's sales on account: $51,750. Do not take December's own figure. That money is not due until January.",
-    "source": "Guide 13.1, rule 1"
+    "source": "Guide 13.1, rule 1",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 184,
@@ -2941,7 +3124,8 @@
       "$15,000"
     ],
     "explanation": "Budgeted cash sales are read straight off the table: $15,000 for October. This is a free mark, so do not compute anything.",
-    "source": "Guide 13.1, rule 2"
+    "source": "Guide 13.1, rule 2",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 185,
@@ -2957,7 +3141,8 @@
       "$19,838"
     ],
     "explanation": "Read the cash sales line for December: $19,838. The larger figures offered are total sales and total collections, which are different lines.",
-    "source": "Guide 13.1, rule 2"
+    "source": "Guide 13.1, rule 2",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 186,
@@ -2973,7 +3158,8 @@
       "$59,513"
     ],
     "explanation": "The year-end receivable is December's credit sales, $59,513, because that is the money still uncollected on 31 December. $79,351 is December total sales, which includes cash already received.",
-    "source": "Guide 13.1, rule 4; trap list 13"
+    "source": "Guide 13.1, rule 4; trap list 13",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 187,
@@ -2989,7 +3175,8 @@
       "$208,351"
     ],
     "explanation": "Sales revenue for the quarter is the sum of the three total sales figures: 60,000 + 69,000 + 79,351 = $208,351. Revenue is recognised on sales, not on collections.",
-    "source": "Guide 13.1, rule 5"
+    "source": "Guide 13.1, rule 5",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 188,
@@ -3005,7 +3192,8 @@
       "$45,000"
     ],
     "explanation": "November collects October's sales on account: $45,000. The $60,000 opening balance belongs to October only.",
-    "source": "Guide 13.1, rule 1"
+    "source": "Guide 13.1, rule 1",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 189,
@@ -3021,7 +3209,8 @@
       "$22,000"
     ],
     "explanation": "Read the cash sales line for November: $22,000. The credit sales figures are a separate line and are collected a month later.",
-    "source": "Guide 13.1, rule 2"
+    "source": "Guide 13.1, rule 2",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 190,
@@ -3037,7 +3226,8 @@
       "GH¢337,500"
     ],
     "explanation": "November collects October's sales on account: GH¢337,500. Check it against the collections line: 1,321,875 - 984,375 = 337,500, which is 100 percent of October credit sales.",
-    "source": "Guide 13.1, rule 1"
+    "source": "Guide 13.1, rule 1",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 191,
@@ -3053,7 +3243,8 @@
       "GH¢527,344"
     ],
     "explanation": "The year-end receivable is December's credit sales: GH¢527,344. Note the stem in the original paper says 30 percent collection, but the table shows 100 percent. Trust the table.",
-    "source": "Guide 13.1, rule 4; trap list 14"
+    "source": "Guide 13.1, rule 4; trap list 14",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 192,
@@ -3069,7 +3260,8 @@
       "GH¢4,289,063"
     ],
     "explanation": "Add the three total sales figures: 1,125,000 + 1,406,250 + 1,757,813 = GH¢4,289,063.",
-    "source": "Guide 13.1, rule 5"
+    "source": "Guide 13.1, rule 5",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 193,
@@ -3085,7 +3277,8 @@
       "25 percent"
     ],
     "explanation": "Divide one month by the month before: 1,406,250 / 1,125,000 = 1.25, so the increase is 25 percent. Check it on the next pair: 1,757,813 / 1,406,250 = 1.25.",
-    "source": "Guide 13.1, worked example 2"
+    "source": "Guide 13.1, worked example 2",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 194,
@@ -3101,7 +3294,8 @@
       "$808,618"
     ],
     "explanation": "First quarter to fourth quarter is three growth steps, not four. West: 740,000 x 1.03^3 = 740,000 x 1.092727 = $808,618. Raising it to the fourth power lands you on the distractor.",
-    "source": "Guide 13.2; trap list 10"
+    "source": "Guide 13.2; trap list 10",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 195,
@@ -3117,7 +3311,8 @@
       "$1,754,039"
     ],
     "explanation": "Grow each division by three steps, then add. East 520,000 x 1.02^3 = 551,828. West 740,000 x 1.03^3 = 808,618. South 340,000 x 1.05^3 = 393,593. Total $1,754,039.",
-    "source": "Guide 13.2, worked example"
+    "source": "Guide 13.2, worked example",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 196,
@@ -3133,7 +3328,8 @@
       "$1,018,710"
     ],
     "explanation": "Accra: 880,000 x 1.05^3 = 880,000 x 1.157625 = $1,018,710. Three steps from the first quarter to the fourth.",
-    "source": "Guide 13.2; trap list 10"
+    "source": "Guide 13.2; trap list 10",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 197,
@@ -3149,7 +3345,8 @@
       "$2,308,892"
     ],
     "explanation": "Kumasi 650,000 x 1.04^3 = 731,162. Accra 880,000 x 1.05^3 = 1,018,710. Cape Coast 420,000 x 1.10^3 = 559,020. Total $2,308,892.",
-    "source": "Guide 13.2, worked example"
+    "source": "Guide 13.2, worked example",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 198,
@@ -3165,7 +3362,8 @@
       "GH¢520,000"
     ],
     "explanation": "Total cash available = beginning cash balance + cash receipts. The beginning balance is last month's ending balance: 34,000 + 486,000 = GH¢520,000. The cushion does not enter this line.",
-    "source": "Guide 13.3, steps 1 and 2"
+    "source": "Guide 13.3, steps 1 and 2",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 199,
@@ -3181,7 +3379,8 @@
       "GH¢780,000"
     ],
     "explanation": "31,000 + 749,000 = GH¢780,000. August's ending balance becomes September's beginning balance.",
-    "source": "Guide 13.3, steps 1 and 2"
+    "source": "Guide 13.3, steps 1 and 2",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 200,
@@ -3197,7 +3396,8 @@
       "GH¢20,000"
     ],
     "explanation": "Disbursements minus cash available: 540,000 - 520,000 = GH¢20,000. The result is positive, so it is a shortage and the company must borrow.",
-    "source": "Guide 13.3, step 4"
+    "source": "Guide 13.3, step 4",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 201,
@@ -3213,7 +3413,8 @@
       "GH¢148,000"
     ],
     "explanation": "780,000 - 632,000 = GH¢148,000 left over, so this is a surplus. Part of it repays the loan and part stays as the cushion.",
-    "source": "Guide 13.3, step 4"
+    "source": "Guide 13.3, step 4",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 202,
@@ -3229,7 +3430,8 @@
       "GH¢60,000"
     ],
     "explanation": "When there is a shortage, borrowing = shortage + cushion: 20,000 + 40,000 = GH¢60,000. Add the cushion when borrowing; subtract it when repaying.",
-    "source": "Guide 13.3, step 5; trap list 12"
+    "source": "Guide 13.3, step 5; trap list 12",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 203,
@@ -3245,7 +3447,8 @@
       "GH¢108,000"
     ],
     "explanation": "When there is a surplus, repayment = surplus - cushion: 148,000 - 40,000 = GH¢108,000. The cushion stays in the account.",
-    "source": "Guide 13.3, step 5; trap list 12"
+    "source": "Guide 13.3, step 5; trap list 12",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 204,
@@ -3261,7 +3464,8 @@
       "GH¢18,600"
     ],
     "explanation": "Interest is charged on the running loan balance each month, not on the new borrowing. 5 percent of 120,000, 180,000 and 72,000 gives 6,000 + 9,000 + 3,600 = GH¢18,600.",
-    "source": "Guide 13.3, step 6; trap list 11"
+    "source": "Guide 13.3, step 6; trap list 11",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 205,
@@ -3277,7 +3481,8 @@
       "GH¢187,139"
     ],
     "explanation": "7,139 + 180,000 = GH¢187,139. July's ending balance is August's beginning balance.",
-    "source": "Guide 13.3, steps 1 and 2"
+    "source": "Guide 13.3, steps 1 and 2",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 206,
@@ -3293,7 +3498,8 @@
       "GH¢223,214"
     ],
     "explanation": "7,214 + 216,000 = GH¢223,214.",
-    "source": "Guide 13.3, steps 1 and 2"
+    "source": "Guide 13.3, steps 1 and 2",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 207,
@@ -3309,7 +3515,8 @@
       "GH¢12,739"
     ],
     "explanation": "187,139 - 174,400 = GH¢12,739 left over, so August runs a surplus even though July needed a large loan.",
-    "source": "Guide 13.3, step 4"
+    "source": "Guide 13.3, step 4",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 208,
@@ -3325,7 +3532,8 @@
       "GH¢14,198"
     ],
     "explanation": "Repayment = surplus - cushion: 23,198 - 9,000 = GH¢14,198.",
-    "source": "Guide 13.3, step 5"
+    "source": "Guide 13.3, step 5",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 209,
@@ -3341,7 +3549,8 @@
       "GH¢5,150"
     ],
     "explanation": "2 percent of each month's loan balance: 1,861 + 1,786 + 1,502 = GH¢5,149. The paper prints GH¢5,150, which is the same figure after rounding.",
-    "source": "Guide 13.3, step 6"
+    "source": "Guide 13.3, step 6",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 210,
@@ -3357,7 +3566,8 @@
       "GH¢7,498"
     ],
     "explanation": "Ending cash = available - disbursements + borrowing - repayment - interest. 223,214 - 200,016 - 14,198 - 1,502 = GH¢7,498. It sits just below the GH¢9,000 cushion because the interest is paid after the cushion is set.",
-    "source": "Guide 13.3, step 7"
+    "source": "Guide 13.3, step 7",
+    "verified": "recomputed from the printed data"
   },
   {
     "question_number": 211,
@@ -3372,8 +3582,9 @@
     "correct_answer": [
       "the first statement is TRUE and the second is FALSE"
     ],
-    "explanation": "S1 is true: low tech products should be easy to make, quick to market and cheap to terminate. The 2005 key marks S2 false, because a low tech product can still be patented when it is new and useful. So S1 true, S2 false.",
-    "source": "Guide 14, item 1; Guide 5.8"
+    "explanation": "The sources disagree on this one. S1 is true. The compiled answer sheet marks S2 false, giving C, and the bank follows it. The 2005 official marking scheme marks A, both true with S2 explaining S1, which fits the slides: low tech products are treated that way because patents cannot protect them. Learn both readings and take the code the paper prints.",
+    "source": "2005 marking scheme item 26; EntrepreneurshipPasscoNew item 21",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 212,
@@ -3388,8 +3599,9 @@
     "correct_answer": [
       "both statements are FALSE"
     ],
-    "explanation": "S1 is false: you do not need to be an inventive genius for mid-tech work. The 2005 official marking scheme marks S2 false as well, so the answer is both false. Some compiled copies show A. Follow the printed scheme.",
-    "source": "Guide 14, item 2"
+    "explanation": "S1 is false: you do not need to be an inventive genius for mid-tech work. The 2005 official marking scheme marks both statements false. Treat this item as unsafe. The slides do say mid-tech products presume the application of new knowledge, which would make S2 true, and the compiled answer sheet marks A. Follow the code the paper prints.",
+    "source": "2005 marking scheme item 27; EntrepreneurshipPasscoNew item 22",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 213,
@@ -3405,7 +3617,8 @@
       "both statements are TRUE and the second is a correct explanation of the first"
     ],
     "explanation": "Both are true, and S2 explains S1. The line between high-tech and mid-tech is perception, precisely because the same product reads as high-tech to one person and mid-tech to another.",
-    "source": "Guide 14, item 3; Guide 5.8"
+    "source": "Guide 14, item 3; Guide 5.8",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 214,
@@ -3420,8 +3633,9 @@
     "correct_answer": [
       "both statements are TRUE and the second is a correct explanation of the first"
     ],
-    "explanation": "Both are true, and S2 explains S1. New ventures start in a niche because segmentation lets a small firm use its limited resources efficiently and without ambiguity.",
-    "source": "Guide 14, item 4; Guide 8.5"
+    "explanation": "Both are true, and S2 explains S1. New ventures start in a niche because segmentation lets a small firm use its limited resources efficiently and without ambiguity. Note the 2005 official key marks D, which calls S1 false. That reading is hard to defend, and the compiled answer sheet marks A.",
+    "source": "EntrepreneurshipPasscoNew item 24; 2005 marking scheme item 29",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 215,
@@ -3437,7 +3651,8 @@
       "both statements are TRUE and the second is a correct explanation of the first"
     ],
     "explanation": "Both are true, and S2 explains S1. Market research is fundamental exactly because it settles the first question: is there demand.",
-    "source": "Guide 14, item 5"
+    "source": "Guide 14, item 5",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 216,
@@ -3453,7 +3668,8 @@
       "both statements are FALSE"
     ],
     "explanation": "Both are false. The entrepreneur prepares the plan, in consultation with specialists. And knowing finance is not the same as knowing how to operate a business. One compiled sheet says C; the 2005 key and the 2020 exam both say both false.",
-    "source": "Guide 14, item 6; Guide 6.1"
+    "source": "Guide 14, item 6; Guide 6.1",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 217,
@@ -3469,7 +3685,8 @@
       "both statements are TRUE and the second is a correct explanation of the first"
     ],
     "explanation": "Both are true, and S2 explains S1. Price has to match the strategy because price itself sends a message to the customer about the product and the firm.",
-    "source": "Guide 14, item 7; Guide 8.11"
+    "source": "Guide 14, item 7; Guide 8.11",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 218,
@@ -3485,7 +3702,8 @@
       "both statements are TRUE and the second is a correct explanation of the first"
     ],
     "explanation": "Both are true, and S2 explains S1. Seed money is needed at that point because it underwrites operations, assets and business development before revenue starts.",
-    "source": "Guide 14, item 8"
+    "source": "Guide 14, item 8",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 219,
@@ -3501,7 +3719,8 @@
       "both statements are TRUE and the second is a correct explanation of the first"
     ],
     "explanation": "Both are true, and S2 explains S1. The word is contrived precisely because it is built from intra-company entrepreneur.",
-    "source": "Guide 14, item 9; Guide 4.8"
+    "source": "Guide 14, item 9; Guide 4.8",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 220,
@@ -3517,7 +3736,8 @@
       "both statements are TRUE and the second is a correct explanation of the first"
     ],
     "explanation": "Both are true, and S2 explains S1. No clear vision means no grasp of the marketing issues, and that is what makes the failure quick.",
-    "source": "Guide 14, item 10; Guide 6.15"
+    "source": "Guide 14, item 10; Guide 6.15",
+    "verified": "checked against the 2005 official marking scheme"
   },
   {
     "question_number": 221,
@@ -3533,7 +3753,8 @@
       "both statements are TRUE and the second is a correct explanation of the first"
     ],
     "explanation": "Both are true, and S2 explains S1. The venture keeps moving through the growth stages, so the plan has to keep moving with it.",
-    "source": "Guide 14, item 11; Guide 6.15"
+    "source": "Guide 14, item 11; Guide 6.15",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 222,
@@ -3549,7 +3770,8 @@
       "both statements are TRUE and the second is a correct explanation of the first"
     ],
     "explanation": "Both are true, and the key treats S2 as the explanation. Founders stay near their previous work because success rests on a business ideology built up in that field. This is the corridor principle in another form.",
-    "source": "Guide 14, item 12; Guide 5.4"
+    "source": "Guide 14, item 12; Guide 5.4",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 223,
@@ -3565,7 +3787,8 @@
       "both statements are TRUE and the second is a correct explanation of the first"
     ],
     "explanation": "Both are true, and S2 explains S1. Men tend to launch early, while women tend to start after their children are grown, which shortens the years available.",
-    "source": "Guide 14, item 13"
+    "source": "Guide 14, item 13",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 224,
@@ -3581,7 +3804,8 @@
       "both statements are TRUE and the second is a correct explanation of the first"
     ],
     "explanation": "Both are true, and S2 explains S1. Timing decides when the product enters, how it is priced, how it is distributed and how it is promoted, so it drives the potential.",
-    "source": "Guide 14, item 14; Guide 8.12"
+    "source": "Guide 14, item 14; Guide 8.12",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 225,
@@ -3597,7 +3821,8 @@
       "both statements are TRUE and the second is a correct explanation of the first"
     ],
     "explanation": "Both are true, and S2 explains S1. Demographic change is one of the four sources of change, and it creates the demand for new programmes and services that privatisation then fills.",
-    "source": "Guide 14, item 15; Guide 4.2"
+    "source": "Guide 14, item 15; Guide 4.2",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 226,
@@ -3613,7 +3838,8 @@
       "both statements are TRUE and the second is a correct explanation of the first"
     ],
     "explanation": "Both are true, and S2 explains S1. Forecasts rest on assumptions precisely because future outcomes cannot be predicted.",
-    "source": "Guide 14, item 16; Guide 12.4"
+    "source": "Guide 14, item 16; Guide 12.4",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 227,
@@ -3629,7 +3855,8 @@
       "both statements are TRUE and the second is NOT a correct explanation of the first"
     ],
     "explanation": "Both are true, but S2 does not explain S1. S2 only restates the same preference as a venture capital saying. A restatement is not a reason, so the answer is B, not A.",
-    "source": "Guide 14, item 17; Guide 2, code 2"
+    "source": "Guide 14, item 17; Guide 2, code 2",
+    "verified": "not checked against a printed key"
   },
   {
     "question_number": 228,
@@ -3645,6 +3872,7 @@
       "both statements are FALSE"
     ],
     "explanation": "Both are false. Lenders and investors run the background checks, not inventors. And equity investors look to cash out in about five years, not in a year or two.",
-    "source": "Guide 14, item 18; Guide 11.5"
+    "source": "Guide 14, item 18; Guide 11.5",
+    "verified": "not checked against a printed key"
   }
 ]

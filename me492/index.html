@@ -373,7 +373,7 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-08-23.2';
+        const CACHE_VERSION = '2026-08-23.3';
         const VIEW_STATE_KEY = 'me492_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'me492_quiz_answers_v1';
         const RETAKE_ANSWERS_STORAGE_KEY = 'me492_quiz_retake_answers_v1';
@@ -772,6 +772,7 @@
             // showAnswer reads these back, so it does not need the question object.
             card.dataset.explanation = question.explanation || '';
             card.dataset.source = question.source || '';
+            card.dataset.verified = question.verified || '';
 
             const feedback = document.createElement('div');
             feedback.className = 'answer-feedback';
@@ -844,7 +845,10 @@
 
             const explanation = card.dataset.explanation || '';
             const source = card.dataset.source || '';
-            const sourceHtml = source ? `<div class="explain-source">${escapeHtml(source)}</div>` : '';
+            // Only the unchecked answers are called out, so the note stays rare.
+            const unchecked = (card.dataset.verified || '').startsWith('not checked');
+            const sourceLine = unchecked ? `${source} · answer not checked against a printed key` : source;
+            const sourceHtml = source ? `<div class="explain-source">${escapeHtml(sourceLine)}</div>` : '';
             const explainHtml = explanation
                 ? `<div class="explain">${escapeHtml(explanation)}${sourceHtml}</div>`
                 : '';

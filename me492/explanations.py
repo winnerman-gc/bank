@@ -15,6 +15,32 @@ Grounding: the lecture slides and ME 492 2025 NOTES, the printed marking schemes
 reconciles the papers where they disagree.
 """
 
+# Questions whose recorded answer was checked against the 2005 official marking
+# scheme (the only printed key with a text layer). The other papers are
+# image-only scans and were not machine checked.
+CHECKED_AGAINST_2005_KEY = {
+    1, 2, 3, 4, 5, 10, 11, 12, 13, 14, 15, 17, 27, 29, 33, 36, 39, 43, 44, 48,
+    49, 50, 51, 68, 69, 72, 74, 75, 76, 77, 78, 79, 81, 83, 84, 86, 87, 88, 89,
+    90, 91, 92, 93, 94, 101, 111, 112, 113, 114, 115, 116, 117, 119, 120, 121,
+    123, 124, 125, 126, 127, 128, 129, 130, 131, 137, 138, 139, 141, 142, 143,
+    144, 145, 146, 147, 148, 149, 150, 151, 152, 157, 158, 159, 160, 161, 162,
+    163, 164, 165, 166, 167, 169, 170, 172, 174, 176, 177, 179, 211, 212, 213,
+    214, 215, 216, 217, 218, 219, 220,
+}
+
+# The calculation items. Every one was worked through from the printed data.
+RECOMPUTED = set(range(181, 211))
+
+
+def verification(number):
+    """How the answer to this question was checked."""
+    if number in RECOMPUTED:
+        return "recomputed from the printed data"
+    if number in CHECKED_AGAINST_2005_KEY:
+        return "checked against the 2005 official marking scheme"
+    return "not checked against a printed key"
+
+
 EXPLANATIONS = {
     # -- Set 1: entrepreneurship and free enterprise -------------------------
     1: ("A person who starts a new business",
@@ -38,8 +64,11 @@ EXPLANATIONS = {
     4: ("Richard Cantillon, a French economist",
         "Cantillon put the entrepreneur at the centre of economics as the person who "
         "consciously decides how to allocate resources and seeks higher yields. He also "
-        "buys at a certain price and sells at an uncertain one, so he carries the risk.",
-        "Guide 4.1, the economists"),
+        "buys at a certain price and sells at an uncertain one, so he carries the risk. "
+        "Warning: the 2005 official key marks resource allocation plus exceptional insight "
+        "into society's needs. The slides give that insight to Say, not Cantillon. If the "
+        "paper prints the i/ii/iii version, answer as the key does.",
+        "Guide 4.1; 2005 marking scheme item 7"),
 
     5: ("Carl Menger described entrepreneurship as",
         "Menger defined entrepreneurship as converting resources into goods and services "
@@ -726,9 +755,11 @@ EXPLANATIONS = {
           "Guide 10.7; Guide 16, conflicts"),
 
     126: ("Directors of new ventures fulfil important roles",
-          "All three roles are listed: members of an expanded social network, mentors and "
-          "professional advisors, and disturbance handlers and resource allocators.",
-          "Guide 10.7, boards"),
+          "Two roles, not three. ME 492 2025 NOTES says directors act as mentors, "
+          "professional advisers and members of an expanded social network. Disturbance "
+          "handling and resource allocation are decision making duties, and the stem asks "
+          "for the roles beyond those. The 2005 official key marks i and ii only.",
+          "ME 492 2025 NOTES; 2005 marking scheme item 25"),
 
     127: ("The entrepreneurial team is a very vital part of the management team",
           "All four duties belong to the team: build the organisation, give the venture "
@@ -1185,16 +1216,20 @@ EXPLANATIONS = {
     # Method: judge S1 alone, judge S2 alone, and only if both are true ask
     # whether S2 explains S1. Never read the pair as one sentence.
     211: ("Consider the two statements below. S1: Entrepreneurs dealing in low tech",
-          "S1 is true: low tech products should be easy to make, quick to market and "
-          "cheap to terminate. The 2005 key marks S2 false, because a low tech product "
-          "can still be patented when it is new and useful. So S1 true, S2 false.",
-          "Guide 14, item 1; Guide 5.8"),
+          "The sources disagree on this one. S1 is true. The compiled answer sheet marks "
+          "S2 false, giving C, and the bank follows it. The 2005 official marking scheme "
+          "marks A, both true with S2 explaining S1, which fits the slides: low tech "
+          "products are treated that way because patents cannot protect them. Learn both "
+          "readings and take the code the paper prints.",
+          "2005 marking scheme item 26; EntrepreneurshipPasscoNew item 21"),
 
     212: ("Consider the two statements below. S1: Entrepreneurs have to be inventive geniuses",
           "S1 is false: you do not need to be an inventive genius for mid-tech work. The "
-          "2005 official marking scheme marks S2 false as well, so the answer is both "
-          "false. Some compiled copies show A. Follow the printed scheme.",
-          "Guide 14, item 2"),
+          "2005 official marking scheme marks both statements false. Treat this item as "
+          "unsafe. The slides do say mid-tech products presume the application of new "
+          "knowledge, which would make S2 true, and the compiled answer sheet marks A. "
+          "Follow the code the paper prints.",
+          "2005 marking scheme item 27; EntrepreneurshipPasscoNew item 22"),
 
     213: ("Consider the two statements below. S1: Differentiating high-tech from mid-tech",
           "Both are true, and S2 explains S1. The line between high-tech and mid-tech is "
@@ -1205,8 +1240,9 @@ EXPLANATIONS = {
     214: ("Consider the two statements below. S1: New ventures establish in a market niche",
           "Both are true, and S2 explains S1. New ventures start in a niche because "
           "segmentation lets a small firm use its limited resources efficiently and "
-          "without ambiguity.",
-          "Guide 14, item 4; Guide 8.5"),
+          "without ambiguity. Note the 2005 official key marks D, which calls S1 false. "
+          "That reading is hard to defend, and the compiled answer sheet marks A.",
+          "EntrepreneurshipPasscoNew item 24; 2005 marking scheme item 29"),
 
     215: ("Consider the two statements below. S1: Market research is a fundamental part",
           "Both are true, and S2 explains S1. Market research is fundamental exactly "
