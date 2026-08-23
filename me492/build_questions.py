@@ -36,6 +36,8 @@ import json
 import random
 import re
 
+from explanations import EXPLANATIONS
+
 # ---------------------------------------------------------------------------
 # SET 1 - Entrepreneurship and free enterprise
 # ---------------------------------------------------------------------------
@@ -1537,22 +1539,38 @@ def main():
 
     summary = {}
     records = []
+    missing = []
     for idx, (q_text, correct, distractors) in enumerate(ALL_QUESTIONS):
         pos = position_for[idx]
         options = build_options(distractors, correct, pos)
         assert options[pos] == correct
         assert len(set(options)) == len(options), q_text[:60]
         summary[pos] = summary.get(pos, 0) + 1
-        records.append({
-            "question_number": idx + 1,
+        number = idx + 1
+        record = {
+            "question_number": number,
             "question_text": format_parts(q_text),
             "options": options,
             "correct_answer": [correct],
-        })
+        }
+        entry = EXPLANATIONS.get(number)
+        if entry:
+            stem_prefix, why, source = entry
+            # Guard against a reordered set silently pairing the wrong text.
+            assert " ".join(q_text.split()).startswith(stem_prefix), number
+            record["explanation"] = why
+            record["source"] = source
+        else:
+            missing.append(number)
+        records.append(record)
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as fh:
         json.dump(records, fh, indent=2, ensure_ascii=False)
     print(f"Wrote {OUTPUT_FILE}: {len(records)} questions")
+    if missing:
+        print(f"  no explanation yet for {len(missing)}: {missing[:12]}...")
+    else:
+        print("  every question carries an explanation")
 
     counts = {}
     for n_opts, indices in sorted(groups.items()):

@@ -265,6 +265,34 @@
         .feedback-correct { background: rgba(22, 163, 74, 0.08); color: #14532d; border-left: 4px solid var(--success); }
         .feedback-wrong { background: rgba(220, 38, 38, 0.08); color: #7f1d1d; border-left: 4px solid var(--danger); }
 
+        .explain {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(15, 23, 42, 0.12);
+            color: #1f2937;
+            font-size: 0.9rem;
+            line-height: 1.55;
+        }
+
+        .explain-source {
+            margin-top: 6px;
+            color: var(--muted);
+            font-size: 0.78rem;
+        }
+
+        .explain-toggle > summary {
+            margin-top: 8px;
+            cursor: pointer;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #14532d;
+            list-style: none;
+        }
+
+        .explain-toggle > summary::-webkit-details-marker { display: none; }
+        .explain-toggle > summary::before { content: '\25B8 '; }
+        .explain-toggle[open] > summary::before { content: '\25BE '; }
+
         .footer {
             display: none;
             margin-top: 18px;
@@ -345,7 +373,7 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-08-23.1';
+        const CACHE_VERSION = '2026-08-23.2';
         const VIEW_STATE_KEY = 'me492_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'me492_quiz_answers_v1';
         const RETAKE_ANSWERS_STORAGE_KEY = 'me492_quiz_retake_answers_v1';
@@ -741,6 +769,10 @@
                 optionsWrap.appendChild(button);
             });
 
+            // showAnswer reads these back, so it does not need the question object.
+            card.dataset.explanation = question.explanation || '';
+            card.dataset.source = question.source || '';
+
             const feedback = document.createElement('div');
             feedback.className = 'answer-feedback';
             feedback.id = `feedback-${idx}`;
@@ -810,17 +842,26 @@
                 btn.style.pointerEvents = 'none';
             });
 
+            const explanation = card.dataset.explanation || '';
+            const source = card.dataset.source || '';
+            const sourceHtml = source ? `<div class="explain-source">${escapeHtml(source)}</div>` : '';
+            const explainHtml = explanation
+                ? `<div class="explain">${escapeHtml(explanation)}${sourceHtml}</div>`
+                : '';
+
             feedback.classList.add('show');
             if (isCorrect) {
                 feedback.className = 'answer-feedback show feedback-correct';
-                feedback.innerHTML = '<strong>✓ Correct!</strong>';
+                feedback.innerHTML = '<strong>✓ Correct!</strong>' + (explainHtml
+                    ? `<details class="explain-toggle"><summary>Why</summary>${explainHtml}</details>`
+                    : '');
                 if (autoScroll) scrollToContinuation(idx + 1);
             } else {
                 feedback.className = 'answer-feedback show feedback-wrong';
                 const text = isMultiChoice
                     ? `Correct answers: ${correctAnswers.join(', ')}`
                     : `Correct answer: ${correctAnswers[0]}`;
-                feedback.innerHTML = `<strong>✗ Wrong</strong><br>${escapeHtml(text)}`;
+                feedback.innerHTML = `<strong>✗ Wrong</strong><br>${escapeHtml(text)}` + explainHtml;
             }
         }
 

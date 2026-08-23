@@ -76,6 +76,8 @@ the letter.
 - `Back to Main` button to return from retake mode
 - Persistent answer storage in the browser
 - Auto-scroll to the next question after a correct answer
+- An explanation on every question. A wrong answer shows it at once. A correct
+  answer hides it behind a `Why` toggle. Each one names its source.
 
 ## How to use
 
@@ -93,6 +95,12 @@ The bank is generated from `build_questions.py`:
 python3 build_questions.py
 ```
 
+`explanations.py` holds the explanations, one entry per question number, as
+`(stem_prefix, explanation, source)`. The build checks each `stem_prefix`
+against the real stem, so a reordered set fails the build instead of attaching
+the wrong explanation. The build also reports any question that has no
+explanation yet.
+
 The script holds every question as
 `(question_text, correct_answer, [distractor, ...])` and places the correct
 answer at a balanced, reproducible position so the key is evenly distributed
@@ -104,7 +112,9 @@ matches the format used by the other practice sites in this repository:
   "question_number": 1,
   "question_text": "...",
   "options": ["...", "...", "...", "...", "..."],
-  "correct_answer": ["..."]
+  "correct_answer": ["..."],
+  "explanation": "...",
+  "source": "..."
 }
 ```
 
