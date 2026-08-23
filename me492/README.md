@@ -53,7 +53,8 @@ Two edits were needed, because the practice page shuffles the option order:
 The multiple-completion questions keep their original form: the (i) (ii) (iii)
 statements sit in the stem and the options read "i only is correct", "i, ii and
 iii are correct" and so on. This matches how the 2020 online exam presented them
-and it survives shuffling.
+and it survives shuffling. Each (i) (ii) (iii) statement starts on its own line,
+so the stem reads like the printed paper.
 
 Every question carries **five options**, matching the source papers.
 

@@ -42,7 +42,8 @@ def build_html():
         for q in records:
             n = q["question_number"]
             correct = q["correct_answer"][0]
-            parts.append(f'<p class="q">{n}. {html.escape(q["question_text"])}</p>')
+            stem = html.escape(q["question_text"]).replace("\n", "<br>")
+            parts.append(f'<p class="q">{n}. {stem}</p>')
             correct_letter = "?"
             for i, opt in enumerate(q["options"]):
                 letter = LETTERS[i]

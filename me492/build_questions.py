@@ -34,6 +34,7 @@ Questions carry either four or five options, matching the source paper.
 """
 import json
 import random
+import re
 
 # ---------------------------------------------------------------------------
 # SET 1 - Entrepreneurship and free enterprise
@@ -1492,6 +1493,16 @@ ALL_QUESTIONS = (SET1 + SET2 + SET3 + SET4 + SET5 + SET6 + SET7 + SET8
 OUTPUT_FILE = "compiled.json"
 
 
+ROMAN_PART = re.compile(r"\s*\((i|ii|iii|iv|v|vi)\)\s*")
+
+
+def format_parts(text):
+    """Put each (i) (ii) (iii) part of a stem on its own line."""
+    if "(i)" not in text:
+        return text
+    return ROMAN_PART.sub(lambda m: "\n(" + m.group(1) + ") ", text).strip()
+
+
 def build_options(distractors, correct, position):
     """Insert `correct` at `position` among the (ordered) distractors."""
     opts = list(distractors)
@@ -1534,7 +1545,7 @@ def main():
         summary[pos] = summary.get(pos, 0) + 1
         records.append({
             "question_number": idx + 1,
-            "question_text": q_text,
+            "question_text": format_parts(q_text),
             "options": options,
             "correct_answer": [correct],
         })
