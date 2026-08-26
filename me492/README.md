@@ -5,21 +5,21 @@ Development course.
 
 Unlike the other banks in this repository, these are **not authored questions**.
 They are the **actual past questions**, extracted from the KNUST papers and
-matched to their official marking schemes. The bank holds **228 questions** in a
+matched to their official marking schemes. The bank holds **244 questions** in a
 single file (`compiled.json`), grouped into eleven themed sets that follow the
 course outline.
 
 | Set | Focus | Count |
 | --- | ----- | ----- |
-| Entrepreneurship & free enterprise | Cantillon, Smith, Say, Menger, Schumpeter, Drucker; myths; sources of change; small business; success factors; intrapreneurship | 23 |
-| Creativity & innovation | creativity vs innovation vs invention; the five stages of the creative process; the innovation process; windows & corridors; brainstorming; the technology spectrum | 15 |
-| Business planning & feasibility | who writes the plan; the feasibility plan; the three perspectives; executive summary; cover page; sections of the plan; why plans fail | 24 |
+| Entrepreneurship & free enterprise | Cantillon, Smith, Say, Menger, Schumpeter, Drucker; myths; sources of change; small business; success factors; intrapreneurship | 29 |
+| Creativity & innovation | creativity vs innovation vs invention; the five stages of the creative process; the innovation process; windows & corridors; brainstorming; the technology spectrum | 17 |
+| Business planning & feasibility | who writes the plan; the feasibility plan; the three perspectives; executive summary; cover page; sections of the plan; why plans fail | 25 |
 | Venture stages & start-up | pre-start-up, start-up, early growth, later growth; benchmark considerations; operating objectives; measuring progress | 11 |
-| Market research & marketing plan | market niche; customer scenario; the 4 Ps; sales forecast; promotion & promotional mix; distribution; IMC; competitive analysis | 27 |
+| Market research & marketing plan | market niche; customer scenario; the 4 Ps; sales forecast; promotion & promotional mix; distribution; IMC; competitive analysis | 29 |
 | Intellectual property & law | patents; patent search; Disclosure Document; trademarks; product liability; contracts | 10 |
 | Organising & legal forms | sole proprietorship, partnership, corporation; franchising; boards; the entrepreneurial team; job analysis | 21 |
-| Financing the new venture | fixed / working / liquid capital; short, intermediate & long term credit; debt vs equity; internal vs external funds; sources of funding | 25 |
-| Budgeting & pro forma statements | the three levels of financial planning; the master budget; perpetual budgeting; pro forma income statement, balance sheet and cash flow | 24 |
+| Financing the new venture | fixed / working / liquid capital; short, intermediate & long term credit; debt vs equity; internal vs external funds; sources of funding | 26 |
+| Budgeting & pro forma statements | the three levels of financial planning; the master budget; perpetual budgeting; pro forma income statement, balance sheet and cash flow | 28 |
 | Calculations | sales budget & schedule of cash receipts; divisional growth to the fourth quarter; cash budget with borrowing and interest | 30 |
 | "Because" statements | the S1 / S2 section, reproduced with the official key | 18 |
 
@@ -70,7 +70,7 @@ the letter.
 
 ## Features
 
-- A single 228-question bank with live stats tracking
+- A single 244-question bank with live stats tracking
 - Auto-shuffled answer options with a stable per-question order
 - `Retake Wrong` mode that includes only questions answered incorrectly
 - `Back to Main` button to return from retake mode
@@ -121,7 +121,7 @@ matches the format used by the other practice sites in this repository:
 ## Question & answer PDF
 
 `ME492-Entrepreneurship-Past-Questions-with-answers.pdf` is a printable copy of
-all 228 questions with their options and the correct answer marked. Regenerate
+all 244 questions with their options and the correct answer marked. Regenerate
 it with:
 
 ```bash
@@ -143,13 +143,41 @@ Each record carries a `verified` field:
 | --- | --- | --- |
 | `checked against the 2005 official marking scheme` | 107 | The stem was matched to `ME492- 2005 MARKING SCHEME.pdf` and the recorded answer compared with the printed key. Section A keys are letters; Section C answers are marked in bold in the PDF. |
 | `recomputed from the printed data` | 30 | The calculation items. Every one was worked through from the figures in the stem. |
-| `not checked against a printed key` | 91 | These come from papers that are image-only scans with no text layer: `PASCO 1`, `Pasco2`, `IMAGE PASSCO`, `ENTREPRENEUR MCQ 1pdf` and `ME 492 ONLINE 2020`. The page calls these out under the explanation. |
+| `derived from the lecture notes and slides` | 11 | Added 2026. Found in the scans with no printed key. The answer was worked out from `ME 492 2025 NOTES` or a named slide, and the explanation says which. |
+| `matched to a marked past paper` | 3 | Added 2026. No printed key, but a circled option on the 2015 script or a selected radio on the Canvas paper shows the answer. |
+| `not checked against a printed key` | 93 | These come from papers that are image-only scans with no text layer: `PASCO 1`, `Pasco2`, `IMAGE PASSCO`, `ENTREPRENEUR MCQ 1pdf` and `ME 492 ONLINE 2020`. The page calls these out under the explanation. |
 
 The cross-check found one wrong answer, since corrected: the roles of directors
 item. `ME 492 2025 NOTES` lists the roles beyond decision making as mentors,
 professional advisers and members of an expanded social network. Disturbance
 handling and resource allocation are not among them, and the 2005 key marks
 `i and ii only`. The bank had marked all three.
+
+## The 2026 audit: 16 questions added
+
+The five image-only files were read twice: once with OCR for the text, and once
+by eye for the pen marks, which OCR cannot see. See
+`AUDIT-against-source-papers.md`. The pass found 16 questions in the papers that
+the bank did not hold. All 16 are now in.
+
+**From the 2007/2008 multiple-completion section** (`IMAGE PASSCO` p44 to p51):
+entrepreneurship myths; product as a catchall term; what a marketing strategy
+provides; the innovation development process; the seven conditions for
+technological innovation; sources of change for strategic thinkers; the inputs
+to the financial section; the inputs to the pro forma balance sheet; the concept
+of entrepreneurship; and the origin of the word.
+
+**From a Canvas quiz** (`IMAGE PASSCO` p1 to p33, a 40 question, 40 minute
+paper, separate from the Moodle 2020 exam): entrepreneurs as risk takers; the
+cocktail party item; resources producing current and future benefits; how long
+administration plans run; the statement of estimated income and expenses; and
+the formal plan expressed in numerical terms.
+
+Nine of these carried no mark of any kind. Their answers were worked out from
+the lecture notes and slides, and each explanation names the slide or the page
+it rests on. One item, `Administration plans generally cover a period of`, has
+no support in the course materials at all. Its answer comes from the Canvas
+paper alone and it is the weakest record in the bank.
 
 It also found three items where the printed sources contradict each other. The
 bank keeps its answer and the explanation names both readings: Cantillon's

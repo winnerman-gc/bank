@@ -3,10 +3,10 @@
     "question_number": 1,
     "question_text": "A person who starts a new business, taking the initiative and the risk associated with the new venture, and who does so by creating something new or by using resources in unusual ways to provide value to his or her customers is known as a(n)",
     "options": [
+      "entrepreneur",
       "business man",
       "sole proprietor",
       "industrialist",
-      "entrepreneur",
       "franchisor"
     ],
     "correct_answer": [
@@ -20,11 +20,11 @@
     "question_number": 2,
     "question_text": "Any person or organisation that has an interest in, or can be affected by, a business is called a",
     "options": [
-      "stakeholder",
       "vendor",
       "partner",
       "corporation",
-      "proprietor"
+      "proprietor",
+      "stakeholder"
     ],
     "correct_answer": [
       "stakeholder"
@@ -54,9 +54,9 @@
     "question_number": 4,
     "question_text": "Richard Cantillon, a French economist of Irish descent, is credited with giving the concept of entrepreneurship a central role in economics. He described an entrepreneur as a person who",
     "options": [
-      "consciously makes decisions about resource allocation and seeks higher yields for money and materials",
       "behaves with exceptional insight to fulfil society's needs through risk taking",
       "organises industrial activity, matching demand with supply through commerce",
+      "consciously makes decisions about resource allocation and seeks higher yields for money and materials",
       "engages in creative destruction by displacing established competitors",
       "redirects resources away from problems and towards progressive opportunities"
     ],
@@ -74,8 +74,8 @@
       "a force of creative destruction",
       "a process with entrepreneurs as innovators",
       "the matching of demand with supply through commerce",
-      "the substitution of employment income by self-employment income",
-      "the process of converting resources into goods and services of value to consumers"
+      "the process of converting resources into goods and services of value to consumers",
+      "the substitution of employment income by self-employment income"
     ],
     "correct_answer": [
       "the process of converting resources into goods and services of value to consumers"
@@ -89,9 +89,9 @@
     "question_text": "Jean Baptiste Say combined the economic risk taker of Cantillon and the industrial manager of Smith into an unusual character. He believed that entrepreneurs",
     "options": [
       "were change agents who displaced established firms without warning",
-      "possessed certain arts and skills of creating new economic enterprises, yet had exceptional insight into society's needs and were able to fulfil them",
       "typically bought goods at known prices and transformed them to sell at unknown prices",
       "consciously allocated resources by chance as they developed their ventures",
+      "possessed certain arts and skills of creating new economic enterprises, yet had exceptional insight into society's needs and were able to fulfil them",
       "organised industrial activity purely to achieve administrative efficiency"
     ],
     "correct_answer": [
@@ -105,10 +105,10 @@
     "question_number": 7,
     "question_text": "Adam Smith spoke of the enterpriser as an individual who",
     "options": [
-      "undertook the formation of an organisation for commercial purposes, recognised potential demand, and transformed demand into supply",
       "allocated resources by chance while developing new ventures",
       "was a force of creative destruction within an established industry",
       "converted resources into goods and services of value to consumers",
+      "undertook the formation of an organisation for commercial purposes, recognised potential demand, and transformed demand into supply",
       "redirected resources away from existing uses towards administrative efficiency"
     ],
     "correct_answer": [
@@ -124,8 +124,8 @@
     "options": [
       "engages in creative disruption of the existing industry structure",
       "organises industrial activity, matching demand with supply through commerce",
-      "converts resources into goods and services of value to consumers",
       "uses resources not merely to solve problems but also to take advantage of opportunities",
+      "converts resources into goods and services of value to consumers",
       "behaves with exceptional insight to fulfil society's needs through risk taking"
     ],
     "correct_answer": [
@@ -141,9 +141,9 @@
     "options": [
       "entrepreneurship",
       "outsourcing",
+      "creative destruction",
       "upscaling",
-      "market saturation",
-      "creative destruction"
+      "market saturation"
     ],
     "correct_answer": [
       "creative destruction"
@@ -156,11 +156,11 @@
     "question_number": 10,
     "question_text": "Entrepreneurship has influenced economic development and productivity by\n(i) altering the direction of national economies and ensuring their stability\n(ii) introducing quantum leaps in technology and creating new means of production and new systems of services\n(iii) forcing the reallocation of resources away from existing uses to new and more productive uses",
     "options": [
-      "i, ii and iii are correct",
       "i only is correct",
       "ii only is correct",
       "iii only is correct",
-      "ii and iii only are correct"
+      "ii and iii only are correct",
+      "i, ii and iii are correct"
     ],
     "correct_answer": [
       "i, ii and iii are correct"
@@ -174,8 +174,8 @@
     "question_text": "Entrepreneurs are often thought to be inspired people, and perhaps they are, but more important, they recognise changes and opportunities that can result from a dynamic world. These sources of change are\n(i) demographic and market changes\n(ii) scientific knowledge and the industrial revolution\n(iii) process innovation, social and cultural changes",
     "options": [
       "i, ii and iii are correct",
-      "i and ii only are correct",
       "i and iii only are correct",
+      "i and ii only are correct",
       "i only is correct",
       "iii only is correct"
     ],
@@ -210,8 +210,8 @@
       "i, ii and iii are correct",
       "i and iii only are correct",
       "i only is correct",
-      "i and ii only are correct",
-      "iii only is correct"
+      "iii only is correct",
+      "i and ii only are correct"
     ],
     "correct_answer": [
       "i and ii only are correct"
@@ -224,9 +224,9 @@
     "question_number": 14,
     "question_text": "Some of the main factors that lead to success for new ventures are\n(i) a well written business plan, a first-rate product, a charismatic entrepreneur loaded with talents and a great idea\n(ii) a fat bank account, a demand for the product or service, a well written feasibility plan and a business ideology\n(iii) a good entrepreneurial team, a well-planned enterprise that pursues incremental change and growth, good timing and a business ideology to serve customers",
     "options": [
+      "i and iii only are correct",
       "i, ii and iii are correct",
       "i and ii only are correct",
-      "i and iii only are correct",
       "i only is correct",
       "iii only is correct"
     ],
@@ -241,9 +241,9 @@
     "question_number": 15,
     "question_text": "Contributions by these European economists have helped to evolve our present understanding of entrepreneurship:\n(i) Carl Menger\n(ii) John Stuart Mill\n(iii) Jean Baptiste Say",
     "options": [
+      "i, ii and iii are correct",
       "i and ii only are correct",
       "i and iii only are correct",
-      "i, ii and iii are correct",
       "i only is correct",
       "iii only is correct"
     ],
@@ -260,9 +260,9 @@
     "options": [
       "i and ii only are correct",
       "i and iii only are correct",
-      "i, ii and iii are correct",
       "i only is correct",
-      "iii only is correct"
+      "iii only is correct",
+      "i, ii and iii are correct"
     ],
     "correct_answer": [
       "i, ii and iii are correct"
@@ -278,8 +278,8 @@
       "i, ii and iii are correct",
       "i and ii only are correct",
       "i only is correct",
-      "iii only is correct",
-      "i and iii only are correct"
+      "i and iii only are correct",
+      "iii only is correct"
     ],
     "correct_answer": [
       "i and iii only are correct"
@@ -294,9 +294,9 @@
     "options": [
       "external",
       "governmental",
+      "inexperience",
       "internal",
-      "excessive regulation",
-      "inexperience"
+      "excessive regulation"
     ],
     "correct_answer": [
       "inexperience"
@@ -309,11 +309,11 @@
     "question_number": 19,
     "question_text": "The risk of business failure for businesses starting from scratch is",
     "options": [
+      "higher",
       "lower",
       "not measurable",
       "no different from an established business",
-      "unrelated to the mode of entry",
-      "higher"
+      "unrelated to the mode of entry"
     ],
     "correct_answer": [
       "higher"
@@ -344,9 +344,9 @@
     "question_text": "Entrepreneurs typically form",
     "options": [
       "a variety of companies",
-      "service businesses",
       "construction companies",
       "financial companies",
+      "service businesses",
       "manufacturing companies"
     ],
     "correct_answer": [
@@ -361,8 +361,8 @@
     "question_text": "Entrepreneurs typically have a high internal locus of control. This statement is",
     "options": [
       "false",
-      "undefined",
       "true",
+      "undefined",
       "true only for corporate managers",
       "true only for franchisees"
     ],
@@ -377,9 +377,9 @@
     "question_number": 23,
     "question_text": "Society and humankind as stakeholders have the following interest in a venture",
     "options": [
-      "value added products and services",
       "profitable return on investment",
       "wealth accumulation",
+      "value added products and services",
       "career positions",
       "income and job stability"
     ],
@@ -392,12 +392,114 @@
   },
   {
     "question_number": 24,
+    "question_text": "There are several thoughts about entrepreneurs that have been proven to be more myths than facts and these include\n(i) entrepreneurs struggle to succeed and get their ideas by hard work\n(ii) entrepreneurs are mavericks and misfits, and entrepreneurs are born\n(iii) entrepreneurs strike it rich with the first great flash of genius, or conversely they fail miserably with the first venture",
+    "options": [
+      "i, ii and iii are correct",
+      "i and ii only are correct",
+      "i only is correct",
+      "iii only is correct",
+      "ii and iii only are correct"
+    ],
+    "correct_answer": [
+      "ii and iii only are correct"
+    ],
+    "explanation": "The slides call these myths. Entrepreneurs are not misfits, and the born-or-made question is settled on the side of made: background, education, family and career shape them. They also rarely strike it rich on one flash of genius, because most ventures start slow and change in steps. Statement (i) is not a myth at all. The slides say entrepreneurs make their own luck by working hard.",
+    "source": "Slides 2.62 to 2.67, popular myths",
+    "verified": "derived from the lecture notes and slides"
+  },
+  {
+    "question_number": 25,
+    "question_text": "Entrepreneurs tend to be strategic thinkers who recognise changes and see opportunities where others do not. Major sources of change include\n(i) industrial changes and shop changes\n(ii) scientific knowledge and process innovations\n(iii) societal changes and socio-cultural changes",
+    "options": [
+      "i, ii and iii are correct",
+      "i and ii only are correct",
+      "ii and iii only are correct",
+      "i only is correct",
+      "iii only is correct"
+    ],
+    "correct_answer": [
+      "ii and iii only are correct"
+    ],
+    "explanation": "The slides name five sources of change: scientific knowledge, process innovations, industrial changes, market changes and demographic changes. Statements (ii) and (iii) come straight off that list. Shop changes is not on it, so (i) fails.",
+    "source": "Slides 2.57 to 2.61",
+    "verified": "derived from the lecture notes and slides"
+  },
+  {
+    "question_number": 26,
+    "question_text": "The concept of entrepreneurship\n(i) has given us a new direction for enterprises\n(ii) has just been discovered\n(iii) has been around for a very long time",
+    "options": [
+      "i, ii and iii are correct",
+      "i and ii only are correct",
+      "ii only is correct",
+      "i and iii only are correct",
+      "iii only is correct"
+    ],
+    "correct_answer": [
+      "i and iii only are correct"
+    ],
+    "explanation": "The word dates from 17th century France and the literature on it is long, so entrepreneurship has been around a very long time and has certainly not just been discovered. Statement (ii) is the only false one.",
+    "source": "Slides 1.13 to 1.24, history of entrepreneurship",
+    "verified": "derived from the lecture notes and slides"
+  },
+  {
+    "question_number": 27,
+    "question_text": "Entrepreneurship\n(i) was derived from the 17th century French word entreprendre\n(ii) refers to individuals who were undertakers and is a term that has been discovered by business students\n(iii) refers to people who are contractors and builders",
+    "options": [
+      "i, ii and iii are correct",
+      "i and ii only are correct",
+      "ii only is correct",
+      "iii only is correct",
+      "i and iii only are correct"
+    ],
+    "correct_answer": [
+      "i and iii only are correct"
+    ],
+    "explanation": "The word comes from the 17th century French entreprendre, meaning to undertake. Early entrepreneurs were contractors who bore the risk of profit or loss, and the slides list builders among them. Statement (ii) fails on its second half: business students did not discover the term.",
+    "source": "Slides 1.16 and 1.17",
+    "verified": "derived from the lecture notes and slides"
+  },
+  {
+    "question_number": 28,
+    "question_text": "Entrepreneurs are",
+    "options": [
+      "moderate risk takers",
+      "small risk takers",
+      "risk averse people",
+      "people for whom risk does not matter",
+      "high risk takers"
+    ],
+    "correct_answer": [
+      "high risk takers"
+    ],
+    "explanation": "Every KNUST paper marks high risk takers, both the circled 2015 script and the Canvas paper. Note the tension: Table 1-1 in the overview slides calls the successful entrepreneur able to take calculated risk. Answer what the paper marks, not what the table says.",
+    "source": "2015 paper, circled; Canvas paper, selected",
+    "verified": "matched to a marked past paper"
+  },
+  {
+    "question_number": 29,
+    "question_text": "Entrepreneurs",
+    "options": [
+      "will never go to parties",
+      "just fit into the crowd at a party",
+      "are the life of the party",
+      "are bores at a cocktail party",
+      "avoid all social gatherings"
+    ],
+    "correct_answer": [
+      "are the life of the party"
+    ],
+    "explanation": "The papers mark are the life of the party. The other options all describe a withdrawn person, which the papers reject. No printed key exists for this item.",
+    "source": "Guide 4.9, recurring facts",
+    "verified": "not checked against a printed key"
+  },
+  {
+    "question_number": 30,
     "question_text": "Which of the following is the ability to see, conceive, and create new and unique products, processes, or services?",
     "options": [
+      "innovation",
       "risk taking",
       "dedication",
       "creativity",
-      "innovation",
       "incubation"
     ],
     "correct_answer": [
@@ -408,14 +510,14 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 25,
+    "question_number": 31,
     "question_text": "Creativity is best defined as",
     "options": [
       "the process of doing new things",
       "the verified result of a creative idea",
       "the conversion of something new into useful goods or services",
-      "the ability to bring something new into existence",
-      "the translation of a useful idea into a commercial application"
+      "the translation of a useful idea into a commercial application",
+      "the ability to bring something new into existence"
     ],
     "correct_answer": [
       "the ability to bring something new into existence"
@@ -425,12 +527,12 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 26,
+    "question_number": 32,
     "question_text": "Innovation is best defined as",
     "options": [
-      "the process of doing new things, that is, the transformation of creative ideas into useful applications",
       "the ability to bring something new into existence",
       "the verified result of a creative idea",
+      "the process of doing new things, that is, the transformation of creative ideas into useful applications",
       "the subconscious assimilation of information about a problem",
       "the conscious search for knowledge related to a problem"
     ],
@@ -442,7 +544,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 27,
+    "question_number": 33,
     "question_text": "In the creative process, a person is said to be in the verification stage when he or she\n(i) applies or tests to prove that the idea has value\n(ii) embarks on a conscious search for bringing the idea to life\n(iii) has a sudden flash that the idea has merit",
     "options": [
       "i only is correct",
@@ -459,12 +561,12 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 28,
+    "question_number": 34,
     "question_text": "In the creative process, a person is said to be in the preparation stage when he or she",
     "options": [
-      "embarks on a conscious search for bringing the idea to life",
       "has a sudden flash that the idea has merit",
       "applies or tests to prove that the idea has value",
+      "embarks on a conscious search for bringing the idea to life",
       "subconsciously assimilates information about the problem",
       "organises the resources needed to commercialise the idea"
     ],
@@ -476,14 +578,14 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 29,
+    "question_number": 35,
     "question_text": "In the creative process, verification is",
     "options": [
       "subconscious assimilation of knowledge",
+      "application or test to prove that an idea has value",
       "recognition of an idea as being feasible",
       "conscious search for knowledge",
-      "organising resources",
-      "application or test to prove that an idea has value"
+      "organising resources"
     ],
     "correct_answer": [
       "application or test to prove that an idea has value"
@@ -493,12 +595,12 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 30,
+    "question_number": 36,
     "question_text": "In the creative process, the subconscious assimilation of information about a problem, often described as sleeping on the problem, is called",
     "options": [
+      "incubation",
       "idea germination",
       "preparation",
-      "incubation",
       "illumination",
       "verification"
     ],
@@ -510,14 +612,14 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 31,
+    "question_number": 37,
     "question_text": "In the creative process, the stage at which an idea resurfaces as a realistic creation, often seeming to be a sudden flash of genius, is called",
     "options": [
       "idea germination",
       "preparation",
       "incubation",
-      "verification",
-      "illumination"
+      "illumination",
+      "verification"
     ],
     "correct_answer": [
       "illumination"
@@ -527,14 +629,14 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 32,
+    "question_number": 38,
     "question_text": "The seeding stage of a new idea, arising from a person's curiosity or interest in a problem or area of study, is called",
     "options": [
       "preparation",
       "incubation",
       "illumination",
-      "idea germination",
-      "verification"
+      "verification",
+      "idea germination"
     ],
     "correct_answer": [
       "idea germination"
@@ -544,14 +646,14 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 33,
+    "question_number": 39,
     "question_text": "The innovation process is the translation of useful ideas into useful application and has as some of its elements\n(i) organising resources and analytical planning\n(ii) idea germination, preparation and verification\n(iii) implementation and commercial application",
     "options": [
       "i, ii and iii are correct",
       "i and ii only are correct",
       "i only is correct",
-      "i and iii only are correct",
-      "iii only is correct"
+      "iii only is correct",
+      "i and iii only are correct"
     ],
     "correct_answer": [
       "i and iii only are correct"
@@ -561,11 +663,11 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 34,
+    "question_number": 40,
     "question_text": "For technological innovation to succeed, the key people that should be involved are\n(i) the inventor, the investor and the champion\n(ii) the creative source, the entrepreneur and the promoter\n(iii) the creative source, the champion and the sponsor",
     "options": [
-      "iii only is correct",
       "i, ii and iii are correct",
+      "iii only is correct",
       "i and ii only are correct",
       "i and iii only are correct",
       "i only is correct"
@@ -578,7 +680,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 35,
+    "question_number": 41,
     "question_text": "The brainstorming method for generating new product and venture ideas should be conducted using the following rules:\n(i) no criticism is allowed by anyone in the group and free wheeling is encouraged\n(ii) the period for generating ideas is predetermined and ideas found without merit are discarded\n(iii) a high quantity of ideas is desired and combinations and improvement of ideas are encouraged",
     "options": [
       "i, ii and iii are correct",
@@ -595,13 +697,13 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 36,
+    "question_number": 42,
     "question_text": "A majority of new products evolve at the end of the technology spectrum as",
     "options": [
       "high-tech products",
+      "low-tech products",
       "mid-tech products",
       "natural products",
-      "low-tech products",
       "manufactured products"
     ],
     "correct_answer": [
@@ -612,7 +714,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 37,
+    "question_number": 43,
     "question_text": "Something that begins with a person's interest or advocation, expands to include related types of products and market opportunities, then selectively follows a path of investigating each option, further expanding new business ideas, is called a",
     "options": [
       "product incubation",
@@ -629,14 +731,14 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 38,
+    "question_number": 44,
     "question_text": "The principle which suggests that successful ventures evolve from entrepreneurs being positioned in similar work or having had experience with related ventures, so that when a window opens it is easy for them to move quickly into a new venture, is known as the",
     "options": [
       "window principle",
       "incubation principle",
       "segmentation principle",
-      "corridor principle",
-      "creative destruction principle"
+      "creative destruction principle",
+      "corridor principle"
     ],
     "correct_answer": [
       "corridor principle"
@@ -646,14 +748,48 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 39,
+    "question_number": 45,
+    "question_text": "Innovation is the development process of translating a new idea into a commercial reality and it involves\n(i) the translation of an idea into a new invention\n(ii) persistence in analytically working out the details of product design or service, developing marketing, obtaining finances and planning operations\n(iii) obtaining materials and technical manufacturing capabilities, staffing operations and establishing an organisation for the manufacture of a product",
+    "options": [
+      "i, ii and iii are correct",
+      "i and ii only are correct",
+      "i only is correct",
+      "ii and iii only are correct",
+      "iii only is correct"
+    ],
+    "correct_answer": [
+      "ii and iii only are correct"
+    ],
+    "explanation": "Innovation is not invention. The slides separate them: invention is the verified result of a creative idea, while innovation converts something new into useful goods or services. Analytical planning (ii) and organising resources (iii) are innovation-process elements. Turning an idea into an invention is not.",
+    "source": "Slide 2.40; Guide 5.3",
+    "verified": "derived from the lecture notes and slides"
+  },
+  {
+    "question_number": 46,
+    "question_text": "A number of industrial studies reveal that for a technological innovation to succeed there are three important people involved and seven important conditions to satisfy. The seven conditions include\n(i) a little support from external sources including government agencies, investors, vendors, suppliers and creditors\n(ii) a clear need for the application by sufficient potential consumers to warrant the commitment of resources to the innovation\n(iii) the realisation of the product, process or service as a useful innovation providing value to society",
+    "options": [
+      "i, ii and iii are correct",
+      "ii and iii only are correct",
+      "i and ii only are correct",
+      "i only is correct",
+      "iii only is correct"
+    ],
+    "correct_answer": [
+      "ii and iii only are correct"
+    ],
+    "explanation": "The conditions call for adequate support from external sources, not a little support, so (i) fails as printed. A clear need from enough consumers, and a realised innovation that gives value to society, are both real conditions.",
+    "source": "Derived; no printed key exists for this item",
+    "verified": "derived from the lecture notes and slides"
+  },
+  {
+    "question_number": 47,
     "question_text": "A description of the future direction of a business is called",
     "options": [
-      "a business plan",
       "a forecast",
       "a roadmap",
       "a guide",
-      "a template"
+      "a template",
+      "a business plan"
     ],
     "correct_answer": [
       "a business plan"
@@ -663,14 +799,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 40,
+    "question_number": 48,
     "question_text": "The business plan is primarily supposed to",
     "options": [
+      "give information to lenders and investors",
       "guide the entrepreneur in the first year of operations",
       "tell interested parties about the venture",
       "provide information for the operations manager",
-      "tell potential suppliers what is expected of them",
-      "give information to lenders and investors"
+      "tell potential suppliers what is expected of them"
     ],
     "correct_answer": [
       "give information to lenders and investors"
@@ -680,12 +816,12 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 41,
+    "question_number": 49,
     "question_text": "When considering starting up a business, a business plan can",
     "options": [
       "provide direction only",
-      "prove feasibility only",
       "provide direction, prove feasibility and attract money",
+      "prove feasibility only",
       "attract money only",
       "replace the need for market research"
     ],
@@ -697,7 +833,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 42,
+    "question_number": 50,
     "question_text": "Responsibility for planning a new venture rests on\n(i) consulting organisations with an established track record in new venture planning, such as Empretech\n(ii) universities with Entrepreneurship Centres such as KNUST School of Business\n(iii) the entrepreneur who has the vision and motivation and can therefore articulate the necessary information effectively",
     "options": [
       "i, ii and iii are correct",
@@ -714,7 +850,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 43,
+    "question_number": 51,
     "question_text": "A feasibility plan should be prepared by\n(i) the entrepreneur alone\n(ii) a consultant in consultation with the entrepreneur\n(iii) the entrepreneur in consultation with specialists",
     "options": [
       "iii only is correct",
@@ -731,14 +867,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 44,
+    "question_number": 52,
     "question_text": "A feasibility plan is a written document\n(i) which often integrates fundamental areas of business such as operations, marketing, finance and human resources\n(ii) that describes all the relevant external and internal elements involved in starting a new venture\n(iii) prepared by the entrepreneur",
     "options": [
-      "i, ii and iii are correct",
       "i and ii only are correct",
       "i and iii only are correct",
       "i only is correct",
-      "iii only is correct"
+      "iii only is correct",
+      "i, ii and iii are correct"
     ],
     "correct_answer": [
       "i, ii and iii are correct"
@@ -748,13 +884,13 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 45,
+    "question_number": 53,
     "question_text": "The model for developing a new entrepreneurial venture encompasses a feasibility plan which is\n(i) a summary of all the areas covered in the business plan\n(ii) a holistic business plan which covers all the segments in a typical plan of an existing company\n(iii) a pragmatic business plan reflecting the philosophy that entrepreneurs should do the planning necessary to ensure the feasibility of a venture without becoming overwhelmed in the process",
     "options": [
-      "iii only is correct",
       "i, ii and iii are correct",
       "i and ii only are correct",
       "i only is correct",
+      "iii only is correct",
       "ii and iii only are correct"
     ],
     "correct_answer": [
@@ -765,7 +901,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 46,
+    "question_number": 54,
     "question_text": "The perspectives that should be considered when writing a business plan are\n(i) the perspective of the entrepreneur\n(ii) the marketing perspective\n(iii) the investor perspective",
     "options": [
       "i and ii only are correct",
@@ -782,12 +918,12 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 47,
+    "question_number": 55,
     "question_text": "Before an entrepreneur commits time and effort to do a business plan, he or she should see if there are any possible barriers to success. Information gathered should focus on\n(i) the market, finance and operations or manufacturing\n(ii) business concept and the entrepreneurial team\n(iii) goals and objectives of the venture, finance and product or service",
     "options": [
       "i and ii only are correct",
-      "i, ii and iii are correct",
       "i and iii only are correct",
+      "i, ii and iii are correct",
       "i only is correct",
       "iii only is correct"
     ],
@@ -799,13 +935,13 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 48,
+    "question_number": 56,
     "question_text": "One of the initial important elements of information needed by an entrepreneur to help him or her take decisions is\n(i) the market potential for the product(s) or service(s)\n(ii) basic operational needs such as manufacturing or operations and labour\n(iii) an evaluation of the profitability of the venture",
     "options": [
       "i, ii and iii are correct",
       "i and ii only are correct",
-      "i and iii only are correct",
       "i only is correct",
+      "i and iii only are correct",
       "iii only is correct"
     ],
     "correct_answer": [
@@ -816,7 +952,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 49,
+    "question_number": 57,
     "question_text": "The executive summary is the part of the plan that is written\n(i) to stimulate the interest of the reader\n(ii) in a concise and convincing manner covering the key points in a business plan\n(iii) after the whole plan is written",
     "options": [
       "i and ii only are correct",
@@ -833,7 +969,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 50,
+    "question_number": 58,
     "question_text": "The difference between the venture definition in the executive summary and the business concept in the main body of the business plan is that",
     "options": [
       "the venture definition names the business and states why it was founded, while the business concept covers the business evolution and the nature of market demand",
@@ -850,14 +986,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 51,
+    "question_number": 59,
     "question_text": "The introductory or cover page of a business plan should contain information on the business and should include",
     "options": [
+      "a confidentiality clause",
       "location of business",
       "the executive summary",
       "financial summary",
-      "the full market research report",
-      "a confidentiality clause"
+      "the full market research report"
     ],
     "correct_answer": [
       "a confidentiality clause"
@@ -867,12 +1003,12 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 52,
+    "question_number": 60,
     "question_text": "The introductory or cover page of a business plan should contain information on the business and should include\n(i) name and address of the business and the amount of financing required\n(ii) a statement of confidentiality of the report and the name and contacts of the entrepreneurs\n(iii) a brief description of the business concept",
     "options": [
       "i and ii only are correct",
-      "i and iii only are correct",
       "i, ii and iii are correct",
+      "i and iii only are correct",
       "i only is correct",
       "iii only is correct"
     ],
@@ -884,7 +1020,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 53,
+    "question_number": 61,
     "question_text": "The common elements of a business plan include",
     "options": [
       "Executive Summary",
@@ -901,12 +1037,12 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 54,
+    "question_number": 62,
     "question_text": "The organisational plan is the part of the business plan that describes",
     "options": [
+      "the organogram of the venture",
       "the physical layout of the facility",
       "the venture's form of ownership",
-      "the organogram of the venture",
       "the mission and vision of the venture",
       "the context in which the organisation exists"
     ],
@@ -918,14 +1054,14 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 55,
+    "question_number": 63,
     "question_text": "Environmental and industry analysis of a business plan deals with\n(i) assessment of the location of the venture and its immediate area\n(ii) assessment of competitive strategies and industry trends\n(iii) assessment of external uncontrollable variables that may impact the business",
     "options": [
+      "i, ii and iii are correct",
       "i and ii only are correct",
       "i and iii only are correct",
       "i only is correct",
-      "iii only is correct",
-      "i, ii and iii are correct"
+      "iii only is correct"
     ],
     "correct_answer": [
       "i, ii and iii are correct"
@@ -935,12 +1071,12 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 56,
+    "question_number": 64,
     "question_text": "For ventures that manufacture, design or sell products, as well as for service firms that require capital equipment, the manufacturing or operations section of the business plan is important. It should contain among others\n(i) leadership and the entrepreneurial team\n(ii) facilities and inventory\n(iii) operations and human resources",
     "options": [
       "i and ii only are correct",
-      "i and iii only are correct",
       "i, ii and iii are correct",
+      "i and iii only are correct",
       "i only is correct",
       "iii only is correct"
     ],
@@ -952,13 +1088,13 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 57,
+    "question_number": 65,
     "question_text": "What type of information should be put in the appendix of a business plan write-up?",
     "options": [
+      "Resumes of partners, facility layouts and partnership agreements",
       "Marketing brochure with price list only",
       "Marketing brochure with price list and resumes of partners",
       "Partnership agreements and facility layouts only",
-      "Resumes of partners, facility layouts and partnership agreements",
       "Partnership agreements and financial documentation"
     ],
     "correct_answer": [
@@ -969,14 +1105,14 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 58,
+    "question_number": 66,
     "question_text": "Many copies of a business plan are circulated and this can pose a security problem that can be countered by",
     "options": [
+      "a non-disclosure statement",
       "signing an agreement",
       "giving a verbal warning against stealing",
       "getting a declaration from the recipient",
-      "hiding all vital information in the plan",
-      "a non-disclosure statement"
+      "hiding all vital information in the plan"
     ],
     "correct_answer": [
       "a non-disclosure statement"
@@ -986,7 +1122,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 59,
+    "question_number": 67,
     "question_text": "Conditions that can render the most effective business plans out-of-date include",
     "options": [
       "changes in the life of the entrepreneur",
@@ -1003,7 +1139,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 60,
+    "question_number": 68,
     "question_text": "The most effective business plans can become out-of-date if conditions change. The conditions that can change the direction of a business plan are\n(i) poor articulation of the business concept\n(ii) loss or addition of key members of the team\n(iii) new location",
     "options": [
       "i, ii and iii are correct",
@@ -1020,12 +1156,12 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 61,
+    "question_number": 69,
     "question_text": "Some business plans fail because\n(i) goals set by the entrepreneurs are unreasonable and unmeasurable\n(ii) the entrepreneur has not made a total commitment to the business\n(iii) the entrepreneur has no experience in the planned business",
     "options": [
       "i and ii only are correct",
-      "i and iii only are correct",
       "i, ii and iii are correct",
+      "i and iii only are correct",
       "i only is correct",
       "iii only is correct"
     ],
@@ -1037,13 +1173,13 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 62,
+    "question_number": 70,
     "question_text": "Entrepreneurs can be described in terms of\n(i) experience and family background\n(ii) personal characteristics and skills\n(iii) successfully incubating a business",
     "options": [
       "i and ii only are correct",
-      "i, ii and iii are correct",
       "i and iii only are correct",
       "i only is correct",
+      "i, ii and iii are correct",
       "iii only is correct"
     ],
     "correct_answer": [
@@ -1054,13 +1190,30 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 63,
+    "question_number": 71,
+    "question_text": "The information needed to develop the financial section of a business plan is gotten from, among other things,\n(i) the product and service description\n(ii) the operations or manufacturing segment\n(iii) the market research and analysis and market plan segments",
+    "options": [
+      "i and ii only are correct",
+      "i and iii only are correct",
+      "i, ii and iii are correct",
+      "ii and iii only are correct",
+      "i only is correct"
+    ],
+    "correct_answer": [
+      "i, ii and iii are correct"
+    ],
+    "explanation": "The financial section is built from the rest of the plan. Sales come from the market research and market plan segments, costs come from the operations or manufacturing segment, and the product description sets what is being sold.",
+    "source": "Notes p14 to p24; Guide 6.8",
+    "verified": "derived from the lecture notes and slides"
+  },
+  {
+    "question_number": 72,
     "question_text": "Which stage describes the assembly of resources and organising the new venture for opening?",
     "options": [
       "Start-up",
+      "Pre-start-up",
       "Early growth",
       "Later growth",
-      "Pre-start-up",
       "Maturity"
     ],
     "correct_answer": [
@@ -1071,13 +1224,13 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 64,
+    "question_number": 73,
     "question_text": "This type of growth model is concerned with the initial business operations",
     "options": [
       "Pre-start-up",
       "Early growth",
-      "Start-up",
       "Later growth",
+      "Start-up",
       "Maturity"
     ],
     "correct_answer": [
@@ -1088,7 +1241,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 65,
+    "question_number": 74,
     "question_text": "In which type of growth model does reality shock set in as the entrepreneur positions the business to compete in the real world?",
     "options": [
       "Pre-start-up",
@@ -1105,13 +1258,13 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 66,
+    "question_number": 75,
     "question_text": "The stage in which the venture has been initially successful and is growing at a healthy rate is",
     "options": [
       "Pre-start-up",
+      "Early growth",
       "Start-up",
       "Later growth",
-      "Early growth",
       "Maturity"
     ],
     "correct_answer": [
@@ -1122,12 +1275,12 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 67,
+    "question_number": 76,
     "question_text": "The stage in which the enterprise is established and the venture is professionally managed is",
     "options": [
-      "Later growth",
       "Pre-start-up",
       "Start-up",
+      "Later growth",
       "Early growth",
       "Idea germination"
     ],
@@ -1139,13 +1292,13 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 68,
+    "question_number": 77,
     "question_text": "Pre-start-up activities for new ventures include",
     "options": [
+      "product or market survey",
       "positioning the venture",
       "taking the company public",
       "keeping the rate of growth within a comfort limit",
-      "product or market survey",
       "professionalising the management team"
     ],
     "correct_answer": [
@@ -1156,13 +1309,13 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 69,
+    "question_number": 78,
     "question_text": "There are two benchmark considerations for the start-up stage of any venture and they are",
     "options": [
       "surviving and attaining projected sales",
-      "meeting operating objectives and positioning the venture for long-term growth",
       "creating a vision and mission of the venture",
       "attaining projected sales and realising incremental growth",
+      "meeting operating objectives and positioning the venture for long-term growth",
       "making a profit and achieving long-term growth"
     ],
     "correct_answer": [
@@ -1173,14 +1326,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 70,
+    "question_number": 79,
     "question_text": "Start-up operating objectives are",
     "options": [
       "production, sales, growth and profit",
       "growth, stability, sales and revenue",
-      "sales, revenue, growth and position",
       "adequate inventories, revenue, profits and sales",
-      "position, growth, sales and stability"
+      "position, growth, sales and stability",
+      "sales, revenue, growth and position"
     ],
     "correct_answer": [
       "sales, revenue, growth and position"
@@ -1190,14 +1343,14 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 71,
+    "question_number": 80,
     "question_text": "Measuring the progress of the business in the start-up stage is very important. The entrepreneur should",
     "options": [
       "determine the points at which decisions should be made",
       "on a frequent basis, check on the performance of the business",
+      "make a 12 months schedule to see if the plan has been successfully achieved",
       "check on other information such as inventory management and collection of accounts receivable",
-      "delegate the monitoring to the board of advisors",
-      "make a 12 months schedule to see if the plan has been successfully achieved"
+      "delegate the monitoring to the board of advisors"
     ],
     "correct_answer": [
       "make a 12 months schedule to see if the plan has been successfully achieved"
@@ -1207,14 +1360,14 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 72,
+    "question_number": 81,
     "question_text": "Prior to start-up, entrepreneurs can reduce financial burdens by",
     "options": [
       "reducing the scope of work to be done",
-      "planning assets carefully",
       "cutting down on the planned capacity",
       "reducing the number of workers",
-      "paying employees low salaries because it is a start-up venture"
+      "paying employees low salaries because it is a start-up venture",
+      "planning assets carefully"
     ],
     "correct_answer": [
       "planning assets carefully"
@@ -1224,7 +1377,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 73,
+    "question_number": 82,
     "question_text": "Financial planning in the pre-start-up stage will not necessarily be extensive but it has to be based on",
     "options": [
       "market research",
@@ -1241,13 +1394,13 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 74,
+    "question_number": 83,
     "question_text": "A market segment on which a business can choose to concentrate its efforts is known as a(n)",
     "options": [
       "economic zone",
       "shopping mall",
-      "window of opportunity",
       "market niche",
+      "window of opportunity",
       "e-market"
     ],
     "correct_answer": [
@@ -1258,14 +1411,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 75,
+    "question_number": 84,
     "question_text": "A market niche is a carefully defined segment of a broader market that defines the ________ of a product or service to create a distinct marketing focus.",
     "options": [
       "existence",
       "placement",
-      "positioning",
       "location",
-      "options"
+      "options",
+      "positioning"
     ],
     "correct_answer": [
       "positioning"
@@ -1275,7 +1428,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 76,
+    "question_number": 85,
     "question_text": "Setting up the specifications of one's primary clients can be described as a(n)",
     "options": [
       "telephone directory",
@@ -1292,14 +1445,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 77,
+    "question_number": 86,
     "question_text": "The objective of market research and analysis is to establish that a ________ exists for the proposed venture",
     "options": [
-      "market",
       "customer",
       "product",
       "competitor",
-      "place"
+      "place",
+      "market"
     ],
     "correct_answer": [
       "market"
@@ -1309,14 +1462,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 78,
+    "question_number": 87,
     "question_text": "Market research and analysis activities include",
     "options": [
       "identify potential customers, analyse competitors and evaluate markets",
       "description of a customer profile",
+      "identify potential customers, evaluate markets, analyse competitors and describe assumptions",
       "product or service, its pricing, promotions and distribution",
-      "product or service, its pricing, promotions and distribution, services and warranties described and marketing leadership roles defined",
-      "identify potential customers, evaluate markets, analyse competitors and describe assumptions"
+      "product or service, its pricing, promotions and distribution, services and warranties described and marketing leadership roles defined"
     ],
     "correct_answer": [
       "identify potential customers, evaluate markets, analyse competitors and describe assumptions"
@@ -1326,14 +1479,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 79,
+    "question_number": 88,
     "question_text": "The market research culminates in a ________ that establishes the volume and revenue expected from business operations.",
     "options": [
       "financial statement",
       "market plan",
       "customer scenario",
-      "sales forecast",
-      "market responsibilities"
+      "market responsibilities",
+      "sales forecast"
     ],
     "correct_answer": [
       "sales forecast"
@@ -1343,13 +1496,13 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 80,
+    "question_number": 89,
     "question_text": "The results of good market research include\n(i) a well defined sales forecast\n(ii) a good estimate of revenue\n(iii) well defined investment needs",
     "options": [
-      "i only is correct",
       "i, ii and iii are correct",
       "i and ii only are correct",
       "i and iii only are correct",
+      "i only is correct",
       "iii only is correct"
     ],
     "correct_answer": [
@@ -1360,7 +1513,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 81,
+    "question_number": 90,
     "question_text": "The main difference between market research analysis and market plan in a business plan is",
     "options": [
       "market plan gathers the information and market research then uses it in a marketing strategy",
@@ -1377,12 +1530,12 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 82,
+    "question_number": 91,
     "question_text": "The market plan tried to respond to the question",
     "options": [
       "where have we been and where are we going?",
-      "where have we been, where are we going and how do we get there?",
       "who is the customer and where is he or she located?",
+      "where have we been, where are we going and how do we get there?",
       "where are the products going to be sold?",
       "where are the products going to be made?"
     ],
@@ -1394,13 +1547,13 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 83,
+    "question_number": 92,
     "question_text": "The ________ describes an entrepreneur's intended strategy.",
     "options": [
       "distribution network",
-      "market plan",
       "operations",
       "promotions",
+      "market plan",
       "financial documentation"
     ],
     "correct_answer": [
@@ -1411,12 +1564,12 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 84,
+    "question_number": 93,
     "question_text": "Marketing research activities that are undertaken after a new venture opens its doors for business is called",
     "options": [
+      "competitive analysis",
       "market planning",
       "marketing and sales",
-      "competitive analysis",
       "competitive rivalry",
       "ending market research"
     ],
@@ -1428,7 +1581,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 85,
+    "question_number": 94,
     "question_text": "A competitive analysis is marketing research\n(i) in the pre-start-up stage\n(ii) in the early growth stage\n(iii) in the start-up stage",
     "options": [
       "i, ii and iii are correct",
@@ -1445,14 +1598,14 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 86,
+    "question_number": 95,
     "question_text": "The marketing functions include",
     "options": [
       "Process, Product and distribution",
+      "Product, Price, Distribution and Promotion",
       "Product Design, Promotion and Packaging",
       "Distribution, advertisement and packaging",
-      "Product Design, Process and Promotion",
-      "Product, Price, Distribution and Promotion"
+      "Product Design, Process and Promotion"
     ],
     "correct_answer": [
       "Product, Price, Distribution and Promotion"
@@ -1462,12 +1615,12 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 87,
+    "question_number": 96,
     "question_text": "An expanded view of a company's product includes",
     "options": [
       "function, form and packaging characteristics",
-      "labelling, design and function",
       "function, form, packaging characteristics and service after sales support",
+      "labelling, design and function",
       "safety and use information, labelling and design",
       "packaging, labelling and warranty terms"
     ],
@@ -1479,13 +1632,13 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 88,
+    "question_number": 97,
     "question_text": "The planned process of determining prices and how prices can be changed in the field for unusual circumstances is known as",
     "options": [
       "price setting",
       "price discounting",
-      "costing process",
       "pricing policy",
+      "costing process",
       "sales commission"
     ],
     "correct_answer": [
@@ -1496,12 +1649,12 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 89,
+    "question_number": 98,
     "question_text": "A broad term applied to marketing tactics that serve to attract customers or inform them of a product or service is known as",
     "options": [
       "advertisement",
-      "promotion",
       "publicity",
+      "promotion",
       "personal selling",
       "reduction sales"
     ],
@@ -1513,14 +1666,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 90,
+    "question_number": 99,
     "question_text": "A careful selection of promotional methods consistent with a grand marketing strategy is called",
     "options": [
       "mixed marketing",
       "advertisement",
       "publicity",
-      "promotional mix",
-      "public relations"
+      "public relations",
+      "promotional mix"
     ],
     "correct_answer": [
       "promotional mix"
@@ -1530,7 +1683,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 91,
+    "question_number": 100,
     "question_text": "As a start-up business, advertising is a vital part of your concerns in your quest to compete. Advertising will seek to\n(i) make a satisfied customer\n(ii) sell to someone even if they cannot afford to\n(iii) convince someone to walk in your door",
     "options": [
       "iii only is correct",
@@ -1547,12 +1700,12 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 92,
+    "question_number": 101,
     "question_text": "Marketing Communications or Integrated Marketing Communications seeks to\n(i) consolidate all communications to present an individual, focussed marketing, sales or image message\n(ii) use an assortment of communications forms to deliver a variety of messages about the product, service or company\n(iii) develop a product, establish a price for it, communicate information about it and coordinate its distribution",
     "options": [
-      "i only is correct",
       "i, ii and iii are correct",
       "i and ii only are correct",
+      "i only is correct",
       "i and iii only are correct",
       "iii only is correct"
     ],
@@ -1564,13 +1717,13 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 93,
+    "question_number": 102,
     "question_text": "Integrating promotion into the marketing mix seeks to\n(i) increase sales\n(ii) build recognition\n(iii) build consumer loyalty",
     "options": [
       "i and ii only are correct",
-      "i, ii and iii are correct",
       "i and iii only are correct",
       "i only is correct",
+      "i, ii and iii are correct",
       "iii only is correct"
     ],
     "correct_answer": [
@@ -1581,13 +1734,13 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 94,
+    "question_number": 103,
     "question_text": "A marketing plan is implemented through a",
     "options": [
       "marketing activities",
+      "marketing program",
       "marketing research",
       "marketing implementation",
-      "marketing program",
       "marketing audit"
     ],
     "correct_answer": [
@@ -1598,7 +1751,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 95,
+    "question_number": 104,
     "question_text": "Marketing Plan for a new venture\n(i) establishes how the entrepreneur will effectively compete and operate in the market\n(ii) describes the customer and the market\n(iii) comes out with solid data on projected sales",
     "options": [
       "i only is correct",
@@ -1615,7 +1768,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 96,
+    "question_number": 105,
     "question_text": "Marketing plans are ineffective or fail in meeting marketing goals for different reasons which include",
     "options": [
       "lack of a real plan only",
@@ -1632,7 +1785,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 97,
+    "question_number": 106,
     "question_text": "A distribution system is\n(i) the process of taking materials through the production process\n(ii) the physical process of getting goods to market\n(iii) the process of locating services",
     "options": [
       "i, ii and iii are correct",
@@ -1649,11 +1802,11 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 98,
+    "question_number": 107,
     "question_text": "The types of distribution channels that exist are",
     "options": [
-      "consumer only",
       "consumer, industrial and service",
+      "consumer only",
       "industrial only",
       "service only",
       "consumer and industrial only"
@@ -1666,14 +1819,14 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 99,
+    "question_number": 108,
     "question_text": "The infrastructure of a marketing plan is often built solely on a firm's ________ system.",
     "options": [
+      "distribution",
       "promotion",
       "product",
       "price",
-      "warranty",
-      "distribution"
+      "warranty"
     ],
     "correct_answer": [
       "distribution"
@@ -1683,7 +1836,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 100,
+    "question_number": 109,
     "question_text": "Developing a clear profile of potential customers includes looking at their\n(i) age and sex\n(ii) income status\n(iii) locating the potential customer base",
     "options": [
       "i and ii only are correct",
@@ -1700,7 +1853,41 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 101,
+    "question_number": 110,
+    "question_text": "Used as a catchall term, product in marketing terms includes\n(i) the business concept, such as fast-food franchising\n(ii) physical objects or services being sold, together with packaging, image, brand name and warranty\n(iii) physical attributes that influence consumers perceptions, such as colours, shapes, sizes and materials",
+    "options": [
+      "i and ii only are correct",
+      "i and iii only are correct",
+      "ii and iii only are correct",
+      "i, ii and iii are correct",
+      "i only is correct"
+    ],
+    "correct_answer": [
+      "i, ii and iii are correct"
+    ],
+    "explanation": "Product in marketing is deliberately broad. It covers the business concept, the physical object or service with its packaging, brand name and warranty, and the physical attributes that shape how a customer sees it.",
+    "source": "Guide 8.8, the expanded view of a product",
+    "verified": "derived from the lecture notes and slides"
+  },
+  {
+    "question_number": 111,
+    "question_text": "As part of a market plan, a marketing strategy provides guidelines for the entrepreneur concerning\n(i) a marketing program which addresses the marketing activities\n(ii) expected results, allocation of resources and responsibilities for marketing\n(iii) ways in which the enterprise will be controlled",
+    "options": [
+      "i and ii only are correct",
+      "i and iii only are correct",
+      "ii and iii only are correct",
+      "i, ii and iii are correct",
+      "i only is correct"
+    ],
+    "correct_answer": [
+      "i, ii and iii are correct"
+    ],
+    "explanation": "The strategy sets the marketing program, states the expected results and who is responsible for which resources, and says how the enterprise will be controlled. All three are guidelines the strategy supplies.",
+    "source": "Guide 8.10, the marketing plan",
+    "verified": "derived from the lecture notes and slides"
+  },
+  {
+    "question_number": 112,
     "question_text": "A grant of a property right by a government to an inventor is called a",
     "options": [
       "trade mark",
@@ -1717,13 +1904,13 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 102,
+    "question_number": 113,
     "question_text": "A patent search is done to determine",
     "options": [
+      "if an inventor's creation already exists and remains actively protected under the law",
       "patent summaries for prior claims or inventions",
       "the basic fees for a patent application",
       "what oaths and declarations have to be made with respect to a patent being sought",
-      "if an inventor's creation already exists and remains actively protected under the law",
       "the major sections of a patent filing document"
     ],
     "correct_answer": [
@@ -1734,14 +1921,14 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 103,
+    "question_number": 114,
     "question_text": "A Disclosure Document, if filed by an entrepreneur, becomes important when",
     "options": [
-      "a patent infringement has occurred",
       "registering a company",
       "personal expense items are tax deductible",
       "two entrepreneurs are filing for patents on similar inventions",
-      "a patent is published and becomes accessible to the public for review"
+      "a patent is published and becomes accessible to the public for review",
+      "a patent infringement has occurred"
     ],
     "correct_answer": [
       "a patent infringement has occurred"
@@ -1751,13 +1938,13 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 104,
+    "question_number": 115,
     "question_text": "A Disclosure Document is\n(i) the same as a patent\n(ii) a statement to the patent office by the inventor declaring the intent to patent an idea\n(iii) a brief description of the business concept",
     "options": [
-      "ii only is correct",
       "i, ii and iii are correct",
       "i and ii only are correct",
       "i and iii only are correct",
+      "ii only is correct",
       "iii only is correct"
     ],
     "correct_answer": [
@@ -1768,11 +1955,11 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 105,
+    "question_number": 116,
     "question_text": "The requirements for a successful utility patent grant include\n(i) that the inventor has taken personal investment risks\n(ii) proving that the creation is that of the person making the application\n(iii) the creation must be useful and new",
     "options": [
-      "ii and iii only are correct",
       "i, ii and iii are correct",
+      "ii and iii only are correct",
       "i and ii only are correct",
       "i and iii only are correct",
       "i only is correct"
@@ -1785,14 +1972,14 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 106,
+    "question_number": 117,
     "question_text": "A plant patent is given for\n(i) 17 years\n(ii) hybrid roses\n(iii) food grains",
     "options": [
       "i, ii and iii are correct",
       "i and ii only are correct",
       "i and iii only are correct",
-      "ii and iii only are correct",
-      "i only is correct"
+      "i only is correct",
+      "ii and iii only are correct"
     ],
     "correct_answer": [
       "ii and iii only are correct"
@@ -1802,12 +1989,12 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 107,
+    "question_number": 118,
     "question_text": "A trademark",
     "options": [
       "may be a particular sound only",
-      "may be a word or symbol only",
       "may be a particular sound, a word, a symbol, a design or a slogan, and can last indefinitely",
+      "may be a word or symbol only",
       "may be a word, a design or a slogan only",
       "can last indefinitely but must be a word"
     ],
@@ -1819,11 +2006,11 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 108,
+    "question_number": 119,
     "question_text": "Filing of trade mark registrations meets these form requirements",
     "options": [
-      "completion of the written form and payment of fee, drawing of the mark and five specimens showing actual use, and publication in the Trade Mark Official Gazette",
       "completion of the written form and payment of fee only",
+      "completion of the written form and payment of fee, drawing of the mark and five specimens showing actual use, and publication in the Trade Mark Official Gazette",
       "drawing of the mark and five specimens showing the actual use of the mark only",
       "publication in the Trade Mark Official Gazette only",
       "completion of the written form and payment of fee, plus the drawing and specimens only"
@@ -1836,13 +2023,13 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 109,
+    "question_number": 120,
     "question_text": "Contracts are an important part of the transactions that an entrepreneur will make. The guidelines to follow include\n(i) describing the transaction in detail\n(ii) obtaining the signatures of the people with whom business is being done\n(iii) oral agreements are invalid for deals over one year",
     "options": [
       "i and ii only are correct",
-      "i, ii and iii are correct",
       "i and iii only are correct",
       "i only is correct",
+      "i, ii and iii are correct",
       "iii only is correct"
     ],
     "correct_answer": [
@@ -1853,13 +2040,13 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 110,
+    "question_number": 121,
     "question_text": "The best protection against product liability is\n(i) to produce zero defects in the products\n(ii) to produce safe products\n(iii) to warn customers of potential hazards",
     "options": [
+      "ii and iii only are correct",
       "i, ii and iii are correct",
       "i and ii only are correct",
       "i and iii only are correct",
-      "ii and iii only are correct",
       "i only is correct"
     ],
     "correct_answer": [
@@ -1870,13 +2057,13 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 111,
+    "question_number": 122,
     "question_text": "A person who is involved in a voluntary association with one or more other individuals and has operational responsibilities is called a",
     "options": [
+      "General partner",
       "Sole Partner",
       "Limited partner",
       "Sole proprietor",
-      "General partner",
       "Silent partner"
     ],
     "correct_answer": [
@@ -1887,12 +2074,12 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 112,
+    "question_number": 123,
     "question_text": "A person or company that originates a business system and provides a package of services, products, training, inventory and support to individual owners in return for a fee and royalties is a",
     "options": [
       "Sole proprietor",
-      "Franchisor",
       "Franchisee",
+      "Franchisor",
       "Stakeholder",
       "Corporation"
     ],
@@ -1904,13 +2091,13 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 113,
+    "question_number": 124,
     "question_text": "A business system created by a contract between a parent company and an acquiring business owner, giving the acquiring owner the right to sell goods or services, to use certain products, names or brands or to manufacture certain products is called a",
     "options": [
       "corporation",
-      "franchise",
       "franchisee",
       "franchisor",
+      "franchise",
       "general partnership"
     ],
     "correct_answer": [
@@ -1921,7 +2108,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 114,
+    "question_number": 125,
     "question_text": "A legal form of business created through law that empowers a business as a legal entity and has a perpetual life unimpeded by the biological lifespan of investors is a",
     "options": [
       "company",
@@ -1938,13 +2125,13 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 115,
+    "question_number": 126,
     "question_text": "A legal organisation created through investments by two or more companies to pursue a commercial activity is known as a",
     "options": [
       "partnership",
       "corporation",
-      "joint venture",
       "limited liability company",
+      "joint venture",
       "franchise"
     ],
     "correct_answer": [
@@ -1955,12 +2142,12 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 116,
+    "question_number": 127,
     "question_text": "Selecting a legal form of business involves a decision with at least three important criteria, namely",
     "options": [
       "preferences of the entrepreneur, taxation issues and profile of the enterprise",
-      "preferences of the entrepreneur, profile of the enterprise, and advantages and disadvantages of the legal business entity",
       "management issues, profile of the enterprise and succession issues",
+      "preferences of the entrepreneur, profile of the enterprise, and advantages and disadvantages of the legal business entity",
       "financing issues, management issues and profile of the enterprise",
       "taxation issues and succession issues"
     ],
@@ -1972,14 +2159,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 117,
+    "question_number": 128,
     "question_text": "The main disadvantage of a sole proprietorship is",
     "options": [
+      "unlimited legal and financial liability",
       "the business ends with the owner's death",
       "the business assets are personal assets",
       "personal expense items are tax deductible",
-      "income is undifferentiated from other income",
-      "unlimited legal and financial liability"
+      "income is undifferentiated from other income"
     ],
     "correct_answer": [
       "unlimited legal and financial liability"
@@ -1989,7 +2176,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 118,
+    "question_number": 129,
     "question_text": "Which of the following is an advantage of owning a sole proprietorship?",
     "options": [
       "easy to set up",
@@ -2006,7 +2193,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 119,
+    "question_number": 130,
     "question_text": "Compared to other legal forms of business, the sole proprietorship has the singular advantage of simplicity. Other advantages include\n(i) autonomy of control, decision making and administration\n(ii) expanded network of contacts for assessing resources\n(iii) inexpensive as a form of business and self directing",
     "options": [
       "i, ii and iii are correct",
@@ -2023,11 +2210,11 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 120,
+    "question_number": 131,
     "question_text": "A partnership, as a legal form of business, has certain disadvantages which include\n(i) business ends with the death or withdrawal of any partner\n(ii) unlimited legal liability for business by all parties\n(iii) limited access to external resources",
     "options": [
-      "i and ii only are correct",
       "i, ii and iii are correct",
+      "i and ii only are correct",
       "i and iii only are correct",
       "i only is correct",
       "iii only is correct"
@@ -2040,14 +2227,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 121,
+    "question_number": 132,
     "question_text": "Limited partners enjoy certain advantages over general partners that include\n(i) exemption from management responsibility\n(ii) profit and losses passed through to all partners\n(iii) investment can be sold or assigned",
     "options": [
       "i and ii only are correct",
       "i and iii only are correct",
+      "i, ii and iii are correct",
       "i only is correct",
-      "iii only is correct",
-      "i, ii and iii are correct"
+      "iii only is correct"
     ],
     "correct_answer": [
       "i, ii and iii are correct"
@@ -2057,11 +2244,11 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 122,
+    "question_number": 133,
     "question_text": "A disadvantage of owning a closely held corporation is",
     "options": [
-      "transfer of ownership",
       "expensive to start",
+      "transfer of ownership",
       "limited liability",
       "increased access to resources",
       "perpetual life"
@@ -2074,7 +2261,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 123,
+    "question_number": 134,
     "question_text": "A formal board of directors is required by law only for",
     "options": [
       "sole proprietorships",
@@ -2091,7 +2278,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 124,
+    "question_number": 135,
     "question_text": "The membership of a Board of Directors for a new venture should be",
     "options": [
       "5 to 7",
@@ -2108,13 +2295,13 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 125,
+    "question_number": 136,
     "question_text": "A board of advisors serves a new venture in an advisory capacity. An example is",
     "options": [
       "an advertising agent and a market researcher",
-      "a lawyer, a banker, an accountant and an advertising agent",
       "the manager and the accountant",
       "the shareholders and the officers",
+      "a lawyer, a banker, an accountant and an advertising agent",
       "the operations manager and the sales team"
     ],
     "correct_answer": [
@@ -2125,13 +2312,13 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 126,
+    "question_number": 137,
     "question_text": "Directors of new ventures fulfil important roles beyond their decision-making duties that include\n(i) serving as members of an expanded social network\n(ii) mentors and professional advisors\n(iii) disturbance handlers and resource allocators",
     "options": [
       "i, ii and iii are correct",
       "i and iii only are correct",
-      "i and ii only are correct",
       "i only is correct",
+      "i and ii only are correct",
       "iii only is correct"
     ],
     "correct_answer": [
@@ -2142,12 +2329,12 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 127,
+    "question_number": 138,
     "question_text": "The entrepreneurial team is a very vital part of the management team of a new venture. It is responsible for",
     "options": [
       "building an organisation only",
-      "giving identity to the venture only",
       "building an organisation, giving identity to the venture, focusing on operational issues and immediate problems, and guiding the venture through change",
+      "giving identity to the venture only",
       "focusing on operational issues and immediate problems only",
       "guiding the venture through change only"
     ],
@@ -2159,14 +2346,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 128,
+    "question_number": 139,
     "question_text": "The responsibilities of the founder are",
     "options": [
       "being responsible for the functional areas and managing the venture",
       "providing guidance and direction",
-      "defining their business and identifying human resource requirements",
       "getting financing for the venture and setting the pace for development",
-      "supervising employees and handling disturbances"
+      "supervising employees and handling disturbances",
+      "defining their business and identifying human resource requirements"
     ],
     "correct_answer": [
       "defining their business and identifying human resource requirements"
@@ -2176,13 +2363,13 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 129,
+    "question_number": 140,
     "question_text": "After the legal form of business has been decided by the entrepreneur, the task of designing the organisation begins. The first step is to decide on the",
     "options": [
       "selection criteria",
+      "organisational structure",
       "training",
       "job analysis",
-      "organisational structure",
       "job specification"
     ],
     "correct_answer": [
@@ -2193,14 +2380,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 130,
+    "question_number": 141,
     "question_text": "The organisation must identify the major activities required to operate it effectively. This is done through",
     "options": [
       "job description",
       "job specification",
       "selection criteria",
-      "job analysis",
-      "performance appraisal"
+      "performance appraisal",
+      "job analysis"
     ],
     "correct_answer": [
       "job analysis"
@@ -2210,12 +2397,12 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 131,
+    "question_number": 142,
     "question_text": "Individuals within someone's immediate circle of daily relationships is known as",
     "options": [
       "loose ties",
-      "personal network",
       "associations",
+      "personal network",
       "social network",
       "the entrepreneurial team"
     ],
@@ -2227,14 +2414,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 132,
+    "question_number": 143,
     "question_text": "Money needed to purchase such physical facilities as buildings and equipment is referred to as",
     "options": [
       "working capital",
       "lending capital",
+      "fixed capital",
       "fluid capital",
-      "venture capital",
-      "fixed capital"
+      "venture capital"
     ],
     "correct_answer": [
       "fixed capital"
@@ -2244,12 +2431,12 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 133,
+    "question_number": 144,
     "question_text": "Money used to pay the rent and utility bills, to purchase inventories, and to cover payroll expenses is referred to as",
     "options": [
       "lending capital",
-      "working capital",
       "fluid capital",
+      "working capital",
       "fixed capital",
       "seed capital"
     ],
@@ -2261,14 +2448,14 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 134,
+    "question_number": 145,
     "question_text": "Which of the following is money held in reserve for emergency situations, usually in the form of cash or disposable securities such as stocks, bonds and certificates of deposit?",
     "options": [
       "working capital",
       "lending capital",
+      "fluid capital",
       "fixed capital",
-      "replacement capital",
-      "fluid capital"
+      "replacement capital"
     ],
     "correct_answer": [
       "fluid capital"
@@ -2278,7 +2465,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 135,
+    "question_number": 146,
     "question_text": "Lending institutions provide entrepreneurs with short term loans primarily for",
     "options": [
       "lending capital",
@@ -2295,7 +2482,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 136,
+    "question_number": 147,
     "question_text": "Entrepreneurs use ________ to purchase major fixed capital investments such as buildings and land.",
     "options": [
       "short-term financing",
@@ -2312,13 +2499,13 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 137,
+    "question_number": 148,
     "question_text": "If short term financing is used by a new venture, the funds are repaid from",
     "options": [
       "dividend",
       "fixed assets",
-      "sales and profits",
       "cash budget",
+      "sales and profits",
       "capital"
     ],
     "correct_answer": [
@@ -2329,12 +2516,12 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 138,
+    "question_number": 149,
     "question_text": "By far the most frequently used source of short-term funds by the entrepreneur when collateral is available is",
     "options": [
       "venture capital",
-      "personal funds",
       "commercial bank",
+      "personal funds",
       "development capital",
       "trade credit"
     ],
@@ -2346,14 +2533,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 139,
+    "question_number": 150,
     "question_text": "Which of the following is intended for higher risks such as start up situations?",
     "options": [
       "development capital",
-      "venture capital",
       "replacement capital",
       "owners capital",
-      "working capital"
+      "working capital",
+      "venture capital"
     ],
     "correct_answer": [
       "venture capital"
@@ -2363,14 +2550,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 140,
+    "question_number": 151,
     "question_text": "Investors who look for businesses that offer extremely high growth and profit potential, have a willingness to exchange equity, and show potential to cash out in five years are called",
     "options": [
+      "Venture capitalists",
       "Private placement specialists",
       "International Procurement Organisations agents",
       "Commercial bankers",
-      "Angel employees",
-      "Venture capitalists"
+      "Angel employees"
     ],
     "correct_answer": [
       "Venture capitalists"
@@ -2380,11 +2567,11 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 141,
+    "question_number": 152,
     "question_text": "Asset-based financing refers to",
     "options": [
-      "debt financing",
       "equity financing",
+      "debt financing",
       "internal funds",
       "external funds",
       "retained earnings"
@@ -2397,11 +2584,11 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 142,
+    "question_number": 153,
     "question_text": "Which of the following does not require collateral and offers the investor some form of ownership position in the venture?",
     "options": [
-      "debt financing",
       "equity financing",
+      "debt financing",
       "vendor capital",
       "common stock",
       "trade credit"
@@ -2414,12 +2601,12 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 143,
+    "question_number": 154,
     "question_text": "Government grants for a new business can be referred to as",
     "options": [
-      "external fund",
       "debt financing",
       "equity financing",
+      "external fund",
       "internal fund",
       "retained earnings"
     ],
@@ -2431,7 +2618,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 144,
+    "question_number": 155,
     "question_text": "________ are the least expensive funds in terms of cost and control, and also are absolutely essential in attracting outside funding, particularly from banks, private investors and venture capitalists.",
     "options": [
       "Funds from family and friends",
@@ -2448,13 +2635,13 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 145,
+    "question_number": 156,
     "question_text": "Long term debt is frequently used to purchase some asset such as a piece of machinery, land or a building, with part of the value of the asset, usually from ________ percent of the total value, being used as collateral.",
     "options": [
       "40 to 60",
       "50 to 75",
-      "70 to 90",
       "50 to 80",
+      "70 to 90",
       "60 to 85"
     ],
     "correct_answer": [
@@ -2465,7 +2652,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 146,
+    "question_number": 157,
     "question_text": "When interest rates are low, ________ financing allows the entrepreneur to retain a larger ownership portion in the venture and have a greater return on equity.",
     "options": [
       "internal",
@@ -2482,7 +2669,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 147,
+    "question_number": 158,
     "question_text": "________ is the term commonly used to describe the ordinary share capital of a business.",
     "options": [
       "Asset",
@@ -2499,7 +2686,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 148,
+    "question_number": 159,
     "question_text": "________ represents the amount owners have invested and or retained from the venture operations",
     "options": [
       "liability",
@@ -2516,7 +2703,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 149,
+    "question_number": 160,
     "question_text": "The component of equity in a business representing accumulated profits in excess of losses and payments to owners is referred to as",
     "options": [
       "dividend",
@@ -2533,7 +2720,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 150,
+    "question_number": 161,
     "question_text": "An obligation arising from the purchase of goods or services on credit is referred to as",
     "options": [
       "account receivable",
@@ -2550,7 +2737,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 151,
+    "question_number": 162,
     "question_text": "Money due from an individual or another business as payment for the performance of services or the sale of goods on credit is known as",
     "options": [
       "account payable",
@@ -2567,7 +2754,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 152,
+    "question_number": 163,
     "question_text": "________ is the integration and synchronisation of the various financial activities of a business in order that all its functions can work towards its common objectives.",
     "options": [
       "Financial co-ordination",
@@ -2584,7 +2771,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 153,
+    "question_number": 164,
     "question_text": "Restrictions to loan agreements are called",
     "options": [
       "intrusions",
@@ -2601,14 +2788,14 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 154,
+    "question_number": 165,
     "question_text": "Cash flow equals",
     "options": [
       "receipts plus owner's equity",
       "liabilities minus expenses",
       "liabilities plus owner's equity",
-      "receipts minus disbursements",
-      "revenue minus retained earnings"
+      "revenue minus retained earnings",
+      "receipts minus disbursements"
     ],
     "correct_answer": [
       "receipts minus disbursements"
@@ -2618,7 +2805,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 155,
+    "question_number": 166,
     "question_text": "Determining which source of funding entrepreneurs use depends on the following except",
     "options": [
       "the nature and size of the business",
@@ -2635,7 +2822,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 156,
+    "question_number": 167,
     "question_text": "Lenders to a new venture typically focus on aspects of credit character which include\n(i) cash flow\n(ii) collateral\n(iii) equity contribution",
     "options": [
       "i and ii only are correct",
@@ -2652,14 +2839,31 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 157,
+    "question_number": 168,
+    "question_text": "Resources expected to produce current and future benefits are referred to as",
+    "options": [
+      "capital",
+      "liabilities",
+      "shareholding",
+      "assets",
+      "net worth"
+    ],
+    "correct_answer": [
+      "assets"
+    ],
+    "explanation": "That is the accounting definition of an asset. Capital and shareholding name where the money came from, and a liability is an obligation the venture owes.",
+    "source": "Canvas paper, selected; Notes p19 to p23",
+    "verified": "matched to a marked past paper"
+  },
+  {
+    "question_number": 169,
     "question_text": "________ is a process that involves co-ordinating the finances of all areas of the new venture.",
     "options": [
       "Cost accounting",
       "Financial accounting",
       "Management accounting",
-      "Strategic planning",
-      "Budgeting"
+      "Budgeting",
+      "Strategic planning"
     ],
     "correct_answer": [
       "Budgeting"
@@ -2669,14 +2873,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 158,
+    "question_number": 170,
     "question_text": "________ involves deciding which market niche should be profitable.",
     "options": [
       "Operating budgeting",
       "Capital budgeting",
       "Sales forecasting",
-      "Strategic planning",
-      "Tactical budgeting"
+      "Tactical budgeting",
+      "Strategic planning"
     ],
     "correct_answer": [
       "Strategic planning"
@@ -2686,14 +2890,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 159,
+    "question_number": 171,
     "question_text": "Which of the following involves making decisions such as whether to buy or lease equipment?",
     "options": [
       "strategic planning",
+      "capital budgeting",
       "operating budgeting",
       "tactical budgeting",
-      "sales forecasting",
-      "capital budgeting"
+      "sales forecasting"
     ],
     "correct_answer": [
       "capital budgeting"
@@ -2703,13 +2907,13 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 160,
+    "question_number": 172,
     "question_text": "Which of the following budgets is expected to be more specific?",
     "options": [
       "tactical budgeting",
-      "operating budgeting",
       "capital budgeting",
       "strategic planning",
+      "operating budgeting",
       "financial statement budgeting"
     ],
     "correct_answer": [
@@ -2720,7 +2924,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 161,
+    "question_number": 173,
     "question_text": "The three major budget categories in the master budget consist of operating budgets, capital budgets and",
     "options": [
       "strategic plans",
@@ -2737,7 +2941,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 162,
+    "question_number": 174,
     "question_text": "The master budget normally covers a",
     "options": [
       "one-year time span",
@@ -2754,7 +2958,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 163,
+    "question_number": 175,
     "question_text": "The budgeting process normally begins with the preparation of",
     "options": [
       "capital budgets",
@@ -2771,7 +2975,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 164,
+    "question_number": 176,
     "question_text": "The first step in the preparation of the operating budget is",
     "options": [
       "cash requirements",
@@ -2788,7 +2992,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 165,
+    "question_number": 177,
     "question_text": "The composition of the numerous separate but interdependent departmental budgets that cover a wide range of operating and financial factors such as sales, production, manufacturing expenses and administrative expenses is known as",
     "options": [
       "operating budget",
@@ -2805,7 +3009,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 166,
+    "question_number": 178,
     "question_text": "Perpetual or continuous budgeting utilises",
     "options": [
       "a 3-month reporting period",
@@ -2822,7 +3026,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 167,
+    "question_number": 179,
     "question_text": "________ budgets are intended to provide a basis for evaluating expenditures that will impact the business for more than one year.",
     "options": [
       "Operating",
@@ -2839,7 +3043,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 168,
+    "question_number": 180,
     "question_text": "Budgeted financial statements prepared from information in the master budget refer to",
     "options": [
       "operating budget statements",
@@ -2856,7 +3060,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 169,
+    "question_number": 181,
     "question_text": "A budget is",
     "options": [
       "prepared primarily as a planning function only",
@@ -2873,14 +3077,14 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 170,
+    "question_number": 182,
     "question_text": "Which of the following is true?",
     "options": [
       "information contained in the financial statement budgets is used to prepare the operating budgets",
       "information contained in the tactical budgets is used to prepare the operating budgets",
       "information contained in the operating budgets is used to prepare the strategic budgets",
-      "information contained in the cash budget is used to prepare the sales budget",
-      "information contained in the operating budgets is used to prepare the financial statement budgets"
+      "information contained in the operating budgets is used to prepare the financial statement budgets",
+      "information contained in the cash budget is used to prepare the sales budget"
     ],
     "correct_answer": [
       "information contained in the operating budgets is used to prepare the financial statement budgets"
@@ -2890,7 +3094,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 171,
+    "question_number": 183,
     "question_text": "Pro forma income statements are",
     "options": [
       "projected cash available gotten from projected cash accumulated and projected disbursements",
@@ -2907,13 +3111,13 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 172,
+    "question_number": 184,
     "question_text": "________ summarises the projected assets, liabilities and equity of the new venture.",
     "options": [
       "Pro forma income statement",
-      "Pro forma balance sheet",
       "Pro forma cash flow",
       "Pro forma accounting statement",
+      "Pro forma balance sheet",
       "Cash budget"
     ],
     "correct_answer": [
@@ -2924,13 +3128,13 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 173,
+    "question_number": 185,
     "question_text": "What are the main segments of a pro forma balance sheet?",
     "options": [
-      "Assets, liabilities and owners equity",
       "Owners equity and retained earnings",
       "Fixed assets",
       "Current liabilities",
+      "Assets, liabilities and owners equity",
       "Revenues, costs and expenses"
     ],
     "correct_answer": [
@@ -2941,12 +3145,12 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 174,
+    "question_number": 186,
     "question_text": "Projected cash available calculated from projected cash accumulations minus projected cash disbursements refers to",
     "options": [
       "cash budget",
-      "sales budget",
       "pro forma cash flow",
+      "sales budget",
       "pro forma income",
       "pro forma balance sheet"
     ],
@@ -2958,11 +3162,11 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 175,
+    "question_number": 187,
     "question_text": "In the preparation of the pro forma income statement, the entrepreneur must first develop a",
     "options": [
-      "Cash flow statement",
       "Sales budget",
+      "Cash flow statement",
       "Sales revenue projection",
       "Selling and administrative statement",
       "Material inventory schedule"
@@ -2975,13 +3179,13 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 176,
+    "question_number": 188,
     "question_text": "Before developing the pro forma income statement, the entrepreneur should prepare the",
     "options": [
       "strategic plan and operating budgets",
       "strategic plan and capital budgets",
-      "tactical and strategic budgets",
       "capital and operating budgets",
+      "tactical and strategic budgets",
       "cash budget and sales forecast"
     ],
     "correct_answer": [
@@ -2992,7 +3196,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 177,
+    "question_number": 189,
     "question_text": "A prediction of what a company's financial statements will look like at the end of the forecast period is called",
     "options": [
       "a forecast statement",
@@ -3009,13 +3213,13 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 178,
+    "question_number": 190,
     "question_text": "Which of the following statements is referred to as a summary of operations?",
     "options": [
       "balance sheet",
-      "income statement",
       "statement of cash flows",
       "statement of retained earnings",
+      "income statement",
       "pro forma balance sheet"
     ],
     "correct_answer": [
@@ -3026,7 +3230,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 179,
+    "question_number": 191,
     "question_text": "Depending on the nature of a business, a manufacturing or operation plan may not be required in the business plan, but for ventures that require capital equipment this section is important and should be made up of",
     "options": [
       "operations, human resources, facilities, inventory and related issues",
@@ -3043,13 +3247,13 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 180,
+    "question_number": 192,
     "question_text": "Which of the following represents a long-term solvency ratio?",
     "options": [
       "return on equity",
+      "debt to equity ratio",
       "equity ratio",
       "assets turnover ratio",
-      "debt to equity ratio",
       "current ratio"
     ],
     "correct_answer": [
@@ -3060,14 +3264,82 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 181,
+    "question_number": 193,
+    "question_text": "In preparing the pro forma balance sheet, the entrepreneur will require the use of\n(i) pro forma income and cash flow statements\n(ii) operations and sales budgets\n(iii) capital budgets prepared under different scenarios",
+    "options": [
+      "i, ii and iii are correct",
+      "i and ii only are correct",
+      "i and iii only are correct",
+      "ii and iii only are correct",
+      "i only is correct"
+    ],
+    "correct_answer": [
+      "i, ii and iii are correct"
+    ],
+    "explanation": "The notes set out the flow. Operating budgets feed the financial statement budgets, the capital budget feeds several operating budgets and the cash budget, and the pro forma income and cash flow statements supply the closing balances the balance sheet needs.",
+    "source": "Notes p15 and p19 to p22",
+    "verified": "derived from the lecture notes and slides"
+  },
+  {
+    "question_number": 194,
+    "question_text": "A statement of estimated income and expenses over a specified period of time is known as a",
+    "options": [
+      "operating budget",
+      "capital budget",
+      "master budget",
+      "budget",
+      "financial statement"
+    ],
+    "correct_answer": [
+      "budget"
+    ],
+    "explanation": "That is the general definition of a budget. An operating budget, a capital budget and a master budget are all particular kinds of budget, so the general term is the better answer.",
+    "source": "Notes p14; 2005 key, question 89",
+    "verified": "derived from the lecture notes and slides"
+  },
+  {
+    "question_number": 195,
+    "question_text": "Which of the following is a formal plan expressed in numerical terms?",
+    "options": [
+      "performance evaluation",
+      "financial statement",
+      "production schedule",
+      "proposal",
+      "budget"
+    ],
+    "correct_answer": [
+      "budget"
+    ],
+    "explanation": "A budget states expected results or requirements in financial or numerical terms. A financial statement reports what already happened. A budget plans what should happen.",
+    "source": "Notes p14; Canvas paper, selected",
+    "verified": "matched to a marked past paper"
+  },
+  {
+    "question_number": 196,
+    "question_text": "Administration plans generally cover a period of",
+    "options": [
+      "five years or less",
+      "less than 1 year",
+      "more than 5 years",
+      "more than 10 years",
+      "exactly 3 years"
+    ],
+    "correct_answer": [
+      "less than 1 year"
+    ],
+    "explanation": "The Canvas paper marks less than 1 year. The phrase administration plans appears nowhere in the notes or the slides, so this answer rests on the paper alone. Treat it as the weakest item in the bank.",
+    "source": "Canvas paper, selected; not found in the course materials",
+    "verified": "not checked against a printed key"
+  },
+  {
+    "question_number": 197,
     "question_text": "Topsy Turvy Company Ltd sells furniture. It had a beginning balance of $40,000 in accounts receivable on 1 October and normally collects 100 percent of accounts receivable in the month following the month of sale. Cash sales are $15,000, $17,250 and $19,838, and sales on account are $45,000, $51,750 and $59,513 for October, November and December respectively. Determine the accounts receivable for October.",
     "options": [
       "$75,000",
+      "$40,000",
       "$55,000",
       "$45,000",
-      "$15,000",
-      "$40,000"
+      "$15,000"
     ],
     "correct_answer": [
       "$40,000"
@@ -3077,13 +3349,13 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 182,
+    "question_number": 198,
     "question_text": "Using the Topsy Turvy data (beginning accounts receivable $40,000; sales on account of $45,000, $51,750 and $59,513 for October, November and December), determine the accounts receivable for November.",
     "options": [
       "$62,250",
-      "$45,000",
       "$17,500",
       "$61,250",
+      "$45,000",
       "$69,000"
     ],
     "correct_answer": [
@@ -3094,14 +3366,14 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 183,
+    "question_number": 199,
     "question_text": "Using the Topsy Turvy data (sales on account of $45,000, $51,750 and $59,513 for October, November and December), determine the accounts receivable for December.",
     "options": [
       "$72,300",
-      "$51,750",
       "$79,351",
       "$66,274",
-      "$54,450"
+      "$54,450",
+      "$51,750"
     ],
     "correct_answer": [
       "$51,750"
@@ -3111,14 +3383,14 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 184,
+    "question_number": 200,
     "question_text": "Using the Topsy Turvy data (cash sales of $15,000, $17,250 and $19,838 for October, November and December), determine the budgeted cash sales for October.",
     "options": [
       "$65,000",
       "$45,000",
       "$55,000",
-      "$60,000",
-      "$15,000"
+      "$15,000",
+      "$60,000"
     ],
     "correct_answer": [
       "$15,000"
@@ -3128,14 +3400,14 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 185,
+    "question_number": 201,
     "question_text": "Using the Topsy Turvy data (cash sales of $15,000, $17,250 and $19,838 for October, November and December), determine the budgeted cash sales for December.",
     "options": [
+      "$19,838",
       "$71,588",
       "$79,351",
       "$59,513",
-      "$73,200",
-      "$19,838"
+      "$73,200"
     ],
     "correct_answer": [
       "$19,838"
@@ -3145,7 +3417,7 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 186,
+    "question_number": 202,
     "question_text": "Topsy Turvy Company Ltd collects 100 percent of accounts receivable in the month following the month of sale. Sales on account are $45,000, $51,750 and $59,513 for October, November and December. Determine the amount of accounts receivable that will appear on the company's fourth quarter pro forma balance sheet.",
     "options": [
       "$79,351",
@@ -3162,14 +3434,14 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 187,
+    "question_number": 203,
     "question_text": "Topsy Turvy Company Ltd has total budgeted sales of $60,000, $69,000 and $79,351 for October, November and December. Determine the amount of sales revenue that will appear on the company's fourth quarter pro forma income statement.",
     "options": [
-      "$208,351",
       "$188,838",
       "$156,263",
       "$52,088",
-      "$19,838"
+      "$19,838",
+      "$208,351"
     ],
     "correct_answer": [
       "$208,351"
@@ -3179,13 +3451,13 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 188,
+    "question_number": 204,
     "question_text": "Kaneapa Company Ltd had a beginning balance of $60,000 in accounts receivable on 1 October and collects 100 percent of accounts receivable in the month following the month of sale. Sales on account are $45,000, $49,500 and $54,450 for October, November and December. Determine the accounts receivable for November.",
     "options": [
+      "$45,000",
       "$67,000",
       "$71,500",
       "$82,000",
-      "$45,000",
       "$105,000"
     ],
     "correct_answer": [
@@ -3196,7 +3468,7 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 189,
+    "question_number": 205,
     "question_text": "Kaneapa Company Ltd has cash sales of $20,000, $22,000 and $24,200 for October, November and December. Determine the budgeted cash sales for November.",
     "options": [
       "$67,000",
@@ -3213,13 +3485,13 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 190,
+    "question_number": 206,
     "question_text": "Dandy Electronics Company Ltd has no accounts receivable on 1 October. Its sales on account are GH¢337,500, GH¢421,875 and GH¢527,344 for October, November and December, and total budgeted collections are GH¢787,500, GH¢1,321,875 and GH¢1,652,344. Determine the accounts receivable for November.",
     "options": [
-      "GH¢337,500",
       "GH¢984,375",
       "GH¢900,000",
       "GH¢787,500",
+      "GH¢337,500",
       "GH¢421,875"
     ],
     "correct_answer": [
@@ -3230,14 +3502,14 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 191,
+    "question_number": 207,
     "question_text": "Dandy Electronics Company Ltd has sales on account of GH¢337,500, GH¢421,875 and GH¢527,344 for October, November and December. Determine the amount of accounts receivable that will appear on the company's fourth quarter pro forma balance sheet.",
     "options": [
       "GH¢652,344",
       "GH¢421,875",
+      "GH¢527,344",
       "GH¢1,757,813",
-      "GH¢337,500",
-      "GH¢527,344"
+      "GH¢337,500"
     ],
     "correct_answer": [
       "GH¢527,344"
@@ -3247,7 +3519,7 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 192,
+    "question_number": 208,
     "question_text": "Dandy Electronics Company Ltd has total budgeted sales of GH¢1,125,000, GH¢1,406,250 and GH¢1,757,813 for October, November and December. Determine the amount of sales revenue that will appear on the company's fourth quarter pro forma income statement.",
     "options": [
       "GH¢1,652,344",
@@ -3264,13 +3536,13 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 193,
+    "question_number": 209,
     "question_text": "Dandy Electronics Company Ltd has total budgeted sales of GH¢1,125,000, GH¢1,406,250 and GH¢1,757,813 for October, November and December. Compute the expected increase in sales per month during November and December.",
     "options": [
       "40 percent",
       "30 percent",
-      "25 percent",
       "20 percent",
+      "25 percent",
       "35 percent"
     ],
     "correct_answer": [
@@ -3281,13 +3553,13 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 194,
+    "question_number": 210,
     "question_text": "GoldCom Corporation has three divisions preparing a sales budget. First quarter sales are East $520,000, West $740,000 and South $340,000. Growth expectations per quarter are 2 percent for East, 3 percent for West and 5 percent for South. Determine the sales in the fourth quarter for the West Division.",
     "options": [
       "$840,924",
+      "$808,618",
       "$551,828",
       "$393,593",
-      "$808,618",
       "$762,200"
     ],
     "correct_answer": [
@@ -3298,14 +3570,14 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 195,
+    "question_number": 211,
     "question_text": "GoldCom Corporation has first quarter sales of East $520,000, West $740,000 and South $340,000, with quarterly growth of 2 percent, 3 percent and 5 percent respectively. Determine the amount of sales revenue that will appear on the company's fourth quarter pro forma income statement.",
     "options": [
       "$1,649,600",
       "$1,700,924",
       "$1,826,326",
-      "$1,754,039",
-      "$1,600,000"
+      "$1,600,000",
+      "$1,754,039"
     ],
     "correct_answer": [
       "$1,754,039"
@@ -3315,14 +3587,14 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 196,
+    "question_number": 212,
     "question_text": "Hokus Pokus Company Ltd has three districts. First quarter sales are Kumasi $650,000, Accra $880,000 and Cape Coast $420,000. Growth expectations per quarter are 4 percent for Kumasi, 5 percent for Accra and 10 percent for Cape Coast. Determine the sales in the fourth quarter for the Accra District.",
     "options": [
       "$924,000",
-      "$1,018,710",
       "$970,200",
       "$1,069,646",
-      "$1,161,000"
+      "$1,161,000",
+      "$1,018,710"
     ],
     "correct_answer": [
       "$1,018,710"
@@ -3332,14 +3604,14 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 197,
+    "question_number": 213,
     "question_text": "Hokus Pokus Company Ltd has first quarter sales of Kumasi $650,000, Accra $880,000 and Cape Coast $420,000, with quarterly growth of 4 percent, 5 percent and 10 percent respectively. Determine the amount of sales revenue that will appear on the company's fourth quarter pro forma income statement.",
     "options": [
+      "$2,308,892",
       "$1,649,600",
       "$1,749,872",
       "$2,452,326",
-      "$1,950,000",
-      "$2,308,892"
+      "$1,950,000"
     ],
     "correct_answer": [
       "$2,308,892"
@@ -3349,13 +3621,13 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 198,
+    "question_number": 214,
     "question_text": "Osagyefo Clothing Company Ltd wants a cash cushion of GH¢40,000 before the interest payment at the end of each month. Its July ending cash balance is GH¢34,000 and August cash receipts are GH¢486,000. Compute the total cash available for August.",
     "options": [
-      "GH¢520,000",
       "GH¢525,000",
       "GH¢496,250",
       "GH¢485,000",
+      "GH¢520,000",
       "GH¢540,000"
     ],
     "correct_answer": [
@@ -3366,14 +3638,14 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 199,
+    "question_number": 215,
     "question_text": "Osagyefo Clothing Company Ltd has an August ending cash balance of GH¢31,000 and September cash receipts of GH¢749,000. Compute the total cash available for September.",
     "options": [
       "GH¢749,000",
+      "GH¢780,000",
       "GH¢775,000",
       "GH¢795,000",
-      "GH¢718,000",
-      "GH¢780,000"
+      "GH¢718,000"
     ],
     "correct_answer": [
       "GH¢780,000"
@@ -3383,7 +3655,7 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 200,
+    "question_number": 216,
     "question_text": "Osagyefo Clothing Company Ltd has total cash available of GH¢520,000 for August and total budgeted disbursements of GH¢540,000. Determine the cash shortage for August.",
     "options": [
       "GH¢40,000",
@@ -3400,14 +3672,14 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 201,
+    "question_number": 217,
     "question_text": "Osagyefo Clothing Company Ltd has total cash available of GH¢780,000 for September and total budgeted disbursements of GH¢632,000. Determine the cash surplus for September.",
     "options": [
       "GH¢105,000",
-      "GH¢148,000",
       "GH¢120,500",
       "GH¢80,000",
-      "GH¢188,000"
+      "GH¢188,000",
+      "GH¢148,000"
     ],
     "correct_answer": [
       "GH¢148,000"
@@ -3417,14 +3689,14 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 202,
+    "question_number": 218,
     "question_text": "Osagyefo Clothing Company Ltd has an August cash shortage of GH¢20,000 and wants to keep a cash cushion of GH¢40,000. Calculate the amount to be borrowed for August.",
     "options": [
+      "GH¢60,000",
       "GH¢90,000",
       "GH¢40,000",
       "GH¢120,000",
-      "GH¢20,000",
-      "GH¢60,000"
+      "GH¢20,000"
     ],
     "correct_answer": [
       "GH¢60,000"
@@ -3434,7 +3706,7 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 203,
+    "question_number": 219,
     "question_text": "Osagyefo Clothing Company Ltd has a September cash surplus of GH¢148,000 and wants to keep a cash cushion of GH¢40,000. Calculate the amount to be repaid for September.",
     "options": [
       "GH¢92,000",
@@ -3451,11 +3723,11 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 204,
+    "question_number": 220,
     "question_text": "Osagyefo Clothing Company Ltd is charged interest at 5 percent per month. Its loan balances after financing are GH¢120,000 in July, GH¢180,000 in August and GH¢72,000 in September. Compute the total amount of interest expense for the third quarter.",
     "options": [
-      "GH¢18,000",
       "GH¢18,600",
+      "GH¢18,000",
       "GH¢16,200",
       "GH¢15,400",
       "GH¢21,600"
@@ -3468,12 +3740,12 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 205,
+    "question_number": 221,
     "question_text": "Birdy-Birdy's Jewellery Shop wants a cash cushion of GH¢9,000 before the interest payment at the end of each month. Its July ending cash balance is GH¢7,139 and August cash receipts are GH¢180,000. Compute the total cash available for August.",
     "options": [
-      "GH¢187,139",
       "GH¢100,440",
       "GH¢163,718",
+      "GH¢187,139",
       "GH¢190,225",
       "GH¢180,000"
     ],
@@ -3485,12 +3757,12 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 206,
+    "question_number": 222,
     "question_text": "Birdy-Birdy's Jewellery Shop has an August ending cash balance of GH¢7,214 and September cash receipts of GH¢216,000. Compute the total cash available for September.",
     "options": [
       "GH¢440,400",
-      "GH¢229,226",
       "GH¢223,214",
+      "GH¢229,226",
       "GH¢189,440",
       "GH¢216,000"
     ],
@@ -3502,7 +3774,7 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 207,
+    "question_number": 223,
     "question_text": "Birdy-Birdy's Jewellery Shop has total cash available of GH¢187,139 for August and total budgeted disbursements of GH¢174,400. Determine the cash surplus for August.",
     "options": [
       "GH¢19,558",
@@ -3519,11 +3791,11 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 208,
+    "question_number": 224,
     "question_text": "Birdy-Birdy's Jewellery Shop has a September cash surplus of GH¢23,198 and wants to keep a cash cushion of GH¢9,000. Calculate the amount to be repaid for September.",
     "options": [
-      "GH¢17,312",
       "GH¢14,198",
+      "GH¢17,312",
       "GH¢19,851",
       "GH¢27,324",
       "GH¢23,198"
@@ -3536,14 +3808,14 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 209,
+    "question_number": 225,
     "question_text": "Birdy-Birdy's Jewellery Shop is charged interest at 2 percent per month. Its loan balances after financing are GH¢93,060 in July, GH¢89,321 in August and GH¢75,123 in September. Compute the total amount of interest expense for the third quarter.",
     "options": [
-      "GH¢5,150",
       "GH¢2,230",
       "GH¢6,590",
       "GH¢7,340",
-      "GH¢4,650"
+      "GH¢4,650",
+      "GH¢5,150"
     ],
     "correct_answer": [
       "GH¢5,150"
@@ -3553,7 +3825,7 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 210,
+    "question_number": 226,
     "question_text": "Birdy-Birdy's Jewellery Shop has September total cash available of GH¢223,214, total disbursements of GH¢200,016, a repayment of GH¢14,198 and interest of GH¢1,502. Compute the ending cash balance for the month of September.",
     "options": [
       "GH¢7,356",
@@ -3570,7 +3842,7 @@
     "verified": "recomputed from the printed data"
   },
   {
-    "question_number": 211,
+    "question_number": 227,
     "question_text": "Consider the two statements below. S1: Entrepreneurs dealing in low tech products should focus on products that can be made easily, marketed quickly, and terminated with a minimum of effort. BECAUSE S2: Patents cannot protect low tech products and they can be copied or easily replicated by competitors. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is a correct explanation of the first",
@@ -3587,7 +3859,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 212,
+    "question_number": 228,
     "question_text": "Consider the two statements below. S1: Entrepreneurs have to be inventive geniuses to pursue mid-tech innovations. BECAUSE S2: Mid-tech products presume the application of new knowledge. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is a correct explanation of the first",
@@ -3604,7 +3876,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 213,
+    "question_number": 229,
     "question_text": "Consider the two statements below. S1: Differentiating high-tech from mid-tech products is largely a matter of perception. BECAUSE S2: What is a high-tech product to some may be a mid-tech product to others. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is a correct explanation of the first",
@@ -3621,7 +3893,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 214,
+    "question_number": 230,
     "question_text": "Consider the two statements below. S1: New ventures establish in a market niche. BECAUSE S2: Companies try to establish segmentation strategies so that efficient use of resources can be achieved without ambiguity. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is NOT a correct explanation of the first",
@@ -3638,7 +3910,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 215,
+    "question_number": 231,
     "question_text": "Consider the two statements below. S1: Market research is a fundamental part of planning a new venture. BECAUSE S2: A market research will establish primarily if demand exists for a product or service. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is a correct explanation of the first",
@@ -3655,7 +3927,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 216,
+    "question_number": 232,
     "question_text": "Consider the two statements below. S1: Feasibility plans are best prepared by specialists. BECAUSE S2: Specialists, such as financial experts, know how to operate businesses. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is a correct explanation of the first",
@@ -3672,7 +3944,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 217,
+    "question_number": 233,
     "question_text": "Consider the two statements below. S1: Prices for goods and services must coincide with strategies that reinforce an entrepreneur's business and reputation. BECAUSE S2: Prices of products and services communicate perceptual messages to consumers. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is a correct explanation of the first",
@@ -3689,7 +3961,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 218,
+    "question_number": 234,
     "question_text": "Consider the two statements below. S1: Seed financing is needed prior to or during start-up of a new venture. BECAUSE S2: Seed financing is needed to underwrite operations, assets or business development. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is a correct explanation of the first",
@@ -3706,7 +3978,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 219,
+    "question_number": 235,
     "question_text": "Consider the two statements below. S1: Intrapreneur is a contrived word meaning a person who pursues an innovation, becoming a champion for its development within an organisation. BECAUSE S2: The word is from intra-company entrepreneur. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is NOT a correct explanation of the first",
@@ -3723,7 +3995,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 220,
+    "question_number": 236,
     "question_text": "Consider the two statements below. S1: A good way to fail quickly in a new business is to start without a clear vision. BECAUSE S2: A business without a clear vision shows a lack of understanding of marketing issues. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is a correct explanation of the first",
@@ -3740,7 +4012,7 @@
     "verified": "checked against the 2005 official marking scheme"
   },
   {
-    "question_number": 221,
+    "question_number": 237,
     "question_text": "Consider the two statements below. S1: Planning is a process that never ends for a new venture. BECAUSE S2: Businesses evolve from early start-up to a final growth stage if planning is done well in the beginning. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is a correct explanation of the first",
@@ -3757,7 +4029,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 222,
+    "question_number": 238,
     "question_text": "Consider the two statements below. S1: Most technical entrepreneurs tend to start businesses closely related to what they did in previous career positions. BECAUSE S2: The success of entrepreneurs is based on a business ideology which is defined as a system of beliefs about how one conducts an enterprise. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is NOT a correct explanation of the first",
@@ -3774,12 +4046,12 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 223,
+    "question_number": 239,
     "question_text": "Consider the two statements below. S1: There are more male entrepreneurs than female entrepreneurs. BECAUSE S2: Men tend to launch ventures early in their lives, but women tend to become entrepreneurs after their children are grown. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is NOT a correct explanation of the first",
-      "the first statement is TRUE and the second is FALSE",
       "both statements are TRUE and the second is a correct explanation of the first",
+      "the first statement is TRUE and the second is FALSE",
       "the first statement is FALSE and the second is TRUE",
       "both statements are FALSE"
     ],
@@ -3791,7 +4063,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 224,
+    "question_number": 240,
     "question_text": "Consider the two statements below. S1: Market potential is critically influenced by the timing of new products or services. BECAUSE S2: Timing pertains to when products or services are introduced, how they are priced, how they are distributed and how they are promoted. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is NOT a correct explanation of the first",
@@ -3808,7 +4080,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 225,
+    "question_number": 241,
     "question_text": "Consider the two statements below. S1: An extraordinary change is taking place as services which used to be done by government workers are now being privatised in Ghana and elsewhere in the world. BECAUSE S2: Abrupt changes take place in the composition of populations and create the need for new programmes and services. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is a correct explanation of the first",
@@ -3825,7 +4097,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 226,
+    "question_number": 242,
     "question_text": "Consider the two statements below. S1: All financial forecasts and projections are based on a number of financial assumptions. BECAUSE S2: The outcomes of future events are not predictable. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is NOT a correct explanation of the first",
@@ -3842,7 +4114,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 227,
+    "question_number": 243,
     "question_text": "Consider the two statements below. S1: Investors put greater emphasis on the entrepreneurial team than on the business concept. BECAUSE S2: This has become an axiom common among venture capitalists who will buy into an A team with a B product faster than they will buy into a B team with an A product. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is a correct explanation of the first",
@@ -3859,7 +4131,7 @@
     "verified": "not checked against a printed key"
   },
   {
-    "question_number": 228,
+    "question_number": 244,
     "question_text": "Consider the two statements below. S1: Inventors often place more emphasis on the entrepreneur's character than lenders and often spend much more time conducting background checks. BECAUSE S2: Inventors provide large sums of money in the form of equity that they will be cashing out in a year or two. Select the correct response.",
     "options": [
       "both statements are TRUE and the second is a correct explanation of the first",

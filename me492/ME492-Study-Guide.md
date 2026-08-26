@@ -16,13 +16,36 @@ Built from the past papers and the lecture slides.
 | IMAGE PASSCO | Several papers, includes a newer 2015/2016 paper |
 | ME 492 ONLINE 2020 | Moodle exam, 60 questions, answers highlighted |
 | Slides 1, 2, 3, 8, 9, 10 and ME 492 2025 NOTES | Source of the definitions |
+| Canvas paper (inside IMAGE PASSCO, pages 1 to 33) | A 40 question, 40 minute paper. Separate from the Moodle 2020 exam. |
+
+**All five scanned files have now been read.** They have no text layer, so they
+were read twice: once by machine for the text, and once by eye for the pen
+marks. That pass added 16 questions to the bank and settled several disputes.
 
 ---
 
 ## 1. Read this first
 
 **The paper repeats itself.** The same question bank has run since 2005. If you
-know the bank, you know the paper.
+know the bank, you know the paper. Measured across the readable papers, 66 % of
+questions belong to a group that appears more than once. Of the 2008 paper,
+88 % of the questions are word for word from 2005.
+
+**The finance questions are copied out of the notes.** Compare these two.
+
+> **Notes, page 12:** "Long term debt (lasting more than one year) is frequently
+> used to purchase some asset such as a piece of machinery, land, or a building,
+> with part of the value of the asset (usually from **50 to 80 percent** of the
+> total value) being used as collateral for the long-term loan."
+
+> **2005 exam, question 100:** "Long term debt is frequently used to purchase
+> some asset such as a piece of machinery, land, or a building, with part of the
+> value of the asset usually from ____ to ____ percent of the total value being
+> used as collateral."
+
+The next sentence in the notes is question 101. So for the finance section you
+are not guessing. `ME 492 2025 NOTES` pages 11 to 24 and deck 10 slides 30 to 64
+**are** the answer key. Read them as sentences, not as topics.
 
 **The option letters change every year. The answer text does not.**
 Example: "A market segment on which a business can choose to concentrate its
@@ -187,6 +210,17 @@ Wrong: "their creation through legal contracts".
 
 ### 4.5 Popular myths, and the truth
 
+**The examined version.** "There are several thoughts about entrepreneurs proven
+to be more myths than facts. These include ..."
+
+| Statement | Is it a myth? |
+|---|---|
+| Entrepreneurs "struggle to succeed" and get their ideas by hard work | **No.** This is the truth. The slides say they make their own luck by working hard. |
+| Entrepreneurs are mavericks and misfits, and entrepreneurs are born | **Yes.** Slide 2.64 says they are not misfits. Slide 2.66 favours "made". |
+| They strike it rich on the first flash of genius, or fail miserably with the first venture | **Yes.** Most ventures start slow and change in steps. |
+
+Answer **ii and iii only**.
+
 | Myth | Reality |
 |---|---|
 | Entrepreneurs are lucky | Most make their luck by working hard |
@@ -235,13 +269,33 @@ risk. This is the standard trap in this item.
 - The reason for business failure is most commonly **inexperience**.
 - The risk of business failure for a business starting from scratch is
   **higher**.
-- The KNUST papers mark entrepreneurs as **high risk takers**. Use that.
+- The KNUST papers mark entrepreneurs as **high risk takers**. Use that. It is
+  circled on the 2015 script and selected on the Canvas paper. Note the tension:
+  Table 1-1 of the overview slides calls the successful entrepreneur "able to
+  take **calculated** risk". Answer what the paper marks.
 - Entrepreneurs typically form **service businesses**.
 - Entrepreneurs typically have a **high internal locus of control**. True.
 - Entrepreneurs **are the life of the party**.
 - Not a reason for going into business for yourself: **to live where "I like"**.
 - Most technical entrepreneurs start businesses close to their previous career
   work. This is the **corridor principle**.
+- Entrepreneurs typically form **service businesses**, not manufacturing ones.
+
+### 4.10 Where the word came from
+
+Slides 1.16 and 1.17. This is now an examined item.
+
+| Statement | True? |
+|---|---|
+| Derived from the 17th century French **entreprendre**, "to undertake" | **True** |
+| Refers to individuals who were "undertakers", **and the term was discovered by business students** | **False.** The first half is right, the second half is not. |
+| Refers to people who are **contractors and builders** | **True.** They bore the risk of profit or loss. |
+
+So the answer is **i and iii only**.
+
+A companion item asks what the concept of entrepreneurship has done. It has
+**given enterprise a new direction** and it has **been around a very long time**.
+It has **not** "just been discovered". Again **i and iii only**.
 
 ---
 
@@ -302,6 +356,17 @@ analytical planning" plus "implementation and commercial application".
 the **creative** process, not the innovation process. Any option that mixes them
 in is wrong.
 
+**The 2007 version of the same question.** "Innovation is the development process
+of translating a new idea into a commercial reality and it involves ..."
+
+| Statement | In or out |
+|---|---|
+| The translation of an idea into a new **invention** | **Out.** Slide 2.40: "Innovation is different from invention." |
+| Persistence in analytically working out the details of product design, developing marketing, obtaining finances, planning operations | **In.** This is analytical planning. |
+| Obtaining materials and technical manufacturing capabilities, staffing operations, establishing an organisation | **In.** This is organising resources. |
+
+Answer **ii and iii only**. Same logic as the 2005 item, different words.
+
 ### 5.4 Windows and corridors
 
 - A **window** is a time horizon during which opportunities exist before
@@ -325,6 +390,35 @@ That is the only correct trio. Reject:
 
 In the 2020 paper the question was reworded as *conditions necessary* and the
 answer was still **iii only**.
+
+### 5.5b The seven conditions for technological innovation
+
+Three people **and** seven conditions. The examined statements are:
+
+| Statement | Verdict |
+|---|---|
+| **A little** support from external sources: government agencies, investors, vendors, suppliers, creditors | **False as printed.** The condition is adequate support, not a little. |
+| A clear need for the application by sufficient potential consumers to warrant committing resources | **True** |
+| The realisation of the product, process or service as a useful innovation providing value to society | **True** |
+
+Answer **ii and iii only**. Watch the word "little". That single word is the trap.
+
+### 5.5c Major sources of change, the 2007 wording
+
+The slides name five sources: scientific knowledge, process innovations,
+industrial changes, market changes and demographic changes.
+
+| Statement | Verdict |
+|---|---|
+| Industrial changes and **shop changes** | **False.** "Shop changes" is not one of the five. |
+| Scientific knowledge and process innovations | **True** |
+| Societal changes and socio-cultural changes | **True** |
+
+Answer **ii and iii only**.
+
+> **Method for every "sources of change" item.** Find the phrase that is not on
+> the list of five. That statement is the false one. It worked in 2005
+> ("industrial revolution") and it works here ("shop changes").
 
 ### 5.6 Brainstorming rules
 
@@ -479,6 +573,16 @@ firms that require capital equipment. It contains:
 All three. In the older phrasing: *operations, human resources, facilities,
 inventory and related issues.*
 
+### 6.10b What feeds the financial section
+
+The financial section is built from the rest of the plan. All three of these
+supply it, so the answer is **all three**:
+
+1. The **product and service description**, which sets what is being sold.
+2. The **operations or manufacturing segment**, which sets the costs.
+3. The **market research and analysis and market plan segments**, which set the
+   sales.
+
 ### 6.11 What goes in the appendix
 
 **Resumes of partners, facility layouts, and partnership agreements.**
@@ -630,9 +734,26 @@ Not "a good estimate of revenue". Not "well defined investment needs".
   **distribution** system.
 
 ### 8.8 Product
-
 An expanded view of a company's product includes **function, form, packaging
 characteristics and service after sales support**.
+
+**Product as a catchall term.** A second item asks what "product" covers in
+marketing. It covers all three of these, so the answer is **all three**:
+
+1. The **business concept**, such as fast-food franchising.
+2. The **physical object or service** sold, with its packaging, image, brand name
+   and warranty.
+3. The **physical attributes** that shape how customers see it: colours, shapes,
+   sizes and materials.
+
+### 8.8b What a marketing strategy provides
+
+As part of the market plan, the marketing strategy gives guidelines on all three
+of these. The answer is **all three**:
+
+1. A **marketing program** that addresses the marketing activities.
+2. **Expected results**, the allocation of resources, and who is responsible.
+3. The ways in which the enterprise will be **controlled**.
 
 ### 8.9 Promotion and advertising
 
@@ -1065,6 +1186,19 @@ The four operating budgets for a retail venture:
 3. Selling and administrative (S&A) budget
 4. Cash budget
 
+### 12.2b Three definitions of a budget that get asked separately
+
+| The question | The answer |
+|---|---|
+| A statement of **estimated income and expenses** over a specified period of time | **a budget** (not the operating, capital or master budget: the question asks for the general term) |
+| Which of the following is a **formal plan expressed in numerical terms** | **a budget** (a financial statement reports what happened; a budget plans what should happen) |
+| A budget is | **all of the above**: prepared as a planning function, administered as a control function, and a statement of expected results in financial or numerical terms |
+| **Resources** expected to produce current and future benefits | **assets** |
+
+**One weak item.** "Administration plans generally cover a period of" is marked
+**less than 1 year** on the Canvas paper. The phrase appears nowhere in the notes
+or the slides. Take the paper's answer, but know it rests on nothing else.
+
 ### 12.3 The pro forma statements
 
 | Statement | What it summarises |
@@ -1083,6 +1217,18 @@ The four operating budgets for a retail venture:
 **Trap.** One compiled answer sheet says the pro forma **income** statement
 summarises assets, liabilities and equity. That is wrong. It is the **balance
 sheet**.
+
+### 12.3b What feeds the pro forma balance sheet
+
+Notes page 15 and pages 19 to 22 set out the flow. All three of these are needed,
+so the answer is **all three**:
+
+1. The **pro forma income and cash flow statements**, which supply the closing
+   balances.
+2. The **operations and sales budgets**. Information in the operating budgets is
+   used to prepare the financial statement budgets.
+3. The **capital budgets** prepared under different scenarios. The capital budget
+   feeds several operating budgets and the cash budget.
 
 ### 12.4 A useful truth for the "because" section
 
@@ -1396,6 +1542,16 @@ Using the standard key: **A** = all three, **B** = i and ii, **C** = i and iii,
 | A competitive analysis | **D** | Only the pre-start-up stage. |
 | A Disclosure Document | Statement of intent to patent | Not the same as a patent. |
 | Corporate entrepreneurship | **A** | All three. |
+| Popular myths of entrepreneurship | **ii and iii** | Mavericks/misfits/born, and the flash-of-genius myth. Hard work is not a myth. |
+| Major sources of change, 2007 wording | **ii and iii** | "Shop changes" is not one of the five sources. |
+| Innovation development process | **ii and iii** | Analytical planning plus organising resources. Invention is not innovation. |
+| Seven conditions for technological innovation | **ii and iii** | "A little support" is wrong. It should be adequate support. |
+| The concept of entrepreneurship | **i and iii** | New direction, and around a long time. Not "just been discovered". |
+| Origin of the word entrepreneurship | **i and iii** | Entreprendre, and contractors/builders. Not "discovered by business students". |
+| Product as a catchall term | **all three** | Business concept, the object with packaging and brand, and the physical attributes. |
+| What a marketing strategy provides | **all three** | The programme, the expected results and resources, and the controls. |
+| Inputs to the financial section | **all three** | Product description, operations segment, market research and market plan. |
+| Inputs to the pro forma balance sheet | **all three** | Income and cash flow statements, operations and sales budgets, capital budgets. |
 
 ---
 
@@ -1408,21 +1564,44 @@ the reason.
 |---|---|---|
 | Feasibility plans best prepared by specialists | **E, both false** | 2005 official key and 2020 online exam agree. |
 | The organisational plan describes | **the organogram of the venture** | 2020 online exam and 2015 paper agree. |
-| Budgets for expenditures impacting more than one year | **capital budgets** | Printed 2005 and 2007 keys. |
-| Asset-based financing | **debt financing** | Notes and 2005 key. One compiled sheet wrongly says equity. |
+| Budgets for expenditures impacting more than one year | **capital budgets** | Notes p15: "The **capital budget** describes the new venture's **long term plans** regarding investments in facilities, equipment, new products". One compiled sheet wrongly says strategic budgets. |
+| Asset-based financing | **debt financing** | Settled by the lecturer's own words. Notes p11 and deck 10 slide 35: "debt financing (**also called asset-based financing**) requires that some asset ... be used as collateral". One compiled sheet wrongly says equity. |
 | Summarises projected assets, liabilities and equity | **pro forma balance sheet** | Notes. One compiled sheet wrongly says income statement. |
-| Setting up specifications of primary clients | **customer scenario** | Every printed key. One compiled sheet wrongly says market survey. |
-| The planned process of determining prices | **pricing policy** | 2007 and 2020. One hand-marked copy wrongly says price setting. |
+| Setting up specifications of primary clients | **customer scenario** | Settled. The 2020 online exam prints "Market Survey" as a **distractor** in question 42 and marks customer scenario. One compiled sheet wrongly says market survey. |
+| The planned process of determining prices | **pricing policy** | Settled. The 2020 online exam asks this **twice**, at questions 47 and 49, and prints "Price setting" as a distractor both times. One hand-marked copy wrongly says price setting. |
 | A marketing plan is implemented through | **marketing program** | Printed key. Pick "marketing activities" only if "program" is absent. |
 | Entrepreneurs can be described in terms of | **a, b and c only** | The 2015 red-marked paper. One 2007 copy says "a and b only". Pick the fuller option unless "successfully incubating a business" is absent. |
 | Common elements of a business plan | Depends on the printed options | **Executive Summary** or **Market research and analysis**. Never Abstract or Literature Review. |
-| Lenders' aspects of credit character | **all three** | 2008 paper. The 2020 highlight showing "ii only" is a student mark, not a key. |
+| Lenders' aspects of credit character | **all three** | 2008 paper. The 2020 highlight showing "ii only" is a student mark on an unsubmitted attempt, not a key. |
 | Replacement of products with new and better ones | **creative destruction** | Schumpeter. The circled "upscaling" on one script is a student error. |
-| Board of advisors example | The fullest professional list printed | 2005 says lawyer, banker, marketer. 2015 says lawyer, banker, accountant, advertising agent. |
+| Board of advisors example | **a lawyer, a banker, an accountant and an advertising agent** | **Corrected.** The 2005 official bold answer is option **d**, the four-person list. "A lawyer, a banker and a marketer" is option **b**, the distractor. An earlier version of this guide had these the wrong way round. Take the fullest professional list printed. |
 
 ---
 
-## 17. Fifteen traps that cost marks every year
+## 16b. Which source to trust when they disagree
+
+Not every mark on a past paper is an answer. Rank them like this.
+
+| Source | What the marks are | Trust it? |
+|---|---|---|
+| `ME 492 2025 NOTES` and the lecture slides | The lecturer's own words | **Highest** |
+| `ME492- 2005 MARKING SCHEME` | Official. Letters for Q1 to 35, bold text for Q36 to 120 | **Yes** |
+| `ENTREPRENEUR MCQ 1pdf` | Official. Answers printed in bold | **Yes** |
+| `IMAGE PASSCO` pages 66 to 107 | Photographs of the printed 2005 solutions, key letters in the margin | **Yes** |
+| `PASCO 1`, `Pasco2`, other `IMAGE PASSCO` pages | A student's pencil, red pen and circles | **No** |
+| `ME 492 ONLINE 2020` | Header reads "Not yet answered" and "Review: Not permitted". The highlight and the filled radio button disagree on at least three questions | **No** |
+
+**Proof that the hand marks fail.** On one script the student wrote **E**
+(i, ii and iii) for "Many small businesses are small by". The official 2005 key
+says **i and ii only**. Small businesses are not small "through their creation by
+legal contracts". On another the student circled "upscaling" for the replacement
+of products with new and better ones. It is **creative destruction**, and deck 1
+slide 50 says so in Schumpeter's own words.
+
+> **Rule.** A circle is somebody's guess. A printed key or a sentence in the
+> notes is the answer.
+
+## 17. Seventeen traps that cost marks every year
 
 1. **Answering by letter.** The letters are shuffled every year. Answer by text.
 2. **Using the wrong i/ii/iii code.** Read the KEY box first and circle it.
@@ -1450,6 +1629,13 @@ the reason.
     percent that the table contradicts.
 15. **Intrapreneurs do not take personal investment risk.** The company carries
     it.
+16. **Innovation is not invention.** Invention is the verified result of a
+    creative idea. Innovation converts something new into useful goods or
+    services. Reject any option that calls invention part of the innovation
+    process.
+17. **One wrong word makes a whole statement false.** "Shop changes", "a little
+    support", "discovered by business students". Read every clause of an
+    (i) (ii) (iii) statement, not just the first half.
 
 ---
 

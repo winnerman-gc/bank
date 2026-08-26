@@ -200,6 +200,48 @@ SET1 = [
      "value added products and services",
      ["profitable return on investment", "wealth accumulation", "career positions",
       "income and job stability"]),
+
+    # -- added 2026: found in the 2007/2008 and Canvas papers, previously missing --
+    ("There are several thoughts about entrepreneurs that have been proven to be more "
+     "myths than facts and these include (i) entrepreneurs struggle to succeed and get "
+     "their ideas by hard work (ii) entrepreneurs are mavericks and misfits, and "
+     "entrepreneurs are born (iii) entrepreneurs strike it rich with the first great "
+     "flash of genius, or conversely they fail miserably with the first venture",
+     "ii and iii only are correct",
+     ["i, ii and iii are correct", "i and ii only are correct", "i only is correct",
+      "iii only is correct"]),
+
+    ("Entrepreneurs tend to be strategic thinkers who recognise changes and see "
+     "opportunities where others do not. Major sources of change include (i) industrial "
+     "changes and shop changes (ii) scientific knowledge and process innovations "
+     "(iii) societal changes and socio-cultural changes",
+     "ii and iii only are correct",
+     ["i, ii and iii are correct", "i and ii only are correct", "i only is correct",
+      "iii only is correct"]),
+
+    ("The concept of entrepreneurship (i) has given us a new direction for enterprises "
+     "(ii) has just been discovered (iii) has been around for a very long time",
+     "i and iii only are correct",
+     ["i, ii and iii are correct", "i and ii only are correct", "ii only is correct",
+      "iii only is correct"]),
+
+    ("Entrepreneurship (i) was derived from the 17th century French word entreprendre "
+     "(ii) refers to individuals who were undertakers and is a term that has been "
+     "discovered by business students (iii) refers to people who are contractors and "
+     "builders",
+     "i and iii only are correct",
+     ["i, ii and iii are correct", "i and ii only are correct", "ii only is correct",
+      "iii only is correct"]),
+
+    ("Entrepreneurs are",
+     "high risk takers",
+     ["moderate risk takers", "small risk takers", "risk averse people",
+      "people for whom risk does not matter"]),
+
+    ("Entrepreneurs",
+     "are the life of the party",
+     ["will never go to parties", "just fit into the crowd at a party",
+      "are bores at a cocktail party", "avoid all social gatherings"]),
 ]
 
 # ---------------------------------------------------------------------------
@@ -307,6 +349,28 @@ SET2 = [
      "corridor principle",
      ["window principle", "incubation principle", "segmentation principle",
       "creative destruction principle"]),
+
+    # -- added 2026: found in the 2007/2008 paper, previously missing --
+    ("Innovation is the development process of translating a new idea into a commercial "
+     "reality and it involves (i) the translation of an idea into a new invention "
+     "(ii) persistence in analytically working out the details of product design or "
+     "service, developing marketing, obtaining finances and planning operations "
+     "(iii) obtaining materials and technical manufacturing capabilities, staffing "
+     "operations and establishing an organisation for the manufacture of a product",
+     "ii and iii only are correct",
+     ["i, ii and iii are correct", "i and ii only are correct", "i only is correct",
+      "iii only is correct"]),
+
+    ("A number of industrial studies reveal that for a technological innovation to "
+     "succeed there are three important people involved and seven important conditions "
+     "to satisfy. The seven conditions include (i) a little support from external "
+     "sources including government agencies, investors, vendors, suppliers and creditors "
+     "(ii) a clear need for the application by sufficient potential consumers to warrant "
+     "the commitment of resources to the innovation (iii) the realisation of the product, "
+     "process or service as a useful innovation providing value to society",
+     "ii and iii only are correct",
+     ["i, ii and iii are correct", "i and ii only are correct", "i only is correct",
+      "iii only is correct"]),
 ]
 
 # ---------------------------------------------------------------------------
@@ -483,6 +547,15 @@ SET3 = [
      "i, ii and iii are correct",
      ["i and ii only are correct", "i and iii only are correct", "i only is correct",
       "iii only is correct"]),
+
+    # -- added 2026: found in the 2007/2008 paper, previously missing --
+    ("The information needed to develop the financial section of a business plan is "
+     "gotten from, among other things, (i) the product and service description "
+     "(ii) the operations or manufacturing segment (iii) the market research and "
+     "analysis and market plan segments",
+     "i, ii and iii are correct",
+     ["i and ii only are correct", "i and iii only are correct",
+      "ii and iii only are correct", "i only is correct"]),
 ]
 
 # ---------------------------------------------------------------------------
@@ -723,6 +796,24 @@ SET5 = [
      "i, ii and iii are correct",
      ["i and ii only are correct", "i and iii only are correct", "i only is correct",
       "iii only is correct"]),
+
+    # -- added 2026: found in the 2007/2008 paper, previously missing --
+    ("Used as a catchall term, product in marketing terms includes (i) the business "
+     "concept, such as fast-food franchising (ii) physical objects or services being "
+     "sold, together with packaging, image, brand name and warranty (iii) physical "
+     "attributes that influence consumers perceptions, such as colours, shapes, sizes "
+     "and materials",
+     "i, ii and iii are correct",
+     ["i and ii only are correct", "i and iii only are correct",
+      "ii and iii only are correct", "i only is correct"]),
+
+    ("As part of a market plan, a marketing strategy provides guidelines for the "
+     "entrepreneur concerning (i) a marketing program which addresses the marketing "
+     "activities (ii) expected results, allocation of resources and responsibilities "
+     "for marketing (iii) ways in which the enterprise will be controlled",
+     "i, ii and iii are correct",
+     ["i and ii only are correct", "i and iii only are correct",
+      "ii and iii only are correct", "i only is correct"]),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1059,6 +1150,11 @@ SET8 = [
      "i, ii and iii are correct",
      ["i and ii only are correct", "i and iii only are correct", "i only is correct",
       "iii only is correct"]),
+
+    # -- added 2026: found in the Canvas paper, previously missing --
+    ("Resources expected to produce current and future benefits are referred to as",
+     "assets",
+     ["capital", "liabilities", "shareholding", "net worth"]),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1204,6 +1300,29 @@ SET9 = [
     ("Which of the following represents a long-term solvency ratio?",
      "debt to equity ratio",
      ["return on equity", "equity ratio", "assets turnover ratio", "current ratio"]),
+
+    # -- added 2026: found in the 2007/2008 and Canvas papers, previously missing --
+    ("In preparing the pro forma balance sheet, the entrepreneur will require the use of "
+     "(i) pro forma income and cash flow statements (ii) operations and sales budgets "
+     "(iii) capital budgets prepared under different scenarios",
+     "i, ii and iii are correct",
+     ["i and ii only are correct", "i and iii only are correct",
+      "ii and iii only are correct", "i only is correct"]),
+
+    ("A statement of estimated income and expenses over a specified period of time is "
+     "known as a",
+     "budget",
+     ["operating budget", "capital budget", "master budget", "financial statement"]),
+
+    ("Which of the following is a formal plan expressed in numerical terms?",
+     "budget",
+     ["performance evaluation", "financial statement", "production schedule",
+      "proposal"]),
+
+    ("Administration plans generally cover a period of",
+     "less than 1 year",
+     ["five years or less", "more than 5 years", "more than 10 years",
+      "exactly 3 years"]),
 ]
 
 # ---------------------------------------------------------------------------
