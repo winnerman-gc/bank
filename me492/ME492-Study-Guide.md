@@ -7,16 +7,20 @@ Built from the past papers and the lecture slides.
 
 | Source | What it is |
 |---|---|
-| ME492 2005 Marking Scheme (120 questions and solutions) | Full paper with official answers |
-| ENTREPRENEUR MCQ 1pdf (2004/2005 Section A) | 40 finance questions, answers in bold |
-| Pasco2 (pcu/coe/216/07) | 2007 paper, correct options marked in red |
-| PASCO 1 | 2008-style paper, 135+ questions, hand-marked |
-| ME 492 PRACTICEOBJECTIVES | 2007/2008 paper, 150 questions |
-| EntrepreneurshipPasscoNew | Compiled answers, 150 questions |
-| IMAGE PASSCO | Several papers, includes a newer 2015/2016 paper |
-| ME 492 ONLINE 2020 | Moodle exam, 60 questions, answers highlighted |
-| Slides 1, 2, 3, 8, 9, 10 and ME 492 2025 NOTES | Source of the definitions |
-| Canvas paper (inside IMAGE PASSCO, pages 1 to 33) | A 40 question, 40 minute paper. Separate from the Moodle 2020 exam. |
+| `3-past-papers/2005-full-paper-120q-OFFICIAL-KEY.pdf` | Full paper with official answers |
+| `3-past-papers/2005-section-a-finance-40q-OFFICIAL-KEY.pdf` | 40 finance questions, answers in bold |
+| `3-past-papers/2007-paper-student-red-pen.pdf` | 2007 paper (pcu/coe/216/07), options ticked in red |
+| `3-past-papers/2008-paper-student-handwriting.pdf` | 2008-style paper, 135+ questions, hand-marked |
+| `3-past-papers/2008-paper-150q-unmarked.pdf` | 2007/2008 paper, 150 questions, no answers |
+| `3-past-papers/compiled-answer-sheet-HAS-ERRORS.pdf` | Compiled answers, 150 questions. Wrong on at least three items. |
+| `3-past-papers/2015-and-canvas-mixed-scans.pdf` | Several papers, including a 2015/2016 paper |
+| `3-past-papers/2020-moodle-exam-student-marks.pdf` | Moodle exam, 60 questions, highlighted by a student |
+| `2-lectures/`, all of it, above all `0-COURSE-NOTES-2025.pdf` | Source of the definitions |
+| Canvas paper (inside `2015-and-canvas-mixed-scans.pdf`, pages 1 to 33) | A 40 question, 40 minute paper. Separate from the Moodle 2020 exam. |
+
+**File names.** The folder was reorganised. The lecturer's own deck numbers are
+kept, so "deck 10" in this guide is `2-lectures/10-financing-new-ventures.pptx`,
+"deck 2" is `02-creativity-and-innovation.pptx`, and so on. See `START-HERE.md`.
 
 **All five scanned files have now been read.** They have no text layer, so they
 were read twice: once by machine for the text, and once by eye for the pen
@@ -44,7 +48,8 @@ questions belong to a group that appears more than once. Of the 2008 paper,
 > used as collateral."
 
 The next sentence in the notes is question 101. So for the finance section you
-are not guessing. `ME 492 2025 NOTES` pages 11 to 24 and deck 10 slides 30 to 64
+are not guessing. `2-lectures/0-COURSE-NOTES-2025.pdf` pages 11 to 24 and
+`2-lectures/10-financing-new-ventures.pptx` slides 30 to 64
 **are** the answer key. Read them as sentences, not as topics.
 
 **The option letters change every year. The answer text does not.**
@@ -1584,12 +1589,12 @@ Not every mark on a past paper is an answer. Rank them like this.
 
 | Source | What the marks are | Trust it? |
 |---|---|---|
-| `ME 492 2025 NOTES` and the lecture slides | The lecturer's own words | **Highest** |
-| `ME492- 2005 MARKING SCHEME` | Official. Letters for Q1 to 35, bold text for Q36 to 120 | **Yes** |
-| `ENTREPRENEUR MCQ 1pdf` | Official. Answers printed in bold | **Yes** |
-| `IMAGE PASSCO` pages 66 to 107 | Photographs of the printed 2005 solutions, key letters in the margin | **Yes** |
-| `PASCO 1`, `Pasco2`, other `IMAGE PASSCO` pages | A student's pencil, red pen and circles | **No** |
-| `ME 492 ONLINE 2020` | Header reads "Not yet answered" and "Review: Not permitted". The highlight and the filled radio button disagree on at least three questions | **No** |
+| `0-COURSE-NOTES-2025.pdf` and the lecture slides | The lecturer's own words | **Highest** |
+| `2005-full-paper-120q-OFFICIAL-KEY.pdf` | Official. Letters for Q1 to 35, bold text for Q36 to 120 | **Yes** |
+| `2005-section-a-finance-40q-OFFICIAL-KEY.pdf` | Official. Answers printed in bold | **Yes** |
+| `2015-and-canvas-mixed-scans.pdf` pages 66 to 107 | Photographs of the printed 2005 solutions, key letters in the margin | **Yes** |
+| Any file whose name says `student-red-pen`, `student-handwriting` or `student-marks` | A student's pencil, red pen and circles | **No** |
+| `compiled-answer-sheet-HAS-ERRORS.pdf` | A typed-up list, wrong on asset-based financing, the more-than-one-year budget and customer scenario | **No** |
 
 **Proof that the hand marks fail.** On one script the student wrote **E**
 (i, ii and iii) for "Many small businesses are small by". The official 2005 key

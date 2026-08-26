@@ -2,6 +2,9 @@
 
 Date: 26 August 2026. Bank audited: `compiled.json`, 228 questions.
 
+**Resolved.** All 16 questions below were added the same day. The bank now holds
+244. See the README section "The 2026 audit".
+
 ---
 
 ## 1. The answer
@@ -28,7 +31,7 @@ Both passes were needed. The second pass found things the first could not.
 
 ### Cluster A: the 2007/2008 multiple-completion section
 
-`IMAGE PASSCO.pdf`, pages 44 to 51. Questions numbered about 131 to 150. This
+`3-past-papers/2015-and-canvas-mixed-scans.pdf`, pages 44 to 51. Questions numbered about 131 to 150. This
 block uses the second key: **A = i only, B = ii only, C = iii only,
 D = ii and iii only, E = i, ii and iii.**
 
@@ -51,21 +54,26 @@ unsettled and reason from the notes.
 
 ### Cluster B: a Canvas quiz nobody had noticed
 
-`IMAGE PASSCO.pdf`, pages 1 to 33, are phone screenshots of a **40 question,
+`3-past-papers/2015-and-canvas-mixed-scans.pdf`, pages 1 to 33, are phone screenshots of a **40 question,
 40 minute Canvas quiz**. It is a separate paper from the Moodle 2020 exam. Most
 of its questions are already in the bank. These six are not.
 
 | # | The question | Options shown |
 |---|---|---|
-| B1 | Entrepreneurs are | high risk takers / **moderate risk takers** / small risk takers / does not matter |
+| B1 | Entrepreneurs are | **high risk takers** / moderate risk takers / small risk takers / does not matter |
 | B2 | Entrepreneurs | will never go to parties / just fit into the crowd at a party / are the life of the party / are bores at a cocktail party / none of the above |
 | B3 | **Resources expected to produce current and future benefits** are referred to as | **assets** / capital / liability / shareholding |
 | B4 | **Administration plans** generally cover a period of | less than 1 year / five years or less / more than 5 years / more than 10 years |
 | B5 | A **statement of estimated income and expenses** over a specified period of time is known as | **budget** / operating budget / capital budget / master budget |
 | B6 | Which of the following is a **formal plan expressed in numerical terms** | performance evaluation / **budget** / financial statement / production schedule / proposal |
 
-B1 and B2 are the classic entrepreneur-profile pair. The answer to B1 is
-**moderate risk takers**. Entrepreneurs take calculated risks, not wild ones.
+B1 and B2 are the classic entrepreneur-profile pair. **Correction to my first
+reading:** I first assumed B1 was "moderate risk takers", on the reasoning that
+entrepreneurs take calculated risks. The papers say otherwise. "High risk takers"
+is circled on the 2015 script and selected on the Canvas paper, so that is what
+went into the bank. The tension is real and worth knowing: Table 1-1 of the
+overview slides calls the successful entrepreneur "able to take **calculated**
+risk". Answer what the paper marks.
 
 ## 4. The verification problem, stated plainly
 
@@ -74,15 +82,16 @@ fixed**, and the reason matters.
 
 | Source | What the marks are | Can it verify an answer? |
 |---|---|---|
-| `ME492- 2005 MARKING SCHEME.pdf` | Official. Letters printed for Q1 to 35, bold text for Q36 to 120 | **Yes** |
-| `ENTREPRENEUR MCQ 1pdf.pdf` | Official. Answers printed in **bold** | **Yes**, for its 40 finance questions |
-| `IMAGE PASSCO.pdf` pages 66 to 107 | Photographs of the printed 2005 solutions, key letters in the margin | **Yes** |
-| `IMAGE PASSCO.pdf` other pages | A student's pencil circles and margin letters | **No** |
-| `PASCO 1.pdf` | A student's handwriting and circles | **No** |
-| `Pasco2.pdf` | Red pen ticks, by hand | **No** |
-| `ME 492 ONLINE 2020-1.pdf` | Header says "Not yet answered" and "Review: Not permitted". The highlight and the filled radio button **disagree** on at least three questions | **No** |
+| `3-past-papers/2005-full-paper-120q-OFFICIAL-KEY.pdf` | Official. Letters printed for Q1 to 35, bold text for Q36 to 120 | **Yes** |
+| `3-past-papers/2005-section-a-finance-40q-OFFICIAL-KEY.pdf` | Official. Answers printed in **bold** | **Yes**, for its 40 finance questions |
+| `3-past-papers/2015-and-canvas-mixed-scans.pdf` pages 66 to 107 | Photographs of the printed 2005 solutions, key letters in the margin | **Yes** |
+| `3-past-papers/2015-and-canvas-mixed-scans.pdf` other pages | A student's pencil circles and margin letters | **No** |
+| `3-past-papers/2008-paper-student-handwriting.pdf` | A student's handwriting and circles | **No** |
+| `3-past-papers/2007-paper-student-red-pen.pdf` | Red pen ticks, by hand | **No** |
+| `3-past-papers/2020-moodle-exam-student-marks.pdf` | Header says "Not yet answered" and "Review: Not permitted". The highlight and the filled radio button **disagree** on at least three questions | **No** |
 
-**Proof that the hand marks are unreliable.** On `IMAGE PASSCO` page 44, the
+**Proof that the hand marks are unreliable.** On `2015-and-canvas-mixed-scans.pdf`
+page 44, the
 student wrote **E** (i, ii and iii) for "Many small businesses are small by".
 The official 2005 key says **i and ii only**. Small businesses are not small
 "through their creation by legal contracts". The student was wrong.
@@ -122,10 +131,17 @@ official bold answer is option **d**, "a lawyer, a banker, an accountant and an
 advertising agent". Option b, "a lawyer, a banker and a marketer", is the
 distractor.
 
-## 7. Suggested next step
+## 7. What was done
 
-Add the 16 questions to `build_questions.py`. Mark A1 to A8 and B2 as
-`not checked against a printed key`, since no key exists for them. B1, B3, B5
-and B6 have unambiguous answers from the notes and can carry an explanation.
+All 16 were added to `build_questions.py` and the bank rebuilt to **244**.
 
-That takes the bank from 228 to 244.
+Nine carried no mark of any kind. Their answers were worked out from the notes
+and the slides, and each explanation names the slide or the page it rests on.
+Two new `verified` values record this honestly:
+
+- `derived from the lecture notes and slides` (11 questions)
+- `matched to a marked past paper` (3 questions)
+
+One item, "Administration plans generally cover a period of", has no support in
+the course materials at all. Its answer comes from the Canvas paper alone, and
+the explanation says so. It is the weakest record in the bank.

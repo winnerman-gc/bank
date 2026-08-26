@@ -28,16 +28,16 @@ course outline.
 Questions are extracted from the past papers held in
 `~/Documents/y4s2/enterpreneur`:
 
-- `ME492- 2005 MARKING SCHEME.pdf` and `ME492-120 Questions _ solutions.pdf` -
+- `3-past-papers/2005-full-paper-120q-OFFICIAL-KEY.pdf` and `4-duplicates-and-old/same-file-as-2005-marking-scheme.pdf` -
   the 2005 paper with official answers
-- `ENTREPRENEUR MCQ 1pdf.pdf` - 2004/2005 Section A, 40 finance questions with
+- `3-past-papers/2005-section-a-finance-40q-OFFICIAL-KEY.pdf` - 2004/2005 Section A, 40 finance questions with
   answers in bold
-- `Pasco2.pdf` (pcu/coe/216/07) - the 2007 paper, correct options marked in red
-- `PASCO 1.pdf` - a 2008-style paper, 135+ questions, hand-marked
-- `ME 492 PRACTICEOBJECTIVES(2)-1.pdf` - 2007/2008, 150 questions
-- `IMAGE PASSCO.pdf` - several papers, including a newer 2015/2016 paper
-- `ME 492 ONLINE 2020-1.pdf` - the 2020 Moodle exam, answers highlighted
-- Lecture slides 1, 2, 3, 8, 9, 10 and `ME 492 2025 NOTES.pdf`
+- `3-past-papers/2007-paper-student-red-pen.pdf` (pcu/coe/216/07) - the 2007 paper, correct options marked in red
+- `3-past-papers/2008-paper-student-handwriting.pdf` - a 2008-style paper, 135+ questions, hand-marked
+- `3-past-papers/2008-paper-150q-unmarked.pdf` - 2007/2008, 150 questions
+- `3-past-papers/2015-and-canvas-mixed-scans.pdf` - several papers, including a newer 2015/2016 paper
+- `3-past-papers/2020-moodle-exam-student-marks.pdf` - the 2020 Moodle exam, answers highlighted
+- Lecture slides 1, 2, 3, 8, 9, 10 and `2-lectures/0-COURSE-NOTES-2025.pdf`
 
 ## How the past questions were adapted
 
@@ -141,7 +141,7 @@ Each record carries a `verified` field:
 
 | Value | Questions | What it means |
 | --- | --- | --- |
-| `checked against the 2005 official marking scheme` | 107 | The stem was matched to `ME492- 2005 MARKING SCHEME.pdf` and the recorded answer compared with the printed key. Section A keys are letters; Section C answers are marked in bold in the PDF. |
+| `checked against the 2005 official marking scheme` | 107 | The stem was matched to `3-past-papers/2005-full-paper-120q-OFFICIAL-KEY.pdf` and the recorded answer compared with the printed key. Section A keys are letters; Section C answers are marked in bold in the PDF. |
 | `recomputed from the printed data` | 30 | The calculation items. Every one was worked through from the figures in the stem. |
 | `derived from the lecture notes and slides` | 11 | Added 2026. Found in the scans with no printed key. The answer was worked out from `ME 492 2025 NOTES` or a named slide, and the explanation says which. |
 | `matched to a marked past paper` | 3 | Added 2026. No printed key, but a circled option on the 2015 script or a selected radio on the Canvas paper shows the answer. |
