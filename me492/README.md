@@ -143,12 +143,12 @@ Each record carries a `verified` field:
 | --- | --- | --- |
 | `checked against the 2005 official marking scheme` | 107 | The stem was matched to `3-past-papers/2005-full-paper-120q-OFFICIAL-KEY.pdf` and the recorded answer compared with the printed key. Section A keys are letters; Section C answers are marked in bold in the PDF. |
 | `recomputed from the printed data` | 30 | The calculation items. Every one was worked through from the figures in the stem. |
-| `derived from the lecture notes and slides` | 11 | Added 2026. Found in the scans with no printed key. The answer was worked out from `ME 492 2025 NOTES` or a named slide, and the explanation says which. |
+| `derived from the lecture notes and slides` | 11 | Added 2026. Found in the scans with no printed key. The answer was worked out from `0-COURSE-NOTES-2025.pdf` or a named slide, and the explanation says which. |
 | `matched to a marked past paper` | 3 | Added 2026. No printed key, but a circled option on the 2015 script or a selected radio on the Canvas paper shows the answer. |
-| `not checked against a printed key` | 93 | These come from papers that are image-only scans with no text layer: `PASCO 1`, `Pasco2`, `IMAGE PASSCO`, `ENTREPRENEUR MCQ 1pdf` and `ME 492 ONLINE 2020`. The page calls these out under the explanation. |
+| `not checked against a printed key` | 93 | These come from papers that are image-only scans with no text layer: `2008-paper-student-handwriting`, `2007-paper-student-red-pen`, `2015-and-canvas-mixed-scans`, `2005-section-a-finance-40q-OFFICIAL-KEY` and `2020-moodle-exam-student-marks`. The page calls these out under the explanation. |
 
 The cross-check found one wrong answer, since corrected: the roles of directors
-item. `ME 492 2025 NOTES` lists the roles beyond decision making as mentors,
+item. `0-COURSE-NOTES-2025.pdf` lists the roles beyond decision making as mentors,
 professional advisers and members of an expanded social network. Disturbance
 handling and resource allocation are not among them, and the 2005 key marks
 `i and ii only`. The bank had marked all three.
@@ -160,14 +160,14 @@ by eye for the pen marks, which OCR cannot see. See
 `AUDIT-against-source-papers.md`. The pass found 16 questions in the papers that
 the bank did not hold. All 16 are now in.
 
-**From the 2007/2008 multiple-completion section** (`IMAGE PASSCO` p44 to p51):
+**From the 2007/2008 multiple-completion section** (`2015-and-canvas-mixed-scans.pdf` p44 to p51):
 entrepreneurship myths; product as a catchall term; what a marketing strategy
 provides; the innovation development process; the seven conditions for
 technological innovation; sources of change for strategic thinkers; the inputs
 to the financial section; the inputs to the pro forma balance sheet; the concept
 of entrepreneurship; and the origin of the word.
 
-**From a Canvas quiz** (`IMAGE PASSCO` p1 to p33, a 40 question, 40 minute
+**From a Canvas quiz** (`2015-and-canvas-mixed-scans.pdf` p1 to p33, a 40 question, 40 minute
 paper, separate from the Moodle 2020 exam): entrepreneurs as risk takers; the
 cocktail party item; resources producing current and future benefits; how long
 administration plans run; the statement of estimated income and expenses; and

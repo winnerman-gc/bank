@@ -19,8 +19,8 @@ Built from the past papers and the lecture slides.
 | Canvas paper (inside `2015-and-canvas-mixed-scans.pdf`, pages 1 to 33) | A 40 question, 40 minute paper. Separate from the Moodle 2020 exam. |
 
 **File names.** The folder was reorganised. The lecturer's own deck numbers are
-kept, so "deck 10" in this guide is `2-lectures/10-financing-new-ventures.pptx`,
-"deck 2" is `02-creativity-and-innovation.pptx`, and so on. See `START-HERE.md`.
+kept, so "deck 10" in this guide is `2-lectures/10-financing-new-ventures.pdf`,
+"deck 2" is `02-creativity-and-innovation.pdf`, and so on. See `START-HERE.md`.
 
 **All five scanned files have now been read.** They have no text layer, so they
 were read twice: once by machine for the text, and once by eye for the pen
@@ -49,7 +49,7 @@ questions belong to a group that appears more than once. Of the 2008 paper,
 
 The next sentence in the notes is question 101. So for the finance section you
 are not guessing. `2-lectures/0-COURSE-NOTES-2025.pdf` pages 11 to 24 and
-`2-lectures/10-financing-new-ventures.pptx` slides 30 to 64
+`2-lectures/10-financing-new-ventures.pdf` slides 30 to 64
 **are** the answer key. Read them as sentences, not as topics.
 
 **The option letters change every year. The answer text does not.**
@@ -94,7 +94,7 @@ Grading: continuous assessment 30 %, end of semester examination 70 %.
 | D | i only |
 | E | iii only |
 
-**Version B (PASCO 1, questions 51 to 85)**
+**Version B (`2008-paper-student-handwriting.pdf`, questions 51 to 85)**
 
 | Write | Meaning |
 |---|---|

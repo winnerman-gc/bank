@@ -105,7 +105,7 @@ Read from the official sources, these answers are now settled.
 
 | The question | Answer | Where I saw it |
 |---|---|---|
-| A plant patent is given for | **hybrid roses and food grains**, not 17 years | Printed key, IMAGE PASSCO p97 |
+| A plant patent is given for | **hybrid roses and food grains**, not 17 years | Printed key, `2015-and-canvas-mixed-scans.pdf` p97 |
 | A Disclosure Document is | **a statement to the patent office declaring the intent to patent**, and is not the same as a patent | Same page |
 | The results of good market research | **a well defined sales forecast** only | Same page |
 | A competitive analysis is marketing research | **in the pre-start-up stage** only | Same page |
@@ -120,7 +120,7 @@ Read from the official sources, these answers are now settled.
 1. **2005 question 10** (Integrated Marketing Communications) is **D**, not E.
    I read the printed key letter in the margin of the photographed solutions.
 2. **2005 question 18** (Drucker's view) is **D**, not E. Same source.
-3. **Directors' roles beyond decision making.** `ME 492 2025 NOTES` page 3 says
+3. **Directors' roles beyond decision making.** `0-COURSE-NOTES-2025.pdf` page 3 says
    they are "**mentors, professional advisers, and members of an expanded
    social network**". The phrase "disturbance handlers" appears **nowhere** in
    the notes. Any option containing it is wrong. The bank's correction was
