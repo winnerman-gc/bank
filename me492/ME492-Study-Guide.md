@@ -1,56 +1,25 @@
 # ME 492 Management and Entrepreneurship Development
 # The Ultimate Study Guide
 
-Built from the past papers and the lecture slides.
+Facts, definitions and methods for the exam. Built from the lecture notes,
+the slides and the past papers.
 
-**Sources used**
+Three companion documents hold what is deliberately **not** here:
 
-| Source | What it is |
+| For | Read |
 |---|---|
-| `3-past-papers/2005-full-paper-120q-OFFICIAL-KEY.pdf` | Full paper with official answers |
-| `3-past-papers/2005-section-a-finance-40q-OFFICIAL-KEY.pdf` | 40 finance questions, answers in bold |
-| `3-past-papers/2007-paper-student-red-pen.pdf` | 2007 paper (pcu/coe/216/07), options ticked in red |
-| `3-past-papers/2008-paper-student-handwriting.pdf` | 2008-style paper, 135+ questions, hand-marked |
-| `3-past-papers/2008-paper-150q-unmarked.pdf` | 2007/2008 paper, 150 questions, no answers |
-| `3-past-papers/compiled-answer-sheet-HAS-ERRORS.pdf` | Compiled answers, 150 questions. Wrong on at least three items. |
-| `3-past-papers/2015-and-canvas-mixed-scans.pdf` | Several papers, including a 2015/2016 paper |
-| `3-past-papers/2020-moodle-exam-student-marks.pdf` | Moodle exam, 60 questions, highlighted by a student |
-| `2-lectures/`, all of it, above all `0-COURSE-NOTES-2025.pdf` | Source of the definitions |
-| Canvas paper (inside `2015-and-canvas-mixed-scans.pdf`, pages 1 to 33) | A 40 question, 40 minute paper. Separate from the Moodle 2020 exam. |
-
-**File names.** The folder was reorganised. The lecturer's own deck numbers are
-kept, so "deck 10" in this guide is `2-lectures/10-financing-new-ventures.pdf`,
-"deck 2" is `02-creativity-and-innovation.pdf`, and so on. See `START-HERE.md`.
-
-**All five scanned files have now been read.** They have no text layer, so they
-were read twice: once by machine for the text, and once by eye for the pen
-marks. That pass added 16 questions to the bank and settled several disputes.
+| Which slides to read, and in what order | `04-what-to-read-and-when.md` |
+| How much the paper repeats, and what is likely to come | `03-repeats-and-predictions.md` |
+| Where two sources disagree, and which one wins | `02-settled-answers.md` |
 
 ---
 
 ## 1. Read this first
 
-**The paper repeats itself.** The same question bank has run since 2005. If you
-know the bank, you know the paper. Measured across the readable papers, 66 % of
-questions belong to a group that appears more than once. Of the 2008 paper,
-88 % of the questions are word for word from 2005.
-
-**The finance questions are copied out of the notes.** Compare these two.
-
-> **Notes, page 12:** "Long term debt (lasting more than one year) is frequently
-> used to purchase some asset such as a piece of machinery, land, or a building,
-> with part of the value of the asset (usually from **50 to 80 percent** of the
-> total value) being used as collateral for the long-term loan."
-
-> **2005 exam, question 100:** "Long term debt is frequently used to purchase
-> some asset such as a piece of machinery, land, or a building, with part of the
-> value of the asset usually from ____ to ____ percent of the total value being
-> used as collateral."
-
-The next sentence in the notes is question 101. So for the finance section you
-are not guessing. `2-lectures/0-COURSE-NOTES-2025.pdf` pages 11 to 24 and
-`2-lectures/10-financing-new-ventures.pdf` slides 30 to 64
-**are** the answer key. Read them as sentences, not as topics.
+**Finance is not guesswork.** The finance questions are taken from the notes
+sentence by sentence. Read `2-lectures/0-COURSE-NOTES-2025.pdf` pages 11 to 24
+and `2-lectures/10-financing-new-ventures.pdf` slides 30 to 64 as sentences, not
+as topics. They are the answer key.
 
 **The option letters change every year. The answer text does not.**
 Example: "A market segment on which a business can choose to concentrate its
@@ -274,10 +243,8 @@ risk. This is the standard trap in this item.
 - The reason for business failure is most commonly **inexperience**.
 - The risk of business failure for a business starting from scratch is
   **higher**.
-- The KNUST papers mark entrepreneurs as **high risk takers**. Use that. It is
-  circled on the 2015 script and selected on the Canvas paper. Note the tension:
-  Table 1-1 of the overview slides calls the successful entrepreneur "able to
-  take **calculated** risk". Answer what the paper marks.
+- Entrepreneurs are **high risk takers**. The slides call them "able to take
+  **calculated** risk", so the two readings differ. Answer **high risk takers**.
 - Entrepreneurs typically form **service businesses**.
 - Entrepreneurs typically have a **high internal locus of control**. True.
 - Entrepreneurs **are the life of the party**.
@@ -777,10 +744,8 @@ of these. The answer is **all three**:
 
 - **Establishes how the entrepreneur will effectively compete and operate in the
   market.** Answer **i only** in the 2005 key.
-- A marketing plan is implemented through a **marketing program**.
-  Older hand-marked papers show "marketing activities". The printed 2015 key
-  marks **marketing program**. Prefer **marketing program**, but if "marketing
-  program" is not printed, choose "marketing activities".
+- A marketing plan is implemented through a **marketing program**. Choose
+  "marketing activities" only when "marketing program" is not printed.
 - Marketing plans fail because of a lack of a real plan, lack of adequate
   situation analysis, unrealistic goals and unanticipated competitive moves:
   **all of the above**.
@@ -1180,9 +1145,8 @@ areas of the new venture**. Not cost accounting. Not financial accounting.
 - Budgeting encourages **planning, co-ordination, performance measurement and
   corrective action**.
 
-> **Careful.** Two papers disagree on the "more than one year" question.
-> The printed 2005 and 2007 keys mark **capital budgets**. Some hand-marked
-> copies show "strategic budgets". Use **capital budgets**.
+> **Careful.** Budgets for expenditure that affects the business for more than
+> one year are **capital budgets**. Never "strategic budgets".
 
 The four operating budgets for a retail venture:
 
@@ -1560,51 +1524,29 @@ Using the standard key: **A** = all three, **B** = i and ii, **C** = i and iii,
 
 ---
 
-## 16. Conflicts between papers. Decide now, not in the hall.
+## 16. Answers that are commonly got wrong
 
-Some items have different answers in different sources. Here is the ruling and
-the reason.
+Learn these as they stand. They are the items students most often lose.
 
-| Item | Choose | Why |
+| The question | The answer | Watch for |
 |---|---|---|
-| Feasibility plans best prepared by specialists | **E, both false** | 2005 official key and 2020 online exam agree. |
-| The organisational plan describes | **the organogram of the venture** | 2020 online exam and 2015 paper agree. |
-| Budgets for expenditures impacting more than one year | **capital budgets** | Notes p15: "The **capital budget** describes the new venture's **long term plans** regarding investments in facilities, equipment, new products". One compiled sheet wrongly says strategic budgets. |
-| Asset-based financing | **debt financing** | Settled by the lecturer's own words. Notes p11 and deck 10 slide 35: "debt financing (**also called asset-based financing**) requires that some asset ... be used as collateral". One compiled sheet wrongly says equity. |
-| Summarises projected assets, liabilities and equity | **pro forma balance sheet** | Notes. One compiled sheet wrongly says income statement. |
-| Setting up specifications of primary clients | **customer scenario** | Settled. The 2020 online exam prints "Market Survey" as a **distractor** in question 42 and marks customer scenario. One compiled sheet wrongly says market survey. |
-| The planned process of determining prices | **pricing policy** | Settled. The 2020 online exam asks this **twice**, at questions 47 and 49, and prints "Price setting" as a distractor both times. One hand-marked copy wrongly says price setting. |
-| A marketing plan is implemented through | **marketing program** | Printed key. Pick "marketing activities" only if "program" is absent. |
-| Entrepreneurs can be described in terms of | **a, b and c only** | The 2015 red-marked paper. One 2007 copy says "a and b only". Pick the fuller option unless "successfully incubating a business" is absent. |
-| Common elements of a business plan | Depends on the printed options | **Executive Summary** or **Market research and analysis**. Never Abstract or Literature Review. |
-| Lenders' aspects of credit character | **all three** | 2008 paper. The 2020 highlight showing "ii only" is a student mark on an unsubmitted attempt, not a key. |
-| Replacement of products with new and better ones | **creative destruction** | Schumpeter. The circled "upscaling" on one script is a student error. |
-| Board of advisors example | **a lawyer, a banker, an accountant and an advertising agent** | **Corrected.** The 2005 official bold answer is option **d**, the four-person list. "A lawyer, a banker and a marketer" is option **b**, the distractor. An earlier version of this guide had these the wrong way round. Take the fullest professional list printed. |
+| Feasibility plans best prepared by specialists | **both statements false** | The entrepreneur prepares it, in consultation with specialists. |
+| The organisational plan describes | **the organogram of the venture** | Not the physical layout, not the form of ownership. |
+| Budgets for expenditure impacting more than one year | **capital budgets** | Not "strategic budgets". |
+| Asset-based financing | **debt financing** | Not equity. The asset is the collateral. |
+| Summarises projected assets, liabilities and equity | **pro forma balance sheet** | Not the income statement. |
+| Setting up the specifications of primary clients | **customer scenario** | "Market survey" is the distractor. |
+| The planned process of determining prices | **pricing policy** | "Price setting" is the distractor. |
+| A marketing plan is implemented through | **a marketing program** | Take "marketing activities" only when "program" is not printed. |
+| Entrepreneurs can be described in terms of | experience and family background, personal characteristics and skills, **and** successfully incubating a business | Take the fullest option printed. |
+| Common elements of a business plan | **Executive Summary**, or **Market research and analysis** | Never Abstract, Literature Review or Conclusions. |
+| Lenders' aspects of credit character | **all three**: cash flow, collateral, equity contribution | |
+| Replacement of products with new and better ones | **creative destruction**, from Schumpeter | Not "upscaling". |
+| A board of advisors, an example | **a lawyer, a banker, an accountant and an advertising agent** | Take the fullest professional list printed. |
+| The marketing functions | the option listing the most of **product, price, distribution, promotion** | Take "all of the above" when it is printed. |
 
----
-
-## 16b. Which source to trust when they disagree
-
-Not every mark on a past paper is an answer. Rank them like this.
-
-| Source | What the marks are | Trust it? |
-|---|---|---|
-| `0-COURSE-NOTES-2025.pdf` and the lecture slides | The lecturer's own words | **Highest** |
-| `2005-full-paper-120q-OFFICIAL-KEY.pdf` | Official. Letters for Q1 to 35, bold text for Q36 to 120 | **Yes** |
-| `2005-section-a-finance-40q-OFFICIAL-KEY.pdf` | Official. Answers printed in bold | **Yes** |
-| `2015-and-canvas-mixed-scans.pdf` pages 66 to 107 | Photographs of the printed 2005 solutions, key letters in the margin | **Yes** |
-| Any file whose name says `student-red-pen`, `student-handwriting` or `student-marks` | A student's pencil, red pen and circles | **No** |
-| `compiled-answer-sheet-HAS-ERRORS.pdf` | A typed-up list, wrong on asset-based financing, the more-than-one-year budget and customer scenario | **No** |
-
-**Proof that the hand marks fail.** On one script the student wrote **E**
-(i, ii and iii) for "Many small businesses are small by". The official 2005 key
-says **i and ii only**. Small businesses are not small "through their creation by
-legal contracts". On another the student circled "upscaling" for the replacement
-of products with new and better ones. It is **creative destruction**, and deck 1
-slide 50 says so in Schumpeter's own words.
-
-> **Rule.** A circle is somebody's guess. A printed key or a sentence in the
-> notes is the answer.
+Where two papers print different answers for the same stem,
+`02-settled-answers.md` gives the ruling and the source.
 
 ## 17. Seventeen traps that cost marks every year
 
@@ -1644,25 +1586,7 @@ slide 50 says so in Schumpeter's own words.
 
 ---
 
-## 18. The seven day plan
-
-| Day | Work | Why |
-|---|---|---|
-| 1 | Section 3 definitions, then Topic 1 and Topic 2 | The definitions are the cheapest marks. |
-| 2 | Topic 3 and Topic 4, on planning, feasibility and stages | The largest block of section C. |
-| 3 | Topic 5 and Topic 6, on marketing and intellectual property | High repeat rate. |
-| 4 | Topic 7, on organising and legal forms | Tables are easy to recall under pressure. |
-| 5 | Topic 8 and Topic 9, on financing and budgeting | The vocabulary block. |
-| 6 | Section 13. Work all three calculation types by hand, twice | Method, not memory. |
-| 7 | Sections 14, 15, 16 and 17. Then one full past paper against the clock | Consolidation and speed. |
-
-**Timing drill.** Set 80 seconds per question. If you cannot answer in 80
-seconds, mark it and move on. Come back at the end. All questions carry equal
-marks.
-
----
-
-## 19. The last hour before the exam
+## 18. The last hour before the exam
 
 Read only these.
 
