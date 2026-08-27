@@ -186,13 +186,18 @@
         .source-card h3 { margin: 0 0 6px; font-size: 0.98rem; }
         .source-card p { margin: 0; color: var(--muted); font-size: 0.86rem; line-height: 1.4; }
 
-        #feed { display: grid; gap: 16px; }
+        #feed {
+            display: grid;
+            gap: 16px;
+            min-width: 0;
+        }
 
         .question-card {
             background: rgba(255, 255, 255, 0.94);
             border: 1px solid rgba(15, 23, 42, 0.08);
             border-radius: 18px;
             padding: 18px;
+            min-width: 0;
             box-shadow: var(--shadow);
             border-left: 5px solid var(--primary);
             scroll-margin-top: 96px;
@@ -230,15 +235,21 @@
             line-height: 1.55;
             font-weight: 600;
             margin-bottom: 14px;
+            max-width: 100%;
+            min-width: 0;
             white-space: pre-wrap;
+            overflow-wrap: anywhere;
         }
 
         .question-text .table-wrap {
+            width: 100%;
             max-width: 100%;
+            min-width: 0;
             overflow-x: auto;
             margin: 12px 0;
             padding-bottom: 4px;
             -webkit-overflow-scrolling: touch;
+            overscroll-behavior-x: contain;
         }
 
         .question-text table {
@@ -248,6 +259,7 @@
             white-space: normal;
             width: max-content;
             min-width: 100%;
+            max-width: none;
         }
 
         .question-text th,
