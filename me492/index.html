@@ -511,12 +511,12 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-08-27.4';
+        const CACHE_VERSION = '2026-08-27.5';
         const VIEW_STATE_KEY = 'me492_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'me492_quiz_answers_v2';
         const RETAKE_ANSWERS_STORAGE_KEY = 'me492_quiz_retake_answers_v2';
         const OPTION_ORDER_STORAGE_KEY = 'me492_quiz_option_orders_v2';
-        const TABLE_CELLS_STORAGE_KEY = 'me492_quiz_table_cells_v1';
+        const TABLE_CELLS_STORAGE_KEY = 'me492_quiz_table_cells_v2';
 
         const SOURCES = [
             {
@@ -623,21 +623,23 @@
             saveTableCells();
         }
 
-        function clearTableCellsFor(scope) {
-            const prefix = `${scope}#`;
-            let removed = 0;
-            Object.keys(tableCells).forEach(key => {
-                if (key.startsWith(prefix)) { delete tableCells[key]; removed += 1; }
-            });
-            if (removed) saveTableCells();
-            return removed;
+        // Every input anywhere on the page that holds this cell. A scenario's
+        // table appears on several cards at once, and they must agree.
+        function syncTableCell(cellKey, value, origin) {
+            document.querySelectorAll(`.cell-input[data-cell="${CSS.escape(cellKey)}"]`)
+                .forEach(input => { if (input !== origin) input.value = value; });
         }
 
-        // "Clear working" on a card wipes only that question's cells.
-        function clearWorking(scope, button) {
-            clearTableCellsFor(scope);
+        // The table is shared, so clearing it clears it on every card that
+        // prints it. That is the whole point of filling it once.
+        function clearWorking(button) {
             const card = button.closest('.question-card');
-            card.querySelectorAll('.cell-input').forEach(input => { input.value = ''; });
+            const keys = Array.from(card.querySelectorAll('.cell-input'))
+                .map(input => input.dataset.cell);
+            if (!keys.length) return;
+            keys.forEach(key => { delete tableCells[key]; });
+            saveTableCells();
+            keys.forEach(key => syncTableCell(key, '', null));
             card.querySelector('.cell-input')?.focus();
         }
 
@@ -944,10 +946,10 @@
                     <div class="question-tag">${tagParts.join(' · ')}</div>
                     <div style="color:var(--muted);font-size:0.82rem;">${singleSource ? '' : sourceLabel(question.sourceId)}</div>
                 </div>
-                <div class="question-text">${renderStem(question.question_text, answerKey)}</div>
+                <div class="question-text">${renderStem(question.question_text)}</div>
                 ${question.question_text.includes('|')
                     ? `<button type="button" class="clear-working"
-                         onclick="clearWorking('${answerKey}', this)">Clear working</button>`
+                         onclick="clearWorking(this)">Clear working</button>`
                     : ''}
             `;
 
@@ -1071,12 +1073,11 @@
 
         // The calculation questions carry the paper's data table. Turn a markdown
         // table into a real one, and leave every other line as escaped text.
-        function renderStem(text, cellScope) {
+        function renderStem(text) {
             const lines = String(text).split('\n');
             const out = [];
             let table = [];
             let prose = [];
-            let tableIndex = 0;
 
             const flushProse = () => {
                 const body = prose.join('\n').replace(/^\n+|\n+$/g, '');
@@ -1084,7 +1085,7 @@
                 prose = [];
             };
             const flushTable = () => {
-                if (table.length) out.push(renderTable(table, cellScope, tableIndex++));
+                if (table.length) out.push(renderTable(table));
                 table = [];
             };
 
@@ -1102,7 +1103,21 @@
             return out.join('');
         }
 
-        function renderTable(rows, cellScope, tableIndex) {
+        // Cells are keyed by the table itself, not by the question. Seven
+        // questions print the Osagyefo budget, so filling it once fills it on
+        // all seven. Same table means same key, everywhere it appears.
+        function tableKeyBase(rows) {
+            const text = rows.join('\n').replace(/\s+/g, ' ').trim();
+            let hash = 2166136261;
+            for (let i = 0; i < text.length; i += 1) {
+                hash ^= text.charCodeAt(i);
+                hash = Math.imul(hash, 16777619);
+            }
+            return 't' + (hash >>> 0).toString(36);
+        }
+
+        function renderTable(rows) {
+            const keyBase = tableKeyBase(rows);
             const isRule = cells => cells.every(c => /^:?-{2,}:?$/.test(c));
             const parsed = rows.map(row => row.trim()
                 .replace(/^\|/, '').replace(/\|$/, '')
@@ -1122,7 +1137,7 @@
             // and label it with its own row and column, so a screen reader and a
             // stored key both say which figure it is.
             const workingCell = (rowIndex, colIndex, rowLabel, colLabel) => {
-                const key = `${cellScope}#${tableIndex}:${rowIndex}:${colIndex}`;
+                const key = `${keyBase}:${rowIndex}:${colIndex}`;
                 const stored = tableCells[key] || '';
                 const label = [rowLabel, colLabel].filter(Boolean).join(', ') || 'working value';
                 return `<td class="working"><input class="cell-input" type="text" inputmode="decimal"`
@@ -1280,7 +1295,9 @@
         // that are rebuilt when you change source or start a retake.
         document.addEventListener('input', event => {
             const input = event.target.closest('.cell-input');
-            if (input) setTableCell(input.dataset.cell, input.value);
+            if (!input) return;
+            setTableCell(input.dataset.cell, input.value);
+            syncTableCell(input.dataset.cell, input.value, input);
         });
 
         // Enter moves down the column instead of submitting anything.
