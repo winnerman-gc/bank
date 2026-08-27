@@ -373,7 +373,7 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-08-26.1';
+        const CACHE_VERSION = '2026-08-27.2';
         const VIEW_STATE_KEY = 'me492_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'me492_quiz_answers_v2';
         const RETAKE_ANSWERS_STORAGE_KEY = 'me492_quiz_retake_answers_v2';
@@ -382,9 +382,21 @@
         const SOURCES = [
             {
                 id: 'set-1',
-                label: 'ME 492',
+                label: 'ME 492 past papers',
                 file: 'compiled.json',
-                description: '228 past-paper questions — entrepreneurship & free enterprise, creativity & innovation, business planning, venture stages, marketing, intellectual property, legal forms, financing, budgeting, calculations and the "because" section'
+                description: '244 questions taken from the past papers: entrepreneurship & free enterprise, creativity & innovation, business planning, venture stages, marketing, intellectual property, legal forms, financing, budgeting, calculations and the "because" section. 107 of these are checked against the 2005 official marking scheme.'
+            },
+            {
+                id: 'set-ai',
+                label: 'AI generated, 100 new',
+                file: 'ai-generated-100.json',
+                description: '100 new questions written from the lecture notes and slides, in the same shape as the real paper: 70 plain, 22 i/ii/iii and 8 "because" items, plus a fresh 12-question calculation block. Not from a past paper, so treat a disagreement here as a prompt to check the slide.'
+            },
+            {
+                id: 'set-site',
+                label: 'Extra past-paper items, 48',
+                file: 'site-extracted-48.json',
+                description: '48 questions found on samplequestions.vercel.app that are not in the first set. 19 cover ground the other sets are thin on, mostly the economists. 29 are calculations from four fresh tables, including two cash budgets that need a borrowing rule the guide did not cover. Three combination answers were corrected against the lecturer\'s notes; each says so in its explanation.'
             }
         ];
 
@@ -573,8 +585,7 @@
             const grid = document.getElementById('source-grid');
             grid.innerHTML = '';
 
-            // With a single combined bank there is nothing to choose between,
-            // so hide the set selector entirely.
+            // Hide the set selector only when there is nothing to choose between.
             const selector = document.querySelector('.selector');
             if (selector) selector.style.display = SOURCES.length <= 1 ? 'none' : '';
 

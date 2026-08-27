@@ -1,0 +1,1702 @@
+[
+ {
+  "question_number": 245,
+  "question_text": "Jean Baptiste Say's account of the entrepreneur combined which two earlier ideas?",
+  "options": [
+   "Schumpeter's innovator and Drucker's opportunity seeker",
+   "Menger's resource converter and John Stuart Mill's risk bearer",
+   "Adam Smith's enterpriser and Schumpeter's creative destroyer",
+   "Cantillon's economic risk taker and Adam Smith's industrial manager",
+   "Cantillon's resource allocator and Carl Menger's value creator"
+  ],
+  "correct_answer": [
+   "Cantillon's economic risk taker and Adam Smith's industrial manager"
+  ],
+  "explanation": "Say joined Cantillon's economic risk taker to Smith's industrial manager. He added exceptional insight into the needs of society, and said the entrepreneur both influences society and is influenced by it.",
+  "source": "AI generated from Guide 4.1, the economists",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 246,
+  "question_text": "The most common reason given for the failure of a new business is",
+  "options": [
+   "inexperience",
+   "a shortage of bank credit",
+   "poor location",
+   "high interest rates",
+   "government regulation"
+  ],
+  "correct_answer": [
+   "inexperience"
+  ],
+  "explanation": "Inexperience heads the list. The related fact is that a business started from scratch carries a higher risk of failure than one that is bought.",
+  "source": "AI generated from Guide 4.9, recurring facts",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 247,
+  "question_text": "Most technical entrepreneurs start businesses close to their previous career work. This observation is known as",
+  "options": [
+   "the window of opportunity",
+   "creative destruction",
+   "the corridor principle",
+   "income substitution",
+   "the technology spectrum"
+  ],
+  "correct_answer": [
+   "the corridor principle"
+  ],
+  "explanation": "The corridor principle. Successful ventures evolve from entrepreneurs already positioned in similar or related work, so they move quickly when a window opens. A window is the time horizon, not the position.",
+  "source": "AI generated from Guide 5.4, windows and corridors",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 248,
+  "question_text": "In corporate entrepreneurship, managers combine resources in unusual ways and also",
+  "options": [
+   "take personal investment risks with their own savings",
+   "assume unlimited liability for the new product line",
+   "commit time and energy and risk their careers",
+   "acquire an ownership position in the parent company",
+   "provide the collateral for the venture's borrowing"
+  ],
+  "correct_answer": [
+   "commit time and energy and risk their careers"
+  ],
+  "explanation": "They risk time, energy and their careers. They do not take a personal investment risk. The company carries the money risk. That is the standard trap in this item.",
+  "source": "AI generated from Guide 4.8, intrapreneurship",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 249,
+  "question_text": "The word entrepreneurship\n(i) comes from the 17th century French entreprendre, meaning to undertake\n(ii) was discovered by business students studying commercial history\n(iii) referred to contractors and builders who bore the risk of profit or loss",
+  "options": [
+   "i and iii only are correct",
+   "i, ii and iii are correct",
+   "i and ii only are correct",
+   "i only is correct",
+   "iii only is correct"
+  ],
+  "correct_answer": [
+   "i and iii only are correct"
+  ],
+  "explanation": "Statements (i) and (iii) are on the slides. Statement (ii) is the added clause that makes it false. The word was not discovered by business students.",
+  "source": "AI generated from Slides 1.16 and 1.17, the origin of the word",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 250,
+  "question_text": "The concept of entrepreneurship\n(i) has given enterprise a new direction\n(ii) has only just been discovered by modern economists\n(iii) has been around for a very long time",
+  "options": [
+   "i, ii and iii are correct",
+   "i and ii only are correct",
+   "i and iii only are correct",
+   "i only is correct",
+   "iii only is correct"
+  ],
+  "correct_answer": [
+   "i and iii only are correct"
+  ],
+  "explanation": "New direction and long standing. Statement (ii) contradicts (iii): Cantillon wrote in the 18th century, so the concept is not new.",
+  "source": "AI generated from Guide 4.10, the concept of entrepreneurship",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 251,
+  "question_text": "Entrepreneurship affects the economy by\n(i) altering the direction of national economies and ensuring their stability\n(ii) introducing quantum leaps in technology and new systems of services\n(iii) forcing the reallocation of resources from existing uses to new and more productive uses",
+  "options": [
+   "i and ii only are correct",
+   "i and iii only are correct",
+   "i only is correct",
+   "iii only is correct",
+   "i, ii and iii are correct"
+  ],
+  "correct_answer": [
+   "i, ii and iii are correct"
+  ],
+  "explanation": "All three are on the slides. When every statement restates a listed effect, take all three.",
+  "source": "AI generated from Guide 4.7, effects on the economy",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 252,
+  "question_text": "Several thoughts about entrepreneurs have proved to be more myth than fact. These include\n(i) that entrepreneurs struggle to succeed and get their ideas by hard work\n(ii) that entrepreneurs are mavericks and misfits, and that entrepreneurs are born and not made\n(iii) that entrepreneurs strike it rich on the first flash of genius",
+  "options": [
+   "i, ii and iii are correct",
+   "i and ii only are correct",
+   "i only is correct",
+   "iii only is correct",
+   "ii and iii only are correct"
+  ],
+  "correct_answer": [
+   "ii and iii only are correct"
+  ],
+  "explanation": "Statement (i) is the truth, not a myth. The slides say entrepreneurs make their own luck by working hard. Mavericks and misfits, born not made, and the first flash of genius are all myths.",
+  "source": "AI generated from Guide 4.5, popular myths",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 253,
+  "question_text": "A person who embarks on a conscious search for the knowledge needed to bring an idea to life is in which stage of the creative process?",
+  "options": [
+   "incubation",
+   "illumination",
+   "verification",
+   "idea germination",
+   "preparation"
+  ],
+  "correct_answer": [
+   "preparation"
+  ],
+  "explanation": "Preparation is the conscious search. Incubation is the subconscious one. Keep the word conscious attached to preparation.",
+  "source": "AI generated from Guide 5.2, the five stages",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 254,
+  "question_text": "Creativity differs from innovation in that creativity is",
+  "options": [
+   "the process of doing new things",
+   "the verified result of a creative idea",
+   "the conversion of something new into useful goods or services",
+   "the transformation of creative ideas into useful applications",
+   "the ability to bring something new into existence"
+  ],
+  "correct_answer": [
+   "the ability to bring something new into existence"
+  ],
+  "explanation": "Creativity is an ability, not an activity. The other four options define innovation or invention. Creativity is the seed; innovation is the process.",
+  "source": "AI generated from Guide 5.1, definitions",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 255,
+  "question_text": "Technological innovation depends on three key people. They are",
+  "options": [
+   "the inventor, the investor and the champion",
+   "the creative source, the entrepreneur and the promoter",
+   "the creative source, the champion and the sponsor",
+   "the sponsor, the financier and the project manager",
+   "the inventor, the sponsor and the venture capitalist"
+  ],
+  "correct_answer": [
+   "the creative source, the champion and the sponsor"
+  ],
+  "explanation": "Only this trio is correct. Reject any option that swaps in the inventor, the investor or the promoter.",
+  "source": "AI generated from Guide 5.5, the three key people",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 256,
+  "question_text": "A person is in the verification stage of the creative process when he or she\n(i) applies or tests the idea to prove that it has value\n(ii) has a sudden flash that the idea has merit\n(iii) subconsciously assimilates information about the idea",
+  "options": [
+   "i, ii and iii are correct",
+   "i only is correct",
+   "i and ii only are correct",
+   "i and iii only are correct",
+   "iii only is correct"
+  ],
+  "correct_answer": [
+   "i only is correct"
+  ],
+  "explanation": "Only (i). The sudden flash is illumination and the subconscious work is incubation. This is the trap that the 2005 key punished.",
+  "source": "AI generated from Guide 5.2, the five stages; trap list 5",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 257,
+  "question_text": "Innovation is the development process of translating a new idea into a commercial reality. It involves\n(i) the translation of the idea into a new invention\n(ii) persistence in analytically working out the details of product design, marketing, finance and operations\n(iii) obtaining materials and manufacturing capability, staffing operations and establishing an organisation",
+  "options": [
+   "i, ii and iii are correct",
+   "i and ii only are correct",
+   "i only is correct",
+   "ii and iii only are correct",
+   "iii only is correct"
+  ],
+  "correct_answer": [
+   "ii and iii only are correct"
+  ],
+  "explanation": "Statements (ii) and (iii) are analytical planning and organising resources. Statement (i) fails because innovation is not invention. Invention is the verified result of a creative idea.",
+  "source": "AI generated from Slide 2.40; Guide 5.3, the innovation process",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 258,
+  "question_text": "The rules of brainstorming state that\n(i) no criticism is allowed by anyone in the group, and free wheeling is encouraged\n(ii) ideas found to be without merit are discarded as the session runs\n(iii) a high quantity of ideas is wanted, and combining and improving ideas is encouraged",
+  "options": [
+   "i and iii only are correct",
+   "i, ii and iii are correct",
+   "i and ii only are correct",
+   "i only is correct",
+   "iii only is correct"
+  ],
+  "correct_answer": [
+   "i and iii only are correct"
+  ],
+  "explanation": "Nothing is judged inside the session, so (ii) is false. Quantity first, judgement later. The period for generating ideas is fixed in advance.",
+  "source": "AI generated from Guide 5.6, brainstorming rules",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 259,
+  "question_text": "Consider the two statements below. S1: Creativity is a prerequisite for innovation. BECAUSE S2: Innovation is the transformation of creative ideas into useful applications. Select the correct response.",
+  "options": [
+   "both statements are TRUE and the second is NOT a correct explanation of the first",
+   "the first statement is TRUE and the second is FALSE",
+   "the first statement is FALSE and the second is TRUE",
+   "both statements are TRUE and the second is a correct explanation of the first",
+   "both statements are FALSE"
+  ],
+  "correct_answer": [
+   "both statements are TRUE and the second is a correct explanation of the first"
+  ],
+  "explanation": "Both are true, and S2 explains S1. Innovation has nothing to transform until creativity supplies the idea.",
+  "source": "AI generated from Guide 5.1, definitions",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 260,
+  "question_text": "Consider the two statements below. S1: A majority of new products evolve at the low-tech end of the technology spectrum. BECAUSE S2: Entrepreneurs have to be inventive geniuses to pursue mid-tech innovations. Select the correct response.",
+  "options": [
+   "both statements are TRUE and the second is a correct explanation of the first",
+   "the first statement is TRUE and the second is FALSE",
+   "both statements are TRUE and the second is NOT a correct explanation of the first",
+   "the first statement is FALSE and the second is TRUE",
+   "both statements are FALSE"
+  ],
+  "correct_answer": [
+   "the first statement is TRUE and the second is FALSE"
+  ],
+  "explanation": "S1 is true. S2 is false: mid-tech products presume the application of new knowledge, but they do not require an inventive genius. So the first is true and the second is false.",
+  "source": "AI generated from Guide 5.8, the technology spectrum",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 261,
+  "question_text": "The feasibility plan for a new venture is best prepared by",
+  "options": [
+   "a firm of management consultants",
+   "the financial expert engaged by the lender",
+   "the marketing department of the parent company",
+   "an accountant acting for the investors",
+   "the entrepreneur, in consultation with specialists"
+  ],
+  "correct_answer": [
+   "the entrepreneur, in consultation with specialists"
+  ],
+  "explanation": "The entrepreneur has the vision and the motivation and can articulate the information. Specialists advise. They do not take the job over.",
+  "source": "AI generated from Guide 6.1, who writes the plan",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 262,
+  "question_text": "Which single item must the introductory or cover page of a business plan carry?",
+  "options": [
+   "a summary of the market research findings",
+   "the pro forma balance sheet",
+   "the resumes of the partners",
+   "a literature review of the industry",
+   "a statement of confidentiality of the report"
+  ],
+  "correct_answer": [
+   "a statement of confidentiality of the report"
+  ],
+  "explanation": "The cover page carries the name and address, the amount of financing required, the contacts, a brief description of the concept, and a confidentiality statement. When one answer is wanted, take the confidentiality clause.",
+  "source": "AI generated from Guide 6.7, the cover page",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 263,
+  "question_text": "The first element of information an entrepreneur needs when planning a new venture is",
+  "options": [
+   "the basic operational needs of the venture",
+   "an evaluation of the entrepreneurial team",
+   "the expected profitability in the first year",
+   "the amount of external financing available",
+   "the market potential for the product or service"
+  ],
+  "correct_answer": [
+   "the market potential for the product or service"
+  ],
+  "explanation": "Market potential comes first. Without a market the other three questions do not arise.",
+  "source": "AI generated from Guide 6.5, the first element of information",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 264,
+  "question_text": "The appendix of a business plan holds",
+  "options": [
+   "the executive summary and the venture definition",
+   "the pro forma statements and the capital budget",
+   "the competitive analysis and industry trends",
+   "resumes of partners, facility layouts and partnership agreements",
+   "the marketing programme and the promotional mix"
+  ],
+  "correct_answer": [
+   "resumes of partners, facility layouts and partnership agreements"
+  ],
+  "explanation": "The appendix carries supporting documents. When only one option is allowed, pick the resumes of partners.",
+  "source": "AI generated from Guide 6.11, the appendix",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 265,
+  "question_text": "A business plan is prepared primarily",
+  "options": [
+   "to guide the entrepreneur through daily operations",
+   "to inform suppliers of the venture's requirements",
+   "to satisfy a legal requirement for registration",
+   "to record the history of the business concept",
+   "to give information to lenders and investors"
+  ],
+  "correct_answer": [
+   "to give information to lenders and investors"
+  ],
+  "explanation": "Lenders and investors are the primary audience. The plan can also provide direction, prove feasibility and attract money, but the examined single answer is the information to lenders and investors.",
+  "source": "AI generated from Guide 6.12, what the plan is for",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 266,
+  "question_text": "The single most common reason a business plan goes out of date is",
+  "options": [
+   "changes in the market and the industry",
+   "the loss or addition of key members of the team",
+   "a change in the location of the venture",
+   "poor articulation of the business concept",
+   "a delay in obtaining the required financing"
+  ],
+  "correct_answer": [
+   "changes in the market and the industry"
+  ],
+  "explanation": "The market and the industry move. The other three appear on the list but the single best answer is the market and industry change.",
+  "source": "AI generated from Guide 6.13, why plans go out of date",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 267,
+  "question_text": "Many copies of a business plan circulate among outsiders. The entrepreneur counters this risk with",
+  "options": [
+   "a patent application",
+   "a trademark registration",
+   "a restrictive covenant",
+   "a non-disclosure statement",
+   "a disclosure document"
+  ],
+  "correct_answer": [
+   "a non-disclosure statement"
+  ],
+  "explanation": "A non-disclosure statement. A disclosure document is a patent office filing and is a different instrument entirely.",
+  "source": "AI generated from Guide 6.16, security of the plan",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 268,
+  "question_text": "In checking the barriers to success before writing the plan, the entrepreneur examines",
+  "options": [
+   "the market, finance and operations only",
+   "the business concept and the entrepreneurial team only",
+   "the goals and objectives of the venture only",
+   "the market, finance and operations, the business concept and the team, and the goals and objectives of the venture",
+   "the legal form of the business and its tax position"
+  ],
+  "correct_answer": [
+   "the market, finance and operations, the business concept and the team, and the goals and objectives of the venture"
+  ],
+  "explanation": "All the listed groups are checked. When the paper spells them out as one long option, take the combined option.",
+  "source": "AI generated from Guide 6.4, barriers to success",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 269,
+  "question_text": "The executive summary of a business plan is written\n(i) to stimulate the interest of the reader\n(ii) in a concise and convincing manner covering the key points of the plan\n(iii) after the whole plan has been written",
+  "options": [
+   "i, ii and iii are correct",
+   "i and ii only are correct",
+   "i and iii only are correct",
+   "i only is correct",
+   "iii only is correct"
+  ],
+  "correct_answer": [
+   "i, ii and iii are correct"
+  ],
+  "explanation": "All three. It is written last even though it is read first, and it runs to about two or three pages.",
+  "source": "AI generated from Guide 6.6, the executive summary",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 270,
+  "question_text": "The environmental and industry analysis section deals with\n(i) an assessment of the location of the venture and its immediate area\n(ii) an assessment of competitive strategies and industry trends\n(iii) an assessment of external uncontrollable variables that may affect the business",
+  "options": [
+   "i, ii and iii are correct",
+   "i and ii only are correct",
+   "i and iii only are correct",
+   "i only is correct",
+   "iii only is correct"
+  ],
+  "correct_answer": [
+   "i, ii and iii are correct"
+  ],
+  "explanation": "All three. The 2020 exam confirmed the combined answer.",
+  "source": "AI generated from Guide 6.9, environmental and industry analysis",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 271,
+  "question_text": "Consider the two statements below. S1: Feasibility plans are best prepared by specialists. BECAUSE S2: Specialists such as financial experts know how to operate businesses. Select the correct response.",
+  "options": [
+   "both statements are TRUE and the second is a correct explanation of the first",
+   "both statements are TRUE and the second is NOT a correct explanation of the first",
+   "the first statement is TRUE and the second is FALSE",
+   "both statements are FALSE",
+   "the first statement is FALSE and the second is TRUE"
+  ],
+  "correct_answer": [
+   "both statements are FALSE"
+  ],
+  "explanation": "Both are false. The entrepreneur prepares the plan, and a financial expert knows finance, not how to run a business. Some compiled sheets give C. The 2005 key and the 2020 exam both give both false.",
+  "source": "AI generated from Guide 6.1; Guide 16, conflicts",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 272,
+  "question_text": "Reality shock sets in as the entrepreneur positions the business to compete in the real world. This describes which stage?",
+  "options": [
+   "pre-start-up",
+   "early growth",
+   "later growth",
+   "maturity",
+   "start-up"
+  ],
+  "correct_answer": [
+   "start-up"
+  ],
+  "explanation": "Start-up covers the initial business operations. Pre-start-up is the assembly of resources before the doors open.",
+  "source": "AI generated from Guide 7.1, the four growth stages",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 273,
+  "question_text": "The assembly of resources and the organising of the new venture for opening is the",
+  "options": [
+   "start-up stage",
+   "early growth stage",
+   "later growth stage",
+   "pre-start-up stage",
+   "verification stage"
+  ],
+  "correct_answer": [
+   "pre-start-up stage"
+  ],
+  "explanation": "Pre-start-up. Verification belongs to the creative process, not to the growth stages.",
+  "source": "AI generated from Guide 7.1, the four growth stages",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 274,
+  "question_text": "The two benchmark considerations for the start-up stage are",
+  "options": [
+   "raising capital and recruiting staff",
+   "controlling costs and increasing market share",
+   "meeting operating objectives and positioning the venture for long-term growth",
+   "registering the business and obtaining licences",
+   "building the brand and setting the pricing policy"
+  ],
+  "correct_answer": [
+   "meeting operating objectives and positioning the venture for long-term growth"
+  ],
+  "explanation": "A fixed answer, confirmed in the 2007, 2015 and 2020 papers.",
+  "source": "AI generated from Guide 7.3, benchmark considerations",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 275,
+  "question_text": "The operating objectives of the start-up stage are",
+  "options": [
+   "cost, quality, delivery and safety",
+   "liquidity, solvency, profitability and gearing",
+   "product, price, distribution and promotion",
+   "sales, revenue, growth and position",
+   "recruitment, training, appraisal and reward"
+  ],
+  "correct_answer": [
+   "sales, revenue, growth and position"
+  ],
+  "explanation": "Sales, revenue, growth and position. Product, price, distribution and promotion are the marketing functions, not the start-up objectives.",
+  "source": "AI generated from Guide 7.4, start-up operating objectives",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 276,
+  "question_text": "The financial burden on a new venture before start-up is reduced by",
+  "options": [
+   "cutting production capacity",
+   "reducing the number of staff",
+   "planning assets carefully",
+   "paying low salaries",
+   "delaying supplier payments"
+  ],
+  "correct_answer": [
+   "planning assets carefully"
+  ],
+  "explanation": "Careful asset planning. The other four cut the venture's capacity to trade instead of cutting the money tied up in it.",
+  "source": "AI generated from Guide 7.6, reducing the financial burden",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 277,
+  "question_text": "Consider the two statements below. S1: A reality shock is felt by the entrepreneur during the start-up stage. BECAUSE S2: The start-up stage is where the entrepreneur first positions the business to compete in the real world. Select the correct response.",
+  "options": [
+   "both statements are TRUE and the second is NOT a correct explanation of the first",
+   "the first statement is TRUE and the second is FALSE",
+   "the first statement is FALSE and the second is TRUE",
+   "both statements are FALSE",
+   "both statements are TRUE and the second is a correct explanation of the first"
+  ],
+  "correct_answer": [
+   "both statements are TRUE and the second is a correct explanation of the first"
+  ],
+  "explanation": "Both are true, and S2 explains S1. Pre-start-up assembles resources in private. Start-up meets the real market, which is where the shock comes from.",
+  "source": "AI generated from Guide 7.1, the four growth stages",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 278,
+  "question_text": "The main difference between market research and analysis and the market plan is that",
+  "options": [
+   "market research is done after opening, and the market plan before opening",
+   "market research is prepared by specialists, and the market plan by the entrepreneur",
+   "market research gathers the information, and the market plan then uses it in a marketing strategy to attract customers",
+   "market research covers competitors, and the market plan covers customers",
+   "market research is part of the appendix, and the market plan part of the main body"
+  ],
+  "correct_answer": [
+   "market research gathers the information, and the market plan then uses it in a marketing strategy to attract customers"
+  ],
+  "explanation": "Learn this sentence word for word. Research gathers, the plan uses.",
+  "source": "AI generated from Guide 8.1, research versus plan",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 279,
+  "question_text": "Market research culminates in",
+  "options": [
+   "a cash budget",
+   "a pro forma balance sheet",
+   "a competitive analysis",
+   "a sales forecast",
+   "a promotional mix"
+  ],
+  "correct_answer": [
+   "a sales forecast"
+  ],
+  "explanation": "The sales forecast. It is also the first step in preparing the operating budget, which is why this item links the marketing block to the finance block.",
+  "source": "AI generated from Guide 8.6, results of good market research",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 280,
+  "question_text": "The objective of market research is to establish that a ________ exists.",
+  "options": [
+   "niche",
+   "customer scenario",
+   "sales forecast",
+   "distribution channel",
+   "market"
+  ],
+  "correct_answer": [
+   "market"
+  ],
+  "explanation": "A market. The niche and the customer scenario are found inside the market once the market itself is proved.",
+  "source": "AI generated from Guide 8.2, market research activities",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 281,
+  "question_text": "Marketing research undertaken after a new venture opens its doors is called",
+  "options": [
+   "market survey",
+   "customer scenario",
+   "product/market survey",
+   "situation analysis",
+   "competitive analysis"
+  ],
+  "correct_answer": [
+   "competitive analysis"
+  ],
+  "explanation": "Competitive analysis. Note the pairing: a competitive analysis carried out before opening belongs to the pre-start-up stage.",
+  "source": "AI generated from Guide 8.14, marketing research after opening",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 282,
+  "question_text": "A carefully defined segment of a broader market that sets the positioning of a product or service is",
+  "options": [
+   "a market niche",
+   "a customer scenario",
+   "a distribution channel",
+   "a market survey",
+   "a promotional mix"
+  ],
+  "correct_answer": [
+   "a market niche"
+  ],
+  "explanation": "A market niche. Answer this one by text. Its letter has moved between papers more than any other item.",
+  "source": "AI generated from Guide 8.5, a market niche",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 283,
+  "question_text": "A distribution system is",
+  "options": [
+   "the selection of promotional methods consistent with the marketing strategy",
+   "the process of taking raw materials through production",
+   "the physical process of getting goods to market and the process of locating services",
+   "the planned process of determining prices and how prices change",
+   "the consolidation of all communications into a single message"
+  ],
+  "correct_answer": [
+   "the physical process of getting goods to market and the process of locating services"
+  ],
+  "explanation": "Getting goods to market and locating services. Taking materials through production is manufacturing, not distribution. The channels are consumer, industrial and service.",
+  "source": "AI generated from Guide 8.7, distribution",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 284,
+  "question_text": "Integrated Marketing Communications seeks to",
+  "options": [
+   "use an assortment of forms to deliver a variety of messages",
+   "consolidate all communications to present a single, focused marketing, sales or image message",
+   "convince someone to walk in your door",
+   "select promotional methods consistent with a grand marketing strategy",
+   "determine prices and how prices will change in the field"
+  ],
+  "correct_answer": [
+   "consolidate all communications to present a single, focused marketing, sales or image message"
+  ],
+  "explanation": "A single focused message. The assortment of forms delivering a variety of messages is the exact opposite, and it is the printed distractor.",
+  "source": "AI generated from Guide 8.9, promotion and advertising",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 285,
+  "question_text": "The result of good market research is\n(i) a well defined sales forecast\n(ii) a good estimate of the revenue the venture will earn\n(iii) well defined investment needs for the venture",
+  "options": [
+   "i, ii and iii are correct",
+   "i and ii only are correct",
+   "i only is correct",
+   "i and iii only are correct",
+   "iii only is correct"
+  ],
+  "correct_answer": [
+   "i only is correct"
+  ],
+  "explanation": "Only (i). The sales forecast is the stated result. Revenue estimates and investment needs are produced later, by the budgets.",
+  "source": "AI generated from Guide 8.6, results of good market research",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 286,
+  "question_text": "Advertising for a start-up business seeks to\n(i) make a satisfied customer of the buyer\n(ii) sell to someone even if that person cannot afford the product\n(iii) convince someone to walk in your door",
+  "options": [
+   "i, ii and iii are correct",
+   "i and ii only are correct",
+   "i and iii only are correct",
+   "iii only is correct",
+   "i only is correct"
+  ],
+  "correct_answer": [
+   "iii only is correct"
+  ],
+  "explanation": "Only (iii). At start-up the job of advertising is to get the customer through the door. Satisfaction is the job of the product, and (ii) is simply bad practice.",
+  "source": "AI generated from Guide 8.9, advertising for a start-up",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 287,
+  "question_text": "In marketing, the term product covers\n(i) the business concept, such as fast-food franchising\n(ii) the physical object or service sold, with its packaging, image, brand name and warranty\n(iii) the physical attributes that shape how customers see it: colours, shapes, sizes and materials",
+  "options": [
+   "i and ii only are correct",
+   "i and iii only are correct",
+   "i, ii and iii are correct",
+   "i only is correct",
+   "iii only is correct"
+  ],
+  "correct_answer": [
+   "i, ii and iii are correct"
+  ],
+  "explanation": "All three. Product is a catchall term in marketing, and every one of the three layers belongs to it.",
+  "source": "AI generated from Guide 8.8, the expanded view of a product",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 288,
+  "question_text": "As part of the market plan, the marketing strategy gives guidelines on\n(i) a marketing programme that addresses the marketing activities\n(ii) the expected results, the allocation of resources and who is responsible\n(iii) the ways in which the enterprise will be controlled",
+  "options": [
+   "i, ii and iii are correct",
+   "i and ii only are correct",
+   "i and iii only are correct",
+   "i only is correct",
+   "iii only is correct"
+  ],
+  "correct_answer": [
+   "i, ii and iii are correct"
+  ],
+  "explanation": "All three. The strategy sets the programme, the results and resources, and the controls.",
+  "source": "AI generated from Guide 8.8b, what a marketing strategy provides",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 289,
+  "question_text": "Developing a clear profile of potential customers involves looking at\n(i) age and sex\n(ii) income status\n(iii) locating the potential customer base",
+  "options": [
+   "i and ii only are correct",
+   "i and iii only are correct",
+   "i only is correct",
+   "iii only is correct",
+   "i, ii and iii are correct"
+  ],
+  "correct_answer": [
+   "i, ii and iii are correct"
+  ],
+  "explanation": "All three. The profile describes who they are and where they are.",
+  "source": "AI generated from Guide 8.13, customer profile",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 290,
+  "question_text": "Consider the two statements below. S1: New ventures establish themselves in a market niche. BECAUSE S2: Companies establish segmentation strategies so that efficient use of resources can be achieved without ambiguity. Select the correct response.",
+  "options": [
+   "both statements are TRUE and the second is a correct explanation of the first",
+   "both statements are TRUE and the second is NOT a correct explanation of the first",
+   "the first statement is TRUE and the second is FALSE",
+   "the first statement is FALSE and the second is TRUE",
+   "both statements are FALSE"
+  ],
+  "correct_answer": [
+   "both statements are TRUE and the second is a correct explanation of the first"
+  ],
+  "explanation": "Both are true, and S2 explains S1. A new venture cannot serve a broad market efficiently, so it segments and takes a niche.",
+  "source": "AI generated from Guide 8.5, a market niche",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 291,
+  "question_text": "Consider the two statements below. S1: Market potential is critically influenced by the timing of new products or services. BECAUSE S2: Timing pertains to when products are introduced, how they are priced, how they are distributed and how they are promoted. Select the correct response.",
+  "options": [
+   "both statements are TRUE and the second is NOT a correct explanation of the first",
+   "the first statement is TRUE and the second is FALSE",
+   "the first statement is FALSE and the second is TRUE",
+   "both statements are FALSE",
+   "both statements are TRUE and the second is a correct explanation of the first"
+  ],
+  "correct_answer": [
+   "both statements are TRUE and the second is a correct explanation of the first"
+  ],
+  "explanation": "Both are true, and S2 explains S1. Timing runs through all four marketing functions, so it drives market potential.",
+  "source": "AI generated from Guide 8.12, timing",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 292,
+  "question_text": "A patent search is carried out to determine",
+  "options": [
+   "whether the invention is commercially viable",
+   "whether the inventor has the resources to exploit the patent",
+   "whether the inventor's creation already exists and remains actively protected under the law",
+   "the market value of the patent to a licensee",
+   "the period for which a trademark can be renewed"
+  ],
+  "correct_answer": [
+   "whether the inventor's creation already exists and remains actively protected under the law"
+  ],
+  "explanation": "A patent search asks whether the creation already exists and is still protected. It is a legal check, not a commercial one.",
+  "source": "AI generated from Guide 9.1, patents",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 293,
+  "question_text": "A Disclosure Document is",
+  "options": [
+   "a granted property right over an invention",
+   "a statement to the patent office by the inventor declaring the intent to patent an idea",
+   "the confidentiality clause on the cover page of a business plan",
+   "the published notice of a trademark in the official gazette",
+   "the written record of a partnership agreement"
+  ],
+  "correct_answer": [
+   "a statement to the patent office by the inventor declaring the intent to patent an idea"
+  ],
+  "explanation": "A statement of intent to patent. It becomes important when an infringement occurs. It is not itself a patent.",
+  "source": "AI generated from Guide 9.2, the disclosure document",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 294,
+  "question_text": "A plant patent\n(i) runs for a fixed term of 17 years\n(ii) is granted for hybrid roses\n(iii) is granted for food grains",
+  "options": [
+   "i, ii and iii are correct",
+   "i and ii only are correct",
+   "i only is correct",
+   "iii only is correct",
+   "ii and iii only are correct"
+  ],
+  "correct_answer": [
+   "ii and iii only are correct"
+  ],
+  "explanation": "Hybrid roses and food grains. The 17 year term is the distractor that gets attached to this item, and it is not the answer the papers mark.",
+  "source": "AI generated from Guide 9.1, patents",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 295,
+  "question_text": "The best protection against product liability is\n(i) to produce safe products\n(ii) to warn customers of potential hazards\n(iii) to guarantee zero defects in every unit sold",
+  "options": [
+   "i, ii and iii are correct",
+   "i and ii only are correct",
+   "i and iii only are correct",
+   "i only is correct",
+   "iii only is correct"
+  ],
+  "correct_answer": [
+   "i and ii only are correct"
+  ],
+  "explanation": "Safe products and clear warnings. Zero defects is not achievable, so no venture can offer it as a protection.",
+  "source": "AI generated from Guide 9.4, product liability",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 296,
+  "question_text": "After the legal form has been chosen, the first step in designing the organisation is to",
+  "options": [
+   "write the job descriptions",
+   "decide the organisational structure",
+   "carry out the job analysis",
+   "set the job specification and selection criteria",
+   "recruit and train the employees"
+  ],
+  "correct_answer": [
+   "decide the organisational structure"
+  ],
+  "explanation": "Structure first. Then job analysis identifies the major activities, then the job description, then the job specification, then training.",
+  "source": "AI generated from Guide 10.1, designing the organisation",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 297,
+  "question_text": "The major activities of a new venture are identified through",
+  "options": [
+   "job analysis",
+   "job description",
+   "job specification",
+   "job evaluation",
+   "job rotation"
+  ],
+  "correct_answer": [
+   "job analysis"
+  ],
+  "explanation": "Job analysis identifies the activities. The job description then writes them down, and the job specification sets what the holder must be.",
+  "source": "AI generated from Guide 10.1, designing the organisation",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 298,
+  "question_text": "The main disadvantage of the sole proprietorship is",
+  "options": [
+   "limited financial resources",
+   "a limited life span",
+   "unlimited legal and financial liability",
+   "difficulty in management",
+   "few fringe benefits"
+  ],
+  "correct_answer": [
+   "unlimited legal and financial liability"
+  ],
+  "explanation": "Unlimited liability. The other four are genuine disadvantages, but the examined main one is the unlimited legal and financial liability.",
+  "source": "AI generated from Guide 10.4, sole proprietorship",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 299,
+  "question_text": "A limited partner is one who",
+  "options": [
+   "manages the firm and has unlimited liability",
+   "trades the partnership interest like a corporate share and is taxed as a corporation",
+   "joins the partnership for a fixed period and then withdraws",
+   "invests in the firm, has limited liability, and cannot legally help manage the company",
+   "guarantees the debts of the other partners jointly and severally"
+  ],
+  "correct_answer": [
+   "invests in the firm, has limited liability, and cannot legally help manage the company"
+  ],
+  "explanation": "The limited partner puts in money and stays out of management. The moment a limited partner manages, the protection is lost. The general partner manages and carries unlimited liability.",
+  "source": "AI generated from Guide 10.5, partnership",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 300,
+  "question_text": "A corporation is chartered by the state to conduct business as",
+  "options": [
+   "a voluntary association of two or more owners",
+   "an artificial person with liability separate from its owners",
+   "an extension of the personal estate of its founder",
+   "a partnership taxed at the shareholder level only",
+   "a franchise operating under a parent company's system"
+  ],
+  "correct_answer": [
+   "an artificial person with liability separate from its owners"
+  ],
+  "explanation": "A legal entity, an artificial person, owned by shareholders, with perpetual life and limited liability. Separate liability is the point of the form.",
+  "source": "AI generated from Guide 10.6, corporation",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 301,
+  "question_text": "By law, which form of business is obliged to have a formal board of directors?",
+  "options": [
+   "a sole proprietorship",
+   "a general partnership",
+   "an incorporated company",
+   "a limited partnership",
+   "a franchised outlet"
+  ],
+  "correct_answer": [
+   "an incorporated company"
+  ],
+  "explanation": "Only incorporated companies. Other forms may keep a board of advisors, but no law compels them.",
+  "source": "AI generated from Guide 10.7, boards",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 302,
+  "question_text": "The party that originates a business system and supplies the package of services, products, training and support for a fee and royalties is the",
+  "options": [
+   "franchisee",
+   "franchisor",
+   "general partner",
+   "sponsor",
+   "venture capitalist"
+  ],
+  "correct_answer": [
+   "franchisor"
+  ],
+  "explanation": "The franchisor originates and supplies. The franchisee is the acquiring owner. The franchise is the business system created by the contract between them.",
+  "source": "AI generated from Guide 10.9, franchising",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 303,
+  "question_text": "Selecting a legal form of business involves at least three criteria. They are\n(i) the preferences of the entrepreneur\n(ii) the profile of the enterprise\n(iii) the advantages and disadvantages of the legal business entity",
+  "options": [
+   "i and ii only are correct",
+   "i and iii only are correct",
+   "i only is correct",
+   "iii only is correct",
+   "i, ii and iii are correct"
+  ],
+  "correct_answer": [
+   "i, ii and iii are correct"
+  ],
+  "explanation": "All three. Preferences, profile and the trade-offs of the entity itself.",
+  "source": "AI generated from Guide 10.2, selecting the legal form",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 304,
+  "question_text": "Besides the ease of starting and ending it, the sole proprietorship offers\n(i) an expanded network of contacts\n(ii) a strong profile for obtaining debt financing\n(iii) autonomy of control, decision making and administration",
+  "options": [
+   "i, ii and iii are correct",
+   "i and ii only are correct",
+   "iii only is correct",
+   "i and iii only are correct",
+   "i only is correct"
+  ],
+  "correct_answer": [
+   "iii only is correct"
+  ],
+  "explanation": "Only (iii). A sole proprietor has neither an expanded network nor a strong borrowing profile. Autonomy is the real advantage. Read the printed option (iii) first: in 2005 it read inexpensive and self directing, which is also true.",
+  "source": "AI generated from Guide 10.4, sole proprietorship",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 305,
+  "question_text": "The disadvantages of a partnership include\n(i) a complicated form of administration\n(ii) unlimited legal liability for the business by all parties, jointly and severally\n(iii) limited access to external resources",
+  "options": [
+   "i, ii and iii are correct",
+   "ii only is correct",
+   "ii and iii only are correct",
+   "i only is correct",
+   "iii only is correct"
+  ],
+  "correct_answer": [
+   "ii only is correct"
+  ],
+  "explanation": "Only (ii). A partnership is simple to administer, and it has more access to resources than a sole proprietorship, not less. Joint and several unlimited liability is the real disadvantage.",
+  "source": "AI generated from Guide 10.5, partnership",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 306,
+  "question_text": "Beyond decision making, the directors of a new venture serve as\n(i) members of an expanded social network\n(ii) disturbance handlers and resource allocators\n(iii) mentors and professional advisors",
+  "options": [
+   "i and ii only are correct",
+   "i and iii only are correct",
+   "i only is correct",
+   "i, ii and iii are correct",
+   "iii only is correct"
+  ],
+  "correct_answer": [
+   "i, ii and iii are correct"
+  ],
+  "explanation": "All three. Directors bring contacts, they settle disturbances and allocate resources, and they mentor the entrepreneur.",
+  "source": "AI generated from Guide 10.7, boards",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 307,
+  "question_text": "Money required to purchase physical facilities such as buildings, fixtures and equipment is",
+  "options": [
+   "working capital",
+   "liquid capital",
+   "fixed capital",
+   "replacement capital",
+   "development capital"
+  ],
+  "correct_answer": [
+   "fixed capital"
+  ],
+  "explanation": "Fixed capital is the long term investment in facilities. It is financed by long term credit.",
+  "source": "AI generated from Guide 11.1, the three capital requirements",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 308,
+  "question_text": "Money required for day to day operating costs such as rent, utility bills, inventories and payroll is",
+  "options": [
+   "fixed capital",
+   "working capital",
+   "liquid capital",
+   "seed capital",
+   "replacement capital"
+  ],
+  "correct_answer": [
+   "working capital"
+  ],
+  "explanation": "Working capital. It is financed by short term credit, which is self liquidating because the sales it funds generate the cash to repay it.",
+  "source": "AI generated from Guide 11.1, the three capital requirements",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 309,
+  "question_text": "Money held in reserve for emergencies, as cash or as disposable securities such as stocks, bonds and certificates of deposit, is",
+  "options": [
+   "working capital",
+   "fixed capital",
+   "liquid capital",
+   "retained earnings",
+   "net worth"
+  ],
+  "correct_answer": [
+   "liquid capital"
+  ],
+  "explanation": "Liquid capital, also called fluid capital. The three requirements are asked as three separate questions, so learn all three definitions.",
+  "source": "AI generated from Guide 11.1, the three capital requirements",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 310,
+  "question_text": "Entrepreneurs use which type of credit to purchase major fixed capital such as buildings and land?",
+  "options": [
+   "long term credit",
+   "short term credit",
+   "intermediate term credit",
+   "trade credit",
+   "revolving credit"
+  ],
+  "correct_answer": [
+   "long term credit"
+  ],
+  "explanation": "Long term credit runs beyond five years. Intermediate term credit, one to five years, buys the smaller fixed capital such as fixtures and equipment.",
+  "source": "AI generated from Guide 11.2, the three types of credit",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 311,
+  "question_text": "The course notes give debt financing a second name. That name is",
+  "options": [
+   "ownership financing",
+   "asset-based financing",
+   "equity financing",
+   "seed financing",
+   "replacement capital"
+  ],
+  "correct_answer": [
+   "asset-based financing"
+  ],
+  "explanation": "Notes page 11 reads debt financing, also called asset-based financing. The asset is the collateral, which is why the name attaches to debt and never to equity. One compiled answer sheet calls asset-based financing equity. Two printed keys and the notes say debt.",
+  "source": "AI generated from Guide 11.3, debt versus equity",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 312,
+  "question_text": "When interest rates are low, which form of financing lets the entrepreneur keep a larger ownership portion and earn a greater return on equity?",
+  "options": [
+   "debt financing",
+   "equity financing",
+   "venture capital",
+   "a government grant",
+   "a share issue to employees"
+  ],
+  "correct_answer": [
+   "debt financing"
+  ],
+  "explanation": "Debt. Cheap borrowing buys the asset without giving away ownership. Equity always costs a share of the business.",
+  "source": "AI generated from Guide 11.3, debt versus equity",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 313,
+  "question_text": "A government grant to a new business is classified as",
+  "options": [
+   "an internal fund",
+   "an external fund",
+   "a form of equity held by the state",
+   "retained earnings",
+   "a reduction in working capital"
+  ],
+  "correct_answer": [
+   "an external fund"
+  ],
+  "explanation": "External. Internal sources are profits, the sale of assets, a reduction in working capital, extended payment terms and faster collection of receivables.",
+  "source": "AI generated from Guide 11.4, internal versus external funds",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 314,
+  "question_text": "Which source of funds is the least expensive in terms of cost and control, and is absolutely essential to attracting outside funding?",
+  "options": [
+   "family and friends",
+   "personal funds",
+   "commercial bank loans",
+   "venture capital",
+   "government grants"
+  ],
+  "correct_answer": [
+   "personal funds"
+  ],
+  "explanation": "Personal funds. No outside party will commit money until the entrepreneur has committed their own.",
+  "source": "AI generated from Guide 11.5, the sources ranked",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 315,
+  "question_text": "By far the most frequently used source of short-term funds, where collateral is available, is",
+  "options": [
+   "a venture capital firm",
+   "family and friends",
+   "a government agency",
+   "a development finance house",
+   "a commercial bank"
+  ],
+  "correct_answer": [
+   "a commercial bank"
+  ],
+  "explanation": "Commercial banks, when collateral is available. Venture capital is for the higher risks such as start-up situations.",
+  "source": "AI generated from Guide 11.5, the sources ranked",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 316,
+  "question_text": "The integration and synchronisation of the various financial activities so that all functions work towards common objectives is",
+  "options": [
+   "budgeting",
+   "strategic planning",
+   "financial co-ordination",
+   "capital budgeting",
+   "financial accounting"
+  ],
+  "correct_answer": [
+   "financial co-ordination"
+  ],
+  "explanation": "Financial co-ordination. Budgeting is the narrower process of co-ordinating the finances of all areas of the venture.",
+  "source": "AI generated from Guide 11.6, terms to know",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 317,
+  "question_text": "Restrictions written into a loan agreement are called",
+  "options": [
+   "covenants",
+   "collateral",
+   "royalties",
+   "guarantees",
+   "debentures"
+  ],
+  "correct_answer": [
+   "covenants"
+  ],
+  "explanation": "Covenants. Collateral is the asset pledged, not the restriction on the borrower's conduct.",
+  "source": "AI generated from Guide 11.6, terms to know",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 318,
+  "question_text": "Determining which source of funding an entrepreneur uses depends on\n(i) the type of financing needed, whether short, intermediate or long term\n(ii) the portability of the money once it is raised\n(iii) the entrepreneur's particular financial condition",
+  "options": [
+   "i, ii and iii are correct",
+   "i and ii only are correct",
+   "i and iii only are correct",
+   "i only is correct",
+   "iii only is correct"
+  ],
+  "correct_answer": [
+   "i and iii only are correct"
+  ],
+  "explanation": "Statements (i) and (iii), together with the nature and size of the business. Money portability is the invented option that the except version of this question relies on.",
+  "source": "AI generated from Guide 11.5, the sources ranked",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 319,
+  "question_text": "Consider the two statements below. S1: Personal funds are absolutely essential to attracting outside funding for a new venture. BECAUSE S2: Banks, private investors and venture capitalists look for the entrepreneur's own commitment before they commit their money. Select the correct response.",
+  "options": [
+   "both statements are TRUE and the second is NOT a correct explanation of the first",
+   "the first statement is TRUE and the second is FALSE",
+   "both statements are TRUE and the second is a correct explanation of the first",
+   "the first statement is FALSE and the second is TRUE",
+   "both statements are FALSE"
+  ],
+  "correct_answer": [
+   "both statements are TRUE and the second is a correct explanation of the first"
+  ],
+  "explanation": "Both are true, and S2 explains S1. Personal funds signal commitment, which is why they unlock the other sources.",
+  "source": "AI generated from Guide 11.5, the sources ranked",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 320,
+  "question_text": "The process that co-ordinates the finances of all areas of the new venture is",
+  "options": [
+   "budgeting",
+   "cost accounting",
+   "financial accounting",
+   "auditing",
+   "financial co-ordination"
+  ],
+  "correct_answer": [
+   "budgeting"
+  ],
+  "explanation": "Budgeting. Cost accounting and financial accounting record what has happened. A budget plans what should happen.",
+  "source": "AI generated from Guide 12.1, levels of financial planning",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 321,
+  "question_text": "Deciding whether to buy or to lease equipment is a matter of",
+  "options": [
+   "strategic planning",
+   "capital budgeting",
+   "operations budgeting",
+   "cash budgeting",
+   "financial accounting"
+  ],
+  "correct_answer": [
+   "capital budgeting"
+  ],
+  "explanation": "Capital budgeting, the intermediate level. Strategic planning is long term and covers the scope of the venture and the choice of niche.",
+  "source": "AI generated from Guide 12.1, levels of financial planning",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 322,
+  "question_text": "Deciding which market niche should be profitable is a matter of",
+  "options": [
+   "capital budgeting",
+   "operations budgeting",
+   "tactical budgeting",
+   "strategic planning",
+   "market research"
+  ],
+  "correct_answer": [
+   "strategic planning"
+  ],
+  "explanation": "Strategic planning, the long term level. The three levels are strategic planning, capital budgeting and operations budgeting.",
+  "source": "AI generated from Guide 12.1, levels of financial planning",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 323,
+  "question_text": "The three major budget categories under the master budget are",
+  "options": [
+   "sales budgets, cash budgets and inventory purchases budgets",
+   "strategic budgets, tactical budgets and operational budgets",
+   "fixed budgets, flexible budgets and rolling budgets",
+   "income budgets, expenditure budgets and capital budgets",
+   "operating budgets, capital budgets and financial statement budgets"
+  ],
+  "correct_answer": [
+   "operating budgets, capital budgets and financial statement budgets"
+  ],
+  "explanation": "Operating, capital and financial statement budgets. Financial statement budgets are also called pro forma statements.",
+  "source": "AI generated from Guide 12.2, the master budget",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 324,
+  "question_text": "The master budget normally covers",
+  "options": [
+   "a five-year time span",
+   "a one-year time span",
+   "a three-month time span",
+   "a period of more than one year",
+   "an indefinite period"
+  ],
+  "correct_answer": [
+   "a one-year time span"
+  ],
+  "explanation": "One year. Do not confuse this with the capital budget, which evaluates expenditure affecting the business for more than one year.",
+  "source": "AI generated from Guide 12.2, the master budget",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 325,
+  "question_text": "Perpetual or continuous budgeting uses",
+  "options": [
+   "a 3-month reporting period",
+   "a 6-month reporting period",
+   "a 24-month reporting period",
+   "a 12-month reporting period",
+   "an annual reporting period fixed at the year end"
+  ],
+  "correct_answer": [
+   "a 12-month reporting period"
+  ],
+  "explanation": "A rolling 12 months. At the end of each month a new month is added to the far end, so the horizon never shortens.",
+  "source": "AI generated from Guide 12.2, the master budget",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 326,
+  "question_text": "The budgeting process normally begins with the preparation of the",
+  "options": [
+   "capital budgets",
+   "financial statement budgets",
+   "pro forma balance sheet",
+   "operating budgets",
+   "cash budget"
+  ],
+  "correct_answer": [
+   "operating budgets"
+  ],
+  "explanation": "The operating budgets come first. The information in them is then used to prepare the financial statement budgets. The flow runs one way only.",
+  "source": "AI generated from Guide 12.2, the master budget",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 327,
+  "question_text": "The first step in preparing the operating budget is",
+  "options": [
+   "the inventory purchases budget",
+   "the selling and administrative budget",
+   "the cash budget",
+   "the sales forecast",
+   "the capital budget"
+  ],
+  "correct_answer": [
+   "the sales forecast"
+  ],
+  "explanation": "The sales forecast. Every other operating budget is scaled from the level of sales that is expected.",
+  "source": "AI generated from Guide 12.2, the master budget",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 328,
+  "question_text": "Budgets that provide a basis for evaluating expenditure which affects the business for more than one year are",
+  "options": [
+   "capital budgets",
+   "strategic budgets",
+   "operating budgets",
+   "master budgets",
+   "financial statement budgets"
+  ],
+  "correct_answer": [
+   "capital budgets"
+  ],
+  "explanation": "Capital budgets. Never strategic budgets. That word belongs to strategic planning, which is a level of planning and not a budget.",
+  "source": "AI generated from Guide 12.2, the master budget",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 329,
+  "question_text": "Budgeted financial statements prepared from information in the master budget are called",
+  "options": [
+   "pro forma statements",
+   "audited statements",
+   "management accounts",
+   "consolidated statements",
+   "variance reports"
+  ],
+  "correct_answer": [
+   "pro forma statements"
+  ],
+  "explanation": "Pro forma statements. A pro forma statement predicts what the financial statements will look like at the end of the period.",
+  "source": "AI generated from Guide 12.3, the pro forma statements",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 330,
+  "question_text": "Projected cash accumulations minus projected cash disbursements gives",
+  "options": [
+   "the pro forma cash flow",
+   "the pro forma income statement",
+   "the pro forma balance sheet",
+   "net worth",
+   "retained earnings"
+  ],
+  "correct_answer": [
+   "the pro forma cash flow"
+  ],
+  "explanation": "The pro forma cash flow, which shows projected cash available. Cash flow equals receipts minus disbursements.",
+  "source": "AI generated from Guide 12.3, the pro forma statements",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 331,
+  "question_text": "The preparation of the pro forma balance sheet draws on\n(i) the pro forma income and cash flow statements\n(ii) the operations and sales budgets\n(iii) the capital budgets prepared under different scenarios",
+  "options": [
+   "i, ii and iii are correct",
+   "i and ii only are correct",
+   "i and iii only are correct",
+   "i only is correct",
+   "iii only is correct"
+  ],
+  "correct_answer": [
+   "i, ii and iii are correct"
+  ],
+  "explanation": "All three. The balance sheet is assembled last, from everything above it, which is why the operating budgets must be finished first.",
+  "source": "AI generated from Guide 12.3b, what feeds the pro forma balance sheet",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 332,
+  "question_text": "Consider the two statements below. S1: The preparation of the operating budget begins with the sales forecast. BECAUSE S2: Every other operating budget is scaled from the level of sales that the venture expects to achieve. Select the correct response.",
+  "options": [
+   "both statements are TRUE and the second is NOT a correct explanation of the first",
+   "the first statement is TRUE and the second is FALSE",
+   "the first statement is FALSE and the second is TRUE",
+   "both statements are FALSE",
+   "both statements are TRUE and the second is a correct explanation of the first"
+  ],
+  "correct_answer": [
+   "both statements are TRUE and the second is a correct explanation of the first"
+  ],
+  "explanation": "Both are true, and S2 explains S1. Purchases, staffing and cash all follow from the forecast sales volume.",
+  "source": "AI generated from Guide 12.2, the master budget",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 333,
+  "question_text": "Nkwanta Hardware Ltd had a beginning balance of GH¢32,000 in accounts receivable on 1 April. It collects 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢24,000, GH¢28,800 and GH¢34,560 and its sales on account are GH¢36,000, GH¢43,200 and GH¢51,840 for April, May and June. Determine the accounts receivable for April.",
+  "options": [
+   "GH¢36,000",
+   "GH¢32,000",
+   "GH¢24,000",
+   "GH¢60,000",
+   "GH¢56,000"
+  ],
+  "correct_answer": [
+   "GH¢32,000"
+  ],
+  "explanation": "April collects what was owed on 1 April, so the answer is the given beginning balance of GH¢32,000. Only April uses the opening balance. Every later month uses the previous month's credit sales.",
+  "source": "AI generated from Guide 13.1, schedule of cash receipts",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 334,
+  "question_text": "Using the Nkwanta Hardware data (beginning accounts receivable GH¢32,000; cash sales GH¢24,000, GH¢28,800 and GH¢34,560; sales on account GH¢36,000, GH¢43,200 and GH¢51,840 for April, May and June), determine the accounts receivable for May.",
+  "options": [
+   "GH¢43,200",
+   "GH¢36,000",
+   "GH¢32,000",
+   "GH¢28,800",
+   "GH¢72,000"
+  ],
+  "correct_answer": [
+   "GH¢36,000"
+  ],
+  "explanation": "May collects April's sales on account: GH¢36,000. Check it: May total collections are 28,800 + 36,000 = GH¢64,800.",
+  "source": "AI generated from Guide 13.1, schedule of cash receipts",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 335,
+  "question_text": "Using the Nkwanta Hardware data (sales on account GH¢36,000, GH¢43,200 and GH¢51,840 for April, May and June), determine the accounts receivable for June.",
+  "options": [
+   "GH¢51,840",
+   "GH¢36,000",
+   "GH¢43,200",
+   "GH¢34,560",
+   "GH¢86,400"
+  ],
+  "correct_answer": [
+   "GH¢43,200"
+  ],
+  "explanation": "June collects May's sales on account: GH¢43,200. June total collections are 34,560 + 43,200 = GH¢77,760.",
+  "source": "AI generated from Guide 13.1, schedule of cash receipts",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 336,
+  "question_text": "Nkwanta Hardware Ltd has sales on account of GH¢36,000, GH¢43,200 and GH¢51,840 and total budgeted sales of GH¢60,000, GH¢72,000 and GH¢86,400 for April, May and June. Determine the accounts receivable that appear on the second quarter pro forma balance sheet.",
+  "options": [
+   "GH¢51,840",
+   "GH¢86,400",
+   "GH¢131,040",
+   "GH¢43,200",
+   "GH¢34,560"
+  ],
+  "correct_answer": [
+   "GH¢51,840"
+  ],
+  "explanation": "Year end receivables are the last month's CREDIT sales only: June sales on account, GH¢51,840. It is not June total sales (GH¢86,400) and it is not the sum of the quarter's credit sales (GH¢131,040).",
+  "source": "AI generated from Guide 13.1, rule 4; trap list 13",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 337,
+  "question_text": "Nkwanta Hardware Ltd has total budgeted sales of GH¢60,000, GH¢72,000 and GH¢86,400 for April, May and June. Determine the sales revenue shown on the second quarter pro forma income statement.",
+  "options": [
+   "GH¢218,400",
+   "GH¢198,400",
+   "GH¢131,040",
+   "GH¢86,400",
+   "GH¢87,360"
+  ],
+  "correct_answer": [
+   "GH¢218,400"
+  ],
+  "explanation": "Add the three total budgeted sales figures: 60,000 + 72,000 + 86,400 = GH¢218,400. Use total sales, not the credit sales and not the collections.",
+  "source": "AI generated from Guide 13.1, rule 5",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 338,
+  "question_text": "Ashanti Foods Company Ltd has three divisions preparing a sales budget. First quarter sales are Tamale GH¢480,000, Takoradi GH¢620,000 and Ho GH¢350,000. Sales are expected to grow by 2, 4 and 10 percent per quarter respectively. Determine the fourth quarter sales for the Takoradi division.",
+  "options": [
+   "GH¢725,312",
+   "GH¢697,416",
+   "GH¢670,592",
+   "GH¢694,400",
+   "GH¢644,800"
+  ],
+  "correct_answer": [
+   "GH¢697,416"
+  ],
+  "explanation": "Three growth steps separate the first quarter from the fourth: 620,000 x 1.04 cubed = 620,000 x 1.124864 = GH¢697,416. Raising it to the fourth power gives GH¢725,312, which is the trap option.",
+  "source": "AI generated from Guide 13.2, divisional growth to the fourth quarter",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 339,
+  "question_text": "Ashanti Foods Company Ltd has first quarter sales of Tamale GH¢480,000, Takoradi GH¢620,000 and Ho GH¢350,000, growing at 2, 4 and 10 percent per quarter. Determine the fourth quarter sales for the Ho division.",
+  "options": [
+   "GH¢512,435",
+   "GH¢423,500",
+   "GH¢455,000",
+   "GH¢385,000",
+   "GH¢465,850"
+  ],
+  "correct_answer": [
+   "GH¢465,850"
+  ],
+  "explanation": "350,000 x 1.10 cubed = 350,000 x 1.331 = GH¢465,850. The 1.4641 multiplier is the fourth power and gives the distractor GH¢512,435.",
+  "source": "AI generated from Guide 13.2, divisional growth to the fourth quarter",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 340,
+  "question_text": "Ashanti Foods Company Ltd has first quarter sales of Tamale GH¢480,000, Takoradi GH¢620,000 and Ho GH¢350,000, growing at 2, 4 and 10 percent per quarter. Determine the total fourth quarter sales revenue on the pro forma income statement.",
+  "options": [
+   "GH¢1,757,315",
+   "GH¢1,593,484",
+   "GH¢1,658,200",
+   "GH¢1,672,646",
+   "GH¢1,450,000"
+  ],
+  "correct_answer": [
+   "GH¢1,672,646"
+  ],
+  "explanation": "Grow each division by three steps, then add: 509,380 + 697,416 + 465,850 = GH¢1,672,646. GH¢1,757,315 uses the fourth power, GH¢1,593,484 uses the square, and GH¢1,450,000 is the first quarter total.",
+  "source": "AI generated from Guide 13.2, divisional growth to the fourth quarter",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 341,
+  "question_text": "Mampong Foods Ltd wants a cash cushion of GH¢10,000 before the interest payment at the end of each month, and is charged interest at 3 percent per month. Its January ending cash balance is GH¢7,510 and February cash receipts are GH¢140,000. Compute the total cash available for February.",
+  "options": [
+   "GH¢157,510",
+   "GH¢147,510",
+   "GH¢137,510",
+   "GH¢132,490",
+   "GH¢140,000"
+  ],
+  "correct_answer": [
+   "GH¢147,510"
+  ],
+  "explanation": "Total cash available = beginning cash balance + cash receipts. The beginning balance is January's ending balance: 7,510 + 140,000 = GH¢147,510. The cushion does not enter this line.",
+  "source": "AI generated from Guide 13.3, the cash budget with borrowing and interest",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 342,
+  "question_text": "Mampong Foods Ltd has total cash available of GH¢147,510 for February. Its February inventory purchases are GH¢78,000 and its selling and administrative expenses are GH¢46,000. Compute the cash surplus for February.",
+  "options": [
+   "GH¢13,510",
+   "GH¢23,510",
+   "GH¢33,510",
+   "GH¢69,510",
+   "GH¢23,000"
+  ],
+  "correct_answer": [
+   "GH¢23,510"
+  ],
+  "explanation": "Total disbursements are 78,000 + 46,000 = GH¢124,000. Disbursements minus available = 124,000 - 147,510 = -23,510, a surplus of GH¢23,510. Subtracting the cushion here gives the repayment, not the surplus.",
+  "source": "AI generated from Guide 13.3, the cash budget with borrowing and interest",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 343,
+  "question_text": "Mampong Foods Ltd holds a cash cushion of GH¢10,000. It has a March cash surplus of GH¢35,915 and a loan balance of GH¢69,490 carried into March. Compute the amount to be repaid in March.",
+  "options": [
+   "GH¢45,915",
+   "GH¢35,915",
+   "GH¢59,490",
+   "GH¢25,915",
+   "GH¢10,000"
+  ],
+  "correct_answer": [
+   "GH¢25,915"
+  ],
+  "explanation": "On a surplus, repayment = surplus - cushion: 35,915 - 10,000 = GH¢25,915. Add the cushion only when borrowing. Subtract it when repaying.",
+  "source": "AI generated from Guide 13.3, step 5; trap list 12",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ },
+ {
+  "question_number": 344,
+  "question_text": "Mampong Foods Ltd is charged interest at 3 percent per month on the cumulative loan balance. Its loan balances after financing are GH¢83,000 for January, GH¢69,490 for February and GH¢43,575 for March. Compute the total interest for the first quarter.",
+  "options": [
+   "GH¢2,490",
+   "GH¢5,192",
+   "GH¢6,882",
+   "GH¢5,882",
+   "GH¢1,307"
+  ],
+  "correct_answer": [
+   "GH¢5,882"
+  ],
+  "explanation": "Interest is charged on the running balance each month: 2,490 + 2,085 + 1,307 = GH¢5,882. Charging interest on the new borrowing alone is the standard error.",
+  "source": "AI generated from Guide 13.3, step 6; trap list 11",
+  "verified": "AI generated from the lecture notes and slides. Not from a past paper."
+ }
+]

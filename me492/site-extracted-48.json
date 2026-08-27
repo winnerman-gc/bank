@@ -1,0 +1,818 @@
+[
+ {
+  "question_number": 345,
+  "question_text": "A feasibility plan is a written document\ni. comprising all the elements of a good business plan.\nii. that has the objective of determining whether a new venture can be expected to succeed\niii. that is prepared by and for those who are the promoters",
+  "options": [
+   "if ii and iii only are correct",
+   "if ii only is correct",
+   "if iii only is correct",
+   "if i only is correct",
+   "if i, ii and iii are correct"
+  ],
+  "correct_answer": [
+   "if ii and iii only are correct"
+  ],
+  "explanation": "Statements (ii) and (iii) are on the list: the objective is to determine whether the venture can be expected to succeed, and the promoters prepare it. Statement (i) fails because a feasibility plan is deliberately not the full business plan. It carries only the planning needed to prove feasibility, without overwhelming the entrepreneur.",
+  "source": "Guide 6.2, what a feasibility plan is",
+  "verified": "taken from samplequestions.vercel.app, checked against the notes"
+ },
+ {
+  "question_number": 346,
+  "question_text": "A feasibility plan (business plan for a new venture) should be written by\ni. the entrepreneur\nii. the entrepreneur in consultation with other sources\niii. A business consultant",
+  "options": [
+   "if i only is correct",
+   "if i and iii only are correct",
+   "if i, ii and iii are correct",
+   "if iii only is correct",
+   "if i and ii only are correct"
+  ],
+  "correct_answer": [
+   "if i and ii only are correct"
+  ],
+  "explanation": "The entrepreneur, alone or in consultation with other sources. Statement (iii) hands the job to a business consultant, and that is the standard wrong option. Specialists advise. They do not take the plan over.",
+  "source": "Guide 6.1, who writes the plan",
+  "verified": "taken from samplequestions.vercel.app, checked against the notes"
+ },
+ {
+  "question_number": 347,
+  "question_text": "French economist Jean Baptiste Say, in his 1803 Traite d'economie politique. (Translated into English in 1845 as A Treatise on Political Economy), described an entrepreneur\ni. as one who possessed certain arts and skills of managing existing enterprises.\nii. as one who influenced society by creating new enterprises and at the same time was influenced by society to recognise needs and fulfil them through astute management of resources.\niii. as an \"economic risk taker\" and an \"industrial manager\".",
+  "options": [
+   "if i, ii and iii are correct",
+   "if ii and iii only are correct",
+   "if ii only is correct",
+   "if iii only is correct",
+   "if i only is correct"
+  ],
+  "correct_answer": [
+   "if ii and iii only are correct"
+  ],
+  "explanation": "CORRECTED. The site marks all three. Statement (i) says Say described skills for MANAGING EXISTING enterprises. The notes say CREATING NEW economic enterprises, so (i) is false on one word. Statements (ii) and (iii) match the notes exactly. This is trap 17: one wrong word makes a whole statement false.",
+  "source": "Guide 4.1, the economists",
+  "verified": "re-derived from the lecture notes and slides"
+ },
+ {
+  "question_number": 348,
+  "question_text": "In the creative process, a person is said to be in the preparation stage when he/she\ni. has a sudden flash that idea has merit.\nii. applies or tests to prove that the idea has value.\niii. embarks on a conscious search for bringing the idea to life.",
+  "options": [
+   "if ii only is correct",
+   "if i only is correct",
+   "if iii only is correct",
+   "if ii and iii only are correct",
+   "if i, ii and iii only are correct"
+  ],
+  "correct_answer": [
+   "if iii only is correct"
+  ],
+  "explanation": "Only (iii). Preparation is the conscious search for knowledge to bring the idea to life. The sudden flash in (i) is illumination, and the test to prove value in (ii) is verification.",
+  "source": "Guide 5.2, the five stages",
+  "verified": "taken from samplequestions.vercel.app, checked against the notes"
+ },
+ {
+  "question_number": 349,
+  "question_text": "Entrepreneurship is one of the four mainstream economic factors:\ni. raw materials, labour and overhead costs\nii. land, labour,\niii. capital and entrepreneurship",
+  "options": [
+   "if iii only is correct",
+   "if ii only is correct",
+   "if i, only is correct",
+   "if ii and iii only are correct",
+   "if i ,ii and iii only are correct"
+  ],
+  "correct_answer": [
+   "if ii and iii only are correct"
+  ],
+  "explanation": "The four factors are land, labour, capital and entrepreneurship, so (ii) and (iii) together name them. Statement (i) swaps in raw materials and overhead costs, which are cost categories, not factors of production.",
+  "source": "Guide 4.1; slides on the factors of production",
+  "verified": "taken from samplequestions.vercel.app, checked against the notes"
+ },
+ {
+  "question_number": 350,
+  "question_text": "The word entrepreneur is derived from 17th-century French “entreprendre” and refers to individuals who were\ni. undertakers, meaning those who “undertook”- the risk of new enterprise.\nii. contractors- who bore the risks of profit or loss,\niii. soldiers of fortune, adventurers, builders, and merchants.",
+  "options": [
+   "if iii only is correct",
+   "if i, only is correct",
+   "if i ,ii and iii only are correct",
+   "if ii and iii only are correct",
+   "if ii only is correct"
+  ],
+  "correct_answer": [
+   "if i ,ii and iii only are correct"
+  ],
+  "explanation": "All three. Undertakers who undertook the risk, contractors who bore profit or loss, and the soldiers of fortune, adventurers, builders and merchants of the early slides. Note the contrast with the other origin item, where the added clause about business students makes a statement false.",
+  "source": "Slides 1.13 to 1.24, history of entrepreneurship",
+  "verified": "taken from samplequestions.vercel.app, checked against the notes"
+ },
+ {
+  "question_number": 351,
+  "question_text": "In the Pre-start-Up Stage, the activities that have to be performed include\ni. Business concept defined\nii. Product-market study\niii. Pre-start-up implementation.",
+  "options": [
+   "if iii only is correct",
+   "if i, ii and iii are correct",
+   "if ii and iii only are correct",
+   "if ii only is correct",
+   "if i only is correct"
+  ],
+  "correct_answer": [
+   "if i, ii and iii are correct"
+  ],
+  "explanation": "All three. The business concept is defined, the product-market study is done, and pre-start-up implementation follows. Pre-start-up is the assembly of resources before the doors open.",
+  "source": "Guide 7.2, pre-start-up activities",
+  "verified": "taken from samplequestions.vercel.app, checked against the notes"
+ },
+ {
+  "question_number": 352,
+  "question_text": "The entrepreneur is most knowledgeable person about the proposed business but since there are many ways to get help, the entrepreneur should leave the responsibility for planning the venture to",
+  "options": [
+   "a banker",
+   "a more experienced person in a profession",
+   "himself/herself",
+   "an experienced business plan writer",
+   "his administrator"
+  ],
+  "correct_answer": [
+   "himself/herself"
+  ],
+  "explanation": "The entrepreneur keeps the responsibility. Help is available from a banker, a professional or a plan writer, but the responsibility for planning the venture does not transfer. The entrepreneur has the vision and the motivation.",
+  "source": "Guide 6.1, who writes the plan",
+  "verified": "taken from samplequestions.vercel.app, checked against the notes"
+ },
+ {
+  "question_number": 353,
+  "question_text": "Adam Smith spoke of the \"enterpriser\" as an individual\ni. who undertook the formation of an organisation for commercial purposes.\nii. with unusual foresight who could recognise potential demand for goods and services.\niii. who reacted to economic change, thereby becoming the economic agents who transformed demand into supply.",
+  "options": [
+   "if ii and iii only are correct",
+   "if iii only is correct",
+   "if i, ii and iii are correct",
+   "if i only is correct",
+   "if ii only is correct"
+  ],
+  "correct_answer": [
+   "if i, ii and iii are correct"
+  ],
+  "explanation": "All three match the notes on Smith: he undertook the formation of an organisation for commercial purposes, had unusual foresight to recognise potential demand, and reacted to economic change by transforming demand into supply.",
+  "source": "Guide 4.1, the economists",
+  "verified": "taken from samplequestions.vercel.app, checked against the notes"
+ },
+ {
+  "question_number": 354,
+  "question_text": "Elements in the innovative process are\ni. organizing resources and analytical planning\nii. idea germination, preparation and verification\niii. implementation and commercial application",
+  "options": [
+   "if iii only is correct",
+   "if i and ii only are correct",
+   "if i, ii and iii are correct",
+   "if i and iii only are correct",
+   "if i only is correct"
+  ],
+  "correct_answer": [
+   "if i and iii only are correct"
+  ],
+  "explanation": "Statements (i) and (iii). Organising resources with analytical planning, then implementation and commercial application. Statement (ii) lists idea germination, preparation and verification, which belong to the CREATIVE process. That is trap 4.",
+  "source": "Guide 5.3, the innovation process",
+  "verified": "taken from samplequestions.vercel.app, checked against the notes"
+ },
+ {
+  "question_number": 355,
+  "question_text": "Limited partners enjoy certain advantages over general partners that include\ni. Flexibility and simplicity\nii. Exemption from management responsibility\niii. Investment can be sold, assigned or willed without dissolving the partnership",
+  "options": [
+   "if ii only is correct",
+   "if iii only is correct",
+   "if i only is correct",
+   "if i, ii and iii only are correct",
+   "if ii and iii only are correct"
+  ],
+  "correct_answer": [
+   "if ii and iii only are correct"
+  ],
+  "explanation": "Statements (ii) and (iii). Exemption from management responsibility, and an investment that can be sold, assigned or willed. Read (i) carefully: the notes list profits and losses passing through to all partners, not flexibility and simplicity.",
+  "source": "Guide 10.5, partnership",
+  "verified": "taken from samplequestions.vercel.app, checked against the notes"
+ },
+ {
+  "question_number": 356,
+  "question_text": "In Drucker's view, entrepreneurship occurs when\ni. resources are used to ensure administrative efficiency\nii. resources are redirected to progressive opportunities\niii. industrial activity is organized, matching demand with supply through commerce",
+  "options": [
+   "if i only is correct",
+   "if i, ii and iii are correct",
+   "if iii only is correct",
+   "if ii only is correct",
+   "if ii and iii only are correct"
+  ],
+  "correct_answer": [
+   "if ii only is correct"
+  ],
+  "explanation": "Only (ii). Drucker said resources are redirected to progressive opportunities. Administrative efficiency in (i) is the opposite of his point, and organising industrial activity to match demand with supply in (iii) belongs to the earlier economists.",
+  "source": "Guide 4.1, the economists",
+  "verified": "taken from samplequestions.vercel.app, checked against the notes"
+ },
+ {
+  "question_number": 357,
+  "question_text": "French economist Jean Baptiste Say\ni. combined the \"economic risk taker\" of Cantillon and the \"industrial manager\" of Smith into an unusual character.\nii. described an entrepreneur as one who possessed certain arts and skills of creating new economic enterprises, yet a person who had exceptional insight into society's needs and was able to fulfill them.\niii. entrepreneur influenced society by creating new enterprises and at the same time was influenced by society to recognise needs and fulfil them through astute management of resources.",
+  "options": [
+   "if ii and iii only are correct",
+   "if i, ii and iii are correct",
+   "if ii only is correct",
+   "if i only is correct",
+   "if iii only is correct"
+  ],
+  "correct_answer": [
+   "if i, ii and iii are correct"
+  ],
+  "explanation": "CORRECTED. The site marks (iii) only. All three statements are in the notes on Say: he combined Cantillon's economic risk taker with Smith's industrial manager, he described arts and skills for creating new enterprises plus exceptional insight into society's needs, and he said the entrepreneur both influences society and is influenced by it.",
+  "source": "Guide 4.1, the economists",
+  "verified": "re-derived from the lecture notes and slides"
+ },
+ {
+  "question_number": 358,
+  "question_text": "Carl Menger described entrepreneurship as\ni. a force of \"creative destruction\"\nii. a process with entrepreneurs as innovators\niii. the process of converting resources into goods and services of value to consumers",
+  "options": [
+   "if i and iii only are correct",
+   "if i and ii only are correct",
+   "if i only is correct",
+   "if i, ii and iii are correct",
+   "if iii only is correct"
+  ],
+  "correct_answer": [
+   "if iii only is correct"
+  ],
+  "explanation": "Only (iii): converting resources into goods and services of value to consumers. Creative destruction and entrepreneurs as innovators belong to SCHUMPETER. This is the classic Menger trap and it appears in almost every paper.",
+  "source": "Guide 4.1; trap list 6",
+  "verified": "taken from samplequestions.vercel.app, checked against the notes"
+ },
+ {
+  "question_number": 359,
+  "question_text": "Jean Baptiste Say believed that entrepreneurs _________\ni. were change agents\nii. typically bought goods at known prices and transformed them to sell at unknown prices\niii. behaved with exceptional insight to fulfil society's needs through the process of taking risks",
+  "options": [
+   "if ii and iii only are correct",
+   "if iii only is correct",
+   "if i, ii and iii only are correct",
+   "if ii only is correct",
+   "if i only is correct"
+  ],
+  "correct_answer": [
+   "if iii only is correct"
+  ],
+  "explanation": "Only (iii): exceptional insight into society's needs, fulfilled through taking risks. Statement (ii), buying at known prices and reselling at unknown prices, is CANTILLON. Watch this pair: the same clause is offered under both names in different questions.",
+  "source": "Guide 4.1, the economists",
+  "verified": "taken from samplequestions.vercel.app, checked against the notes"
+ },
+ {
+  "question_number": 360,
+  "question_text": "A partnership, as a legal form of business has certain disadvantages which includes\ni. Complicated form of administration\nii. Business ends with the death or withdrawal of any partner\niii. Unlimited legal liability for business by all parties, jointly and severally",
+  "options": [
+   "if i, ii and iii are correct",
+   "if ii and iii only are correct",
+   "if i only is correct",
+   "if iii only is correct",
+   "if ii only is correct"
+  ],
+  "correct_answer": [
+   "if ii and iii only are correct"
+  ],
+  "explanation": "Statements (ii) and (iii). The business ends on the death or withdrawal of any partner, and liability is unlimited, joint and several. Statement (i) is false: a partnership is a simple form to administer, which is one of its attractions.",
+  "source": "Guide 10.5, partnership",
+  "verified": "taken from samplequestions.vercel.app, checked against the notes"
+ },
+ {
+  "question_number": 361,
+  "question_text": "In Drucker's view, the entrepreneur\ni. uses resources not merely to solve problems but also to take advantage of opportunities\nii. engages in \"creative disruption\"\niii. organizes industrial activity, matching demand with supply through commerce",
+  "options": [
+   "if i, ii and iii are correct",
+   "if i and ii only are correct",
+   "if i and iii only are correct",
+   "if iii only is correct",
+   "if i only is correct"
+  ],
+  "correct_answer": [
+   "if i only is correct"
+  ],
+  "explanation": "Only (i): resources are used not merely to solve problems but to take advantage of opportunities. Statement (ii) misquotes Schumpeter's creative destruction as creative disruption, and (iii) belongs to the earlier economists.",
+  "source": "Guide 4.1; trap list 6",
+  "verified": "taken from samplequestions.vercel.app, checked against the notes"
+ },
+ {
+  "question_number": 362,
+  "question_text": "Richard Cantillon, a French Economists, who is credited with given the concept of entrepreneurship a central role in economics, describes an entrepreneur as a person who\ni. consciously makes decisions about resource allocation\nii. behaves with exceptional insight to fulfil society's needs\niii. seeks higher yields for their money and materials",
+  "options": [
+   "if i and iii only are correct",
+   "if iii only is correct",
+   "if i only is correct",
+   "if i and ii only are correct",
+   "if i, ii and iii are correct"
+  ],
+  "correct_answer": [
+   "if i and iii only are correct"
+  ],
+  "explanation": "CORRECTED. The site marks (i) and (ii). The notes give Cantillon two things: conscious decisions about resource allocation, and seeking higher yields for money and materials. That is (i) and (iii). Statement (ii), exceptional insight into society's needs, is SAY, and the site's own Say question marks it as Say. The site appears to have carried a letter across from a paper whose options ran in a different order. Answer by text.",
+  "source": "Guide 4.1; Guide 16, conflicts",
+  "verified": "re-derived from the lecture notes and slides"
+ },
+ {
+  "question_number": 363,
+  "question_text": "S1: A good way to fail quickly in a new business is to start without a clear vision.\n\nS2: A business without a clear vision shows a lack of planning.",
+  "options": [
+   "if S1 is True, S2 is True and S2 is NOT an explanation of S1",
+   "if S1 is False, S2 is True",
+   "if S1 is True, S2 is False",
+   "if S1 is True, S2 is True and S2 is an explanation of S1",
+   "if both S1 and S2 are False"
+  ],
+  "correct_answer": [
+   "if S1 is True, S2 is True and S2 is an explanation of S1"
+  ],
+  "explanation": "Both statements are true and the second explains the first. A venture with no clear vision has nothing to plan against. The same pair appears elsewhere with the second statement worded as a lack of understanding of marketing issues. The answer does not change.",
+  "source": "Guide 6.15, planning is never finished",
+  "verified": "taken from samplequestions.vercel.app, checked against the notes"
+ },
+ {
+  "question_number": 364,
+  "question_text": "The Lovy-Dovy Company Ltd sells roses. It had a beginning balance of GH¢115,385 in accounts receivable on 1 October and collects 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢30,000, GH¢39,000 and GH¢50,700, its sales on account are GH¢150,000, GH¢195,000 and GH¢253,500, and its total budgeted collections are GH¢143,385, GH¢189,000 and GH¢245,700 for October, November and December. Determine the amount of accounts receivable that will appear on the company's fourth quarter pro forma balance sheet.",
+  "options": [
+   "GH¢19,838",
+   "none of the above",
+   "GH¢51,750",
+   "GH¢59,513",
+   "GH¢79,351"
+  ],
+  "correct_answer": [
+   "none of the above"
+  ],
+  "explanation": "The correct figure is December's CREDIT sales, GH¢253,500. It is not offered. Every printed option comes from the Topsy Turvy table, so none of the above is the right response here. This repeats the known Kaneapa fault: when the correct figure is missing, check whether the option set belongs to another question before you settle.",
+  "source": "Guide 13.1, schedule of cash receipts",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 365,
+  "question_text": "The Lovy-Dovy Company Ltd sells roses. It had a beginning balance of GH¢115,385 in accounts receivable on 1 October and collects 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢30,000, GH¢39,000 and GH¢50,700, its sales on account are GH¢150,000, GH¢195,000 and GH¢253,500, and its total budgeted collections are GH¢143,385, GH¢189,000 and GH¢245,700 for October, November and December. Determine the accounts receivable for October.",
+  "options": [
+   "none of the above",
+   "GH¢115,385",
+   "GH¢90,495",
+   "GH¢105,225",
+   "GH¢85,000"
+  ],
+  "correct_answer": [
+   "GH¢115,385"
+  ],
+  "explanation": "October collects what was owed on 1 October, so the answer is the given opening balance, GH¢115,385. Note a fault in the printed table: October collections should be 30,000 + 115,385 = GH¢145,385, but the paper prints GH¢143,385. The November and December collection lines are both consistent, so only the October line is wrong.",
+  "source": "Guide 13.1, schedule of cash receipts",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 366,
+  "question_text": "The Lovy-Dovy Company Ltd sells roses. It had a beginning balance of GH¢115,385 in accounts receivable on 1 October and collects 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢30,000, GH¢39,000 and GH¢50,700, its sales on account are GH¢150,000, GH¢195,000 and GH¢253,500, and its total budgeted collections are GH¢143,385, GH¢189,000 and GH¢245,700 for October, November and December. Determine the amount of sales revenue that will appear on the company's fourth quarter pro forma income statement.",
+  "options": [
+   "GH¢488,838",
+   "none of the above",
+   "GH¢718,200",
+   "GH¢556,263",
+   "GH¢353,500"
+  ],
+  "correct_answer": [
+   "GH¢718,200"
+  ],
+  "explanation": "Add the three total budgeted sales figures. December's total is 50,700 + 253,500 = GH¢304,200, although the table prints GH¢302,200. Using the correct total: 180,000 + 234,000 + 304,200 = GH¢718,200, which is the marked answer. Trust the cash and credit rows over the total row when they disagree.",
+  "source": "Guide 13.1, schedule of cash receipts",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 367,
+  "question_text": "The Lovy-Dovy Company Ltd sells roses. It had a beginning balance of GH¢115,385 in accounts receivable on 1 October and collects 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢30,000, GH¢39,000 and GH¢50,700, its sales on account are GH¢150,000, GH¢195,000 and GH¢253,500, and its total budgeted collections are GH¢143,385, GH¢189,000 and GH¢245,700 for October, November and December. Determine the budgeted cash sales for October.",
+  "options": [
+   "GH¢65,000",
+   "GH¢45,000",
+   "GH¢55,000",
+   "GH¢30,000",
+   "none of the above"
+  ],
+  "correct_answer": [
+   "GH¢30,000"
+  ],
+  "explanation": "Read the cash sales line straight off the table: GH¢30,000. This is a free mark.",
+  "source": "Guide 13.1, schedule of cash receipts",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 368,
+  "question_text": "The Lovy-Dovy Company Ltd sells roses. It had a beginning balance of GH¢115,385 in accounts receivable on 1 October and collects 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢30,000, GH¢39,000 and GH¢50,700, its sales on account are GH¢150,000, GH¢195,000 and GH¢253,500, and its total budgeted collections are GH¢143,385, GH¢189,000 and GH¢245,700 for October, November and December. Determine the budgeted cash sales for November.",
+  "options": [
+   "GH¢62,250",
+   "GH¢49,500",
+   "GH¢69,000",
+   "GH¢39,000",
+   "none of the above"
+  ],
+  "correct_answer": [
+   "GH¢39,000"
+  ],
+  "explanation": "Read the cash sales line: GH¢39,000. The distractors here are lifted from a different company's table, which is a good reason to work from the figures you are given and not from what looks familiar.",
+  "source": "Guide 13.1, schedule of cash receipts",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 369,
+  "question_text": "The Lovy-Dovy Company Ltd sells roses. It had a beginning balance of GH¢115,385 in accounts receivable on 1 October and collects 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢30,000, GH¢39,000 and GH¢50,700, its sales on account are GH¢150,000, GH¢195,000 and GH¢253,500, and its total budgeted collections are GH¢143,385, GH¢189,000 and GH¢245,700 for October, November and December. Determine the accounts receivable for December.",
+  "options": [
+   "GH¢195,000",
+   "none of the above",
+   "GH¢205,300",
+   "GH¢253,500",
+   "GH¢150,700"
+  ],
+  "correct_answer": [
+   "GH¢195,000"
+  ],
+  "explanation": "December collects November's sales on account, GH¢195,000. Check: 50,700 + 195,000 = GH¢245,700, exactly the printed collections figure.",
+  "source": "Guide 13.1, schedule of cash receipts",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 370,
+  "question_text": "The Lovy-Dovy Company Ltd sells roses. It had a beginning balance of GH¢115,385 in accounts receivable on 1 October and collects 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢30,000, GH¢39,000 and GH¢50,700, its sales on account are GH¢150,000, GH¢195,000 and GH¢253,500, and its total budgeted collections are GH¢143,385, GH¢189,000 and GH¢245,700 for October, November and December. Determine the accounts receivable for November.",
+  "options": [
+   "GH¢150,000",
+   "GH¢186,250",
+   "none of the above",
+   "GH¢175,500",
+   "GH¢162,250"
+  ],
+  "correct_answer": [
+   "GH¢150,000"
+  ],
+  "explanation": "November collects October's sales on account, GH¢150,000. Check it against the collections line: 39,000 + 150,000 = GH¢189,000, which is what the table prints.",
+  "source": "Guide 13.1, schedule of cash receipts",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 371,
+  "question_text": "The Lovy-Dovy Company Ltd sells roses. It had a beginning balance of GH¢115,385 in accounts receivable on 1 October and collects 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢30,000, GH¢39,000 and GH¢50,700, its sales on account are GH¢150,000, GH¢195,000 and GH¢253,500, and its total budgeted collections are GH¢143,385, GH¢189,000 and GH¢245,700 for October, November and December. Determine the budgeted cash sales for December.",
+  "options": [
+   "GH¢39,5100",
+   "none of the above",
+   "GH¢80,000",
+   "GH¢79,350",
+   "GH¢50,700"
+  ],
+  "correct_answer": [
+   "GH¢50,700"
+  ],
+  "explanation": "Read the cash sales line: GH¢50,700.",
+  "source": "Guide 13.1, schedule of cash receipts",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 372,
+  "question_text": "Birdy-Birdy Clothing Company Ltd will sell designer clothing. It has no accounts receivable on 1 October and will collect 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢4,800,000, GH¢6,000,000 and GH¢7,500,000, its sales on account are GH¢3,200,000, GH¢4,000,000 and GH¢5,000,000, and its total budgeted sales are GH¢8,000,000, GH¢10,000,000 and GH¢12,500,000 for October, November and December. Compute the expected increase in sales per month during November and December.",
+  "options": [
+   "30 percent",
+   "25 percent",
+   "35 percent",
+   "40 percent",
+   "20 percent"
+  ],
+  "correct_answer": [
+   "25 percent"
+  ],
+  "explanation": "Divide one month's total sales by the month before: 10,000,000 / 8,000,000 = 1.25, so 25 percent. Check it on the next pair: 12,500,000 / 10,000,000 = 1.25 as well.",
+  "source": "Guide 13.1, schedule of cash receipts",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 373,
+  "question_text": "Birdy-Birdy Clothing Company Ltd will sell designer clothing. It has no accounts receivable on 1 October and will collect 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢4,800,000, GH¢6,000,000 and GH¢7,500,000, its sales on account are GH¢3,200,000, GH¢4,000,000 and GH¢5,000,000, and its total budgeted sales are GH¢8,000,000, GH¢10,000,000 and GH¢12,500,000 for October, November and December. Determine the accounts receivable for November.",
+  "options": [
+   "GH¢6,000,000",
+   "GH¢8,000,000",
+   "GH¢3,200,000",
+   "GH¢5,000,000",
+   "GH¢4,000,000"
+  ],
+  "correct_answer": [
+   "GH¢3,200,000"
+  ],
+  "explanation": "November collects October's sales on account, GH¢3,200,000. Check: 6,000,000 + 3,200,000 = GH¢9,200,000, the printed collections figure.",
+  "source": "Guide 13.1, schedule of cash receipts",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 374,
+  "question_text": "Birdy-Birdy Clothing Company Ltd will sell designer clothing. It has no accounts receivable on 1 October and will collect 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢4,800,000, GH¢6,000,000 and GH¢7,500,000, its sales on account are GH¢3,200,000, GH¢4,000,000 and GH¢5,000,000, and its total budgeted sales are GH¢8,000,000, GH¢10,000,000 and GH¢12,500,000 for October, November and December. Determine the amount of sales revenue that will appear on the company's fourth quarter pro forma income statement.",
+  "options": [
+   "GH¢12,200,000",
+   "GH¢53,800,000",
+   "GH¢18,300,000",
+   "GH¢15,800,000",
+   "GH¢30,500,000"
+  ],
+  "correct_answer": [
+   "GH¢30,500,000"
+  ],
+  "explanation": "Add the three total budgeted sales figures: 8,000,000 + 10,000,000 + 12,500,000 = GH¢30,500,000. Use total sales, not collections.",
+  "source": "Guide 13.1, schedule of cash receipts",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 375,
+  "question_text": "Birdy-Birdy Clothing Company Ltd will sell designer clothing. It has no accounts receivable on 1 October and will collect 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢4,800,000, GH¢6,000,000 and GH¢7,500,000, its sales on account are GH¢3,200,000, GH¢4,000,000 and GH¢5,000,000, and its total budgeted sales are GH¢8,000,000, GH¢10,000,000 and GH¢12,500,000 for October, November and December. Determine the budgeted cash sales for October.",
+  "options": [
+   "GH¢4,800,000",
+   "GH¢4,000,000",
+   "GH¢3,200,000",
+   "GH¢6,000,000",
+   "GH¢8,000,000"
+  ],
+  "correct_answer": [
+   "GH¢4,800,000"
+  ],
+  "explanation": "Read the cash sales line: GH¢4,800,000. October collections equal the cash sales alone, because there were no receivables on 1 October.",
+  "source": "Guide 13.1, schedule of cash receipts",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 376,
+  "question_text": "Birdy-Birdy Clothing Company Ltd will sell designer clothing. It has no accounts receivable on 1 October and will collect 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢4,800,000, GH¢6,000,000 and GH¢7,500,000, its sales on account are GH¢3,200,000, GH¢4,000,000 and GH¢5,000,000, and its total budgeted sales are GH¢8,000,000, GH¢10,000,000 and GH¢12,500,000 for October, November and December. Determine the budgeted cash sales for December.",
+  "options": [
+   "GH¢5,000,000",
+   "GH¢9,200,000",
+   "GH¢11,500,000",
+   "GH¢12,500,000",
+   "GH¢7,500,000"
+  ],
+  "correct_answer": [
+   "GH¢7,500,000"
+  ],
+  "explanation": "Read the cash sales line: GH¢7,500,000.",
+  "source": "Guide 13.1, schedule of cash receipts",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 377,
+  "question_text": "Birdy-Birdy Clothing Company Ltd will sell designer clothing. It has no accounts receivable on 1 October and will collect 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢4,800,000, GH¢6,000,000 and GH¢7,500,000, its sales on account are GH¢3,200,000, GH¢4,000,000 and GH¢5,000,000, and its total budgeted sales are GH¢8,000,000, GH¢10,000,000 and GH¢12,500,000 for October, November and December. Determine the amount of accounts receivable that will appear on the company's fourth quarter pro forma balance sheet.",
+  "options": [
+   "GH¢7,500,000",
+   "GH¢9,200,000",
+   "GH¢5,000,000",
+   "GH¢12,500,000",
+   "GH¢11,500,000"
+  ],
+  "correct_answer": [
+   "GH¢5,000,000"
+  ],
+  "explanation": "December's CREDIT sales only: GH¢5,000,000. It is not December total sales (GH¢12,500,000) and it is not the December collections (GH¢11,500,000). This is the money still uncollected at 31 December.",
+  "source": "Guide 13.1, schedule of cash receipts",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 378,
+  "question_text": "Birdy-Birdy Clothing Company Ltd will sell designer clothing. It has no accounts receivable on 1 October and will collect 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢4,800,000, GH¢6,000,000 and GH¢7,500,000, its sales on account are GH¢3,200,000, GH¢4,000,000 and GH¢5,000,000, and its total budgeted sales are GH¢8,000,000, GH¢10,000,000 and GH¢12,500,000 for October, November and December. Determine the budgeted cash sales for November.",
+  "options": [
+   "GH¢6,000,000",
+   "GH¢5,000,000",
+   "GH¢4,800,000",
+   "GH¢8,000,000",
+   "GH¢3,200,000"
+  ],
+  "correct_answer": [
+   "GH¢6,000,000"
+  ],
+  "explanation": "Read the cash sales line: GH¢6,000,000.",
+  "source": "Guide 13.1, schedule of cash receipts",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 379,
+  "question_text": "Birdy-Birdy Clothing Company Ltd will sell designer clothing. It has no accounts receivable on 1 October and will collect 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢4,800,000, GH¢6,000,000 and GH¢7,500,000, its sales on account are GH¢3,200,000, GH¢4,000,000 and GH¢5,000,000, and its total budgeted sales are GH¢8,000,000, GH¢10,000,000 and GH¢12,500,000 for October, November and December. Determine the accounts receivable for December.",
+  "options": [
+   "GH¢4,000,000",
+   "GH¢3,200,000",
+   "GH¢4,800,000",
+   "GH¢5,000,000",
+   "GH¢8,000,000"
+  ],
+  "correct_answer": [
+   "GH¢4,000,000"
+  ],
+  "explanation": "December collects November's sales on account, GH¢4,000,000. Check: 7,500,000 + 4,000,000 = GH¢11,500,000.",
+  "source": "Guide 13.1, schedule of cash receipts",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 380,
+  "question_text": "Sweetie-Nitie Jewellery Company Ltd wants a cash cushion of GH¢120,000 before the interest payment at the end of each month. Interest is charged at 10 percent per month on the cumulative loan balance, and funds are borrowed and repaid on the first day of each month. The beginning cash balance on 1 July is GH¢0. Cash receipts are GH¢2,500,000, GH¢3,600,000 and GH¢4,200,000; inventory purchases are GH¢1,800,000, GH¢2,000,000 and GH¢2,200,000; selling and administrative expenses are GH¢1,300,000, GH¢1,560,000 and GH¢1,800,000 for July, August and September. Determine the cash surplus for September.",
+  "options": [
+   "GH¢105,600",
+   "none of the above",
+   "GH¢244,800",
+   "GH¢148,000",
+   "GH¢80,000"
+  ],
+  "correct_answer": [
+   "GH¢244,800"
+  ],
+  "explanation": "Total disbursements are 2,200,000 + 1,800,000 = GH¢4,000,000. 4,000,000 - 4,244,800 = -244,800, a surplus of GH¢244,800.",
+  "source": "Guide 13.3, the cash budget with borrowing and interest",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 381,
+  "question_text": "Sweetie-Nitie Jewellery Company Ltd wants a cash cushion of GH¢120,000 before the interest payment at the end of each month. Interest is charged at 10 percent per month on the cumulative loan balance, and funds are borrowed and repaid on the first day of each month. The beginning cash balance on 1 July is GH¢0. Cash receipts are GH¢2,500,000, GH¢3,600,000 and GH¢4,200,000; inventory purchases are GH¢1,800,000, GH¢2,000,000 and GH¢2,200,000; selling and administrative expenses are GH¢1,300,000, GH¢1,560,000 and GH¢1,800,000 for July, August and September. Calculate the amount to be borrowed for August.",
+  "options": [
+   "GH¢64,000",
+   "none of the above",
+   "GH¢750,000",
+   "GH¢680320",
+   "GH¢32,000"
+  ],
+  "correct_answer": [
+   "GH¢32,000"
+  ],
+  "explanation": "READ THIS ONE CAREFULLY. August shows a surplus of GH¢88,000, but the cushion is GH¢120,000. The surplus is SMALLER than the cushion, so the company cannot repay. It must BORROW the difference: 120,000 - 88,000 = GH¢32,000. The usual rule, repayment = surplus - cushion, gives a negative number, and a negative repayment is a borrowing.",
+  "source": "Guide 13.3, the cash budget with borrowing and interest",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 382,
+  "question_text": "Sweetie-Nitie Jewellery Company Ltd wants a cash cushion of GH¢120,000 before the interest payment at the end of each month. Interest is charged at 10 percent per month on the cumulative loan balance, and funds are borrowed and repaid on the first day of each month. The beginning cash balance on 1 July is GH¢0. Cash receipts are GH¢2,500,000, GH¢3,600,000 and GH¢4,200,000; inventory purchases are GH¢1,800,000, GH¢2,000,000 and GH¢2,200,000; selling and administrative expenses are GH¢1,300,000, GH¢1,560,000 and GH¢1,800,000 for July, August and September. Compute the total cash available for September.",
+  "options": [
+   "GH¢4,665,200",
+   "GH¢4,374,900",
+   "GH¢4,244,800",
+   "GH¢5,102,950",
+   "none of the above"
+  ],
+  "correct_answer": [
+   "GH¢4,244,800"
+  ],
+  "explanation": "August ends at GH¢44,800, so September is 44,800 + 4,200,000 = GH¢4,244,800. The August ending balance is 3,648,000 - 3,560,000 + 32,000 - 75,200 = GH¢44,800.",
+  "source": "Guide 13.3, the cash budget with borrowing and interest",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 383,
+  "question_text": "Sweetie-Nitie Jewellery Company Ltd wants a cash cushion of GH¢120,000 before the interest payment at the end of each month. Interest is charged at 10 percent per month on the cumulative loan balance, and funds are borrowed and repaid on the first day of each month. The beginning cash balance on 1 July is GH¢0. Cash receipts are GH¢2,500,000, GH¢3,600,000 and GH¢4,200,000; inventory purchases are GH¢1,800,000, GH¢2,000,000 and GH¢2,200,000; selling and administrative expenses are GH¢1,300,000, GH¢1,560,000 and GH¢1,800,000 for July, August and September. Determine the cash surplus for August.",
+  "options": [
+   "GH¢80,000",
+   "GH¢90,150",
+   "none of the above",
+   "GH¢88,000",
+   "GH¢75,426"
+  ],
+  "correct_answer": [
+   "GH¢88,000"
+  ],
+  "explanation": "Total disbursements are 2,000,000 + 1,560,000 = GH¢3,560,000. Disbursements minus available: 3,560,000 - 3,648,000 = -88,000, a surplus of GH¢88,000.",
+  "source": "Guide 13.3, the cash budget with borrowing and interest",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 384,
+  "question_text": "Sweetie-Nitie Jewellery Company Ltd wants a cash cushion of GH¢120,000 before the interest payment at the end of each month. Interest is charged at 10 percent per month on the cumulative loan balance, and funds are borrowed and repaid on the first day of each month. The beginning cash balance on 1 July is GH¢0. Cash receipts are GH¢2,500,000, GH¢3,600,000 and GH¢4,200,000; inventory purchases are GH¢1,800,000, GH¢2,000,000 and GH¢2,200,000; selling and administrative expenses are GH¢1,300,000, GH¢1,560,000 and GH¢1,800,000 for July, August and September. Compute the total cash available for August.",
+  "options": [
+   "GH¢3,648,000",
+   "GH¢2,750,000",
+   "GH¢2,500,000",
+   "GH¢4,100,000",
+   "none of the above"
+  ],
+  "correct_answer": [
+   "GH¢3,648,000"
+  ],
+  "explanation": "Total cash available = beginning cash balance + cash receipts. July ends at GH¢48,000, so August is 48,000 + 3,600,000 = GH¢3,648,000. Work July first: avail 2,500,000, disbursements 3,100,000, shortage 600,000, borrowing 600,000 + 120,000 = 720,000, interest 72,000, ending 48,000.",
+  "source": "Guide 13.3, the cash budget with borrowing and interest",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 385,
+  "question_text": "Sweetie-Nitie Jewellery Company Ltd wants a cash cushion of GH¢120,000 before the interest payment at the end of each month. Interest is charged at 10 percent per month on the cumulative loan balance, and funds are borrowed and repaid on the first day of each month. The beginning cash balance on 1 July is GH¢0. Cash receipts are GH¢2,500,000, GH¢3,600,000 and GH¢4,200,000; inventory purchases are GH¢1,800,000, GH¢2,000,000 and GH¢2,200,000; selling and administrative expenses are GH¢1,300,000, GH¢1,560,000 and GH¢1,800,000 for July, August and September. Compute the ending cash balance for the month of September.",
+  "options": [
+   "GH¢57,280",
+   "GH¢46,350",
+   "none of the above",
+   "GH¢148,530",
+   "GH¢83,440"
+  ],
+  "correct_answer": [
+   "GH¢57,280"
+  ],
+  "explanation": "Ending = available - disbursements + borrowing - repayment - interest. The loan balance after September's repayment is 752,000 - 124,800 = GH¢627,200, so interest is GH¢62,720. Then 4,244,800 - 4,000,000 - 124,800 - 62,720 = GH¢57,280.",
+  "source": "Guide 13.3, the cash budget with borrowing and interest",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 386,
+  "question_text": "Sweetie-Nitie Jewellery Company Ltd wants a cash cushion of GH¢120,000 before the interest payment at the end of each month. Interest is charged at 10 percent per month on the cumulative loan balance, and funds are borrowed and repaid on the first day of each month. The beginning cash balance on 1 July is GH¢0. Cash receipts are GH¢2,500,000, GH¢3,600,000 and GH¢4,200,000; inventory purchases are GH¢1,800,000, GH¢2,000,000 and GH¢2,200,000; selling and administrative expenses are GH¢1,300,000, GH¢1,560,000 and GH¢1,800,000 for July, August and September. Compute the total amount of interest expense for the third quarter.",
+  "options": [
+   "GH¢209,920",
+   "GH¢116,620",
+   "GH¢304,820",
+   "GH¢62,720",
+   "none of the above"
+  ],
+  "correct_answer": [
+   "GH¢209,920"
+  ],
+  "explanation": "Interest is charged on the CUMULATIVE loan balance each month. July: 720,000 at 10 percent = 72,000. August: the balance rises to 752,000 after the extra borrowing, so 75,200. September: it falls to 627,200, so 62,720. Total = GH¢209,920.",
+  "source": "Guide 13.3, the cash budget with borrowing and interest",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 387,
+  "question_text": "Sweetie-Nitie Jewellery Company Ltd wants a cash cushion of GH¢120,000 before the interest payment at the end of each month. Interest is charged at 10 percent per month on the cumulative loan balance, and funds are borrowed and repaid on the first day of each month. The beginning cash balance on 1 July is GH¢0. Cash receipts are GH¢2,500,000, GH¢3,600,000 and GH¢4,200,000; inventory purchases are GH¢1,800,000, GH¢2,000,000 and GH¢2,200,000; selling and administrative expenses are GH¢1,300,000, GH¢1,560,000 and GH¢1,800,000 for July, August and September. Calculate the amount to be repaid for September.",
+  "options": [
+   "GH¢72,000",
+   "GH¢158,500",
+   "GH¢124,800",
+   "GH¢36,000",
+   "none of the above"
+  ],
+  "correct_answer": [
+   "GH¢124,800"
+  ],
+  "explanation": "September's surplus of GH¢244,800 is larger than the GH¢120,000 cushion, so the normal rule applies: repayment = surplus - cushion = 244,800 - 120,000 = GH¢124,800.",
+  "source": "Guide 13.3, the cash budget with borrowing and interest",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 388,
+  "question_text": "Mercy's Bookshop wants a cash cushion of GH¢7,000 before the interest payment at the end of each month. Interest is charged at 4.35 percent per month on the cumulative loan balance, and funds are borrowed and repaid on the first day of each month. The beginning cash balance on 1 July is GH¢9,000. Cash receipts are GH¢80,000, GH¢94,000 and GH¢112,800; inventory purchases are GH¢76,763, GH¢67,115 and GH¢82,076; selling and administrative expenses are GH¢22,250, GH¢27,280 and GH¢28,216 for July, August and September. Determine the amount of net cash flows from operating activities that will appear on the company's third quarter pro forma statement of cash flows.",
+  "options": [
+   "GH¢(19,753)",
+   "GH¢(19,144)",
+   "GH¢(16,900)",
+   "GH¢(2,715)",
+   "none of the above"
+  ],
+  "correct_answer": [
+   "GH¢(19,144)"
+  ],
+  "explanation": "Operating = cash receipts - cash disbursements - interest paid. Receipts are 80,000 + 94,000 + 112,800 = 286,800. Disbursements are 99,013 + 94,395 + 110,292 = 303,700. Interest is 2,244. So 286,800 - 303,700 - 2,244 = GH¢(19,144). Leaving the interest out gives GH¢(16,900), which is the printed trap.",
+  "source": "Guide 13.3, the cash budget with borrowing and interest",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 389,
+  "question_text": "Mercy's Bookshop wants a cash cushion of GH¢7,000 before the interest payment at the end of each month. Interest is charged at 4.35 percent per month on the cumulative loan balance, and funds are borrowed and repaid on the first day of each month. The beginning cash balance on 1 July is GH¢9,000. Cash receipts are GH¢80,000, GH¢94,000 and GH¢112,800; inventory purchases are GH¢76,763, GH¢67,115 and GH¢82,076; selling and administrative expenses are GH¢22,250, GH¢27,280 and GH¢28,216 for July, August and September. Compute the total amount of interest expense for the third quarter.",
+  "options": [
+   "GH¢1,529",
+   "none of the above",
+   "GH¢740",
+   "GH¢2,244",
+   "GH¢1,504"
+  ],
+  "correct_answer": [
+   "GH¢2,244"
+  ],
+  "explanation": "Charge 4.35 percent on the running loan balance. July: 17,013 gives 740. August: the balance rises to 18,148, giving 789. September: it falls to 16,429, giving 715. Total = GH¢2,244.",
+  "source": "Guide 13.3, the cash budget with borrowing and interest",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 390,
+  "question_text": "Mercy's Bookshop wants a cash cushion of GH¢7,000 before the interest payment at the end of each month. Interest is charged at 4.35 percent per month on the cumulative loan balance, and funds are borrowed and repaid on the first day of each month. The beginning cash balance on 1 July is GH¢9,000. Cash receipts are GH¢80,000, GH¢94,000 and GH¢112,800; inventory purchases are GH¢76,763, GH¢67,115 and GH¢82,076; selling and administrative expenses are GH¢22,250, GH¢27,280 and GH¢28,216 for July, August and September. Calculate the amount to be repaid for September.",
+  "options": [
+   "none of the above",
+   "GH¢8,719",
+   "GH¢16,429",
+   "GH¢1,719",
+   "GH¢15,719"
+  ],
+  "correct_answer": [
+   "GH¢1,719"
+  ],
+  "explanation": "September's surplus is 110,292 disbursed against 119,011 available, so GH¢8,719. That is larger than the cushion, so repayment = 8,719 - 7,000 = GH¢1,719.",
+  "source": "Guide 13.3, the cash budget with borrowing and interest",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 391,
+  "question_text": "Mercy's Bookshop wants a cash cushion of GH¢7,000 before the interest payment at the end of each month. Interest is charged at 4.35 percent per month on the cumulative loan balance, and funds are borrowed and repaid on the first day of each month. The beginning cash balance on 1 July is GH¢9,000. Cash receipts are GH¢80,000, GH¢94,000 and GH¢112,800; inventory purchases are GH¢76,763, GH¢67,115 and GH¢82,076; selling and administrative expenses are GH¢22,250, GH¢27,280 and GH¢28,216 for July, August and September. Calculate the amount to be borrowed for August.",
+  "options": [
+   "GH¢12,865",
+   "GH¢1,135",
+   "GH¢5,865",
+   "none of the above",
+   "GH¢18,148"
+  ],
+  "correct_answer": [
+   "GH¢1,135"
+  ],
+  "explanation": "August has a surplus of GH¢5,865 (disbursements 94,395 against available 100,260), which is smaller than the GH¢7,000 cushion. So the company BORROWS the shortfall: 7,000 - 5,865 = GH¢1,135. Same rule as the Sweetie-Nitie August item.",
+  "source": "Guide 13.3, the cash budget with borrowing and interest",
+  "verified": "recomputed from the printed data"
+ },
+ {
+  "question_number": 392,
+  "question_text": "Mercy's Bookshop wants a cash cushion of GH¢7,000 before the interest payment at the end of each month. Interest is charged at 4.35 percent per month on the cumulative loan balance, and funds are borrowed and repaid on the first day of each month. The beginning cash balance on 1 July is GH¢9,000. Cash receipts are GH¢80,000, GH¢94,000 and GH¢112,800; inventory purchases are GH¢76,763, GH¢67,115 and GH¢82,076; selling and administrative expenses are GH¢22,250, GH¢27,280 and GH¢28,216 for July, August and September. Determine the amount of net cash flows from financing activities that will appear on the company's third quarter pro forma statement of cash flows.",
+  "options": [
+   "GH¢17,013",
+   "GH¢14,185",
+   "none of the above",
+   "GH¢18,148",
+   "GH¢16,429"
+  ],
+  "correct_answer": [
+   "GH¢16,429"
+  ],
+  "explanation": "Financing = everything borrowed minus everything repaid: 17,013 + 1,135 - 1,719 = GH¢16,429. It equals the loan balance still outstanding at the end of September, which is the quickest way to check it.",
+  "source": "Guide 13.3, the cash budget with borrowing and interest",
+  "verified": "recomputed from the printed data"
+ }
+]
