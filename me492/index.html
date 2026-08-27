@@ -66,6 +66,7 @@
             font-size: clamp(0.95rem, 1.7vw, 1.15rem);
             line-height: 1.2;
             color: var(--primary-dark);
+            overflow-wrap: anywhere;
         }
 
         .stats {
@@ -75,7 +76,11 @@
             gap: 6px;
             overflow-x: auto;
             padding-bottom: 2px;
+            min-width: 0;
+            scrollbar-width: none;
         }
+
+        .stats::-webkit-scrollbar { display: none; }
 
         .stat {
             flex: 0 0 auto;
@@ -112,6 +117,7 @@
             gap: 6px;
             flex-wrap: wrap;
             align-items: center;
+            min-width: 0;
         }
 
         .btn {
@@ -234,7 +240,8 @@
             font-size: 0.82rem;
             font-weight: 500;
             white-space: normal;
-            min-width: 100%;
+            width: 100%;
+            min-width: 0;
         }
 
         .question-text th,
@@ -352,10 +359,73 @@
 
         @media (max-width: 720px) {
             .header-inner, .container { padding-left: 14px; padding-right: 14px; }
+            .header-inner { gap: 10px; }
             .question-card { padding: 16px; }
-            .title-row { gap: 6px; }
-            .toolbar { gap: 5px; }
+            .title-row {
+                display: grid;
+                grid-template-columns: minmax(0, 1fr);
+                gap: 8px;
+            }
+            .title-copy { min-width: 0; }
+            .toolbar {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                width: 100%;
+                gap: 6px;
+            }
             .btn { padding: 6px 10px; font-size: 0.74rem; }
+            .toolbar .btn { width: 100%; min-width: 0; }
+            .stats {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 6px;
+                overflow: visible;
+            }
+            .stat {
+                justify-content: space-between;
+                min-width: 0;
+                padding: 7px 9px;
+            }
+            .question-text { font-size: 0.98rem; }
+            .question-text .table-wrap { overflow: visible; }
+            .question-text table,
+            .question-text tbody,
+            .question-text tr { display: block; }
+            .question-text thead { display: none; }
+            .question-text tbody tr {
+                padding: 8px 0;
+                border-bottom: 1px solid var(--border);
+            }
+            .question-text tbody tr:last-child { border-bottom: 0; }
+            .question-text tbody tr.spacer { display: none; }
+            .question-text td {
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;
+                gap: 12px;
+                border: 0;
+                padding: 4px 0;
+                text-align: right;
+                white-space: normal;
+                overflow-wrap: anywhere;
+            }
+            .question-text td:first-child {
+                display: block;
+                padding: 0 0 5px;
+                text-align: left;
+                color: var(--primary-dark);
+                font-weight: 700;
+            }
+            .question-text td:not(:first-child)::before {
+                content: attr(data-label);
+                flex: 1 1 auto;
+                min-width: 0;
+                color: var(--muted);
+                font-size: 0.74rem;
+                font-weight: 700;
+                text-align: left;
+            }
+            .question-text td:not(:first-child):empty { display: none; }
         }
     </style>
 </head>
@@ -955,18 +1025,20 @@
             const head = ruleAt > 0 ? parsed.slice(0, ruleAt) : [];
             const body = parsed.slice(ruleAt >= 0 ? ruleAt + 1 : 0).filter(r => !isRule(r));
 
-            const cell = (tag, value) => {
+            const cell = (tag, value, label = '') => {
                 const bold = /^\*\*(.*)\*\*$/.exec(value);
                 const inner = bold ? `<strong>${escapeHtml(bold[1])}</strong>` : escapeHtml(value);
-                return `<${tag}>${inner}</${tag}>`;
+                const labelAttribute = tag === 'td' ? ` data-label="${escapeHtml(label)}"` : '';
+                return `<${tag}${labelAttribute}>${inner}</${tag}>`;
             };
 
             const thead = head.length
                 ? `<thead>${head.map(r => `<tr>${r.map(c => cell('th', c)).join('')}</tr>`).join('')}</thead>`
                 : '';
+            const labels = head[head.length - 1] || [];
             const tbody = `<tbody>${body.map(r => {
                 const blank = r.every(c => c === '');
-                return `<tr${blank ? ' class="spacer"' : ''}>${r.map(c => cell('td', c)).join('')}</tr>`;
+                return `<tr${blank ? ' class="spacer"' : ''}>${r.map((c, index) => cell('td', c, labels[index] || '')).join('')}</tr>`;
             }).join('')}</tbody>`;
 
             return `<div class="table-wrap"><table>${thead}${tbody}</table></div>`;
