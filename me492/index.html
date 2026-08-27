@@ -285,6 +285,53 @@
             padding: 3px;
         }
 
+        .question-text td.working { padding: 2px; }
+
+        .question-text .cell-input {
+            width: 100%;
+            min-width: 82px;
+            border: 0;
+            border-radius: 7px;
+            background: rgba(245, 158, 11, 0.12);
+            padding: 5px 7px;
+            font: inherit;
+            font-weight: 700;
+            color: var(--text);
+            text-align: right;
+            outline: 2px solid transparent;
+            transition: background 0.15s ease, outline-color 0.15s ease;
+        }
+
+        .question-text .cell-input::placeholder {
+            color: var(--muted);
+            font-weight: 400;
+        }
+
+        .question-text .cell-input:hover { background: rgba(245, 158, 11, 0.2); }
+
+        .question-text .cell-input:focus {
+            background: #fff;
+            outline-color: var(--primary);
+        }
+
+        .question-text .cell-input:not(:placeholder-shown) {
+            background: rgba(22, 163, 74, 0.12);
+        }
+
+        .clear-working {
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            background: #fff;
+            color: var(--muted);
+            padding: 5px 11px;
+            font-size: 0.74rem;
+            font-weight: 700;
+            cursor: pointer;
+            margin-bottom: 12px;
+        }
+
+        .clear-working:hover { color: var(--danger); border-color: var(--danger); }
+
         .options { display: grid; gap: 8px; }
 
         .option-btn {
@@ -464,11 +511,12 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-08-27.3';
+        const CACHE_VERSION = '2026-08-27.4';
         const VIEW_STATE_KEY = 'me492_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'me492_quiz_answers_v2';
         const RETAKE_ANSWERS_STORAGE_KEY = 'me492_quiz_retake_answers_v2';
         const OPTION_ORDER_STORAGE_KEY = 'me492_quiz_option_orders_v2';
+        const TABLE_CELLS_STORAGE_KEY = 'me492_quiz_table_cells_v1';
 
         const SOURCES = [
             {
@@ -504,6 +552,7 @@
         let wrongCount = 0;
         let currentModeQuestions = [];
         let optionOrders = getStoredOptionOrders();
+        let tableCells = getStoredTableCells();
 
         function normalizeOptionText(optionText) {
             return String(optionText || '').replace(/^\s*[A-E][.)]\s*/, '').trim();
@@ -545,6 +594,51 @@
 
         function saveOptionOrders() {
             localStorage.setItem(OPTION_ORDER_STORAGE_KEY, JSON.stringify(optionOrders));
+        }
+
+        // The calculation tables print "?" in every cell you have to work out.
+        // Those cells become inputs, and what you type is kept here so a run
+        // survives a reload, a change of card and a Retake Wrong.
+        function getStoredTableCells() {
+            try {
+                const parsed = JSON.parse(localStorage.getItem(TABLE_CELLS_STORAGE_KEY) || '{}');
+                return parsed && typeof parsed === 'object' ? parsed : {};
+            } catch (error) {
+                return {};
+            }
+        }
+
+        function saveTableCells() {
+            try {
+                localStorage.setItem(TABLE_CELLS_STORAGE_KEY, JSON.stringify(tableCells));
+            } catch (error) {
+                // Storage full or blocked. Keep the working on screen regardless.
+            }
+        }
+
+        function setTableCell(cellKey, value) {
+            const trimmed = String(value == null ? '' : value).trim();
+            if (trimmed) tableCells[cellKey] = trimmed;
+            else delete tableCells[cellKey];
+            saveTableCells();
+        }
+
+        function clearTableCellsFor(scope) {
+            const prefix = `${scope}#`;
+            let removed = 0;
+            Object.keys(tableCells).forEach(key => {
+                if (key.startsWith(prefix)) { delete tableCells[key]; removed += 1; }
+            });
+            if (removed) saveTableCells();
+            return removed;
+        }
+
+        // "Clear working" on a card wipes only that question's cells.
+        function clearWorking(scope, button) {
+            clearTableCellsFor(scope);
+            const card = button.closest('.question-card');
+            card.querySelectorAll('.cell-input').forEach(input => { input.value = ''; });
+            card.querySelector('.cell-input')?.focus();
         }
 
         function getQuestionKey(question, sourceId) {
@@ -850,7 +944,11 @@
                     <div class="question-tag">${tagParts.join(' · ')}</div>
                     <div style="color:var(--muted);font-size:0.82rem;">${singleSource ? '' : sourceLabel(question.sourceId)}</div>
                 </div>
-                <div class="question-text">${renderStem(question.question_text)}</div>
+                <div class="question-text">${renderStem(question.question_text, answerKey)}</div>
+                ${question.question_text.includes('|')
+                    ? `<button type="button" class="clear-working"
+                         onclick="clearWorking('${answerKey}', this)">Clear working</button>`
+                    : ''}
             `;
 
             const optionsWrap = document.createElement('div');
@@ -973,11 +1071,12 @@
 
         // The calculation questions carry the paper's data table. Turn a markdown
         // table into a real one, and leave every other line as escaped text.
-        function renderStem(text) {
+        function renderStem(text, cellScope) {
             const lines = String(text).split('\n');
             const out = [];
             let table = [];
             let prose = [];
+            let tableIndex = 0;
 
             const flushProse = () => {
                 const body = prose.join('\n').replace(/^\n+|\n+$/g, '');
@@ -985,7 +1084,7 @@
                 prose = [];
             };
             const flushTable = () => {
-                if (table.length) out.push(renderTable(table));
+                if (table.length) out.push(renderTable(table, cellScope, tableIndex++));
                 table = [];
             };
 
@@ -1003,7 +1102,7 @@
             return out.join('');
         }
 
-        function renderTable(rows) {
+        function renderTable(rows, cellScope, tableIndex) {
             const isRule = cells => cells.every(c => /^:?-{2,}:?$/.test(c));
             const parsed = rows.map(row => row.trim()
                 .replace(/^\|/, '').replace(/\|$/, '')
@@ -1019,12 +1118,31 @@
                 return `<${tag}>${inner}</${tag}>`;
             };
 
+            // A "?" is a cell the paper leaves for you to fill. Make it an input
+            // and label it with its own row and column, so a screen reader and a
+            // stored key both say which figure it is.
+            const workingCell = (rowIndex, colIndex, rowLabel, colLabel) => {
+                const key = `${cellScope}#${tableIndex}:${rowIndex}:${colIndex}`;
+                const stored = tableCells[key] || '';
+                const label = [rowLabel, colLabel].filter(Boolean).join(', ') || 'working value';
+                return `<td class="working"><input class="cell-input" type="text" inputmode="decimal"`
+                    + ` autocomplete="off" spellcheck="false" placeholder="?"`
+                    + ` data-cell="${escapeHtml(key)}" value="${escapeHtml(stored)}"`
+                    + ` aria-label="${escapeHtml(label)}"></td>`;
+            };
+
+            const headings = head.length ? head[head.length - 1] : [];
             const thead = head.length
                 ? `<thead>${head.map(r => `<tr>${r.map(c => cell('th', c)).join('')}</tr>`).join('')}</thead>`
                 : '';
-            const tbody = `<tbody>${body.map(r => {
+
+            const tbody = `<tbody>${body.map((r, rowIndex) => {
                 const blank = r.every(c => c === '');
-                return `<tr${blank ? ' class="spacer"' : ''}>${r.map(c => cell('td', c)).join('')}</tr>`;
+                const rowLabel = String(r[0] || '').replace(/\*\*/g, '');
+                const cells = r.map((c, colIndex) => c === '?'
+                    ? workingCell(rowIndex, colIndex, rowLabel, headings[colIndex])
+                    : cell('td', c)).join('');
+                return `<tr${blank ? ' class="spacer"' : ''}>${cells}</tr>`;
             }).join('')}</tbody>`;
 
             return `<div class="table-wrap"><table>${thead}${tbody}</table></div>`;
@@ -1136,9 +1254,11 @@
 
             localStorage.removeItem(ANSWERS_STORAGE_KEY);
             localStorage.removeItem(RETAKE_ANSWERS_STORAGE_KEY);
+            localStorage.removeItem(TABLE_CELLS_STORAGE_KEY);
             clearViewState();
             userAnswers = {};
             retakeAnswers = {};
+            tableCells = {};
             currentMode = 'set';
             currentAnswerStore = 'main';
             showSource(currentSourceId || SOURCES[0].id, false, 0);
@@ -1155,6 +1275,25 @@
                 showSource(SOURCES[currentIndex + 1].id, true, 0);
             }
         }
+
+        // One delegated listener covers every table cell, including the cards
+        // that are rebuilt when you change source or start a retake.
+        document.addEventListener('input', event => {
+            const input = event.target.closest('.cell-input');
+            if (input) setTableCell(input.dataset.cell, input.value);
+        });
+
+        // Enter moves down the column instead of submitting anything.
+        document.addEventListener('keydown', event => {
+            if (event.key !== 'Enter') return;
+            const input = event.target.closest('.cell-input');
+            if (!input) return;
+            event.preventDefault();
+            const inputs = Array.from(document.querySelectorAll('.cell-input'));
+            const next = inputs[inputs.indexOf(input) + 1];
+            if (next) next.focus();
+            else input.blur();
+        });
 
         window.addEventListener('load', loadQuestionBanks);
     </script>
