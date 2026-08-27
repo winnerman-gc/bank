@@ -8,6 +8,8 @@ The combination and "because" answers copy the measured skew of the past papers.
 """
 import json
 
+import calc_tables as T
+
 C = "GH¢"
 
 ALL = "i, ii and iii are correct"
@@ -553,68 +555,85 @@ because("Guide 12.2, the master budget",
 
 # ------------------------------------------- 10. The calculations (12)
 S13A = "Guide 13.1, schedule of cash receipts"
-plain(S13A,
-      "Nkwanta Hardware Ltd had a beginning balance of " + C + "32,000 in accounts receivable on 1 April. It collects 100 percent of accounts receivable in the month following the month of sale. Its cash sales are " + C + "24,000, " + C + "28,800 and " + C + "34,560 and its sales on account are " + C + "36,000, " + C + "43,200 and " + C + "51,840 for April, May and June. Determine the accounts receivable for April.",
+plain(S13A, T.stem(T.NKWANTA, "Determine the accounts receivable for April."),
       C + "32,000",
       [C + "36,000", C + "24,000", C + "60,000", C + "56,000"],
-      "April collects what was owed on 1 April, so the answer is the given beginning balance of " + C + "32,000. Only April uses the opening balance. Every later month uses the previous month's credit sales.")
-plain(S13A,
-      "Using the Nkwanta Hardware data (beginning accounts receivable " + C + "32,000; cash sales " + C + "24,000, " + C + "28,800 and " + C + "34,560; sales on account " + C + "36,000, " + C + "43,200 and " + C + "51,840 for April, May and June), determine the accounts receivable for May.",
+      "April collects what was owed on 1 April, so the answer is the given opening balance of "
+      + C + "32,000. Only April uses the opening balance. Every later month uses the previous "
+      "month's credit sales.")
+plain(S13A, T.stem(T.NKWANTA, "Determine the accounts receivable for May."),
       C + "36,000",
       [C + "43,200", C + "32,000", C + "28,800", C + "72,000"],
-      "May collects April's sales on account: " + C + "36,000. Check it: May total collections are 28,800 + 36,000 = " + C + "64,800.")
-plain(S13A,
-      "Using the Nkwanta Hardware data (sales on account " + C + "36,000, " + C + "43,200 and " + C + "51,840 for April, May and June), determine the accounts receivable for June.",
+      "May collects April's sales on account: " + C + "36,000. Check it against the collections "
+      "row: 28,800 + 36,000 = " + C + "64,800.")
+plain(S13A, T.stem(T.NKWANTA, "Determine the accounts receivable for June."),
       C + "43,200",
       [C + "51,840", C + "36,000", C + "34,560", C + "86,400"],
-      "June collects May's sales on account: " + C + "43,200. June total collections are 34,560 + 43,200 = " + C + "77,760.")
+      "June collects May's sales on account: " + C + "43,200. Check: 34,560 + 43,200 = "
+      + C + "77,760, the printed collections figure.")
 plain("Guide 13.1, rule 4; trap list 13",
-      "Nkwanta Hardware Ltd has sales on account of " + C + "36,000, " + C + "43,200 and " + C + "51,840 and total budgeted sales of " + C + "60,000, " + C + "72,000 and " + C + "86,400 for April, May and June. Determine the accounts receivable that appear on the second quarter pro forma balance sheet.",
+      T.stem(T.NKWANTA, "Determine the amount of accounts receivable that will appear on the "
+                        "company's second quarter pro forma balance sheet."),
       C + "51,840",
       [C + "86,400", C + "131,040", C + "43,200", C + "34,560"],
-      "Year end receivables are the last month's CREDIT sales only: June sales on account, " + C + "51,840. It is not June total sales (" + C + "86,400) and it is not the sum of the quarter's credit sales (" + C + "131,040).")
+      "Read the sales on account row, June column: " + C + "51,840. It is not June total sales "
+      "(" + C + "86,400) and it is not the sum of the quarter's credit sales (" + C + "131,040). "
+      "This is the money still uncollected at 30 June.")
 plain("Guide 13.1, rule 5",
-      "Nkwanta Hardware Ltd has total budgeted sales of " + C + "60,000, " + C + "72,000 and " + C + "86,400 for April, May and June. Determine the sales revenue shown on the second quarter pro forma income statement.",
+      T.stem(T.NKWANTA, "Determine the amount of sales revenue that will appear on the "
+                        "company's second quarter pro forma income statement."),
       C + "218,400",
       [C + "198,400", C + "131,040", C + "86,400", C + "87,360"],
-      "Add the three total budgeted sales figures: 60,000 + 72,000 + 86,400 = " + C + "218,400. Use total sales, not the credit sales and not the collections.")
+      "Add the total budgeted sales row: 60,000 + 72,000 + 86,400 = " + C + "218,400. Use total "
+      "sales, not the credit sales row and not the collections row.")
 S13B = "Guide 13.2, divisional growth to the fourth quarter"
-plain(S13B,
-      "Ashanti Foods Company Ltd has three divisions preparing a sales budget. First quarter sales are Tamale " + C + "480,000, Takoradi " + C + "620,000 and Ho " + C + "350,000. Sales are expected to grow by 2, 4 and 10 percent per quarter respectively. Determine the fourth quarter sales for the Takoradi division.",
+plain(S13B, T.stem(T.ASHANTI, "Determine the sales in the fourth quarter for the Takoradi "
+                              "Division."),
       C + "697,416",
       [C + "725,312", C + "670,592", C + "694,400", C + "644,800"],
-      "Three growth steps separate the first quarter from the fourth: 620,000 x 1.04 cubed = 620,000 x 1.124864 = " + C + "697,416. Raising it to the fourth power gives " + C + "725,312, which is the trap option.")
-plain(S13B,
-      "Ashanti Foods Company Ltd has first quarter sales of Tamale " + C + "480,000, Takoradi " + C + "620,000 and Ho " + C + "350,000, growing at 2, 4 and 10 percent per quarter. Determine the fourth quarter sales for the Ho division.",
+      "Three growth steps separate the first quarter from the fourth: 620,000 x 1.04 cubed = "
+      "620,000 x 1.124864 = " + C + "697,416. Raising it to the fourth power gives "
+      + C + "725,312, which is the trap option.")
+plain(S13B, T.stem(T.ASHANTI, "Determine the sales in the fourth quarter for the Ho Division."),
       C + "465,850",
       [C + "512,435", C + "423,500", C + "455,000", C + "385,000"],
-      "350,000 x 1.10 cubed = 350,000 x 1.331 = " + C + "465,850. The 1.4641 multiplier is the fourth power and gives the distractor " + C + "512,435.")
-plain(S13B,
-      "Ashanti Foods Company Ltd has first quarter sales of Tamale " + C + "480,000, Takoradi " + C + "620,000 and Ho " + C + "350,000, growing at 2, 4 and 10 percent per quarter. Determine the total fourth quarter sales revenue on the pro forma income statement.",
+      "350,000 x 1.10 cubed = 350,000 x 1.331 = " + C + "465,850. The 1.4641 multiplier is the "
+      "fourth power and gives the distractor " + C + "512,435.")
+plain(S13B, T.stem(T.ASHANTI, "Determine the amount of sales revenue that will appear on the "
+                              "company's fourth quarter pro forma income statement."),
       C + "1,672,646",
       [C + "1,757,315", C + "1,593,484", C + "1,658,200", C + "1,450,000"],
-      "Grow each division by three steps, then add: 509,380 + 697,416 + 465,850 = " + C + "1,672,646. " + C + "1,757,315 uses the fourth power, " + C + "1,593,484 uses the square, and " + C + "1,450,000 is the first quarter total.")
+      "Grow each division by three steps, then add: 509,380 + 697,416 + 465,850 = "
+      + C + "1,672,646. " + C + "1,757,315 uses the fourth power, " + C + "1,593,484 uses the "
+      "square, and " + C + "1,450,000 is the first quarter total.")
 S13C = "Guide 13.3, the cash budget with borrowing and interest"
-plain(S13C,
-      "Mampong Foods Ltd wants a cash cushion of " + C + "10,000 before the interest payment at the end of each month, and is charged interest at 3 percent per month. Its January ending cash balance is " + C + "7,510 and February cash receipts are " + C + "140,000. Compute the total cash available for February.",
+plain(S13C, T.stem(T.MAMPONG, "Compute the total cash available for February."),
       C + "147,510",
       [C + "157,510", C + "137,510", C + "132,490", C + "140,000"],
-      "Total cash available = beginning cash balance + cash receipts. The beginning balance is January's ending balance: 7,510 + 140,000 = " + C + "147,510. The cushion does not enter this line.")
-plain(S13C,
-      "Mampong Foods Ltd has total cash available of " + C + "147,510 for February. Its February inventory purchases are " + C + "78,000 and its selling and administrative expenses are " + C + "46,000. Compute the cash surplus for February.",
+      "Work January first: available 72,000, disbursements 145,000, shortage 73,000, borrowing "
+      "73,000 + 10,000 = 83,000, interest 2,490, ending " + C + "7,510. February is then "
+      "7,510 + 140,000 = " + C + "147,510. The cushion does not enter this line.")
+plain(S13C, T.stem(T.MAMPONG, "Determine the cash surplus for February."),
       C + "23,510",
       [C + "13,510", C + "33,510", C + "69,510", C + "23,000"],
-      "Total disbursements are 78,000 + 46,000 = " + C + "124,000. Disbursements minus available = 124,000 - 147,510 = -23,510, a surplus of " + C + "23,510. Subtracting the cushion here gives the repayment, not the surplus.")
+      "February disbursements are 78,000 + 46,000 = " + C + "124,000. Disbursements minus "
+      "available = 124,000 - 147,510 = -23,510, a surplus of " + C + "23,510. Subtracting the "
+      "cushion here gives the repayment, not the surplus.")
 plain("Guide 13.3, step 5; trap list 12",
-      "Mampong Foods Ltd holds a cash cushion of " + C + "10,000. It has a March cash surplus of " + C + "35,915 and a loan balance of " + C + "69,490 carried into March. Compute the amount to be repaid in March.",
+      T.stem(T.MAMPONG, "Calculate the amount to be repaid for March."),
       C + "25,915",
       [C + "45,915", C + "35,915", C + "59,490", C + "10,000"],
-      "On a surplus, repayment = surplus - cushion: 35,915 - 10,000 = " + C + "25,915. Add the cushion only when borrowing. Subtract it when repaying.")
+      "March available is 7,915 + 165,000 = 172,915 against disbursements of 137,000, a surplus "
+      "of " + C + "35,915. That is larger than the cushion, so repayment = surplus - cushion = "
+      "35,915 - 10,000 = " + C + "25,915. Add the cushion when borrowing. Subtract it when "
+      "repaying.")
 plain("Guide 13.3, step 6; trap list 11",
-      "Mampong Foods Ltd is charged interest at 3 percent per month on the cumulative loan balance. Its loan balances after financing are " + C + "83,000 for January, " + C + "69,490 for February and " + C + "43,575 for March. Compute the total interest for the first quarter.",
+      T.stem(T.MAMPONG, "Compute the total amount of interest expense for the first quarter."),
       C + "5,882",
       [C + "2,490", C + "5,192", C + "6,882", C + "1,307"],
-      "Interest is charged on the running balance each month: 2,490 + 2,085 + 1,307 = " + C + "5,882. Charging interest on the new borrowing alone is the standard error.")
+      "Interest is charged on the running loan balance. January: 83,000 gives 2,490. February: "
+      "the balance falls to 69,490 after a 13,510 repayment, giving 2,085. March: it falls to "
+      "43,575, giving 1,307. Total = " + C + "5,882.")
 
 # ------------------------------------------- assemble
 assert len(Q) == 100, "expected 100 items, got %d" % len(Q)

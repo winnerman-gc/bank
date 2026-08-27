@@ -1497,7 +1497,7 @@
  },
  {
   "question_number": 333,
-  "question_text": "Nkwanta Hardware Ltd had a beginning balance of GH¢32,000 in accounts receivable on 1 April. It collects 100 percent of accounts receivable in the month following the month of sale. Its cash sales are GH¢24,000, GH¢28,800 and GH¢34,560 and its sales on account are GH¢36,000, GH¢43,200 and GH¢51,840 for April, May and June. Determine the accounts receivable for April.",
+  "question_text": "Nkwanta Hardware Ltd sells building materials. Its budget director has prepared the sales budget that follows. The company had a beginning balance of GH¢32,000 in accounts receivable on April 1. Nkwanta Hardware Ltd normally collects 100 percent of accounts receivable in the month following the month of sale. All computations are rounded to the nearest whole Ghana Cedi (GH¢).\n\n| Sales Budget | April GH¢ | May GH¢ | June GH¢ |\n| :--- | :--- | :--- | :--- |\n| Cash sales | 24,000 | 28,800 | 34,560 |\n| Sales on account | 36,000 | 43,200 | 51,840 |\n| Total budgeted sales | 60,000 | 72,000 | 86,400 |\n| | | | |\n| **Schedule of Cash Receipts** | | | |\n| Current month's cash sales | ? | ? | ? |\n| Collections from accounts receivable | ? | ? | ? |\n| Total Budgeted Collections | 56,000 | 64,800 | 77,760 |\n\nDetermine the accounts receivable for April.",
   "options": [
    "GH¢36,000",
    "GH¢32,000",
@@ -1508,13 +1508,13 @@
   "correct_answer": [
    "GH¢32,000"
   ],
-  "explanation": "April collects what was owed on 1 April, so the answer is the given beginning balance of GH¢32,000. Only April uses the opening balance. Every later month uses the previous month's credit sales.",
+  "explanation": "April collects what was owed on 1 April, so the answer is the given opening balance of GH¢32,000. Only April uses the opening balance. Every later month uses the previous month's credit sales.",
   "source": "AI generated from Guide 13.1, schedule of cash receipts",
   "verified": "AI generated from the lecture notes and slides. Not from a past paper."
  },
  {
   "question_number": 334,
-  "question_text": "Using the Nkwanta Hardware data (beginning accounts receivable GH¢32,000; cash sales GH¢24,000, GH¢28,800 and GH¢34,560; sales on account GH¢36,000, GH¢43,200 and GH¢51,840 for April, May and June), determine the accounts receivable for May.",
+  "question_text": "Nkwanta Hardware Ltd sells building materials. Its budget director has prepared the sales budget that follows. The company had a beginning balance of GH¢32,000 in accounts receivable on April 1. Nkwanta Hardware Ltd normally collects 100 percent of accounts receivable in the month following the month of sale. All computations are rounded to the nearest whole Ghana Cedi (GH¢).\n\n| Sales Budget | April GH¢ | May GH¢ | June GH¢ |\n| :--- | :--- | :--- | :--- |\n| Cash sales | 24,000 | 28,800 | 34,560 |\n| Sales on account | 36,000 | 43,200 | 51,840 |\n| Total budgeted sales | 60,000 | 72,000 | 86,400 |\n| | | | |\n| **Schedule of Cash Receipts** | | | |\n| Current month's cash sales | ? | ? | ? |\n| Collections from accounts receivable | ? | ? | ? |\n| Total Budgeted Collections | 56,000 | 64,800 | 77,760 |\n\nDetermine the accounts receivable for May.",
   "options": [
    "GH¢43,200",
    "GH¢36,000",
@@ -1525,13 +1525,13 @@
   "correct_answer": [
    "GH¢36,000"
   ],
-  "explanation": "May collects April's sales on account: GH¢36,000. Check it: May total collections are 28,800 + 36,000 = GH¢64,800.",
+  "explanation": "May collects April's sales on account: GH¢36,000. Check it against the collections row: 28,800 + 36,000 = GH¢64,800.",
   "source": "AI generated from Guide 13.1, schedule of cash receipts",
   "verified": "AI generated from the lecture notes and slides. Not from a past paper."
  },
  {
   "question_number": 335,
-  "question_text": "Using the Nkwanta Hardware data (sales on account GH¢36,000, GH¢43,200 and GH¢51,840 for April, May and June), determine the accounts receivable for June.",
+  "question_text": "Nkwanta Hardware Ltd sells building materials. Its budget director has prepared the sales budget that follows. The company had a beginning balance of GH¢32,000 in accounts receivable on April 1. Nkwanta Hardware Ltd normally collects 100 percent of accounts receivable in the month following the month of sale. All computations are rounded to the nearest whole Ghana Cedi (GH¢).\n\n| Sales Budget | April GH¢ | May GH¢ | June GH¢ |\n| :--- | :--- | :--- | :--- |\n| Cash sales | 24,000 | 28,800 | 34,560 |\n| Sales on account | 36,000 | 43,200 | 51,840 |\n| Total budgeted sales | 60,000 | 72,000 | 86,400 |\n| | | | |\n| **Schedule of Cash Receipts** | | | |\n| Current month's cash sales | ? | ? | ? |\n| Collections from accounts receivable | ? | ? | ? |\n| Total Budgeted Collections | 56,000 | 64,800 | 77,760 |\n\nDetermine the accounts receivable for June.",
   "options": [
    "GH¢51,840",
    "GH¢36,000",
@@ -1542,13 +1542,13 @@
   "correct_answer": [
    "GH¢43,200"
   ],
-  "explanation": "June collects May's sales on account: GH¢43,200. June total collections are 34,560 + 43,200 = GH¢77,760.",
+  "explanation": "June collects May's sales on account: GH¢43,200. Check: 34,560 + 43,200 = GH¢77,760, the printed collections figure.",
   "source": "AI generated from Guide 13.1, schedule of cash receipts",
   "verified": "AI generated from the lecture notes and slides. Not from a past paper."
  },
  {
   "question_number": 336,
-  "question_text": "Nkwanta Hardware Ltd has sales on account of GH¢36,000, GH¢43,200 and GH¢51,840 and total budgeted sales of GH¢60,000, GH¢72,000 and GH¢86,400 for April, May and June. Determine the accounts receivable that appear on the second quarter pro forma balance sheet.",
+  "question_text": "Nkwanta Hardware Ltd sells building materials. Its budget director has prepared the sales budget that follows. The company had a beginning balance of GH¢32,000 in accounts receivable on April 1. Nkwanta Hardware Ltd normally collects 100 percent of accounts receivable in the month following the month of sale. All computations are rounded to the nearest whole Ghana Cedi (GH¢).\n\n| Sales Budget | April GH¢ | May GH¢ | June GH¢ |\n| :--- | :--- | :--- | :--- |\n| Cash sales | 24,000 | 28,800 | 34,560 |\n| Sales on account | 36,000 | 43,200 | 51,840 |\n| Total budgeted sales | 60,000 | 72,000 | 86,400 |\n| | | | |\n| **Schedule of Cash Receipts** | | | |\n| Current month's cash sales | ? | ? | ? |\n| Collections from accounts receivable | ? | ? | ? |\n| Total Budgeted Collections | 56,000 | 64,800 | 77,760 |\n\nDetermine the amount of accounts receivable that will appear on the company's second quarter pro forma balance sheet.",
   "options": [
    "GH¢51,840",
    "GH¢86,400",
@@ -1559,13 +1559,13 @@
   "correct_answer": [
    "GH¢51,840"
   ],
-  "explanation": "Year end receivables are the last month's CREDIT sales only: June sales on account, GH¢51,840. It is not June total sales (GH¢86,400) and it is not the sum of the quarter's credit sales (GH¢131,040).",
+  "explanation": "Read the sales on account row, June column: GH¢51,840. It is not June total sales (GH¢86,400) and it is not the sum of the quarter's credit sales (GH¢131,040). This is the money still uncollected at 30 June.",
   "source": "AI generated from Guide 13.1, rule 4; trap list 13",
   "verified": "AI generated from the lecture notes and slides. Not from a past paper."
  },
  {
   "question_number": 337,
-  "question_text": "Nkwanta Hardware Ltd has total budgeted sales of GH¢60,000, GH¢72,000 and GH¢86,400 for April, May and June. Determine the sales revenue shown on the second quarter pro forma income statement.",
+  "question_text": "Nkwanta Hardware Ltd sells building materials. Its budget director has prepared the sales budget that follows. The company had a beginning balance of GH¢32,000 in accounts receivable on April 1. Nkwanta Hardware Ltd normally collects 100 percent of accounts receivable in the month following the month of sale. All computations are rounded to the nearest whole Ghana Cedi (GH¢).\n\n| Sales Budget | April GH¢ | May GH¢ | June GH¢ |\n| :--- | :--- | :--- | :--- |\n| Cash sales | 24,000 | 28,800 | 34,560 |\n| Sales on account | 36,000 | 43,200 | 51,840 |\n| Total budgeted sales | 60,000 | 72,000 | 86,400 |\n| | | | |\n| **Schedule of Cash Receipts** | | | |\n| Current month's cash sales | ? | ? | ? |\n| Collections from accounts receivable | ? | ? | ? |\n| Total Budgeted Collections | 56,000 | 64,800 | 77,760 |\n\nDetermine the amount of sales revenue that will appear on the company's second quarter pro forma income statement.",
   "options": [
    "GH¢218,400",
    "GH¢198,400",
@@ -1576,13 +1576,13 @@
   "correct_answer": [
    "GH¢218,400"
   ],
-  "explanation": "Add the three total budgeted sales figures: 60,000 + 72,000 + 86,400 = GH¢218,400. Use total sales, not the credit sales and not the collections.",
+  "explanation": "Add the total budgeted sales row: 60,000 + 72,000 + 86,400 = GH¢218,400. Use total sales, not the credit sales row and not the collections row.",
   "source": "AI generated from Guide 13.1, rule 5",
   "verified": "AI generated from the lecture notes and slides. Not from a past paper."
  },
  {
   "question_number": 338,
-  "question_text": "Ashanti Foods Company Ltd has three divisions preparing a sales budget. First quarter sales are Tamale GH¢480,000, Takoradi GH¢620,000 and Ho GH¢350,000. Sales are expected to grow by 2, 4 and 10 percent per quarter respectively. Determine the fourth quarter sales for the Takoradi division.",
+  "question_text": "Ashanti Foods Company Ltd, which has three divisions, is preparing its sales budget. However, each division expects a different growth rate because the economic conditions vary in different regions of the country. The growth expectations per quarter are 2 percent for Tamale Division, 4 percent for Takoradi Division and 10 percent for Ho Division. All computations are rounded to the nearest whole Ghana Cedi (GH¢).\n\n| Current Quarter | First Quarter (GH¢) | Second Quarter (GH¢) | Third Quarter (GH¢) | Fourth Quarter (GH¢) |\n| :--- | :--- | :--- | :--- | :--- |\n| Tamale Division | 480,000 | ? | ? | ? |\n| Takoradi Division | 620,000 | ? | ? | ? |\n| Ho Division | 350,000 | ? | ? | ? |\n\nDetermine the sales in the fourth quarter for the Takoradi Division.",
   "options": [
    "GH¢725,312",
    "GH¢697,416",
@@ -1599,7 +1599,7 @@
  },
  {
   "question_number": 339,
-  "question_text": "Ashanti Foods Company Ltd has first quarter sales of Tamale GH¢480,000, Takoradi GH¢620,000 and Ho GH¢350,000, growing at 2, 4 and 10 percent per quarter. Determine the fourth quarter sales for the Ho division.",
+  "question_text": "Ashanti Foods Company Ltd, which has three divisions, is preparing its sales budget. However, each division expects a different growth rate because the economic conditions vary in different regions of the country. The growth expectations per quarter are 2 percent for Tamale Division, 4 percent for Takoradi Division and 10 percent for Ho Division. All computations are rounded to the nearest whole Ghana Cedi (GH¢).\n\n| Current Quarter | First Quarter (GH¢) | Second Quarter (GH¢) | Third Quarter (GH¢) | Fourth Quarter (GH¢) |\n| :--- | :--- | :--- | :--- | :--- |\n| Tamale Division | 480,000 | ? | ? | ? |\n| Takoradi Division | 620,000 | ? | ? | ? |\n| Ho Division | 350,000 | ? | ? | ? |\n\nDetermine the sales in the fourth quarter for the Ho Division.",
   "options": [
    "GH¢512,435",
    "GH¢423,500",
@@ -1616,7 +1616,7 @@
  },
  {
   "question_number": 340,
-  "question_text": "Ashanti Foods Company Ltd has first quarter sales of Tamale GH¢480,000, Takoradi GH¢620,000 and Ho GH¢350,000, growing at 2, 4 and 10 percent per quarter. Determine the total fourth quarter sales revenue on the pro forma income statement.",
+  "question_text": "Ashanti Foods Company Ltd, which has three divisions, is preparing its sales budget. However, each division expects a different growth rate because the economic conditions vary in different regions of the country. The growth expectations per quarter are 2 percent for Tamale Division, 4 percent for Takoradi Division and 10 percent for Ho Division. All computations are rounded to the nearest whole Ghana Cedi (GH¢).\n\n| Current Quarter | First Quarter (GH¢) | Second Quarter (GH¢) | Third Quarter (GH¢) | Fourth Quarter (GH¢) |\n| :--- | :--- | :--- | :--- | :--- |\n| Tamale Division | 480,000 | ? | ? | ? |\n| Takoradi Division | 620,000 | ? | ? | ? |\n| Ho Division | 350,000 | ? | ? | ? |\n\nDetermine the amount of sales revenue that will appear on the company's fourth quarter pro forma income statement.",
   "options": [
    "GH¢1,757,315",
    "GH¢1,593,484",
@@ -1633,7 +1633,7 @@
  },
  {
   "question_number": 341,
-  "question_text": "Mampong Foods Ltd wants a cash cushion of GH¢10,000 before the interest payment at the end of each month, and is charged interest at 3 percent per month. Its January ending cash balance is GH¢7,510 and February cash receipts are GH¢140,000. Compute the total cash available for February.",
+  "question_text": "The Finance Officer for Mampong Foods Ltd prepared the following cash budget. Mampong Foods desires to maintain a cash cushion of GH¢10,000 before the interest payment at the end of each month. Funds are assumed to be borrowed and repaid on the first day of each month. Interest is charged at the rate of 3 percent per month. The company had a beginning cash balance of GH¢12,000. All computations are rounded to the nearest whole Ghana Cedi (GH¢).\n\n| Cash Budget | January GH¢ | February GH¢ | March GH¢ |\n| :--- | :--- | :--- | :--- |\n| Beginning cash balance | 12,000 | ? | ? |\n| Cash receipts | 60,000 | 140,000 | 165,000 |\n| Total cash available | 72,000 | ? | ? |\n| | | | |\n| **Disbursements** | | | |\n| Inventory purchases | 90,000 | 78,000 | 85,000 |\n| Selling & Administrative expenses | 55,000 | 46,000 | 52,000 |\n| Total budgeted disbursements | 145,000 | ? | ? |\n| | | | |\n| **Cash needs** | | | |\n| Shortage (surplus) of cash | 73,000 | ? | ? |\n| Cash cushion | 10,000 | 10,000 | 10,000 |\n| | | | |\n| **Financing activity** | | | |\n| Borrowing (repayment) | 83,000 | ? | ? |\n| Interest expense at 3 percent per month | (2,490) | ? | ? |\n| Ending cash balance | 7,510 | ? | ? |\n\nCompute the total cash available for February.",
   "options": [
    "GH¢157,510",
    "GH¢147,510",
@@ -1644,13 +1644,13 @@
   "correct_answer": [
    "GH¢147,510"
   ],
-  "explanation": "Total cash available = beginning cash balance + cash receipts. The beginning balance is January's ending balance: 7,510 + 140,000 = GH¢147,510. The cushion does not enter this line.",
+  "explanation": "Work January first: available 72,000, disbursements 145,000, shortage 73,000, borrowing 73,000 + 10,000 = 83,000, interest 2,490, ending GH¢7,510. February is then 7,510 + 140,000 = GH¢147,510. The cushion does not enter this line.",
   "source": "AI generated from Guide 13.3, the cash budget with borrowing and interest",
   "verified": "AI generated from the lecture notes and slides. Not from a past paper."
  },
  {
   "question_number": 342,
-  "question_text": "Mampong Foods Ltd has total cash available of GH¢147,510 for February. Its February inventory purchases are GH¢78,000 and its selling and administrative expenses are GH¢46,000. Compute the cash surplus for February.",
+  "question_text": "The Finance Officer for Mampong Foods Ltd prepared the following cash budget. Mampong Foods desires to maintain a cash cushion of GH¢10,000 before the interest payment at the end of each month. Funds are assumed to be borrowed and repaid on the first day of each month. Interest is charged at the rate of 3 percent per month. The company had a beginning cash balance of GH¢12,000. All computations are rounded to the nearest whole Ghana Cedi (GH¢).\n\n| Cash Budget | January GH¢ | February GH¢ | March GH¢ |\n| :--- | :--- | :--- | :--- |\n| Beginning cash balance | 12,000 | ? | ? |\n| Cash receipts | 60,000 | 140,000 | 165,000 |\n| Total cash available | 72,000 | ? | ? |\n| | | | |\n| **Disbursements** | | | |\n| Inventory purchases | 90,000 | 78,000 | 85,000 |\n| Selling & Administrative expenses | 55,000 | 46,000 | 52,000 |\n| Total budgeted disbursements | 145,000 | ? | ? |\n| | | | |\n| **Cash needs** | | | |\n| Shortage (surplus) of cash | 73,000 | ? | ? |\n| Cash cushion | 10,000 | 10,000 | 10,000 |\n| | | | |\n| **Financing activity** | | | |\n| Borrowing (repayment) | 83,000 | ? | ? |\n| Interest expense at 3 percent per month | (2,490) | ? | ? |\n| Ending cash balance | 7,510 | ? | ? |\n\nDetermine the cash surplus for February.",
   "options": [
    "GH¢13,510",
    "GH¢23,510",
@@ -1661,13 +1661,13 @@
   "correct_answer": [
    "GH¢23,510"
   ],
-  "explanation": "Total disbursements are 78,000 + 46,000 = GH¢124,000. Disbursements minus available = 124,000 - 147,510 = -23,510, a surplus of GH¢23,510. Subtracting the cushion here gives the repayment, not the surplus.",
+  "explanation": "February disbursements are 78,000 + 46,000 = GH¢124,000. Disbursements minus available = 124,000 - 147,510 = -23,510, a surplus of GH¢23,510. Subtracting the cushion here gives the repayment, not the surplus.",
   "source": "AI generated from Guide 13.3, the cash budget with borrowing and interest",
   "verified": "AI generated from the lecture notes and slides. Not from a past paper."
  },
  {
   "question_number": 343,
-  "question_text": "Mampong Foods Ltd holds a cash cushion of GH¢10,000. It has a March cash surplus of GH¢35,915 and a loan balance of GH¢69,490 carried into March. Compute the amount to be repaid in March.",
+  "question_text": "The Finance Officer for Mampong Foods Ltd prepared the following cash budget. Mampong Foods desires to maintain a cash cushion of GH¢10,000 before the interest payment at the end of each month. Funds are assumed to be borrowed and repaid on the first day of each month. Interest is charged at the rate of 3 percent per month. The company had a beginning cash balance of GH¢12,000. All computations are rounded to the nearest whole Ghana Cedi (GH¢).\n\n| Cash Budget | January GH¢ | February GH¢ | March GH¢ |\n| :--- | :--- | :--- | :--- |\n| Beginning cash balance | 12,000 | ? | ? |\n| Cash receipts | 60,000 | 140,000 | 165,000 |\n| Total cash available | 72,000 | ? | ? |\n| | | | |\n| **Disbursements** | | | |\n| Inventory purchases | 90,000 | 78,000 | 85,000 |\n| Selling & Administrative expenses | 55,000 | 46,000 | 52,000 |\n| Total budgeted disbursements | 145,000 | ? | ? |\n| | | | |\n| **Cash needs** | | | |\n| Shortage (surplus) of cash | 73,000 | ? | ? |\n| Cash cushion | 10,000 | 10,000 | 10,000 |\n| | | | |\n| **Financing activity** | | | |\n| Borrowing (repayment) | 83,000 | ? | ? |\n| Interest expense at 3 percent per month | (2,490) | ? | ? |\n| Ending cash balance | 7,510 | ? | ? |\n\nCalculate the amount to be repaid for March.",
   "options": [
    "GH¢45,915",
    "GH¢35,915",
@@ -1678,13 +1678,13 @@
   "correct_answer": [
    "GH¢25,915"
   ],
-  "explanation": "On a surplus, repayment = surplus - cushion: 35,915 - 10,000 = GH¢25,915. Add the cushion only when borrowing. Subtract it when repaying.",
+  "explanation": "March available is 7,915 + 165,000 = 172,915 against disbursements of 137,000, a surplus of GH¢35,915. That is larger than the cushion, so repayment = surplus - cushion = 35,915 - 10,000 = GH¢25,915. Add the cushion when borrowing. Subtract it when repaying.",
   "source": "AI generated from Guide 13.3, step 5; trap list 12",
   "verified": "AI generated from the lecture notes and slides. Not from a past paper."
  },
  {
   "question_number": 344,
-  "question_text": "Mampong Foods Ltd is charged interest at 3 percent per month on the cumulative loan balance. Its loan balances after financing are GH¢83,000 for January, GH¢69,490 for February and GH¢43,575 for March. Compute the total interest for the first quarter.",
+  "question_text": "The Finance Officer for Mampong Foods Ltd prepared the following cash budget. Mampong Foods desires to maintain a cash cushion of GH¢10,000 before the interest payment at the end of each month. Funds are assumed to be borrowed and repaid on the first day of each month. Interest is charged at the rate of 3 percent per month. The company had a beginning cash balance of GH¢12,000. All computations are rounded to the nearest whole Ghana Cedi (GH¢).\n\n| Cash Budget | January GH¢ | February GH¢ | March GH¢ |\n| :--- | :--- | :--- | :--- |\n| Beginning cash balance | 12,000 | ? | ? |\n| Cash receipts | 60,000 | 140,000 | 165,000 |\n| Total cash available | 72,000 | ? | ? |\n| | | | |\n| **Disbursements** | | | |\n| Inventory purchases | 90,000 | 78,000 | 85,000 |\n| Selling & Administrative expenses | 55,000 | 46,000 | 52,000 |\n| Total budgeted disbursements | 145,000 | ? | ? |\n| | | | |\n| **Cash needs** | | | |\n| Shortage (surplus) of cash | 73,000 | ? | ? |\n| Cash cushion | 10,000 | 10,000 | 10,000 |\n| | | | |\n| **Financing activity** | | | |\n| Borrowing (repayment) | 83,000 | ? | ? |\n| Interest expense at 3 percent per month | (2,490) | ? | ? |\n| Ending cash balance | 7,510 | ? | ? |\n\nCompute the total amount of interest expense for the first quarter.",
   "options": [
    "GH¢2,490",
    "GH¢5,192",
@@ -1695,7 +1695,7 @@
   "correct_answer": [
    "GH¢5,882"
   ],
-  "explanation": "Interest is charged on the running balance each month: 2,490 + 2,085 + 1,307 = GH¢5,882. Charging interest on the new borrowing alone is the standard error.",
+  "explanation": "Interest is charged on the running loan balance. January: 83,000 gives 2,490. February: the balance falls to 69,490 after a 13,510 repayment, giving 2,085. March: it falls to 43,575, giving 1,307. Total = GH¢5,882.",
   "source": "AI generated from Guide 13.3, step 6; trap list 11",
   "verified": "AI generated from the lecture notes and slides. Not from a past paper."
  }

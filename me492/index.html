@@ -227,6 +227,39 @@
             white-space: pre-wrap;
         }
 
+        .question-text .table-wrap { overflow-x: auto; margin: 12px 0; }
+
+        .question-text table {
+            border-collapse: collapse;
+            font-size: 0.82rem;
+            font-weight: 500;
+            white-space: normal;
+            min-width: 100%;
+        }
+
+        .question-text th,
+        .question-text td {
+            border: 1px solid var(--border);
+            padding: 5px 9px;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .question-text th:first-child,
+        .question-text td:first-child { text-align: left; }
+
+        .question-text thead th {
+            background: rgba(67, 56, 202, 0.08);
+            color: var(--primary-dark);
+            font-weight: 700;
+        }
+
+        .question-text tr.spacer td {
+            border-left: 0;
+            border-right: 0;
+            padding: 3px;
+        }
+
         .options { display: grid; gap: 8px; }
 
         .option-btn {
@@ -373,7 +406,7 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-08-27.2';
+        const CACHE_VERSION = '2026-08-27.3';
         const VIEW_STATE_KEY = 'me492_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'me492_quiz_answers_v2';
         const RETAKE_ANSWERS_STORAGE_KEY = 'me492_quiz_retake_answers_v2';
@@ -759,7 +792,7 @@
                     <div class="question-tag">${tagParts.join(' · ')}</div>
                     <div style="color:var(--muted);font-size:0.82rem;">${singleSource ? '' : sourceLabel(question.sourceId)}</div>
                 </div>
-                <div class="question-text">${escapeHtml(question.question_text)}</div>
+                <div class="question-text">${renderStem(question.question_text)}</div>
             `;
 
             const optionsWrap = document.createElement('div');
@@ -878,6 +911,65 @@
                     : `Correct answer: ${correctAnswers[0]}`;
                 feedback.innerHTML = `<strong>✗ Wrong</strong><br>${escapeHtml(text)}` + explainHtml;
             }
+        }
+
+        // The calculation questions carry the paper's data table. Turn a markdown
+        // table into a real one, and leave every other line as escaped text.
+        function renderStem(text) {
+            const lines = String(text).split('\n');
+            const out = [];
+            let table = [];
+            let prose = [];
+
+            const flushProse = () => {
+                const body = prose.join('\n').replace(/^\n+|\n+$/g, '');
+                if (body) out.push(`<span>${escapeHtml(body)}</span>`);
+                prose = [];
+            };
+            const flushTable = () => {
+                if (table.length) out.push(renderTable(table));
+                table = [];
+            };
+
+            lines.forEach(line => {
+                if (line.trim().startsWith('|')) {
+                    if (!table.length) flushProse();
+                    table.push(line);
+                } else {
+                    flushTable();
+                    prose.push(line);
+                }
+            });
+            flushTable();
+            flushProse();
+            return out.join('');
+        }
+
+        function renderTable(rows) {
+            const isRule = cells => cells.every(c => /^:?-{2,}:?$/.test(c));
+            const parsed = rows.map(row => row.trim()
+                .replace(/^\|/, '').replace(/\|$/, '')
+                .split('|').map(c => c.trim()));
+
+            const ruleAt = parsed.findIndex(isRule);
+            const head = ruleAt > 0 ? parsed.slice(0, ruleAt) : [];
+            const body = parsed.slice(ruleAt >= 0 ? ruleAt + 1 : 0).filter(r => !isRule(r));
+
+            const cell = (tag, value) => {
+                const bold = /^\*\*(.*)\*\*$/.exec(value);
+                const inner = bold ? `<strong>${escapeHtml(bold[1])}</strong>` : escapeHtml(value);
+                return `<${tag}>${inner}</${tag}>`;
+            };
+
+            const thead = head.length
+                ? `<thead>${head.map(r => `<tr>${r.map(c => cell('th', c)).join('')}</tr>`).join('')}</thead>`
+                : '';
+            const tbody = `<tbody>${body.map(r => {
+                const blank = r.every(c => c === '');
+                return `<tr${blank ? ' class="spacer"' : ''}>${r.map(c => cell('td', c)).join('')}</tr>`;
+            }).join('')}</tbody>`;
+
+            return `<div class="table-wrap"><table>${thead}${tbody}</table></div>`;
         }
 
         function escapeHtml(text) {

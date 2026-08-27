@@ -22,6 +22,8 @@ import json
 import random
 import re
 
+import calc_tables as T
+
 C = "GH¢"          # the cedi form used throughout compiled.json
 CEDI_ALT = "₵"      # the site mixes this in; normalise it away
 
@@ -195,37 +197,10 @@ DROPPED = [
 # 2. The four table scenarios. Each stem is rewritten to stand on its own.
 # --------------------------------------------------------------------------
 PREAMBLE = {
-    "Table-0014":
-        "The Lovy-Dovy Company Ltd sells roses. It had a beginning balance of " + C + "115,385 in "
-        "accounts receivable on 1 October and collects 100 percent of accounts receivable in the "
-        "month following the month of sale. Its cash sales are " + C + "30,000, " + C + "39,000 and "
-        + C + "50,700, its sales on account are " + C + "150,000, " + C + "195,000 and " + C + "253,500, "
-        "and its total budgeted collections are " + C + "143,385, " + C + "189,000 and " + C + "245,700 "
-        "for October, November and December. ",
-    "Table-0030":
-        "Birdy-Birdy Clothing Company Ltd will sell designer clothing. It has no accounts "
-        "receivable on 1 October and will collect 100 percent of accounts receivable in the month "
-        "following the month of sale. Its cash sales are " + C + "4,800,000, " + C + "6,000,000 and "
-        + C + "7,500,000, its sales on account are " + C + "3,200,000, " + C + "4,000,000 and "
-        + C + "5,000,000, and its total budgeted sales are " + C + "8,000,000, " + C + "10,000,000 and "
-        + C + "12,500,000 for October, November and December. ",
-    "Table-0031":
-        "Sweetie-Nitie Jewellery Company Ltd wants a cash cushion of " + C + "120,000 before the "
-        "interest payment at the end of each month. Interest is charged at 10 percent per month on "
-        "the cumulative loan balance, and funds are borrowed and repaid on the first day of each "
-        "month. The beginning cash balance on 1 July is " + C + "0. Cash receipts are "
-        + C + "2,500,000, " + C + "3,600,000 and " + C + "4,200,000; inventory purchases are "
-        + C + "1,800,000, " + C + "2,000,000 and " + C + "2,200,000; selling and administrative "
-        "expenses are " + C + "1,300,000, " + C + "1,560,000 and " + C + "1,800,000 for July, August "
-        "and September. ",
-    "Table-0027":
-        "Mercy's Bookshop wants a cash cushion of " + C + "7,000 before the interest payment at the "
-        "end of each month. Interest is charged at 4.35 percent per month on the cumulative loan "
-        "balance, and funds are borrowed and repaid on the first day of each month. The beginning "
-        "cash balance on 1 July is " + C + "9,000. Cash receipts are " + C + "80,000, " + C + "94,000 "
-        "and " + C + "112,800; inventory purchases are " + C + "76,763, " + C + "67,115 and "
-        + C + "82,076; selling and administrative expenses are " + C + "22,250, " + C + "27,280 and "
-        + C + "28,216 for July, August and September. ",
+    "Table-0014": T.LOVY,
+    "Table-0030": T.BIRDY_CLOTHING,
+    "Table-0031": T.SWEETIE,
+    "Table-0027": T.MERCY,
 }
 
 TABLE_SOURCE = {
@@ -396,7 +371,7 @@ def main():
             if expl is None:
                 raise SystemExit("no explanation for %s / %r" % (ref, stem))
             out.append({
-                "question_text": PREAMBLE[ref] + stem + ".",
+                "question_text": T.stem(PREAMBLE[ref], stem + "."),
                 "options": [clean(o["text"]) for o in q["options"]],
                 "correct_answer": [clean(q["correct_answer"])],
                 "explanation": expl,
