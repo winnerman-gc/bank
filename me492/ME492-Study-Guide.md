@@ -11,6 +11,7 @@ Three companion documents hold what is deliberately **not** here:
 | Which slides to read, and in what order | `04-what-to-read-and-when.md` |
 | How much the paper repeats, and what is likely to come | `03-repeats-and-predictions.md` |
 | Where two sources disagree, and which one wins | `02-settled-answers.md` |
+| Section D worked in full, as a printable sheet | `05-calculations-worked.pdf` |
 
 ---
 
