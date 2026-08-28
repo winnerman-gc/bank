@@ -322,12 +322,45 @@ TABLE_EXPL = {
 }
 
 
+# The site writes its combination options as "if ii and iii only are correct"
+# and its two-statement options as "if S1 is True, S2 is False". The rest of the
+# bank drops the "if" and words the two-statement options differently. Same
+# meaning either way, so the wording is brought into line rather than leaving a
+# card that reads differently depending on which set it came from.
+OPTION_WORDING = {
+    "if s1 is true, s2 is true and s2 is an explanation of s1":
+        "both statements are TRUE and the second is a correct explanation of the first",
+    "if s1 is true, s2 is true and s2 is not an explanation of s1":
+        "both statements are TRUE and the second is NOT a correct explanation of the first",
+    "if s1 is true, s2 is false":
+        "the first statement is TRUE and the second is FALSE",
+    "if s1 is false, s2 is true":
+        "the first statement is FALSE and the second is TRUE",
+    "if both s1 and s2 are false":
+        "both statements are FALSE",
+    # "only" is meaningless when all three are named.
+    "i, ii and iii only are correct": "i, ii and iii are correct",
+    "i ,ii and iii only are correct": "i, ii and iii are correct",
+    "i, only is correct": "i only is correct",
+}
+
+
 def clean(s):
-    """Normalise the site's two cedi signs and its stray markdown."""
+    """Normalise the site's cedi signs, its stray markdown and its option wording."""
     s = s.replace("GH" + CEDI_ALT, C).replace(CEDI_ALT, C)
     s = s.replace("GH¢ ", C)
     s = s.replace("**", "")
-    return s.strip()
+    s = s.strip()
+
+    mapped = OPTION_WORDING.get(s.lower())
+    if mapped:
+        return mapped
+    if s.lower().startswith("if "):
+        s = s[3:].lstrip()
+        mapped = OPTION_WORDING.get(s.lower())
+        if mapped:
+            return mapped
+    return s
 
 
 def main():
