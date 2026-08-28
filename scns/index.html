@@ -264,6 +264,36 @@
         .feedback-correct { background: rgba(22, 163, 74, 0.08); color: #14532d; border-left: 4px solid var(--success); }
         .feedback-wrong { background: rgba(220, 38, 38, 0.08); color: #7f1d1d; border-left: 4px solid var(--danger); }
 
+        /* Part 4 carries an explanation and a source on every question. A wrong
+           answer shows it at once; a correct answer hides it behind a toggle. */
+        .explain {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(15, 23, 42, 0.14);
+            color: #1f2937;
+            font-size: 0.9rem;
+            line-height: 1.55;
+        }
+
+        .explain-source {
+            margin-top: 6px;
+            color: var(--muted);
+            font-size: 0.78rem;
+        }
+
+        .explain-toggle > summary {
+            margin-top: 8px;
+            cursor: pointer;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #14532d;
+            list-style: none;
+        }
+
+        .explain-toggle > summary::-webkit-details-marker { display: none; }
+        .explain-toggle > summary::before { content: '\25B8 '; }
+        .explain-toggle[open] > summary::before { content: '\25BE '; }
+
         .footer {
             display: none;
             margin-top: 18px;
@@ -344,7 +374,7 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-07-10.2';
+        const CACHE_VERSION = '2026-08-28.2';
         const VIEW_STATE_KEY = 'scns_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'scns_quiz_answers_v1';
         const RETAKE_ANSWERS_STORAGE_KEY = 'scns_quiz_retake_answers_v1';
@@ -352,10 +382,10 @@
 
         const SOURCES = [
             {
-                id: 'set-3',
-                label: 'Part 3',
-                file: 'compiled_3.json',
-                description: '100 questions — NTN fundamentals & orbits (What & Why, Overview), SatCom payload & 5G NR systems'
+                id: 'decks',
+                label: 'Presentation Decks',
+                file: 'compiled.json',
+                description: '240 questions from the 24 student presentation decks — ten per deck, covering timing advance, Doppler, RACH, HARQ, handover, beam control, slicing, spectrum sharing, ISAC, RIS, PQC, GNSS and digital twins. Every question carries an explanation and names the deck it rests on.'
             }
         ];
 
@@ -366,7 +396,7 @@
         let currentSourceId = SOURCES[0].id;
         let currentAnswerStore = 'main';
         let currentQuestionsData = [];
-        let currentViewKey = 'set-3';
+        let currentViewKey = SOURCES[0].id;
         let currentExamLabel = 'All Questions';
         let correctCount = 0;
         let wrongCount = 0;
@@ -742,6 +772,11 @@
                 optionsWrap.appendChild(button);
             });
 
+            // showAnswer reads these back, so it does not need the question object.
+            // Parts 1 to 3 carry neither field, and both fall back to empty.
+            card.dataset.explanation = question.explanation || '';
+            card.dataset.source = question.topic || question.source || '';
+
             const feedback = document.createElement('div');
             feedback.className = 'answer-feedback';
             feedback.id = `feedback-${idx}`;
@@ -811,17 +846,28 @@
                 btn.style.pointerEvents = 'none';
             });
 
+            const explanation = card.dataset.explanation || '';
+            const source = card.dataset.source || '';
+            const sourceHtml = source ? `<div class="explain-source">${escapeHtml(source)}</div>` : '';
+            const explainHtml = explanation
+                ? `<div class="explain">${escapeHtml(explanation)}${sourceHtml}</div>`
+                : '';
+
             feedback.classList.add('show');
             if (isCorrect) {
                 feedback.className = 'answer-feedback show feedback-correct';
-                feedback.innerHTML = '<strong>✓ Correct!</strong>';
+                // Right answer: keep the page moving, but leave the reasoning
+                // one click away rather than in the reader's face.
+                feedback.innerHTML = '<strong>✓ Correct!</strong>' + (explainHtml
+                    ? `<details class="explain-toggle"><summary>Why</summary>${explainHtml}</details>`
+                    : '');
                 if (autoScroll) scrollToContinuation(idx + 1);
             } else {
                 feedback.className = 'answer-feedback show feedback-wrong';
                 const text = isMultiChoice
                     ? `Correct answers: ${correctAnswers.join(', ')}`
                     : `Correct answer: ${correctAnswers[0]}`;
-                feedback.innerHTML = `<strong>✗ Wrong</strong><br>${escapeHtml(text)}`;
+                feedback.innerHTML = `<strong>✗ Wrong</strong><br>${escapeHtml(text)}` + explainHtml;
             }
         }
 

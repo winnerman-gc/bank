@@ -1,61 +1,90 @@
 #!/usr/bin/env python3
-"""
-Render compiled.json and compiled_2.json into a single printable PDF of all
-200 questions, options and answers.
+"""Render compiled.json into a printable PDF of all 240 questions.
 
-Uses PyMuPDF's Story API for automatic multi-page text reflow.
+The questions are grouped under the deck they came from, and the explanation is
+printed beneath each answer, so the PDF works as a revision document rather than
+only as a practice paper.
+
     pip install pymupdf
     python3 make_pdf.py
 """
 import html
 import json
+import os
 
 import fitz  # PyMuPDF
 
-SOURCES = [
-    ("compiled.json", "Part 1 - Fundamentals, Orbits & Beams, 5G NR-NTN Architecture"),
-    ("compiled_2.json", "Part 2 - SatCom Payload, Links & 5G Systems"),
-]
-OUT = "TE456-NTN-MCQs-with-answers.pdf"
-TITLE = "TE 456 - Satellite Communication & NTN"
-SUBTITLE = "200 Multiple-Choice Questions with Answers"
+HERE = os.path.dirname(os.path.abspath(__file__))
+SOURCE = os.path.join(HERE, "compiled.json")
+OUT = os.path.join(HERE, "TE456-Presentation-Decks-MCQs-with-answers.pdf")
+
+TITLE = "TE 456 - Satellite Communication & Navigation Systems"
+SUBTITLE = "240 Multiple-Choice Questions from the 24 Presentation Decks"
 
 CSS = """
 body { font-family: sans-serif; color: #14213a; }
 h1 { font-size: 17px; margin: 0 0 2px 0; color: #3730a3; }
-h2 { font-size: 11px; margin: 0 0 14px 0; color: #64748b; font-weight: normal; }
-h3 { font-size: 13px; margin: 18px 0 6px 0; color: #3730a3; border-top: 1px solid #cbd5e1; padding-top: 10px; }
+h2 { font-size: 11px; margin: 0 0 6px 0; color: #64748b; font-weight: normal; }
+h3 { font-size: 13px; margin: 18px 0 2px 0; color: #3730a3;
+     border-top: 1px solid #cbd5e1; padding-top: 10px; }
+.deck-source { font-size: 9px; margin: 0 0 4px 0; color: #64748b; }
+.intro { font-size: 9.5px; margin: 0 0 6px 0; color: #475569; }
 .q  { font-size: 10.5px; font-weight: bold; margin: 11px 0 3px 0; }
 .opt { font-size: 10px; margin: 1px 0 1px 16px; color: #1f2937; }
 .correct { color: #15803d; font-weight: bold; }
 .ans { font-size: 9.5px; margin: 3px 0 0 16px; color: #15803d; font-weight: bold; }
+.why { font-size: 9.5px; margin: 2px 0 0 16px; color: #475569; }
 """
 
 LETTERS = ["A", "B", "C", "D", "E", "F"]
 
 
 def build_html():
-    parts = [f"<h1>{html.escape(TITLE)}</h1>", f"<h2>{html.escape(SUBTITLE)}</h2>"]
-    total = 0
-    for src, section_title in SOURCES:
-        records = json.load(open(src, encoding="utf-8"))
-        parts.append(f"<h3>{html.escape(section_title)}</h3>")
-        for q in records:
-            n = q["question_number"]
-            correct = q["correct_answer"][0]
-            parts.append(f'<p class="q">{n}. {html.escape(q["question_text"])}</p>')
-            correct_letter = "?"
-            for i, opt in enumerate(q["options"]):
-                letter = LETTERS[i]
-                is_correct = opt == correct
-                cls = "opt correct" if is_correct else "opt"
-                mark = "  ✓" if is_correct else ""
-                if is_correct:
-                    correct_letter = letter
-                parts.append(f'<p class="{cls}">{letter}. {html.escape(opt)}{mark}</p>')
-            parts.append(f'<p class="ans">Answer: {correct_letter}. {html.escape(correct)}</p>')
-        total += len(records)
-    return "<body>" + "".join(parts) + "</body>", total
+    records = json.load(open(SOURCE, encoding="utf-8"))
+
+    parts = [
+        "<h1>%s</h1>" % html.escape(TITLE),
+        "<h2>%s</h2>" % html.escape(SUBTITLE),
+        '<p class="intro">Ten questions per deck. The correct option is marked '
+        "with a tick, and the reason follows each answer.</p>",
+    ]
+
+    current_topic = None
+    for q in records:
+        if q["topic"] != current_topic:
+            current_topic = q["topic"]
+            parts.append("<h3>%s</h3>" % html.escape(current_topic))
+            parts.append('<p class="deck-source">%s</p>' % html.escape(q["source"]))
+
+        parts.append(
+            '<p class="q">%d. %s</p>'
+            % (q["question_number"], html.escape(q["question_text"]))
+        )
+
+        correct = q["correct_answer"][0]
+        correct_letter = "?"
+        for i, opt in enumerate(q["options"]):
+            letter = LETTERS[i]
+            is_correct = opt == correct
+            if is_correct:
+                correct_letter = letter
+            parts.append(
+                '<p class="%s">%s. %s%s</p>'
+                % (
+                    "opt correct" if is_correct else "opt",
+                    letter,
+                    html.escape(opt),
+                    "  ✓" if is_correct else "",
+                )
+            )
+
+        parts.append(
+            '<p class="ans">Answer: %s. %s</p>'
+            % (correct_letter, html.escape(correct))
+        )
+        parts.append('<p class="why">%s</p>' % html.escape(q["explanation"]))
+
+    return "<body>" + "".join(parts) + "</body>", len(records)
 
 
 def main():
@@ -74,7 +103,7 @@ def main():
         writer.end_page()
         pages += 1
     writer.close()
-    print(f"Wrote {OUT}: {total} questions across {pages} pages")
+    print("Wrote %s: %d questions across %d pages" % (OUT, total, pages))
 
 
 if __name__ == "__main__":
