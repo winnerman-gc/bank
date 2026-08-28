@@ -228,15 +228,6 @@
             border-color: rgba(67, 56, 202, 0.3);
         }
 
-        .question-card.flash {
-            animation: flash 1.1s ease;
-        }
-
-        @keyframes flash {
-            0%   { box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.55); border-color: var(--accent); }
-            100% { box-shadow: var(--shadow); border-color: rgba(15, 23, 42, 0.08); }
-        }
-
         @keyframes fadeUp {
             from { opacity: 0; transform: translateY(8px); }
             to { opacity: 1; transform: translateY(0); }
@@ -575,7 +566,7 @@
                     <h1>Management &amp; Entrepreneurship Development (ME 492) - MCQ Practice</h1>
                 </div>
                 <div class="toolbar">
-                    <button class="btn btn-primary" onclick="jumpToRandomQuestion()" id="random-btn">Random</button>
+                    <button class="btn btn-primary" onclick="toggleRandomOrder()" id="random-btn">Random</button>
                     <button class="btn btn-warning" onclick="retakeWrongQuestions()" id="retake-btn">Retake Wrong</button>
                     <button class="btn btn-secondary" onclick="returnToMainQuestions()" id="return-btn" style="display:none">Back to Main</button>
                     <button class="btn btn-danger" onclick="resetProgress()">Reset</button>
@@ -615,12 +606,13 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-08-28.5';
+        const CACHE_VERSION = '2026-08-28.6';
         const VIEW_STATE_KEY = 'me492_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'me492_quiz_answers_v2';
         const RETAKE_ANSWERS_STORAGE_KEY = 'me492_quiz_retake_answers_v2';
         const OPTION_ORDER_STORAGE_KEY = 'me492_quiz_option_orders_v2';
         const TABLE_CELLS_STORAGE_KEY = 'me492_quiz_table_cells_v2';
+        const RANDOM_ORDER_STORAGE_KEY = 'me492_quiz_random_order_v1';
 
         const SOURCES = [
             {
@@ -657,7 +649,8 @@
         let currentModeQuestions = [];
         let optionOrders = getStoredOptionOrders();
         let tableCells = getStoredTableCells();
-        let lastRandomIndex = -1;
+        let randomOrder = getStoredRandomOrder();
+        let currentBaseQuestions = [];
 
         function normalizeOptionText(optionText) {
             return String(optionText || '').replace(/^\s*[A-E][.)]\s*/, '').trim();
@@ -719,6 +712,63 @@
             } catch (error) {
                 // Storage full or blocked. Keep the working on screen regardless.
             }
+        }
+
+        // Random order is a mode, not a jump. The permutation is stored per view
+        // so the order holds still while you work through it and survives a
+        // reload. Switching the toggle on again draws a fresh shuffle.
+        function getStoredRandomOrder() {
+            try {
+                const parsed = JSON.parse(localStorage.getItem(RANDOM_ORDER_STORAGE_KEY) || '{}');
+                return {
+                    on: !!parsed.on,
+                    orders: parsed.orders && typeof parsed.orders === 'object' ? parsed.orders : {}
+                };
+            } catch (error) {
+                return { on: false, orders: {} };
+            }
+        }
+
+        function saveRandomOrder() {
+            try {
+                localStorage.setItem(RANDOM_ORDER_STORAGE_KEY, JSON.stringify(randomOrder));
+            } catch (error) {
+                // Storage full or blocked. The order still holds for this session.
+            }
+        }
+
+        function orderedForView(questions, viewKey) {
+            if (!randomOrder.on) return questions;
+            let order = randomOrder.orders[viewKey];
+            if (!Array.isArray(order) || order.length !== questions.length) {
+                order = shuffleArray(questions.map((_, index) => index));
+                randomOrder.orders[viewKey] = order;
+                saveRandomOrder();
+            }
+            return order.map(index => questions[index]);
+        }
+
+        function updateRandomButton() {
+            const button = document.getElementById('random-btn');
+            if (!button) return;
+            button.textContent = randomOrder.on ? 'Random: on' : 'Random';
+            button.classList.toggle('active', randomOrder.on);
+            button.setAttribute('aria-pressed', String(randomOrder.on));
+        }
+
+        function toggleRandomOrder() {
+            randomOrder.on = !randomOrder.on;
+            if (randomOrder.on) randomOrder.orders = {};   // a fresh shuffle each time
+            saveRandomOrder();
+            updateRandomButton();
+            renderQuestions(currentBaseQuestions, {
+                answerStore: currentAnswerStore,
+                mode: currentMode,
+                sourceId: currentSourceId,
+                shouldRestore: false,
+                shouldAutoscroll: false
+            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function setTableCell(cellKey, value) {
@@ -1003,9 +1053,12 @@
 
             const feed = document.getElementById('feed');
             feed.innerHTML = '';
+            currentBaseQuestions = questions;
+            questions = orderedForView(questions, `${mode}:${sourceId}`);
             currentQuestionsData = questions;
             currentModeQuestions = questions;
             currentAnswerStore = answerStore;
+            updateRandomButton();
             document.getElementById('footer').style.display = 'block';
 
             if (!questions.length) {
@@ -1425,40 +1478,6 @@
             if (currentIndex >= 0 && currentIndex < SOURCES.length - 1) {
                 showSource(SOURCES[currentIndex + 1].id, true, 0);
             }
-        }
-
-        // Jump to a question at random. Unanswered ones come first, so the button
-        // stays useful late in a run instead of landing on work already done.
-        // Once everything is answered it falls back to the whole set.
-        function jumpToRandomQuestion() {
-            const total = currentQuestionsData.length;
-            if (!total) return;
-
-            const answers = currentAnswerStore === 'retake' ? retakeAnswers : userAnswers;
-            const unanswered = [];
-            currentQuestionsData.forEach((question, index) => {
-                const effectiveSourceId = currentSourceId === 'all' || currentSourceId === 'random'
-                    ? question.sourceId
-                    : currentSourceId;
-                const stored = getAnswerForQuestion(question, effectiveSourceId, currentSourceId, answers);
-                if (stored.value === undefined || stored.value === null) unanswered.push(index);
-            });
-
-            const pool = unanswered.length ? unanswered : currentQuestionsData.map((_, i) => i);
-            let index = pool[Math.floor(Math.random() * pool.length)];
-            // Do not land on the card already in front of you when there is a choice.
-            if (pool.length > 1 && index === lastRandomIndex) {
-                index = pool[(pool.indexOf(index) + 1) % pool.length];
-            }
-            lastRandomIndex = index;
-
-            const card = document.getElementById(`q-${index}`);
-            if (!card) return;
-            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            card.classList.remove('flash');
-            void card.offsetWidth;          // restart the animation
-            card.classList.add('flash');
-            saveViewState(index);
         }
 
         // One delegated listener covers every table cell, including the cards
