@@ -396,23 +396,7 @@
             line-height: 1.45;
         }
 
-        /* A marker on the left says the row is selectable and shows what you
-           picked, without ever naming a letter. */
-        .option-btn::before {
-            content: '';
-            flex: 0 0 auto;
-            width: 16px;
-            height: 16px;
-            border: 2px solid #cbd5e1;
-            border-radius: 50%;
-            transition: border-color 0.15s ease, box-shadow 0.15s ease;
-        }
-
-        .option-btn > span:first-child { flex: 1 1 auto; min-width: 0; }
-
-        .option-btn.selected:not(.locked)::before { border-color: var(--primary); box-shadow: inset 0 0 0 3px var(--primary); }
-        .option-btn.correct::before { border-color: var(--success); box-shadow: inset 0 0 0 3px var(--success); }
-        .option-btn.wrong::before { border-color: var(--danger); box-shadow: inset 0 0 0 3px var(--danger); }
+        .option-btn > span { min-width: 0; }
         .option-btn.locked { cursor: default; }
         .option-btn.locked:not(.correct):not(.wrong) { opacity: 0.62; }
 
@@ -420,8 +404,6 @@
         .option-btn.selected:not(.locked) { border-color: rgba(67, 56, 202, 0.65); background: rgba(67, 56, 202, 0.08); }
         .option-btn.correct { border-color: rgba(22, 163, 74, 0.8); background: rgba(22, 163, 74, 0.08); color: #14532d; }
         .option-btn.wrong { border-color: rgba(220, 38, 38, 0.8); background: rgba(220, 38, 38, 0.08); color: #7f1d1d; }
-
-        .option-icon { flex: 0 0 auto; min-width: 20px; text-align: center; color: currentColor; }
 
         .answer-feedback {
             display: none;
@@ -633,7 +615,7 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-08-28.4';
+        const CACHE_VERSION = '2026-08-28.5';
         const VIEW_STATE_KEY = 'me492_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'me492_quiz_answers_v2';
         const RETAKE_ANSWERS_STORAGE_KEY = 'me492_quiz_retake_answers_v2';
@@ -1088,7 +1070,7 @@
                 const button = document.createElement('button');
                 button.className = 'option-btn';
                 button.dataset.option = normalized;
-                button.innerHTML = `<span>${escapeHtml(option)}</span><span class="option-icon"></span>`;
+                button.innerHTML = `<span>${escapeHtml(option)}</span>`;
                 if (selectedValues.includes(normalized)) button.classList.add('selected');
                 button.onclick = () => handleAnswer(question, idx, normalized, button, answerStore, mode, effectiveSourceId, isMultiChoice, correctAnswers);
                 optionsWrap.appendChild(button);
