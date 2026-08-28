@@ -412,6 +412,12 @@
             color: #14532d;
         }
 
+        .feedback-reveal {
+            background: rgba(67, 56, 202, 0.06);
+            border: 1px solid rgba(67, 56, 202, 0.28);
+            color: var(--primary-dark);
+        }
+
         .feedback-wrong {
             background: rgba(220, 38, 38, 0.07);
             border: 1px solid rgba(220, 38, 38, 0.28);
@@ -567,6 +573,7 @@
                 </div>
                 <div class="toolbar">
                     <button class="btn btn-primary" onclick="toggleRandomOrder()" id="random-btn">Random</button>
+                    <button class="btn btn-ghost" onclick="showAllAnswers()" id="show-answers-btn">Show Answers</button>
                     <button class="btn btn-warning" onclick="retakeWrongQuestions()" id="retake-btn">Retake Wrong</button>
                     <button class="btn btn-secondary" onclick="returnToMainQuestions()" id="return-btn" style="display:none">Back to Main</button>
                     <button class="btn btn-danger" onclick="resetProgress()">Reset</button>
@@ -606,7 +613,7 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-08-28.6';
+        const CACHE_VERSION = '2026-08-28.7';
         const VIEW_STATE_KEY = 'me492_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'me492_quiz_answers_v2';
         const RETAKE_ANSWERS_STORAGE_KEY = 'me492_quiz_retake_answers_v2';
@@ -1189,7 +1196,7 @@
             calculateStats();
         }
 
-        function showAnswer(idx, isCorrect, correctAnswers, isMultiChoice, autoScroll = false, cardElement = null) {
+        function showAnswer(idx, isCorrect, correctAnswers, isMultiChoice, autoScroll = false, cardElement = null, revealed = false) {
             const card = cardElement || document.getElementById(`q-${idx}`);
             if (!card) return;
             const feedback = card.querySelector(`#feedback-${idx}`);
@@ -1200,7 +1207,7 @@
                 const value = normalizeOptionText(btn.dataset.option || btn.textContent);
                 if (correctAnswers.includes(value)) {
                     btn.classList.add('correct');
-                } else if (btn.classList.contains('selected') && !isCorrect) {
+                } else if (btn.classList.contains('selected') && !isCorrect && !revealed) {
                     btn.classList.add('wrong');
                 }
                 btn.classList.add('locked');
@@ -1227,6 +1234,16 @@
                 : '';
 
             feedback.classList.add('show');
+            if (revealed) {
+                // Shown by Show Answers rather than earned, so it is neither
+                // marked right nor marked wrong.
+                feedback.className = 'answer-feedback show feedback-reveal';
+                const text = isMultiChoice
+                    ? `Answers: ${correctAnswers.join(', ')}`
+                    : `Answer: ${correctAnswers[0]}`;
+                feedback.innerHTML = `<strong>${escapeHtml(text)}</strong>` + explainHtml;
+                return;
+            }
             if (isCorrect) {
                 feedback.className = 'answer-feedback show feedback-correct';
                 feedback.innerHTML = '<strong>✓ Correct!</strong>' + (explainHtml
@@ -1240,6 +1257,28 @@
                     : `Correct answer: ${correctAnswers[0]}`;
                 feedback.innerHTML = `<strong>✗ Wrong</strong><br>${escapeHtml(text)}` + explainHtml;
             }
+        }
+
+        // Reveal every answer in the view, without recording any of them as
+        // attempted. Cards you have already answered keep their own result.
+        function showAllAnswers() {
+            if (!currentQuestionsData.length) return;
+            const pending = currentQuestionsData.filter((_, idx) => {
+                const card = document.getElementById(`q-${idx}`);
+                return card && !card.querySelector('.answer-feedback.show');
+            }).length;
+            if (!pending) return;
+            if (!confirm(`Show the answer to ${pending} unanswered question${pending === 1 ? '' : 's'}? `
+                + 'This does not count as answering them.')) return;
+
+            currentQuestionsData.forEach((question, idx) => {
+                const card = document.getElementById(`q-${idx}`);
+                if (!card || card.querySelector('.answer-feedback.show')) return;
+                const correctAnswers = (question.correct_answer || []).map(normalizeOptionText);
+                const isMultiChoice = Array.isArray(question.correct_answer)
+                    && question.correct_answer.length > 1;
+                showAnswer(idx, false, correctAnswers, isMultiChoice, false, card, true);
+            });
         }
 
         // The calculation questions carry the paper's data table. Turn a markdown
