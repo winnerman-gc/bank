@@ -263,24 +263,35 @@
 
         .question-text table {
             border-collapse: collapse;
-            font-size: 0.82rem;
+            font-size: 0.8rem;
             font-weight: 500;
             white-space: normal;
             width: max-content;
-            min-width: 100%;
-            max-width: none;
+            max-width: 100%;
         }
 
+        /* Number columns are sized to their own widest figure, so the table stays
+           as narrow as the data allows. Labels and headings wrap instead. */
         .question-text th,
         .question-text td {
             border: 1px solid var(--border);
-            padding: 5px 9px;
+            padding: 4px 6px;
             text-align: right;
             white-space: nowrap;
         }
 
+        .question-text th {
+            white-space: normal;
+            word-break: break-word;
+        }
+
         .question-text th:first-child,
-        .question-text td:first-child { text-align: left; }
+        .question-text td:first-child {
+            text-align: left;
+            white-space: normal;
+            max-width: 22ch;
+            line-height: 1.3;
+        }
 
         .question-text thead th {
             background: rgba(67, 56, 202, 0.08);
@@ -294,11 +305,10 @@
             padding: 3px;
         }
 
-        .question-text td.working { padding: 2px; }
+        .question-text td.working { padding: 2px 3px; }
 
         .question-text .cell-input {
             width: 100%;
-            min-width: 82px;
             border: 0;
             border-radius: 7px;
             background: rgba(245, 158, 11, 0.12);
@@ -567,7 +577,7 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-08-28.2';
+        const CACHE_VERSION = '2026-08-28.3';
         const VIEW_STATE_KEY = 'me492_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'me492_quiz_answers_v2';
         const RETAKE_ANSWERS_STORAGE_KEY = 'me492_quiz_retake_answers_v2';
@@ -1212,8 +1222,26 @@
                 const label = [rowLabel, colLabel].filter(Boolean).join(', ') || 'working value';
                 return `<td class="working"><input class="cell-input" type="text" inputmode="decimal"`
                     + ` autocomplete="off" spellcheck="false" placeholder="?"`
+                    + ` style="width:${columnWidth(colIndex)}ch"`
                     + ` data-cell="${escapeHtml(key)}" value="${escapeHtml(stored)}"`
                     + ` aria-label="${escapeHtml(label)}"></td>`;
+            };
+
+            // Size each column to its own widest figure plus one character, so an
+            // input is only as wide as the number it has to hold. Columns that are
+            // all question marks borrow the widest figure in the table, because
+            // that is the size of answer they are waiting for.
+            const widest = [];
+            let widestAnywhere = 0;
+            body.forEach(row => row.forEach((value, colIndex) => {
+                if (colIndex === 0 || value === '?' || value === '') return;
+                const len = value.replace(/\*\*/g, '').length;
+                widest[colIndex] = Math.max(widest[colIndex] || 0, len);
+                widestAnywhere = Math.max(widestAnywhere, len);
+            }));
+            const columnWidth = colIndex => {
+                const len = widest[colIndex] || widestAnywhere || 8;
+                return Math.max(len + 1, 5);
             };
 
             const headings = head.length ? head[head.length - 1] : [];
