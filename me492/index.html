@@ -379,6 +379,26 @@
             line-height: 1.55;
         }
 
+        .hook {
+            margin-top: 10px;
+            padding: 10px 12px;
+            border-left: 3px solid var(--accent);
+            border-radius: 0 10px 10px 0;
+            background: rgba(245, 158, 11, 0.1);
+            font-size: 0.86rem;
+            line-height: 1.5;
+        }
+
+        .hook-label {
+            display: block;
+            margin-bottom: 3px;
+            color: #92400e;
+            font-size: 0.68rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.09em;
+        }
+
         .explain-source {
             margin-top: 6px;
             color: var(--muted);
@@ -511,7 +531,7 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-08-27.5';
+        const CACHE_VERSION = '2026-08-28.1';
         const VIEW_STATE_KEY = 'me492_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'me492_quiz_answers_v2';
         const RETAKE_ANSWERS_STORAGE_KEY = 'me492_quiz_retake_answers_v2';
@@ -973,6 +993,7 @@
 
             // showAnswer reads these back, so it does not need the question object.
             card.dataset.explanation = question.explanation || '';
+            card.dataset.hook = question.hook || '';
             card.dataset.source = question.source || '';
             card.dataset.verified = question.verified || '';
 
@@ -1051,8 +1072,12 @@
             const unchecked = (card.dataset.verified || '').startsWith('not checked');
             const sourceLine = unchecked ? `${source} · answer not checked against a printed key` : source;
             const sourceHtml = source ? `<div class="explain-source">${escapeHtml(sourceLine)}</div>` : '';
-            const explainHtml = explanation
-                ? `<div class="explain">${escapeHtml(explanation)}${sourceHtml}</div>`
+            const hook = card.dataset.hook || '';
+            const hookHtml = hook
+                ? `<div class="hook"><span class="hook-label">Remember</span>${escapeHtml(hook)}</div>`
+                : '';
+            const explainHtml = (explanation || hook)
+                ? `<div class="explain">${escapeHtml(explanation)}${hookHtml}${sourceHtml}</div>`
                 : '';
 
             feedback.classList.add('show');
