@@ -204,6 +204,15 @@
             animation: fadeUp 0.25s ease;
         }
 
+        .question-card.flash {
+            animation: flash 1.1s ease;
+        }
+
+        @keyframes flash {
+            0%   { box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.55); border-left-color: var(--accent); }
+            100% { box-shadow: var(--shadow); border-left-color: var(--primary); }
+        }
+
         @keyframes fadeUp {
             from { opacity: 0; transform: translateY(8px); }
             to { opacity: 1; transform: translateY(0); }
@@ -379,6 +388,32 @@
             line-height: 1.55;
         }
 
+        .teach { margin-top: 10px; }
+
+        .teach > summary {
+            cursor: pointer;
+            list-style: none;
+            color: var(--primary-dark);
+            font-size: 0.78rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+        }
+
+        .teach > summary::-webkit-details-marker { display: none; }
+        .teach > summary::before { content: '\25B8  '; }
+        .teach[open] > summary::before { content: '\25BE  '; }
+
+        .teach-body {
+            margin-top: 7px;
+            padding: 11px 13px;
+            border-left: 3px solid var(--primary);
+            border-radius: 0 10px 10px 0;
+            background: rgba(67, 56, 202, 0.06);
+            font-size: 0.86rem;
+            line-height: 1.6;
+        }
+
         .hook {
             margin-top: 10px;
             padding: 10px 12px;
@@ -492,6 +527,7 @@
                     <h1>Management &amp; Entrepreneurship Development (ME 492) - MCQ Practice</h1>
                 </div>
                 <div class="toolbar">
+                    <button class="btn btn-primary" onclick="jumpToRandomQuestion()" id="random-btn">Random</button>
                     <button class="btn btn-warning" onclick="retakeWrongQuestions()" id="retake-btn">Retake Wrong</button>
                     <button class="btn btn-secondary" onclick="returnToMainQuestions()" id="return-btn" style="display:none">Back to Main</button>
                     <button class="btn btn-danger" onclick="resetProgress()">Reset</button>
@@ -531,7 +567,7 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-08-28.1';
+        const CACHE_VERSION = '2026-08-28.2';
         const VIEW_STATE_KEY = 'me492_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'me492_quiz_answers_v2';
         const RETAKE_ANSWERS_STORAGE_KEY = 'me492_quiz_retake_answers_v2';
@@ -573,6 +609,7 @@
         let currentModeQuestions = [];
         let optionOrders = getStoredOptionOrders();
         let tableCells = getStoredTableCells();
+        let lastRandomIndex = -1;
 
         function normalizeOptionText(optionText) {
             return String(optionText || '').replace(/^\s*[A-E][.)]\s*/, '').trim();
@@ -994,7 +1031,10 @@
             // showAnswer reads these back, so it does not need the question object.
             card.dataset.explanation = question.explanation || '';
             card.dataset.hook = question.hook || '';
-            card.dataset.source = question.source || '';
+            // The guide's section numbering is internal bookkeeping. The card shows
+            // the topic name instead, which is what you actually revise from.
+            card.dataset.source = question.topic || question.source || '';
+            card.dataset.teach = question.teach || '';
             card.dataset.verified = question.verified || '';
 
             const feedback = document.createElement('div');
@@ -1072,12 +1112,17 @@
             const unchecked = (card.dataset.verified || '').startsWith('not checked');
             const sourceLine = unchecked ? `${source} · answer not checked against a printed key` : source;
             const sourceHtml = source ? `<div class="explain-source">${escapeHtml(sourceLine)}</div>` : '';
+            const teach = card.dataset.teach || '';
+            const teachHtml = teach
+                ? `<details class="teach"><summary>The whole topic</summary>`
+                  + `<div class="teach-body">${escapeHtml(teach)}</div></details>`
+                : '';
             const hook = card.dataset.hook || '';
             const hookHtml = hook
                 ? `<div class="hook"><span class="hook-label">Remember</span>${escapeHtml(hook)}</div>`
                 : '';
-            const explainHtml = (explanation || hook)
-                ? `<div class="explain">${escapeHtml(explanation)}${hookHtml}${sourceHtml}</div>`
+            const explainHtml = (explanation || teach || hook)
+                ? `<div class="explain">${escapeHtml(explanation)}${teachHtml}${hookHtml}${sourceHtml}</div>`
                 : '';
 
             feedback.classList.add('show');
@@ -1314,6 +1359,40 @@
             if (currentIndex >= 0 && currentIndex < SOURCES.length - 1) {
                 showSource(SOURCES[currentIndex + 1].id, true, 0);
             }
+        }
+
+        // Jump to a question at random. Unanswered ones come first, so the button
+        // stays useful late in a run instead of landing on work already done.
+        // Once everything is answered it falls back to the whole set.
+        function jumpToRandomQuestion() {
+            const total = currentQuestionsData.length;
+            if (!total) return;
+
+            const answers = currentAnswerStore === 'retake' ? retakeAnswers : userAnswers;
+            const unanswered = [];
+            currentQuestionsData.forEach((question, index) => {
+                const effectiveSourceId = currentSourceId === 'all' || currentSourceId === 'random'
+                    ? question.sourceId
+                    : currentSourceId;
+                const stored = getAnswerForQuestion(question, effectiveSourceId, currentSourceId, answers);
+                if (stored.value === undefined || stored.value === null) unanswered.push(index);
+            });
+
+            const pool = unanswered.length ? unanswered : currentQuestionsData.map((_, i) => i);
+            let index = pool[Math.floor(Math.random() * pool.length)];
+            // Do not land on the card already in front of you when there is a choice.
+            if (pool.length > 1 && index === lastRandomIndex) {
+                index = pool[(pool.indexOf(index) + 1) % pool.length];
+            }
+            lastRandomIndex = index;
+
+            const card = document.getElementById(`q-${index}`);
+            if (!card) return;
+            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            card.classList.remove('flash');
+            void card.offsetWidth;          // restart the animation
+            card.classList.add('flash');
+            saveViewState(index);
         }
 
         // One delegated listener covers every table cell, including the cards

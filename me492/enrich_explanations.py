@@ -21,6 +21,8 @@ import io
 import json
 import re
 
+from teach_blocks import TEACH, TOPICS
+
 C = "GH¢"
 FILES = ("compiled.json", "ai-generated-100.json", "site-extracted-48.json")
 
@@ -392,21 +394,71 @@ CALC = {
 }
 
 
-def hook_for(question):
-    source = question.get("source", "")
-    match = re.search(r"Guide (\d+(?:\.\d+)?)", source)
+DEFAULT_TEACH = (
+    "This item comes from a page of the notes or slides that the guide does not index by "
+    "section. Two rules still carry it. Answer by TEXT, never by letter, because the options are "
+    "reshuffled every year. And on an i, ii and iii item, read every clause of every statement: "
+    "one wrong word makes the whole statement false.")
+
+# When the source names no guide section, infer the topic from the stem so the
+# question still gets a teaching block and a readable footer.
+TEXT_TOPICS = [
+    (r"consider the two statements|because s2|\bs1:", "14"),
+    (r"entreprendre|undertaker|soldiers of fortune|concept of entrepreneurship", "4.10"),
+    (r"sources of change|shop changes", "4.2"),
+    (r"\bmyth", "4.5"),
+    (r"technological innovation|creative source|champion|sponsor", "5.5"),
+    (r"directors of new ventures|board of directors|board of advisors", "10.7"),
+    (r"pro forma balance sheet|assets, liabilities|solvency ratio", "12.3"),
+    (r"resources expected to produce|estimated income and expenses"
+     r"|formal plan expressed in numerical|administration plans", "12.2"),
+    (r"entrepreneurs are\b", "4.9"),
+]
+
+
+def section_for(question):
+    """The guide section this question belongs to, or None."""
+    match = re.search(r"Guide (\d+(?:\.\d+)?)", question.get("source", ""))
     if match:
-        key = match.group(1)
-        if key in HOOKS:
-            return HOOKS[key]
-        chapter = key.split(".")[0]
-        if chapter in HOOKS:
-            return HOOKS[chapter]
-    blob = (question.get("question_text", "") + " " + source).lower()
-    for pattern, hook in TEXT_HOOKS:
+        return match.group(1)
+    blob = (question.get("question_text", "") + " " + question.get("source", "")).lower()
+    for pattern, section in TEXT_TOPICS:
         if re.search(pattern, blob):
-            return hook
+            return section
+    return None
+
+
+def _lookup(table, section, default):
+    """Longest key first: 13.3 beats 13."""
+    if section:
+        if section in table:
+            return table[section]
+        chapter = section.split(".")[0]
+        if chapter in table:
+            return table[chapter]
+    return default
+
+
+def hook_for(question):
+    section = section_for(question)
+    hook = _lookup(HOOKS, section, None)
+    if hook:
+        return hook
+    blob = (question.get("question_text", "") + " " + question.get("source", "")).lower()
+    for pattern, text in TEXT_HOOKS:
+        if re.search(pattern, blob):
+            return text
     return DEFAULT_HOOK
+
+
+def teach_for(question):
+    return _lookup(TEACH, section_for(question), DEFAULT_TEACH)
+
+
+def topic_for(question):
+    section = section_for(question)
+    chapter = section.split(".")[0] if section else None
+    return TOPICS.get(chapter, "Course notes and slides")
 
 
 def main():
@@ -419,9 +471,11 @@ def main():
             if name == "compiled.json" and number in CALC:
                 question["explanation"] = CALC[number]
                 rewritten += 1
+            question["teach"] = teach_for(question)
             question["hook"] = hook_for(question)
+            question["topic"] = topic_for(question)
         keys = ["question_number", "question_text", "options", "correct_answer",
-                "explanation", "hook", "source", "verified"]
+                "explanation", "teach", "hook", "topic", "source", "verified"]
         data = [{k: q[k] for k in keys if k in q} for q in data]
         json.dump(data, io.open(name, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         lengths = [len(q["explanation"]) for q in data]
@@ -431,12 +485,17 @@ def main():
     print("%-24s %5s %10s %14s" % ("file", "n", "reworked", "mean expl."))
     for name, count, rewritten, mean in totals:
         print("%-24s %5d %10d %14d" % (name, count, rewritten, mean))
-    default_used = 0
+
+    fallback_hook = fallback_teach = 0
+    words = 0
     for name in FILES:
         for q in json.load(io.open(name, encoding="utf-8")):
-            if q["hook"] == DEFAULT_HOOK:
-                default_used += 1
-    print("questions on the fallback hook: %d" % default_used)
+            fallback_hook += q["hook"] == DEFAULT_HOOK
+            fallback_teach += q["teach"] == DEFAULT_TEACH
+            words += len((q["explanation"] + " " + q["teach"] + " " + q["hook"]).split())
+    print("on the fallback hook: %d   on the fallback teaching block: %d"
+          % (fallback_hook, fallback_teach))
+    print("total words of explanation across the bank: %d" % words)
 
 
 if __name__ == "__main__":

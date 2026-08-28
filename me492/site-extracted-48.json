@@ -13,7 +13,9 @@
    "if ii and iii only are correct"
   ],
   "explanation": "Statements (ii) and (iii) are on the list: the objective is to determine whether the venture can be expected to succeed, and the promoters prepare it. Statement (i) fails because a feasibility plan is deliberately not the full business plan. It carries only the planning needed to prove feasibility, without overwhelming the entrepreneur.",
+  "teach": "A feasibility plan is a written document that integrates the fundamental areas of business, operations, marketing, finance and human resources, describes the relevant external and internal elements of starting a new venture, is prepared by the entrepreneur, and has one objective: determining whether the venture can be expected to succeed. It is deliberately pragmatic, doing the planning needed to ensure feasibility without overwhelming the entrepreneur in the process.",
   "hook": "A feasibility plan integrates operations, marketing, finance and HR, and asks one question: can this venture be expected to succeed?",
+  "topic": "Business planning and the feasibility plan",
   "source": "Guide 6.2, what a feasibility plan is",
   "verified": "taken from samplequestions.vercel.app, checked against the notes"
  },
@@ -31,7 +33,9 @@
    "if i and ii only are correct"
   ],
   "explanation": "The entrepreneur, alone or in consultation with other sources. Statement (iii) hands the job to a business consultant, and that is the standard wrong option. Specialists advise. They do not take the plan over.",
+  "teach": "The entrepreneur writes the plan, because the entrepreneur has the vision and the motivation and can articulate the necessary information effectively. Specialists and other sources are consulted, never handed the job. The because pair claiming feasibility plans are best prepared by specialists, because specialists such as financial experts know how to operate businesses, is FALSE on both statements. One compiled answer sheet gets this wrong; the 2005 key and the 2020 exam both give both false.",
   "hook": "The ENTREPRENEUR writes it, in consultation with specialists. Never a consultant, never a financial expert. Specialists know finance, not how to run a business.",
+  "topic": "Business planning and the feasibility plan",
   "source": "Guide 6.1, who writes the plan",
   "verified": "taken from samplequestions.vercel.app, checked against the notes"
  },
@@ -49,7 +53,9 @@
    "if ii and iii only are correct"
   ],
   "explanation": "CORRECTED. The site marks all three. Statement (i) says Say described skills for MANAGING EXISTING enterprises. The notes say CREATING NEW economic enterprises, so (i) is false on one word. Statements (ii) and (iii) match the notes exactly. This is trap 17: one wrong word makes a whole statement false.",
+  "teach": "Six names, six contributions, and the paper mixes them deliberately. CANTILLON gave entrepreneurship its central role in economics: conscious decisions about resource allocation, paying a certain price and reselling at an uncertain one, seeking higher yields for money and materials. ADAM SMITH described the enterpriser who undertook the formation of an organisation, had unusual foresight to recognise potential demand, and turned demand into supply. SAY combined Cantillon's economic risk taker with Smith's industrial manager, and added exceptional insight into society's needs; the entrepreneur influences society and is influenced by it. MENGER: converting resources into goods and services of value to consumers. SCHUMPETER: creative destruction, replacing existing products and businesses with better ones, entrepreneurs as innovators. DRUCKER: resources used not merely to solve problems but to take advantage of opportunities. Mill is the fourth European name. The commonest trap in the whole paper is handing creative destruction to Menger.",
   "hook": "Cantillon ALLOCATES resources and seeks higher yields. Adam Smith FORESEES demand. Say COMBINES the two and adds insight into society's needs. Menger CONVERTS resources into value. Schumpeter DESTROYS creatively. Drucker takes OPPORTUNITIES. Creative destruction is always Schumpeter, never Menger.",
+  "topic": "Entrepreneurship and free enterprise",
   "source": "Guide 4.1, the economists",
   "verified": "re-derived from the lecture notes and slides"
  },
@@ -67,7 +73,9 @@
    "if iii only is correct"
   ],
   "explanation": "Only (iii). Preparation is the conscious search for knowledge to bring the idea to life. The sudden flash in (i) is illumination, and the test to prove value in (ii) is verification.",
+  "teach": "Five stages, and the paper asks about them one at a time. IDEA GERMINATION, seeding: the seed of an idea is implanted by curiosity or interest. PREPARATION, rationalisation: a conscious search for the knowledge to bring the idea to life. INCUBATION, fantasising: subconscious assimilation of information, sleeping on it. ILLUMINATION, realisation: recognising the idea as feasible, the sudden flash, the oh-I-see moment. VERIFICATION, validation: applying or testing to prove the idea has value. The pair the paper swaps is illumination against verification, because both sound like the end of the process.",
   "hook": "G-P-I-I-V: Germination, Preparation, Incubation, Illumination, Verification. CONSCIOUS search = Preparation. SUBCONSCIOUS = Incubation. FLASH = Illumination. TEST for value = Verification. Flash and test are the pair they swap.",
+  "topic": "Creativity and innovation",
   "source": "Guide 5.2, the five stages",
   "verified": "taken from samplequestions.vercel.app, checked against the notes"
  },
@@ -85,7 +93,9 @@
    "if ii and iii only are correct"
   ],
   "explanation": "The four factors are land, labour, capital and entrepreneurship, so (ii) and (iii) together name them. Statement (i) swaps in raw materials and overhead costs, which are cost categories, not factors of production.",
+  "teach": "Six names, six contributions, and the paper mixes them deliberately. CANTILLON gave entrepreneurship its central role in economics: conscious decisions about resource allocation, paying a certain price and reselling at an uncertain one, seeking higher yields for money and materials. ADAM SMITH described the enterpriser who undertook the formation of an organisation, had unusual foresight to recognise potential demand, and turned demand into supply. SAY combined Cantillon's economic risk taker with Smith's industrial manager, and added exceptional insight into society's needs; the entrepreneur influences society and is influenced by it. MENGER: converting resources into goods and services of value to consumers. SCHUMPETER: creative destruction, replacing existing products and businesses with better ones, entrepreneurs as innovators. DRUCKER: resources used not merely to solve problems but to take advantage of opportunities. Mill is the fourth European name. The commonest trap in the whole paper is handing creative destruction to Menger.",
   "hook": "Cantillon ALLOCATES resources and seeks higher yields. Adam Smith FORESEES demand. Say COMBINES the two and adds insight into society's needs. Menger CONVERTS resources into value. Schumpeter DESTROYS creatively. Drucker takes OPPORTUNITIES. Creative destruction is always Schumpeter, never Menger.",
+  "topic": "Entrepreneurship and free enterprise",
   "source": "Guide 4.1; slides on the factors of production",
   "verified": "taken from samplequestions.vercel.app, checked against the notes"
  },
@@ -103,7 +113,9 @@
    "if i ,ii and iii only are correct"
   ],
   "explanation": "All three. Undertakers who undertook the risk, contractors who bore profit or loss, and the soldiers of fortune, adventurers, builders and merchants of the early slides. Note the contrast with the other origin item, where the added clause about business students makes a statement false.",
-  "hook": "entreprendre = to undertake. Undertakers, contractors, builders, merchants. The false version adds 'discovered by business students'.",
+  "teach": "The word comes from the 17th century French entreprendre, to undertake. It referred to individuals who were undertakers, meaning those who undertook the risk of a new enterprise, and to contractors and builders who bore the risk of profit or loss. The early slides add soldiers of fortune, adventurers and merchants. The clause that makes a statement false is the one saying the term was discovered by business students. A companion item says the concept has given enterprise a new direction and has been around a very long time; it has not just been discovered.",
+  "hook": "entreprendre = to undertake. Undertakers, contractors, builders. NOT discovered by business students. That clause is what makes the statement false.",
+  "topic": "Entrepreneurship and free enterprise",
   "source": "Slides 1.13 to 1.24, history of entrepreneurship",
   "verified": "taken from samplequestions.vercel.app, checked against the notes"
  },
@@ -121,7 +133,9 @@
    "if i, ii and iii are correct"
   ],
   "explanation": "All three. The business concept is defined, the product-market study is done, and pre-start-up implementation follows. Pre-start-up is the assembly of resources before the doors open.",
+  "teach": "Pre-start-up activities are the product or market survey and the definition of the business concept. A competitive analysis carried out in the pre-start-up stage is marketing research before the doors open, which is the mirror of the competitive analysis done after opening.",
   "hook": "Pre-start-up: product/market survey, concept defined, implementation. A competitive analysis BEFORE the doors open is pre-start-up work.",
+  "topic": "Venture stages and the start-up",
   "source": "Guide 7.2, pre-start-up activities",
   "verified": "taken from samplequestions.vercel.app, checked against the notes"
  },
@@ -139,7 +153,9 @@
    "himself/herself"
   ],
   "explanation": "The entrepreneur keeps the responsibility. Help is available from a banker, a professional or a plan writer, but the responsibility for planning the venture does not transfer. The entrepreneur has the vision and the motivation.",
+  "teach": "The entrepreneur writes the plan, because the entrepreneur has the vision and the motivation and can articulate the necessary information effectively. Specialists and other sources are consulted, never handed the job. The because pair claiming feasibility plans are best prepared by specialists, because specialists such as financial experts know how to operate businesses, is FALSE on both statements. One compiled answer sheet gets this wrong; the 2005 key and the 2020 exam both give both false.",
   "hook": "The ENTREPRENEUR writes it, in consultation with specialists. Never a consultant, never a financial expert. Specialists know finance, not how to run a business.",
+  "topic": "Business planning and the feasibility plan",
   "source": "Guide 6.1, who writes the plan",
   "verified": "taken from samplequestions.vercel.app, checked against the notes"
  },
@@ -157,7 +173,9 @@
    "if i, ii and iii are correct"
   ],
   "explanation": "All three match the notes on Smith: he undertook the formation of an organisation for commercial purposes, had unusual foresight to recognise potential demand, and reacted to economic change by transforming demand into supply.",
+  "teach": "Six names, six contributions, and the paper mixes them deliberately. CANTILLON gave entrepreneurship its central role in economics: conscious decisions about resource allocation, paying a certain price and reselling at an uncertain one, seeking higher yields for money and materials. ADAM SMITH described the enterpriser who undertook the formation of an organisation, had unusual foresight to recognise potential demand, and turned demand into supply. SAY combined Cantillon's economic risk taker with Smith's industrial manager, and added exceptional insight into society's needs; the entrepreneur influences society and is influenced by it. MENGER: converting resources into goods and services of value to consumers. SCHUMPETER: creative destruction, replacing existing products and businesses with better ones, entrepreneurs as innovators. DRUCKER: resources used not merely to solve problems but to take advantage of opportunities. Mill is the fourth European name. The commonest trap in the whole paper is handing creative destruction to Menger.",
   "hook": "Cantillon ALLOCATES resources and seeks higher yields. Adam Smith FORESEES demand. Say COMBINES the two and adds insight into society's needs. Menger CONVERTS resources into value. Schumpeter DESTROYS creatively. Drucker takes OPPORTUNITIES. Creative destruction is always Schumpeter, never Menger.",
+  "topic": "Entrepreneurship and free enterprise",
   "source": "Guide 4.1, the economists",
   "verified": "taken from samplequestions.vercel.app, checked against the notes"
  },
@@ -175,7 +193,9 @@
    "if i and iii only are correct"
   ],
   "explanation": "Statements (i) and (iii). Organising resources with analytical planning, then implementation and commercial application. Statement (ii) lists idea germination, preparation and verification, which belong to the CREATIVE process. That is trap 4.",
+  "teach": "The innovation process has four elements: analytical planning, organising resources, implementation, and commercial application. The creative process elements, idea germination, preparation, incubation, illumination and verification, do not belong here, and any option mixing them in is false. In 2007 the same question was worded around translating a new idea into commercial reality, and the false statement was the one calling it an invention. Innovation is different from invention.",
   "hook": "Innovation process = Analytical planning, Organising resources, Implementation, Commercial application. Germination, preparation and verification belong to the CREATIVE process. Innovation is not invention.",
+  "topic": "Creativity and innovation",
   "source": "Guide 5.3, the innovation process",
   "verified": "taken from samplequestions.vercel.app, checked against the notes"
  },
@@ -193,7 +213,9 @@
    "if ii and iii only are correct"
   ],
   "explanation": "Statements (ii) and (iii). Exemption from management responsibility, and an investment that can be sold, assigned or willed. Read (i) carefully: the notes list profits and losses passing through to all partners, not flexibility and simplicity.",
+  "teach": "Three types: general partnership, limited partnership and master limited partnership. A general partner has unlimited liability and manages the firm. A limited partner invests, has limited liability, and cannot legally help manage. An MLP acts and trades like a corporation but is taxed like a partnership, so it avoids corporate income tax. Advantages: more financial resources, shared management and pooled knowledge, longer survival. Disadvantages: conflict and tension, unlimited legal liability for all parties jointly and severally, division of profits, disagreements among partners, difficulty terminating, and the business ending on the death or withdrawal of any partner. Limited access to external resources is NOT a partnership disadvantage; a partnership has more access than a sole proprietorship. Limited partners enjoy exemption from management responsibility, profits and losses passed through, and an investment that can be sold or assigned.",
   "hook": "GENERAL partner manages and carries unlimited liability. LIMITED partner invests and cannot manage. MLP trades like a corporation but is taxed like a partnership. Disadvantages: unlimited joint and several liability, and death or withdrawal ends it. Limited access to resources is NOT a partnership disadvantage.",
+  "topic": "Organising the venture and legal forms",
   "source": "Guide 10.5, partnership",
   "verified": "taken from samplequestions.vercel.app, checked against the notes"
  },
@@ -211,7 +233,9 @@
    "if ii only is correct"
   ],
   "explanation": "Only (ii). Drucker said resources are redirected to progressive opportunities. Administrative efficiency in (i) is the opposite of his point, and organising industrial activity to match demand with supply in (iii) belongs to the earlier economists.",
+  "teach": "Six names, six contributions, and the paper mixes them deliberately. CANTILLON gave entrepreneurship its central role in economics: conscious decisions about resource allocation, paying a certain price and reselling at an uncertain one, seeking higher yields for money and materials. ADAM SMITH described the enterpriser who undertook the formation of an organisation, had unusual foresight to recognise potential demand, and turned demand into supply. SAY combined Cantillon's economic risk taker with Smith's industrial manager, and added exceptional insight into society's needs; the entrepreneur influences society and is influenced by it. MENGER: converting resources into goods and services of value to consumers. SCHUMPETER: creative destruction, replacing existing products and businesses with better ones, entrepreneurs as innovators. DRUCKER: resources used not merely to solve problems but to take advantage of opportunities. Mill is the fourth European name. The commonest trap in the whole paper is handing creative destruction to Menger.",
   "hook": "Cantillon ALLOCATES resources and seeks higher yields. Adam Smith FORESEES demand. Say COMBINES the two and adds insight into society's needs. Menger CONVERTS resources into value. Schumpeter DESTROYS creatively. Drucker takes OPPORTUNITIES. Creative destruction is always Schumpeter, never Menger.",
+  "topic": "Entrepreneurship and free enterprise",
   "source": "Guide 4.1, the economists",
   "verified": "taken from samplequestions.vercel.app, checked against the notes"
  },
@@ -229,7 +253,9 @@
    "if i, ii and iii are correct"
   ],
   "explanation": "CORRECTED. The site marks (iii) only. All three statements are in the notes on Say: he combined Cantillon's economic risk taker with Smith's industrial manager, he described arts and skills for creating new enterprises plus exceptional insight into society's needs, and he said the entrepreneur both influences society and is influenced by it.",
+  "teach": "Six names, six contributions, and the paper mixes them deliberately. CANTILLON gave entrepreneurship its central role in economics: conscious decisions about resource allocation, paying a certain price and reselling at an uncertain one, seeking higher yields for money and materials. ADAM SMITH described the enterpriser who undertook the formation of an organisation, had unusual foresight to recognise potential demand, and turned demand into supply. SAY combined Cantillon's economic risk taker with Smith's industrial manager, and added exceptional insight into society's needs; the entrepreneur influences society and is influenced by it. MENGER: converting resources into goods and services of value to consumers. SCHUMPETER: creative destruction, replacing existing products and businesses with better ones, entrepreneurs as innovators. DRUCKER: resources used not merely to solve problems but to take advantage of opportunities. Mill is the fourth European name. The commonest trap in the whole paper is handing creative destruction to Menger.",
   "hook": "Cantillon ALLOCATES resources and seeks higher yields. Adam Smith FORESEES demand. Say COMBINES the two and adds insight into society's needs. Menger CONVERTS resources into value. Schumpeter DESTROYS creatively. Drucker takes OPPORTUNITIES. Creative destruction is always Schumpeter, never Menger.",
+  "topic": "Entrepreneurship and free enterprise",
   "source": "Guide 4.1, the economists",
   "verified": "re-derived from the lecture notes and slides"
  },
@@ -247,7 +273,9 @@
    "if iii only is correct"
   ],
   "explanation": "Only (iii): converting resources into goods and services of value to consumers. Creative destruction and entrepreneurs as innovators belong to SCHUMPETER. This is the classic Menger trap and it appears in almost every paper.",
+  "teach": "Six names, six contributions, and the paper mixes them deliberately. CANTILLON gave entrepreneurship its central role in economics: conscious decisions about resource allocation, paying a certain price and reselling at an uncertain one, seeking higher yields for money and materials. ADAM SMITH described the enterpriser who undertook the formation of an organisation, had unusual foresight to recognise potential demand, and turned demand into supply. SAY combined Cantillon's economic risk taker with Smith's industrial manager, and added exceptional insight into society's needs; the entrepreneur influences society and is influenced by it. MENGER: converting resources into goods and services of value to consumers. SCHUMPETER: creative destruction, replacing existing products and businesses with better ones, entrepreneurs as innovators. DRUCKER: resources used not merely to solve problems but to take advantage of opportunities. Mill is the fourth European name. The commonest trap in the whole paper is handing creative destruction to Menger.",
   "hook": "Cantillon ALLOCATES resources and seeks higher yields. Adam Smith FORESEES demand. Say COMBINES the two and adds insight into society's needs. Menger CONVERTS resources into value. Schumpeter DESTROYS creatively. Drucker takes OPPORTUNITIES. Creative destruction is always Schumpeter, never Menger.",
+  "topic": "Entrepreneurship and free enterprise",
   "source": "Guide 4.1; trap list 6",
   "verified": "taken from samplequestions.vercel.app, checked against the notes"
  },
@@ -265,7 +293,9 @@
    "if iii only is correct"
   ],
   "explanation": "Only (iii): exceptional insight into society's needs, fulfilled through taking risks. Statement (ii), buying at known prices and reselling at unknown prices, is CANTILLON. Watch this pair: the same clause is offered under both names in different questions.",
+  "teach": "Six names, six contributions, and the paper mixes them deliberately. CANTILLON gave entrepreneurship its central role in economics: conscious decisions about resource allocation, paying a certain price and reselling at an uncertain one, seeking higher yields for money and materials. ADAM SMITH described the enterpriser who undertook the formation of an organisation, had unusual foresight to recognise potential demand, and turned demand into supply. SAY combined Cantillon's economic risk taker with Smith's industrial manager, and added exceptional insight into society's needs; the entrepreneur influences society and is influenced by it. MENGER: converting resources into goods and services of value to consumers. SCHUMPETER: creative destruction, replacing existing products and businesses with better ones, entrepreneurs as innovators. DRUCKER: resources used not merely to solve problems but to take advantage of opportunities. Mill is the fourth European name. The commonest trap in the whole paper is handing creative destruction to Menger.",
   "hook": "Cantillon ALLOCATES resources and seeks higher yields. Adam Smith FORESEES demand. Say COMBINES the two and adds insight into society's needs. Menger CONVERTS resources into value. Schumpeter DESTROYS creatively. Drucker takes OPPORTUNITIES. Creative destruction is always Schumpeter, never Menger.",
+  "topic": "Entrepreneurship and free enterprise",
   "source": "Guide 4.1, the economists",
   "verified": "taken from samplequestions.vercel.app, checked against the notes"
  },
@@ -283,7 +313,9 @@
    "if ii and iii only are correct"
   ],
   "explanation": "Statements (ii) and (iii). The business ends on the death or withdrawal of any partner, and liability is unlimited, joint and several. Statement (i) is false: a partnership is a simple form to administer, which is one of its attractions.",
+  "teach": "Three types: general partnership, limited partnership and master limited partnership. A general partner has unlimited liability and manages the firm. A limited partner invests, has limited liability, and cannot legally help manage. An MLP acts and trades like a corporation but is taxed like a partnership, so it avoids corporate income tax. Advantages: more financial resources, shared management and pooled knowledge, longer survival. Disadvantages: conflict and tension, unlimited legal liability for all parties jointly and severally, division of profits, disagreements among partners, difficulty terminating, and the business ending on the death or withdrawal of any partner. Limited access to external resources is NOT a partnership disadvantage; a partnership has more access than a sole proprietorship. Limited partners enjoy exemption from management responsibility, profits and losses passed through, and an investment that can be sold or assigned.",
   "hook": "GENERAL partner manages and carries unlimited liability. LIMITED partner invests and cannot manage. MLP trades like a corporation but is taxed like a partnership. Disadvantages: unlimited joint and several liability, and death or withdrawal ends it. Limited access to resources is NOT a partnership disadvantage.",
+  "topic": "Organising the venture and legal forms",
   "source": "Guide 10.5, partnership",
   "verified": "taken from samplequestions.vercel.app, checked against the notes"
  },
@@ -301,7 +333,9 @@
    "if i only is correct"
   ],
   "explanation": "Only (i): resources are used not merely to solve problems but to take advantage of opportunities. Statement (ii) misquotes Schumpeter's creative destruction as creative disruption, and (iii) belongs to the earlier economists.",
+  "teach": "Six names, six contributions, and the paper mixes them deliberately. CANTILLON gave entrepreneurship its central role in economics: conscious decisions about resource allocation, paying a certain price and reselling at an uncertain one, seeking higher yields for money and materials. ADAM SMITH described the enterpriser who undertook the formation of an organisation, had unusual foresight to recognise potential demand, and turned demand into supply. SAY combined Cantillon's economic risk taker with Smith's industrial manager, and added exceptional insight into society's needs; the entrepreneur influences society and is influenced by it. MENGER: converting resources into goods and services of value to consumers. SCHUMPETER: creative destruction, replacing existing products and businesses with better ones, entrepreneurs as innovators. DRUCKER: resources used not merely to solve problems but to take advantage of opportunities. Mill is the fourth European name. The commonest trap in the whole paper is handing creative destruction to Menger.",
   "hook": "Cantillon ALLOCATES resources and seeks higher yields. Adam Smith FORESEES demand. Say COMBINES the two and adds insight into society's needs. Menger CONVERTS resources into value. Schumpeter DESTROYS creatively. Drucker takes OPPORTUNITIES. Creative destruction is always Schumpeter, never Menger.",
+  "topic": "Entrepreneurship and free enterprise",
   "source": "Guide 4.1; trap list 6",
   "verified": "taken from samplequestions.vercel.app, checked against the notes"
  },
@@ -319,7 +353,9 @@
    "if i and iii only are correct"
   ],
   "explanation": "CORRECTED. The site marks (i) and (ii). The notes give Cantillon two things: conscious decisions about resource allocation, and seeking higher yields for money and materials. That is (i) and (iii). Statement (ii), exceptional insight into society's needs, is SAY, and the site's own Say question marks it as Say. The site appears to have carried a letter across from a paper whose options ran in a different order. Answer by text.",
+  "teach": "Six names, six contributions, and the paper mixes them deliberately. CANTILLON gave entrepreneurship its central role in economics: conscious decisions about resource allocation, paying a certain price and reselling at an uncertain one, seeking higher yields for money and materials. ADAM SMITH described the enterpriser who undertook the formation of an organisation, had unusual foresight to recognise potential demand, and turned demand into supply. SAY combined Cantillon's economic risk taker with Smith's industrial manager, and added exceptional insight into society's needs; the entrepreneur influences society and is influenced by it. MENGER: converting resources into goods and services of value to consumers. SCHUMPETER: creative destruction, replacing existing products and businesses with better ones, entrepreneurs as innovators. DRUCKER: resources used not merely to solve problems but to take advantage of opportunities. Mill is the fourth European name. The commonest trap in the whole paper is handing creative destruction to Menger.",
   "hook": "Cantillon ALLOCATES resources and seeks higher yields. Adam Smith FORESEES demand. Say COMBINES the two and adds insight into society's needs. Menger CONVERTS resources into value. Schumpeter DESTROYS creatively. Drucker takes OPPORTUNITIES. Creative destruction is always Schumpeter, never Menger.",
+  "topic": "Entrepreneurship and free enterprise",
   "source": "Guide 4.1; Guide 16, conflicts",
   "verified": "re-derived from the lecture notes and slides"
  },
@@ -337,7 +373,9 @@
    "if S1 is True, S2 is True and S2 is an explanation of S1"
   ],
   "explanation": "Both statements are true and the second explains the first. A venture with no clear vision has nothing to plan against. The same pair appears elsewhere with the second statement worded as a lack of understanding of marketing issues. The answer does not change.",
+  "teach": "Planning is a process that never ends for a new venture, because businesses evolve from early start-up to a final growth stage if planning is done well at the beginning. A good way to fail quickly is to start without a clear vision, because a business without one shows a lack of understanding of marketing issues. Both pairs answer A.",
   "hook": "Planning never ends: four stages, each needs its own plan. On the because pair, answer A.",
+  "topic": "Business planning and the feasibility plan",
   "source": "Guide 6.15, planning is never finished",
   "verified": "taken from samplequestions.vercel.app, checked against the notes"
  },
@@ -355,7 +393,9 @@
    "none of the above"
   ],
   "explanation": "The correct figure is December's CREDIT sales, GH¢253,500. It is not offered. Every printed option comes from the Topsy Turvy table, so none of the above is the right response here. This repeats the known Kaneapa fault: when the correct figure is missing, check whether the option set belongs to another question before you settle.",
+  "teach": "You are given cash sales, sales on account and total budgeted collections for three months, and told the company collects 100 percent of receivables in the month following the sale. Five rules. Accounts receivable for a month is the PREVIOUS month's credit sales, except the first month, which uses the given opening balance. Budgeted cash sales are read straight off the table, which is a free mark. Total budgeted collections are this month's cash sales plus last month's credit sales, which is how you check your work. Receivables on the fourth quarter balance sheet are DECEMBER'S sales on account alone, the money still uncollected at 31 December. Sales revenue on the fourth quarter income statement is the sum of the three TOTAL budgeted sales figures. Where the stem gives a collection percent that the table contradicts, trust the table.",
   "hook": "AR for a month = LAST month's credit sales. October uses the OPENING balance. Cash sales are read straight off the table. Year-end AR on the balance sheet = DECEMBER'S CREDIT sales, not December total. Revenue = sum of TOTAL budgeted sales.",
+  "topic": "The calculations",
   "source": "Guide 13.1, schedule of cash receipts",
   "verified": "recomputed from the printed data"
  },
@@ -373,7 +413,9 @@
    "GH¢115,385"
   ],
   "explanation": "October collects what was owed on 1 October, so the answer is the given opening balance, GH¢115,385. Note a fault in the printed table: October collections should be 30,000 + 115,385 = GH¢145,385, but the paper prints GH¢143,385. The November and December collection lines are both consistent, so only the October line is wrong.",
+  "teach": "You are given cash sales, sales on account and total budgeted collections for three months, and told the company collects 100 percent of receivables in the month following the sale. Five rules. Accounts receivable for a month is the PREVIOUS month's credit sales, except the first month, which uses the given opening balance. Budgeted cash sales are read straight off the table, which is a free mark. Total budgeted collections are this month's cash sales plus last month's credit sales, which is how you check your work. Receivables on the fourth quarter balance sheet are DECEMBER'S sales on account alone, the money still uncollected at 31 December. Sales revenue on the fourth quarter income statement is the sum of the three TOTAL budgeted sales figures. Where the stem gives a collection percent that the table contradicts, trust the table.",
   "hook": "AR for a month = LAST month's credit sales. October uses the OPENING balance. Cash sales are read straight off the table. Year-end AR on the balance sheet = DECEMBER'S CREDIT sales, not December total. Revenue = sum of TOTAL budgeted sales.",
+  "topic": "The calculations",
   "source": "Guide 13.1, schedule of cash receipts",
   "verified": "recomputed from the printed data"
  },
@@ -391,7 +433,9 @@
    "GH¢718,200"
   ],
   "explanation": "Add the three total budgeted sales figures. December's total is 50,700 + 253,500 = GH¢304,200, although the table prints GH¢302,200. Using the correct total: 180,000 + 234,000 + 304,200 = GH¢718,200, which is the marked answer. Trust the cash and credit rows over the total row when they disagree.",
+  "teach": "You are given cash sales, sales on account and total budgeted collections for three months, and told the company collects 100 percent of receivables in the month following the sale. Five rules. Accounts receivable for a month is the PREVIOUS month's credit sales, except the first month, which uses the given opening balance. Budgeted cash sales are read straight off the table, which is a free mark. Total budgeted collections are this month's cash sales plus last month's credit sales, which is how you check your work. Receivables on the fourth quarter balance sheet are DECEMBER'S sales on account alone, the money still uncollected at 31 December. Sales revenue on the fourth quarter income statement is the sum of the three TOTAL budgeted sales figures. Where the stem gives a collection percent that the table contradicts, trust the table.",
   "hook": "AR for a month = LAST month's credit sales. October uses the OPENING balance. Cash sales are read straight off the table. Year-end AR on the balance sheet = DECEMBER'S CREDIT sales, not December total. Revenue = sum of TOTAL budgeted sales.",
+  "topic": "The calculations",
   "source": "Guide 13.1, schedule of cash receipts",
   "verified": "recomputed from the printed data"
  },
@@ -409,7 +453,9 @@
    "GH¢30,000"
   ],
   "explanation": "Read the cash sales line straight off the table: GH¢30,000. This is a free mark.",
+  "teach": "You are given cash sales, sales on account and total budgeted collections for three months, and told the company collects 100 percent of receivables in the month following the sale. Five rules. Accounts receivable for a month is the PREVIOUS month's credit sales, except the first month, which uses the given opening balance. Budgeted cash sales are read straight off the table, which is a free mark. Total budgeted collections are this month's cash sales plus last month's credit sales, which is how you check your work. Receivables on the fourth quarter balance sheet are DECEMBER'S sales on account alone, the money still uncollected at 31 December. Sales revenue on the fourth quarter income statement is the sum of the three TOTAL budgeted sales figures. Where the stem gives a collection percent that the table contradicts, trust the table.",
   "hook": "AR for a month = LAST month's credit sales. October uses the OPENING balance. Cash sales are read straight off the table. Year-end AR on the balance sheet = DECEMBER'S CREDIT sales, not December total. Revenue = sum of TOTAL budgeted sales.",
+  "topic": "The calculations",
   "source": "Guide 13.1, schedule of cash receipts",
   "verified": "recomputed from the printed data"
  },
@@ -427,7 +473,9 @@
    "GH¢39,000"
   ],
   "explanation": "Read the cash sales line: GH¢39,000. The distractors here are lifted from a different company's table, which is a good reason to work from the figures you are given and not from what looks familiar.",
+  "teach": "You are given cash sales, sales on account and total budgeted collections for three months, and told the company collects 100 percent of receivables in the month following the sale. Five rules. Accounts receivable for a month is the PREVIOUS month's credit sales, except the first month, which uses the given opening balance. Budgeted cash sales are read straight off the table, which is a free mark. Total budgeted collections are this month's cash sales plus last month's credit sales, which is how you check your work. Receivables on the fourth quarter balance sheet are DECEMBER'S sales on account alone, the money still uncollected at 31 December. Sales revenue on the fourth quarter income statement is the sum of the three TOTAL budgeted sales figures. Where the stem gives a collection percent that the table contradicts, trust the table.",
   "hook": "AR for a month = LAST month's credit sales. October uses the OPENING balance. Cash sales are read straight off the table. Year-end AR on the balance sheet = DECEMBER'S CREDIT sales, not December total. Revenue = sum of TOTAL budgeted sales.",
+  "topic": "The calculations",
   "source": "Guide 13.1, schedule of cash receipts",
   "verified": "recomputed from the printed data"
  },
@@ -445,7 +493,9 @@
    "GH¢195,000"
   ],
   "explanation": "December collects November's sales on account, GH¢195,000. Check: 50,700 + 195,000 = GH¢245,700, exactly the printed collections figure.",
+  "teach": "You are given cash sales, sales on account and total budgeted collections for three months, and told the company collects 100 percent of receivables in the month following the sale. Five rules. Accounts receivable for a month is the PREVIOUS month's credit sales, except the first month, which uses the given opening balance. Budgeted cash sales are read straight off the table, which is a free mark. Total budgeted collections are this month's cash sales plus last month's credit sales, which is how you check your work. Receivables on the fourth quarter balance sheet are DECEMBER'S sales on account alone, the money still uncollected at 31 December. Sales revenue on the fourth quarter income statement is the sum of the three TOTAL budgeted sales figures. Where the stem gives a collection percent that the table contradicts, trust the table.",
   "hook": "AR for a month = LAST month's credit sales. October uses the OPENING balance. Cash sales are read straight off the table. Year-end AR on the balance sheet = DECEMBER'S CREDIT sales, not December total. Revenue = sum of TOTAL budgeted sales.",
+  "topic": "The calculations",
   "source": "Guide 13.1, schedule of cash receipts",
   "verified": "recomputed from the printed data"
  },
@@ -463,7 +513,9 @@
    "GH¢150,000"
   ],
   "explanation": "November collects October's sales on account, GH¢150,000. Check it against the collections line: 39,000 + 150,000 = GH¢189,000, which is what the table prints.",
+  "teach": "You are given cash sales, sales on account and total budgeted collections for three months, and told the company collects 100 percent of receivables in the month following the sale. Five rules. Accounts receivable for a month is the PREVIOUS month's credit sales, except the first month, which uses the given opening balance. Budgeted cash sales are read straight off the table, which is a free mark. Total budgeted collections are this month's cash sales plus last month's credit sales, which is how you check your work. Receivables on the fourth quarter balance sheet are DECEMBER'S sales on account alone, the money still uncollected at 31 December. Sales revenue on the fourth quarter income statement is the sum of the three TOTAL budgeted sales figures. Where the stem gives a collection percent that the table contradicts, trust the table.",
   "hook": "AR for a month = LAST month's credit sales. October uses the OPENING balance. Cash sales are read straight off the table. Year-end AR on the balance sheet = DECEMBER'S CREDIT sales, not December total. Revenue = sum of TOTAL budgeted sales.",
+  "topic": "The calculations",
   "source": "Guide 13.1, schedule of cash receipts",
   "verified": "recomputed from the printed data"
  },
@@ -481,7 +533,9 @@
    "GH¢50,700"
   ],
   "explanation": "Read the cash sales line: GH¢50,700.",
+  "teach": "You are given cash sales, sales on account and total budgeted collections for three months, and told the company collects 100 percent of receivables in the month following the sale. Five rules. Accounts receivable for a month is the PREVIOUS month's credit sales, except the first month, which uses the given opening balance. Budgeted cash sales are read straight off the table, which is a free mark. Total budgeted collections are this month's cash sales plus last month's credit sales, which is how you check your work. Receivables on the fourth quarter balance sheet are DECEMBER'S sales on account alone, the money still uncollected at 31 December. Sales revenue on the fourth quarter income statement is the sum of the three TOTAL budgeted sales figures. Where the stem gives a collection percent that the table contradicts, trust the table.",
   "hook": "AR for a month = LAST month's credit sales. October uses the OPENING balance. Cash sales are read straight off the table. Year-end AR on the balance sheet = DECEMBER'S CREDIT sales, not December total. Revenue = sum of TOTAL budgeted sales.",
+  "topic": "The calculations",
   "source": "Guide 13.1, schedule of cash receipts",
   "verified": "recomputed from the printed data"
  },
@@ -499,7 +553,9 @@
    "25 percent"
   ],
   "explanation": "Divide one month's total sales by the month before: 10,000,000 / 8,000,000 = 1.25, so 25 percent. Check it on the next pair: 12,500,000 / 10,000,000 = 1.25 as well.",
+  "teach": "You are given cash sales, sales on account and total budgeted collections for three months, and told the company collects 100 percent of receivables in the month following the sale. Five rules. Accounts receivable for a month is the PREVIOUS month's credit sales, except the first month, which uses the given opening balance. Budgeted cash sales are read straight off the table, which is a free mark. Total budgeted collections are this month's cash sales plus last month's credit sales, which is how you check your work. Receivables on the fourth quarter balance sheet are DECEMBER'S sales on account alone, the money still uncollected at 31 December. Sales revenue on the fourth quarter income statement is the sum of the three TOTAL budgeted sales figures. Where the stem gives a collection percent that the table contradicts, trust the table.",
   "hook": "AR for a month = LAST month's credit sales. October uses the OPENING balance. Cash sales are read straight off the table. Year-end AR on the balance sheet = DECEMBER'S CREDIT sales, not December total. Revenue = sum of TOTAL budgeted sales.",
+  "topic": "The calculations",
   "source": "Guide 13.1, schedule of cash receipts",
   "verified": "recomputed from the printed data"
  },
@@ -517,7 +573,9 @@
    "GH¢3,200,000"
   ],
   "explanation": "November collects October's sales on account, GH¢3,200,000. Check: 6,000,000 + 3,200,000 = GH¢9,200,000, the printed collections figure.",
+  "teach": "You are given cash sales, sales on account and total budgeted collections for three months, and told the company collects 100 percent of receivables in the month following the sale. Five rules. Accounts receivable for a month is the PREVIOUS month's credit sales, except the first month, which uses the given opening balance. Budgeted cash sales are read straight off the table, which is a free mark. Total budgeted collections are this month's cash sales plus last month's credit sales, which is how you check your work. Receivables on the fourth quarter balance sheet are DECEMBER'S sales on account alone, the money still uncollected at 31 December. Sales revenue on the fourth quarter income statement is the sum of the three TOTAL budgeted sales figures. Where the stem gives a collection percent that the table contradicts, trust the table.",
   "hook": "AR for a month = LAST month's credit sales. October uses the OPENING balance. Cash sales are read straight off the table. Year-end AR on the balance sheet = DECEMBER'S CREDIT sales, not December total. Revenue = sum of TOTAL budgeted sales.",
+  "topic": "The calculations",
   "source": "Guide 13.1, schedule of cash receipts",
   "verified": "recomputed from the printed data"
  },
@@ -535,7 +593,9 @@
    "GH¢30,500,000"
   ],
   "explanation": "Add the three total budgeted sales figures: 8,000,000 + 10,000,000 + 12,500,000 = GH¢30,500,000. Use total sales, not collections.",
+  "teach": "You are given cash sales, sales on account and total budgeted collections for three months, and told the company collects 100 percent of receivables in the month following the sale. Five rules. Accounts receivable for a month is the PREVIOUS month's credit sales, except the first month, which uses the given opening balance. Budgeted cash sales are read straight off the table, which is a free mark. Total budgeted collections are this month's cash sales plus last month's credit sales, which is how you check your work. Receivables on the fourth quarter balance sheet are DECEMBER'S sales on account alone, the money still uncollected at 31 December. Sales revenue on the fourth quarter income statement is the sum of the three TOTAL budgeted sales figures. Where the stem gives a collection percent that the table contradicts, trust the table.",
   "hook": "AR for a month = LAST month's credit sales. October uses the OPENING balance. Cash sales are read straight off the table. Year-end AR on the balance sheet = DECEMBER'S CREDIT sales, not December total. Revenue = sum of TOTAL budgeted sales.",
+  "topic": "The calculations",
   "source": "Guide 13.1, schedule of cash receipts",
   "verified": "recomputed from the printed data"
  },
@@ -553,7 +613,9 @@
    "GH¢4,800,000"
   ],
   "explanation": "Read the cash sales line: GH¢4,800,000. October collections equal the cash sales alone, because there were no receivables on 1 October.",
+  "teach": "You are given cash sales, sales on account and total budgeted collections for three months, and told the company collects 100 percent of receivables in the month following the sale. Five rules. Accounts receivable for a month is the PREVIOUS month's credit sales, except the first month, which uses the given opening balance. Budgeted cash sales are read straight off the table, which is a free mark. Total budgeted collections are this month's cash sales plus last month's credit sales, which is how you check your work. Receivables on the fourth quarter balance sheet are DECEMBER'S sales on account alone, the money still uncollected at 31 December. Sales revenue on the fourth quarter income statement is the sum of the three TOTAL budgeted sales figures. Where the stem gives a collection percent that the table contradicts, trust the table.",
   "hook": "AR for a month = LAST month's credit sales. October uses the OPENING balance. Cash sales are read straight off the table. Year-end AR on the balance sheet = DECEMBER'S CREDIT sales, not December total. Revenue = sum of TOTAL budgeted sales.",
+  "topic": "The calculations",
   "source": "Guide 13.1, schedule of cash receipts",
   "verified": "recomputed from the printed data"
  },
@@ -571,7 +633,9 @@
    "GH¢7,500,000"
   ],
   "explanation": "Read the cash sales line: GH¢7,500,000.",
+  "teach": "You are given cash sales, sales on account and total budgeted collections for three months, and told the company collects 100 percent of receivables in the month following the sale. Five rules. Accounts receivable for a month is the PREVIOUS month's credit sales, except the first month, which uses the given opening balance. Budgeted cash sales are read straight off the table, which is a free mark. Total budgeted collections are this month's cash sales plus last month's credit sales, which is how you check your work. Receivables on the fourth quarter balance sheet are DECEMBER'S sales on account alone, the money still uncollected at 31 December. Sales revenue on the fourth quarter income statement is the sum of the three TOTAL budgeted sales figures. Where the stem gives a collection percent that the table contradicts, trust the table.",
   "hook": "AR for a month = LAST month's credit sales. October uses the OPENING balance. Cash sales are read straight off the table. Year-end AR on the balance sheet = DECEMBER'S CREDIT sales, not December total. Revenue = sum of TOTAL budgeted sales.",
+  "topic": "The calculations",
   "source": "Guide 13.1, schedule of cash receipts",
   "verified": "recomputed from the printed data"
  },
@@ -589,7 +653,9 @@
    "GH¢5,000,000"
   ],
   "explanation": "December's CREDIT sales only: GH¢5,000,000. It is not December total sales (GH¢12,500,000) and it is not the December collections (GH¢11,500,000). This is the money still uncollected at 31 December.",
+  "teach": "You are given cash sales, sales on account and total budgeted collections for three months, and told the company collects 100 percent of receivables in the month following the sale. Five rules. Accounts receivable for a month is the PREVIOUS month's credit sales, except the first month, which uses the given opening balance. Budgeted cash sales are read straight off the table, which is a free mark. Total budgeted collections are this month's cash sales plus last month's credit sales, which is how you check your work. Receivables on the fourth quarter balance sheet are DECEMBER'S sales on account alone, the money still uncollected at 31 December. Sales revenue on the fourth quarter income statement is the sum of the three TOTAL budgeted sales figures. Where the stem gives a collection percent that the table contradicts, trust the table.",
   "hook": "AR for a month = LAST month's credit sales. October uses the OPENING balance. Cash sales are read straight off the table. Year-end AR on the balance sheet = DECEMBER'S CREDIT sales, not December total. Revenue = sum of TOTAL budgeted sales.",
+  "topic": "The calculations",
   "source": "Guide 13.1, schedule of cash receipts",
   "verified": "recomputed from the printed data"
  },
@@ -607,7 +673,9 @@
    "GH¢6,000,000"
   ],
   "explanation": "Read the cash sales line: GH¢6,000,000.",
+  "teach": "You are given cash sales, sales on account and total budgeted collections for three months, and told the company collects 100 percent of receivables in the month following the sale. Five rules. Accounts receivable for a month is the PREVIOUS month's credit sales, except the first month, which uses the given opening balance. Budgeted cash sales are read straight off the table, which is a free mark. Total budgeted collections are this month's cash sales plus last month's credit sales, which is how you check your work. Receivables on the fourth quarter balance sheet are DECEMBER'S sales on account alone, the money still uncollected at 31 December. Sales revenue on the fourth quarter income statement is the sum of the three TOTAL budgeted sales figures. Where the stem gives a collection percent that the table contradicts, trust the table.",
   "hook": "AR for a month = LAST month's credit sales. October uses the OPENING balance. Cash sales are read straight off the table. Year-end AR on the balance sheet = DECEMBER'S CREDIT sales, not December total. Revenue = sum of TOTAL budgeted sales.",
+  "topic": "The calculations",
   "source": "Guide 13.1, schedule of cash receipts",
   "verified": "recomputed from the printed data"
  },
@@ -625,7 +693,9 @@
    "GH¢4,000,000"
   ],
   "explanation": "December collects November's sales on account, GH¢4,000,000. Check: 7,500,000 + 4,000,000 = GH¢11,500,000.",
+  "teach": "You are given cash sales, sales on account and total budgeted collections for three months, and told the company collects 100 percent of receivables in the month following the sale. Five rules. Accounts receivable for a month is the PREVIOUS month's credit sales, except the first month, which uses the given opening balance. Budgeted cash sales are read straight off the table, which is a free mark. Total budgeted collections are this month's cash sales plus last month's credit sales, which is how you check your work. Receivables on the fourth quarter balance sheet are DECEMBER'S sales on account alone, the money still uncollected at 31 December. Sales revenue on the fourth quarter income statement is the sum of the three TOTAL budgeted sales figures. Where the stem gives a collection percent that the table contradicts, trust the table.",
   "hook": "AR for a month = LAST month's credit sales. October uses the OPENING balance. Cash sales are read straight off the table. Year-end AR on the balance sheet = DECEMBER'S CREDIT sales, not December total. Revenue = sum of TOTAL budgeted sales.",
+  "topic": "The calculations",
   "source": "Guide 13.1, schedule of cash receipts",
   "verified": "recomputed from the printed data"
  },
@@ -643,7 +713,9 @@
    "GH¢244,800"
   ],
   "explanation": "Total disbursements are 2,200,000 + 1,800,000 = GH¢4,000,000. 4,000,000 - 4,244,800 = -244,800, a surplus of GH¢244,800.",
+  "teach": "Seven steps. Beginning cash balance is last month's ending balance. Total cash available is beginning plus cash receipts. Total budgeted disbursements are inventory purchases plus selling and administrative expenses. Shortage or surplus is disbursements minus available: a positive number is a shortage, a negative one is a surplus. On a shortage, borrowing equals shortage plus cushion. On a surplus larger than the cushion, repayment equals surplus minus cushion. On a surplus SMALLER than the cushion, you borrow the difference, because the surplus alone does not reach the cushion you must hold. Interest is the rate times the CUMULATIVE loan balance after financing, so track the running balance. Ending balance is available minus disbursements plus borrowing minus repayment minus interest. The same table also asks for net cash flow from financing, which is total borrowed minus total repaid and equals the closing loan balance, and net cash flow from operating, which is receipts minus disbursements minus interest paid.",
   "hook": "Beginning = last month's ending. Available = beginning + receipts. SHORTAGE: borrow = shortage + cushion. SURPLUS bigger than the cushion: repay = surplus - cushion. SURPLUS SMALLER than the cushion: BORROW the difference. Interest is charged on the CUMULATIVE loan balance, not on the new borrowing.",
+  "topic": "The calculations",
   "source": "Guide 13.3, the cash budget with borrowing and interest",
   "verified": "recomputed from the printed data"
  },
@@ -661,7 +733,9 @@
    "GH¢32,000"
   ],
   "explanation": "READ THIS ONE CAREFULLY. August shows a surplus of GH¢88,000, but the cushion is GH¢120,000. The surplus is SMALLER than the cushion, so the company cannot repay. It must BORROW the difference: 120,000 - 88,000 = GH¢32,000. The usual rule, repayment = surplus - cushion, gives a negative number, and a negative repayment is a borrowing.",
+  "teach": "Seven steps. Beginning cash balance is last month's ending balance. Total cash available is beginning plus cash receipts. Total budgeted disbursements are inventory purchases plus selling and administrative expenses. Shortage or surplus is disbursements minus available: a positive number is a shortage, a negative one is a surplus. On a shortage, borrowing equals shortage plus cushion. On a surplus larger than the cushion, repayment equals surplus minus cushion. On a surplus SMALLER than the cushion, you borrow the difference, because the surplus alone does not reach the cushion you must hold. Interest is the rate times the CUMULATIVE loan balance after financing, so track the running balance. Ending balance is available minus disbursements plus borrowing minus repayment minus interest. The same table also asks for net cash flow from financing, which is total borrowed minus total repaid and equals the closing loan balance, and net cash flow from operating, which is receipts minus disbursements minus interest paid.",
   "hook": "Beginning = last month's ending. Available = beginning + receipts. SHORTAGE: borrow = shortage + cushion. SURPLUS bigger than the cushion: repay = surplus - cushion. SURPLUS SMALLER than the cushion: BORROW the difference. Interest is charged on the CUMULATIVE loan balance, not on the new borrowing.",
+  "topic": "The calculations",
   "source": "Guide 13.3, the cash budget with borrowing and interest",
   "verified": "recomputed from the printed data"
  },
@@ -679,7 +753,9 @@
    "GH¢4,244,800"
   ],
   "explanation": "August ends at GH¢44,800, so September is 44,800 + 4,200,000 = GH¢4,244,800. The August ending balance is 3,648,000 - 3,560,000 + 32,000 - 75,200 = GH¢44,800.",
+  "teach": "Seven steps. Beginning cash balance is last month's ending balance. Total cash available is beginning plus cash receipts. Total budgeted disbursements are inventory purchases plus selling and administrative expenses. Shortage or surplus is disbursements minus available: a positive number is a shortage, a negative one is a surplus. On a shortage, borrowing equals shortage plus cushion. On a surplus larger than the cushion, repayment equals surplus minus cushion. On a surplus SMALLER than the cushion, you borrow the difference, because the surplus alone does not reach the cushion you must hold. Interest is the rate times the CUMULATIVE loan balance after financing, so track the running balance. Ending balance is available minus disbursements plus borrowing minus repayment minus interest. The same table also asks for net cash flow from financing, which is total borrowed minus total repaid and equals the closing loan balance, and net cash flow from operating, which is receipts minus disbursements minus interest paid.",
   "hook": "Beginning = last month's ending. Available = beginning + receipts. SHORTAGE: borrow = shortage + cushion. SURPLUS bigger than the cushion: repay = surplus - cushion. SURPLUS SMALLER than the cushion: BORROW the difference. Interest is charged on the CUMULATIVE loan balance, not on the new borrowing.",
+  "topic": "The calculations",
   "source": "Guide 13.3, the cash budget with borrowing and interest",
   "verified": "recomputed from the printed data"
  },
@@ -697,7 +773,9 @@
    "GH¢88,000"
   ],
   "explanation": "Total disbursements are 2,000,000 + 1,560,000 = GH¢3,560,000. Disbursements minus available: 3,560,000 - 3,648,000 = -88,000, a surplus of GH¢88,000.",
+  "teach": "Seven steps. Beginning cash balance is last month's ending balance. Total cash available is beginning plus cash receipts. Total budgeted disbursements are inventory purchases plus selling and administrative expenses. Shortage or surplus is disbursements minus available: a positive number is a shortage, a negative one is a surplus. On a shortage, borrowing equals shortage plus cushion. On a surplus larger than the cushion, repayment equals surplus minus cushion. On a surplus SMALLER than the cushion, you borrow the difference, because the surplus alone does not reach the cushion you must hold. Interest is the rate times the CUMULATIVE loan balance after financing, so track the running balance. Ending balance is available minus disbursements plus borrowing minus repayment minus interest. The same table also asks for net cash flow from financing, which is total borrowed minus total repaid and equals the closing loan balance, and net cash flow from operating, which is receipts minus disbursements minus interest paid.",
   "hook": "Beginning = last month's ending. Available = beginning + receipts. SHORTAGE: borrow = shortage + cushion. SURPLUS bigger than the cushion: repay = surplus - cushion. SURPLUS SMALLER than the cushion: BORROW the difference. Interest is charged on the CUMULATIVE loan balance, not on the new borrowing.",
+  "topic": "The calculations",
   "source": "Guide 13.3, the cash budget with borrowing and interest",
   "verified": "recomputed from the printed data"
  },
@@ -715,7 +793,9 @@
    "GH¢3,648,000"
   ],
   "explanation": "Total cash available = beginning cash balance + cash receipts. July ends at GH¢48,000, so August is 48,000 + 3,600,000 = GH¢3,648,000. Work July first: avail 2,500,000, disbursements 3,100,000, shortage 600,000, borrowing 600,000 + 120,000 = 720,000, interest 72,000, ending 48,000.",
+  "teach": "Seven steps. Beginning cash balance is last month's ending balance. Total cash available is beginning plus cash receipts. Total budgeted disbursements are inventory purchases plus selling and administrative expenses. Shortage or surplus is disbursements minus available: a positive number is a shortage, a negative one is a surplus. On a shortage, borrowing equals shortage plus cushion. On a surplus larger than the cushion, repayment equals surplus minus cushion. On a surplus SMALLER than the cushion, you borrow the difference, because the surplus alone does not reach the cushion you must hold. Interest is the rate times the CUMULATIVE loan balance after financing, so track the running balance. Ending balance is available minus disbursements plus borrowing minus repayment minus interest. The same table also asks for net cash flow from financing, which is total borrowed minus total repaid and equals the closing loan balance, and net cash flow from operating, which is receipts minus disbursements minus interest paid.",
   "hook": "Beginning = last month's ending. Available = beginning + receipts. SHORTAGE: borrow = shortage + cushion. SURPLUS bigger than the cushion: repay = surplus - cushion. SURPLUS SMALLER than the cushion: BORROW the difference. Interest is charged on the CUMULATIVE loan balance, not on the new borrowing.",
+  "topic": "The calculations",
   "source": "Guide 13.3, the cash budget with borrowing and interest",
   "verified": "recomputed from the printed data"
  },
@@ -733,7 +813,9 @@
    "GH¢57,280"
   ],
   "explanation": "Ending = available - disbursements + borrowing - repayment - interest. The loan balance after September's repayment is 752,000 - 124,800 = GH¢627,200, so interest is GH¢62,720. Then 4,244,800 - 4,000,000 - 124,800 - 62,720 = GH¢57,280.",
+  "teach": "Seven steps. Beginning cash balance is last month's ending balance. Total cash available is beginning plus cash receipts. Total budgeted disbursements are inventory purchases plus selling and administrative expenses. Shortage or surplus is disbursements minus available: a positive number is a shortage, a negative one is a surplus. On a shortage, borrowing equals shortage plus cushion. On a surplus larger than the cushion, repayment equals surplus minus cushion. On a surplus SMALLER than the cushion, you borrow the difference, because the surplus alone does not reach the cushion you must hold. Interest is the rate times the CUMULATIVE loan balance after financing, so track the running balance. Ending balance is available minus disbursements plus borrowing minus repayment minus interest. The same table also asks for net cash flow from financing, which is total borrowed minus total repaid and equals the closing loan balance, and net cash flow from operating, which is receipts minus disbursements minus interest paid.",
   "hook": "Beginning = last month's ending. Available = beginning + receipts. SHORTAGE: borrow = shortage + cushion. SURPLUS bigger than the cushion: repay = surplus - cushion. SURPLUS SMALLER than the cushion: BORROW the difference. Interest is charged on the CUMULATIVE loan balance, not on the new borrowing.",
+  "topic": "The calculations",
   "source": "Guide 13.3, the cash budget with borrowing and interest",
   "verified": "recomputed from the printed data"
  },
@@ -751,7 +833,9 @@
    "GH¢209,920"
   ],
   "explanation": "Interest is charged on the CUMULATIVE loan balance each month. July: 720,000 at 10 percent = 72,000. August: the balance rises to 752,000 after the extra borrowing, so 75,200. September: it falls to 627,200, so 62,720. Total = GH¢209,920.",
+  "teach": "Seven steps. Beginning cash balance is last month's ending balance. Total cash available is beginning plus cash receipts. Total budgeted disbursements are inventory purchases plus selling and administrative expenses. Shortage or surplus is disbursements minus available: a positive number is a shortage, a negative one is a surplus. On a shortage, borrowing equals shortage plus cushion. On a surplus larger than the cushion, repayment equals surplus minus cushion. On a surplus SMALLER than the cushion, you borrow the difference, because the surplus alone does not reach the cushion you must hold. Interest is the rate times the CUMULATIVE loan balance after financing, so track the running balance. Ending balance is available minus disbursements plus borrowing minus repayment minus interest. The same table also asks for net cash flow from financing, which is total borrowed minus total repaid and equals the closing loan balance, and net cash flow from operating, which is receipts minus disbursements minus interest paid.",
   "hook": "Beginning = last month's ending. Available = beginning + receipts. SHORTAGE: borrow = shortage + cushion. SURPLUS bigger than the cushion: repay = surplus - cushion. SURPLUS SMALLER than the cushion: BORROW the difference. Interest is charged on the CUMULATIVE loan balance, not on the new borrowing.",
+  "topic": "The calculations",
   "source": "Guide 13.3, the cash budget with borrowing and interest",
   "verified": "recomputed from the printed data"
  },
@@ -769,7 +853,9 @@
    "GH¢124,800"
   ],
   "explanation": "September's surplus of GH¢244,800 is larger than the GH¢120,000 cushion, so the normal rule applies: repayment = surplus - cushion = 244,800 - 120,000 = GH¢124,800.",
+  "teach": "Seven steps. Beginning cash balance is last month's ending balance. Total cash available is beginning plus cash receipts. Total budgeted disbursements are inventory purchases plus selling and administrative expenses. Shortage or surplus is disbursements minus available: a positive number is a shortage, a negative one is a surplus. On a shortage, borrowing equals shortage plus cushion. On a surplus larger than the cushion, repayment equals surplus minus cushion. On a surplus SMALLER than the cushion, you borrow the difference, because the surplus alone does not reach the cushion you must hold. Interest is the rate times the CUMULATIVE loan balance after financing, so track the running balance. Ending balance is available minus disbursements plus borrowing minus repayment minus interest. The same table also asks for net cash flow from financing, which is total borrowed minus total repaid and equals the closing loan balance, and net cash flow from operating, which is receipts minus disbursements minus interest paid.",
   "hook": "Beginning = last month's ending. Available = beginning + receipts. SHORTAGE: borrow = shortage + cushion. SURPLUS bigger than the cushion: repay = surplus - cushion. SURPLUS SMALLER than the cushion: BORROW the difference. Interest is charged on the CUMULATIVE loan balance, not on the new borrowing.",
+  "topic": "The calculations",
   "source": "Guide 13.3, the cash budget with borrowing and interest",
   "verified": "recomputed from the printed data"
  },
@@ -787,7 +873,9 @@
    "GH¢(19,144)"
   ],
   "explanation": "Operating = cash receipts - cash disbursements - interest paid. Receipts are 80,000 + 94,000 + 112,800 = 286,800. Disbursements are 99,013 + 94,395 + 110,292 = 303,700. Interest is 2,244. So 286,800 - 303,700 - 2,244 = GH¢(19,144). Leaving the interest out gives GH¢(16,900), which is the printed trap.",
+  "teach": "Seven steps. Beginning cash balance is last month's ending balance. Total cash available is beginning plus cash receipts. Total budgeted disbursements are inventory purchases plus selling and administrative expenses. Shortage or surplus is disbursements minus available: a positive number is a shortage, a negative one is a surplus. On a shortage, borrowing equals shortage plus cushion. On a surplus larger than the cushion, repayment equals surplus minus cushion. On a surplus SMALLER than the cushion, you borrow the difference, because the surplus alone does not reach the cushion you must hold. Interest is the rate times the CUMULATIVE loan balance after financing, so track the running balance. Ending balance is available minus disbursements plus borrowing minus repayment minus interest. The same table also asks for net cash flow from financing, which is total borrowed minus total repaid and equals the closing loan balance, and net cash flow from operating, which is receipts minus disbursements minus interest paid.",
   "hook": "Beginning = last month's ending. Available = beginning + receipts. SHORTAGE: borrow = shortage + cushion. SURPLUS bigger than the cushion: repay = surplus - cushion. SURPLUS SMALLER than the cushion: BORROW the difference. Interest is charged on the CUMULATIVE loan balance, not on the new borrowing.",
+  "topic": "The calculations",
   "source": "Guide 13.3, the cash budget with borrowing and interest",
   "verified": "recomputed from the printed data"
  },
@@ -805,7 +893,9 @@
    "GH¢2,244"
   ],
   "explanation": "Charge 4.35 percent on the running loan balance. July: 17,013 gives 740. August: the balance rises to 18,148, giving 789. September: it falls to 16,429, giving 715. Total = GH¢2,244.",
+  "teach": "Seven steps. Beginning cash balance is last month's ending balance. Total cash available is beginning plus cash receipts. Total budgeted disbursements are inventory purchases plus selling and administrative expenses. Shortage or surplus is disbursements minus available: a positive number is a shortage, a negative one is a surplus. On a shortage, borrowing equals shortage plus cushion. On a surplus larger than the cushion, repayment equals surplus minus cushion. On a surplus SMALLER than the cushion, you borrow the difference, because the surplus alone does not reach the cushion you must hold. Interest is the rate times the CUMULATIVE loan balance after financing, so track the running balance. Ending balance is available minus disbursements plus borrowing minus repayment minus interest. The same table also asks for net cash flow from financing, which is total borrowed minus total repaid and equals the closing loan balance, and net cash flow from operating, which is receipts minus disbursements minus interest paid.",
   "hook": "Beginning = last month's ending. Available = beginning + receipts. SHORTAGE: borrow = shortage + cushion. SURPLUS bigger than the cushion: repay = surplus - cushion. SURPLUS SMALLER than the cushion: BORROW the difference. Interest is charged on the CUMULATIVE loan balance, not on the new borrowing.",
+  "topic": "The calculations",
   "source": "Guide 13.3, the cash budget with borrowing and interest",
   "verified": "recomputed from the printed data"
  },
@@ -823,7 +913,9 @@
    "GH¢1,719"
   ],
   "explanation": "September's surplus is 110,292 disbursed against 119,011 available, so GH¢8,719. That is larger than the cushion, so repayment = 8,719 - 7,000 = GH¢1,719.",
+  "teach": "Seven steps. Beginning cash balance is last month's ending balance. Total cash available is beginning plus cash receipts. Total budgeted disbursements are inventory purchases plus selling and administrative expenses. Shortage or surplus is disbursements minus available: a positive number is a shortage, a negative one is a surplus. On a shortage, borrowing equals shortage plus cushion. On a surplus larger than the cushion, repayment equals surplus minus cushion. On a surplus SMALLER than the cushion, you borrow the difference, because the surplus alone does not reach the cushion you must hold. Interest is the rate times the CUMULATIVE loan balance after financing, so track the running balance. Ending balance is available minus disbursements plus borrowing minus repayment minus interest. The same table also asks for net cash flow from financing, which is total borrowed minus total repaid and equals the closing loan balance, and net cash flow from operating, which is receipts minus disbursements minus interest paid.",
   "hook": "Beginning = last month's ending. Available = beginning + receipts. SHORTAGE: borrow = shortage + cushion. SURPLUS bigger than the cushion: repay = surplus - cushion. SURPLUS SMALLER than the cushion: BORROW the difference. Interest is charged on the CUMULATIVE loan balance, not on the new borrowing.",
+  "topic": "The calculations",
   "source": "Guide 13.3, the cash budget with borrowing and interest",
   "verified": "recomputed from the printed data"
  },
@@ -841,7 +933,9 @@
    "GH¢1,135"
   ],
   "explanation": "August has a surplus of GH¢5,865 (disbursements 94,395 against available 100,260), which is smaller than the GH¢7,000 cushion. So the company BORROWS the shortfall: 7,000 - 5,865 = GH¢1,135. Same rule as the Sweetie-Nitie August item.",
+  "teach": "Seven steps. Beginning cash balance is last month's ending balance. Total cash available is beginning plus cash receipts. Total budgeted disbursements are inventory purchases plus selling and administrative expenses. Shortage or surplus is disbursements minus available: a positive number is a shortage, a negative one is a surplus. On a shortage, borrowing equals shortage plus cushion. On a surplus larger than the cushion, repayment equals surplus minus cushion. On a surplus SMALLER than the cushion, you borrow the difference, because the surplus alone does not reach the cushion you must hold. Interest is the rate times the CUMULATIVE loan balance after financing, so track the running balance. Ending balance is available minus disbursements plus borrowing minus repayment minus interest. The same table also asks for net cash flow from financing, which is total borrowed minus total repaid and equals the closing loan balance, and net cash flow from operating, which is receipts minus disbursements minus interest paid.",
   "hook": "Beginning = last month's ending. Available = beginning + receipts. SHORTAGE: borrow = shortage + cushion. SURPLUS bigger than the cushion: repay = surplus - cushion. SURPLUS SMALLER than the cushion: BORROW the difference. Interest is charged on the CUMULATIVE loan balance, not on the new borrowing.",
+  "topic": "The calculations",
   "source": "Guide 13.3, the cash budget with borrowing and interest",
   "verified": "recomputed from the printed data"
  },
@@ -859,7 +953,9 @@
    "GH¢16,429"
   ],
   "explanation": "Financing = everything borrowed minus everything repaid: 17,013 + 1,135 - 1,719 = GH¢16,429. It equals the loan balance still outstanding at the end of September, which is the quickest way to check it.",
+  "teach": "Seven steps. Beginning cash balance is last month's ending balance. Total cash available is beginning plus cash receipts. Total budgeted disbursements are inventory purchases plus selling and administrative expenses. Shortage or surplus is disbursements minus available: a positive number is a shortage, a negative one is a surplus. On a shortage, borrowing equals shortage plus cushion. On a surplus larger than the cushion, repayment equals surplus minus cushion. On a surplus SMALLER than the cushion, you borrow the difference, because the surplus alone does not reach the cushion you must hold. Interest is the rate times the CUMULATIVE loan balance after financing, so track the running balance. Ending balance is available minus disbursements plus borrowing minus repayment minus interest. The same table also asks for net cash flow from financing, which is total borrowed minus total repaid and equals the closing loan balance, and net cash flow from operating, which is receipts minus disbursements minus interest paid.",
   "hook": "Beginning = last month's ending. Available = beginning + receipts. SHORTAGE: borrow = shortage + cushion. SURPLUS bigger than the cushion: repay = surplus - cushion. SURPLUS SMALLER than the cushion: BORROW the difference. Interest is charged on the CUMULATIVE loan balance, not on the new borrowing.",
+  "topic": "The calculations",
   "source": "Guide 13.3, the cash budget with borrowing and interest",
   "verified": "recomputed from the printed data"
  }
