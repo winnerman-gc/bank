@@ -281,6 +281,34 @@
             font-size: 0.78rem;
         }
 
+        /* The study set adds a longer note behind its own toggle. */
+        .teach { margin-top: 10px; }
+
+        .teach > summary {
+            cursor: pointer;
+            list-style: none;
+            color: var(--primary-dark);
+            font-size: 0.78rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+        }
+
+        .teach > summary::-webkit-details-marker { display: none; }
+        .teach > summary::before { content: '\25B8  '; }
+        .teach[open] > summary::before { content: '\25BE  '; }
+
+        .teach-body {
+            margin-top: 7px;
+            padding: 12px 14px;
+            border: 1px solid rgba(67, 56, 202, 0.22);
+            border-radius: 12px;
+            background: rgba(67, 56, 202, 0.05);
+            font-size: 0.86rem;
+            line-height: 1.62;
+            white-space: pre-line;
+        }
+
         .explain-toggle > summary {
             margin-top: 8px;
             cursor: pointer;
@@ -374,7 +402,7 @@
     </main>
 
     <script>
-        const CACHE_VERSION = '2026-08-28.2';
+        const CACHE_VERSION = '2026-08-31.1';
         const VIEW_STATE_KEY = 'scns_quiz_view_state';
         const ANSWERS_STORAGE_KEY = 'scns_quiz_answers_v1';
         const RETAKE_ANSWERS_STORAGE_KEY = 'scns_quiz_retake_answers_v1';
@@ -386,6 +414,12 @@
                 label: 'Presentation Decks',
                 file: 'compiled.json',
                 description: '240 questions from the 24 student presentation decks — ten per deck, covering timing advance, Doppler, RACH, HARQ, handover, beam control, slicing, spectrum sharing, ISAC, RIS, PQC, GNSS and digital twins. Every question carries an explanation and names the deck it rests on.'
+            },
+            {
+                id: 'study',
+                label: 'Study Set',
+                file: 'compiled-study.json',
+                description: '120 questions, five per deck, aimed at the concepts rather than the figures — why a mechanism exists, what it trades against, and how it links to the rest of the course. Each answer opens a study note long enough to revise the topic from without the deck.'
             }
         ];
 
@@ -775,6 +809,8 @@
             // showAnswer reads these back, so it does not need the question object.
             // Parts 1 to 3 carry neither field, and both fall back to empty.
             card.dataset.explanation = question.explanation || '';
+            // Study-set cards carry a longer note; other banks leave it empty.
+            card.dataset.teach = question.teach || '';
             card.dataset.source = question.topic || question.source || '';
 
             const feedback = document.createElement('div');
@@ -849,8 +885,15 @@
             const explanation = card.dataset.explanation || '';
             const source = card.dataset.source || '';
             const sourceHtml = source ? `<div class="explain-source">${escapeHtml(source)}</div>` : '';
-            const explainHtml = explanation
-                ? `<div class="explain">${escapeHtml(explanation)}${sourceHtml}</div>`
+            // The study note is long, so it sits behind its own toggle rather
+            // than being dropped on the reader alongside the short explanation.
+            const teach = card.dataset.teach || '';
+            const teachHtml = teach
+                ? `<details class="teach"><summary>The whole topic</summary>`
+                  + `<div class="teach-body">${escapeHtml(teach)}</div></details>`
+                : '';
+            const explainHtml = (explanation || teach)
+                ? `<div class="explain">${escapeHtml(explanation)}${teachHtml}${sourceHtml}</div>`
                 : '';
 
             feedback.classList.add('show');

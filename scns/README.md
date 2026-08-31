@@ -1,9 +1,20 @@
 # Satellite Communication & NTN (TE 456) - MCQ Practice
 
 A static MCQ practice site for the KNUST TE 456 *Satellite Communication and
-Navigation Systems* course. The bank holds **240 questions** in a single file
-(`compiled.json`), built from the **24 student group presentations**, ten
-questions per deck.
+Navigation Systems* course. Both banks are built from the **24 student group
+presentations**, and the site serves **360 questions** in total.
+
+| Set | File | Questions | Per deck | Aimed at |
+| --- | ---- | --------- | -------- | -------- |
+| **Presentation Decks** | `compiled.json` | 240 | 10 | Recall and applied reasoning across each deck |
+| **Study Set** | `compiled-study.json` | 120 | 5 | The concepts: why a mechanism exists and what it trades against |
+
+The **Study Set** carries two levels of explanation. A short one says why the
+answer is right; behind a `The whole topic` toggle sits a study note averaging
+about 1,100 characters, written so the topic can be revised from the card alone
+without opening the deck. It deliberately avoids testing recall of quoted
+figures or of a conclusion slide's wording, and quotes a number only where the
+magnitude is itself the point.
 
 | Group | Topic |
 | ----- | ----- |
@@ -79,29 +90,41 @@ git show 90e4a19:scns/compiled_3.json > old-part3.json
 
 ## Features
 
-- A single 240-question bank with live stats tracking
+- Two banks, 360 questions, with live stats tracking
 - Auto-shuffled answer options with a stable per-question order
 - `Retake Wrong` mode that includes only questions answered incorrectly
 - `Back to Main` button to return from retake mode
 - Persistent answer storage in the browser
 - Auto-scroll to the next question after a correct answer
 - **An explanation on every question.** A wrong answer shows it at once. A
-  correct answer hides it behind a `Why` toggle. Each one names the deck and the
-  slides it rests on.
+  correct answer hides it behind a `Why` toggle. Each one names the deck it
+  rests on.
+- **A study note on every Study Set question**, nested behind a second
+  `The whole topic` toggle. Cards in the other bank carry no note and render
+  no empty toggle.
 
 ## How to use
 
 1. Open `index.html` through a local web server or GitHub Pages
    (e.g. `python3 -m http.server` from this folder, then visit the page).
-2. Answer questions normally - stats are tracked as you go.
-3. Use `Retake Wrong` to practise only the questions you missed.
-4. Use `Back to Main` to return to the full bank.
+2. Pick `Presentation Decks` or `Study Set`.
+3. Answer questions normally - stats are tracked as you go.
+4. Use `Retake Wrong` to practise only the questions you missed.
+5. Use `Back to Main` to return to the full bank.
 
-## Rebuilding the question bank
+## Rebuilding the question banks
 
 ```bash
-python3 build_questions.py
+python3 build_questions.py        # compiled.json,       240 questions
+python3 build_study_questions.py  # compiled-study.json, 120 questions
 ```
+
+The Study Set data lives in `deck_study_a.py`, `deck_study_b.py` and
+`deck_study_c.py`, split by deck the same way as the main bank. Each question is
+held as `(stem, correct, [d1, d2, d3], explanation, teach)`. Its build applies
+the same structural checks as the main one, and additionally warns on any teach
+block under 400 characters, since a short one is almost certainly a stub rather
+than a study note. Its key spread comes out at 30 / 30 / 30 / 30.
 
 The question data lives in three modules, eight decks each, so no single file
 becomes unmanageable:
